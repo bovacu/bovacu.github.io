@@ -103,7 +103,17 @@ var _language = {
         monsterTalesDescription2    : "In this project, our team is small, and we all act as both backend and frontend engineers. We work with micro-servives, C#, Python and Unity as core technologies.",
         currentProjectId            : "Current Project",
         ordagoDescription1          : "Ordago is a mobile multiplayer card game where you can play a lot of spanish classic card games, such as chinchon, mus, presidente, escoba... You can play with your friends in groups or even private matches and also with people around the world!",
-        ordagoDescription2          : "The game is still in development, but the progress is going really well!!"
+        ordagoDescription2          : "The game is still in development, but the progress is going really well!!",
+        isometricTitleId            : "Isometric Strategy Game",
+        isometricDescriptionId1     : "This is a Unity project I work on when I have free time (and don't want to work on my other projects). It is a turn based strategy game themed on computer components (the dinosaur is a placeholder). As you can see on the video, with the mouse you can get information about the floor tiles, you can choose some actions (hit, move, defend and ranged attack), you can skip turn, enemies will try to reach you and kill you.",
+        isometricDescriptionId2     : "You have 3 points of energy each turn, you have to use them wisely, and if you run out of health points you die. The code can be found",
+        isometricDescriptionId3     : "In this project I liked a lot that I managed to make a unique movement/actions system that is totally shared between the human and the AI, and the AI simulates the human actions with a State Machine.",
+        isometricDescriptionId4     : "There is also a debugging console where you can write commands for, of course, debugging purposes.",
+        gdelTitleId                 : "GDEL, my own scripting language with its Virtual Machine",
+        gdelDescriptionId1          : "GDEL is one of my favorite and current projects. It's being developed in C++ for the VM. The project is not still finished but I work almost every day on it. It is not an easy project, as it requires a lot of research by my side, not only about how virtual machines and languages work in general, but also about how to do thins as optimal as possible in C++ and how memory works. This project is teaching me more than I could imagine.",
+        gdelDescriptionId2          : "You can follow the development right ",
+        gdelDescriptionId3          : "The aim for this project is to be able to use this language and virtual machine inside my future games and projects, and use it as a debugging tool or even for the users to mod things or use it inside the game.",
+        gdelDescriptionId4          : "Once it is finished, I'm going to build an IDE for it so it is easier to use and debug."
     },
 
     es : {
@@ -195,7 +205,17 @@ var _language = {
         monsterTalesDescription2    : "Nuestro equipo es pequeño, asi que todos trabajamos con ingenerios de backend y frontend, donde usamos tanto Unity, con C#, como un gran sistema de microservicios manejados tambien con C# y python.",
         currentProjectId            : "Proyecto actual",
         ordagoDescription1          : "Ordago es un juego de cartas para movil donde podras jugar a los clasicos de cartas españoles, como chinchon, mus, presidente, escoba... Puedes jugar con tus amigos en grupos y hasta en partidas privadas personalizadas, o con personas del resto del mundo.",
-        ordagoDescription2          : "El juego aun esta en desarrollo, pero avanzando muy bien."
+        ordagoDescription2          : "El juego aun esta en desarrollo, pero avanzando muy bien.",
+        isometricTitleId            : "Juego de estrategia isometrico",
+        isometricDescriptionId1     : "Este es un proyecto en Unity en el que trabajo cuando puedo sacar tiempo (y no estoy trabajando en otros). Es un juego de estrategia por turnos con tematica de ordenador (excepto el dinosaurio que esta de ejemplo). Como se ve en el video, con el raton podemos sacar info de los bloques del suelo, podemos elegir acciones (atacar, mover, defenderse y ataque de rango), pasar el turno. Los enemigos trataran de alcanzarte y acabar contigo.",
+        isometricDescriptionId2     : "Tienes tres puntos de energia para acciones por turno, y si te quedas sin vida, mueres. El codigo puede accederse ",
+        isometricDescriptionId3     : "Una cosa que he conseguido en este proyecto y que me gusta mucho es que el sistema de movimiento/acciones es totalmente compartido entre el jugador y la IA. La IA imita las acciones que haria un humano mediante una maquina de estados.",
+        isometricDescriptionId4     : "Tambien cuenta con una consola de debugging que es, por supuesto, para facilitar las tareas de testeo. Podemos usar diversos comandos y se pueden meter mas segun necesidad.",
+        gdelTitleId                 : "GDEL, mi lenguaje de scripting con su propia maquina virtual",
+        gdelDescriptionId1          : "GDEL es mi proyecto favorito actual. La maquina virtual la estoy desarrollando enteramente en C++. Aun no esta terminado, pero trabajo en el casi todos los dias. No es un proyecto nada facil y requiere de mucha busqueda de informacion, no solo para saber como una maquina virtual funciona, si no por los conocimientos de como la memoria funciona internamente y de como hacer las cosas lo mas optimas posibles en C++. Este proyecto me esta enseñando mas de lo que podria imaginar.",
+        gdelDescriptionId2          : "Se puede seguir el desarrollo justamente  ",
+        gdelDescriptionId3          : "El objetivo de este proyecto es poder usar este lenguaje dentro de mis futuros juegos y proyectos y usarlo como herramienta de desarrollo, para mods o incluso como lenguaje dentro del juego para que los usuarios lo usen.",
+        gdelDescriptionId4          : "Una vez acabado creare un IDE para poder usarlo con mas facilidad."
     },
 
     pt : {
@@ -287,7 +307,17 @@ var _language = {
         monsterTalesDescription2    : "Nosso equipe é pequeno, daí que todos trabalhamos como engenheiros backend e frontend. Trabalhamos com micro-servives, C#, Python e Unity como tecnologias principais.",
         currentProjectId            : "Projeto atual",
         ordagoDescription1          : "Ordago é um jogo de cartas para celular onde você pode jogar os clasicos espanhois, como chinchon, mus, presidente, escoba... Pode jogar com os seus amigos em grupos é até em partidas privadas, ou com pessoas do resto do mundo.",
-        ordagoDescription2          : "El juego aun esta en desarrollo, pero avanzando muy bien."
+        ordagoDescription2          : "El juego aun esta en desarrollo, pero avanzando muy bien.",
+        isometricTitleId            : "Jogo de estrategia isometrico",
+        isometricDescriptionId1     : "Esse é um projeto no Unity que eu trabalho quando tenho tempo (e nao estou trabalhando em outros projetos). É um jogo de estrategia por turnos com tematica do computador (exceto o dinossauro que é um exemplo). Como esta no video, com o mouse podemos obter informaçao dos blocos do chao, podemos escolher açoes (atacar, mover, se defender y atacar de longe), mudar a vez. Os enemigos tentam pegar voce e acabar com voce.",
+        isometricDescriptionId2     : "Voce tem 3 pontos de energia para açoes por cada vez, e se ficar sem pontos de vida, voce morre. o codigo pode ser accesar ",
+        isometricDescriptionId3     : "Nesse projeto consegui que o sistema de movimento e açoes seja totalmente compartilhado entre o jogador e a IA. A IA usa uma maquina de estados para simular o input do jogador.",
+        isometricDescriptionId4     : "Tem tambem uma consola para debugging que é, obviamente, para fazer o debugging. Podemo se usar varios comandos e podem se adicionar tantos como precisar.",
+        gdelTitleId                 : "GDEL, a minha linguagem de scripting com a sua propia maquina virtual",
+        gdelDescriptionId1          : "GDEL é o meu atual projecto favorito. A maquina virtual esta sendo desenvolvida inteiramente em C++. Ainda nao esta terminada, mas eu trabalho nela quase todos os dias. Nao é um projeto facil porque precisa de muita pesquisa da minha parte, nao so na teoria das maquinas virtuais, mas tambem no funcionamento da memoria nesse nivel tao baixo e como fazer as coisas o mais eficente possivel em C++. Eu aprendi com esse projecto muito mais do que eu podia imaginar.",
+        gdelDescriptionId2          : "O desenvolvimento pode se consultar  ",
+        gdelDescriptionId3          : "O objetivo desse projeto é usar essa linguagem como ferramenta de debugging, para mods ou ate como linguagem dentro do jogo pros usuarios usarem.",
+        gdelDescriptionId4          : "Quando terminar, vou criar um IDE pra linguagem."
     }
 
 }
@@ -384,6 +414,18 @@ function toSpanish() {
 
     skillsTitleId.textContent               = _language.es.skillsTitle;
     skillsDescriptionId.textContent         = _language.es.skillsDescription;
+
+    isometricTitleId.textContent            = _language.es.isometricTitleId;
+    isometricDescriptionId1.textContent       = _language.es.isometricDescriptionId1;
+    isometricDescriptionId2.textContent       = _language.es.isometricDescriptionId2;
+    isometricDescriptionId3.textContent       = _language.es.isometricDescriptionId3;
+    isometricDescriptionId4.textContent       = _language.es.isometricDescriptionId4;
+
+    gdelTitleId.textContent                 = _language.es.gdelTitleId;
+    gdelDescriptionId1.textContent            = _language.es.gdelDescriptionId1;
+    gdelDescriptionId2.textContent            = _language.es.gdelDescriptionId2;
+    gdelDescriptionId3.textContent            = _language.es.gdelDescriptionId3;
+    gdelDescriptionId4.textContent            = _language.es.gdelDescriptionId4;
 
     var _classes = document.getElementsByClassName("proId");
     for (var i = 0; i < _classes.length; i++)
@@ -512,6 +554,18 @@ function toEnglish() {
     skillsTitleId.textContent               = _language.en.skillsTitle;
     skillsDescriptionId.textContent         = _language.en.skillsDescription;
 
+    isometricTitleId.textContent            = _language.en.isometricTitleId;
+    isometricDescriptionId1.textContent       = _language.en.isometricDescriptionId1;
+    isometricDescriptionId2.textContent       = _language.en.isometricDescriptionId2;
+    isometricDescriptionId3.textContent       = _language.en.isometricDescriptionId3;
+    isometricDescriptionId4.textContent       = _language.en.isometricDescriptionId4;
+
+    gdelTitleId.textContent                 = _language.en.gdelTitleId;
+    gdelDescriptionId1.textContent            = _language.en.gdelDescriptionId1;
+    gdelDescriptionId2.textContent            = _language.en.gdelDescriptionId2;
+    gdelDescriptionId3.textContent            = _language.en.gdelDescriptionId3;
+    gdelDescriptionId4.textContent            = _language.en.gdelDescriptionId4;
+
     var _classes = document.getElementsByClassName("proId");
     for (var i = 0; i < _classes.length; i++)
     _classes[i].innerHTML = _language.en.pro;
@@ -638,6 +692,18 @@ function toPortuguese() {
 
     skillsTitleId.textContent               = _language.pt.skillsTitle;
     skillsDescriptionId.textContent         = _language.pt.skillsDescription;
+
+    isometricTitleId.textContent            = _language.pt.isometricTitleId;
+    isometricDescriptionId1.textContent       = _language.pt.isometricDescriptionId1;
+    isometricDescriptionId2.textContent       = _language.pt.isometricDescriptionId2;
+    isometricDescriptionId3.textContent       = _language.pt.isometricDescriptionId3;
+    isometricDescriptionId4.textContent       = _language.pt.isometricDescriptionId4;
+
+    gdelTitleId.textContent                 = _language.pt.gdelTitleId;
+    gdelDescriptionId1.textContent            = _language.pt.gdelDescriptionId1;
+    gdelDescriptionId2.textContent            = _language.pt.gdelDescriptionId2;
+    gdelDescriptionId3.textContent            = _language.pt.gdelDescriptionId3;
+    gdelDescriptionId4.textContent            = _language.pt.gdelDescriptionId4;
 
     var _classes = document.getElementsByClassName("proId");
     for (var i = 0; i < _classes.length; i++)
