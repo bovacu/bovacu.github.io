@@ -1,0 +1,115 @@
+
+.. _program_listing_file_engine_include_core_render_Camera.h:
+
+Program Listing for File Camera.h
+=================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_render_Camera.h>` (``engine/include/core/render/Camera.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // Created by borja on 30/12/21.
+   
+   
+   #ifndef ENGINE2_0_CAMERA_H
+   #define ENGINE2_0_CAMERA_H
+   
+   
+   #include <glm/ext/matrix_float4x4.hpp>
+   #include "core/util/Util.h"
+   #include "core/systems/eventSystem/MouseEvent.h"
+   #include "core/render/elements/ViewPort.h"
+   #include "core/graph/Graph.h"
+   
+   namespace GDE {
+   
+       class Transform;
+       class SceneManager;
+       class Window;
+   
+       class Camera {
+           friend class Scene;
+           private:
+               Vec2I size;
+   
+               float zoom = 1;
+   
+               float zoomSpeed = 0.25f;
+   
+               glm::mat4 projectionMatrix;
+   
+               glm::mat4 viewMatrix {1.f};
+   
+               glm::mat4 viewProjectionMatrix;
+   
+               IViewPort* viewport;
+   
+               Transform* transform;
+   
+           public:
+               NodeID ID;
+   
+               Camera(const NodeID& _mainCameraID, const Window* _window, Transform* _entityTransform);
+               ~Camera();
+   
+               void onEvent(Event& _event);
+   
+               bool onMouseScrolled(MouseScrolledEvent& _event);
+   
+               void onResize(int _width, int _height);
+   
+               glm::mat4& getProjectionMatrix();
+   
+               glm::mat4& getViewMatrix();
+   
+               glm::mat4& getViewProjectionMatrix();
+   
+               Transform& getTransform();
+   
+               void setPosition(const Vec2F& _position);
+   
+               void translate(const Vec2F& _translation);
+   
+               void translate(float _x, float _y);
+   
+               Vec2F getPosition();
+   
+               void setCameraSize(const Vec2I& _cameraSize);
+   
+               void setCameraSize(int _width, int _height);
+   
+               Vec2I getCameraSize();
+   
+               void setRotation(float _rotation);
+               float getRotation();
+   
+               [[nodiscard]] float getAspectRatio() const;
+   
+               [[nodiscard]] float getCurrentZoomLevel() const;
+   
+               void setCurrentZoomLevel(float _zoomLevel);
+   
+               [[nodiscard]] float getZoomSpeed() const;
+   
+               void setZoomSpeed(float _zoomSpeed);
+   
+               glm::mat4& operator() (const Camera& _camera) {
+                   return projectionMatrix;
+               }
+   
+               [[nodiscard]] IViewPort* getViewport() const;
+   
+               void setFreeViewport(const Vec2I& _windowSize);
+   
+               void setAdaptiveViewport(const Vec2I& _virtualDesiredSize, const Vec2I& _currentDeviceSize);
+   
+           private:
+               void recalculateViewMatrix();
+       };
+   
+   }
+   
+   
+   #endif //ENGINE2_0_CAMERA_H

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Shape &mdash; GDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class SoundManager" href="classGDE_1_1SoundManager.html" />
+    <link rel="prev" title="Class ShaderManager" href="classGDE_1_1ShaderManager.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> GDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Active.html">Struct Active</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1AnimationNode.html">Struct AnimationNode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1AnimationTransition.html">Struct AnimationTransition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Atlas.html">Struct Atlas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1B2DConfig.html">Struct B2DConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1BodyConfig.html">Struct BodyConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1CanvasEventStopper.html">Struct CanvasEventStopper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1CharInfo.html">Struct CharInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Color.html">Struct Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Command.html">Struct Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Controller.html">Struct Controller</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Effect__Controllers.html">Struct Effect_Controllers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1File.html">Template Struct File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1FontManager_1_1FontHandler.html">Struct FontManager::FontHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1FrameBufferSpecification.html">Struct FrameBufferSpecification</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig.html">Struct GDEConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig_1_1ProjectProperties.html">Struct GDEConfig::ProjectProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig_1_1WindowProperties.html">Struct GDEConfig::WindowProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GenerationSettings.html">Struct GenerationSettings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Music.html">Struct Music</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NineSlice.html">Struct NineSlice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NodeID__JsonPair.html">Struct NodeID_JsonPair</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NoiseMap.html">Struct NoiseMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1OpenGLVertex.html">Struct OpenGLVertex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1OpenGLVertexDebug.html">Struct OpenGLVertexDebug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ParticleData.html">Struct ParticleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1PhysicsManager_1_1Collision__CallbackFunction.html">Struct PhysicsManager::Collision_CallbackFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Probability.html">Struct Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ProceduralMap.html">Struct ProceduralMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Rect.html">Template Struct Rect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1RollingBuffer.html">Struct RollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ScrollingBuffer.html">Struct ScrollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Sfx.html">Struct Sfx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Sound.html">Struct Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1State.html">Struct State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1StaticTransform.html">Struct StaticTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Stub.html">Template Struct Stub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Stub_3_01R_07Args_8_8_8_08_4.html">Template Struct Stub&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Tag.html">Struct Tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1TextureInfo.html">Struct TextureInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VertexConfig.html">Struct VertexConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VertexData.html">Struct VertexData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VibrationConfig.html">Struct VibrationConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1AdaptiveViewPort.html">Class AdaptiveViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Animation.html">Class Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1AnimationSystem.html">Class AnimationSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BadDelegateCall.html">Class BadDelegateCall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BadECSSystemSwap.html">Class BadECSSystemSwap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BasicPerlinNoise.html">Template Class BasicPerlinNoise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Batch.html">Class Batch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Body.html">Class Body</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Camera.html">Class Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Canvas.html">Class Canvas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1CellularAutomata.html">Class CellularAutomata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Clock.html">Class Clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ConfigManager.html">Class ConfigManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Console.html">Class Console</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerAxisMovedEvent.html">Class ControllerAxisMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerButtonDownEvent.html">Class ControllerButtonDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerButtonUpEvent.html">Class ControllerButtonUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerInput.html">Class ControllerInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerVibrationManager.html">Class ControllerVibrationManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Delta.html">Class Delta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Easing.html">Class Easing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ECSManager.html">Class ECSManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ECSSystem.html">Class ECSSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Engine.html">Class Engine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Event.html">Class Event</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventBus.html">Template Class EventBus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventBus_1_1HandlerId.html">Class EventBus::HandlerId</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventDispatcher.html">Class EventDispatcher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FileHandler.html">Class FileHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FileManager.html">Class FileManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FixedViewPort.html">Class FixedViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Font.html">Class Font</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FontManager.html">Class FontManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FrameBuffer.html">Class FrameBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FreeViewPort.html">Class FreeViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Graph.html">Class Graph</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Image.html">Class Image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ImGuiScene.html">Class ImGuiScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Input.html">Class Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1InputManager.html">Class InputManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1IRenderizable.html">Class IRenderizable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1IViewPort.html">Class IViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyboardInput.html">Class KeyboardInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyEvent.html">Class KeyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyPressedEvent.html">Class KeyPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyReleasedEvent.html">Class KeyReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyTypedEvent.html">Class KeyTypedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1LoadVertexConfigNotInvoked.html">Class LoadVertexConfigNotInvoked</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Manager.html">Class Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MapGenerator.html">Class MapGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MDelegate.html">Template Class MDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MDelegate_3_01R_07Args_8_8_8_08_4.html">Template Class MDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileInput.html">Class MobileInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchDownEvent.html">Class MobileTouchDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchMovedEvent.html">Class MobileTouchMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchUpEvent.html">Class MobileTouchUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonEvent.html">Class MouseButtonEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonPressedEvent.html">Class MouseButtonPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonReleasedEvent.html">Class MouseButtonReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseInput.html">Class MouseInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseMovedEvent.html">Class MouseMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseScrolledEvent.html">Class MouseScrolledEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1NineSliceSprite.html">Class NineSliceSprite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ParticleSystem.html">Class ParticleSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PerlinNoiseManager.html">Class PerlinNoiseManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PhysicsManager.html">Class PhysicsManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PhysicsManager_1_1CollisionCallback.html">Class PhysicsManager::CollisionCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Platform.html">Class Platform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Profiler.html">Class Profiler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Random.html">Class Random</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Renderer.html">Class Renderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Scene.html">Class Scene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SceneManager.html">Class SceneManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Shader.html">Class Shader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ShaderManager.html">Class ShaderManager</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SoundManager.html">Class SoundManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteBatch.html">Class SpriteBatch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteBatch_1_1Debug.html">Class SpriteBatch::Debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteRenderer.html">Class SpriteRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TextRenderer.html">Class TextRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Texture.html">Class Texture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TextureAtlasManager.html">Class TextureAtlasManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Transform.html">Class Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TransitionParams.html">Class TransitionParams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UDelegate.html">Template Class UDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UDelegate_3_01R_07Args_8_8_8_08_4.html">Template Class UDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UI.html">Class UI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UIInteractable.html">Class UIInteractable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Util.html">Class Util</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Vec2.html">Template Class Vec2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Window.html">Class Window</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowClosedEvent.html">Class WindowClosedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowFrameEvent.html">Class WindowFrameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowInput.html">Class WindowInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowMinimizedEvent.html">Class WindowMinimizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowMovedEvent.html">Class WindowMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowRenderEvent.html">Class WindowRenderEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowResizedEvent.html">Class WindowResizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowUpdateEvent.html">Class WindowUpdateEvent</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="library_root.html">Library API</a> &raquo;</li>
+      <li>Class Shape</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/classGDE_1_1Shape.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-shape">
+<span id="exhale-class-classgde-1-1shape"></span><h1>Class Shape<a class="headerlink" href="#class-shape" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_engine_include_core_render_shapes_Shape.h.html#file-engine-include-core-render-shapes-shape-h"><span class="std std-ref">File Shape.h</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5ShapeE">
+<span id="_CPPv3N3GDE5ShapeE"></span><span id="_CPPv2N3GDE5ShapeE"></span><span id="GDE::Shape"></span><span class="target" id="classGDE_1_1Shape"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Shape</span></span></span><a class="headerlink" href="#_CPPv4N3GDE5ShapeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This class represents a Complex Geometry debugging shape. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape13getInnerColorEv">
+<span id="_CPPv3N3GDE5Shape13getInnerColorEv"></span><span id="_CPPv2N3GDE5Shape13getInnerColorEv"></span><span id="GDE::Shape::getInnerColor"></span><span class="target" id="classGDE_1_1Shape_1ad33a195f291502502c87fc0ea244e653"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="structGDE_1_1Color.html#_CPPv4N3GDE5ColorE" title="GDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getInnerColor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape13getInnerColorEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the inner color. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><a class="reference internal" href="structGDE_1_1Color.html#structGDE_1_1Color"><span class="std std-ref">Color</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape13getOuterColorEv">
+<span id="_CPPv3N3GDE5Shape13getOuterColorEv"></span><span id="_CPPv2N3GDE5Shape13getOuterColorEv"></span><span id="GDE::Shape::getOuterColor"></span><span class="target" id="classGDE_1_1Shape_1a5852c77176c4f9724526f229280e2512"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="structGDE_1_1Color.html#_CPPv4N3GDE5ColorE" title="GDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getOuterColor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape13getOuterColorEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the outline color. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><a class="reference internal" href="structGDE_1_1Color.html#structGDE_1_1Color"><span class="std std-ref">Color</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape9getPointsEv">
+<span id="_CPPv3N3GDE5Shape9getPointsEv"></span><span id="_CPPv2N3GDE5Shape9getPointsEv"></span><span id="GDE::Shape::getPoints"></span><span class="target" id="classGDE_1_1Shape_1a241e8f0e86fd39a56b0c5c3bbc18027b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getPoints</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape9getPointsEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the shape data. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>std::vector&lt;Vec2F&gt;&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape8addPointERK5Vec2F">
+<span id="_CPPv3N3GDE5Shape8addPointERK5Vec2F"></span><span id="_CPPv2N3GDE5Shape8addPointERK5Vec2F"></span><span id="GDE::Shape::addPoint__Vec2FCR"></span><span class="target" id="classGDE_1_1Shape_1add013e9350afe8543e684799ab8ad10f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addPoint</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_point</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape8addPointERK5Vec2F" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Adds a new point to the geometry. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_point</strong> – New point </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape11removePointEi">
+<span id="_CPPv3N3GDE5Shape11removePointEi"></span><span id="_CPPv2N3GDE5Shape11removePointEi"></span><span id="GDE::Shape::removePoint__i"></span><span class="target" id="classGDE_1_1Shape_1a606fc302f4e651c6ef88f10e9d22ac07"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removePoint</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_vertex</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape11removePointEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Removes a point from the geometry. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_vertex</strong> – Point to remove </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape15setOutlineColorERK5Color">
+<span id="_CPPv3N3GDE5Shape15setOutlineColorERK5Color"></span><span id="_CPPv2N3GDE5Shape15setOutlineColorERK5Color"></span><span id="GDE::Shape::setOutlineColor__ColorCR"></span><span class="target" id="classGDE_1_1Shape_1ac4174e1f3d4830bce9ea6ffac8280a03"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setOutlineColor</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="structGDE_1_1Color.html#_CPPv4N3GDE5ColorE" title="GDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape15setOutlineColorERK5Color" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the outline color. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_color</strong> – Outline <a class="reference internal" href="structGDE_1_1Color.html#structGDE_1_1Color"><span class="std std-ref">Color</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape13setInnerColorERK5Color">
+<span id="_CPPv3N3GDE5Shape13setInnerColorERK5Color"></span><span id="_CPPv2N3GDE5Shape13setInnerColorERK5Color"></span><span id="GDE::Shape::setInnerColor__ColorCR"></span><span class="target" id="classGDE_1_1Shape_1a9ccd85fc9bdfcaca057aa96778ae8bdf"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setInnerColor</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="structGDE_1_1Color.html#_CPPv4N3GDE5ColorE" title="GDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape13setInnerColorERK5Color" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the inner color. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_color</strong> – Inner color </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape16showOutsideColorEb">
+<span id="_CPPv3N3GDE5Shape16showOutsideColorEb"></span><span id="_CPPv2N3GDE5Shape16showOutsideColorEb"></span><span id="GDE::Shape::showOutsideColor__b"></span><span class="target" id="classGDE_1_1Shape_1a4d1f333787c79cb42ea9925957ee4f2d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">showOutsideColor</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_show</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape16showOutsideColorEb" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets if the outline is shown or not. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_show</strong> – Enable or disable the color </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape14showInnerColorEb">
+<span id="_CPPv3N3GDE5Shape14showInnerColorEb"></span><span id="_CPPv2N3GDE5Shape14showInnerColorEb"></span><span id="GDE::Shape::showInnerColor__b"></span><span class="target" id="classGDE_1_1Shape_1afd9f569a3f1225c9a5b0b43899bca83d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">showInnerColor</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_show</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape14showInnerColorEb" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets if the inner is shown or not. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_show</strong> – Enable or disable the color </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape11setPositionERK5Vec2F">
+<span id="_CPPv3N3GDE5Shape11setPositionERK5Vec2F"></span><span id="_CPPv2N3GDE5Shape11setPositionERK5Vec2F"></span><span id="GDE::Shape::setPosition__Vec2FCR"></span><span class="target" id="classGDE_1_1Shape_1aa393f7d67ea112a85ff094d569dba0e6"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPosition</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_position</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape11setPositionERK5Vec2F" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the position of the complex shape. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_position</strong> – New position </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape11getPositionEv">
+<span id="_CPPv3N3GDE5Shape11getPositionEv"></span><span id="_CPPv2N3GDE5Shape11getPositionEv"></span><span id="GDE::Shape::getPosition"></span><span class="target" id="classGDE_1_1Shape_1ae01db97063fbb28ec77e8652fd59fc06"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPosition</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape11getPositionEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the position of the complex shape. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Vec2F </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape11setRotationEf">
+<span id="_CPPv3N3GDE5Shape11setRotationEf"></span><span id="_CPPv2N3GDE5Shape11setRotationEf"></span><span id="GDE::Shape::setRotation__float"></span><span class="target" id="classGDE_1_1Shape_1ada5fcdaed09649a9d4f6c80eb10849db"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRotation</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_rotation</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape11setRotationEf" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the rotation of the complex shape. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_rotation</strong> – Rotation </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape11getRotationEv">
+<span id="_CPPv3N3GDE5Shape11getRotationEv"></span><span id="_CPPv2N3GDE5Shape11getRotationEv"></span><span id="GDE::Shape::getRotation"></span><span class="target" id="classGDE_1_1Shape_1a491d18a36de9eeda904e42346a0eb788"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRotation</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape11getRotationEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Gets the rotation of the complex shape. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>float </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape12isInnerShownEv">
+<span id="_CPPv3N3GDE5Shape12isInnerShownEv"></span><span id="_CPPv2N3GDE5Shape12isInnerShownEv"></span><span id="GDE::Shape::isInnerShown"></span><span class="target" id="classGDE_1_1Shape_1aff3b931184558b4dbf76ffa397daa126"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isInnerShown</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape12isInnerShownEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns if the inner color is drawn or not. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape12isOuterShownEv">
+<span id="_CPPv3N3GDE5Shape12isOuterShownEv"></span><span id="_CPPv2N3GDE5Shape12isOuterShownEv"></span><span id="GDE::Shape::isOuterShown"></span><span class="target" id="classGDE_1_1Shape_1af74fd92751eb48b4e920f0ade2d43abb"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isOuterShown</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape12isOuterShownEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns if the outline color is drawn or not. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape10makeCircleERK5Vec2Ffi">
+<span id="_CPPv3N3GDE5Shape10makeCircleERK5Vec2Ffi"></span><span id="_CPPv2N3GDE5Shape10makeCircleERK5Vec2Ffi"></span><span id="GDE::Shape::makeCircle__Vec2FCR.float.i"></span><span class="target" id="classGDE_1_1Shape_1a36e045d37600c927a079db44d5854d2d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">makeCircle</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_center</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_radius</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_precision</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">50</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape10makeCircleERK5Vec2Ffi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Makes the complex shape a circle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_center</strong> – Center of the circle </p></li>
+<li><p><strong>_radius</strong> – Radius of the circle </p></li>
+<li><p><strong>_precision</strong> – How pretty the circle should be, the prettier, the more expensive in computing work </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape10makeSquareERK5Vec2FRK5Vec2F">
+<span id="_CPPv3N3GDE5Shape10makeSquareERK5Vec2FRK5Vec2F"></span><span id="_CPPv2N3GDE5Shape10makeSquareERK5Vec2FRK5Vec2F"></span><span id="GDE::Shape::makeSquare__Vec2FCR.Vec2FCR"></span><span class="target" id="classGDE_1_1Shape_1af9047ace1e9af2ac3e68a792339548da"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">makeSquare</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_position</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE5Shape10makeSquareERK5Vec2FRK5Vec2F" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Makes the complex shape a square. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_position</strong> – Position of the square </p></li>
+<li><p><strong>_size</strong> – Size of the square </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape10innerColorE">
+<span id="_CPPv3N3GDE5Shape10innerColorE"></span><span id="_CPPv2N3GDE5Shape10innerColorE"></span><span id="GDE::Shape::innerColor__Color"></span><span class="target" id="classGDE_1_1Shape_1a0ce4384b245dc6ddb59e32b9b823d5cf"></span><a class="reference internal" href="structGDE_1_1Color.html#_CPPv4N3GDE5ColorE" title="GDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">innerColor</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="structGDE_1_1Color.html#_CPPv4N3GDE5ColorE" title="GDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="structGDE_1_1Color.html#_CPPv4N3GDE5Color5GreenE" title="GDE::Color::Green"><span class="n"><span class="pre">Green</span></span></a><a class="headerlink" href="#_CPPv4N3GDE5Shape10innerColorE" title="Permalink to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structGDE_1_1Color.html#structGDE_1_1Color"><span class="std std-ref">Color</span></a> of the inner part of the <a class="reference internal" href="#classGDE_1_1Shape"><span class="std std-ref">Shape</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape10outerColorE">
+<span id="_CPPv3N3GDE5Shape10outerColorE"></span><span id="_CPPv2N3GDE5Shape10outerColorE"></span><span id="GDE::Shape::outerColor__Color"></span><span class="target" id="classGDE_1_1Shape_1a7e01b62ecd3523407de63192f974952f"></span><a class="reference internal" href="structGDE_1_1Color.html#_CPPv4N3GDE5ColorE" title="GDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">outerColor</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="structGDE_1_1Color.html#_CPPv4N3GDE5ColorE" title="GDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="structGDE_1_1Color.html#_CPPv4N3GDE5Color5GreenE" title="GDE::Color::Green"><span class="n"><span class="pre">Green</span></span></a><a class="headerlink" href="#_CPPv4N3GDE5Shape10outerColorE" title="Permalink to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structGDE_1_1Color.html#structGDE_1_1Color"><span class="std std-ref">Color</span></a> of the outline. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape9showInnerE">
+<span id="_CPPv3N3GDE5Shape9showInnerE"></span><span id="_CPPv2N3GDE5Shape9showInnerE"></span><span id="GDE::Shape::showInner__b"></span><span class="target" id="classGDE_1_1Shape_1aff35aaf82f70fd0b00548b575a05b18a"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">showInner</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><a class="headerlink" href="#_CPPv4N3GDE5Shape9showInnerE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>If the inner color is rendered. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape9showOuterE">
+<span id="_CPPv3N3GDE5Shape9showOuterE"></span><span id="_CPPv2N3GDE5Shape9showOuterE"></span><span id="GDE::Shape::showOuter__b"></span><span class="target" id="classGDE_1_1Shape_1a5f63b35acb9c82b4ebf1e973ea5aa14e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">showOuter</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><a class="headerlink" href="#_CPPv4N3GDE5Shape9showOuterE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>If the outline color is rendered. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape6pointsE">
+<span id="_CPPv3N3GDE5Shape6pointsE"></span><span id="_CPPv2N3GDE5Shape6pointsE"></span><span id="GDE::Shape::points__std::vector:Vec2F:"></span><span class="target" id="classGDE_1_1Shape_1aca20408fca83a9e3a18b27d45f1339df"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">points</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N3GDE5Shape6pointsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Points that define the complex shape. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE5Shape6centerE">
+<span id="_CPPv3N3GDE5Shape6centerE"></span><span id="_CPPv2N3GDE5Shape6centerE"></span><span id="GDE::Shape::center__Vec2F"></span><span class="target" id="classGDE_1_1Shape_1acc9703658b196e7ad3455ca05982a6ea"></span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">center</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N3GDE5Shape6centerE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Center of the complex shape. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classGDE_1_1ShaderManager.html" class="btn btn-neutral float-left" title="Class ShaderManager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classGDE_1_1SoundManager.html" class="btn btn-neutral float-right" title="Class SoundManager" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

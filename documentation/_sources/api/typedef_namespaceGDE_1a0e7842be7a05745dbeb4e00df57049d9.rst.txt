@@ -1,0 +1,14 @@
+.. _exhale_typedef_namespaceGDE_1a0e7842be7a05745dbeb4e00df57049d9:
+
+Typedef GDE::Logs
+=================
+
+- Defined in :ref:`file_engine_include_core_systems_console_Console.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: GDE::Logs
+   :project: My Project

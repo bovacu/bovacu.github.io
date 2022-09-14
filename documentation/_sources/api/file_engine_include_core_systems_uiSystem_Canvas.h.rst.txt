@@ -1,0 +1,60 @@
+
+.. _file_engine_include_core_systems_uiSystem_Canvas.h:
+
+File Canvas.h
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_systems_uiSystem>` (``engine/include/core/systems/uiSystem``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/systems/uiSystem/Canvas.h``)
+--------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_systems_uiSystem_Canvas.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``core/graph/Scene.h`` (:ref:`file_engine_include_core_graph_Scene.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_GDE.h`
+
+- :ref:`file_engine_include_core_graph_components_UI.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classGDE_1_1Canvas`
+

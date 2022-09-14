@@ -1,0 +1,62 @@
+
+.. _file_engine_include_core_systems_eventSystem_EventBus.h:
+
+File EventBus.h
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_systems_eventSystem>` (``engine/include/core/systems/eventSystem``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/systems/eventSystem/EventBus.h``)
+-------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_systems_eventSystem_EventBus.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``core/util/Logger.h`` (:ref:`file_engine_include_core_util_Logger.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_GDE.h`
+
+- :ref:`file_engine_include_core_systems_animationSystem_AnimationSystem.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classGDE_1_1EventBus`
+
+- :ref:`exhale_class_classGDE_1_1EventBus_1_1HandlerId`
+

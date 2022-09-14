@@ -1,0 +1,17 @@
+.. _exhale_class_classGDE_1_1AnimationSystem:
+
+Class AnimationSystem
+=====================
+
+- Defined in :ref:`file_engine_include_core_systems_animationSystem_AnimationSystem.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GDE::AnimationSystem
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,136 @@
+
+.. _program_listing_file_engine_include_core_systems_inputSystem_input_ControllerInput.h:
+
+Program Listing for File ControllerInput.h
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_systems_inputSystem_input_ControllerInput.h>` (``engine/include/core/systems/inputSystem/input/ControllerInput.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // Created by borja on 6/2/22.
+   
+   
+   #ifndef ENGINE2_0_CONTROLLER_INPUT_H
+   #define ENGINE2_0_CONTROLLER_INPUT_H
+   
+   
+   #include "core/util/Util.h"
+   #include "core/systems/inputSystem/keysAndButtons/ControllerButtons.h"
+   #include "Input.h"
+   
+   namespace GDE {
+   
+       struct VibrationConfig {
+           int durationInSeconds;
+   
+           int delayToGetToMaxForce;
+   
+           int delayToGetToMinForce;
+   
+           int force; // 0-32767
+   
+           int period;
+       };
+   
+       struct Effect_Controllers {
+           SDL_HapticEffect vibrationEffect;
+   
+           int vibrationEffectID = -1;
+   
+           std::vector<int> controllerIDs = {  };
+       };
+   
+       class ControllerInput; struct Controller;
+       class ControllerVibrationManager {
+           friend class ControllerInput;
+           private:
+               std::unordered_map<std::string, Effect_Controllers> effects;
+   
+               std::unordered_map<int, Controller*>* controllers = nullptr;
+   
+               void init(std::unordered_map<int, Controller*>* _controllers);
+   
+               void destroy();
+   
+           public:
+               ControllerVibrationManager() = default;
+   
+               void assignVibrationEffectToController(const std::string& _effectName, int _controllerID);
+   
+               void addVibrationEffect(const std::string& _effectName, const VibrationConfig& _config);
+   
+               void removeVibrationEffect(const std::string& _effectName);
+       };
+   
+       struct Controller {
+   
+           public:
+               explicit Controller(int _controllerID);
+   
+               int ID;
+   
+               std::unordered_map<ControllerButtons, int>  pressedGamepadButtons;
+   
+               std::unordered_map<ControllerAxis, int>  pressedGamepadAxis;
+   
+               Vec2F leftJoystickValue;
+   
+               Vec2F rightJoystickValue;
+   
+               Vec2F backButtonsValue;
+   
+               SDL_GameController* sdlGameController = nullptr;
+   
+               SDL_Haptic* vibration = nullptr;
+       };
+   
+       class ControllerInput : public Input {
+           private:
+               std::unordered_map<int, Controller*> controllers;
+   
+               int controllerCounter = 0;
+   
+           public:
+               void init(Engine* _engine, Window* _window);
+   
+               int getButtonState(int _keyOrButton, int _controllerID = 0);
+   
+               void setButtonState(int _keyOrButton, int _state, int _controllerID = 0);
+   
+               int getAxisState(int _keyOrButton, int _controllerID = 0);
+   
+               void setAxisState(int _keyOrButton, int _state, int _controllerID = 0);
+   
+               void vibrate(const std::string& _vibrateEffect, int _controllerID = 0);
+   
+               void initControllers();
+   
+               Vec2F getAxisValue(const ControllerAxis& _axis, int _controllerID = 0);
+   
+               bool reassignController(int _controllerID, int _as);
+   
+               bool hasController(int _id);
+   
+               int playerIndexToInnerControllerID(int _playerIndex);
+   
+               void destroy();
+   
+           private:
+               void onControllerMoved(SDL_Event& _event);
+   
+               void onControllerButtonDown(SDL_Event& _event);
+   
+               void onControllerButtonUp(SDL_Event& _event);
+   
+               void onControllerConnected(SDL_Event& _event);
+   
+               void onControllerDisconnected(SDL_Event& _event);
+       };
+   
+   }
+   
+   
+   #endif //ENGINE2_0_CONTROLLER_INPUT_H

@@ -1,0 +1,14 @@
+.. _exhale_define_StringUtils_8h_1a08ba518523de57f364d34e035c06ad09:
+
+Define APPEND_S
+===============
+
+- Defined in :ref:`file_engine_include_core_util_StringUtils.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: APPEND_S
+   :project: My Project

@@ -1,0 +1,17 @@
+.. _exhale_class_classGDE_1_1ParticleSystem:
+
+Class ParticleSystem
+====================
+
+- Defined in :ref:`file_engine_include_core_systems_particleSystem_ParticleSystem.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GDE::ParticleSystem
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

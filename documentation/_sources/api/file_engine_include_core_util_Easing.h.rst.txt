@@ -1,0 +1,60 @@
+
+.. _file_engine_include_core_util_Easing.h:
+
+File Easing.h
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_util>` (``engine/include/core/util``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/util/Easing.h``)
+--------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_util_Easing.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cmath``
+
+- ``core/Core.h`` (:ref:`file_engine_include_core_Core.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_core_util_Util.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classGDE_1_1Easing`
+

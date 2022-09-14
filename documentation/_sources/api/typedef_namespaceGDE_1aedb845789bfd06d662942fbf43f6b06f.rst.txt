@@ -1,0 +1,14 @@
+.. _exhale_typedef_namespaceGDE_1aedb845789bfd06d662942fbf43f6b06f:
+
+Typedef GDE::IntRect
+====================
+
+- Defined in :ref:`file_engine_include_core_util_Rect.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: GDE::IntRect
+   :project: My Project

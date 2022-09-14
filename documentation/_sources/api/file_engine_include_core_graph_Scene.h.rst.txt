@@ -1,0 +1,81 @@
+
+.. _file_engine_include_core_graph_Scene.h:
+
+File Scene.h
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_graph>` (``engine/include/core/graph``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/graph/Scene.h``)
+--------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_graph_Scene.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``core/graph/Graph.h`` (:ref:`file_engine_include_core_graph_Graph.h`)
+
+- ``core/graph/components/Components.h`` (:ref:`file_engine_include_core_graph_components_Components.h`)
+
+- ``core/util/Delta.h`` (:ref:`file_engine_include_core_util_Delta.h`)
+
+- ``nlohmann/json.hpp``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_core_graph_ImGuiScene.h`
+
+- :ref:`file_engine_include_core_graph_components_Body.h`
+
+- :ref:`file_engine_include_core_graph_components_SpriteRenderer.h`
+
+- :ref:`file_engine_include_core_graph_components_TextRenderer.h`
+
+- :ref:`file_engine_include_core_systems_configSystem_ConfigManager.h`
+
+- :ref:`file_engine_include_core_systems_uiSystem_Canvas.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classGDE_1_1Scene`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_Scene_8h_1a5ee2ca55ac725159c1c815eb0c547a74`
+

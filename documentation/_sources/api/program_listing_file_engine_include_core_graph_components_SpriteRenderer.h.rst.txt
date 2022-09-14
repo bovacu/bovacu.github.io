@@ -1,0 +1,60 @@
+
+.. _program_listing_file_engine_include_core_graph_components_SpriteRenderer.h:
+
+Program Listing for File SpriteRenderer.h
+=========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_graph_components_SpriteRenderer.h>` (``engine/include/core/graph/components/SpriteRenderer.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   //
+   // Created by borja on 9/5/22.
+   //
+   
+   #ifndef GDE_SPRITE_RENDERER_H
+   #define GDE_SPRITE_RENDERER_H
+   
+   #include "core/render/elements/IRenderizable.h"
+   #include "entt/entity/entity.hpp"
+   #include "core/graph/Scene.h"
+   
+   typedef entt::entity NodeID;
+   
+   namespace GDE {
+   
+       class SpriteRenderer : public IRenderizable {
+   
+           friend class SpriteBatch;
+   
+           private:
+               Texture* texture = nullptr;
+   
+           public:
+               explicit SpriteRenderer(const NodeID& _nodeId, Scene* _scene);
+               SpriteRenderer(const NodeID& _nodeId, Scene* _scene, Texture* _texture);
+               ~SpriteRenderer() override {  }
+   
+               void setTexture(Texture* _texture) { texture = _texture; }
+   
+               [[nodiscard]] std::string getTexturePath();
+   
+               [[nodiscard]] std::string getTextureName();
+   
+               [[nodiscard]] std::string getTextureExtension();
+   
+   
+               [[nodiscard]] GLuint getTexture() const override { return texture->getGLTexture(); }
+   
+               [[nodiscard]] Vec2I getSize() const override { return texture->getSize(); }
+   
+               [[nodiscard]] IntRect getRegion() const override { return texture->getRegion(); }
+   
+               void draw(std::vector<OpenGLVertex>& _vertices, std::vector<uint32_t>& _indices, const Transform& _transform, const IViewPort& _viewport) const override;
+       };
+   
+   }
+   
+   #endif //GDE_SPRITE_RENDERER_H

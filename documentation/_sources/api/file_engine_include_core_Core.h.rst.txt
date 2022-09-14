@@ -1,0 +1,169 @@
+
+.. _file_engine_include_core_Core.h:
+
+File Core.h
+===========
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core>` (``engine/include/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/Core.h``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_Core.h.rst
+
+
+
+
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_GDE.h`
+
+- :ref:`file_engine_include_core_platform_PlatformHeaderSDL.h`
+
+- :ref:`file_engine_include_core_platform_PlatformHeaderSDLImage.h`
+
+- :ref:`file_engine_include_core_platform_PlatformHeaderSDLMixer.h`
+
+- :ref:`file_engine_include_core_render_elements_Shader.h`
+
+- :ref:`file_engine_include_core_render_window_AndroidWindow.h`
+
+- :ref:`file_engine_include_core_render_window_IOSWindow.h`
+
+- :ref:`file_engine_include_core_render_window_LinuxWindow.h`
+
+- :ref:`file_engine_include_core_render_window_MacWindow.h`
+
+- :ref:`file_engine_include_core_render_window_WindowsWindow.h`
+
+- :ref:`file_engine_include_core_systems_profiling_Profiler.h`
+
+- :ref:`file_engine_include_core_util_Color.h`
+
+- :ref:`file_engine_include_core_util_Easing.h`
+
+- :ref:`file_engine_include_core_util_Util.h`
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_Core_8h_1a4f5a4b23cac60cfc4ae0820056b72b9d`
+
+- :ref:`exhale_define_Core_8h_1a269f867cf67526b0e221aef3cea8e598`
+
+- :ref:`exhale_define_Core_8h_1a4684106f5f2dd1da4d265acbe34e8b52`
+
+- :ref:`exhale_define_Core_8h_1aab63320dd69bb78914d4e759f0d46da2`
+
+- :ref:`exhale_define_Core_8h_1a386ccb0477a7d2ba3926083cdb0e14ee`
+
+- :ref:`exhale_define_Core_8h_1ab7c3923bf7542e00d94d8adecb8b2dc1`
+
+- :ref:`exhale_define_Core_8h_1aec8659bf1f51f0234f88c7feeb963a36`
+
+- :ref:`exhale_define_Core_8h_1a7979a0fb1630bc39b41dee528a5b5cf2`
+
+- :ref:`exhale_define_Core_8h_1ad64f6f5d023da309eabb6763f0ddef37`
+
+- :ref:`exhale_define_Core_8h_1a26f45783b490d6354c9e5f38afc0d16c`
+
+- :ref:`exhale_define_Core_8h_1a85be0168e8586da86e9f71a7e8adfb51`
+
+- :ref:`exhale_define_Core_8h_1aaf784eda3aa29f36bcea09ec310917c2`
+
+- :ref:`exhale_define_Core_8h_1a47e8542cccecb36f7586e9a51686ff56`
+
+- :ref:`exhale_define_Core_8h_1a14aeee35578a7c0fa4682d97abd72806`
+
+- :ref:`exhale_define_Core_8h_1acbebb9ac61cfc0e70c3997fb1fea0ab6`
+
+- :ref:`exhale_define_Core_8h_1af04f450c6ea592bb2f7cb2ad9a230bb4`
+
+- :ref:`exhale_define_Core_8h_1a1046b888a6a08d86ac4f5728f2e87953`
+
+- :ref:`exhale_define_Core_8h_1a08c140ea59caaf1de94b2e9903aa9029`
+
+- :ref:`exhale_define_Core_8h_1a7a8832ee250520e14ef1466646d937a4`
+
+- :ref:`exhale_define_Core_8h_1abbf25d5d784ad6db40bc456dd95598fd`
+
+- :ref:`exhale_define_Core_8h_1a856be151c713db762f4cdd973e27a6e3`
+
+- :ref:`exhale_define_Core_8h_1aa635abb4df0e4fb7c28ca0eabfd1c032`
+
+- :ref:`exhale_define_Core_8h_1af4b6c2659fd0fa6b6cf3dc6f76dad589`
+
+- :ref:`exhale_define_Core_8h_1ab2f92881610d54379e8905409a3d1214`
+
+- :ref:`exhale_define_Core_8h_1a416328478023aacc364bfb6c960b93f6`
+
+- :ref:`exhale_define_Core_8h_1ade5cebc7d880e65c485b551fb42a3cec`
+
+- :ref:`exhale_define_Core_8h_1ac99325672d6d2f35b8e7c3847ce694f6`
+
+- :ref:`exhale_define_Core_8h_1ab5faae430a2d6305c701d46b16c91c90`
+
+- :ref:`exhale_define_Core_8h_1abafb4f2de798db829d78a2e93559cfd8`
+
+- :ref:`exhale_define_Core_8h_1a15ecd0bb2e972080f373164babe39b15`
+
+- :ref:`exhale_define_Core_8h_1aa2dfb433460dcdbec6f6f1bcb1a4c0db`
+
+- :ref:`exhale_define_Core_8h_1a329b0e013cce63fc13f17883aadec58b`
+
+- :ref:`exhale_define_Core_8h_1ad6f8dd7181ee55d34daf697779d6997b`
+
+- :ref:`exhale_define_Core_8h_1ac196b9f2c1db8f6000c059e8cba06306`
+
+- :ref:`exhale_define_Core_8h_1ada046a6db50389faa7914bac3204bfb9`
+
+- :ref:`exhale_define_Core_8h_1a3e3ed3be06de51e05b8339990d023334`
+
+- :ref:`exhale_define_Core_8h_1a34b6851f771e86341fd17d8620b80720`
+
+- :ref:`exhale_define_Core_8h_1a9d94f35320f9708a28c8782bd90e23dc`
+
+- :ref:`exhale_define_Core_8h_1ae26e69f74733f3287d8b5d7ed6ed3657`
+
+- :ref:`exhale_define_Core_8h_1af4c18ed7ebc4e5265b80b17b00efcb17`
+
+- :ref:`exhale_define_Core_8h_1a3da87beb927a9273070ad090f8a77ada`
+
+- :ref:`exhale_define_Core_8h_1ad40dc072aba8c6d75973282e0774d0d9`
+
+- :ref:`exhale_define_Core_8h_1ac9fb741caf0c1700a1a9c2ae2feb80a6`
+
+- :ref:`exhale_define_Core_8h_1a65e58610d1baccecc6dc7317fd37d28d`
+
+- :ref:`exhale_define_Core_8h_1a0449e0ce240101acd75f13d02c9a1995`
+
+- :ref:`exhale_define_Core_8h_1a1d45d4c1bd980cc0e0bd3ccf5c43745b`
+
+- :ref:`exhale_define_Core_8h_1a0071776d348b01fa3df01457867045f3`
+
+- :ref:`exhale_define_Core_8h_1a20f5abc834bbc4f90aaa05edfbf38a6a`
+
+- :ref:`exhale_define_Core_8h_1a4b7433365f9d7e6ddd5b4dddf19f98f7`
+
+- :ref:`exhale_define_Core_8h_1aacd030f529e4f554c7474f20c3fbc5ac`
+

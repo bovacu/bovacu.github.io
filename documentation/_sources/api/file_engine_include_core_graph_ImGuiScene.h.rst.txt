@@ -1,0 +1,75 @@
+
+.. _file_engine_include_core_graph_ImGuiScene.h:
+
+File ImGuiScene.h
+=================
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_graph>` (``engine/include/core/graph``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/graph/ImGuiScene.h``)
+-------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_graph_ImGuiScene.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``chrono``
+
+- ``core/graph/Scene.h`` (:ref:`file_engine_include_core_graph_Scene.h`)
+
+- ``core/systems/eventSystem/MouseEvent.h`` (:ref:`file_engine_include_core_systems_eventSystem_MouseEvent.h`)
+
+- ``core/systems/profiling/Profiler.h`` (:ref:`file_engine_include_core_systems_profiling_Profiler.h`)
+
+- ``imgui_impl_opengl3.h``
+
+- ``imgui_impl_sdl.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_core_Engine.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classGDE_1_1ImGuiScene`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_ImGuiScene_8h_1a59c0740f2d13e5149d3fbdef77753987`
+

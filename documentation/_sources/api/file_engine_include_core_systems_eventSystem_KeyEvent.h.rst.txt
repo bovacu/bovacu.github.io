@@ -1,0 +1,67 @@
+
+.. _file_engine_include_core_systems_eventSystem_KeyEvent.h:
+
+File KeyEvent.h
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_systems_eventSystem>` (``engine/include/core/systems/eventSystem``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/systems/eventSystem/KeyEvent.h``)
+-------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_systems_eventSystem_KeyEvent.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``Event.h`` (:ref:`file_engine_include_core_systems_eventSystem_ControllerEvent.h`)
+
+- ``core/systems/inputSystem/keysAndButtons/KeyboardKeys.h`` (:ref:`file_engine_include_core_systems_inputSystem_keysAndButtons_KeyboardKeys.h`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classGDE_1_1KeyEvent`
+
+- :ref:`exhale_class_classGDE_1_1KeyPressedEvent`
+
+- :ref:`exhale_class_classGDE_1_1KeyReleasedEvent`
+
+- :ref:`exhale_class_classGDE_1_1KeyTypedEvent`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_KeyEvent_8h_1ad9229ce28d13dbb7e82d3d238c08b641`
+

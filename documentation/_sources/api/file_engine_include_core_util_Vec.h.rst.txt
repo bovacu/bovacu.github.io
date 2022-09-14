@@ -1,0 +1,126 @@
+
+.. _file_engine_include_core_util_Vec.h:
+
+File Vec.h
+==========
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_util>` (``engine/include/core/util``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/util/Vec.h``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_util_Vec.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cmath``
+
+- ``ostream``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_core_graph_components_NineSliceSprite.h`
+
+- :ref:`file_engine_include_core_graph_components_Transform.h`
+
+- :ref:`file_engine_include_core_systems_eventSystem_ControllerEvent.h`
+
+- :ref:`file_engine_include_core_systems_eventSystem_MobileEvent.h`
+
+- :ref:`file_engine_include_core_util_Rect.h`
+
+- :ref:`file_engine_include_core_util_Util.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classGDE_1_1Vec2`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_namespaceGDE_1a5add3ab0d3232114617709fa21d7fdda`
+
+- :ref:`exhale_function_namespaceGDE_1a177c1475424633928a4737565e461f3d`
+
+- :ref:`exhale_function_namespaceGDE_1a798b89dfbe4aa278f1b3bb744a7d4d2d`
+
+- :ref:`exhale_function_namespaceGDE_1a25f4052b6f9344c6b4ca9a355bbcffd9`
+
+- :ref:`exhale_function_namespaceGDE_1a6142b32edd177f02b26b04e8205904dd`
+
+- :ref:`exhale_function_namespaceGDE_1ab8d54b6926ea657a5f304495f4e79050`
+
+- :ref:`exhale_function_namespaceGDE_1a5945dee7148f2dfa3eb507a8bc689808`
+
+- :ref:`exhale_function_namespaceGDE_1adef746515b07cd74751e6b9aba7e66e9`
+
+- :ref:`exhale_function_namespaceGDE_1a9eaa656387b821aaa8fa41e873c8110b`
+
+- :ref:`exhale_function_namespaceGDE_1a84c6a311cba77c9f72848c1a66701459`
+
+- :ref:`exhale_function_namespaceGDE_1ae8a6f7c9e95f25842c362ab50fd6c01d`
+
+- :ref:`exhale_function_namespaceGDE_1ab2efe626059881c984583df5aa329262`
+
+- :ref:`exhale_function_namespaceGDE_1afab484a8b0cf3d9bd52ba879c1c54b89`
+
+- :ref:`exhale_function_namespaceGDE_1ae59008ff152504e466dd56f2aeeaeee0`
+
+- :ref:`exhale_function_namespaceGDE_1a2d1152fb8035e8573f5183bfb9e568fc`
+
+- :ref:`exhale_function_namespaceGDE_1a5a3beb46f5c1b72d0ee7f29c51ec587e`
+
+- :ref:`exhale_function_namespaceGDE_1a0b80a945e95fb8660efdbe5bc5e0170d`
+
+- :ref:`exhale_function_namespaceGDE_1a3b475d1b9bcb3529936fdae4bd94fcf6`
+
+- :ref:`exhale_function_namespaceGDE_1ae737b5edc886d2c5f60c0ce7318c0901`
+
+- :ref:`exhale_function_namespaceGDE_1a4f38c2b6c76961e7ce483f64d91e6b1b`
+
+- :ref:`exhale_function_namespaceGDE_1a8e9c9ac3b5c12fb9b2fc101b7ff25a6d`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d`
+
+- :ref:`exhale_typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063`
+

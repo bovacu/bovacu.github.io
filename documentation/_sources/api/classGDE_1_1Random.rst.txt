@@ -1,0 +1,17 @@
+.. _exhale_class_classGDE_1_1Random:
+
+Class Random
+============
+
+- Defined in :ref:`file_engine_include_core_util_Random.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GDE::Random
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

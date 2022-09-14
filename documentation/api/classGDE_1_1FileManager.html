@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class FileManager &mdash; GDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class FixedViewPort" href="classGDE_1_1FixedViewPort.html" />
+    <link rel="prev" title="Class FileHandler" href="classGDE_1_1FileHandler.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> GDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Active.html">Struct Active</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1AnimationNode.html">Struct AnimationNode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1AnimationTransition.html">Struct AnimationTransition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Atlas.html">Struct Atlas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1B2DConfig.html">Struct B2DConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1BodyConfig.html">Struct BodyConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1CanvasEventStopper.html">Struct CanvasEventStopper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1CharInfo.html">Struct CharInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Color.html">Struct Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Command.html">Struct Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Controller.html">Struct Controller</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Effect__Controllers.html">Struct Effect_Controllers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1File.html">Template Struct File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1FontManager_1_1FontHandler.html">Struct FontManager::FontHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1FrameBufferSpecification.html">Struct FrameBufferSpecification</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig.html">Struct GDEConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig_1_1ProjectProperties.html">Struct GDEConfig::ProjectProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig_1_1WindowProperties.html">Struct GDEConfig::WindowProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GenerationSettings.html">Struct GenerationSettings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Music.html">Struct Music</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NineSlice.html">Struct NineSlice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NodeID__JsonPair.html">Struct NodeID_JsonPair</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NoiseMap.html">Struct NoiseMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1OpenGLVertex.html">Struct OpenGLVertex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1OpenGLVertexDebug.html">Struct OpenGLVertexDebug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ParticleData.html">Struct ParticleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1PhysicsManager_1_1Collision__CallbackFunction.html">Struct PhysicsManager::Collision_CallbackFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Probability.html">Struct Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ProceduralMap.html">Struct ProceduralMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Rect.html">Template Struct Rect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1RollingBuffer.html">Struct RollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ScrollingBuffer.html">Struct ScrollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Sfx.html">Struct Sfx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Sound.html">Struct Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1State.html">Struct State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1StaticTransform.html">Struct StaticTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Stub.html">Template Struct Stub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Stub_3_01R_07Args_8_8_8_08_4.html">Template Struct Stub&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Tag.html">Struct Tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1TextureInfo.html">Struct TextureInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VertexConfig.html">Struct VertexConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VertexData.html">Struct VertexData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VibrationConfig.html">Struct VibrationConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1AdaptiveViewPort.html">Class AdaptiveViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Animation.html">Class Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1AnimationSystem.html">Class AnimationSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BadDelegateCall.html">Class BadDelegateCall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BadECSSystemSwap.html">Class BadECSSystemSwap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BasicPerlinNoise.html">Template Class BasicPerlinNoise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Batch.html">Class Batch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Body.html">Class Body</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Camera.html">Class Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Canvas.html">Class Canvas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1CellularAutomata.html">Class CellularAutomata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Clock.html">Class Clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ConfigManager.html">Class ConfigManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Console.html">Class Console</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerAxisMovedEvent.html">Class ControllerAxisMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerButtonDownEvent.html">Class ControllerButtonDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerButtonUpEvent.html">Class ControllerButtonUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerInput.html">Class ControllerInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerVibrationManager.html">Class ControllerVibrationManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Delta.html">Class Delta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Easing.html">Class Easing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ECSManager.html">Class ECSManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ECSSystem.html">Class ECSSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Engine.html">Class Engine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Event.html">Class Event</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventBus.html">Template Class EventBus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventBus_1_1HandlerId.html">Class EventBus::HandlerId</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventDispatcher.html">Class EventDispatcher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FileHandler.html">Class FileHandler</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class FileManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FixedViewPort.html">Class FixedViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Font.html">Class Font</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FontManager.html">Class FontManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FrameBuffer.html">Class FrameBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FreeViewPort.html">Class FreeViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Graph.html">Class Graph</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Image.html">Class Image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ImGuiScene.html">Class ImGuiScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Input.html">Class Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1InputManager.html">Class InputManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1IRenderizable.html">Class IRenderizable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1IViewPort.html">Class IViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyboardInput.html">Class KeyboardInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyEvent.html">Class KeyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyPressedEvent.html">Class KeyPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyReleasedEvent.html">Class KeyReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyTypedEvent.html">Class KeyTypedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1LoadVertexConfigNotInvoked.html">Class LoadVertexConfigNotInvoked</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Manager.html">Class Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MapGenerator.html">Class MapGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MDelegate.html">Template Class MDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MDelegate_3_01R_07Args_8_8_8_08_4.html">Template Class MDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileInput.html">Class MobileInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchDownEvent.html">Class MobileTouchDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchMovedEvent.html">Class MobileTouchMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchUpEvent.html">Class MobileTouchUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonEvent.html">Class MouseButtonEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonPressedEvent.html">Class MouseButtonPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonReleasedEvent.html">Class MouseButtonReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseInput.html">Class MouseInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseMovedEvent.html">Class MouseMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseScrolledEvent.html">Class MouseScrolledEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1NineSliceSprite.html">Class NineSliceSprite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ParticleSystem.html">Class ParticleSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PerlinNoiseManager.html">Class PerlinNoiseManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PhysicsManager.html">Class PhysicsManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PhysicsManager_1_1CollisionCallback.html">Class PhysicsManager::CollisionCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Platform.html">Class Platform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Profiler.html">Class Profiler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Random.html">Class Random</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Renderer.html">Class Renderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Scene.html">Class Scene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SceneManager.html">Class SceneManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Shader.html">Class Shader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ShaderManager.html">Class ShaderManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Shape.html">Class Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SoundManager.html">Class SoundManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteBatch.html">Class SpriteBatch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteBatch_1_1Debug.html">Class SpriteBatch::Debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteRenderer.html">Class SpriteRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TextRenderer.html">Class TextRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Texture.html">Class Texture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TextureAtlasManager.html">Class TextureAtlasManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Transform.html">Class Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TransitionParams.html">Class TransitionParams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UDelegate.html">Template Class UDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UDelegate_3_01R_07Args_8_8_8_08_4.html">Template Class UDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UI.html">Class UI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UIInteractable.html">Class UIInteractable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Util.html">Class Util</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Vec2.html">Template Class Vec2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Window.html">Class Window</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowClosedEvent.html">Class WindowClosedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowFrameEvent.html">Class WindowFrameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowInput.html">Class WindowInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowMinimizedEvent.html">Class WindowMinimizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowMovedEvent.html">Class WindowMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowRenderEvent.html">Class WindowRenderEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowResizedEvent.html">Class WindowResizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowUpdateEvent.html">Class WindowUpdateEvent</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="library_root.html">Library API</a> &raquo;</li>
+      <li>Class FileManager</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/classGDE_1_1FileManager.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-filemanager">
+<span id="exhale-class-classgde-1-1filemanager"></span><h1>Class FileManager<a class="headerlink" href="#class-filemanager" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_engine_include_core_systems_fileSystem_FileManager.h.html#file-engine-include-core-systems-filesystem-filemanager-h"><span class="std std-ref">File FileManager.h</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManagerE">
+<span id="_CPPv3N3GDE11FileManagerE"></span><span id="_CPPv2N3GDE11FileManagerE"></span><span id="GDE::FileManager"></span><span class="target" id="classGDE_1_1FileManager"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FileManager</span></span></span><a class="headerlink" href="#_CPPv4N3GDE11FileManagerE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager4openERKNSt6stringERK8FileModeb">
+<span id="_CPPv3N3GDE11FileManager4openERKNSt6stringERK8FileModeb"></span><span id="_CPPv2N3GDE11FileManager4openERKNSt6stringERK8FileModeb"></span><span id="GDE::FileManager::open__ssCR.FileModeCR.b"></span><span class="target" id="classGDE_1_1FileManager_1a87d4d0c089f04d51d4905bc49fde10cc"></span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">open</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_filePath</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespaceGDE_1ac10efe0cedf760e3f6c595fd7dad0d0f.html#_CPPv4N3GDE8FileModeE" title="GDE::FileMode"><span class="n"><span class="pre">FileMode</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_fileMode</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_silentNotFound</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager4openERKNSt6stringERK8FileModeb" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Opens a file, it must exist. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_filePath</strong> – Path to the file </p></li>
+<li><p><strong>_fileMode</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> mode </p></li>
+<li><p><strong>_silentNotFound</strong> – Don’t shout if there is an error </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>FileHandler* </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager5closeEP11FileHandler">
+<span id="_CPPv3N3GDE11FileManager5closeEP11FileHandler"></span><span id="_CPPv2N3GDE11FileManager5closeEP11FileHandler"></span><span id="GDE::FileManager::close__FileHandlerP"></span><span class="target" id="classGDE_1_1FileManager_1aa3f29c3b7f744673c1af7bbaa78028d5"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">close</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_file</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager5closeEP11FileHandler" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Closes a file. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_file</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager12readFullFileEP11FileHandler">
+<span id="_CPPv3N3GDE11FileManager12readFullFileEP11FileHandler"></span><span id="_CPPv2N3GDE11FileManager12readFullFileEP11FileHandler"></span><span id="GDE::FileManager::readFullFile__FileHandlerP"></span><span class="target" id="classGDE_1_1FileManager_1af3be4d2fab114814557cceaa57136df1"></span><a class="reference internal" href="typedef_namespaceGDE_1a9d70d65467da3016f44680281de0683b.html#_CPPv4N3GDE7FileStrE" title="GDE::FileStr"><span class="n"><span class="pre">FileStr</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readFullFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager12readFullFileEP11FileHandler" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Reads the full file into a string. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>FileStr </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager16readAllLinesFileEP11FileHandler">
+<span id="_CPPv3N3GDE11FileManager16readAllLinesFileEP11FileHandler"></span><span id="_CPPv2N3GDE11FileManager16readAllLinesFileEP11FileHandler"></span><span id="GDE::FileManager::readAllLinesFile__FileHandlerP"></span><span class="target" id="classGDE_1_1FileManager_1ab3ae5dca5723264f7ca9318dbe23d94e"></span><a class="reference internal" href="typedef_namespaceGDE_1a2f983e3263c9211d2ce9306cb77ce451.html#_CPPv4N3GDE9FileLinesE" title="GDE::FileLines"><span class="n"><span class="pre">FileLines</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readAllLinesFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager16readAllLinesFileEP11FileHandler" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Reads the full file into separated lines. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>FileLines </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager13readChunkFileEP11FileHandlerii">
+<span id="_CPPv3N3GDE11FileManager13readChunkFileEP11FileHandlerii"></span><span id="_CPPv2N3GDE11FileManager13readChunkFileEP11FileHandlerii"></span><span id="GDE::FileManager::readChunkFile__FileHandlerP.i.i"></span><span class="target" id="classGDE_1_1FileManager_1adc1c529929d03b3d0894579e9db29191"></span><a class="reference internal" href="typedef_namespaceGDE_1a9d70d65467da3016f44680281de0683b.html#_CPPv4N3GDE7FileStrE" title="GDE::FileStr"><span class="n"><span class="pre">FileStr</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readChunkFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_initByte</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_endByte</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager13readChunkFileEP11FileHandlerii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Reads a chunk of a file from init point to end point. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_initByte</strong> – Init point to read. 1 -&gt; 1 char, 2 -&gt; 2 chars … </p></li>
+<li><p><strong>_endByte</strong> – End point to read 1 -&gt; 1 char, 2 -&gt; 2 chars … </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>FileStr </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager14readLineInFileEP11FileHandleri">
+<span id="_CPPv3N3GDE11FileManager14readLineInFileEP11FileHandleri"></span><span id="_CPPv2N3GDE11FileManager14readLineInFileEP11FileHandleri"></span><span id="GDE::FileManager::readLineInFile__FileHandlerP.i"></span><span class="target" id="classGDE_1_1FileManager_1ae71c67c002d1f93b703b80589a9264d4"></span><a class="reference internal" href="typedef_namespaceGDE_1a9d70d65467da3016f44680281de0683b.html#_CPPv4N3GDE7FileStrE" title="GDE::FileStr"><span class="n"><span class="pre">FileStr</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readLineInFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_line</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager14readLineInFileEP11FileHandleri" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Reads a line in the file. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_line</strong> – Line to read </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>FileStr </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager15readLinesInFileEP11FileHandlerRNSt6vectorIiEE">
+<span id="_CPPv3N3GDE11FileManager15readLinesInFileEP11FileHandlerRNSt6vectorIiEE"></span><span id="_CPPv2N3GDE11FileManager15readLinesInFileEP11FileHandlerRNSt6vectorIiEE"></span><span id="GDE::FileManager::readLinesInFile__FileHandlerP.std::vector:i:R"></span><span class="target" id="classGDE_1_1FileManager_1a8246545b17a5734a79d78c31624d05c2"></span><a class="reference internal" href="typedef_namespaceGDE_1a2f983e3263c9211d2ce9306cb77ce451.html#_CPPv4N3GDE9FileLinesE" title="GDE::FileLines"><span class="n"><span class="pre">FileLines</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readLinesInFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_lines</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager15readLinesInFileEP11FileHandlerRNSt6vectorIiEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Reads a list of lines in the file. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_lines</strong> – List of lines to read </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>FileLines </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager16writeChunkToFileEP11FileHandlerPKc6size_t">
+<span id="_CPPv3N3GDE11FileManager16writeChunkToFileEP11FileHandlerPKc6size_t"></span><span id="_CPPv2N3GDE11FileManager16writeChunkToFileEP11FileHandlerPKc6size_t"></span><span id="GDE::FileManager::writeChunkToFile__FileHandlerP.cCP.s"></span><span class="target" id="classGDE_1_1FileManager_1a7022e0d3a12e3ba582df68f567fd3b46"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">writeChunkToFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager16writeChunkToFileEP11FileHandlerPKc6size_t" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Writes some text to the file and replaces its previous content. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_content</strong> – Text to write </p></li>
+<li><p><strong>_size</strong> – Size of the text </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager16writeChunkToFileEP11FileHandlerRKNSt6stringE">
+<span id="_CPPv3N3GDE11FileManager16writeChunkToFileEP11FileHandlerRKNSt6stringE"></span><span id="_CPPv2N3GDE11FileManager16writeChunkToFileEP11FileHandlerRKNSt6stringE"></span><span id="GDE::FileManager::writeChunkToFile__FileHandlerP.ssCR"></span><span class="target" id="classGDE_1_1FileManager_1a16b03f5d35f4cadfbea40c03af7e839e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">writeChunkToFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_content</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager16writeChunkToFileEP11FileHandlerRKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Writes some text to the file and replaces its previous content. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_size</strong> – Size of the text </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager17appendChunkToFileEP11FileHandlerPKc6size_ti">
+<span id="_CPPv3N3GDE11FileManager17appendChunkToFileEP11FileHandlerPKc6size_ti"></span><span id="_CPPv2N3GDE11FileManager17appendChunkToFileEP11FileHandlerPKc6size_ti"></span><span id="GDE::FileManager::appendChunkToFile__FileHandlerP.cCP.s.i"></span><span class="target" id="classGDE_1_1FileManager_1af761f7056b3bc72c93af717d66615a91"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkToFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_size</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_where</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager17appendChunkToFileEP11FileHandlerPKc6size_ti" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Writes some text to the file on an specific point. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_content</strong> – Text to write </p></li>
+<li><p><strong>_size</strong> – Size of the text </p></li>
+<li><p><strong>_where</strong> – Point in the file. 1 -&gt; after character 1, 15 -&gt; after character 15 … </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager17appendChunkToFileEP11FileHandlerRKNSt6stringEi">
+<span id="_CPPv3N3GDE11FileManager17appendChunkToFileEP11FileHandlerRKNSt6stringEi"></span><span id="_CPPv2N3GDE11FileManager17appendChunkToFileEP11FileHandlerRKNSt6stringEi"></span><span id="GDE::FileManager::appendChunkToFile__FileHandlerP.ssCR.i"></span><span class="target" id="classGDE_1_1FileManager_1a0427bff2ab45e681fdc8b518c1ea6e73"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkToFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_where</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager17appendChunkToFileEP11FileHandlerRKNSt6stringEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Writes some text to the file on an specific point. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_content</strong> – Text to write </p></li>
+<li><p><strong>_where</strong> – Point in the file. 1 -&gt; after character 1, 15 -&gt; after character 15 … </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager22appendChunkToFileAtEndEP11FileHandlerPKc6size_t">
+<span id="_CPPv3N3GDE11FileManager22appendChunkToFileAtEndEP11FileHandlerPKc6size_t"></span><span id="_CPPv2N3GDE11FileManager22appendChunkToFileAtEndEP11FileHandlerPKc6size_t"></span><span id="GDE::FileManager::appendChunkToFileAtEnd__FileHandlerP.cCP.s"></span><span class="target" id="classGDE_1_1FileManager_1ac99df6937405ba9eb3b80b618e2e9707"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkToFileAtEnd</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager22appendChunkToFileAtEndEP11FileHandlerPKc6size_t" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Writes some text at the end of the current file content. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_content</strong> – Text to write </p></li>
+<li><p><strong>_size</strong> – Size of the text </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager22appendChunkToFileAtEndEP11FileHandlerRKNSt6stringE">
+<span id="_CPPv3N3GDE11FileManager22appendChunkToFileAtEndEP11FileHandlerRKNSt6stringE"></span><span id="_CPPv2N3GDE11FileManager22appendChunkToFileAtEndEP11FileHandlerRKNSt6stringE"></span><span id="GDE::FileManager::appendChunkToFileAtEnd__FileHandlerP.ssCR"></span><span class="target" id="classGDE_1_1FileManager_1a3b49eb62362a0f77060321cc4f2aafbc"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkToFileAtEnd</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_content</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager22appendChunkToFileAtEndEP11FileHandlerRKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Writes some text at the end of the current file content. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_content</strong> – Text to write </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager23appendChunkInLineToFileEP11FileHandlerPKc6size_ti">
+<span id="_CPPv3N3GDE11FileManager23appendChunkInLineToFileEP11FileHandlerPKc6size_ti"></span><span id="_CPPv2N3GDE11FileManager23appendChunkInLineToFileEP11FileHandlerPKc6size_ti"></span><span id="GDE::FileManager::appendChunkInLineToFile__FileHandlerP.cCP.s.i"></span><span class="target" id="classGDE_1_1FileManager_1a36b825641e6ebdaf6f8e6625c09b7017"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkInLineToFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_size</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_line</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager23appendChunkInLineToFileEP11FileHandlerPKc6size_ti" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Writes some text in an specific line of the file. The previous content of the line is moved to the next line. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_content</strong> – Text to write </p></li>
+<li><p><strong>_size</strong> – Size of the text </p></li>
+<li><p><strong>_line</strong> – Line to write the text </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager23appendChunkInLineToFileEP11FileHandlerRKNSt6stringEi">
+<span id="_CPPv3N3GDE11FileManager23appendChunkInLineToFileEP11FileHandlerRKNSt6stringEi"></span><span id="_CPPv2N3GDE11FileManager23appendChunkInLineToFileEP11FileHandlerRKNSt6stringEi"></span><span id="GDE::FileManager::appendChunkInLineToFile__FileHandlerP.ssCR.i"></span><span class="target" id="classGDE_1_1FileManager_1a9bbec2a9a2fac34beec5164b46c82cab"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkInLineToFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_line</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager23appendChunkInLineToFileEP11FileHandlerRKNSt6stringEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Writes some text in an specific line of the file. The previous content of the line is moved to the next line. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_content</strong> – Text to write </p></li>
+<li><p><strong>_line</strong> – Line to write the text </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager22appendChunkAtEndOfLineEP11FileHandlerPKc6size_ti">
+<span id="_CPPv3N3GDE11FileManager22appendChunkAtEndOfLineEP11FileHandlerPKc6size_ti"></span><span id="_CPPv2N3GDE11FileManager22appendChunkAtEndOfLineEP11FileHandlerPKc6size_ti"></span><span id="GDE::FileManager::appendChunkAtEndOfLine__FileHandlerP.cCP.s.i"></span><span class="target" id="classGDE_1_1FileManager_1a478dad435e8c59bd5f0f01342ab2ad33"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkAtEndOfLine</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_size</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_line</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager22appendChunkAtEndOfLineEP11FileHandlerPKc6size_ti" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Writes some text at the end of an specific line. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_content</strong> – Text to write </p></li>
+<li><p><strong>_size</strong> – Size of the text </p></li>
+<li><p><strong>_line</strong> – Line to write the text </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager22appendChunkAtEndOfLineEP11FileHandlerRKNSt6stringEi">
+<span id="_CPPv3N3GDE11FileManager22appendChunkAtEndOfLineEP11FileHandlerRKNSt6stringEi"></span><span id="_CPPv2N3GDE11FileManager22appendChunkAtEndOfLineEP11FileHandlerRKNSt6stringEi"></span><span id="GDE::FileManager::appendChunkAtEndOfLine__FileHandlerP.ssCR.i"></span><span class="target" id="classGDE_1_1FileManager_1acc51460903640c6322fb675fd890f0c9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkAtEndOfLine</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_line</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager22appendChunkAtEndOfLineEP11FileHandlerRKNSt6stringEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Writes some text at the end of an specific line. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_content</strong> – Text to write </p></li>
+<li><p><strong>_line</strong> – Line to write the text </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager18replaceChunkInFileEP11FileHandlerRKNSt6stringERKNSt6stringE">
+<span id="_CPPv3N3GDE11FileManager18replaceChunkInFileEP11FileHandlerRKNSt6stringERKNSt6stringE"></span><span id="_CPPv2N3GDE11FileManager18replaceChunkInFileEP11FileHandlerRKNSt6stringERKNSt6stringE"></span><span id="GDE::FileManager::replaceChunkInFile__FileHandlerP.ssCR.ssCR"></span><span class="target" id="classGDE_1_1FileManager_1a1cbef27e8c441476aecdd8be1375cf88"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">replaceChunkInFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_old</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_new</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager18replaceChunkInFileEP11FileHandlerRKNSt6stringERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Replaces all of the _old occurrences with the _new text. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_old</strong> – Text to be replaced </p></li>
+<li><p><strong>_new</strong> – Replacing text </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager9clearFileEP11FileHandler">
+<span id="_CPPv3N3GDE11FileManager9clearFileEP11FileHandler"></span><span id="_CPPv2N3GDE11FileManager9clearFileEP11FileHandler"></span><span id="GDE::FileManager::clearFile__FileHandlerP"></span><span class="target" id="classGDE_1_1FileManager_1a8d34e627053d52042394824099b626a9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clearFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager9clearFileEP11FileHandler" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Empties the file content. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager10removeFileERNSt6stringE">
+<span id="_CPPv3N3GDE11FileManager10removeFileERNSt6stringE"></span><span id="_CPPv2N3GDE11FileManager10removeFileERNSt6stringE"></span><span id="GDE::FileManager::removeFile__ssR"></span><span class="target" id="classGDE_1_1FileManager_1ac7dd5e4125073c4584a1b664667db2b7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeFile</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_filePath</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager10removeFileERNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Deletes the file from the file system. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_filePath</strong> – Path to the file to delete </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager21removeChunkLineInFileEP11FileHandleri">
+<span id="_CPPv3N3GDE11FileManager21removeChunkLineInFileEP11FileHandleri"></span><span id="_CPPv2N3GDE11FileManager21removeChunkLineInFileEP11FileHandleri"></span><span id="GDE::FileManager::removeChunkLineInFile__FileHandlerP.i"></span><span class="target" id="classGDE_1_1FileManager_1ae88ac1a335484461a291346afeaabfd7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeChunkLineInFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_line</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager21removeChunkLineInFileEP11FileHandleri" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Removes a line from the file. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_line</strong> – Line to remove </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager22removeChunkLinesInFileEP11FileHandlerRNSt6vectorIiEE">
+<span id="_CPPv3N3GDE11FileManager22removeChunkLinesInFileEP11FileHandlerRNSt6vectorIiEE"></span><span id="_CPPv2N3GDE11FileManager22removeChunkLinesInFileEP11FileHandlerRNSt6vectorIiEE"></span><span id="GDE::FileManager::removeChunkLinesInFile__FileHandlerP.std::vector:i:R"></span><span class="target" id="classGDE_1_1FileManager_1a0d17cbe2faaeaa71b379e3ecccce40a0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeChunkLinesInFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_lines</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager22removeChunkLinesInFileEP11FileHandlerRNSt6vectorIiEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Removes a list of lines from the file. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_lines</strong> – List of lines to remove </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager11removeChunkEP11FileHandlerii">
+<span id="_CPPv3N3GDE11FileManager11removeChunkEP11FileHandlerii"></span><span id="_CPPv2N3GDE11FileManager11removeChunkEP11FileHandlerii"></span><span id="GDE::FileManager::removeChunk__FileHandlerP.i.i"></span><span class="target" id="classGDE_1_1FileManager_1a10341bdeb0724b62a9b587dab857f748"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeChunk</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_initByte</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_endByte</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager11removeChunkEP11FileHandlerii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Removes an amount of text from the file. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_handler</strong> – <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> handler </p></li>
+<li><p><strong>_initByte</strong> – Init point to read. 1 -&gt; 1 char, 2 -&gt; 2 chars … </p></li>
+<li><p><strong>_endByte</strong> – End point to read 1 -&gt; 1 char, 2 -&gt; 2 chars … </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager10createFileERKNSt6stringE">
+<span id="_CPPv3N3GDE11FileManager10createFileERKNSt6stringE"></span><span id="_CPPv2N3GDE11FileManager10createFileERKNSt6stringE"></span><span id="GDE::FileManager::createFile__ssCR"></span><span class="target" id="classGDE_1_1FileManager_1adf00e04fe7819d7cb4fb5ed32ca52e72"></span><a class="reference internal" href="classGDE_1_1FileHandler.html#_CPPv4N3GDE11FileHandlerE" title="GDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">createFile</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_filePath</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager10createFileERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Creates a new file in the file system. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_filePath</strong> – Path to the new file </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>FileHandler* </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager16moveOrRenameFileERKNSt6stringERKNSt6stringE">
+<span id="_CPPv3N3GDE11FileManager16moveOrRenameFileERKNSt6stringERKNSt6stringE"></span><span id="_CPPv2N3GDE11FileManager16moveOrRenameFileERKNSt6stringERKNSt6stringE"></span><span id="GDE::FileManager::moveOrRenameFile__ssCR.ssCR"></span><span class="target" id="classGDE_1_1FileManager_1a601d489fd52d8a1ff58712540cf15a68"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">moveOrRenameFile</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_filePath</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_newName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager16moveOrRenameFileERKNSt6stringERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Renames or moves a file in the file system. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_filePath</strong> – Path to the file </p></li>
+<li><p><strong>_newName</strong> – New name or path for the file </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE11FileManager10fileExistsERKNSt6stringE">
+<span id="_CPPv3N3GDE11FileManager10fileExistsERKNSt6stringE"></span><span id="_CPPv2N3GDE11FileManager10fileExistsERKNSt6stringE"></span><span id="GDE::FileManager::fileExists__ssCR"></span><span class="target" id="classGDE_1_1FileManager_1a2e282ef582db629872c07977638e61a0"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fileExists</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_pathToFile</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE11FileManager10fileExistsERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns if the file exists or not. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_pathToFile</strong> – Path to file </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classGDE_1_1FileHandler.html" class="btn btn-neutral float-left" title="Class FileHandler" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classGDE_1_1FixedViewPort.html" class="btn btn-neutral float-right" title="Class FixedViewPort" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

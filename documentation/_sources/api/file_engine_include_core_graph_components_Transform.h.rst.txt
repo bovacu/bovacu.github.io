@@ -1,0 +1,75 @@
+
+.. _file_engine_include_core_graph_components_Transform.h:
+
+File Transform.h
+================
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_graph_components>` (``engine/include/core/graph/components``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/graph/components/Transform.h``)
+-----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_graph_components_Transform.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``core/util/Vec.h`` (:ref:`file_engine_include_core_util_Vec.h`)
+
+- ``entt/entity/entity.hpp``
+
+- ``glm/ext/matrix_transform.hpp``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_GDE.h`
+
+- :ref:`file_engine_include_core_graph_components_Body.h`
+
+- :ref:`file_engine_include_core_render_elements_Batch.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classGDE_1_1Transform`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_Transform_8h_1a52def656a21c22f8e6592a9f04842b84`
+

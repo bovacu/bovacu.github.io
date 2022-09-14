@@ -1,0 +1,64 @@
+
+.. _program_listing_file_engine_include_core_systems_configSystem_ConfigManager.h:
+
+Program Listing for File ConfigManager.h
+========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_systems_configSystem_ConfigManager.h>` (``engine/include/core/systems/configSystem/ConfigManager.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   //
+   // Created by borja on 15/05/22.
+   //
+   
+   #ifndef ENGINE_CONFIG_LOADER_H
+   #define ENGINE_CONFIG_LOADER_H
+   
+   #include "nlohmann/json.hpp"
+   #include "core/graph/Scene.h"
+   #include "core/systems/fileSystem/FileManager.h"
+   
+   namespace GDE {
+   
+       class Window;
+       struct GDEConfig;
+   
+       struct NodeID_JsonPair {
+           NodeID nodeId;
+           nlohmann::json json;
+       };
+   
+       class ConfigManager {
+           public:
+               void loadScene(Manager* _manager, Scene* _scene, Window* _window, const std::string& _configFilePath);
+   
+               void loadGDEConfig(GDEConfig* _config, FileManager& _manager);
+   
+           private:
+               void instantiatePrefab(Scene* _scene, const nlohmann::json& _json);
+   
+               std::unordered_map<std::string, NodeID_JsonPair> createNodes(Scene* _scene, const nlohmann::json& _sceneJson);
+   
+               void loadNodes(Scene* _scene, Window* _window, const nlohmann::json& _sceneJson, const std::unordered_map<std::string, NodeID_JsonPair>& _nodes);
+   
+               void loadAssets(Scene* _scene, Window* _window, const nlohmann::json& _json);
+   
+               void loadTransformComponent(Scene* _scene, const NodeID& _nodeID, const nlohmann::json& _transformJson);
+   
+               void loadCameraComponent(const NodeID& _nodeID, Scene* _scene, Window* _window, const nlohmann::json& _cameraJson);
+   
+               void loadSpriteRendererComponent(const NodeID& _nodeID, Scene* _scene, const nlohmann::json& _spriteRendererJson);
+   
+               void loadTextRendererComponent(const NodeID& _nodeID, Scene* _scene, const nlohmann::json& _textRendererJson);
+   
+               void loadBodyComponent(const NodeID& _nodeID, Scene* _scene, const nlohmann::json& _bodyJson);
+   
+               void loadStaticTransformComponent(const NodeID& _node, Scene* _scene, const nlohmann::json& _bodyJson);
+       };
+   
+   }
+   
+   #endif //ENGINE_CONFIG_LOADER_H

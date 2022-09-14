@@ -1,0 +1,42 @@
+.. _exhale_class_classGDE_1_1Event:
+
+Class Event
+===========
+
+- Defined in :ref:`file_engine_include_core_systems_eventSystem_Event.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public GDE::ControllerAxisMovedEvent`` (:ref:`exhale_class_classGDE_1_1ControllerAxisMovedEvent`)
+- ``public GDE::ControllerButtonDownEvent`` (:ref:`exhale_class_classGDE_1_1ControllerButtonDownEvent`)
+- ``public GDE::ControllerButtonUpEvent`` (:ref:`exhale_class_classGDE_1_1ControllerButtonUpEvent`)
+- ``public GDE::KeyEvent`` (:ref:`exhale_class_classGDE_1_1KeyEvent`)
+- ``public GDE::MobileTouchDownEvent`` (:ref:`exhale_class_classGDE_1_1MobileTouchDownEvent`)
+- ``public GDE::MobileTouchMovedEvent`` (:ref:`exhale_class_classGDE_1_1MobileTouchMovedEvent`)
+- ``public GDE::MobileTouchUpEvent`` (:ref:`exhale_class_classGDE_1_1MobileTouchUpEvent`)
+- ``public GDE::MouseButtonEvent`` (:ref:`exhale_class_classGDE_1_1MouseButtonEvent`)
+- ``public GDE::MouseMovedEvent`` (:ref:`exhale_class_classGDE_1_1MouseMovedEvent`)
+- ``public GDE::MouseScrolledEvent`` (:ref:`exhale_class_classGDE_1_1MouseScrolledEvent`)
+- ``public GDE::WindowClosedEvent`` (:ref:`exhale_class_classGDE_1_1WindowClosedEvent`)
+- ``public GDE::WindowFrameEvent`` (:ref:`exhale_class_classGDE_1_1WindowFrameEvent`)
+- ``public GDE::WindowMinimizedEvent`` (:ref:`exhale_class_classGDE_1_1WindowMinimizedEvent`)
+- ``public GDE::WindowMovedEvent`` (:ref:`exhale_class_classGDE_1_1WindowMovedEvent`)
+- ``public GDE::WindowRenderEvent`` (:ref:`exhale_class_classGDE_1_1WindowRenderEvent`)
+- ``public GDE::WindowResizedEvent`` (:ref:`exhale_class_classGDE_1_1WindowResizedEvent`)
+- ``public GDE::WindowUpdateEvent`` (:ref:`exhale_class_classGDE_1_1WindowUpdateEvent`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GDE::Event
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

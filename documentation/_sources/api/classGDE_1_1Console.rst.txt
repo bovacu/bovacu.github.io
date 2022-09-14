@@ -1,0 +1,17 @@
+.. _exhale_class_classGDE_1_1Console:
+
+Class Console
+=============
+
+- Defined in :ref:`file_engine_include_core_systems_console_Console.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GDE::Console
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

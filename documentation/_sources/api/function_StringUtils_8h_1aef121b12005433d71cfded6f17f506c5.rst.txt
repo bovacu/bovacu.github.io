@@ -1,0 +1,14 @@
+.. _exhale_function_StringUtils_8h_1aef121b12005433d71cfded6f17f506c5:
+
+Function splitGetIndex
+======================
+
+- Defined in :ref:`file_engine_include_core_util_StringUtils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: splitGetIndex(const std::string&, const std::string&, int)
+   :project: My Project

@@ -1,0 +1,27 @@
+.. _dir_engine_include:
+
+
+Directory include
+=================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_engine>` (``engine``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``engine/include``
+
+Subdirectories
+--------------
+
+- :ref:`dir_engine_include_core`
+
+
+Files
+-----
+
+- :ref:`file_engine_include_GDE.h`
+- :ref:`file_engine_include_GDEEntry.h`
+
+

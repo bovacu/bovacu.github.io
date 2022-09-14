@@ -1,0 +1,62 @@
+
+.. _program_listing_file_engine_include_core_render_elements_Batch.h:
+
+Program Listing for File Batch.h
+================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_render_elements_Batch.h>` (``engine/include/core/render/elements/Batch.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   //
+   // Created by borja on 9/5/22.
+   //
+   
+   #ifndef GDE_BATCH_H
+   #define GDE_BATCH_H
+   
+   #include <vector>
+   #include "core/render/elements/Vertex.h"
+   #include "core/render/elements/Shader.h"
+   #include "core/graph/components/Transform.h"
+   
+   
+   enum BatchPriority {
+       SpritePriority = 0,
+       TextPriority = 1
+   };
+   
+   namespace GDE {
+   
+       class SpriteBatch;
+       class IRenderizable;
+   
+       class Batch {
+           friend class SpriteBatch;
+   
+           private:
+   
+           SpriteBatch* spriteBatch = nullptr;
+   
+           BatchPriority priority = BatchPriority::SpritePriority;
+   
+           int layer = 0;
+   
+           Shader* shader = nullptr;
+   
+           std::vector<OpenGLVertex> vertexBuffer {};
+   
+           std::vector<uint32_t> indexBuffer {};
+   
+           int vertexCount = 0;
+   
+           GLuint textureID = -1;
+   
+           void draw(const IRenderizable* _renderizable, const Transform& _transform);
+       };
+   
+   }
+   
+   #endif //GDE_BATCH_H

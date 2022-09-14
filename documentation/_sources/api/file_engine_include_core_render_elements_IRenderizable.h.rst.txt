@@ -1,0 +1,66 @@
+
+.. _file_engine_include_core_render_elements_IRenderizable.h:
+
+File IRenderizable.h
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_render_elements>` (``engine/include/core/render/elements``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/render/elements/IRenderizable.h``)
+--------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_render_elements_IRenderizable.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``core/render/elements/Batch.h`` (:ref:`file_engine_include_core_render_elements_Batch.h`)
+
+- ``core/render/elements/ShaderManager.h`` (:ref:`file_engine_include_core_render_elements_ShaderManager.h`)
+
+- ``core/render/elements/Texture.h`` (:ref:`file_engine_include_core_render_elements_Texture.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_core_graph_components_SpriteRenderer.h`
+
+- :ref:`file_engine_include_core_graph_components_TextRenderer.h`
+
+- :ref:`file_engine_include_core_graph_components_UI.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classGDE_1_1IRenderizable`
+

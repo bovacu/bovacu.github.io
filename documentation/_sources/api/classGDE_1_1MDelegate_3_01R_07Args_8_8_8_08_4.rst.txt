@@ -1,0 +1,17 @@
+.. _exhale_class_classGDE_1_1MDelegate_3_01R_07Args_8_8_8_08_4:
+
+Template Class MDelegate< R(Args...) >
+======================================
+
+- Defined in :ref:`file_engine_include_core_util_Delegate.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GDE::MDelegate< R(Args...)>
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

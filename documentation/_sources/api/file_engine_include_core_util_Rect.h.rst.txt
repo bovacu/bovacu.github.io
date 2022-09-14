@@ -1,0 +1,74 @@
+
+.. _file_engine_include_core_util_Rect.h:
+
+File Rect.h
+===========
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_util>` (``engine/include/core/util``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/util/Rect.h``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_util_Rect.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``Vec.h`` (:ref:`file_engine_include_core_util_Vec.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_core_util_Util.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structGDE_1_1Rect`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_namespaceGDE_1a358bf6684dcdf38b8e2a2761100b5751`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_namespaceGDE_1a0a4ea3743a33aa5dd5857744cb5457e3`
+
+- :ref:`exhale_typedef_namespaceGDE_1aedb845789bfd06d662942fbf43f6b06f`
+

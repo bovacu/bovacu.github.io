@@ -1,0 +1,88 @@
+
+.. _file_engine_include_core_systems_profiling_Profiler.h:
+
+File Profiler.h
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_systems_profiling>` (``engine/include/core/systems/profiling``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/systems/profiling/Profiler.h``)
+-----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_systems_profiling_Profiler.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``chrono``
+
+- ``core/Core.h`` (:ref:`file_engine_include_core_Core.h`)
+
+- ``core/graph/ImGuiCore.h`` (:ref:`file_engine_include_core_graph_ImGuiCore.h`)
+
+- ``ostream``
+
+- ``string``
+
+- ``unordered_map``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_core_graph_ImGuiScene.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structGDE_1_1RollingBuffer`
+
+- :ref:`exhale_struct_structGDE_1_1ScrollingBuffer`
+
+- :ref:`exhale_struct_structGDE_1_1State`
+
+- :ref:`exhale_class_classGDE_1_1Profiler`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_namespaceGDE_1a124cdff57b48d0e381e7a528f66eb6b8`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_namespaceGDE_1a3d10d77ff4e15623f2e710d02e0fde08`
+

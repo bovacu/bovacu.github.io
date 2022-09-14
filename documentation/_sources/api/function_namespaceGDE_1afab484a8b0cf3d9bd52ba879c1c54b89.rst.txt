@@ -1,0 +1,14 @@
+.. _exhale_function_namespaceGDE_1afab484a8b0cf3d9bd52ba879c1c54b89:
+
+Function GDE::operator<<(std::ostream&, const Vec2I&)
+=====================================================
+
+- Defined in :ref:`file_engine_include_core_util_Vec.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: GDE::operator<<(std::ostream&, const Vec2I&)
+   :project: My Project

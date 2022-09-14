@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Camera &mdash; GDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Canvas" href="classGDE_1_1Canvas.html" />
+    <link rel="prev" title="Class Body" href="classGDE_1_1Body.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> GDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Active.html">Struct Active</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1AnimationNode.html">Struct AnimationNode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1AnimationTransition.html">Struct AnimationTransition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Atlas.html">Struct Atlas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1B2DConfig.html">Struct B2DConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1BodyConfig.html">Struct BodyConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1CanvasEventStopper.html">Struct CanvasEventStopper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1CharInfo.html">Struct CharInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Color.html">Struct Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Command.html">Struct Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Controller.html">Struct Controller</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Effect__Controllers.html">Struct Effect_Controllers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1File.html">Template Struct File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1FontManager_1_1FontHandler.html">Struct FontManager::FontHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1FrameBufferSpecification.html">Struct FrameBufferSpecification</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig.html">Struct GDEConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig_1_1ProjectProperties.html">Struct GDEConfig::ProjectProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig_1_1WindowProperties.html">Struct GDEConfig::WindowProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GenerationSettings.html">Struct GenerationSettings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Music.html">Struct Music</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NineSlice.html">Struct NineSlice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NodeID__JsonPair.html">Struct NodeID_JsonPair</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NoiseMap.html">Struct NoiseMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1OpenGLVertex.html">Struct OpenGLVertex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1OpenGLVertexDebug.html">Struct OpenGLVertexDebug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ParticleData.html">Struct ParticleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1PhysicsManager_1_1Collision__CallbackFunction.html">Struct PhysicsManager::Collision_CallbackFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Probability.html">Struct Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ProceduralMap.html">Struct ProceduralMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Rect.html">Template Struct Rect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1RollingBuffer.html">Struct RollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ScrollingBuffer.html">Struct ScrollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Sfx.html">Struct Sfx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Sound.html">Struct Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1State.html">Struct State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1StaticTransform.html">Struct StaticTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Stub.html">Template Struct Stub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Stub_3_01R_07Args_8_8_8_08_4.html">Template Struct Stub&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Tag.html">Struct Tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1TextureInfo.html">Struct TextureInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VertexConfig.html">Struct VertexConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VertexData.html">Struct VertexData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VibrationConfig.html">Struct VibrationConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1AdaptiveViewPort.html">Class AdaptiveViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Animation.html">Class Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1AnimationSystem.html">Class AnimationSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BadDelegateCall.html">Class BadDelegateCall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BadECSSystemSwap.html">Class BadECSSystemSwap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BasicPerlinNoise.html">Template Class BasicPerlinNoise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Batch.html">Class Batch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Body.html">Class Body</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Canvas.html">Class Canvas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1CellularAutomata.html">Class CellularAutomata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Clock.html">Class Clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ConfigManager.html">Class ConfigManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Console.html">Class Console</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerAxisMovedEvent.html">Class ControllerAxisMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerButtonDownEvent.html">Class ControllerButtonDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerButtonUpEvent.html">Class ControllerButtonUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerInput.html">Class ControllerInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerVibrationManager.html">Class ControllerVibrationManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Delta.html">Class Delta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Easing.html">Class Easing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ECSManager.html">Class ECSManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ECSSystem.html">Class ECSSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Engine.html">Class Engine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Event.html">Class Event</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventBus.html">Template Class EventBus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventBus_1_1HandlerId.html">Class EventBus::HandlerId</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventDispatcher.html">Class EventDispatcher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FileHandler.html">Class FileHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FileManager.html">Class FileManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FixedViewPort.html">Class FixedViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Font.html">Class Font</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FontManager.html">Class FontManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FrameBuffer.html">Class FrameBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FreeViewPort.html">Class FreeViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Graph.html">Class Graph</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Image.html">Class Image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ImGuiScene.html">Class ImGuiScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Input.html">Class Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1InputManager.html">Class InputManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1IRenderizable.html">Class IRenderizable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1IViewPort.html">Class IViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyboardInput.html">Class KeyboardInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyEvent.html">Class KeyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyPressedEvent.html">Class KeyPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyReleasedEvent.html">Class KeyReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyTypedEvent.html">Class KeyTypedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1LoadVertexConfigNotInvoked.html">Class LoadVertexConfigNotInvoked</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Manager.html">Class Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MapGenerator.html">Class MapGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MDelegate.html">Template Class MDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MDelegate_3_01R_07Args_8_8_8_08_4.html">Template Class MDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileInput.html">Class MobileInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchDownEvent.html">Class MobileTouchDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchMovedEvent.html">Class MobileTouchMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchUpEvent.html">Class MobileTouchUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonEvent.html">Class MouseButtonEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonPressedEvent.html">Class MouseButtonPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonReleasedEvent.html">Class MouseButtonReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseInput.html">Class MouseInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseMovedEvent.html">Class MouseMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseScrolledEvent.html">Class MouseScrolledEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1NineSliceSprite.html">Class NineSliceSprite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ParticleSystem.html">Class ParticleSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PerlinNoiseManager.html">Class PerlinNoiseManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PhysicsManager.html">Class PhysicsManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PhysicsManager_1_1CollisionCallback.html">Class PhysicsManager::CollisionCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Platform.html">Class Platform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Profiler.html">Class Profiler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Random.html">Class Random</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Renderer.html">Class Renderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Scene.html">Class Scene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SceneManager.html">Class SceneManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Shader.html">Class Shader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ShaderManager.html">Class ShaderManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Shape.html">Class Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SoundManager.html">Class SoundManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteBatch.html">Class SpriteBatch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteBatch_1_1Debug.html">Class SpriteBatch::Debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteRenderer.html">Class SpriteRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TextRenderer.html">Class TextRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Texture.html">Class Texture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TextureAtlasManager.html">Class TextureAtlasManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Transform.html">Class Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TransitionParams.html">Class TransitionParams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UDelegate.html">Template Class UDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UDelegate_3_01R_07Args_8_8_8_08_4.html">Template Class UDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UI.html">Class UI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UIInteractable.html">Class UIInteractable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Util.html">Class Util</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Vec2.html">Template Class Vec2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Window.html">Class Window</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowClosedEvent.html">Class WindowClosedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowFrameEvent.html">Class WindowFrameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowInput.html">Class WindowInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowMinimizedEvent.html">Class WindowMinimizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowMovedEvent.html">Class WindowMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowRenderEvent.html">Class WindowRenderEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowResizedEvent.html">Class WindowResizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowUpdateEvent.html">Class WindowUpdateEvent</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="library_root.html">Library API</a> &raquo;</li>
+      <li>Class Camera</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/classGDE_1_1Camera.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-camera">
+<span id="exhale-class-classgde-1-1camera"></span><h1>Class Camera<a class="headerlink" href="#class-camera" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_engine_include_core_render_Camera.h.html#file-engine-include-core-render-camera-h"><span class="std std-ref">File Camera.h</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6CameraE">
+<span id="_CPPv3N3GDE6CameraE"></span><span id="_CPPv2N3GDE6CameraE"></span><span id="GDE::Camera"></span><span class="target" id="classGDE_1_1Camera"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Camera</span></span></span><a class="headerlink" href="#_CPPv4N3GDE6CameraE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This class represents what the engine sees and what is going to be rendered. This is used as a Component of the inner ECS System, so you can add Cameras to any desired Node. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera6CameraERK6NodeIDPK6WindowP9Transform">
+<span id="_CPPv3N3GDE6Camera6CameraERK6NodeIDPK6WindowP9Transform"></span><span id="_CPPv2N3GDE6Camera6CameraERK6NodeIDPK6WindowP9Transform"></span><span id="GDE::Camera::Camera__NodeIDCR.WindowCP.TransformP"></span><span class="target" id="classGDE_1_1Camera_1ad096ce53bf39f0ed1da666351d6772de"></span><span class="sig-name descname"><span class="n"><span class="pre">Camera</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_Body_8h_1a52def656a21c22f8e6592a9f04842b84.html#_CPPv4N3GDE6NodeIDE" title="GDE::NodeID"><span class="n"><span class="pre">NodeID</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_mainCameraID</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classGDE_1_1Window.html#_CPPv4N3GDE6WindowE" title="GDE::Window"><span class="n"><span class="pre">Window</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_window</span></span>, <a class="reference internal" href="classGDE_1_1Transform.html#_CPPv4N3GDE9TransformE" title="GDE::Transform"><span class="n"><span class="pre">Transform</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_entityTransform</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera6CameraERK6NodeIDPK6WindowP9Transform" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6CameraD0Ev">
+<span id="_CPPv3N3GDE6CameraD0Ev"></span><span id="_CPPv2N3GDE6CameraD0Ev"></span><span id="GDE::Camera::~Camera"></span><span class="target" id="classGDE_1_1Camera_1ad7d9d87d6315a18e57e770bd02b223b2"></span><span class="sig-name descname"><span class="n"><span class="pre">~Camera</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6CameraD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera7onEventER5Event">
+<span id="_CPPv3N3GDE6Camera7onEventER5Event"></span><span id="_CPPv2N3GDE6Camera7onEventER5Event"></span><span id="GDE::Camera::onEvent__EventR"></span><span class="target" id="classGDE_1_1Camera_1a1a167f4a98f2692340e6d154d062f2bc"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onEvent</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1Event.html#_CPPv4N3GDE5EventE" title="GDE::Event"><span class="n"><span class="pre">Event</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_event</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera7onEventER5Event" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Handles events that concerns the camera. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_event</strong> – <a class="reference internal" href="classGDE_1_1Event.html#classGDE_1_1Event"><span class="std std-ref">Event</span></a> to be handled </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera15onMouseScrolledER18MouseScrolledEvent">
+<span id="_CPPv3N3GDE6Camera15onMouseScrolledER18MouseScrolledEvent"></span><span id="_CPPv2N3GDE6Camera15onMouseScrolledER18MouseScrolledEvent"></span><span id="GDE::Camera::onMouseScrolled__MouseScrolledEventR"></span><span class="target" id="classGDE_1_1Camera_1a4e932b20dcf8b8b961518523855d2cd3"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onMouseScrolled</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1MouseScrolledEvent.html#_CPPv4N3GDE18MouseScrolledEventE" title="GDE::MouseScrolledEvent"><span class="n"><span class="pre">MouseScrolledEvent</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_event</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera15onMouseScrolledER18MouseScrolledEvent" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Handles the event of mouse scrolling. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_event</strong> – <a class="reference internal" href="classGDE_1_1Event.html#classGDE_1_1Event"><span class="std std-ref">Event</span></a> to be handled </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera8onResizeEii">
+<span id="_CPPv3N3GDE6Camera8onResizeEii"></span><span id="_CPPv2N3GDE6Camera8onResizeEii"></span><span id="GDE::Camera::onResize__i.i"></span><span class="target" id="classGDE_1_1Camera_1a8b9c5fa7a8e5d3a12ff1755dea577e3e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onResize</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_width</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_height</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera8onResizeEii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Resizes the camera components depending on the <a class="reference internal" href="classGDE_1_1Window.html#classGDE_1_1Window"><span class="std std-ref">Window</span></a> size. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_width</strong> – <a class="reference internal" href="classGDE_1_1Window.html#classGDE_1_1Window"><span class="std std-ref">Window</span></a>’s width </p></li>
+<li><p><strong>_height</strong> – <a class="reference internal" href="classGDE_1_1Window.html#classGDE_1_1Window"><span class="std std-ref">Window</span></a>’s height </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera19getProjectionMatrixEv">
+<span id="_CPPv3N3GDE6Camera19getProjectionMatrixEv"></span><span id="_CPPv2N3GDE6Camera19getProjectionMatrixEv"></span><span id="GDE::Camera::getProjectionMatrix"></span><span class="target" id="classGDE_1_1Camera_1ace19c08bf5dc2f965f9c49c98b8b084e"></span><span class="n"><span class="pre">glm</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">mat4</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getProjectionMatrix</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera19getProjectionMatrixEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the Projection Matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>glm::mat4&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera13getViewMatrixEv">
+<span id="_CPPv3N3GDE6Camera13getViewMatrixEv"></span><span id="_CPPv2N3GDE6Camera13getViewMatrixEv"></span><span id="GDE::Camera::getViewMatrix"></span><span class="target" id="classGDE_1_1Camera_1a44f77db84008b4f991d0c36e3c3bcc15"></span><span class="n"><span class="pre">glm</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">mat4</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getViewMatrix</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera13getViewMatrixEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the View Matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>glm::mat4&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera23getViewProjectionMatrixEv">
+<span id="_CPPv3N3GDE6Camera23getViewProjectionMatrixEv"></span><span id="_CPPv2N3GDE6Camera23getViewProjectionMatrixEv"></span><span id="GDE::Camera::getViewProjectionMatrix"></span><span class="target" id="classGDE_1_1Camera_1a1638112413462213df7a9cbb0cfb127e"></span><span class="n"><span class="pre">glm</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">mat4</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getViewProjectionMatrix</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera23getViewProjectionMatrixEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the View Projection Matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>glm::mat4&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera12getTransformEv">
+<span id="_CPPv3N3GDE6Camera12getTransformEv"></span><span id="_CPPv2N3GDE6Camera12getTransformEv"></span><span id="GDE::Camera::getTransform"></span><span class="target" id="classGDE_1_1Camera_1ac5bc81ee736a2d4e1cf41c50723bc935"></span><a class="reference internal" href="classGDE_1_1Transform.html#_CPPv4N3GDE9TransformE" title="GDE::Transform"><span class="n"><span class="pre">Transform</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getTransform</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera12getTransformEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the <a class="reference internal" href="classGDE_1_1Transform.html#classGDE_1_1Transform"><span class="std std-ref">Transform</span></a>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><a class="reference internal" href="classGDE_1_1Transform.html#classGDE_1_1Transform"><span class="std std-ref">Transform</span></a>&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera11setPositionERK5Vec2F">
+<span id="_CPPv3N3GDE6Camera11setPositionERK5Vec2F"></span><span id="_CPPv2N3GDE6Camera11setPositionERK5Vec2F"></span><span id="GDE::Camera::setPosition__Vec2FCR"></span><span class="target" id="classGDE_1_1Camera_1ad4b8671d56765dc538d1263ea562b4b8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPosition</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_position</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera11setPositionERK5Vec2F" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the camera position. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_position</strong> – Position to set the camera </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera9translateERK5Vec2F">
+<span id="_CPPv3N3GDE6Camera9translateERK5Vec2F"></span><span id="_CPPv2N3GDE6Camera9translateERK5Vec2F"></span><span id="GDE::Camera::translate__Vec2FCR"></span><span class="target" id="classGDE_1_1Camera_1af819619c80345a6734b0a1773bbaa4fc"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">translate</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_translation</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera9translateERK5Vec2F" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Translates the camera position by _translation. It is not the same as setPosition. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_translation</strong> – Amount of space to move the camera </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera9translateEff">
+<span id="_CPPv3N3GDE6Camera9translateEff"></span><span id="_CPPv2N3GDE6Camera9translateEff"></span><span id="GDE::Camera::translate__float.float"></span><span class="target" id="classGDE_1_1Camera_1a6f5abe9bc1850520359b367826c93aec"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">translate</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_x</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_y</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera9translateEff" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Translates the camera position by _translation. It is not the same as setPosition. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_x</strong> – Amount of space to move the camera on X axis </p></li>
+<li><p><strong>_y</strong> – Amount of space to move the camera on Y axis </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera11getPositionEv">
+<span id="_CPPv3N3GDE6Camera11getPositionEv"></span><span id="_CPPv2N3GDE6Camera11getPositionEv"></span><span id="GDE::Camera::getPosition"></span><span class="target" id="classGDE_1_1Camera_1aff44060ff8a45f6db280b1dfb18c21a4"></span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPosition</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera11getPositionEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the camera position. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Vec2F </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera13setCameraSizeERK5Vec2I">
+<span id="_CPPv3N3GDE6Camera13setCameraSizeERK5Vec2I"></span><span id="_CPPv2N3GDE6Camera13setCameraSizeERK5Vec2I"></span><span id="GDE::Camera::setCameraSize__Vec2ICR"></span><span class="target" id="classGDE_1_1Camera_1a26d24746e363648eb391031f1ea66c27"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setCameraSize</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063.html#_CPPv4N3GDE5Vec2IE" title="GDE::Vec2I"><span class="n"><span class="pre">Vec2I</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_cameraSize</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera13setCameraSizeERK5Vec2I" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the rectangle view size of the camera. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_cameraSize</strong> – Size of the rectangle view of the camera </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera13setCameraSizeEii">
+<span id="_CPPv3N3GDE6Camera13setCameraSizeEii"></span><span id="_CPPv2N3GDE6Camera13setCameraSizeEii"></span><span id="GDE::Camera::setCameraSize__i.i"></span><span class="target" id="classGDE_1_1Camera_1a19243920ca13b626530b725e60a844be"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setCameraSize</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_width</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_height</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera13setCameraSizeEii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the rectangle view size of the camera. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_width</strong> – Width of the rectangle view of the camera </p></li>
+<li><p><strong>_height</strong> – Height of the rectangle view of the camera </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera13getCameraSizeEv">
+<span id="_CPPv3N3GDE6Camera13getCameraSizeEv"></span><span id="_CPPv2N3GDE6Camera13getCameraSizeEv"></span><span id="GDE::Camera::getCameraSize"></span><span class="target" id="classGDE_1_1Camera_1a588e4cd4621f32d549fad08bf8b5c713"></span><a class="reference internal" href="typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063.html#_CPPv4N3GDE5Vec2IE" title="GDE::Vec2I"><span class="n"><span class="pre">Vec2I</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCameraSize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera13getCameraSizeEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the camera size. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Vec2I </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera11setRotationEf">
+<span id="_CPPv3N3GDE6Camera11setRotationEf"></span><span id="_CPPv2N3GDE6Camera11setRotationEf"></span><span id="GDE::Camera::setRotation__float"></span><span class="target" id="classGDE_1_1Camera_1a9f0c24799f8126f16c3e454f5328d5f4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRotation</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_rotation</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera11setRotationEf" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera11getRotationEv">
+<span id="_CPPv3N3GDE6Camera11getRotationEv"></span><span id="_CPPv2N3GDE6Camera11getRotationEv"></span><span id="GDE::Camera::getRotation"></span><span class="target" id="classGDE_1_1Camera_1a26564f971b229b3af773c861d76806a9"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRotation</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera11getRotationEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE6Camera14getAspectRatioEv">
+<span id="_CPPv3NK3GDE6Camera14getAspectRatioEv"></span><span id="_CPPv2NK3GDE6Camera14getAspectRatioEv"></span><span id="GDE::Camera::getAspectRatioC"></span><span class="target" id="classGDE_1_1Camera_1a5b77bbbc951e8195632e3210341ef955"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getAspectRatio</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE6Camera14getAspectRatioEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the aspect ratio of the <a class="reference internal" href="classGDE_1_1Window.html#classGDE_1_1Window"><span class="std std-ref">Window</span></a>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>float </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE6Camera19getCurrentZoomLevelEv">
+<span id="_CPPv3NK3GDE6Camera19getCurrentZoomLevelEv"></span><span id="_CPPv2NK3GDE6Camera19getCurrentZoomLevelEv"></span><span id="GDE::Camera::getCurrentZoomLevelC"></span><span class="target" id="classGDE_1_1Camera_1a48a103a337bbf6f6e2cbaca09f61679d"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCurrentZoomLevel</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE6Camera19getCurrentZoomLevelEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the current level of zoom of the camera. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>float </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera19setCurrentZoomLevelEf">
+<span id="_CPPv3N3GDE6Camera19setCurrentZoomLevelEf"></span><span id="_CPPv2N3GDE6Camera19setCurrentZoomLevelEf"></span><span id="GDE::Camera::setCurrentZoomLevel__float"></span><span class="target" id="classGDE_1_1Camera_1a8810e213368bd1072809e4acc4d33075"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setCurrentZoomLevel</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_zoomLevel</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera19setCurrentZoomLevelEf" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the current level of zoom of the camera. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_zoomLevel</strong> – Zoom to set </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE6Camera12getZoomSpeedEv">
+<span id="_CPPv3NK3GDE6Camera12getZoomSpeedEv"></span><span id="_CPPv2NK3GDE6Camera12getZoomSpeedEv"></span><span id="GDE::Camera::getZoomSpeedC"></span><span class="target" id="classGDE_1_1Camera_1a2cf40c215d66d554c2360926218a8a9d"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getZoomSpeed</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE6Camera12getZoomSpeedEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Gets the speed of camera’s zooming. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>float </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera12setZoomSpeedEf">
+<span id="_CPPv3N3GDE6Camera12setZoomSpeedEf"></span><span id="_CPPv2N3GDE6Camera12setZoomSpeedEf"></span><span id="GDE::Camera::setZoomSpeed__float"></span><span class="target" id="classGDE_1_1Camera_1ac35a108e183f0e7fddb1aff385538ef0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setZoomSpeed</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_zoomSpeed</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera12setZoomSpeedEf" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the speed of camera’s zooming. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_zoomSpeed</strong> – <a class="reference internal" href="#classGDE_1_1Camera"><span class="std std-ref">Camera</span></a>’s zooming speed </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6CameraclERK6Camera">
+<span id="_CPPv3N3GDE6CameraclERK6Camera"></span><span id="_CPPv2N3GDE6CameraclERK6Camera"></span><span id="GDE::Camera::call-operator__CameraCR"></span><span class="target" id="classGDE_1_1Camera_1a3e40e15827630033121b645e717d5699"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">glm</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">mat4</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3GDE6CameraE" title="GDE::Camera"><span class="n"><span class="pre">Camera</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_camera</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6CameraclERK6Camera" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE6Camera11getViewportEv">
+<span id="_CPPv3NK3GDE6Camera11getViewportEv"></span><span id="_CPPv2NK3GDE6Camera11getViewportEv"></span><span id="GDE::Camera::getViewportC"></span><span class="target" id="classGDE_1_1Camera_1a9c3c0f03dfc969ef3ed13ceb9ffa16a0"></span><a class="reference internal" href="classGDE_1_1IViewPort.html#_CPPv4N3GDE9IViewPortE" title="GDE::IViewPort"><span class="n"><span class="pre">IViewPort</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getViewport</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE6Camera11getViewportEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the viewport. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>IViewPort* </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera15setFreeViewportERK5Vec2I">
+<span id="_CPPv3N3GDE6Camera15setFreeViewportERK5Vec2I"></span><span id="_CPPv2N3GDE6Camera15setFreeViewportERK5Vec2I"></span><span id="GDE::Camera::setFreeViewport__Vec2ICR"></span><span class="target" id="classGDE_1_1Camera_1a84381e3a2696a5436c1988ce357167bc"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setFreeViewport</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063.html#_CPPv4N3GDE5Vec2IE" title="GDE::Vec2I"><span class="n"><span class="pre">Vec2I</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_windowSize</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera15setFreeViewportERK5Vec2I" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Changes the current viewport to a FreeViewport. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_windowSize</strong> – <a class="reference internal" href="classGDE_1_1Window.html#classGDE_1_1Window"><span class="std std-ref">Window</span></a> size </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera19setAdaptiveViewportERK5Vec2IRK5Vec2I">
+<span id="_CPPv3N3GDE6Camera19setAdaptiveViewportERK5Vec2IRK5Vec2I"></span><span id="_CPPv2N3GDE6Camera19setAdaptiveViewportERK5Vec2IRK5Vec2I"></span><span id="GDE::Camera::setAdaptiveViewport__Vec2ICR.Vec2ICR"></span><span class="target" id="classGDE_1_1Camera_1a85ca3cff273910e3ec341e4a2cf5e532"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setAdaptiveViewport</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063.html#_CPPv4N3GDE5Vec2IE" title="GDE::Vec2I"><span class="n"><span class="pre">Vec2I</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_virtualDesiredSize</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063.html#_CPPv4N3GDE5Vec2IE" title="GDE::Vec2I"><span class="n"><span class="pre">Vec2I</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_currentDeviceSize</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Camera19setAdaptiveViewportERK5Vec2IRK5Vec2I" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Changes the current viewport to a AdaptiveViewport. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_virtualDesiredSize</strong> – Virtual screen size </p></li>
+<li><p><strong>_currentDeviceSize</strong> – Physical device size </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Camera2IDE">
+<span id="_CPPv3N3GDE6Camera2IDE"></span><span id="_CPPv2N3GDE6Camera2IDE"></span><span id="GDE::Camera::ID__NodeID"></span><span class="target" id="classGDE_1_1Camera_1a28794ed07dc83b27a2444886a6c54902"></span><a class="reference internal" href="typedef_Body_8h_1a52def656a21c22f8e6592a9f04842b84.html#_CPPv4N3GDE6NodeIDE" title="GDE::NodeID"><span class="n"><span class="pre">NodeID</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ID</span></span></span><a class="headerlink" href="#_CPPv4N3GDE6Camera2IDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>ID of the Node that contains this component. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classGDE_1_1Body.html" class="btn btn-neutral float-left" title="Class Body" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classGDE_1_1Canvas.html" class="btn btn-neutral float-right" title="Class Canvas" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

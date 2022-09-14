@@ -1,0 +1,17 @@
+.. _exhale_class_classGDE_1_1ECSManager:
+
+Class ECSManager
+================
+
+- Defined in :ref:`file_engine_include_core_systems_ecsSystem_ECSManager.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GDE::ECSManager
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

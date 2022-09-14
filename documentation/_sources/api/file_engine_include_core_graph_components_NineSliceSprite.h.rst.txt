@@ -1,0 +1,62 @@
+
+.. _file_engine_include_core_graph_components_NineSliceSprite.h:
+
+File NineSliceSprite.h
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_graph_components>` (``engine/include/core/graph/components``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/graph/components/NineSliceSprite.h``)
+-----------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_graph_components_NineSliceSprite.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``core/graph/components/UI.h`` (:ref:`file_engine_include_core_graph_components_UI.h`)
+
+- ``core/util/Vec.h`` (:ref:`file_engine_include_core_util_Vec.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_GDE.h`
+
+- :ref:`file_engine_include_core_render_elements_SpriteBatch.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classGDE_1_1NineSliceSprite`
+

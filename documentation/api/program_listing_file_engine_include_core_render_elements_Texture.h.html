@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File Texture.h &mdash; GDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> GDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">Library API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Program Listing for File Texture.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file_engine_include_core_render_elements_Texture.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-texture-h">
+<span id="program-listing-file-engine-include-core-render-elements-texture-h"></span><h1>Program Listing for File Texture.h<a class="headerlink" href="#program-listing-for-file-texture-h" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="file_engine_include_core_render_elements_Texture.h.html#file-engine-include-core-render-elements-texture-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">engine/include/core/render/elements/Texture.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma once</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;core/util/Util.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#if IS_ANDROID()</span>
+<span class="w">    </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;GLES3/gl32.h&gt;</span><span class="cp"></span>
+<span class="cp">#elif IS_IOS()</span>
+<span class="w">    </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;OpenGLES/ES3/gl.h&gt;</span><span class="cp"></span>
+<span class="cp">#else</span>
+<span class="w">    </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;glad/glad.h&quot;</span><span class="cp"></span>
+<span class="cp">#endif</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">GDE</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">Texture</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">NineSlice</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">top</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">bottom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">isEnabled</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">-1</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">top</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">-1</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">-1</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">bottom</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">        </span><span class="n">IntRect</span><span class="w"> </span><span class="n">subRects</span><span class="p">[</span><span class="mi">9</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="p">};</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">Atlas</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">Texture</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">protected</span><span class="o">:</span><span class="w"></span>
+<span class="w">            </span><span class="n">GLuint</span><span class="w"> </span><span class="n">openGLTextureID</span><span class="p">{};</span><span class="w"></span>
+
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">channels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">            </span><span class="n">Vec2I</span><span class="w"> </span><span class="n">textureSize</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">            </span><span class="n">Vec2I</span><span class="w"> </span><span class="n">spriteSheetSize</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">            </span><span class="n">GLenum</span><span class="w"> </span><span class="n">internalFormat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">            </span><span class="n">GLenum</span><span class="w"> </span><span class="n">dataFormat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">            </span><span class="n">IntRect</span><span class="w"> </span><span class="n">region</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+
+<span class="w">            </span><span class="kt">float</span><span class="w"> </span><span class="n">fileSizeKb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">path</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">            </span><span class="n">NineSlice</span><span class="w"> </span><span class="n">nineSlice</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">            </span><span class="n">Texture</span><span class="p">()</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+<span class="w">            </span><span class="k">explicit</span><span class="w"> </span><span class="n">Texture</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">filePath</span><span class="p">);</span><span class="w"></span>
+<span class="w">            </span><span class="n">Texture</span><span class="p">(</span><span class="n">Atlas</span><span class="o">*</span><span class="w"> </span><span class="n">_spriteSheet</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">IntRect</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_region</span><span class="p">);</span><span class="w"></span>
+<span class="w">            </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">Texture</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">            </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="n">GLuint</span><span class="w"> </span><span class="n">getGLTexture</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">            </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="n">Vec2I</span><span class="w"> </span><span class="n">getSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">            </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="n">Vec2I</span><span class="w"> </span><span class="n">getSpriteSheetSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">            </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">getKb</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">            </span><span class="kt">bool</span><span class="w"> </span><span class="nf">loadFromFile</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">_path</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">            </span><span class="kt">bool</span><span class="w"> </span><span class="nf">loadTextTexture</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">_width</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">_height</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">            </span><span class="kt">bool</span><span class="w"> </span><span class="nf">loadTextureFromMemory</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">_width</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">_height</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">_data</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">            </span><span class="kt">bool</span><span class="w"> </span><span class="nf">loadTextSubTextures</span><span class="p">(</span><span class="n">Vec2I</span><span class="w"> </span><span class="n">_offset</span><span class="p">,</span><span class="w"> </span><span class="n">Vec2I</span><span class="w"> </span><span class="n">_size</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">_data</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">            </span><span class="n">IntRect</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">getRegion</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">            </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">getPath</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">        </span><span class="k">private</span><span class="o">:</span><span class="w"></span>
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">invertSDLSurface</span><span class="p">(</span><span class="n">SDL_Surface</span><span class="w"> </span><span class="o">*</span><span class="n">surface</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">            </span><span class="n">SDL_Surface</span><span class="o">*</span><span class="w"> </span><span class="nf">getSDLSurface</span><span class="p">(</span><span class="n">SDL_RWops</span><span class="o">*</span><span class="w"> </span><span class="n">_imageFile</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_pathToFile</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="nf">checkGLError</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="p">};</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">enum</span><span class="w"> </span><span class="nc">ImageType</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">PNG</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n">JPG</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n">BMP</span><span class="w"></span>
+<span class="w">    </span><span class="p">};</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">Image</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Texture</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">private</span><span class="o">:</span><span class="w"></span>
+<span class="w">            </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">pixels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">            </span><span class="n">ImageType</span><span class="w"> </span><span class="n">imageType</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="k">private</span><span class="o">:</span><span class="w"></span>
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">getChannels</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ImageType</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_imageType</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">        </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">            </span><span class="n">Image</span><span class="p">()</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="nf">init</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">_width</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">_height</span><span class="p">,</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">_pixels</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ImageType</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_imageType</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="nf">init</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">_width</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">_height</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ImageType</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_imageType</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="nf">uploadToGPU</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="nf">saveAs</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_pathToSave</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="nf">setPixel</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">_x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">_y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Color</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_color</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">            </span><span class="n">Color</span><span class="w"> </span><span class="nf">getPixel</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">_x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">_y</span><span class="p">);</span><span class="w"></span>
+
+
+<span class="w">            </span><span class="o">~</span><span class="n">Image</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="p">};</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

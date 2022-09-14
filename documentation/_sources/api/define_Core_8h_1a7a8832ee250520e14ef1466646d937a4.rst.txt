@@ -1,0 +1,14 @@
+.. _exhale_define_Core_8h_1a7a8832ee250520e14ef1466646d937a4:
+
+Define ENGINE_DEBUGBREAK
+========================
+
+- Defined in :ref:`file_engine_include_core_Core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ENGINE_DEBUGBREAK
+   :project: My Project

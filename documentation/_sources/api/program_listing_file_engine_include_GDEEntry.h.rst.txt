@@ -1,0 +1,30 @@
+
+.. _program_listing_file_engine_include_GDEEntry.h:
+
+Program Listing for File GDEEntry.h
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_GDEEntry.h>` (``engine/include/GDEEntry.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   //
+   // Created by borja on 8/20/22.
+   //
+   
+   #ifndef GDE_GDE_ENTRY_H
+   #define GDE_GDE_ENTRY_H
+   
+   #include "core/Engine.h"
+   
+   int main(int argc, char** argv) {
+       auto* _e = GDE::createEngine();
+       _e->onRun();
+       _e->destroy();
+       delete _e;
+       return EXIT_SUCCESS;
+   }
+   
+   #endif //GDE_GDE_ENTRY_H

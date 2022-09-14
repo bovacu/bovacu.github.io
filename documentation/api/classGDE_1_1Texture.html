@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Texture &mdash; GDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class TextureAtlasManager" href="classGDE_1_1TextureAtlasManager.html" />
+    <link rel="prev" title="Class TextRenderer" href="classGDE_1_1TextRenderer.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> GDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Active.html">Struct Active</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1AnimationNode.html">Struct AnimationNode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1AnimationTransition.html">Struct AnimationTransition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Atlas.html">Struct Atlas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1B2DConfig.html">Struct B2DConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1BodyConfig.html">Struct BodyConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1CanvasEventStopper.html">Struct CanvasEventStopper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1CharInfo.html">Struct CharInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Color.html">Struct Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Command.html">Struct Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Controller.html">Struct Controller</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Effect__Controllers.html">Struct Effect_Controllers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1File.html">Template Struct File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1FontManager_1_1FontHandler.html">Struct FontManager::FontHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1FrameBufferSpecification.html">Struct FrameBufferSpecification</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig.html">Struct GDEConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig_1_1ProjectProperties.html">Struct GDEConfig::ProjectProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig_1_1WindowProperties.html">Struct GDEConfig::WindowProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GenerationSettings.html">Struct GenerationSettings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Music.html">Struct Music</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NineSlice.html">Struct NineSlice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NodeID__JsonPair.html">Struct NodeID_JsonPair</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NoiseMap.html">Struct NoiseMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1OpenGLVertex.html">Struct OpenGLVertex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1OpenGLVertexDebug.html">Struct OpenGLVertexDebug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ParticleData.html">Struct ParticleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1PhysicsManager_1_1Collision__CallbackFunction.html">Struct PhysicsManager::Collision_CallbackFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Probability.html">Struct Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ProceduralMap.html">Struct ProceduralMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Rect.html">Template Struct Rect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1RollingBuffer.html">Struct RollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ScrollingBuffer.html">Struct ScrollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Sfx.html">Struct Sfx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Sound.html">Struct Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1State.html">Struct State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1StaticTransform.html">Struct StaticTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Stub.html">Template Struct Stub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Stub_3_01R_07Args_8_8_8_08_4.html">Template Struct Stub&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Tag.html">Struct Tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1TextureInfo.html">Struct TextureInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VertexConfig.html">Struct VertexConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VertexData.html">Struct VertexData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VibrationConfig.html">Struct VibrationConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1AdaptiveViewPort.html">Class AdaptiveViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Animation.html">Class Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1AnimationSystem.html">Class AnimationSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BadDelegateCall.html">Class BadDelegateCall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BadECSSystemSwap.html">Class BadECSSystemSwap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BasicPerlinNoise.html">Template Class BasicPerlinNoise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Batch.html">Class Batch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Body.html">Class Body</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Camera.html">Class Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Canvas.html">Class Canvas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1CellularAutomata.html">Class CellularAutomata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Clock.html">Class Clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ConfigManager.html">Class ConfigManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Console.html">Class Console</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerAxisMovedEvent.html">Class ControllerAxisMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerButtonDownEvent.html">Class ControllerButtonDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerButtonUpEvent.html">Class ControllerButtonUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerInput.html">Class ControllerInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerVibrationManager.html">Class ControllerVibrationManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Delta.html">Class Delta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Easing.html">Class Easing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ECSManager.html">Class ECSManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ECSSystem.html">Class ECSSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Engine.html">Class Engine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Event.html">Class Event</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventBus.html">Template Class EventBus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventBus_1_1HandlerId.html">Class EventBus::HandlerId</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventDispatcher.html">Class EventDispatcher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FileHandler.html">Class FileHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FileManager.html">Class FileManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FixedViewPort.html">Class FixedViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Font.html">Class Font</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FontManager.html">Class FontManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FrameBuffer.html">Class FrameBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FreeViewPort.html">Class FreeViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Graph.html">Class Graph</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Image.html">Class Image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ImGuiScene.html">Class ImGuiScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Input.html">Class Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1InputManager.html">Class InputManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1IRenderizable.html">Class IRenderizable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1IViewPort.html">Class IViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyboardInput.html">Class KeyboardInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyEvent.html">Class KeyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyPressedEvent.html">Class KeyPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyReleasedEvent.html">Class KeyReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyTypedEvent.html">Class KeyTypedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1LoadVertexConfigNotInvoked.html">Class LoadVertexConfigNotInvoked</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Manager.html">Class Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MapGenerator.html">Class MapGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MDelegate.html">Template Class MDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MDelegate_3_01R_07Args_8_8_8_08_4.html">Template Class MDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileInput.html">Class MobileInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchDownEvent.html">Class MobileTouchDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchMovedEvent.html">Class MobileTouchMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchUpEvent.html">Class MobileTouchUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonEvent.html">Class MouseButtonEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonPressedEvent.html">Class MouseButtonPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonReleasedEvent.html">Class MouseButtonReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseInput.html">Class MouseInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseMovedEvent.html">Class MouseMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseScrolledEvent.html">Class MouseScrolledEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1NineSliceSprite.html">Class NineSliceSprite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ParticleSystem.html">Class ParticleSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PerlinNoiseManager.html">Class PerlinNoiseManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PhysicsManager.html">Class PhysicsManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PhysicsManager_1_1CollisionCallback.html">Class PhysicsManager::CollisionCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Platform.html">Class Platform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Profiler.html">Class Profiler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Random.html">Class Random</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Renderer.html">Class Renderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Scene.html">Class Scene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SceneManager.html">Class SceneManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Shader.html">Class Shader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ShaderManager.html">Class ShaderManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Shape.html">Class Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SoundManager.html">Class SoundManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteBatch.html">Class SpriteBatch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteBatch_1_1Debug.html">Class SpriteBatch::Debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteRenderer.html">Class SpriteRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TextRenderer.html">Class TextRenderer</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class Texture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TextureAtlasManager.html">Class TextureAtlasManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Transform.html">Class Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TransitionParams.html">Class TransitionParams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UDelegate.html">Template Class UDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UDelegate_3_01R_07Args_8_8_8_08_4.html">Template Class UDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UI.html">Class UI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UIInteractable.html">Class UIInteractable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Util.html">Class Util</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Vec2.html">Template Class Vec2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Window.html">Class Window</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowClosedEvent.html">Class WindowClosedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowFrameEvent.html">Class WindowFrameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowInput.html">Class WindowInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowMinimizedEvent.html">Class WindowMinimizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowMovedEvent.html">Class WindowMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowRenderEvent.html">Class WindowRenderEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowResizedEvent.html">Class WindowResizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowUpdateEvent.html">Class WindowUpdateEvent</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="library_root.html">Library API</a> &raquo;</li>
+      <li>Class Texture</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/classGDE_1_1Texture.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-texture">
+<span id="exhale-class-classgde-1-1texture"></span><h1>Class Texture<a class="headerlink" href="#class-texture" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_engine_include_core_render_elements_Texture.h.html#file-engine-include-core-render-elements-texture-h"><span class="std std-ref">File Texture.h</span></a></p></li>
+</ul>
+<section id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline"></a></h2>
+<section id="derived-type">
+<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">GDE::Image</span></code> (<a class="reference internal" href="classGDE_1_1Image.html#exhale-class-classgde-1-1image"><span class="std std-ref">Class Image</span></a>)</p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7TextureE">
+<span id="_CPPv3N3GDE7TextureE"></span><span id="_CPPv2N3GDE7TextureE"></span><span id="GDE::Texture"></span><span class="target" id="classGDE_1_1Texture"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Texture</span></span></span><a class="headerlink" href="#_CPPv4N3GDE7TextureE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This class represents a SpriteSheet or a simple Sprite that will be uploaded to the GPU. </p>
+<p>Subclassed by <a class="reference internal" href="classGDE_1_1Image.html#classGDE_1_1Image"><span class="std std-ref">GDE::Image</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture7TextureEv">
+<span id="_CPPv3N3GDE7Texture7TextureEv"></span><span id="_CPPv2N3GDE7Texture7TextureEv"></span><span id="GDE::Texture::Texture"></span><span class="target" id="classGDE_1_1Texture_1a44845a688924dc664400f911305688d4"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Texture</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE7Texture7TextureEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture7TextureEPc">
+<span id="_CPPv3N3GDE7Texture7TextureEPc"></span><span id="_CPPv2N3GDE7Texture7TextureEPc"></span><span id="GDE::Texture::Texture__cP"></span><span class="target" id="classGDE_1_1Texture_1ac04f6d4c462d0acefd5ab6ef8ff0f269"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Texture</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">filePath</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE7Texture7TextureEPc" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture7TextureEP5AtlasRK7IntRect">
+<span id="_CPPv3N3GDE7Texture7TextureEP5AtlasRK7IntRect"></span><span id="_CPPv2N3GDE7Texture7TextureEP5AtlasRK7IntRect"></span><span id="GDE::Texture::Texture__AtlasP.IntRectCR"></span><span class="target" id="classGDE_1_1Texture_1a5fc6078d57eb4e3b24c9fafe96defb58"></span><span class="sig-name descname"><span class="n"><span class="pre">Texture</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structGDE_1_1Atlas.html#_CPPv4N3GDE5AtlasE" title="GDE::Atlas"><span class="n"><span class="pre">Atlas</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_spriteSheet</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1aedb845789bfd06d662942fbf43f6b06f.html#_CPPv4N3GDE7IntRectE" title="GDE::IntRect"><span class="n"><span class="pre">IntRect</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_region</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE7Texture7TextureEP5AtlasRK7IntRect" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7TextureD0Ev">
+<span id="_CPPv3N3GDE7TextureD0Ev"></span><span id="_CPPv2N3GDE7TextureD0Ev"></span><span id="GDE::Texture::~Texture"></span><span class="target" id="classGDE_1_1Texture_1ae41db8725ff6ec4fc4406f9b4c8ef55f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Texture</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE7TextureD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE7Texture12getGLTextureEv">
+<span id="_CPPv3NK3GDE7Texture12getGLTextureEv"></span><span id="_CPPv2NK3GDE7Texture12getGLTextureEv"></span><span id="GDE::Texture::getGLTextureC"></span><span class="target" id="classGDE_1_1Texture_1ace92308678b2fa6bd66888032865df8a"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getGLTexture</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE7Texture12getGLTextureEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the ID of the texture in the GPU. This is probably of no-use for end-users. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>uint </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE7Texture7getSizeEv">
+<span id="_CPPv3NK3GDE7Texture7getSizeEv"></span><span id="_CPPv2NK3GDE7Texture7getSizeEv"></span><span id="GDE::Texture::getSizeC"></span><span class="target" id="classGDE_1_1Texture_1aa357f8c726f4d3690a2a16dc2503343a"></span><a class="reference internal" href="typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063.html#_CPPv4N3GDE5Vec2IE" title="GDE::Vec2I"><span class="n"><span class="pre">Vec2I</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getSize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE7Texture7getSizeEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the size of the region to be rendered, not the size of the SpriteSheet, except if this is the SpriteSheet itself. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Vec2I </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE7Texture18getSpriteSheetSizeEv">
+<span id="_CPPv3NK3GDE7Texture18getSpriteSheetSizeEv"></span><span id="_CPPv2NK3GDE7Texture18getSpriteSheetSizeEv"></span><span id="GDE::Texture::getSpriteSheetSizeC"></span><span class="target" id="classGDE_1_1Texture_1ab07dc2b8fc878251b76a0d84d0189696"></span><a class="reference internal" href="typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063.html#_CPPv4N3GDE5Vec2IE" title="GDE::Vec2I"><span class="n"><span class="pre">Vec2I</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getSpriteSheetSize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE7Texture18getSpriteSheetSizeEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the size of the SpriteSheet where this sub-texture comes from. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Vec2I </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE7Texture5getKbEv">
+<span id="_CPPv3NK3GDE7Texture5getKbEv"></span><span id="_CPPv2NK3GDE7Texture5getKbEv"></span><span id="GDE::Texture::getKbC"></span><span class="target" id="classGDE_1_1Texture_1a1527364addebeecd20cd0b6c1f0ecec4"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getKb</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE7Texture5getKbEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the size in Kb of the SpriteSheet. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>float </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture12loadFromFileEPKc">
+<span id="_CPPv3N3GDE7Texture12loadFromFileEPKc"></span><span id="_CPPv2N3GDE7Texture12loadFromFileEPKc"></span><span id="GDE::Texture::loadFromFile__cCP"></span><span class="target" id="classGDE_1_1Texture_1a2833c9749c952c22c40619162b08a8b9"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadFromFile</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_path</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE7Texture12loadFromFileEPKc" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Tries to load a SpriteSheet from the <a class="reference internal" href="structGDE_1_1File.html#structGDE_1_1File"><span class="std std-ref">File</span></a> System, if it fails, returns false. </p>
+<p><dl class="simple">
+<dt><strong>Attention</strong></dt><dd><p>This is not meant to be called by end-users. </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_path</strong> – Path where the SpriteSheet is located. </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture15loadTextTextureEii">
+<span id="_CPPv3N3GDE7Texture15loadTextTextureEii"></span><span id="_CPPv2N3GDE7Texture15loadTextTextureEii"></span><span id="GDE::Texture::loadTextTexture__i.i"></span><span class="target" id="classGDE_1_1Texture_1a991bfc8eb80089e65d45d0372f6119f1"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadTextTexture</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_width</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_height</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE7Texture15loadTextTextureEii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Tries to load a font into a texture, and if it fails, returns false. </p>
+<p><dl class="simple">
+<dt><strong>Attention</strong></dt><dd><p>This is not meant to be called by end-users. </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_width</strong> – Width of the resulting texture. </p></li>
+<li><p><strong>_height</strong> – Height of the resulting texture. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture21loadTextureFromMemoryEiiPKh">
+<span id="_CPPv3N3GDE7Texture21loadTextureFromMemoryEiiPKh"></span><span id="_CPPv2N3GDE7Texture21loadTextureFromMemoryEiiPKh"></span><span id="GDE::Texture::loadTextureFromMemory__i.i.unsigned-cCP"></span><span class="target" id="classGDE_1_1Texture_1ab315a1dd1631fbd5aa5504a760d1752d"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadTextureFromMemory</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_width</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_height</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_data</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE7Texture21loadTextureFromMemoryEiiPKh" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Tries to load a a texture from data generated at runtime. </p>
+<p><dl class="simple">
+<dt><strong>Attention</strong></dt><dd><p>This is not meant to be called by end-users. </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_width</strong> – Width of the resulting texture. </p></li>
+<li><p><strong>_height</strong> – Height of the resulting texture. </p></li>
+<li><p><strong>_data</strong> – Data generated at runtime. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture19loadTextSubTexturesE5Vec2I5Vec2IPKv">
+<span id="_CPPv3N3GDE7Texture19loadTextSubTexturesE5Vec2I5Vec2IPKv"></span><span id="_CPPv2N3GDE7Texture19loadTextSubTexturesE5Vec2I5Vec2IPKv"></span><span id="GDE::Texture::loadTextSubTextures__Vec2I.Vec2I.voidCP"></span><span class="target" id="classGDE_1_1Texture_1aa4b027de2b5a12476ef7f2781c779b85"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadTextSubTextures</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063.html#_CPPv4N3GDE5Vec2IE" title="GDE::Vec2I"><span class="n"><span class="pre">Vec2I</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_offset</span></span>, <a class="reference internal" href="typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063.html#_CPPv4N3GDE5Vec2IE" title="GDE::Vec2I"><span class="n"><span class="pre">Vec2I</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_size</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_data</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE7Texture19loadTextSubTexturesE5Vec2I5Vec2IPKv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Creates the sub-textures (of each character) of the <a class="reference internal" href="classGDE_1_1Font.html#classGDE_1_1Font"><span class="std std-ref">Font</span></a> texture. </p>
+<p><dl class="simple">
+<dt><strong>Attention</strong></dt><dd><p>This is not meant to be called by end-users. </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_offset</strong> – Offset from the last character. </p></li>
+<li><p><strong>_size</strong> – Size of the character. </p></li>
+<li><p><strong>_data</strong> – Data needed to generate the texture. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture9getRegionEv">
+<span id="_CPPv3N3GDE7Texture9getRegionEv"></span><span id="_CPPv2N3GDE7Texture9getRegionEv"></span><span id="GDE::Texture::getRegion"></span><span class="target" id="classGDE_1_1Texture_1abd94d092087f221450f20d077c3e2525"></span><a class="reference internal" href="typedef_namespaceGDE_1aedb845789bfd06d662942fbf43f6b06f.html#_CPPv4N3GDE7IntRectE" title="GDE::IntRect"><span class="n"><span class="pre">IntRect</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getRegion</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE7Texture9getRegionEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the portion of the SpriteSheet that will be rendered. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>IntRect&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture7getPathEv">
+<span id="_CPPv3N3GDE7Texture7getPathEv"></span><span id="_CPPv2N3GDE7Texture7getPathEv"></span><span id="GDE::Texture::getPath"></span><span class="target" id="classGDE_1_1Texture_1a30f5ab9a990fa45ce0112d16c45eacc1"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPath</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE7Texture7getPathEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the path to the location of the SpriteSheet. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>std::string </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture9nineSliceE">
+<span id="_CPPv3N3GDE7Texture9nineSliceE"></span><span id="_CPPv2N3GDE7Texture9nineSliceE"></span><span id="GDE::Texture::nineSlice__NineSlice"></span><span class="target" id="classGDE_1_1Texture_1a885e93eee8a582066b7952e5c40baf91"></span><a class="reference internal" href="structGDE_1_1NineSlice.html#_CPPv4N3GDE9NineSliceE" title="GDE::NineSlice"><span class="n"><span class="pre">NineSlice</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nineSlice</span></span></span><a class="headerlink" href="#_CPPv4N3GDE7Texture9nineSliceE" title="Permalink to this definition"></a><br /></dt>
+<dd><p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="structGDE_1_1NineSlice.html#structGDE_1_1NineSlice"><span class="std std-ref">NineSlice</span></a> </p>
+</div>
+</p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture15openGLTextureIDE">
+<span id="_CPPv3N3GDE7Texture15openGLTextureIDE"></span><span id="_CPPv2N3GDE7Texture15openGLTextureIDE"></span><span id="GDE::Texture::openGLTextureID__GLuint"></span><span class="target" id="classGDE_1_1Texture_1a7fede8a91a921e261d8fc95209e69f7a"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">openGLTextureID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N3GDE7Texture15openGLTextureIDE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This is the reference that OpenGL gives us when we upload the texture data to the GPU. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture8channelsE">
+<span id="_CPPv3N3GDE7Texture8channelsE"></span><span id="_CPPv2N3GDE7Texture8channelsE"></span><span id="GDE::Texture::channels__i"></span><span class="target" id="classGDE_1_1Texture_1a8342f66b152d523609ab007096ae615d"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">channels</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><a class="headerlink" href="#_CPPv4N3GDE7Texture8channelsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>if the texture is RGB or RGBA </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture11textureSizeE">
+<span id="_CPPv3N3GDE7Texture11textureSizeE"></span><span id="_CPPv2N3GDE7Texture11textureSizeE"></span><span id="GDE::Texture::textureSize__Vec2I"></span><span class="target" id="classGDE_1_1Texture_1aa54f7331a812f4f5ea5cab712705d9c4"></span><a class="reference internal" href="typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063.html#_CPPv4N3GDE5Vec2IE" title="GDE::Vec2I"><span class="n"><span class="pre">Vec2I</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">textureSize</span></span></span><a class="headerlink" href="#_CPPv4N3GDE7Texture11textureSizeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The size of the Sprite, not the whole SpriteSheet EXCEPT if this texture is itself a the whole SpriteSheet. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture15spriteSheetSizeE">
+<span id="_CPPv3N3GDE7Texture15spriteSheetSizeE"></span><span id="_CPPv2N3GDE7Texture15spriteSheetSizeE"></span><span id="GDE::Texture::spriteSheetSize__Vec2I"></span><span class="target" id="classGDE_1_1Texture_1ac3714d3e271c447311d2d7b5b7230814"></span><a class="reference internal" href="typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063.html#_CPPv4N3GDE5Vec2IE" title="GDE::Vec2I"><span class="n"><span class="pre">Vec2I</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">spriteSheetSize</span></span></span><a class="headerlink" href="#_CPPv4N3GDE7Texture15spriteSheetSizeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The size of the SpriteSheet this texture comes from or its natural size if this is the SpriteSheet itself. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture14internalFormatE">
+<span id="_CPPv3N3GDE7Texture14internalFormatE"></span><span id="_CPPv2N3GDE7Texture14internalFormatE"></span><span id="GDE::Texture::internalFormat__GLenum"></span><span class="target" id="classGDE_1_1Texture_1a408f7798359780ba669fbc92945d58a3"></span><span class="n"><span class="pre">GLenum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">internalFormat</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><a class="headerlink" href="#_CPPv4N3GDE7Texture14internalFormatE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Internal format of the texture. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture10dataFormatE">
+<span id="_CPPv3N3GDE7Texture10dataFormatE"></span><span id="_CPPv2N3GDE7Texture10dataFormatE"></span><span id="GDE::Texture::dataFormat__GLenum"></span><span class="target" id="classGDE_1_1Texture_1a023bd51abde5fb2207ca31e67b4ac62c"></span><span class="n"><span class="pre">GLenum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dataFormat</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><a class="headerlink" href="#_CPPv4N3GDE7Texture10dataFormatE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Format of the data of the texture. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture6regionE">
+<span id="_CPPv3N3GDE7Texture6regionE"></span><span id="_CPPv2N3GDE7Texture6regionE"></span><span id="GDE::Texture::region__IntRect"></span><span class="target" id="classGDE_1_1Texture_1a400d6fe926988d44a92d6a7dacfae36c"></span><a class="reference internal" href="typedef_namespaceGDE_1aedb845789bfd06d662942fbf43f6b06f.html#_CPPv4N3GDE7IntRectE" title="GDE::IntRect"><span class="n"><span class="pre">IntRect</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">region</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N3GDE7Texture6regionE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Out of the whole SpriteSheet, the portion that the renderer should draw on screen. If this texture is itself the SpriteSheet, then the region is the whole SpriteSheet. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture10fileSizeKbE">
+<span id="_CPPv3N3GDE7Texture10fileSizeKbE"></span><span id="_CPPv2N3GDE7Texture10fileSizeKbE"></span><span id="GDE::Texture::fileSizeKb__float"></span><span class="target" id="classGDE_1_1Texture_1a340d0444eaf5e32a2734c7ad1805d4e5"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fileSizeKb</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><a class="headerlink" href="#_CPPv4N3GDE7Texture10fileSizeKbE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Size in Kilobytes of the SpriteSheet. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE7Texture4pathE">
+<span id="_CPPv3N3GDE7Texture4pathE"></span><span id="_CPPv2N3GDE7Texture4pathE"></span><span id="GDE::Texture::path__ss"></span><span class="target" id="classGDE_1_1Texture_1ac75cf392df1a68c55f46a432bc42a049"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">path</span></span></span><a class="headerlink" href="#_CPPv4N3GDE7Texture4pathE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Where the SpriteSheet is located. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classGDE_1_1TextRenderer.html" class="btn btn-neutral float-left" title="Class TextRenderer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classGDE_1_1TextureAtlasManager.html" class="btn btn-neutral float-right" title="Class TextureAtlasManager" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

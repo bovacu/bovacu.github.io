@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File Core.h &mdash; GDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> GDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">Library API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Program Listing for File Core.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file_engine_include_core_Core.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-core-h">
+<span id="program-listing-file-engine-include-core-core-h"></span><h1>Program Listing for File Core.h<a class="headerlink" href="#program-listing-for-file-core-h" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="file_engine_include_core_Core.h.html#file-engine-include-core-core-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">engine/include/core/Core.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Created by borja on 24/12/21.</span>
+
+
+<span class="cp">#ifndef ENGINE2_0_CORE_H</span>
+<span class="cp">#define ENGINE2_0_CORE_H</span>
+
+<span class="cp">#define FRAMEBUFFER_VERTEX_SHADER_ES &quot;assets/shaders/es/framebuffer/FrameBufferVertex.glsl&quot;</span>
+<span class="cp">#define FRAMEBUFFER_FRAGMENT_SHADER_ES &quot;assets/shaders/es/framebuffer/FrameBufferFragment.glsl&quot;</span>
+<span class="cp">#define FRAMEBUFFER_VERTEX_SHADER_CORE &quot;assets/shaders/core/framebuffer/FrameBufferVertex.glsl&quot;</span>
+<span class="cp">#define FRAMEBUFFER_FRAGMENT_SHADER_CORE &quot;assets/shaders/core/framebuffer/FrameBufferFragment.glsl&quot;</span>
+<span class="cp">#define RML_FRAGMENT_SHADER_CORE &quot;assets/shaders/core/texture/rmlFragment.glsl&quot;</span>
+<span class="cp">#define RML_FRAGMENT_COLOR_ONLY_SHADER_CORE &quot;assets/shaders/core/texture/rmlFragmentColorOnly.glsl&quot;</span>
+<span class="cp">#define RML_VERTEX_SHADER_CORE &quot;assets/shaders/core/texture/rmlVertex.glsl&quot;</span>
+
+<span class="cp">#define TEXTURE_VERTEX_SHADER_ES &quot;assets/shaders/es/texture/vertex.glsl&quot;</span>
+<span class="cp">#define DEBUG_VERTEX_SHADER_ES &quot;assets/shaders/es/debug/debugVertex.glsl&quot;</span>
+
+<span class="cp">#define TEXTURE_VERTEX_SHADER_CORE &quot;assets/shaders/core/texture/vertex.glsl&quot;</span>
+<span class="cp">#define DEBUG_VERTEX_SHADER_CORE &quot;assets/shaders/core/debug/debugVertex.glsl&quot;</span>
+<span class="cp">#define DEBUG_GRID_VERTEX_SHADER_CORE &quot;assets/shaders/core/debug/gridVertex.glsl&quot;</span>
+<span class="cp">#define DEBUG_GRID_FRAGMENT_SHADER_CORE &quot;assets/shaders/core/debug/gridFragment.glsl&quot;</span>
+
+<span class="cp">#define TEXTURE_FRAGMENT_SHADER_CORE &quot;assets/shaders/core/texture/fragment.glsl&quot;</span>
+<span class="cp">#define MIRROR_FRAGMENT_SHADER_CORE &quot;assets/shaders/core/texture/mirrorFragment.glsl&quot;</span>
+<span class="cp">#define MIRROR_VERTEX_SHADER_CORE &quot;assets/shaders/core/texture/mirrorVertex.glsl&quot;</span>
+<span class="cp">#define TEXT_FRAGMENT_SHADER_CORE &quot;assets/shaders/core/texture/textFragment.glsl&quot;</span>
+<span class="cp">#define OUTLINE_FRAGMENT_SHADER_CORE &quot;assets/shaders/core/texture/outlineFragment.glsl&quot;</span>
+<span class="cp">#define NEON_FRAGMENT_SHADER_CORE &quot;assets/shaders/core/texture/glowFragment.glsl&quot;</span>
+<span class="cp">#define BLOOM_FRAGMENT_SHADER_CORE &quot;assets/shaders/core/texture/bloomFragment.glsl&quot;</span>
+<span class="cp">#define BLUR_FRAGMENT_SHADER_CORE &quot;assets/shaders/core/texture/blurFragment.glsl&quot;</span>
+<span class="cp">#define DEBUG_FRAGMENT_SHADER_CORE &quot;assets/shaders/core/debug/debugFragment.glsl&quot;</span>
+
+<span class="cp">#define TEXTURE_FRAGMENT_SHADER_ES &quot;assets/shaders/es/texture/fragment.glsl&quot;</span>
+<span class="cp">#define TEXT_FRAGMENT_SHADER_ES &quot;assets/shaders/es/texture/textFragment.glsl&quot;</span>
+<span class="cp">#define OUTLINE_FRAGMENT_SHADER_ES &quot;assets/shaders/es/texture/outlineFragment.glsl&quot;</span>
+<span class="cp">#define NEON_FRAGMENT_SHADER_ES &quot;assets/shaders/es/texture/glowFragment.glsl&quot;</span>
+<span class="cp">#define BLOOM_FRAGMENT_SHADER_ES &quot;assets/shaders/es/texture/bloomFragment.glsl&quot;</span>
+<span class="cp">#define BLUR_FRAGMENT_SHADER_ES &quot;assets/shaders/es/texture/blurFragment.glsl&quot;</span>
+<span class="cp">#define DEBUG_FRAGMENT_SHADER_ES &quot;assets/shaders/es/debug/debugFragment.glsl&quot;</span>
+
+
+
+<span class="cp">#if DEBUG</span>
+<span class="cp">#define ENGINE_DEBUG</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#ifdef ENGINE_DEBUG</span>
+<span class="w">    </span><span class="cp">#if defined(_WIN32)</span>
+<span class="w">        </span><span class="cp">#define ENGINE_DEBUG_BREAK() __debugbreak()</span>
+<span class="w">        </span><span class="cp">#define ENGINE_ENABLE_ASSERTS</span>
+<span class="w">    </span><span class="cp">#elif defined(__APPLE__)</span>
+<span class="w">        </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;TargetConditionals.h&quot;</span><span class="cp"></span>
+<span class="w">        </span><span class="cp">#if TARGET_OS_IPHONE</span>
+<span class="w">            </span><span class="cp">#ifndef IOS_PLATFORM</span>
+<span class="w">                </span><span class="cp">#define IOS_PLATFORM</span>
+<span class="w">            </span><span class="cp">#endif</span>
+<span class="w">        </span><span class="cp">#elif TARGET_OS_MAC</span>
+<span class="w">            </span><span class="cp">#define MAC_PLATFORM</span>
+<span class="w">        </span><span class="cp">#endif</span>
+<span class="w">    </span><span class="cp">#elif defined(__linux__)</span>
+<span class="w">        </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;csignal&gt;</span><span class="cp"></span>
+<span class="w">        </span><span class="cp">#define ENGINE_DEBUG_BREAK() raise(SIGTRAP)</span>
+<span class="w">        </span><span class="cp">#define ENGINE_ENABLE_ASSERTS</span>
+<span class="w">    </span><span class="cp">#endif</span>
+<span class="cp">#else</span>
+<span class="cp">#define ENGINE_DEBUGBREAK()</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#define IS_MAC() (defined(__APPLE__) &amp;&amp; defined(MAC_PLATFORM))</span>
+<span class="cp">#define IS_WINDOWS() (defined(WIN32) || defined(_WIN32) || defined(__WIN32__))</span>
+<span class="cp">#define IS_LINUX() (defined(__linux__))</span>
+<span class="cp">#define IS_DESKTOP() (IS_LINUX() || IS_MAC() || IS_WINDOWS())</span>
+
+<span class="cp">#define IS_IOS() (defined(__APPLE__) &amp;&amp; defined(IOS_PLATFORM))</span>
+<span class="cp">#define IS_ANDROID() (defined(__ANDROID__))</span>
+<span class="cp">#define IS_MOBILE() (IS_ANDROID() || IS_IOS())</span>
+
+<span class="cp">#ifdef ENGINE_ENABLE_ASSERTS</span>
+<span class="w">    </span><span class="cp">#define ENGINE_ASSERT(x, ...) { if(!(x)) { LOG_E(&quot;Assertion Failed: &quot;, __VA_ARGS__); ENGINE_DEBUG_BREAK(); } }</span>
+<span class="cp">#else</span>
+<span class="w">    </span><span class="cp">#define ENGINE_ASSERT(x, ...)</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#ifdef GDE_EXPORT</span>
+<span class="w">    </span><span class="cp">#define GDE_API [[gnu::visibility(&quot;default&quot;)]]</span>
+<span class="w">    </span><span class="cp">#define GDE_HIDDEN [[gnu::visibility(&quot;hidden&quot;)]]</span>
+<span class="w">    </span><span class="cp">#define GDE_INTERNAL [[gnu::visibility(&quot;internal&quot;)]]</span>
+<span class="w">    </span><span class="cp">#define GDE_DEPRECATED(_explanation) [[gnu::deprecated(_explanation)]]</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#define ENGINE_BIND_EVENT_FN(fn) [this](auto&amp;&amp;... args) -&gt; decltype(auto) { return fn(std::forward&lt;decltype(args)&gt;(args)...); }</span>
+
+<span class="c1">// This is for the EventBus</span>
+<span class="cp">#define PLACEHOLDERS_1 std::placeholders::_1</span>
+<span class="cp">#define PLACEHOLDERS_2 std::placeholders::_1, std::placeholders::_2</span>
+<span class="cp">#define PLACEHOLDERS_3 std::placeholders::_1, std::placeholders::_2, std::placeholders::_3</span>
+<span class="cp">#define PLACEHOLDERS_4 std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4</span>
+<span class="cp">#define PLACEHOLDERS_5 std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5</span>
+
+<span class="cp">#define BIND_FUNC_0(_method) std::bind(&amp;_method, this)</span>
+<span class="cp">#define BIND_FUNC_1(_method) std::bind(&amp;_method, this, PLACEHOLDERS_1)</span>
+<span class="cp">#define BIND_FUNC_2(_method) std::bind(&amp;_method, this, PLACEHOLDERS_2)</span>
+<span class="cp">#define BIND_FUNC_3(_method) std::bind(&amp;_method, this, PLACEHOLDERS_3)</span>
+<span class="cp">#define BIND_FUNC_4(_method) std::bind(&amp;_method, this, PLACEHOLDERS_4)</span>
+<span class="cp">#define BIND_FUNC_5(_method) std::bind(&amp;_method, this, PLACEHOLDERS_5)</span>
+
+<span class="cp">#endif </span><span class="c1">//ENGINE2_0_CORE_H</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

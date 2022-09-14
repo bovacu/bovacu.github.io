@@ -1,0 +1,17 @@
+.. _exhale_class_classGDE_1_1TransitionParams:
+
+Class TransitionParams
+======================
+
+- Defined in :ref:`file_engine_include_core_systems_animationSystem_AnimationSystem.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GDE::TransitionParams
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

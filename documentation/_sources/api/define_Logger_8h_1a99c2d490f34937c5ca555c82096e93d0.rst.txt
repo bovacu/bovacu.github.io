@@ -1,0 +1,14 @@
+.. _exhale_define_Logger_8h_1a99c2d490f34937c5ca555c82096e93d0:
+
+Define LOG_W
+============
+
+- Defined in :ref:`file_engine_include_core_util_Logger.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: LOG_W
+   :project: My Project

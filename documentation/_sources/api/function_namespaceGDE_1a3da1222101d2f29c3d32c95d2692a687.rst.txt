@@ -1,0 +1,14 @@
+.. _exhale_function_namespaceGDE_1a3da1222101d2f29c3d32c95d2692a687:
+
+Function GDE::createEngine
+==========================
+
+- Defined in :ref:`file_engine_include_core_Engine.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: GDE::createEngine()
+   :project: My Project

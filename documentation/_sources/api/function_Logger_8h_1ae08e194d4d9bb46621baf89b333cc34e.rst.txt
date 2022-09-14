@@ -1,0 +1,14 @@
+.. _exhale_function_Logger_8h_1ae08e194d4d9bb46621baf89b333cc34e:
+
+Function printTime
+==================
+
+- Defined in :ref:`file_engine_include_core_util_Logger.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: printTime(const char *, const char *)
+   :project: My Project

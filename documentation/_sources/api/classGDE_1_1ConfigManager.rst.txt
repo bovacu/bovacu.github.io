@@ -1,0 +1,17 @@
+.. _exhale_class_classGDE_1_1ConfigManager:
+
+Class ConfigManager
+===================
+
+- Defined in :ref:`file_engine_include_core_systems_configSystem_ConfigManager.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GDE::ConfigManager
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

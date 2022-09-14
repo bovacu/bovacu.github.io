@@ -1,0 +1,77 @@
+
+.. _file_engine_include_core_systems_animationSystem_AnimationSystem.h:
+
+File AnimationSystem.h
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_systems_animationSystem>` (``engine/include/core/systems/animationSystem``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/systems/animationSystem/AnimationSystem.h``)
+------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_systems_animationSystem_AnimationSystem.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``Animation.h`` (:ref:`file_engine_include_core_systems_animationSystem_Animation.h`)
+
+- ``core/graph/components/SpriteRenderer.h`` (:ref:`file_engine_include_core_graph_components_SpriteRenderer.h`)
+
+- ``core/systems/eventSystem/EventBus.h`` (:ref:`file_engine_include_core_systems_eventSystem_EventBus.h`)
+
+- ``core/util/Util.h`` (:ref:`file_engine_include_core_util_Util.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_GDE.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structGDE_1_1AnimationNode`
+
+- :ref:`exhale_struct_structGDE_1_1AnimationTransition`
+
+- :ref:`exhale_class_classGDE_1_1AnimationSystem`
+
+- :ref:`exhale_class_classGDE_1_1TransitionParams`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_namespaceGDE_1a76d0cc4a313c9b4b5d13c32dd9716936`
+

@@ -1,0 +1,14 @@
+.. _exhale_typedef_namespaceGDE_1a9fd0e9dcae9f70f0a7fe8e152acbb2cb:
+
+Typedef GDE::NodeID
+===================
+
+- Defined in :ref:`file_engine_include_core_graph_Graph.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: GDE::NodeID
+   :project: My Project

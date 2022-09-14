@@ -1,0 +1,64 @@
+
+.. _program_listing_file_engine_include_core_graph_components_Body.h:
+
+Program Listing for File Body.h
+===============================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_graph_components_Body.h>` (``engine/include/core/graph/components/Body.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   //
+   // Created by borja on 9/5/22.
+   //
+   
+   #ifndef GDE_BODY_H
+   #define GDE_BODY_H
+   
+   #include "core/systems/physicsSystem/PhysicsManager.h"
+   #include "entt/entity/entity.hpp"
+   #include "core/graph/Scene.h"
+   #include "core/graph/components/Transform.h"
+   
+   typedef entt::entity NodeID;
+   
+   namespace GDE {
+   
+        class Body {
+            public:
+                B2DConfig b2dConfig;
+   
+                BodyConfig bodyConfig;
+   
+            public:
+                explicit Body(const NodeID& _nodeId, Scene* _scene, const BodyConfig& _config, Transform* _transform);
+                Body(const Body& _body) = default;
+                ~Body();
+   
+                [[nodiscard]] Vec2F getPosition() const;
+   
+                [[nodiscard]] float getRotation() const;
+   
+                void setApplyGravity(bool applyGravity) const;
+   
+                [[nodiscard]] bool isApplyingGravity() const;
+   
+                void setGravityMultiplier(float _gravityMultiplier) const;
+   
+                [[nodiscard]] float getGravityMultiplayer() const;
+   
+                void setSensor(bool _sensor) const;
+   
+                [[nodiscard]] bool isSensor() const;
+   
+                void setSelfCollisionMask(CollisionMask _mask) const;
+   
+            private:
+                b2BodyType gdeBodyTypeToB2dBodyType(const BodyType& _bodyType);
+        };
+   
+   }
+   
+   #endif //GDE_BODY_H

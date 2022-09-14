@@ -1,0 +1,93 @@
+
+.. _program_listing_file_engine_include_core_graph_components_TextRenderer.h:
+
+Program Listing for File TextRenderer.h
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_graph_components_TextRenderer.h>` (``engine/include/core/graph/components/TextRenderer.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   //
+   // Created by borja on 9/5/22.
+   //
+   
+   #ifndef GDE_TEXT_RENDERER_H
+   #define GDE_TEXT_RENDERER_H
+   
+   #include "core/render/elements/IRenderizable.h"
+   #include "entt/entity/entity.hpp"
+   #include "core/graph/Scene.h"
+   
+   typedef entt::entity NodeID;
+   
+   namespace GDE {
+   
+       class Font;
+   
+       class TextRenderer : public IRenderizable {
+   
+           friend class SpriteBatch;
+   
+           private:
+           Font* font;
+   
+           std::string innerText;
+   
+           Vec2F size {};
+   
+           float spaceBetweenChars {};
+   
+           float spaceWidth {};
+   
+           float enterHeight {};
+   
+           int fontSize {};
+   
+           Texture* texture = nullptr;
+   
+   
+           private:
+           void recalcTextDimensions(const std::string& _text);
+   
+           public:
+           TextRenderer(const NodeID& _nodeId, Scene* _scene, Font* _font, const std::string& _text);
+           TextRenderer(const NodeID& _nodeId, Scene* _scene, Font* _font);
+           ~TextRenderer() override {  }
+   
+           void setText(const std::string& _text);
+   
+           void setFont(Font* _font);
+   
+           [[nodiscard]] Font* getFont() const;
+   
+           [[nodiscard]] const std::string& getText() const;
+   
+           [[nodiscard]] Vec2F getTextSize() const;
+   
+           void setFontSize(int _fontSize);
+   
+           [[nodiscard]] int getFontSize() const;
+   
+           void setSpaceWidth(float _spaceWidth);
+   
+           [[nodiscard]] float getSpaceWidth() const;
+   
+           [[nodiscard]] float getSpacesBetweenChars() const;
+   
+           void setSpacesBetweenChars(float _spaceBetweenChars);
+   
+           [[nodiscard]] GLuint getTexture() const override { return texture->getGLTexture(); }
+   
+           [[nodiscard]] Vec2I getSize() const override { return texture->getSize(); }
+   
+           [[nodiscard]] IntRect getRegion() const override { return texture->getRegion(); }
+   
+           void draw(std::vector<OpenGLVertex>& _vertices, std::vector<uint32_t>& _indices, const Transform& _transform, const IViewPort& _viewport) const override;
+       };
+   
+   }
+   
+   #endif //GDE_TEXT_RENDERER_H

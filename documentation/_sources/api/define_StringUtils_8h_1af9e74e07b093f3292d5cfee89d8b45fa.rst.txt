@@ -1,0 +1,14 @@
+.. _exhale_define_StringUtils_8h_1af9e74e07b093f3292d5cfee89d8b45fa:
+
+Define SPLIT_S
+==============
+
+- Defined in :ref:`file_engine_include_core_util_StringUtils.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SPLIT_S
+   :project: My Project

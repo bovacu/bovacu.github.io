@@ -1,0 +1,14 @@
+.. _exhale_typedef_namespaceGDE_1a3d88cff13ab153380d5c8ef69eaba949:
+
+Typedef GDE::Matrix2D
+=====================
+
+- Defined in :ref:`file_engine_include_core_procedural_CellularAutomataMapGenerator.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: GDE::Matrix2D
+   :project: My Project

@@ -1,0 +1,48 @@
+
+.. _program_listing_file_engine_include_core_render_elements_Vertex.h:
+
+Program Listing for File Vertex.h
+=================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_render_elements_Vertex.h>` (``engine/include/core/render/elements/Vertex.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   //
+   // Created by borja on 9/5/22.
+   //
+   
+   #ifndef GDE_VERTEX_H
+   #define GDE_VERTEX_H
+   
+   #include <glm/glm.hpp>
+   
+   namespace GDE {
+   
+       struct OpenGLVertex {
+   
+           glm::vec3 position {0, 0, 0};
+   
+           glm::vec4 color { 1, 1, 1, 1 };
+   
+           glm::vec2 texCoord {0, 0};
+   
+           float* extraData = nullptr;
+   
+           OpenGLVertex(const glm::vec3& _position, const glm::vec2& _texCoord, const glm::vec4& _color, float* _extraData = nullptr) : position(_position), color(_color), texCoord(_texCoord), extraData(_extraData) {  }
+       };
+   
+       struct OpenGLVertexDebug {
+   
+           glm::vec3 position {0, 0, 0};
+   
+           glm::vec4 color {1, 1, 1, 1};
+   
+           OpenGLVertexDebug(const glm::vec3& _position, const glm::vec4& _color) : position(_position), color(_color) {  }
+       };
+   
+   }
+   
+   #endif //GDE_VERTEX_H

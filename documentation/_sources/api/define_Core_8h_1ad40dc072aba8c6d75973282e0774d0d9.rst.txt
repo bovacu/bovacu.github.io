@@ -1,0 +1,14 @@
+.. _exhale_define_Core_8h_1ad40dc072aba8c6d75973282e0774d0d9:
+
+Define RML_FRAGMENT_COLOR_ONLY_SHADER_CORE
+==========================================
+
+- Defined in :ref:`file_engine_include_core_Core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: RML_FRAGMENT_COLOR_ONLY_SHADER_CORE
+   :project: My Project

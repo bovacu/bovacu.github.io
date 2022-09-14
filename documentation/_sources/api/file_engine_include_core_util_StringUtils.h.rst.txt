@@ -1,0 +1,86 @@
+
+.. _file_engine_include_core_util_StringUtils.h:
+
+File StringUtils.h
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_util>` (``engine/include/core/util``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/util/StringUtils.h``)
+-------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_util_StringUtils.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``chrono``
+
+- ``core/platform/PlatformHeaderSDL.h`` (:ref:`file_engine_include_core_platform_PlatformHeaderSDL.h`)
+
+- ``cstring``
+
+- ``iostream``
+
+- ``sstream``
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_core_util_Util.h`
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_StringUtils_8h_1a0825be10c8b4cbbf347b612e131aa911`
+
+- :ref:`exhale_function_StringUtils_8h_1a470585a419d55d0f2d5b8dc6f5d4c0ba`
+
+- :ref:`exhale_function_StringUtils_8h_1a99d1c60f195e4f38ad576365c807a187`
+
+- :ref:`exhale_function_StringUtils_8h_1a0862c2db73c8bc2b27e8ce93423f970a`
+
+- :ref:`exhale_function_StringUtils_8h_1a26ffca0cd8b487d7da6c9b3ac4bfd234`
+
+- :ref:`exhale_function_StringUtils_8h_1aef121b12005433d71cfded6f17f506c5`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_StringUtils_8h_1a08ba518523de57f364d34e035c06ad09`
+
+- :ref:`exhale_define_StringUtils_8h_1a12a9d07daddb655fa338ca612c506442`
+
+- :ref:`exhale_define_StringUtils_8h_1af9e74e07b093f3292d5cfee89d8b45fa`
+
+- :ref:`exhale_define_StringUtils_8h_1a2ca091a01a816bbb83abf658699d12e6`
+

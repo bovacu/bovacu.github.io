@@ -1,0 +1,102 @@
+
+.. _program_listing_file_engine_include_core_render_elements_SpriteBatch.h:
+
+Program Listing for File SpriteBatch.h
+======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_render_elements_SpriteBatch.h>` (``engine/include/core/render/elements/SpriteBatch.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include <vector>
+   #include "core/render/Camera.h"
+   #include "core/render/shapes/Shape.h"
+   #include "core/render/elements/ShaderManager.h"
+   #include "core/graph/components/Components.h"
+   #include "core/graph/components/SpriteRenderer.h"
+   #include "core/graph/components/TextRenderer.h"
+   #include "core/graph/components/NineSliceSprite.h"
+   #include "core/systems/particleSystem/ParticleSystem.h"
+   #include "core/render/elements/Vertex.h"
+   #include "core/render/elements/Batch.h"
+   
+   namespace GDE {
+   
+       class SpriteBatch {
+           friend class Batch;
+           class Debug {
+               friend class SpriteBatch;
+   
+               private:
+                   static SpriteBatch* batch;
+   
+                   std::vector<OpenGLVertexDebug> vertexDebugBufferGeometrics {};
+   
+                   std::vector<OpenGLVertexDebug> vertexDebugBufferLines {};
+   
+                   GLuint debugVbo = -1;
+   
+                   GLuint debugVao = -1;
+   
+               private:
+                   void configDebugShader();
+   
+               public:
+                   void init(SpriteBatch* _batch);
+   
+                   void drawGrid(const Color& _color);
+   
+                   void drawLine(const Vec2F& _p0, const Vec2F& _p1, const Color& _color = Color::Green);
+   
+                   void drawSquare(const Vec2F& _position, const Vec2F& _size, const Color& _color = Color::Green, float _rotation = 0.f);
+   
+                   void drawShape(Shape& _shape);
+   
+                   void flushDebug();
+   
+                   void setDebugLinesThickness(float _thickness);
+           };
+   
+           public:
+               int totalTriangles = 0;
+   
+               int drawCalls = 0;
+   
+               Debug debug {};
+   
+               const int maxIndicesPerDrawCall = 50000; // Between 35.000 and 50.000 should be a good range
+   
+           private:
+               ShaderManager* shaderManager = nullptr;
+   
+               IViewPort* viewport = nullptr;
+   
+               glm::mat4 viewProjectionMatrix {1.0f};
+   
+               std::vector<Batch> batches {};
+   
+           private:
+               Batch& getBatch(const IRenderizable* _renderer, int _layer, BatchPriority _priority);
+   
+               void orderBatches();
+   
+           public:
+               SpriteBatch() {};
+               ~SpriteBatch();
+   
+               void init(Engine* _engine);
+   
+               void beginDraw(Camera& _camera, Transform* _cameraTransform);
+   
+               void draw(const IRenderizable* _renderizable, const Transform& _transform);
+   
+               void flush();
+   
+           private:
+               void configBasicShader();
+       };
+   }

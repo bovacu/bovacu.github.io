@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Window &mdash; GDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class WindowClosedEvent" href="classGDE_1_1WindowClosedEvent.html" />
+    <link rel="prev" title="Template Class Vec2" href="classGDE_1_1Vec2.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> GDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Active.html">Struct Active</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1AnimationNode.html">Struct AnimationNode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1AnimationTransition.html">Struct AnimationTransition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Atlas.html">Struct Atlas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1B2DConfig.html">Struct B2DConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1BodyConfig.html">Struct BodyConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1CanvasEventStopper.html">Struct CanvasEventStopper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1CharInfo.html">Struct CharInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Color.html">Struct Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Command.html">Struct Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Controller.html">Struct Controller</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Effect__Controllers.html">Struct Effect_Controllers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1File.html">Template Struct File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1FontManager_1_1FontHandler.html">Struct FontManager::FontHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1FrameBufferSpecification.html">Struct FrameBufferSpecification</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig.html">Struct GDEConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig_1_1ProjectProperties.html">Struct GDEConfig::ProjectProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig_1_1WindowProperties.html">Struct GDEConfig::WindowProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GenerationSettings.html">Struct GenerationSettings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Music.html">Struct Music</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NineSlice.html">Struct NineSlice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NodeID__JsonPair.html">Struct NodeID_JsonPair</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NoiseMap.html">Struct NoiseMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1OpenGLVertex.html">Struct OpenGLVertex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1OpenGLVertexDebug.html">Struct OpenGLVertexDebug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ParticleData.html">Struct ParticleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1PhysicsManager_1_1Collision__CallbackFunction.html">Struct PhysicsManager::Collision_CallbackFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Probability.html">Struct Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ProceduralMap.html">Struct ProceduralMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Rect.html">Template Struct Rect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1RollingBuffer.html">Struct RollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ScrollingBuffer.html">Struct ScrollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Sfx.html">Struct Sfx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Sound.html">Struct Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1State.html">Struct State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1StaticTransform.html">Struct StaticTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Stub.html">Template Struct Stub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Stub_3_01R_07Args_8_8_8_08_4.html">Template Struct Stub&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Tag.html">Struct Tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1TextureInfo.html">Struct TextureInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VertexConfig.html">Struct VertexConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VertexData.html">Struct VertexData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VibrationConfig.html">Struct VibrationConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1AdaptiveViewPort.html">Class AdaptiveViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Animation.html">Class Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1AnimationSystem.html">Class AnimationSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BadDelegateCall.html">Class BadDelegateCall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BadECSSystemSwap.html">Class BadECSSystemSwap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BasicPerlinNoise.html">Template Class BasicPerlinNoise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Batch.html">Class Batch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Body.html">Class Body</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Camera.html">Class Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Canvas.html">Class Canvas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1CellularAutomata.html">Class CellularAutomata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Clock.html">Class Clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ConfigManager.html">Class ConfigManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Console.html">Class Console</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerAxisMovedEvent.html">Class ControllerAxisMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerButtonDownEvent.html">Class ControllerButtonDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerButtonUpEvent.html">Class ControllerButtonUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerInput.html">Class ControllerInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerVibrationManager.html">Class ControllerVibrationManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Delta.html">Class Delta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Easing.html">Class Easing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ECSManager.html">Class ECSManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ECSSystem.html">Class ECSSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Engine.html">Class Engine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Event.html">Class Event</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventBus.html">Template Class EventBus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventBus_1_1HandlerId.html">Class EventBus::HandlerId</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventDispatcher.html">Class EventDispatcher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FileHandler.html">Class FileHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FileManager.html">Class FileManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FixedViewPort.html">Class FixedViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Font.html">Class Font</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FontManager.html">Class FontManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FrameBuffer.html">Class FrameBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FreeViewPort.html">Class FreeViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Graph.html">Class Graph</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Image.html">Class Image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ImGuiScene.html">Class ImGuiScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Input.html">Class Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1InputManager.html">Class InputManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1IRenderizable.html">Class IRenderizable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1IViewPort.html">Class IViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyboardInput.html">Class KeyboardInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyEvent.html">Class KeyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyPressedEvent.html">Class KeyPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyReleasedEvent.html">Class KeyReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyTypedEvent.html">Class KeyTypedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1LoadVertexConfigNotInvoked.html">Class LoadVertexConfigNotInvoked</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Manager.html">Class Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MapGenerator.html">Class MapGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MDelegate.html">Template Class MDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MDelegate_3_01R_07Args_8_8_8_08_4.html">Template Class MDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileInput.html">Class MobileInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchDownEvent.html">Class MobileTouchDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchMovedEvent.html">Class MobileTouchMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchUpEvent.html">Class MobileTouchUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonEvent.html">Class MouseButtonEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonPressedEvent.html">Class MouseButtonPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonReleasedEvent.html">Class MouseButtonReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseInput.html">Class MouseInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseMovedEvent.html">Class MouseMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseScrolledEvent.html">Class MouseScrolledEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1NineSliceSprite.html">Class NineSliceSprite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ParticleSystem.html">Class ParticleSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PerlinNoiseManager.html">Class PerlinNoiseManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PhysicsManager.html">Class PhysicsManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PhysicsManager_1_1CollisionCallback.html">Class PhysicsManager::CollisionCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Platform.html">Class Platform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Profiler.html">Class Profiler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Random.html">Class Random</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Renderer.html">Class Renderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Scene.html">Class Scene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SceneManager.html">Class SceneManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Shader.html">Class Shader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ShaderManager.html">Class ShaderManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Shape.html">Class Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SoundManager.html">Class SoundManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteBatch.html">Class SpriteBatch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteBatch_1_1Debug.html">Class SpriteBatch::Debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteRenderer.html">Class SpriteRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TextRenderer.html">Class TextRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Texture.html">Class Texture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TextureAtlasManager.html">Class TextureAtlasManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Transform.html">Class Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TransitionParams.html">Class TransitionParams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UDelegate.html">Template Class UDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UDelegate_3_01R_07Args_8_8_8_08_4.html">Template Class UDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UI.html">Class UI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UIInteractable.html">Class UIInteractable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Util.html">Class Util</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Vec2.html">Template Class Vec2</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class Window</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowClosedEvent.html">Class WindowClosedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowFrameEvent.html">Class WindowFrameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowInput.html">Class WindowInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowMinimizedEvent.html">Class WindowMinimizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowMovedEvent.html">Class WindowMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowRenderEvent.html">Class WindowRenderEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowResizedEvent.html">Class WindowResizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowUpdateEvent.html">Class WindowUpdateEvent</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="library_root.html">Library API</a> &raquo;</li>
+      <li>Class Window</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/classGDE_1_1Window.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-window">
+<span id="exhale-class-classgde-1-1window"></span><h1>Class Window<a class="headerlink" href="#class-window" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_engine_include_core_render_window_Window.h.html#file-engine-include-core-render-window-window-h"><span class="std std-ref">File Window.h</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6WindowE">
+<span id="_CPPv3N3GDE6WindowE"></span><span id="_CPPv2N3GDE6WindowE"></span><span id="GDE::Window"></span><span class="target" id="classGDE_1_1Window"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Window</span></span></span><a class="headerlink" href="#_CPPv4N3GDE6WindowE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6WindowD0Ev">
+<span id="_CPPv3N3GDE6WindowD0Ev"></span><span id="_CPPv2N3GDE6WindowD0Ev"></span><span id="GDE::Window::~Window"></span><span class="target" id="classGDE_1_1Window_1a382dd2de26cc4b344c29b9ed7b69be6d"></span><span class="sig-name descname"><span class="n"><span class="pre">~Window</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6WindowD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window6updateEv">
+<span id="_CPPv3N3GDE6Window6updateEv"></span><span id="_CPPv2N3GDE6Window6updateEv"></span><span id="GDE::Window::update"></span><span class="target" id="classGDE_1_1Window_1a198dc59f03229541c0c106ccf292d383"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">update</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window6updateEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This method is used to update the window, poll the events and swap the buffers. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE6Window12consumeEventER5Event">
+<span id="_CPPv3NK3GDE6Window12consumeEventER5Event"></span><span id="_CPPv2NK3GDE6Window12consumeEventER5Event"></span><span id="GDE::Window::consumeEvent__EventRC"></span><span class="target" id="classGDE_1_1Window_1adc06c00870e990fddfe64e05212dd339"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">consumeEvent</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1Event.html#_CPPv4N3GDE5EventE" title="GDE::Event"><span class="n"><span class="pre">Event</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_e</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE6Window12consumeEventER5Event" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Handles an specific event. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_e</strong> – <a class="reference internal" href="classGDE_1_1Event.html#classGDE_1_1Event"><span class="std std-ref">Event</span></a> to be handled </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE6Window8getWidthEv">
+<span id="_CPPv3NK3GDE6Window8getWidthEv"></span><span id="_CPPv2NK3GDE6Window8getWidthEv"></span><span id="GDE::Window::getWidthC"></span><span class="target" id="classGDE_1_1Window_1acac06d664063ac4895cdf65fb7053b05"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getWidth</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE6Window8getWidthEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the width of the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE6Window9getHeightEv">
+<span id="_CPPv3NK3GDE6Window9getHeightEv"></span><span id="_CPPv2NK3GDE6Window9getHeightEv"></span><span id="GDE::Window::getHeightC"></span><span class="target" id="classGDE_1_1Window_1ade53d75268f3d9f8d4b9aca6f91065e4"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getHeight</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE6Window9getHeightEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the height of the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window8getTitleEv">
+<span id="_CPPv3N3GDE6Window8getTitleEv"></span><span id="_CPPv2N3GDE6Window8getTitleEv"></span><span id="GDE::Window::getTitle"></span><span class="target" id="classGDE_1_1Window_1ace74d6d7a7e4fd6af22ce76b326ebc75"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getTitle</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window8getTitleEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the title of the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>std::string&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window8setTitleERKNSt6stringE">
+<span id="_CPPv3N3GDE6Window8setTitleERKNSt6stringE"></span><span id="_CPPv2N3GDE6Window8setTitleERKNSt6stringE"></span><span id="GDE::Window::setTitle__ssCR"></span><span class="target" id="classGDE_1_1Window_1a5d3584b6dcb1dc52c22631696e060976"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setTitle</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_title</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window8setTitleERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the new title of the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_title</strong> – Title of the window. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window13setWindowSizeEii">
+<span id="_CPPv3N3GDE6Window13setWindowSizeEii"></span><span id="_CPPv2N3GDE6Window13setWindowSizeEii"></span><span id="GDE::Window::setWindowSize__i.i"></span><span class="target" id="classGDE_1_1Window_1a3779b2708caa95385f5b309b99a3fbbb"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setWindowSize</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_width</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_height</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window13setWindowSizeEii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the new size of the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_width</strong> – New width of the window. </p></li>
+<li><p><strong>_height</strong> – New height of the window. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE6Window13getWindowSizeEv">
+<span id="_CPPv3NK3GDE6Window13getWindowSizeEv"></span><span id="_CPPv2NK3GDE6Window13getWindowSizeEv"></span><span id="GDE::Window::getWindowSizeC"></span><span class="target" id="classGDE_1_1Window_1a3b2f71df402297752c1dcc865b8e96ac"></span><a class="reference internal" href="typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063.html#_CPPv4N3GDE5Vec2IE" title="GDE::Vec2I"><span class="n"><span class="pre">Vec2I</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getWindowSize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE6Window13getWindowSizeEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the size of the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Vec2I </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window13setFullscreenEb">
+<span id="_CPPv3N3GDE6Window13setFullscreenEb"></span><span id="_CPPv2N3GDE6Window13setFullscreenEb"></span><span id="GDE::Window::setFullscreen__b"></span><span class="target" id="classGDE_1_1Window_1ac890c5c77c1a4c7bb22cf7570cf39abb"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setFullscreen</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_fullscreen</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window13setFullscreenEb" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Enables or disables fullscreen mode. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_fullscreen</strong> – True or false to enable/disable. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE6Window12isFullscreenEv">
+<span id="_CPPv3NK3GDE6Window12isFullscreenEv"></span><span id="_CPPv2NK3GDE6Window12isFullscreenEv"></span><span id="GDE::Window::isFullscreenC"></span><span class="target" id="classGDE_1_1Window_1a787b303c84f4257b9514eba4e234b80b"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isFullscreen</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE6Window12isFullscreenEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns if screen is fullscreen or not. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window12setMinimizedEb">
+<span id="_CPPv3N3GDE6Window12setMinimizedEb"></span><span id="_CPPv2N3GDE6Window12setMinimizedEb"></span><span id="GDE::Window::setMinimized__b"></span><span class="target" id="classGDE_1_1Window_1ae78ef0a50d1ebbb9ebf9c82d0de538a1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setMinimized</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_minimized</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window12setMinimizedEb" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window16setEventCallbackERK9UDelegateIFvR5EventEE">
+<span id="_CPPv3N3GDE6Window16setEventCallbackERK9UDelegateIFvR5EventEE"></span><span id="_CPPv2N3GDE6Window16setEventCallbackERK9UDelegateIFvR5EventEE"></span><span class="target" id="classGDE_1_1Window_1a5b4042bc5d2f0e48cc237bd7e16c8742"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setEventCallback</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classGDE_1_1UDelegate.html#_CPPv4I0EN3GDE9UDelegateE" title="GDE::UDelegate"><span class="n"><span class="pre">UDelegate</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">void</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="classGDE_1_1Event.html#_CPPv4N3GDE5EventE" title="GDE::Event"><span class="n"><span class="pre">Event</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_callback</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window16setEventCallbackERK9UDelegateIFvR5EventEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the method that will be executed when a polled event triggers. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_callback</strong> – A void method with an <a class="reference internal" href="classGDE_1_1Event.html#classGDE_1_1Event"><span class="std std-ref">Event</span></a>&amp; as parameter. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window8setVSyncEb">
+<span id="_CPPv3N3GDE6Window8setVSyncEb"></span><span id="_CPPv2N3GDE6Window8setVSyncEb"></span><span id="GDE::Window::setVSync__b"></span><span class="target" id="classGDE_1_1Window_1a0ede2b778e568bda47f90cde2cd5e69c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setVSync</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_enable</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window8setVSyncEb" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Enables or disables VSync. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_enable</strong> – True/false to enable/disable. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE6Window13isVSyncActiveEv">
+<span id="_CPPv3NK3GDE6Window13isVSyncActiveEv"></span><span id="_CPPv2NK3GDE6Window13isVSyncActiveEv"></span><span id="GDE::Window::isVSyncActiveC"></span><span class="target" id="classGDE_1_1Window_1a200df4082adb3c3ad8f1c7ec6c649990"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isVSyncActive</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE6Window13isVSyncActiveEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns if the VSync is enabled. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE6Window15getNativeWindowEv">
+<span id="_CPPv3NK3GDE6Window15getNativeWindowEv"></span><span id="_CPPv2NK3GDE6Window15getNativeWindowEv"></span><span id="GDE::Window::getNativeWindowC"></span><span class="target" id="classGDE_1_1Window_1acb3a64282bfd6d4dc840bc7fd35c5dbd"></span><span class="n"><span class="pre">SDL_Window</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getNativeWindow</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE6Window15getNativeWindowEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns a raw pointer to one of the <a class="reference internal" href="#classGDE_1_1Window"><span class="std std-ref">Window</span></a> subclasses. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>SDL_Window* </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window10getContextEv">
+<span id="_CPPv3N3GDE6Window10getContextEv"></span><span id="_CPPv2N3GDE6Window10getContextEv"></span><span id="GDE::Window::getContext"></span><span class="target" id="classGDE_1_1Window_1a35bfec46e6d0d95d4891993760493640"></span><span class="n"><span class="pre">SDL_GLContext</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getContext</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window10getContextEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the context of the <a class="reference internal" href="#classGDE_1_1Window"><span class="std std-ref">Window</span></a>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>SDL_GLContext&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE6Window11getPositionEv">
+<span id="_CPPv3NK3GDE6Window11getPositionEv"></span><span id="_CPPv2NK3GDE6Window11getPositionEv"></span><span id="GDE::Window::getPositionC"></span><span class="target" id="classGDE_1_1Window_1a75e0cfd06f21f072ade693199a478012"></span><a class="reference internal" href="typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063.html#_CPPv4N3GDE5Vec2IE" title="GDE::Vec2I"><span class="n"><span class="pre">Vec2I</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPosition</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE6Window11getPositionEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the position of the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Vec2I </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window11setPositionERK5Vec2I">
+<span id="_CPPv3N3GDE6Window11setPositionERK5Vec2I"></span><span id="_CPPv2N3GDE6Window11setPositionERK5Vec2I"></span><span id="GDE::Window::setPosition__Vec2ICR"></span><span class="target" id="classGDE_1_1Window_1a4bf56bdee7ef6b0b06e4fa0497f088f0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPosition</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1a87bdae56aea32d753740efd91a5fe063.html#_CPPv4N3GDE5Vec2IE" title="GDE::Vec2I"><span class="n"><span class="pre">Vec2I</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_position</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window11setPositionERK5Vec2I" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the new position of the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_position</strong> – Vec2I with the new [x,y] </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window7setIconERKNSt6stringE">
+<span id="_CPPv3N3GDE6Window7setIconERKNSt6stringE"></span><span id="_CPPv2N3GDE6Window7setIconERKNSt6stringE"></span><span id="GDE::Window::setIcon__ssCR"></span><span class="target" id="classGDE_1_1Window_1aed5a61ed33f2fe201706ef7c84f26410"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setIcon</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_path</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window7setIconERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the icon of the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_path</strong> – Path to the icon, it can be png, jpg, jpeg, ico… </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window11isMinimizedEv">
+<span id="_CPPv3N3GDE6Window11isMinimizedEv"></span><span id="_CPPv2N3GDE6Window11isMinimizedEv"></span><span id="GDE::Window::isMinimized"></span><span class="target" id="classGDE_1_1Window_1a4e64ad142d73d6194c36c32df816b1d7"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMinimized</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window11isMinimizedEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns if the window is minimized or not. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window9isRunningEv">
+<span id="_CPPv3N3GDE6Window9isRunningEv"></span><span id="_CPPv2N3GDE6Window9isRunningEv"></span><span id="GDE::Window::isRunning"></span><span class="target" id="classGDE_1_1Window_1a2a8615565ea408274d8cf5605380e7c3"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isRunning</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window9isRunningEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns if the <a class="reference internal" href="#classGDE_1_1Window"><span class="std std-ref">Window</span></a> is running or not. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window4stopEv">
+<span id="_CPPv3N3GDE6Window4stopEv"></span><span id="_CPPv2N3GDE6Window4stopEv"></span><span id="GDE::Window::stop"></span><span class="target" id="classGDE_1_1Window_1a65828c277e90bbec6b43288645a2b6db"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stop</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window4stopEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Makes the window to close and the application to exit. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-functions">Protected Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window6WindowEP9GDEConfig">
+<span id="_CPPv3N3GDE6Window6WindowEP9GDEConfig"></span><span id="_CPPv2N3GDE6Window6WindowEP9GDEConfig"></span><span id="GDE::Window::Window__GDEConfigP"></span><span class="target" id="classGDE_1_1Window_1a363339c80dda4bb910ab5b7412850232"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Window</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structGDE_1_1GDEConfig.html#_CPPv4N3GDE9GDEConfigE" title="GDE::GDEConfig"><span class="n"><span class="pre">GDEConfig</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_props</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE6Window6WindowEP9GDEConfig" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window6windowE">
+<span id="_CPPv3N3GDE6Window6windowE"></span><span id="_CPPv2N3GDE6Window6windowE"></span><span id="GDE::Window::window__SDL_WindowP"></span><span class="target" id="classGDE_1_1Window_1af2b73e50a1a7e38837faf4fdaa11b353"></span><span class="n"><span class="pre">SDL_Window</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">window</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N3GDE6Window6windowE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>SDL_Window used as a base of the engine <a class="reference internal" href="#classGDE_1_1Window"><span class="std std-ref">Window</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window7contextE">
+<span id="_CPPv3N3GDE6Window7contextE"></span><span id="_CPPv2N3GDE6Window7contextE"></span><span id="GDE::Window::context__SDL_GLContext"></span><span class="target" id="classGDE_1_1Window_1a8feb7ab80877e89611c02f206843433d"></span><span class="n"><span class="pre">SDL_GLContext</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">context</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N3GDE6Window7contextE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Context used by SDL and OpenGL to render. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window13eventCallbackE">
+<span id="_CPPv3N3GDE6Window13eventCallbackE"></span><span id="_CPPv2N3GDE6Window13eventCallbackE"></span><span class="target" id="classGDE_1_1Window_1aaa89c0d1711b35e0006b7f0b7ddf8dc8"></span><a class="reference internal" href="classGDE_1_1UDelegate.html#_CPPv4I0EN3GDE9UDelegateE" title="GDE::UDelegate"><span class="n"><span class="pre">UDelegate</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">void</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="classGDE_1_1Event.html#_CPPv4N3GDE5EventE" title="GDE::Event"><span class="n"><span class="pre">Event</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">eventCallback</span></span></span><a class="headerlink" href="#_CPPv4N3GDE6Window13eventCallbackE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the function that will handle the events of the Window/. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="classGDE_1_1Engine.html#classGDE_1_1Engine_1aa173ceb4cef1545fb8411b95b5963b64"><span class="std std-ref">Engine::onEvent(Event&amp;)</span></a> </p>
+</div>
+</p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window10propertiesE">
+<span id="_CPPv3N3GDE6Window10propertiesE"></span><span id="_CPPv2N3GDE6Window10propertiesE"></span><span id="GDE::Window::properties__GDEConfigP"></span><span class="target" id="classGDE_1_1Window_1aa6eb894210a58777b4159a8ea0652408"></span><a class="reference internal" href="structGDE_1_1GDEConfig.html#_CPPv4N3GDE9GDEConfigE" title="GDE::GDEConfig"><span class="n"><span class="pre">GDEConfig</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">properties</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N3GDE6Window10propertiesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="structGDE_1_1GDEConfig.html#structGDE_1_1GDEConfig"><span class="std std-ref">GDEConfig</span></a> </p>
+</div>
+</p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window9minimizedE">
+<span id="_CPPv3N3GDE6Window9minimizedE"></span><span id="_CPPv2N3GDE6Window9minimizedE"></span><span id="GDE::Window::minimized__b"></span><span class="target" id="classGDE_1_1Window_1ab4e4cb9a47d22c13009f55dc39e148eb"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">minimized</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N3GDE6Window9minimizedE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>If the <a class="reference internal" href="#classGDE_1_1Window"><span class="std std-ref">Window</span></a> is minimized or not. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE6Window7runningE">
+<span id="_CPPv3N3GDE6Window7runningE"></span><span id="_CPPv2N3GDE6Window7runningE"></span><span id="GDE::Window::running__b"></span><span class="target" id="classGDE_1_1Window_1a38275770930e6105434154f9b9ff3253"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">running</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><a class="headerlink" href="#_CPPv4N3GDE6Window7runningE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>If the window is running or not. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classGDE_1_1Vec2.html" class="btn btn-neutral float-left" title="Template Class Vec2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classGDE_1_1WindowClosedEvent.html" class="btn btn-neutral float-right" title="Class WindowClosedEvent" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

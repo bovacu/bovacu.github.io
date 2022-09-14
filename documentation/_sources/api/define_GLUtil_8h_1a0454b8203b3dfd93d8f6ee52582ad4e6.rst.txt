@@ -1,0 +1,14 @@
+.. _exhale_define_GLUtil_8h_1a0454b8203b3dfd93d8f6ee52582ad4e6:
+
+Define CHECK_GL_ERROR
+=====================
+
+- Defined in :ref:`file_engine_include_core_util_GLUtil.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CHECK_GL_ERROR
+   :project: My Project

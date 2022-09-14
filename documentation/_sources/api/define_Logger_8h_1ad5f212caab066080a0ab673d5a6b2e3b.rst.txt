@@ -1,0 +1,14 @@
+.. _exhale_define_Logger_8h_1ad5f212caab066080a0ab673d5a6b2e3b:
+
+Define LOG_I_TIME
+=================
+
+- Defined in :ref:`file_engine_include_core_util_Logger.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: LOG_I_TIME
+   :project: My Project

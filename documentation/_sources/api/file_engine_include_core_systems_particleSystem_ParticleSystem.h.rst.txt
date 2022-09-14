@@ -1,0 +1,68 @@
+
+.. _file_engine_include_core_systems_particleSystem_ParticleSystem.h:
+
+File ParticleSystem.h
+=====================
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_systems_particleSystem>` (``engine/include/core/systems/particleSystem``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/systems/particleSystem/ParticleSystem.h``)
+----------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_systems_particleSystem_ParticleSystem.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``core/graph/Graph.h`` (:ref:`file_engine_include_core_graph_Graph.h`)
+
+- ``core/util/Color.h`` (:ref:`file_engine_include_core_util_Color.h`)
+
+- ``core/util/Delta.h`` (:ref:`file_engine_include_core_util_Delta.h`)
+
+- ``glm/vec3.hpp``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_core_render_elements_SpriteBatch.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structGDE_1_1ParticleData`
+
+- :ref:`exhale_class_classGDE_1_1ParticleSystem`
+

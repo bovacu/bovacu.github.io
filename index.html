@@ -1,606 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title id="titleId"> Borja Vazquez Developer Portfolio </title>
-    <!-- Meta -->
-    <meta http-equiv="expires" content="0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of developer Borja Vazquez">
-    <meta name="author" content="Borja Vazquez Cuesta">     
-    
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-    
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <link href="assets/css/addons/flag.min.css" rel="stylesheet">
-    
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    
-</head> 
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>GDE - Game Development Engine</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script defer src="js/fontawesome/js/all.js"></script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            
+            <script src="header.js"></script>
 
-<body>
-    <!-- ******HEADER****** --> 
-    <header class="header">
-        <div class="container clearfix">                       
-            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profile.jpg" alt="profile image" width="150" height="150"/>
-            <div class="profile-content float-left">
-                <h1 class="name">Borja Vazquez Cuesta</h1>
-                <h2 class="desc" id="introBelowNameId"> C++ and C# developer, sometimes Python too </h2>   
-                <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="https://www.instagram.com/borja__vazquez/">                   <i class="fab fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/borja-vazquez-713212175/">        <i class="fab fa-linkedin-in"></i></a></li> 
-                    <li class="list-inline-item"><a href="https://open.spotify.com/playlist/2EFMkDAHvfgG0Si1NtwXBL">    <i class="fab fa-spotify"></i></a></li>
-                    <li class="list-inline-item last-item"><a href="https://github.com/bovacu">                         <i class="fab fa-github-alt"></i></a></li>                
-                </ul> 
-            </div><!--//profile-->
-            <a class="btn btn-cta-primary float-right" href="mailto:vazquezborja@hotmail.es" target="_blank"><i class="fas fa-paper-plane"></i> <span id="contactHireId"> Contact/Hire Me </span></a>              
-        </div><!--//container-->
-    </header><!--//header-->
-    
-    <!-- FLAGS FOR LANGUAGES -->
-    <div style="text-align: center"> 
-        <a href="#es"  onclick="toSpanish()"  >     <img class="flag" src="assets/images/flags/espana.png"         alt="flag Es"/> </a>
-        <a href="#en" onclick="toEnglish()"   >     <img class="flag" src="assets/images/flags/estados-unidos.png" alt="flag Us"/> </a>
-        <a href="#pt" onclick="toPortuguese()">     <img class="flag" src="assets/images/flags/brasil.png"         alt="flag Br"/> </a>
-    </div>
-
-    <div class="container sections-wrapper">
-        <div class="row">
-
-<!-- MAIN CONTENT -->
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading" id="aboutMeHeaderId"> About me </h2>
-                        <div class="content">
-                            <p id="aboutMeId"> My name is Borja Vazquez and I'm a software engineer from Spain. My main area of working experience is in game development, programming mainly in C++ and C#. Programming is not just my job, it's my biggest passions and I love learning new things, even more if it's gamedev related, but I can adapt to everything. Besides, I love going skateboarding whenever I can. 
-                            </p>
-                         
-                        </div><!--//content-->
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-
-    <!-- CURRENT PROJECTS -->
-                <section class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading" id="currentProjectId">Current Job</h2>
-                        <div class="content">    
-                                     
-                        <!-- MONSTER TALES INFO -->
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/monsterTales.jpg" alt="Card game" />
+            <!-- Header-->
+            <header class="bg-dark-1">
+                <div class="container px-5 ml-xl-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-5 fw-bolder text-white mb-2">Simple 2D C++ game engine</h1>
+                                <p class="lead fw-normal text-white-50 mb-4"> Make your own applications and games with this engine, fully provided of the basic features. GDE supports Windows, Linux, MacOs, iOS and Android platforms, with more in the way! </p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" target="_blank" href="documentation/index.html">Get Started</a>
+                                    <a class="btn btn-outline-light btn-lg px-4" href="https://github.com/bovacu/GDE" target="_blank">Github repo</a>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="assets/logo.png" alt="..." /></div>
+                    </div>
+                </div>
+            </header>
+
+
+
+            <!-- Features section-->
+            <section class="bg-dark-1" id="features">
+                <div class="container px-5">
+                    <div class="row gx-5 align-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-xl-start">
+                                <h1 class="display-5 fw-bolder text-white">Main features</h1>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row gx-5">
+                        <!-- <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">A better way to start building.</h2></div> -->
+                        <!-- <div class="col-lg-auto">
+                            <div class="row gx-6 row-cols-auto row-cols-md-5"> -->
                                 
-                                <h3 class="title mb-3" id="cardGameTitleId"> Monster Tales </a></h3>
-                                    
-                                <div class="desc text-left">                                    
-                                    <p id="monsterTalesDescription1">
-                                        My current job is in Tangelo Games, a company specialiced in mobile game development. My current project is monster tales,
-                                        a match-3 single and multiplayer game, where you can play a story mode game or play against other people around the world.
-                                    </p>
-
-                                    <p id="monsterTalesDescription2">
-                                        In this project, our team is small, and we all act as both backend and frontend engineers. We work with micro-servives, C#, Python and Unity as core technologies.
-                                    </p>
-                                </div><!--//desc-->         
-                            </div><!--//item-->
-
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                
-                </section><!--//section-->
-
-    <!-- LATEST PROJECTS -->
-                <section class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading" id="latestProjectsHeaderId"> Latest projects </h2>
-                        <div class="content">
-
-        <!-- GDEL INFO -->
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/gdel.png" alt="GDEL" />
-                                </div>
-
-                                <h3 class="title mb-3" id="gdelTitleId"> GDEL, my own scripting language with its Virtual Machine </a></h3>
-
-                                <div class="desc text-left">
-                                    <p id="gdelDescriptionId1">
-                                        GDEL is one of my favorite and current projects. It's being developed in C++ for the VM. The project is not still
-                                        finished but I work almost every day on it. It is not an easy project, as it requires a lot of research by my side,
-                                        not only about how virtual machines and languages work in general, but also about how to do thins as optimal as possible
-                                        in C++ and how memory works. This project is teaching me more than I could imagine.
-                                    </p>
-
-                                    <p id="gdelDescriptionId2" style="display:inline">
-                                        You can follow the development right</p> <a style="display:inline" class="more-link" href="https://github.com/bovacu/GDEL">here</a>
-
-                                    <br><br>
-                                    <p id="gdelDescriptionId3">
-                                        The aim for this project is to be able to use this language and virtual machine inside my future games and projects, and use it as a debugging tool or
-                                        even for the users to mod things or use it inside the game.
-                                    </p>
-
-                                    <p id="gdelDescriptionId4" style="display:inline">
-                                        Once it is finished, I'm going to build an IDE for it so it is easier to use and debug.
-                                    </p>
-
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-
-                            <hr class="divider" />
-
-
-        <!-- ISOMETRIC GAME INFO -->
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <video width="640" height="480" controls>
-                                        <source src="assets/images/isometric.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-
-                                <h3 class="title mb-3" id="isometricTitleId"> Isometric Strategy Game </a></h3>
-
-                                <div class="desc text-left">
-                                    <p id="isometricDescriptionId1">
-                                        This is a Unity project I work on when I have free time (and don't want to work on my other projects). It is a turn based strategy game
-                                        themed on computer components (the dinosaur is a placeholder). As you can see on the video, with the mouse you can get information
-                                        about the floor tiles, you can choose some actions (hit, move, defend and ranged attack), you can skip turn, enemies will try to reach
-                                        you and kill you.
-                                    </p>
-
-                                    <p id="isometricDescriptionId2" style="display:inline"> You have 3 points of energy each turn, you have to use them wisely, and if you run out of health points you die. The code can be found</p> <a style="display:inline" class="more-link" href="https://github.com/bovacu/isometric-strategy-game">here</a>
-
-                                    <br><br>
-                                    <p id="isometricDescriptionId3">
-                                        In this project I liked a lot that I managed to make a unique movement/actions system that is totally shared between the human and the AI,
-                                        and the AI simulates the human actions with a State Machine.
-                                    </p>
-
-                                    <p id="isometricDescriptionId4" style="display:inline">
-                                        There is also a debugging console where you can write commands for, of course, debugging purposes.
-                                    </p>
-
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-
-                            <hr class="divider" />
-
-        <!-- SAFATOR INFO -->
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Safator.png" alt="SaFaTor" />
-                                </div>
-                                
-                                <h3 class="title mb-3" id="safatorTitleId"> SaFaTor, terrible name but actually a really good falling sand simulator </a></h3>
-                                    
-                                <div class="desc text-left">                                    
-                                    <p id="safatorDescriptionId1">
-                                        For those who don't know what a falling sand simulator is, it is basically a program that simulates how certain particles or materials behave under certain circumstances and how they react
-                                        with other materials or particles. 
-                                    </p>
-                                        
-                                    <p id="safatorDescriptionId2" style="display:inline"> Some examples are: </p> <a id="exampleId1" style="display:inline" href="https://sandspiel.club/"> Example 1 </a> <p style="display:inline">,</p> <a id="exampleId2" style="display:inline" href="https://powdertoy.co.uk/"> Example 2 </a><p style="display:inline">.</p>
-
-                                        <br><br>
-                                    <p id="safatorDescriptionId3">
-                                        SaFaTor (standing for Sand Falling Simulator) is my version of a falling sand simulator, and it already has a lot of features, but I'm planning to make it one of the biggest simulators with the most features. This, along with my 
-                                        engine, are my little babies.
-                                    </p>
-                                        
-                                    <p id="safatorDescriptionId4" style="display:inline"> The code can be found on </p> <a style="display:inline" class="more-link" href="https://github.com/bovacu/Engine/tree/master/SaFaTor">GitHub</a> 
-                                    <p style="display:inline" id="safatorDescriptionId5"> and also the executable to test on </p> <a style="display:inline" class="more-link" href="https://adre997.itch.io/safator">Itch.io</a>
-                                    
-                                </div><!--//desc-->         
-                            </div><!--//item-->
-
-
-                            <hr class="divider" />
-
-        <!-- ENGINE INFO -->
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Engine.png" alt="Own Engine" />
-                                </div>
-                                
-                                <h3 class="title mb-3" id="customGameTitleId"> Custom Game Engine </a></h3>
-                                    
-                                <div class="desc text-left">                                    
-                                    <p id="engineDescriptionId1">
-                                        During some time, and also for my Finale Degree Project, I've been developing a custom game engine that allows you to make games in 2D. Currently it doesn't have an UI for you to 
-                                        interact with it, but is a future feature. Currently features are:
-                                    </p>
-
-                                        <ul>
-                                            <li id="engineListId1"> Rendering of 2D shapes and textures.                       </li>
-                                            <li id="engineListId2"> Usage of scenes and layers to render.                      </li>
-                                            <li id="engineListId3"> Usage of an ECS.                                           </li>
-                                            <li id="engineListId4"> Input from Keyboard and mouse.                             </li>
-                                            <li id="engineListId5"> Almost every event for the window.                         </li>
-                                            <li id="engineListId6"> Independent frame main game loop.                          </li>
-                                            <li id="engineListId7"> Easy to use API for rendering and for game implementation. </li>
-                                            <li id="engineListId8"> Among other cool features...                               </li>
-                                        </ul>
-
-                                    <p style="display:inline" id="engineDescriptionId2"> The plan is continously updating the project and somehow making a good tool for developing games. It's entirely made in C++. Code can be found </p> <a id="hereId" style="display:inline" class="more-link" href="https://github.com/bovacu/Engine/tree/master/engine">here</a> <p style="display:inline">.</p>
-                                    
-                                </div><!--//desc-->         
-                            </div><!--//item-->
-
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                
-                </section><!--//section-->
-
-    <!-- UPCOMING PROJECTS -->
-                <section class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading" id="upcomingId">Upcoming projects</h2>
-                        <div class="content">    
-                                     
-        <!-- CARTATRON INFO -->
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/ordago.png" alt="Card game" />
-                                    <div class="ribbon">
-                                        <div class="text newLabel">New</div>
+                                <div class="col-lg-4 mb-5">
+                                    <div class="mt-3">
+                                        <div class="col mb-lg-1 mt-3 h-100">
+                                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-file-earmark-code"></i></div>
+                                            <h2 class="text-white h5">Built with C++</h2>
+                                            <p class="text-white-50 mb-0">The engine is fully built in C++ and is the language used to develop with the engine</p>
+                                        </div>
                                     </div>
                                 </div>
                                 
-                                <h3 class="title mb-3" id="cardGameTitleId"> Ordago </a></h3>
-                                    
-                                <div class="desc text-left">                                    
-                                    <p id="ordagoDescription1">
-                                        Ordago is a mobile multiplayer card game where you can play a lot of spanish classic card games, such as chinchon, 
-                                        mus, presidente, escoba... You can play with your friends in groups or even private matches and also with people around the world!
-                                    </p>
-                                    <p id="ordagoDescription2">
-                                        The game is still in development, but the progress is going really well!!
-                                    </p>
-                                </div><!--//desc-->         
-                            </div><!--//item-->
-
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                
-                </section><!--//section-->
-                
-    <!-- OTHER PROJECTS -->
-                <section class="projects section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading" id="otherProjectsId">Other projects</h2>
-                        <p style="display:inline" id="otherProjectsDescriptionId1"> All of my other small, but cool work can be found on my </p> <a style="display:inline" class="more-link" href="https://github.com/bovacu">Github</a> <p style="display:inline" id="otherProjectsDescriptionId2"> . Among those projects we have: </p>
-                        <br><br>
-
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title" id="tetrisTitleId"> Tetris </h3>
-                                <p class="summary" id="tetrisDescriptionId"> My own Tetris version I made in 4 or 5 days on my spare time. Probably I will rewrite it in C++ with my engine. </p>
-                                <a style="display:inline" class="more-link" href="https://github.com/bovacu/Tetris" target="_blank"><i class="fas fa-external-link-alt"></i> <p style="display:inline" id="tetrisRepoId" > Github repository </p>  </a>
-                            </div><!--//item-->
-
-
-                            <div class="item">
-                                <h3 class="title" id="mineTitleId"> Mine Sweeper </h3>
-                                <p id="mineDescriptionId" class="summary"> Another project I made some time ago in my spare time, but this one took about 1 - 2 days. </p>
-                                <a style="display:inline" class="more-link" href="https://github.com/bovacu/Mine-Sweeper" target="_blank"><i class="fas fa-external-link-alt"></i> <p style="display:inline" id="mineRepoId" > Github repository </p></a>
-                            </div><!--//item-->
-
-
-                            <div class="item">
-                                <h3 class="title" id="chessTitleId"> Chess </h3>
-                                <p class="summary" id="chessDescriptionId"> Small version of chess, but actually playable. Not online, it needs to be played locally with someone else. Also took about 2 - 3 days to do.</p>
-                                <a style="display:inline" class="more-link" href="https://github.com/bovacu/Chess" target="_blank"><i class="fas fa-external-link-alt"></i> <p style="display:inline" id="chessRepoId" > Github repository </p></a>
-                            </div><!--//item-->
-
-
-                            <div class="item">
-                                <h3 class="title" id="consoleTitleId"> Custom Console </h3>
-                                <p class="summary" id="consoleDescriptionId"> This is a small console like project that allows you to make several operations. Documentation and usage on the github page. I'll use the idea of this console to make one similar for my engine.</p>
-                                <a style="display:inline" class="more-link" href="https://github.com/bovacu/Console" target="_blank"><i class="fas fa-external-link-alt"></i> <p style="display:inline" id="consoleRepoId" > Github repository </p></a>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title" id="foodTitleId"> Foodamental </h3>
-                                <p class="summary" id="foodDescriptionId"> This is an application for Android I and 2 more friends made for a college project. It allows you to search different recipes from some starting ingredients. </p>
-                                <a style="display:inline" class="more-link" href="https://github.com/bovacu/Foodamental" target="_blank"><i class="fas fa-external-link-alt"></i> <p style="display:inline" id="foodRepoId" > Github repository </p></a>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title" id="sssTitleId"> Super Smash Shoot </h3>
-                                <p class="summary" id="sssDescriptionId"> This is an application I made for a subject in college. It's a online multiplayer Super Smash Bros 2D kind of version. The server is not really well structured as it was my first online app, but it is playable. </p>
-                                <a style="display:inline" class="more-link" href="https://github.com/bovacu/Foodamental" target="_blank"><i class="fas fa-external-link-alt"></i> <p style="display:inline" id="sssRepoId" > Github repository </p></a>
-                            </div><!--//item-->
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                
-    <!-- EXPERIENCE -->
-                <section class="experience section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading" id="experienceTitleId">Working experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title" style="display:inline"> <p id="teacherTitleId" style="display:inline"> Coding teacher -  </p> <span id="teacherTimeId" style="display:inline" class="year">(2017 - Present)</span></h3>
-                                <p id="teacherDescriptionId">
-                                    Throughout these years I decided to teach other people how to code because I love it so much that I'd like make others people starting as easy as possible, and through this work I can do it.
-                                    It also forced me to study new fields of programming as some of them had specific requirements to be taught. 
-                                </p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title" style="display:inline"> <p id="nterTitleId" style="display:inline"> Backend Developer at Nter - </p> <span class="place"><a href="https://nter.es/" >Nter</a></span> <span id="nterTimeId" style="display:inline" class="year">(2018 - 2019)</span></h3>
-                                <p id="nterDescriptionId">
-                                    I worked there as part of my company practice at college. I worked with other people to make the backend and study of various applications.
-                                </p>
-                            </div><!--//item-->
-                            
-                            <div class="item">
-                                <h3 class="title" style="display:inline"> <p id="soloTitleId" style="display:inline"> Working as solo game developer -  </p> <span id="soloTimeId" style="display:inline" class="year">(2016 - Present)</span></h3>
-                                <p id="soloDescriptionId">
-                                    I've been working for quite a few years now as a solo indie game developer, and I have experience on this field. 
-                                </p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title" style="display:inline"> <p id="soloTitleId" style="display:inline"> Tangelo Games -  </p> <span id="soloTimeId" style="display:inline" class="year">(2020 - Present)</span></h3>
-                                <p id="soloDescriptionId">
-                                    In this company I've been working on the project Monster Tales as a software engineer and game developer.
-                                </p>
-                            </div><!--//item-->
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-    
-
-            </div><!--//primary-->
-
-<!-- ASIDE INFORMATION -->
-            <div class="secondary col-lg-4 col-12">
-                
-    <!-- BASIC INFO -->
-                 <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading" id="basicTitleId">Basic information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Logroño, La Rioja, España</li>
-								<li><i class="fas fa-user"></i><span class="sr-only">Location:</span> <span id="ageId"> 23 years old </span> </li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:vazquezborja@hotmail.es">vazquezborja@hotmail.es</a></li>
-                                <li><i class="fas fa-mobile"></i><span class="sr-only">Phone:</span> +34 659 19 53 46 </li>
-                                <li><i class="fas fa-car"></i><span class="sr-only">Car:</span> <span id="carId"> Driving license </span> <i class="fas fa-check"></i></li>
-                            </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-
-    <!-- LANGUAGES LIST -->
-                <aside class="skills aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading" id="skillsTitleId">Technologies skills</h2>
-                        <div class="content">
-                            <p class="intro" id="skillsDescriptionId"> My main skills are C++ and C#, the two languages I've worked the most with. I can also work with Python and C# and I have knowledge about SQL. </p>
-                            
-                            <div class="skillset">
-                               
-                                <div class="item">
-                                    <h3 class="level-title">C++<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i> <span class="proId"> Professional </span> </span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="60%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Rust<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i> <span class="mediumId"> Medium </span> </span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="20%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
+                                <div class="col-lg-4 mb-5">
+                                    <div class="mt-3">
+                                        <div class="col mb-lg-1 mt-3 h-100">
+                                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-gear"></i></div>
+                                            <h2 class="text-white h5">ECS and OOP</h2>
+                                            <p class="text-white-50 mb-0">Choose the paradigm that fits you better or combine both of them.</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 
-                                <div class="item">
-                                    <h3 class="level-title"> C# <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i><span class="proId"> Professional </span></span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="75%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title"> Python &amp Flask <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" ><i class="fas fa-info-circle"></i><span class="mediumId"> Medium </span></span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="60%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
+                                <div class="col-lg-4 mb-5">
+                                    <div class="mt-3">
+                                        <div class="col mb-lg-1 mt-3 h-100">
+                                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-images"></i></div>
+                                            <h2 class="text-white h5">2D Rendering</h2>
+                                            <p class="text-white-50 mb-0">Flexible renderer supporting Textures, Sprite Sheets, multiple cameras, custom shaders</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS, Javascript &amp; LESS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i><span class="mediumId"> Medium </span></span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="50%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
+                                <div class="col-lg-4 mb-5">
+                                    <div class="mt-3">
+                                        <div class="col mb-lg-1 mt-3 h-100">
+                                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-asterisk"></i></div>
+                                            <h2 class="text-white h5">Cross-platform</h2>
+                                            <p class="text-white-50 mb-0">GDE supports Windows, Linux, MacOs, iOS, Android and consoles are in the way!</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 
-                                <div class="item">
-                                    <h3 class="level-title"> AWS <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i><span class="mediumId"> Medium </span></span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="50%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                            </div>              
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//section-->
+                                <div class="col-lg-4 mb-5">
+                                    <div class="mt-3">
+                                        <div class="col mt-lg-3 mt-3 h-100">
+                                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-window-split"></i></div>
+                                            <h2 class="text-white h5">Custom UI</h2>
+                                            <p class="text-white-50 mb-0">GDE offers a custom solution for UI, with the basic elements ready to use with custom events.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 mb-5">
+                                    <div class="mt-3">
+                                        <div class="col mt-lg-3 mt-3 h-100">
+                                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-volume-up"></i></div>
+                                            <h2 class="text-white h5">Sound System</h2>
+                                            <p class="text-white-50 mb-0">Basic system to play sound effects and background music.</p>
+                                        </div>
+                                    </div>
+                                </div>
 
-    <!-- ENGINES LIST -->
-                <aside class="skills aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading" id="gameSkillsTitleId">Gamedev skills</h2>
-                        <div class="content">
-                            <p class="intro" id="gameSkillsDescriptionId"> As a game developer I always like to discover new technologies and try them. </p>
+                                <div class="col-lg-4 mb-5">
+                                    <div class="mt-3">
+                                        <div class="col mt-lg-3 mt-3 h-100">
+                                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-filetype-json"></i></div>
+                                            <h2 class="text-white h5">Scene System</h2>
+                                            <p class="text-white-50 mb-0">Customizable scene system that can be loaded through JSON files (and editor in the way).</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 mb-5">
+                                    <div class="mt-3">
+                                        <div class="col mt-lg-3 mt-3 h-100">
+                                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-filetype-json"></i></div>
+                                            <h2 class="text-white h5">Prefab System</h2>
+                                            <p class="text-white-50 mb-0">Create a complex object through JSON and instanciate it as many times as needed.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 mb-5">
+                                    <div class="mt-3">
+                                        <div class="col mt-lg-3 mt-3 h-100">
+                                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-app-indicator"></i></div>
+                                            <h2 class="text-white h5">Physics System</h2>
+                                            <p class="text-white-50 mb-0">Integrated thanks to Box2D and fully ready to work with custom events.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 mb-5">
+                                    <div class="mt-3">
+                                        <div class="col mt-lg-3 mt-3 h-100">
+                                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-fan"></i></div>
+                                            <h2 class="text-white h5">Particle System</h2>
+                                            <p class="text-white-50 mb-0">Basic system for rendering particles in an efficent way.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 mb-5">
+                                    <div class="mt-3">
+                                        <div class="col mt-lg-3 mt-3 h-100">
+                                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-terminal"></i></div>
+                                            <h2 class="text-white h5">In-Engine Console</h2>
+                                            <p class="text-white-50 mb-0">GDE offers an internal console customizable with your own commands.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 mb-5">
+                                    <div class="mt-3">
+                                        <div class="col mt-lg-3 mt-3 h-100">
+                                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-github"></i></div>
+                                            <h2 class="text-white h5">Free and Open Source</h2>
+                                            <p class="text-white-50 mb-0">The engine is completely free, use it and modify it as you want.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             
-                            <div class="skillset">
-                               
-                                <div class="item">
-                                    <h3 class="level-title"> Unity <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i><span class="expertId"> Expert </span></span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="80%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title"> Godot <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i><span class="mediumId"> Medium </span></span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="60%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
+                            <!-- </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            
+            <section class="bg-dark-1 py-2">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-left">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-xl-start">
+                                <h1 class="display-5 fw-bolder text-white">Internal Technologies</h1>
+                                <p class="lead fw-normal text-white-50"> Those are the most relevant libraries that GDE uses behind the scenes. </p>
+                            </div>
+                        </div>
+                    </div>
 
-                                <div class="item">
-                                    <h3 class="level-title"> <span id="ownEngineId"> My own engine </span> <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i><span class="expertId"> Expert </span></span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title"> SFML <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i><span class="proId"> Professional </span></span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="70%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title"> Libgdx <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i><span class="mediumId"> Medium </span></span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="65%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
 
-                            </div>              
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//section-->
-                
-    <!-- ACHEIVEMENTS LIST -->
-                <aside class="testimonials aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading" id="achievementsTitleId"> Achievements </h2>
-                        <div class="content">
-                            <div class="item">   
-                                <p class="source"><span id="achievement1Id" class="name">Winner of videogame contest on Youtube</span><br /> <a class="more-link" href="https://www.youtube.com/watch?v=-uRTPFooNdg&t=1s"><i class="fas fa-external-link-alt"></i>  <span id="achievementLink1Id"> Link to the contest </span> </a>  </p>
-                                <p class="source"><span id="achievement2Id" class="name">Published coding book</span><br /><a class="more-link" href="https://www.ra-ma.es/libro/java-y-c++-paso-a-paso_83255/"><i class="fas fa-external-link-alt"></i>            <span id="achievementLink2Id"> Link to the book    </span> </a>  </p>                                                             
-                            </div><!--//item-->
-                            
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-    <!-- LIST OF DEGREES -->
-                <aside class="education aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading" id="degreeTitleId">Degrees</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> <span id="degreeId"> Software Engineer </span> </h3>
-                                <h4 class="university">  <span id="universityId"> University of La Rioja </span> <span class="year">(2015-2020)</span></h4>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                            
-    <!-- SPOKEN LANGUAGES LIST -->
-                <aside class="languages aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading" id="languagesTitleId">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level"> Advance level <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Español:</strong></span>
-                                    <span class="level"> Nativo <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Português Brasileiro:</strong></span>
-                                    <span class="level"> Nivel meio <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>日本語(japanese):</strong></span>
-                                    <span class="level"> Currently learning (N5) <br class="visible-sm visible-xs"/><i class="fas fa-star"></i></span>
-                                </li><!--//item-->
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-    <!-- MUSIC LIST ASIDE -->
-                <aside class="list music aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading" id="favSongsTitleId">Favourite coding songs</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/track/6RhaiLFQ37OPhDPSV6oN0j?si=8txGSzxPSo6RUwkKHI9lMg">    My Innermost Apocalypse </a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/track/5Itp2wFFmI6xtIAc54F1rM?si=d-YjfRBKRjuu--SL-gQOVA">    Rings in rings in rings </a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/track/2Bg019sjJOkxpuGYqq04zX?si=tZ6c2xU9T22jL9c0JlnbHA">    Grisly Reminder         </a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/track/2W0BQsqgyO6a2LxGSDDB1I?si=WMWzDB5lRJirNY--mWbhfw">    Clubbed to Death        </a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/track/5Qynp2fLlc08xexweGQCOv?si=YXdzSRxORXufHguBUWmkkg">    Arabian Nights          </a></li>
-                            </ul>
-                            <p><a class="more-link" href="https://open.spotify.com/playlist/2EFMkDAHvfgG0Si1NtwXBL"><i class="fas fa-external-link-alt"></i> <span id="moreSpotifyId"> More on Spotify </span> </a></p> 
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-              
-            </div><!--//secondary-->    
-        </div><!--//row-->
-    </div><!--//masonry-->
-    
-    <!-- ******FOOTER****** --> 
-    <footer class="footer">
-        <div class="container text-center">
-                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright"> <span id="iconsId"> Flag icons by </span> <a href="https://www.flaticon.es/autores/freepik" target="_blank">Freepik</a> <span id="templateId"> , template Xiaoying Riley </span> </small>
-        </div><!--//container-->
-    </footer><!--//footer-->
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
-    <!-- custom js -->          
-    <script type="text/javascript" src="assets/js/main.js"></script>  
-    
+                    <div class="row gx-5">
+                        
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" src="assets/opengl.png" alt="..." />
+                                <div class="bg-dark card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Rendering</div>
+                                    <h5 class="card-title text-white mb-3">OpenGL</h5>
+                                    <p class="card-text text-white-50 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-dark border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <a class="btn btn-outline-light btn-lg px-4" href="https://glad.dav1d.de/" target="_blank">GLAD</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-<script> 
 
-</script>
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" src="assets/sdl2.png" alt="..." />
+                                <div class="bg-dark card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Window Management</div>
+                                    <h5 class="card-title text-white mb-3">SDL2</h5>
+                                    <p class="card-text text-white-50 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-dark border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <a class="btn btn-outline-light btn-lg px-4" href="https://www.libsdl.org/download-2.0.php" target="_blank">Website</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-</body>
-</html> 
 
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" src="assets/entt.png" alt="..." />
+                                <div class="bg-dark card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">ECS</div>
+                                    <h5 class="card-title text-white mb-3">EnTT</h5>
+                                    <p class="card-text text-white-50 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-dark border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <a class="btn btn-outline-light btn-lg px-4" href="https://github.com/skypjack/entt" target="_blank">Repository</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-80 shadow border-0">
+                                <img class="card-img-top" src="assets/box2d.png" alt="..." />
+                                <div class="bg-dark card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Physics</div>
+                                    <h5 class="card-title text-white mb-3">Box2D</h5>
+                                    <p class="card-text text-white-50 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-dark border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <a class="btn btn-outline-light btn-lg px-4" href="https://box2d.org/" target="_blank">Website</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-80 shadow border-0">
+                                <img class="card-img-top" src="assets/imgui.png" alt="..." />
+                                <div class="bg-dark card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Debugging</div>
+                                    <h5 class="card-title text-white mb-3">ImGui</h5>
+                                    <p class="card-text text-white-50 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-dark border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <a class="btn btn-outline-light btn-lg px-4" href="https://github.com/ocornut/imgui" target="_blank">Repository</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-80 shadow border-0">
+                                <img class="card-img-top" src="assets/glm.png" alt="..." />
+                                <div class="bg-dark card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Math</div>
+                                    <h5 class="card-title text-white mb-3">GLM</h5>
+                                    <p class="card-text text-white-50 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-dark border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <a class="btn btn-outline-light btn-lg px-4" href="https://github.com/g-truc/glm" target="_blank">Repository</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <script src="footer.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

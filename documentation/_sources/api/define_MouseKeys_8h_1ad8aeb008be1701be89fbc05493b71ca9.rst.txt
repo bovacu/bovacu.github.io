@@ -1,0 +1,14 @@
+.. _exhale_define_MouseKeys_8h_1ad8aeb008be1701be89fbc05493b71ca9:
+
+Define MOUSE_BUTTON_2
+=====================
+
+- Defined in :ref:`file_engine_include_core_systems_inputSystem_keysAndButtons_MouseKeys.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MOUSE_BUTTON_2
+   :project: My Project

@@ -1,0 +1,169 @@
+
+.. _program_listing_file_engine_include_core_systems_inputSystem_input_Input.h:
+
+Program Listing for File Input.h
+================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_systems_inputSystem_input_Input.h>` (``engine/include/core/systems/inputSystem/input/Input.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #ifndef ENGINE2_0_INPUT_H
+   #define ENGINE2_0_INPUT_H
+   
+   #include "core/platform/PlatformHeaderSDL.h"
+   #include "core/systems/inputSystem/keysAndButtons/KeyboardKeys.h"
+   #include "core/systems/inputSystem/keysAndButtons/MouseKeys.h"
+   #include "core/systems/inputSystem/keysAndButtons/ControllerButtons.h"
+   
+   #include "core/util/Util.h"
+   #include "core/render/window/Window.h"
+   
+   #ifndef SDL_JOYSTICK_DISABLED
+   #define SDL_JOYSTICK_DISABLED
+   #endif
+   
+   namespace GDE {
+   
+       enum SystemEventEnum {
+           WINDOW_EVENT = SDL_WINDOWEVENT, QUIT_E = SDL_QUIT, WINDOW_EXIT_E = SDL_WINDOWEVENT_LEAVE, WINDOW_RESIZED_E = SDL_WINDOWEVENT_RESIZED,
+           WINDOW_FOCUS_E = SDL_WINDOWEVENT_FOCUS_GAINED, WINDOW_LOST_FOCUS_E = SDL_WINDOWEVENT_FOCUS_LOST, WINDOW_AUDIO_DEVICE_CONNECTED_E = SDL_AUDIODEVICEADDED,
+           WINDOW_AUDIO_DEVICE_DISCONNECTED_E = SDL_AUDIODEVICEREMOVED,
+   
+           APP_ON_DESTROY_E = SDL_APP_TERMINATING, APP_DID_ENTER_BACK_E = SDL_APP_DIDENTERBACKGROUND, APP_DID_ENTER_FOREG_E = SDL_APP_DIDENTERFOREGROUND,
+           APP_WILL_ENTER_BACK_E = SDL_APP_WILLENTERBACKGROUND, APP_WILL_ENTER_FOREG = SDL_APP_WILLENTERFOREGROUND,
+   
+           KEY_DOWN_E = SDL_KEYDOWN, KEY_UP_E = SDL_KEYUP, KEY_MAP_CHANGED_E = SDL_KEYMAPCHANGED, KEY_TEXT_INPUT_E = SDL_TEXTINPUT,
+           KEY_TEXT_EDITING_E = SDL_TEXTEDITING,
+   
+           MOUSE_MOVED_E = SDL_MOUSEMOTION, MOUSE_DOWN_E = SDL_MOUSEBUTTONDOWN, MOUSE_UP_E = SDL_MOUSEBUTTONUP,
+           MOUSE_SCROLLED_E = SDL_MOUSEWHEEL,
+   
+           GAMEPAD_JOYSTICK = SDL_CONTROLLERAXISMOTION, GAMEPAD_BUTTON_DOWN = SDL_CONTROLLERBUTTONDOWN, GAMEPAD_BUTTON_UP = SDL_CONTROLLERBUTTONUP,
+           GAMEPAD_CONNECTED_E = SDL_CONTROLLERDEVICEADDED, GAMEPAD_DISCONNECTED_E = SDL_CONTROLLERDEVICEREMOVED,
+   
+           JOYSTICK_HAT_MOTION_E = SDL_JOYHATMOTION, JOYSTICK_BALL_MOTION_E = SDL_JOYBALLMOTION, JOYSTICK_BUTTON_DOWN_E = SDL_JOYBUTTONDOWN,
+           JOYSTICK_BUTTON_UP_E = SDL_JOYBUTTONUP, JOYSTICK_CONNECTED_E = SDL_JOYDEVICEADDED, JOYSTICK_DISCONNECTED_E = SDL_JOYDEVICEREMOVED,
+           JOYSTICK_AXIS_MOTION_E = SDL_JOYAXISMOTION,
+   
+           MOBILE_TOUCH_DOWN_E = SDL_FINGERDOWN, MOBILE_TOUCH_UP_E = SDL_FINGERUP, MOBILE_TOUCH_MOVED = SDL_FINGERMOTION,
+   
+           UNKNOWN
+       };
+   
+       enum InputType {
+           WINDOW,
+           MOUSE,
+           KEYBOARD,
+           CONTROLLER,
+           MOBILE
+       };
+   
+       class Engine;
+       class Manager;
+   
+       class Input {
+           friend class InputManager;
+           protected:
+               Window* window = nullptr;
+   
+               std::unordered_map<int, UDelegate<void(SDL_Event&)>> events;
+   
+               std::vector<SystemEventEnum> ignoredEvents;
+   
+               Engine* engine;
+   
+           public:
+               bool pollEvent(SDL_Event& _event);
+   
+               bool ignoreEvent(const SDL_EventType& _eventType);
+       };
+   
+       class WindowInput; class KeyboardInput; class MouseInput; class ControllerInput; class MobileInput;
+       class InputManager {
+   
+           private:
+               WindowInput* windowInput;
+   
+               KeyboardInput* keyboardInput;
+   
+               MouseInput* mouseInput;
+   
+               ControllerInput* controllerInput;
+   
+               MobileInput* mobileInput;
+   
+               Engine* engine;
+   
+           public:
+               void init(Engine* _engine, Window* _window);
+   
+               void destroy();
+   
+               void pollEvents();
+   
+           public:
+               bool isKeyJustPressed(KeyCode _key);
+   
+               bool isKeyJustReleased(KeyCode _key);
+   
+               bool isKeyPressed(KeyCode _key);
+   
+               bool isKeyReleased(KeyCode _key);
+   
+   
+               bool isMouseJustPressed(MouseCode _button);
+   
+               bool isMouseJustReleased(MouseCode _button);
+   
+               bool isMousePressed(MouseCode _button);
+   
+               bool isMouseReleased(MouseCode _button);
+   
+               Vec2F getMousePosScreenCoords(bool _centeredMiddleScreen = true);
+   
+               Vec2F getMousePosWorldPos();
+   
+               Vec2F getMousePosCanvas();
+   
+               bool reassignController(int _controllerID, int _as);
+   
+               bool isGamepadButtonJustPressed(ControllerButtons _button, int _controllerID = 0);
+   
+               bool isGamepadButtonJustReleased(ControllerButtons _button, int _controllerID = 0);
+   
+               bool isGamepadButtonPressed(ControllerButtons _button, int _controllerID = 0);
+   
+               bool isGamepadButtonReleased(ControllerButtons _button, int _controllerID = 0);
+   
+               bool gamepadVibrate(int _controllerID = 0, const std::string& _vibrationEffectName = "default");
+   
+   
+               bool isGamepadAxisJustPressed(ControllerAxis _axis, int _controllerID = 0);
+   
+               bool isGamepadAxisPressed(ControllerAxis _axis, int _controllerID = 0);
+   
+               bool isGamepadAxisReleased(ControllerAxis _axis, int _controllerID = 0);
+   
+   
+               bool isMobileScreenJustPressed(int _fingerID);
+   
+               bool isMobileScreenJustReleased(int _fingerID);
+   
+               bool isMobileScreenPressed(int _fingerID);
+   
+               bool isMobileScreenRelease(int _fingerID);
+   
+               std::vector<SystemEventEnum> getEventsIgnored(const InputType& _inputType);
+   
+               void addEventToIgnore(const InputType& _inputType, const SystemEventEnum& _event);
+   
+               void removeEventToIgnore(const InputType& _inputType, const SystemEventEnum& _event);
+       };
+   }
+   
+   #endif //ENGINE2_0_INPUT_H

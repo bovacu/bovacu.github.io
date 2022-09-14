@@ -1,0 +1,17 @@
+.. _exhale_class_classGDE_1_1ControllerVibrationManager:
+
+Class ControllerVibrationManager
+================================
+
+- Defined in :ref:`file_engine_include_core_systems_inputSystem_input_ControllerInput.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GDE::ControllerVibrationManager
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

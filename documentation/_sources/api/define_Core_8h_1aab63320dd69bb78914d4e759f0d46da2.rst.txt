@@ -1,0 +1,14 @@
+.. _exhale_define_Core_8h_1aab63320dd69bb78914d4e759f0d46da2:
+
+Define BIND_FUNC_3
+==================
+
+- Defined in :ref:`file_engine_include_core_Core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: BIND_FUNC_3
+   :project: My Project

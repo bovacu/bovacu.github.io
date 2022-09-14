@@ -1,0 +1,14 @@
+.. _exhale_typedef_namespaceGDE_1af67b51deba939d790b1ba9956b6298bd:
+
+Typedef GDE::DelegateRef
+========================
+
+- Defined in :ref:`file_engine_include_core_util_Delegate.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: GDE::DelegateRef
+   :project: My Project

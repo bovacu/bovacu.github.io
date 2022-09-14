@@ -1,0 +1,27 @@
+.. _exhale_struct_structGDE_1_1Sound:
+
+Struct Sound
+============
+
+- Defined in :ref:`file_engine_include_core_systems_soundSystem_SoundManager.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public GDE::Music`` (:ref:`exhale_struct_structGDE_1_1Music`)
+- ``public GDE::Sfx`` (:ref:`exhale_struct_structGDE_1_1Sfx`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: GDE::Sound
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

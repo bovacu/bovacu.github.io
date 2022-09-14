@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class PhysicsManager &mdash; GDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class PhysicsManager::CollisionCallback" href="classGDE_1_1PhysicsManager_1_1CollisionCallback.html" />
+    <link rel="prev" title="Class PerlinNoiseManager" href="classGDE_1_1PerlinNoiseManager.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> GDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Active.html">Struct Active</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1AnimationNode.html">Struct AnimationNode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1AnimationTransition.html">Struct AnimationTransition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Atlas.html">Struct Atlas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1B2DConfig.html">Struct B2DConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1BodyConfig.html">Struct BodyConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1CanvasEventStopper.html">Struct CanvasEventStopper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1CharInfo.html">Struct CharInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Color.html">Struct Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Command.html">Struct Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Controller.html">Struct Controller</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Effect__Controllers.html">Struct Effect_Controllers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1File.html">Template Struct File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1FontManager_1_1FontHandler.html">Struct FontManager::FontHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1FrameBufferSpecification.html">Struct FrameBufferSpecification</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig.html">Struct GDEConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig_1_1ProjectProperties.html">Struct GDEConfig::ProjectProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig_1_1WindowProperties.html">Struct GDEConfig::WindowProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GenerationSettings.html">Struct GenerationSettings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Music.html">Struct Music</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NineSlice.html">Struct NineSlice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NodeID__JsonPair.html">Struct NodeID_JsonPair</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NoiseMap.html">Struct NoiseMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1OpenGLVertex.html">Struct OpenGLVertex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1OpenGLVertexDebug.html">Struct OpenGLVertexDebug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ParticleData.html">Struct ParticleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1PhysicsManager_1_1Collision__CallbackFunction.html">Struct PhysicsManager::Collision_CallbackFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Probability.html">Struct Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ProceduralMap.html">Struct ProceduralMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Rect.html">Template Struct Rect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1RollingBuffer.html">Struct RollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ScrollingBuffer.html">Struct ScrollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Sfx.html">Struct Sfx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Sound.html">Struct Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1State.html">Struct State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1StaticTransform.html">Struct StaticTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Stub.html">Template Struct Stub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Stub_3_01R_07Args_8_8_8_08_4.html">Template Struct Stub&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Tag.html">Struct Tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1TextureInfo.html">Struct TextureInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VertexConfig.html">Struct VertexConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VertexData.html">Struct VertexData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VibrationConfig.html">Struct VibrationConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1AdaptiveViewPort.html">Class AdaptiveViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Animation.html">Class Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1AnimationSystem.html">Class AnimationSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BadDelegateCall.html">Class BadDelegateCall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BadECSSystemSwap.html">Class BadECSSystemSwap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BasicPerlinNoise.html">Template Class BasicPerlinNoise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Batch.html">Class Batch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Body.html">Class Body</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Camera.html">Class Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Canvas.html">Class Canvas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1CellularAutomata.html">Class CellularAutomata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Clock.html">Class Clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ConfigManager.html">Class ConfigManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Console.html">Class Console</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerAxisMovedEvent.html">Class ControllerAxisMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerButtonDownEvent.html">Class ControllerButtonDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerButtonUpEvent.html">Class ControllerButtonUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerInput.html">Class ControllerInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerVibrationManager.html">Class ControllerVibrationManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Delta.html">Class Delta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Easing.html">Class Easing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ECSManager.html">Class ECSManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ECSSystem.html">Class ECSSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Engine.html">Class Engine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Event.html">Class Event</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventBus.html">Template Class EventBus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventBus_1_1HandlerId.html">Class EventBus::HandlerId</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventDispatcher.html">Class EventDispatcher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FileHandler.html">Class FileHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FileManager.html">Class FileManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FixedViewPort.html">Class FixedViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Font.html">Class Font</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FontManager.html">Class FontManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FrameBuffer.html">Class FrameBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FreeViewPort.html">Class FreeViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Graph.html">Class Graph</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Image.html">Class Image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ImGuiScene.html">Class ImGuiScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Input.html">Class Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1InputManager.html">Class InputManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1IRenderizable.html">Class IRenderizable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1IViewPort.html">Class IViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyboardInput.html">Class KeyboardInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyEvent.html">Class KeyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyPressedEvent.html">Class KeyPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyReleasedEvent.html">Class KeyReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyTypedEvent.html">Class KeyTypedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1LoadVertexConfigNotInvoked.html">Class LoadVertexConfigNotInvoked</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Manager.html">Class Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MapGenerator.html">Class MapGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MDelegate.html">Template Class MDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MDelegate_3_01R_07Args_8_8_8_08_4.html">Template Class MDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileInput.html">Class MobileInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchDownEvent.html">Class MobileTouchDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchMovedEvent.html">Class MobileTouchMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchUpEvent.html">Class MobileTouchUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonEvent.html">Class MouseButtonEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonPressedEvent.html">Class MouseButtonPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonReleasedEvent.html">Class MouseButtonReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseInput.html">Class MouseInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseMovedEvent.html">Class MouseMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseScrolledEvent.html">Class MouseScrolledEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1NineSliceSprite.html">Class NineSliceSprite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ParticleSystem.html">Class ParticleSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PerlinNoiseManager.html">Class PerlinNoiseManager</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class PhysicsManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PhysicsManager_1_1CollisionCallback.html">Class PhysicsManager::CollisionCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Platform.html">Class Platform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Profiler.html">Class Profiler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Random.html">Class Random</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Renderer.html">Class Renderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Scene.html">Class Scene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SceneManager.html">Class SceneManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Shader.html">Class Shader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ShaderManager.html">Class ShaderManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Shape.html">Class Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SoundManager.html">Class SoundManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteBatch.html">Class SpriteBatch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteBatch_1_1Debug.html">Class SpriteBatch::Debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteRenderer.html">Class SpriteRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TextRenderer.html">Class TextRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Texture.html">Class Texture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TextureAtlasManager.html">Class TextureAtlasManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Transform.html">Class Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TransitionParams.html">Class TransitionParams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UDelegate.html">Template Class UDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UDelegate_3_01R_07Args_8_8_8_08_4.html">Template Class UDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UI.html">Class UI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UIInteractable.html">Class UIInteractable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Util.html">Class Util</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Vec2.html">Template Class Vec2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Window.html">Class Window</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowClosedEvent.html">Class WindowClosedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowFrameEvent.html">Class WindowFrameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowInput.html">Class WindowInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowMinimizedEvent.html">Class WindowMinimizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowMovedEvent.html">Class WindowMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowRenderEvent.html">Class WindowRenderEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowResizedEvent.html">Class WindowResizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowUpdateEvent.html">Class WindowUpdateEvent</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="library_root.html">Library API</a> &raquo;</li>
+      <li>Class PhysicsManager</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/classGDE_1_1PhysicsManager.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-physicsmanager">
+<span id="exhale-class-classgde-1-1physicsmanager"></span><h1>Class PhysicsManager<a class="headerlink" href="#class-physicsmanager" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_engine_include_core_systems_physicsSystem_PhysicsManager.h.html#file-engine-include-core-systems-physicssystem-physicsmanager-h"><span class="std std-ref">File PhysicsManager.h</span></a></p></li>
+</ul>
+<section id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline"></a></h2>
+<section id="nested-types">
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="classGDE_1_1PhysicsManager_1_1CollisionCallback.html#exhale-class-classgde-1-1physicsmanager-1-1collisioncallback"><span class="std std-ref">Class PhysicsManager::CollisionCallback</span></a></p></li>
+<li><p><a class="reference internal" href="structGDE_1_1PhysicsManager_1_1Collision__CallbackFunction.html#exhale-struct-structgde-1-1physicsmanager-1-1collision-callbackfunction"><span class="std std-ref">Struct PhysicsManager::Collision_CallbackFunction</span></a></p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE14PhysicsManagerE">
+<span id="_CPPv3N3GDE14PhysicsManagerE"></span><span id="_CPPv2N3GDE14PhysicsManagerE"></span><span id="GDE::PhysicsManager"></span><span class="target" id="classGDE_1_1PhysicsManager"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PhysicsManager</span></span></span><a class="headerlink" href="#_CPPv4N3GDE14PhysicsManagerE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This is the class that allocates and deallocats all the physic objects, sets the physics configuration and manages all the collisions and its callbacks. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE14PhysicsManager14PhysicsManagerEv">
+<span id="_CPPv3N3GDE14PhysicsManager14PhysicsManagerEv"></span><span id="_CPPv2N3GDE14PhysicsManager14PhysicsManagerEv"></span><span id="GDE::PhysicsManager::PhysicsManager"></span><span class="target" id="classGDE_1_1PhysicsManager_1add49b2a61b1e91eb51444b5192aa6c72"></span><span class="sig-name descname"><span class="n"><span class="pre">PhysicsManager</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N3GDE14PhysicsManager14PhysicsManagerEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE14PhysicsManager4initEv">
+<span id="_CPPv3N3GDE14PhysicsManager4initEv"></span><span id="_CPPv2N3GDE14PhysicsManager4initEv"></span><span id="GDE::PhysicsManager::init"></span><span class="target" id="classGDE_1_1PhysicsManager_1ac1eee890d0835e81ccb9f0b3ce311dba"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE14PhysicsManager4initEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Set up everything needed to run the simulation. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE14PhysicsManager4stepE5Delta">
+<span id="_CPPv3N3GDE14PhysicsManager4stepE5Delta"></span><span id="_CPPv2N3GDE14PhysicsManager4stepE5Delta"></span><span id="GDE::PhysicsManager::step__Delta"></span><span class="target" id="classGDE_1_1PhysicsManager_1af6c4936f8cd24ed16992a92cce471fa0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">step</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1Delta.html#_CPPv4N3GDE5DeltaE" title="GDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_delta</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE14PhysicsManager4stepE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Advances the simulation. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_delta</strong> – Fixed amount of time passed from one frame to another. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE14PhysicsManager10createBodyERK9b2BodyDef">
+<span id="_CPPv3N3GDE14PhysicsManager10createBodyERK9b2BodyDef"></span><span id="_CPPv2N3GDE14PhysicsManager10createBodyERK9b2BodyDef"></span><span id="GDE::PhysicsManager::createBody__b2BodyDefCR"></span><span class="target" id="classGDE_1_1PhysicsManager_1af256bd9c3c8d638f664b5e2038eb17e2"></span><span class="n"><span class="pre">b2Body</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">createBody</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">b2BodyDef</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_bodyDef</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE14PhysicsManager10createBodyERK9b2BodyDef" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Creates a Box2D body and adds it to the simulation. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_bodyDef</strong> – Definition of the <a class="reference internal" href="classGDE_1_1Body.html#classGDE_1_1Body"><span class="std std-ref">Body</span></a>. </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>b2Body* </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE14PhysicsManager11destroyBodyEP6b2Body">
+<span id="_CPPv3N3GDE14PhysicsManager11destroyBodyEP6b2Body"></span><span id="_CPPv2N3GDE14PhysicsManager11destroyBodyEP6b2Body"></span><span id="GDE::PhysicsManager::destroyBody__b2BodyP"></span><span class="target" id="classGDE_1_1PhysicsManager_1a264e21abbbd997403771b804893f7d45"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">destroyBody</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">b2Body</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_body</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE14PhysicsManager11destroyBodyEP6b2Body" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destroys a body from the simulation. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_body</strong> – <a class="reference internal" href="classGDE_1_1Body.html#classGDE_1_1Body"><span class="std std-ref">Body</span></a> to destroy. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE14PhysicsManager10setGravityERK5Vec2F">
+<span id="_CPPv3N3GDE14PhysicsManager10setGravityERK5Vec2F"></span><span id="_CPPv2N3GDE14PhysicsManager10setGravityERK5Vec2F"></span><span id="GDE::PhysicsManager::setGravity__Vec2FCR"></span><span class="target" id="classGDE_1_1PhysicsManager_1ab34ec7b0b534c65ebdc53d3943a5a24c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setGravity</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_gravity</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE14PhysicsManager10setGravityERK5Vec2F" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the gravity. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_gravity</strong> – Gravity </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE14PhysicsManager10getGravityEv">
+<span id="_CPPv3NK3GDE14PhysicsManager10getGravityEv"></span><span id="_CPPv2NK3GDE14PhysicsManager10getGravityEv"></span><span id="GDE::PhysicsManager::getGravityC"></span><span class="target" id="classGDE_1_1PhysicsManager_1afbe161a3378dfdf93e4da3030716bb8b"></span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getGravity</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE14PhysicsManager10getGravityEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the gravity. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Vec2F </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE14PhysicsManager16setPhysicsActiveEb">
+<span id="_CPPv3N3GDE14PhysicsManager16setPhysicsActiveEb"></span><span id="_CPPv2N3GDE14PhysicsManager16setPhysicsActiveEb"></span><span id="GDE::PhysicsManager::setPhysicsActive__b"></span><span class="target" id="classGDE_1_1PhysicsManager_1a1af283c1780f2da59ed53641e03ac872"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPhysicsActive</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_active</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE14PhysicsManager16setPhysicsActiveEb" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Enables or disables the system. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_active</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3GDE14PhysicsManager15isPhysicsActiveEv">
+<span id="_CPPv3NK3GDE14PhysicsManager15isPhysicsActiveEv"></span><span id="_CPPv2NK3GDE14PhysicsManager15isPhysicsActiveEv"></span><span id="GDE::PhysicsManager::isPhysicsActiveC"></span><span class="target" id="classGDE_1_1PhysicsManager_1a61567716cbcc6917be08775c3f649e17"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isPhysicsActive</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3GDE14PhysicsManager15isPhysicsActiveEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns if the system is active or not. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>true </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>false </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE14PhysicsManager23setWhatBodyCollidesWithEP4Body13CollisionMask">
+<span id="_CPPv3N3GDE14PhysicsManager23setWhatBodyCollidesWithEP4Body13CollisionMask"></span><span id="_CPPv2N3GDE14PhysicsManager23setWhatBodyCollidesWithEP4Body13CollisionMask"></span><span id="GDE::PhysicsManager::setWhatBodyCollidesWith__BodyP.CollisionMask"></span><span class="target" id="classGDE_1_1PhysicsManager_1a564bfc7740667d03f4ae8fb1b8a72c0d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setWhatBodyCollidesWith</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1Body.html#_CPPv4N3GDE4BodyE" title="GDE::Body"><span class="n"><span class="pre">Body</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_body</span></span>, <a class="reference internal" href="typedef_namespaceGDE_1a03441e586cfd60330c79d9f0a7e3ab8b.html#_CPPv4N3GDE13CollisionMaskE" title="GDE::CollisionMask"><span class="n"><span class="pre">CollisionMask</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_bodyCollideWith</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE14PhysicsManager23setWhatBodyCollidesWithEP4Body13CollisionMask" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets what body can collide with what other bodies. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_body</strong> – </p></li>
+<li><p><strong>_bodyCollideWith</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE14PhysicsManager35setCallbackForCollisionBetweenMasksE13CollisionMask13CollisionMask">
+<span id="_CPPv3N3GDE14PhysicsManager35setCallbackForCollisionBetweenMasksE13CollisionMask13CollisionMask"></span><span id="_CPPv2N3GDE14PhysicsManager35setCallbackForCollisionBetweenMasksE13CollisionMask13CollisionMask"></span><span id="GDE::PhysicsManager::setCallbackForCollisionBetweenMasks__CollisionMask.CollisionMask"></span><span class="target" id="classGDE_1_1PhysicsManager_1aea4ad293802ee459cd90ac6311aefc3e"></span><a class="reference internal" href="typedef_namespaceGDE_1a9b0343652bc79408fc02ee47358e4834.html#_CPPv4N3GDE21CollisionMaskCallbackE" title="GDE::CollisionMaskCallback"><span class="n"><span class="pre">CollisionMaskCallback</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setCallbackForCollisionBetweenMasks</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="typedef_namespaceGDE_1a03441e586cfd60330c79d9f0a7e3ab8b.html#_CPPv4N3GDE13CollisionMaskE" title="GDE::CollisionMask"><span class="n"><span class="pre">CollisionMask</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_colliderA</span></span>, <a class="reference internal" href="typedef_namespaceGDE_1a03441e586cfd60330c79d9f0a7e3ab8b.html#_CPPv4N3GDE13CollisionMaskE" title="GDE::CollisionMask"><span class="n"><span class="pre">CollisionMask</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_colliderB</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE14PhysicsManager35setCallbackForCollisionBetweenMasksE13CollisionMask13CollisionMask" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Set the Callback For Collision Between Masks. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_colliderA</strong> – </p></li>
+<li><p><strong>_colliderB</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>CollisionMaskCallback&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE14PhysicsManager30removeCollisionCallbackBetweenE13CollisionMask13CollisionMask">
+<span id="_CPPv3N3GDE14PhysicsManager30removeCollisionCallbackBetweenE13CollisionMask13CollisionMask"></span><span id="_CPPv2N3GDE14PhysicsManager30removeCollisionCallbackBetweenE13CollisionMask13CollisionMask"></span><span id="GDE::PhysicsManager::removeCollisionCallbackBetween__CollisionMask.CollisionMask"></span><span class="target" id="classGDE_1_1PhysicsManager_1ab244520ca59bd8f84803d073e06641ac"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeCollisionCallbackBetween</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="typedef_namespaceGDE_1a03441e586cfd60330c79d9f0a7e3ab8b.html#_CPPv4N3GDE13CollisionMaskE" title="GDE::CollisionMask"><span class="n"><span class="pre">CollisionMask</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_colliderA</span></span>, <a class="reference internal" href="typedef_namespaceGDE_1a03441e586cfd60330c79d9f0a7e3ab8b.html#_CPPv4N3GDE13CollisionMaskE" title="GDE::CollisionMask"><span class="n"><span class="pre">CollisionMask</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_colliderB</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE14PhysicsManager30removeCollisionCallbackBetweenE13CollisionMask13CollisionMask" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Removes the collision detection callback between 2 bodies. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_colliderA</strong> – </p></li>
+<li><p><strong>_colliderB</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE14PhysicsManager31removeAllCollisionCallbacksFromE13CollisionMask">
+<span id="_CPPv3N3GDE14PhysicsManager31removeAllCollisionCallbacksFromE13CollisionMask"></span><span id="_CPPv2N3GDE14PhysicsManager31removeAllCollisionCallbacksFromE13CollisionMask"></span><span id="GDE::PhysicsManager::removeAllCollisionCallbacksFrom__CollisionMask"></span><span class="target" id="classGDE_1_1PhysicsManager_1af0431ec7c799a83686f0667bcddfd6a9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeAllCollisionCallbacksFrom</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="typedef_namespaceGDE_1a03441e586cfd60330c79d9f0a7e3ab8b.html#_CPPv4N3GDE13CollisionMaskE" title="GDE::CollisionMask"><span class="n"><span class="pre">CollisionMask</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_collider</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE14PhysicsManager31removeAllCollisionCallbacksFromE13CollisionMask" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Removes all collision detectin callback of a body with all the others. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_collider</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE14PhysicsManager7destroyEv">
+<span id="_CPPv3N3GDE14PhysicsManager7destroyEv"></span><span id="_CPPv2N3GDE14PhysicsManager7destroyEv"></span><span id="GDE::PhysicsManager::destroy"></span><span class="target" id="classGDE_1_1PhysicsManager_1ae7b2a1e45a3546f6460761438634ae0e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">destroy</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE14PhysicsManager7destroyEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Called to clean up the system and shut it down. MUSN’T be called by end-user. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classGDE_1_1PerlinNoiseManager.html" class="btn btn-neutral float-left" title="Class PerlinNoiseManager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classGDE_1_1PhysicsManager_1_1CollisionCallback.html" class="btn btn-neutral float-right" title="Class PhysicsManager::CollisionCallback" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

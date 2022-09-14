@@ -1,0 +1,74 @@
+
+.. _file_engine_include_core_render_elements_Shader.h:
+
+File Shader.h
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_render_elements>` (``engine/include/core/render/elements``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/render/elements/Shader.h``)
+-------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_render_elements_Shader.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``core/Core.h`` (:ref:`file_engine_include_core_Core.h`)
+
+- ``core/systems/fileSystem/FileManager.h`` (:ref:`file_engine_include_core_systems_fileSystem_FileManager.h`)
+
+- ``glad/glad.h``
+
+- ``string``
+
+- ``unordered_map``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_core_render_elements_Batch.h`
+
+- :ref:`file_engine_include_core_render_elements_ShaderManager.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structGDE_1_1VertexConfig`
+
+- :ref:`exhale_struct_structGDE_1_1VertexData`
+
+- :ref:`exhale_class_classGDE_1_1LoadVertexConfigNotInvoked`
+
+- :ref:`exhale_class_classGDE_1_1Shader`
+

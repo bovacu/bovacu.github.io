@@ -1,0 +1,14 @@
+.. _exhale_typedef_SpriteRenderer_8h_1a52def656a21c22f8e6592a9f04842b84:
+
+Typedef NodeID
+==============
+
+- Defined in :ref:`file_engine_include_core_graph_components_SpriteRenderer.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: NodeID
+   :project: My Project

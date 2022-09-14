@@ -1,0 +1,17 @@
+.. _exhale_class_classGDE_1_1Easing:
+
+Class Easing
+============
+
+- Defined in :ref:`file_engine_include_core_util_Easing.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GDE::Easing
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

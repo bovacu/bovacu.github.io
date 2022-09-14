@@ -1,0 +1,14 @@
+.. _exhale_define_Core_8h_1ab2f92881610d54379e8905409a3d1214:
+
+Define IS_ANDROID
+=================
+
+- Defined in :ref:`file_engine_include_core_Core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: IS_ANDROID
+   :project: My Project

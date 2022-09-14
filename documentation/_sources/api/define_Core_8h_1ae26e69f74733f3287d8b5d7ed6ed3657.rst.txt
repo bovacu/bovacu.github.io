@@ -1,0 +1,14 @@
+.. _exhale_define_Core_8h_1ae26e69f74733f3287d8b5d7ed6ed3657:
+
+Define PLACEHOLDERS_3
+=====================
+
+- Defined in :ref:`file_engine_include_core_Core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: PLACEHOLDERS_3
+   :project: My Project

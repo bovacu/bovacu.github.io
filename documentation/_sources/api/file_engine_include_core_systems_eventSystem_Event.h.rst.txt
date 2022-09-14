@@ -1,0 +1,92 @@
+
+.. _file_engine_include_core_systems_eventSystem_Event.h:
+
+File Event.h
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_systems_eventSystem>` (``engine/include/core/systems/eventSystem``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/systems/eventSystem/Event.h``)
+----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_systems_eventSystem_Event.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``core/util/Delegate.h`` (:ref:`file_engine_include_core_util_Delegate.h`)
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_core_graph_Graph.h`
+
+- :ref:`file_engine_include_core_render_window_Window.h`
+
+- :ref:`file_engine_include_core_systems_eventSystem_ControllerEvent.h`
+
+- :ref:`file_engine_include_core_systems_eventSystem_KeyEvent.h`
+
+- :ref:`file_engine_include_core_systems_eventSystem_MobileEvent.h`
+
+- :ref:`file_engine_include_core_systems_eventSystem_MouseEvent.h`
+
+- :ref:`file_engine_include_core_systems_eventSystem_WindowEvent.h`
+
+- :ref:`file_engine_include_core_systems_uiSystem_SceneManager.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classGDE_1_1Event`
+
+- :ref:`exhale_class_classGDE_1_1EventDispatcher`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_namespaceGDE_1a87ea0c05728ff210437a8c0585baccbb`
+
+- :ref:`exhale_enum_namespaceGDE_1a0c696f8d6936d16736d358c24c9f8eac`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_Event_8h_1a4b80eedd57d636dfa709fe71dbbb81a2`
+

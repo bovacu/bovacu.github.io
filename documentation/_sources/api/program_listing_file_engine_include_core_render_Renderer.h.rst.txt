@@ -1,0 +1,71 @@
+
+.. _program_listing_file_engine_include_core_render_Renderer.h:
+
+Program Listing for File Renderer.h
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_render_Renderer.h>` (``engine/include/core/render/Renderer.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // Created by borja on 26/12/21.
+   
+   
+   #ifndef ENGINE2_0_RENDERER_H
+   #define ENGINE2_0_RENDERER_H
+   
+   #include "core/util/Util.h"
+   #include "core/render/elements/SpriteBatch.h"
+   
+   namespace GDE {
+   
+       class Renderer {
+   
+           // Debug
+           public:
+               static void resetDebugInfo();
+               static int getTotalTriangles();
+               static int getDrawCalls();
+   
+           private:
+               static SpriteBatch batch;
+   
+               static Color clearColor;
+   
+           public:
+               static void init(Engine* _engine);
+   
+               static void destroy();
+   
+               static void clear();
+   
+               static void resetBuffers();
+   
+               static void setClearColor(const Color& _color);
+   
+               static Color getClearColor();
+   
+               static void beginDraw(Camera& _camera, Transform* _cameraTransform);
+   
+               static void beginDebugDraw(Camera& _camera, Transform* _cameraTransform, float _thickness = 1.f);
+   
+               static void draw(const IRenderizable* _renderizable, const Transform& _transform);
+   
+               static void drawLine(const Vec2F& _p0, const Vec2F& _p1, const Color& _color = Color::White);
+   
+               static void drawSquare(const Vec2F& _position, const Vec2F& _size, const Color& _color = Color::White, float _rotation = 0.f);
+   
+               static void drawShape(Shape& _shape);
+   
+               static void drawGrid(const Color& _color = Color::White);
+   
+               static void endDraw();
+   
+               static void endDebugDraw();
+       };
+   }
+   
+   
+   #endif //ENGINE2_0_RENDERER_H

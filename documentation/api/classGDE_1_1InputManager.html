@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class InputManager &mdash; GDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class IRenderizable" href="classGDE_1_1IRenderizable.html" />
+    <link rel="prev" title="Class Input" href="classGDE_1_1Input.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> GDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Active.html">Struct Active</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1AnimationNode.html">Struct AnimationNode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1AnimationTransition.html">Struct AnimationTransition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Atlas.html">Struct Atlas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1B2DConfig.html">Struct B2DConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1BodyConfig.html">Struct BodyConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1CanvasEventStopper.html">Struct CanvasEventStopper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1CharInfo.html">Struct CharInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Color.html">Struct Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Command.html">Struct Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Controller.html">Struct Controller</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Effect__Controllers.html">Struct Effect_Controllers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1File.html">Template Struct File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1FontManager_1_1FontHandler.html">Struct FontManager::FontHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1FrameBufferSpecification.html">Struct FrameBufferSpecification</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig.html">Struct GDEConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig_1_1ProjectProperties.html">Struct GDEConfig::ProjectProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GDEConfig_1_1WindowProperties.html">Struct GDEConfig::WindowProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1GenerationSettings.html">Struct GenerationSettings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Music.html">Struct Music</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NineSlice.html">Struct NineSlice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NodeID__JsonPair.html">Struct NodeID_JsonPair</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1NoiseMap.html">Struct NoiseMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1OpenGLVertex.html">Struct OpenGLVertex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1OpenGLVertexDebug.html">Struct OpenGLVertexDebug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ParticleData.html">Struct ParticleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1PhysicsManager_1_1Collision__CallbackFunction.html">Struct PhysicsManager::Collision_CallbackFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Probability.html">Struct Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ProceduralMap.html">Struct ProceduralMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Rect.html">Template Struct Rect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1RollingBuffer.html">Struct RollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1ScrollingBuffer.html">Struct ScrollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Sfx.html">Struct Sfx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Sound.html">Struct Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1State.html">Struct State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1StaticTransform.html">Struct StaticTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Stub.html">Template Struct Stub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Stub_3_01R_07Args_8_8_8_08_4.html">Template Struct Stub&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1Tag.html">Struct Tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1TextureInfo.html">Struct TextureInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VertexConfig.html">Struct VertexConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VertexData.html">Struct VertexData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structGDE_1_1VibrationConfig.html">Struct VibrationConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1AdaptiveViewPort.html">Class AdaptiveViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Animation.html">Class Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1AnimationSystem.html">Class AnimationSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BadDelegateCall.html">Class BadDelegateCall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BadECSSystemSwap.html">Class BadECSSystemSwap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1BasicPerlinNoise.html">Template Class BasicPerlinNoise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Batch.html">Class Batch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Body.html">Class Body</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Camera.html">Class Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Canvas.html">Class Canvas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1CellularAutomata.html">Class CellularAutomata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Clock.html">Class Clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ConfigManager.html">Class ConfigManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Console.html">Class Console</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerAxisMovedEvent.html">Class ControllerAxisMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerButtonDownEvent.html">Class ControllerButtonDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerButtonUpEvent.html">Class ControllerButtonUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerInput.html">Class ControllerInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ControllerVibrationManager.html">Class ControllerVibrationManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Delta.html">Class Delta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Easing.html">Class Easing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ECSManager.html">Class ECSManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ECSSystem.html">Class ECSSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Engine.html">Class Engine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Event.html">Class Event</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventBus.html">Template Class EventBus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventBus_1_1HandlerId.html">Class EventBus::HandlerId</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1EventDispatcher.html">Class EventDispatcher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FileHandler.html">Class FileHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FileManager.html">Class FileManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FixedViewPort.html">Class FixedViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Font.html">Class Font</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FontManager.html">Class FontManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FrameBuffer.html">Class FrameBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1FreeViewPort.html">Class FreeViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Graph.html">Class Graph</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Image.html">Class Image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ImGuiScene.html">Class ImGuiScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Input.html">Class Input</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class InputManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1IRenderizable.html">Class IRenderizable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1IViewPort.html">Class IViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyboardInput.html">Class KeyboardInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyEvent.html">Class KeyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyPressedEvent.html">Class KeyPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyReleasedEvent.html">Class KeyReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1KeyTypedEvent.html">Class KeyTypedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1LoadVertexConfigNotInvoked.html">Class LoadVertexConfigNotInvoked</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Manager.html">Class Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MapGenerator.html">Class MapGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MDelegate.html">Template Class MDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MDelegate_3_01R_07Args_8_8_8_08_4.html">Template Class MDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileInput.html">Class MobileInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchDownEvent.html">Class MobileTouchDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchMovedEvent.html">Class MobileTouchMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MobileTouchUpEvent.html">Class MobileTouchUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonEvent.html">Class MouseButtonEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonPressedEvent.html">Class MouseButtonPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseButtonReleasedEvent.html">Class MouseButtonReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseInput.html">Class MouseInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseMovedEvent.html">Class MouseMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1MouseScrolledEvent.html">Class MouseScrolledEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1NineSliceSprite.html">Class NineSliceSprite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ParticleSystem.html">Class ParticleSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PerlinNoiseManager.html">Class PerlinNoiseManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PhysicsManager.html">Class PhysicsManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1PhysicsManager_1_1CollisionCallback.html">Class PhysicsManager::CollisionCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Platform.html">Class Platform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Profiler.html">Class Profiler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Random.html">Class Random</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Renderer.html">Class Renderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Scene.html">Class Scene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SceneManager.html">Class SceneManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Shader.html">Class Shader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1ShaderManager.html">Class ShaderManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Shape.html">Class Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SoundManager.html">Class SoundManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteBatch.html">Class SpriteBatch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteBatch_1_1Debug.html">Class SpriteBatch::Debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1SpriteRenderer.html">Class SpriteRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TextRenderer.html">Class TextRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Texture.html">Class Texture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TextureAtlasManager.html">Class TextureAtlasManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Transform.html">Class Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1TransitionParams.html">Class TransitionParams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UDelegate.html">Template Class UDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UDelegate_3_01R_07Args_8_8_8_08_4.html">Template Class UDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UI.html">Class UI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1UIInteractable.html">Class UIInteractable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Util.html">Class Util</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Vec2.html">Template Class Vec2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1Window.html">Class Window</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowClosedEvent.html">Class WindowClosedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowFrameEvent.html">Class WindowFrameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowInput.html">Class WindowInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowMinimizedEvent.html">Class WindowMinimizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowMovedEvent.html">Class WindowMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowRenderEvent.html">Class WindowRenderEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowResizedEvent.html">Class WindowResizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classGDE_1_1WindowUpdateEvent.html">Class WindowUpdateEvent</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="library_root.html">Library API</a> &raquo;</li>
+      <li>Class InputManager</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/classGDE_1_1InputManager.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-inputmanager">
+<span id="exhale-class-classgde-1-1inputmanager"></span><h1>Class InputManager<a class="headerlink" href="#class-inputmanager" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_engine_include_core_systems_inputSystem_input_Input.h.html#file-engine-include-core-systems-inputsystem-input-input-h"><span class="std std-ref">File Input.h</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManagerE">
+<span id="_CPPv3N3GDE12InputManagerE"></span><span id="_CPPv2N3GDE12InputManagerE"></span><span id="GDE::InputManager"></span><span class="target" id="classGDE_1_1InputManager"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InputManager</span></span></span><a class="headerlink" href="#_CPPv4N3GDE12InputManagerE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This class allows the user to ask for any user input in a easy and accessible way. </p>
+<p><dl class="simple">
+<dt><strong>Attention</strong></dt><dd><p>All managers destroy all the resources before closing the application, it is not needed to be done by the end user. </p>
+</dd>
+</dl>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager4initEP6EngineP6Window">
+<span id="_CPPv3N3GDE12InputManager4initEP6EngineP6Window"></span><span id="_CPPv2N3GDE12InputManager4initEP6EngineP6Window"></span><span id="GDE::InputManager::init__EngineP.WindowP"></span><span class="target" id="classGDE_1_1InputManager_1acfe797ce1e9988324d771a03c806766c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classGDE_1_1Engine.html#_CPPv4N3GDE6EngineE" title="GDE::Engine"><span class="n"><span class="pre">Engine</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_engine</span></span>, <a class="reference internal" href="classGDE_1_1Window.html#_CPPv4N3GDE6WindowE" title="GDE::Window"><span class="n"><span class="pre">Window</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_window</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager4initEP6EngineP6Window" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This initiates all of the crucial elements of the input system. </p>
+<p><dl class="simple">
+<dt><strong>Attention</strong></dt><dd><p>This is not meant to be called by end-users. </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_engine</strong> – <a class="reference internal" href="classGDE_1_1Engine.html#classGDE_1_1Engine"><span class="std std-ref">Engine</span></a> </p></li>
+<li><p><strong>_window</strong> – <a class="reference internal" href="classGDE_1_1Window.html#classGDE_1_1Window"><span class="std std-ref">Window</span></a> </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager7destroyEv">
+<span id="_CPPv3N3GDE12InputManager7destroyEv"></span><span id="_CPPv2N3GDE12InputManager7destroyEv"></span><span id="GDE::InputManager::destroy"></span><span class="target" id="classGDE_1_1InputManager_1acd4175e8ebcfa41e9d116a813cec1e21"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">destroy</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager7destroyEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destroys all input system elements. </p>
+<p><dl class="simple">
+<dt><strong>Attention</strong></dt><dd><p>This is not meant to be called by end-users. </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager10pollEventsEv">
+<span id="_CPPv3N3GDE12InputManager10pollEventsEv"></span><span id="_CPPv2N3GDE12InputManager10pollEventsEv"></span><span id="GDE::InputManager::pollEvents"></span><span class="target" id="classGDE_1_1InputManager_1a1f6b0d02a4d3fb0d12ebb0c480c264e5"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pollEvents</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager10pollEventsEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Loops over all the captured events by SDL on a frame and handles them. </p>
+<p><dl class="simple">
+<dt><strong>Attention</strong></dt><dd><p>This is not meant to be called by end-users. </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager16isKeyJustPressedE7KeyCode">
+<span id="_CPPv3N3GDE12InputManager16isKeyJustPressedE7KeyCode"></span><span id="_CPPv2N3GDE12InputManager16isKeyJustPressedE7KeyCode"></span><span id="GDE::InputManager::isKeyJustPressed__KeyCode"></span><span class="target" id="classGDE_1_1InputManager_1a4a6e1afe5d56172f6eab7cab675f78ef"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isKeyJustPressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1a9e26f048dc278ac1af9201e60d17a3b4.html#_CPPv4N3GDE7KeyCodeE" title="GDE::KeyCode"><span class="n"><span class="pre">KeyCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager16isKeyJustPressedE7KeyCode" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true if the key is pressed and won’t return true until the key is released and pressed again. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_key</strong> – Key pressed </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager17isKeyJustReleasedE7KeyCode">
+<span id="_CPPv3N3GDE12InputManager17isKeyJustReleasedE7KeyCode"></span><span id="_CPPv2N3GDE12InputManager17isKeyJustReleasedE7KeyCode"></span><span id="GDE::InputManager::isKeyJustReleased__KeyCode"></span><span class="target" id="classGDE_1_1InputManager_1a63031f673419550286739e1c32ebb4b8"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isKeyJustReleased</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1a9e26f048dc278ac1af9201e60d17a3b4.html#_CPPv4N3GDE7KeyCodeE" title="GDE::KeyCode"><span class="n"><span class="pre">KeyCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager17isKeyJustReleasedE7KeyCode" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true if the key is released and won’t return true until the key is pressed and released again. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_key</strong> – Key released </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager12isKeyPressedE7KeyCode">
+<span id="_CPPv3N3GDE12InputManager12isKeyPressedE7KeyCode"></span><span id="_CPPv2N3GDE12InputManager12isKeyPressedE7KeyCode"></span><span id="GDE::InputManager::isKeyPressed__KeyCode"></span><span class="target" id="classGDE_1_1InputManager_1a802318e80b14e6e042f81a8f1f513a35"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isKeyPressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1a9e26f048dc278ac1af9201e60d17a3b4.html#_CPPv4N3GDE7KeyCodeE" title="GDE::KeyCode"><span class="n"><span class="pre">KeyCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager12isKeyPressedE7KeyCode" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true while the key is being pressed. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_key</strong> – Key pressed </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager13isKeyReleasedE7KeyCode">
+<span id="_CPPv3N3GDE12InputManager13isKeyReleasedE7KeyCode"></span><span id="_CPPv2N3GDE12InputManager13isKeyReleasedE7KeyCode"></span><span id="GDE::InputManager::isKeyReleased__KeyCode"></span><span class="target" id="classGDE_1_1InputManager_1a025907059fed2588ae4bd5a07573e1b7"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isKeyReleased</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1a9e26f048dc278ac1af9201e60d17a3b4.html#_CPPv4N3GDE7KeyCodeE" title="GDE::KeyCode"><span class="n"><span class="pre">KeyCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager13isKeyReleasedE7KeyCode" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true while the key is not being pressed. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_key</strong> – Key released </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager18isMouseJustPressedE9MouseCode">
+<span id="_CPPv3N3GDE12InputManager18isMouseJustPressedE9MouseCode"></span><span id="_CPPv2N3GDE12InputManager18isMouseJustPressedE9MouseCode"></span><span id="GDE::InputManager::isMouseJustPressed__MouseCode"></span><span class="target" id="classGDE_1_1InputManager_1a914580dd06e60a352152432caddba706"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMouseJustPressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1a8c1cc0b124d35dc77d2ee66c4e6c27a9.html#_CPPv4N3GDE9MouseCodeE" title="GDE::MouseCode"><span class="n"><span class="pre">MouseCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager18isMouseJustPressedE9MouseCode" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true if the button is pressed and won’t return true until the button is released and pressed again. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_button</strong> – Mouse button pressed </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager19isMouseJustReleasedE9MouseCode">
+<span id="_CPPv3N3GDE12InputManager19isMouseJustReleasedE9MouseCode"></span><span id="_CPPv2N3GDE12InputManager19isMouseJustReleasedE9MouseCode"></span><span id="GDE::InputManager::isMouseJustReleased__MouseCode"></span><span class="target" id="classGDE_1_1InputManager_1a38656b334aa548ca13a2d0421ccc77c6"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMouseJustReleased</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1a8c1cc0b124d35dc77d2ee66c4e6c27a9.html#_CPPv4N3GDE9MouseCodeE" title="GDE::MouseCode"><span class="n"><span class="pre">MouseCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager19isMouseJustReleasedE9MouseCode" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true if the button is released and won’t return true until the button is pressed and released again. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_button</strong> – Mouse button released </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager14isMousePressedE9MouseCode">
+<span id="_CPPv3N3GDE12InputManager14isMousePressedE9MouseCode"></span><span id="_CPPv2N3GDE12InputManager14isMousePressedE9MouseCode"></span><span id="GDE::InputManager::isMousePressed__MouseCode"></span><span class="target" id="classGDE_1_1InputManager_1a940c49bbd2125b1e562737e8313b1ffb"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMousePressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1a8c1cc0b124d35dc77d2ee66c4e6c27a9.html#_CPPv4N3GDE9MouseCodeE" title="GDE::MouseCode"><span class="n"><span class="pre">MouseCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager14isMousePressedE9MouseCode" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true while the button is being pressed. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_button</strong> – Mouse button pressed </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager15isMouseReleasedE9MouseCode">
+<span id="_CPPv3N3GDE12InputManager15isMouseReleasedE9MouseCode"></span><span id="_CPPv2N3GDE12InputManager15isMouseReleasedE9MouseCode"></span><span id="GDE::InputManager::isMouseReleased__MouseCode"></span><span class="target" id="classGDE_1_1InputManager_1a95a4e55f1e08c90809c2f183a29c1761"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMouseReleased</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1a8c1cc0b124d35dc77d2ee66c4e6c27a9.html#_CPPv4N3GDE9MouseCodeE" title="GDE::MouseCode"><span class="n"><span class="pre">MouseCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager15isMouseReleasedE9MouseCode" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true while the button is not being pressed. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_button</strong> – Mouse button released </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager23getMousePosScreenCoordsEb">
+<span id="_CPPv3N3GDE12InputManager23getMousePosScreenCoordsEb"></span><span id="_CPPv2N3GDE12InputManager23getMousePosScreenCoordsEb"></span><span id="GDE::InputManager::getMousePosScreenCoords__b"></span><span class="target" id="classGDE_1_1InputManager_1a03be285ce3ae9493f0f85c61b6da7806"></span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMousePosScreenCoords</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_centeredMiddleScreen</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager23getMousePosScreenCoordsEb" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the mouse position in screen coordinates, so x: [0, WindowWidth], y: [0, WindowHeight]. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_centeredMiddleScreen</strong> – Centered on screen center or left-bottom corner </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Vec2F </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager19getMousePosWorldPosEv">
+<span id="_CPPv3N3GDE12InputManager19getMousePosWorldPosEv"></span><span id="_CPPv2N3GDE12InputManager19getMousePosWorldPosEv"></span><span id="GDE::InputManager::getMousePosWorldPos"></span><span class="target" id="classGDE_1_1InputManager_1a1320ece248f4b8ef014a3b495763e298"></span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMousePosWorldPos</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager19getMousePosWorldPosEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the mouse position inside the world coordinates system. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Vec2F </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager17getMousePosCanvasEv">
+<span id="_CPPv3N3GDE12InputManager17getMousePosCanvasEv"></span><span id="_CPPv2N3GDE12InputManager17getMousePosCanvasEv"></span><span id="GDE::InputManager::getMousePosCanvas"></span><span class="target" id="classGDE_1_1InputManager_1af4e44aaf93d47c0e71ac1f9ab31d4a65"></span><a class="reference internal" href="typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d.html#_CPPv4N3GDE5Vec2FE" title="GDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMousePosCanvas</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager17getMousePosCanvasEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns mouse position with <a class="reference internal" href="classGDE_1_1Canvas.html#classGDE_1_1Canvas"><span class="std std-ref">Canvas</span></a> camera zoom. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Vec2f </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager18reassignControllerEii">
+<span id="_CPPv3N3GDE12InputManager18reassignControllerEii"></span><span id="_CPPv2N3GDE12InputManager18reassignControllerEii"></span><span id="GDE::InputManager::reassignController__i.i"></span><span class="target" id="classGDE_1_1InputManager_1a251e168e46bd5c997ff64eba0280c52f"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reassignController</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_as</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager18reassignControllerEii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function changes the order of the controllers (use to set who is player1, for example). </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_controllerID</strong> – Current ID </p></li>
+<li><p><strong>_as</strong> – New ID </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager26isGamepadButtonJustPressedE17ControllerButtonsi">
+<span id="_CPPv3N3GDE12InputManager26isGamepadButtonJustPressedE17ControllerButtonsi"></span><span id="_CPPv2N3GDE12InputManager26isGamepadButtonJustPressedE17ControllerButtonsi"></span><span id="GDE::InputManager::isGamepadButtonJustPressed__ControllerButtons.i"></span><span class="target" id="classGDE_1_1InputManager_1a9d38a7e0febc6a84056f7424e73dc3f6"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGamepadButtonJustPressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1a4502258a85b54b43d08f586cc5c59b50.html#_CPPv4N3GDE17ControllerButtonsE" title="GDE::ControllerButtons"><span class="n"><span class="pre">ControllerButtons</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager26isGamepadButtonJustPressedE17ControllerButtonsi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true if the button is pressed and won’t return true until the button is released and pressed again. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_button</strong> – Button pressed </p></li>
+<li><p><strong>_controllerID</strong> – <a class="reference internal" href="structGDE_1_1Controller.html#structGDE_1_1Controller"><span class="std std-ref">Controller</span></a> ID </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager27isGamepadButtonJustReleasedE17ControllerButtonsi">
+<span id="_CPPv3N3GDE12InputManager27isGamepadButtonJustReleasedE17ControllerButtonsi"></span><span id="_CPPv2N3GDE12InputManager27isGamepadButtonJustReleasedE17ControllerButtonsi"></span><span id="GDE::InputManager::isGamepadButtonJustReleased__ControllerButtons.i"></span><span class="target" id="classGDE_1_1InputManager_1ac3d23effe4de2218fe8806013c393f2c"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGamepadButtonJustReleased</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1a4502258a85b54b43d08f586cc5c59b50.html#_CPPv4N3GDE17ControllerButtonsE" title="GDE::ControllerButtons"><span class="n"><span class="pre">ControllerButtons</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager27isGamepadButtonJustReleasedE17ControllerButtonsi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true if the button is released and won’t return true until the button is pressed and released again. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_button</strong> – Button released </p></li>
+<li><p><strong>_controllerID</strong> – <a class="reference internal" href="structGDE_1_1Controller.html#structGDE_1_1Controller"><span class="std std-ref">Controller</span></a> ID </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager22isGamepadButtonPressedE17ControllerButtonsi">
+<span id="_CPPv3N3GDE12InputManager22isGamepadButtonPressedE17ControllerButtonsi"></span><span id="_CPPv2N3GDE12InputManager22isGamepadButtonPressedE17ControllerButtonsi"></span><span id="GDE::InputManager::isGamepadButtonPressed__ControllerButtons.i"></span><span class="target" id="classGDE_1_1InputManager_1a058ef8565b4b767715bedb4bc83453e0"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGamepadButtonPressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1a4502258a85b54b43d08f586cc5c59b50.html#_CPPv4N3GDE17ControllerButtonsE" title="GDE::ControllerButtons"><span class="n"><span class="pre">ControllerButtons</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager22isGamepadButtonPressedE17ControllerButtonsi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true while the button is being pressed. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_button</strong> – Button pressed </p></li>
+<li><p><strong>_controllerID</strong> – <a class="reference internal" href="structGDE_1_1Controller.html#structGDE_1_1Controller"><span class="std std-ref">Controller</span></a> ID </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager23isGamepadButtonReleasedE17ControllerButtonsi">
+<span id="_CPPv3N3GDE12InputManager23isGamepadButtonReleasedE17ControllerButtonsi"></span><span id="_CPPv2N3GDE12InputManager23isGamepadButtonReleasedE17ControllerButtonsi"></span><span id="GDE::InputManager::isGamepadButtonReleased__ControllerButtons.i"></span><span class="target" id="classGDE_1_1InputManager_1a53c11db0d23a7dad5cd9903d9fa4dc05"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGamepadButtonReleased</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1a4502258a85b54b43d08f586cc5c59b50.html#_CPPv4N3GDE17ControllerButtonsE" title="GDE::ControllerButtons"><span class="n"><span class="pre">ControllerButtons</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager23isGamepadButtonReleasedE17ControllerButtonsi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true while the button is not being pressed. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_button</strong> – Button released </p></li>
+<li><p><strong>_controllerID</strong> – <a class="reference internal" href="structGDE_1_1Controller.html#structGDE_1_1Controller"><span class="std std-ref">Controller</span></a> ID </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager14gamepadVibrateEiRKNSt6stringE">
+<span id="_CPPv3N3GDE12InputManager14gamepadVibrateEiRKNSt6stringE"></span><span id="_CPPv2N3GDE12InputManager14gamepadVibrateEiRKNSt6stringE"></span><span id="GDE::InputManager::gamepadVibrate__i.ssCR"></span><span class="target" id="classGDE_1_1InputManager_1a35eb1b6e84749c90d97f876cdb8ab481"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gamepadVibrate</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_vibrationEffectName</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;default&quot;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager14gamepadVibrateEiRKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Makes the controller vibrate at a specific vibration effect. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_controllerID</strong> – <a class="reference internal" href="structGDE_1_1Controller.html#structGDE_1_1Controller"><span class="std std-ref">Controller</span></a> ID </p></li>
+<li><p><strong>_vibrationEffectName</strong> – Vibration effect </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager24isGamepadAxisJustPressedE14ControllerAxisi">
+<span id="_CPPv3N3GDE12InputManager24isGamepadAxisJustPressedE14ControllerAxisi"></span><span id="_CPPv2N3GDE12InputManager24isGamepadAxisJustPressedE14ControllerAxisi"></span><span id="GDE::InputManager::isGamepadAxisJustPressed__ControllerAxis.i"></span><span class="target" id="classGDE_1_1InputManager_1a4f84f64bd59302fdf9c39dd81d516211"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGamepadAxisJustPressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1aa06a04bd3d6523e4026e0918f136bb66.html#_CPPv4N3GDE14ControllerAxisE" title="GDE::ControllerAxis"><span class="n"><span class="pre">ControllerAxis</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_axis</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager24isGamepadAxisJustPressedE14ControllerAxisi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true if the axis button is pressed and won’t return true until the axis button is released and pressed again. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_axis</strong> – <a class="reference internal" href="structGDE_1_1Controller.html#structGDE_1_1Controller"><span class="std std-ref">Controller</span></a> Axis </p></li>
+<li><p><strong>_controllerID</strong> – <a class="reference internal" href="structGDE_1_1Controller.html#structGDE_1_1Controller"><span class="std std-ref">Controller</span></a> ID </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager20isGamepadAxisPressedE14ControllerAxisi">
+<span id="_CPPv3N3GDE12InputManager20isGamepadAxisPressedE14ControllerAxisi"></span><span id="_CPPv2N3GDE12InputManager20isGamepadAxisPressedE14ControllerAxisi"></span><span id="GDE::InputManager::isGamepadAxisPressed__ControllerAxis.i"></span><span class="target" id="classGDE_1_1InputManager_1a90bea67d8ec8c1067fbe08bebc75546e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGamepadAxisPressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1aa06a04bd3d6523e4026e0918f136bb66.html#_CPPv4N3GDE14ControllerAxisE" title="GDE::ControllerAxis"><span class="n"><span class="pre">ControllerAxis</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_axis</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager20isGamepadAxisPressedE14ControllerAxisi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true while the axis button is being pressed. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_axis</strong> – <a class="reference internal" href="structGDE_1_1Controller.html#structGDE_1_1Controller"><span class="std std-ref">Controller</span></a> Axis </p></li>
+<li><p><strong>_controllerID</strong> – <a class="reference internal" href="structGDE_1_1Controller.html#structGDE_1_1Controller"><span class="std std-ref">Controller</span></a> ID </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager21isGamepadAxisReleasedE14ControllerAxisi">
+<span id="_CPPv3N3GDE12InputManager21isGamepadAxisReleasedE14ControllerAxisi"></span><span id="_CPPv2N3GDE12InputManager21isGamepadAxisReleasedE14ControllerAxisi"></span><span id="GDE::InputManager::isGamepadAxisReleased__ControllerAxis.i"></span><span class="target" id="classGDE_1_1InputManager_1abd8db57355843bd98e3fed8be9cf1164"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGamepadAxisReleased</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceGDE_1aa06a04bd3d6523e4026e0918f136bb66.html#_CPPv4N3GDE14ControllerAxisE" title="GDE::ControllerAxis"><span class="n"><span class="pre">ControllerAxis</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_axis</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager21isGamepadAxisReleasedE14ControllerAxisi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true while the axis button is not being pressed. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_axis</strong> – <a class="reference internal" href="structGDE_1_1Controller.html#structGDE_1_1Controller"><span class="std std-ref">Controller</span></a> axis </p></li>
+<li><p><strong>_controllerID</strong> – <a class="reference internal" href="structGDE_1_1Controller.html#structGDE_1_1Controller"><span class="std std-ref">Controller</span></a> ID </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager25isMobileScreenJustPressedEi">
+<span id="_CPPv3N3GDE12InputManager25isMobileScreenJustPressedEi"></span><span id="_CPPv2N3GDE12InputManager25isMobileScreenJustPressedEi"></span><span id="GDE::InputManager::isMobileScreenJustPressed__i"></span><span class="target" id="classGDE_1_1InputManager_1a7fb7a47af2dd666515fcdebff91e8ccc"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMobileScreenJustPressed</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_fingerID</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager25isMobileScreenJustPressedEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true if the screen is pressed and won’t return true until the screen is released and pressed again. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_fingerID</strong> – Finger ID </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager26isMobileScreenJustReleasedEi">
+<span id="_CPPv3N3GDE12InputManager26isMobileScreenJustReleasedEi"></span><span id="_CPPv2N3GDE12InputManager26isMobileScreenJustReleasedEi"></span><span id="GDE::InputManager::isMobileScreenJustReleased__i"></span><span class="target" id="classGDE_1_1InputManager_1a82fc0ae9fccc3108dcde8762e6b67e82"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMobileScreenJustReleased</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_fingerID</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager26isMobileScreenJustReleasedEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true if the screen is released and won’t return true until the button is screen and released again. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_fingerID</strong> – Finger ID </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager21isMobileScreenPressedEi">
+<span id="_CPPv3N3GDE12InputManager21isMobileScreenPressedEi"></span><span id="_CPPv2N3GDE12InputManager21isMobileScreenPressedEi"></span><span id="GDE::InputManager::isMobileScreenPressed__i"></span><span class="target" id="classGDE_1_1InputManager_1aa0148f5d090f263099440072683adfa6"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMobileScreenPressed</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_fingerID</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager21isMobileScreenPressedEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true while the screen is being pressed. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_fingerID</strong> – Finger ID &#64;returnbool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager21isMobileScreenReleaseEi">
+<span id="_CPPv3N3GDE12InputManager21isMobileScreenReleaseEi"></span><span id="_CPPv2N3GDE12InputManager21isMobileScreenReleaseEi"></span><span id="GDE::InputManager::isMobileScreenRelease__i"></span><span class="target" id="classGDE_1_1InputManager_1adcd3438f05865d6dff7f781c1714f6a8"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMobileScreenRelease</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_fingerID</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager21isMobileScreenReleaseEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns true while the screen is not being pressed. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_fingerID</strong> – Finger ID </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager16getEventsIgnoredERK9InputType">
+<span id="_CPPv3N3GDE12InputManager16getEventsIgnoredERK9InputType"></span><span id="_CPPv2N3GDE12InputManager16getEventsIgnoredERK9InputType"></span><span id="GDE::InputManager::getEventsIgnored__InputTypeCR"></span><span class="target" id="classGDE_1_1InputManager_1a6e4571b67fad86f98b5c73349e789e2a"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="enum_namespaceGDE_1a83f19b3022cb625dfbe323780219c31b.html#_CPPv4N3GDE15SystemEventEnumE" title="GDE::SystemEventEnum"><span class="n"><span class="pre">SystemEventEnum</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getEventsIgnored</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespaceGDE_1aed85f20d278277b97689be98b05914d4.html#_CPPv4N3GDE9InputTypeE" title="GDE::InputType"><span class="n"><span class="pre">InputType</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_inputType</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager16getEventsIgnoredERK9InputType" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the list of ignored events for a platform. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_inputType</strong> – Type of input. </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>std::vector&lt;SystemEventEnum&gt; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager16addEventToIgnoreERK9InputTypeRK15SystemEventEnum">
+<span id="_CPPv3N3GDE12InputManager16addEventToIgnoreERK9InputTypeRK15SystemEventEnum"></span><span id="_CPPv2N3GDE12InputManager16addEventToIgnoreERK9InputTypeRK15SystemEventEnum"></span><span id="GDE::InputManager::addEventToIgnore__InputTypeCR.SystemEventEnumCR"></span><span class="target" id="classGDE_1_1InputManager_1a5bef818a68fd173b2e7e6e4b85fe0123"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addEventToIgnore</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespaceGDE_1aed85f20d278277b97689be98b05914d4.html#_CPPv4N3GDE9InputTypeE" title="GDE::InputType"><span class="n"><span class="pre">InputType</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_inputType</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespaceGDE_1a83f19b3022cb625dfbe323780219c31b.html#_CPPv4N3GDE15SystemEventEnumE" title="GDE::SystemEventEnum"><span class="n"><span class="pre">SystemEventEnum</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_event</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager16addEventToIgnoreERK9InputTypeRK15SystemEventEnum" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Adds an event as ignored. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_inputType</strong> – <a class="reference internal" href="classGDE_1_1Input.html#classGDE_1_1Input"><span class="std std-ref">Input</span></a> type </p></li>
+<li><p><strong>_event</strong> – <a class="reference internal" href="classGDE_1_1Event.html#classGDE_1_1Event"><span class="std std-ref">Event</span></a> type </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3GDE12InputManager19removeEventToIgnoreERK9InputTypeRK15SystemEventEnum">
+<span id="_CPPv3N3GDE12InputManager19removeEventToIgnoreERK9InputTypeRK15SystemEventEnum"></span><span id="_CPPv2N3GDE12InputManager19removeEventToIgnoreERK9InputTypeRK15SystemEventEnum"></span><span id="GDE::InputManager::removeEventToIgnore__InputTypeCR.SystemEventEnumCR"></span><span class="target" id="classGDE_1_1InputManager_1a9e5e07ee8078f2d8819621b7a68e457a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeEventToIgnore</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespaceGDE_1aed85f20d278277b97689be98b05914d4.html#_CPPv4N3GDE9InputTypeE" title="GDE::InputType"><span class="n"><span class="pre">InputType</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_inputType</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespaceGDE_1a83f19b3022cb625dfbe323780219c31b.html#_CPPv4N3GDE15SystemEventEnumE" title="GDE::SystemEventEnum"><span class="n"><span class="pre">SystemEventEnum</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_event</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3GDE12InputManager19removeEventToIgnoreERK9InputTypeRK15SystemEventEnum" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Removes and event as ignored. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_inputType</strong> – <a class="reference internal" href="classGDE_1_1Input.html#classGDE_1_1Input"><span class="std std-ref">Input</span></a> type </p></li>
+<li><p><strong>_event</strong> – <a class="reference internal" href="classGDE_1_1Event.html#classGDE_1_1Event"><span class="std std-ref">Event</span></a> type </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classGDE_1_1Input.html" class="btn btn-neutral float-left" title="Class Input" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classGDE_1_1IRenderizable.html" class="btn btn-neutral float-right" title="Class IRenderizable" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

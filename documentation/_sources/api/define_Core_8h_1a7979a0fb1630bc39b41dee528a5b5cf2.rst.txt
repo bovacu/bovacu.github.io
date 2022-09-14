@@ -1,0 +1,14 @@
+.. _exhale_define_Core_8h_1a7979a0fb1630bc39b41dee528a5b5cf2:
+
+Define BLOOM_FRAGMENT_SHADER_ES
+===============================
+
+- Defined in :ref:`file_engine_include_core_Core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: BLOOM_FRAGMENT_SHADER_ES
+   :project: My Project

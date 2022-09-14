@@ -1,0 +1,14 @@
+.. _exhale_function_namespaceGDE_1ae737b5edc886d2c5f60c0ce7318c0901:
+
+Function GDE::operator==(const Vec2I&, float)
+=============================================
+
+- Defined in :ref:`file_engine_include_core_util_Vec.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: GDE::operator==(const Vec2I&, float)
+   :project: My Project

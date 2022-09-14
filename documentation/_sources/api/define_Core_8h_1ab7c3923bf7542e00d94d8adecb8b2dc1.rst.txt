@@ -1,0 +1,14 @@
+.. _exhale_define_Core_8h_1ab7c3923bf7542e00d94d8adecb8b2dc1:
+
+Define BIND_FUNC_5
+==================
+
+- Defined in :ref:`file_engine_include_core_Core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: BIND_FUNC_5
+   :project: My Project

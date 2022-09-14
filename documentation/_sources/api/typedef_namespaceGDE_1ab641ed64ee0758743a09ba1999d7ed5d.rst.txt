@@ -1,0 +1,14 @@
+.. _exhale_typedef_namespaceGDE_1ab641ed64ee0758743a09ba1999d7ed5d:
+
+Typedef GDE::Vec2F
+==================
+
+- Defined in :ref:`file_engine_include_core_util_Vec.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: GDE::Vec2F
+   :project: My Project

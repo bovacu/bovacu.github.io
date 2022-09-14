@@ -1,0 +1,14 @@
+.. _exhale_function_namespaceGDE_1a887f718844772386740230220de020b8:
+
+Template Function GDE::get
+==========================
+
+- Defined in :ref:`file_engine_include_core_graph_Graph.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: GDE::get(Ts&&...)
+   :project: My Project

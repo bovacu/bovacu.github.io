@@ -1,0 +1,14 @@
+.. _exhale_define_Functions_8h_1a35188fce9458034ea84bf72bb54a3af1:
+
+Define clampD
+=============
+
+- Defined in :ref:`file_engine_include_core_util_Functions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: clampD
+   :project: My Project

@@ -1,0 +1,65 @@
+
+.. _file_engine_include_core_util_Clock.h:
+
+File Clock.h
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_util>` (``engine/include/core/util``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/util/Clock.h``)
+-------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_util_Clock.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstdint``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_core_util_Util.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classGDE_1_1Clock`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_Clock_8h_1a5921c7224facd8446bfdb53ab83600f2`
+

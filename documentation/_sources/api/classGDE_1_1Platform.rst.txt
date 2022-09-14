@@ -1,0 +1,17 @@
+.. _exhale_class_classGDE_1_1Platform:
+
+Class Platform
+==============
+
+- Defined in :ref:`file_engine_include_core_platform_Platform.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GDE::Platform
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

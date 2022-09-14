@@ -1,0 +1,14 @@
+.. _exhale_function_namespaceGDE_1a358bf6684dcdf38b8e2a2761100b5751:
+
+Function GDE::operator<<(std::ostream&, const IntRect&)
+=======================================================
+
+- Defined in :ref:`file_engine_include_core_util_Rect.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: GDE::operator<<(std::ostream&, const IntRect&)
+   :project: My Project

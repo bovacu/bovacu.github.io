@@ -1,0 +1,26 @@
+.. _exhale_class_classGDE_1_1Texture:
+
+Class Texture
+=============
+
+- Defined in :ref:`file_engine_include_core_render_elements_Texture.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public GDE::Image`` (:ref:`exhale_class_classGDE_1_1Image`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GDE::Texture
+   :project: My Project
+   :members:
+   :protected-members:
+   :undoc-members:

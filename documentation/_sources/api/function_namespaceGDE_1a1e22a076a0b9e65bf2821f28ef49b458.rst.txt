@@ -1,0 +1,14 @@
+.. _exhale_function_namespaceGDE_1a1e22a076a0b9e65bf2821f28ef49b458:
+
+Function GDE::operator<<(std::ostream&, KeyCode)
+================================================
+
+- Defined in :ref:`file_engine_include_core_systems_inputSystem_keysAndButtons_KeyboardKeys.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: GDE::operator<<(std::ostream&, KeyCode)
+   :project: My Project
