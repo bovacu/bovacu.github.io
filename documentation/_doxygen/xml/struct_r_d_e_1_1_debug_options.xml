@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_debug_options" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::DebugOptions</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_debug_options_1a9813a5b73d22d647dfc1bec47dcac4b1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::DebugOptions::showGeneralDebug</definition>
+        <argsstring></argsstring>
+        <name>showGeneralDebug</name>
+        <qualifiedname>RDE::DebugOptions::showGeneralDebug</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="17" column="14" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_debug_options_1ac3d648ddaaf9390acb24c954f0ef98c8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::DebugOptions::showCircleLines</definition>
+        <argsstring></argsstring>
+        <name>showCircleLines</name>
+        <qualifiedname>RDE::DebugOptions::showCircleLines</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="18" column="14" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_debug_options_1a5f8016a41cd05ec5a17d585de8fdd7dd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::DebugOptions::showBoxLines</definition>
+        <argsstring></argsstring>
+        <name>showBoxLines</name>
+        <qualifiedname>RDE::DebugOptions::showBoxLines</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="19" column="14" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_debug_options_1aed4cc41aab6323e519c2ff490b44c673" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::DebugOptions::showPolygonLines</definition>
+        <argsstring></argsstring>
+        <name>showPolygonLines</name>
+        <qualifiedname>RDE::DebugOptions::showPolygonLines</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="20" column="14" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_debug_options_1a400ca9d0e6190f02bbfa0225ec3e5f46" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::DebugOptions::showCircleRadius</definition>
+        <argsstring></argsstring>
+        <name>showCircleRadius</name>
+        <qualifiedname>RDE::DebugOptions::showCircleRadius</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="21" column="14" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_debug_options_1acb9087d5398ccbf54e62e484c4a944a8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::DebugOptions::showPolygonRadius</definition>
+        <argsstring></argsstring>
+        <name>showPolygonRadius</name>
+        <qualifiedname>RDE::DebugOptions::showPolygonRadius</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="22" column="14" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_debug_options_1a2b194b8683c45b999183df21164b7174" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::DebugOptions::showBoxRadius</definition>
+        <argsstring></argsstring>
+        <name>showBoxRadius</name>
+        <qualifiedname>RDE::DebugOptions::showBoxRadius</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="23" column="14" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_debug_options_1a339e68a77e96574033aadb66e5989ef3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::DebugOptions::circleLineColor</definition>
+        <argsstring></argsstring>
+        <name>circleLineColor</name>
+        <qualifiedname>RDE::DebugOptions::circleLineColor</qualifiedname>
+        <initializer>= Color::Blue</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="24" column="15" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_debug_options_1a6ee4510d18097f6a20eaa5e1db1fe39b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::DebugOptions::boxLineColor</definition>
+        <argsstring></argsstring>
+        <name>boxLineColor</name>
+        <qualifiedname>RDE::DebugOptions::boxLineColor</qualifiedname>
+        <initializer>= Color::Blue</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="25" column="15" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_debug_options_1a8203e3eb56ddac3540d6c984cec5438f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::DebugOptions::polygonLineColor</definition>
+        <argsstring></argsstring>
+        <name>polygonLineColor</name>
+        <qualifiedname>RDE::DebugOptions::polygonLineColor</qualifiedname>
+        <initializer>= Color::Blue</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="26" column="15" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_debug_options_1a79f04516fbbcba86743f4d2a54d629af" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::DebugOptions::circleRadiusColor</definition>
+        <argsstring></argsstring>
+        <name>circleRadiusColor</name>
+        <qualifiedname>RDE::DebugOptions::circleRadiusColor</qualifiedname>
+        <initializer>= Color::Yellow</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="27" column="15" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_debug_options_1a92c600c8da5098034d58c98cdd434df1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::DebugOptions::boxRadiusColor</definition>
+        <argsstring></argsstring>
+        <name>boxRadiusColor</name>
+        <qualifiedname>RDE::DebugOptions::boxRadiusColor</qualifiedname>
+        <initializer>= Color::Yellow</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="28" column="15" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_debug_options_1a61b68cda950a6aba7f087612200910df" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::DebugOptions::polygonRadiusColor</definition>
+        <argsstring></argsstring>
+        <name>polygonRadiusColor</name>
+        <qualifiedname>RDE::DebugOptions::polygonRadiusColor</qualifiedname>
+        <initializer>= Color::Yellow</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="29" column="15" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>RDE::Color</label>
+        <link refid="struct_r_d_e_1_1_color"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Black</edgelabel>
+          <edgelabel>Blue</edgelabel>
+          <edgelabel>Brown</edgelabel>
+          <edgelabel>Disabled</edgelabel>
+          <edgelabel>Gray</edgelabel>
+          <edgelabel>Green</edgelabel>
+          <edgelabel>Magenta</edgelabel>
+          <edgelabel>NO_COLOR</edgelabel>
+          <edgelabel>Orange</edgelabel>
+          <edgelabel>Placeholder</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RDE::DebugOptions</label>
+        <link refid="struct_r_d_e_1_1_debug_options"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>boxLineColor</edgelabel>
+          <edgelabel>boxRadiusColor</edgelabel>
+          <edgelabel>circleLineColor</edgelabel>
+          <edgelabel>circleRadiusColor</edgelabel>
+          <edgelabel>polygonLineColor</edgelabel>
+          <edgelabel>polygonRadiusColor</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="16" column="5" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="16" bodyend="30"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_debug_options_1a6ee4510d18097f6a20eaa5e1db1fe39b" prot="public" virt="non-virtual"><scope>RDE::DebugOptions</scope><name>boxLineColor</name></member>
+      <member refid="struct_r_d_e_1_1_debug_options_1a92c600c8da5098034d58c98cdd434df1" prot="public" virt="non-virtual"><scope>RDE::DebugOptions</scope><name>boxRadiusColor</name></member>
+      <member refid="struct_r_d_e_1_1_debug_options_1a339e68a77e96574033aadb66e5989ef3" prot="public" virt="non-virtual"><scope>RDE::DebugOptions</scope><name>circleLineColor</name></member>
+      <member refid="struct_r_d_e_1_1_debug_options_1a79f04516fbbcba86743f4d2a54d629af" prot="public" virt="non-virtual"><scope>RDE::DebugOptions</scope><name>circleRadiusColor</name></member>
+      <member refid="struct_r_d_e_1_1_debug_options_1a8203e3eb56ddac3540d6c984cec5438f" prot="public" virt="non-virtual"><scope>RDE::DebugOptions</scope><name>polygonLineColor</name></member>
+      <member refid="struct_r_d_e_1_1_debug_options_1a61b68cda950a6aba7f087612200910df" prot="public" virt="non-virtual"><scope>RDE::DebugOptions</scope><name>polygonRadiusColor</name></member>
+      <member refid="struct_r_d_e_1_1_debug_options_1a5f8016a41cd05ec5a17d585de8fdd7dd" prot="public" virt="non-virtual"><scope>RDE::DebugOptions</scope><name>showBoxLines</name></member>
+      <member refid="struct_r_d_e_1_1_debug_options_1a2b194b8683c45b999183df21164b7174" prot="public" virt="non-virtual"><scope>RDE::DebugOptions</scope><name>showBoxRadius</name></member>
+      <member refid="struct_r_d_e_1_1_debug_options_1ac3d648ddaaf9390acb24c954f0ef98c8" prot="public" virt="non-virtual"><scope>RDE::DebugOptions</scope><name>showCircleLines</name></member>
+      <member refid="struct_r_d_e_1_1_debug_options_1a400ca9d0e6190f02bbfa0225ec3e5f46" prot="public" virt="non-virtual"><scope>RDE::DebugOptions</scope><name>showCircleRadius</name></member>
+      <member refid="struct_r_d_e_1_1_debug_options_1a9813a5b73d22d647dfc1bec47dcac4b1" prot="public" virt="non-virtual"><scope>RDE::DebugOptions</scope><name>showGeneralDebug</name></member>
+      <member refid="struct_r_d_e_1_1_debug_options_1aed4cc41aab6323e519c2ff490b44c673" prot="public" virt="non-virtual"><scope>RDE::DebugOptions</scope><name>showPolygonLines</name></member>
+      <member refid="struct_r_d_e_1_1_debug_options_1acb9087d5398ccbf54e62e484c4a944a8" prot="public" virt="non-virtual"><scope>RDE::DebugOptions</scope><name>showPolygonRadius</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespace_r_d_e_1_1_util_1_1_string" kind="namespace" language="C++">
+    <compoundname>RDE::Util::String</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_functions_8h_1ae27306020c47753da9392b8ab91af655" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::Util::String::getFileNameFromPath</definition>
+        <argsstring>(const std::string &amp;_path)</argsstring>
+        <name>getFileNameFromPath</name>
+        <qualifiedname>RDE::Util::String::getFileNameFromPath</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="232" column="32" bodyfile="engine/include/core/util/Functions.h" bodystart="232" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1a19bc361c51f0f6fd176adc474f41b672" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::Util::String::getPathFromFilePath</definition>
+        <argsstring>(const std::string &amp;_path)</argsstring>
+        <name>getPathFromFilePath</name>
+        <qualifiedname>RDE::Util::String::getPathFromFilePath</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="238" column="32" bodyfile="engine/include/core/util/Functions.h" bodystart="238" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1a6a0e5f8c8ebf15094301fd0c47acad04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::Util::String::getFileExtension</definition>
+        <argsstring>(const std::string &amp;_path)</argsstring>
+        <name>getFileExtension</name>
+        <qualifiedname>RDE::Util::String::getFileExtension</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="242" column="32" bodyfile="engine/include/core/util/Functions.h" bodystart="242" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1a8f8893852a01b624a708fef1b0288692" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string &amp;</type>
+        <definition>std::string &amp; RDE::Util::String::toLower</definition>
+        <argsstring>(std::string &amp;_string)</argsstring>
+        <name>toLower</name>
+        <qualifiedname>RDE::Util::String::toLower</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>_string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="247" column="32" bodyfile="engine/include/core/util/Functions.h" bodystart="247" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1ab2ac17ddc47736d957e5f74ae996b63c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string &amp;</type>
+        <definition>std::string &amp; RDE::Util::String::toUpper</definition>
+        <argsstring>(std::string &amp;_string)</argsstring>
+        <name>toUpper</name>
+        <qualifiedname>RDE::Util::String::toUpper</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>_string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="252" column="32" bodyfile="engine/include/core/util/Functions.h" bodystart="252" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1a6ad87e348395317259b9863a8da8c80f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; RDE::Util::String::split</definition>
+        <argsstring>(const std::string &amp;_str, const std::string &amp;_delimiter)</argsstring>
+        <name>split</name>
+        <qualifiedname>RDE::Util::String::split</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_str</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_delimiter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="257" column="32" bodyfile="engine/include/core/util/Functions.h" bodystart="257" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1a9671322e5a63437d5d95daae5395ec7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::Util::String::splitGetIndex</definition>
+        <argsstring>(const std::string &amp;_str, const std::string &amp;_delimiter, int _index)</argsstring>
+        <name>splitGetIndex</name>
+        <qualifiedname>RDE::Util::String::splitGetIndex</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_str</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_delimiter</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="273" column="32" bodyfile="engine/include/core/util/Functions.h" bodystart="273" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1ab3dc16f5d25ee39bcd8bca09896104c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Util::String::replaceAll</definition>
+        <argsstring>(std::string &amp;_str, const std::string &amp;_search, const std::string &amp;_replace)</argsstring>
+        <name>replaceAll</name>
+        <qualifiedname>RDE::Util::String::replaceAll</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>_str</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_search</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_replace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="277" column="25" bodyfile="engine/include/core/util/Functions.h" bodystart="277" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1a671ae17cbc069c7a9e1983ce958258de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Arg1</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string RDE::Util::String::__append</definition>
+        <argsstring>(std::stringstream &amp;_ss, Arg1 &amp;&amp;arg1)</argsstring>
+        <name>__append</name>
+        <qualifiedname>RDE::Util::String::__append</qualifiedname>
+        <param>
+          <type>std::stringstream &amp;</type>
+          <declname>_ss</declname>
+        </param>
+        <param>
+          <type>Arg1 &amp;&amp;</type>
+          <declname>arg1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="288" column="32" bodyfile="engine/include/core/util/Functions.h" bodystart="288" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1a98bce40d295aa275927b9936df0ea4fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Arg1</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string RDE::Util::String::__append</definition>
+        <argsstring>(std::stringstream &amp;_ss, Arg1 &amp;&amp;arg1, Args &amp;&amp;... args)</argsstring>
+        <name>__append</name>
+        <qualifiedname>RDE::Util::String::__append</qualifiedname>
+        <param>
+          <type>std::stringstream &amp;</type>
+          <declname>_ss</declname>
+        </param>
+        <param>
+          <type>Arg1 &amp;&amp;</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="294" column="32" bodyfile="engine/include/core/util/Functions.h" bodystart="294" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1a54f19d85128e85beaf6c12d4e52cb550" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Arg1</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string RDE::Util::String::appendToString</definition>
+        <argsstring>(Arg1 &amp;&amp;arg1, Args &amp;&amp;... args)</argsstring>
+        <name>appendToString</name>
+        <qualifiedname>RDE::Util::String::appendToString</qualifiedname>
+        <param>
+          <type>Arg1 &amp;&amp;</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="300" column="32" bodyfile="engine/include/core/util/Functions.h" bodystart="300" bodyend="303"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/util/Functions.h" line="231" column="1"/>
+  </compounddef>
+</doxygen>

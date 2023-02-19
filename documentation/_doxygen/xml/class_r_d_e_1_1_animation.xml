@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_animation" kind="class" language="C++" prot="public">
+    <compoundname>RDE::Animation</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_animation_1a71a29d9eac55eda5becbc972a126009f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> * &gt;</type>
+        <definition>std::vector&lt;Texture*&gt; RDE::Animation::frameTextures</definition>
+        <argsstring></argsstring>
+        <name>frameTextures</name>
+        <qualifiedname>RDE::Animation::frameTextures</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="15" column="25" bodyfile="engine/include/core/systems/animationSystem/Animation.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_animation_1a2f3c1212968d909732aefb253437c22e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::Animation::currentFrame</definition>
+        <argsstring></argsstring>
+        <name>currentFrame</name>
+        <qualifiedname>RDE::Animation::currentFrame</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="16" column="17" bodyfile="engine/include/core/systems/animationSystem/Animation.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_animation_1a9a5d5517d2994d260b7e7985dd024293" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::Animation::timeBetweenFrames</definition>
+        <argsstring></argsstring>
+        <name>timeBetweenFrames</name>
+        <qualifiedname>RDE::Animation::timeBetweenFrames</qualifiedname>
+        <initializer>= .1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="17" column="19" bodyfile="engine/include/core/systems/animationSystem/Animation.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_animation_1a3fa7e7321e0a5aeed1ab57186cd66cdd" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::Animation::currentTime</definition>
+        <argsstring></argsstring>
+        <name>currentTime</name>
+        <qualifiedname>RDE::Animation::currentTime</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="17" column="38" bodyfile="engine/include/core/systems/animationSystem/Animation.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_animation_1a3eba41238be66a0d96c94c4ff3d4f344" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::Animation::canPlay</definition>
+        <argsstring></argsstring>
+        <name>canPlay</name>
+        <qualifiedname>RDE::Animation::canPlay</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="18" column="18" bodyfile="engine/include/core/systems/animationSystem/Animation.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_1a4d2b7352f7c0fd86176a4fa59ff09aaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::Animation::Animation</definition>
+        <argsstring>()</argsstring>
+        <name>Animation</name>
+        <qualifiedname>RDE::Animation::Animation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="21" column="13" bodyfile="engine/include/core/systems/animationSystem/Animation.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_1aa5e079c6437ee86e6c427e61d32867c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RDE::Animation::addFrame</definition>
+        <argsstring>(Texture *_texture)</argsstring>
+        <name>addFrame</name>
+        <qualifiedname>RDE::Animation::addFrame</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> *</type>
+          <declname>_texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="22" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_1a208e2e163e9f8672e1fa22c0b689318f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RDE::Animation::removeFrame</definition>
+        <argsstring>(Texture *_texture)</argsstring>
+        <name>removeFrame</name>
+        <qualifiedname>RDE::Animation::removeFrame</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> *</type>
+          <declname>_texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="23" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_1a65c8d701571812fdcaccaeda70dcfcc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RDE::Animation::removeFrame</definition>
+        <argsstring>(int _index)</argsstring>
+        <name>removeFrame</name>
+        <qualifiedname>RDE::Animation::removeFrame</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="24" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_1a0ac72d64242ca6cc39dc8afcb6454232" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Animation::setTimeBetweenFrames</definition>
+        <argsstring>(float _timeBetweenFrames)</argsstring>
+        <name>setTimeBetweenFrames</name>
+        <qualifiedname>RDE::Animation::setTimeBetweenFrames</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_timeBetweenFrames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="26" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_1afb5559f939d4e2c9604b07312e6fa4f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::Animation::getTimeBetweenFrames</definition>
+        <argsstring>() const</argsstring>
+        <name>getTimeBetweenFrames</name>
+        <qualifiedname>RDE::Animation::getTimeBetweenFrames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="27" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_1aea8a5eb057aaeace88bf1281a8772f4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Animation::play</definition>
+        <argsstring>()</argsstring>
+        <name>play</name>
+        <qualifiedname>RDE::Animation::play</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="29" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_1acc8f77cc28d0ddcd967341adbd754e14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Animation::pause</definition>
+        <argsstring>()</argsstring>
+        <name>pause</name>
+        <qualifiedname>RDE::Animation::pause</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="30" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_1a939cf5ab254612820ca4409b13ca36bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Animation::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>RDE::Animation::stop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="31" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_1ac3a1dd5a4176ac0aaac89cef461c14da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Animation::restart</definition>
+        <argsstring>()</argsstring>
+        <name>restart</name>
+        <qualifiedname>RDE::Animation::restart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="32" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_1ab788d266fb48b5de2b7e90a801aff8ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Animation::update</definition>
+        <argsstring>(float _dt)</argsstring>
+        <name>update</name>
+        <qualifiedname>RDE::Animation::update</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="34" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_1ab0a831a0ec07424cb62a4f8f376bebed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>Texture * RDE::Animation::getCurrentFrame</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentFrame</name>
+        <qualifiedname>RDE::Animation::getCurrentFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/Animation.h" line="35" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/animationSystem/Animation.h" line="13" column="5" bodyfile="engine/include/core/systems/animationSystem/Animation.h" bodystart="13" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_animation_1aa5e079c6437ee86e6c427e61d32867c5" prot="public" virt="non-virtual"><scope>RDE::Animation</scope><name>addFrame</name></member>
+      <member refid="class_r_d_e_1_1_animation_1a4d2b7352f7c0fd86176a4fa59ff09aaf" prot="public" virt="non-virtual"><scope>RDE::Animation</scope><name>Animation</name></member>
+      <member refid="class_r_d_e_1_1_animation_1a3eba41238be66a0d96c94c4ff3d4f344" prot="private" virt="non-virtual"><scope>RDE::Animation</scope><name>canPlay</name></member>
+      <member refid="class_r_d_e_1_1_animation_1a2f3c1212968d909732aefb253437c22e" prot="private" virt="non-virtual"><scope>RDE::Animation</scope><name>currentFrame</name></member>
+      <member refid="class_r_d_e_1_1_animation_1a3fa7e7321e0a5aeed1ab57186cd66cdd" prot="private" virt="non-virtual"><scope>RDE::Animation</scope><name>currentTime</name></member>
+      <member refid="class_r_d_e_1_1_animation_1a71a29d9eac55eda5becbc972a126009f" prot="private" virt="non-virtual"><scope>RDE::Animation</scope><name>frameTextures</name></member>
+      <member refid="class_r_d_e_1_1_animation_1ab0a831a0ec07424cb62a4f8f376bebed" prot="public" virt="non-virtual"><scope>RDE::Animation</scope><name>getCurrentFrame</name></member>
+      <member refid="class_r_d_e_1_1_animation_1afb5559f939d4e2c9604b07312e6fa4f5" prot="public" virt="non-virtual"><scope>RDE::Animation</scope><name>getTimeBetweenFrames</name></member>
+      <member refid="class_r_d_e_1_1_animation_1acc8f77cc28d0ddcd967341adbd754e14" prot="public" virt="non-virtual"><scope>RDE::Animation</scope><name>pause</name></member>
+      <member refid="class_r_d_e_1_1_animation_1aea8a5eb057aaeace88bf1281a8772f4f" prot="public" virt="non-virtual"><scope>RDE::Animation</scope><name>play</name></member>
+      <member refid="class_r_d_e_1_1_animation_1a208e2e163e9f8672e1fa22c0b689318f" prot="public" virt="non-virtual"><scope>RDE::Animation</scope><name>removeFrame</name></member>
+      <member refid="class_r_d_e_1_1_animation_1a65c8d701571812fdcaccaeda70dcfcc1" prot="public" virt="non-virtual"><scope>RDE::Animation</scope><name>removeFrame</name></member>
+      <member refid="class_r_d_e_1_1_animation_1ac3a1dd5a4176ac0aaac89cef461c14da" prot="public" virt="non-virtual"><scope>RDE::Animation</scope><name>restart</name></member>
+      <member refid="class_r_d_e_1_1_animation_1a0ac72d64242ca6cc39dc8afcb6454232" prot="public" virt="non-virtual"><scope>RDE::Animation</scope><name>setTimeBetweenFrames</name></member>
+      <member refid="class_r_d_e_1_1_animation_1a939cf5ab254612820ca4409b13ca36bc" prot="public" virt="non-virtual"><scope>RDE::Animation</scope><name>stop</name></member>
+      <member refid="class_r_d_e_1_1_animation_1a9a5d5517d2994d260b7e7985dd024293" prot="private" virt="non-virtual"><scope>RDE::Animation</scope><name>timeBetweenFrames</name></member>
+      <member refid="class_r_d_e_1_1_animation_1ab788d266fb48b5de2b7e90a801aff8ad" prot="public" virt="non-virtual"><scope>RDE::Animation</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

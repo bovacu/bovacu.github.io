@@ -1,0 +1,933 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_vec_8h" kind="file" language="C++">
+    <compoundname>Vec.h</compoundname>
+    <includes local="no">ostream</includes>
+    <includes local="no">cmath</includes>
+    <includes local="yes">glm/glm.hpp</includes>
+    <includes refid="_core_8h" local="yes">core/Core.h</includes>
+    <includedby refid="_sprite_renderer_8h" local="yes">engine/include/core/graph/components/SpriteRenderer.h</includedby>
+    <includedby refid="_text_renderer_8h" local="yes">engine/include/core/graph/components/TextRenderer.h</includedby>
+    <includedby refid="_transform_8h" local="yes">engine/include/core/graph/components/Transform.h</includedby>
+    <includedby refid="_render_manager_8h" local="yes">engine/include/core/render/RenderManager.h</includedby>
+    <includedby refid="_i_renderizable_8h" local="yes">engine/include/core/render/elements/IRenderizable.h</includedby>
+    <includedby refid="_view_port_8h" local="yes">engine/include/core/render/elements/ViewPort.h</includedby>
+    <includedby refid="_window_8h" local="yes">engine/include/core/render/window/Window.h</includedby>
+    <includedby refid="_controller_event_8h" local="yes">engine/include/core/systems/eventSystem/ControllerEvent.h</includedby>
+    <includedby refid="_mobile_event_8h" local="yes">engine/include/core/systems/eventSystem/MobileEvent.h</includedby>
+    <includedby refid="_functions_8h" local="yes">engine/include/core/util/Functions.h</includedby>
+    <includedby refid="_mat2_8h" local="yes">engine/include/core/util/Mat2.h</includedby>
+    <includedby refid="_rect_8h" local="yes">engine/include/core/util/Rect.h</includedby>
+    <includedby refid="_util_8h" local="yes">engine/include/core/util/Util.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>core/Core.h</label>
+        <link refid="_core_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/util/Vec.h</label>
+        <link refid="_vec_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cmath</label>
+      </node>
+      <node id="4">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>ostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>engine/include/RDE.h</label>
+        <link refid="_r_d_e_8h_source"/>
+      </node>
+      <node id="7">
+        <label>engine/include/RDEEntry.h</label>
+        <link refid="_r_d_e_entry_8h_source"/>
+      </node>
+      <node id="6">
+        <label>engine/include/core/Engine.h</label>
+        <link refid="_engine_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>engine/include/core/Manager.h</label>
+        <link refid="_manager_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>engine/include/core/graph/Graph.h</label>
+        <link refid="_graph_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>engine/include/core/graph/ImGuiScene.h</label>
+        <link refid="_im_gui_scene_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>engine/include/core/graph/Scene.h</label>
+        <link refid="_scene_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>engine/include/core/graph/components/DynamicSpriteRenderer.h</label>
+        <link refid="_dynamic_sprite_renderer_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>engine/include/core/graph/components/Node.h</label>
+        <link refid="_node_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>engine/include/core/graph/components/ParticleSystem.h</label>
+        <link refid="_particle_system_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>engine/include/core/graph/components/SpriteRenderer.h</label>
+        <link refid="_sprite_renderer_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>engine/include/core/graph/components/TextRenderer.h</label>
+        <link refid="_text_renderer_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>engine/include/core/graph/components/Transform.h</label>
+        <link refid="_transform_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>engine/include/core/graph/components/ui/UI.h</label>
+        <link refid="_u_i_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>engine/include/core/graph/components/ui/UIButton.h</label>
+        <link refid="_u_i_button_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>engine/include/core/graph/components/ui/UICheckbox.h</label>
+        <link refid="_u_i_checkbox_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>engine/include/core/graph/components/ui/UIImage.h</label>
+        <link refid="_u_i_image_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>engine/include/core/graph/components/ui/UIInput.h</label>
+        <link refid="_u_i_input_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>engine/include/core/graph/components/ui/UIMask.h</label>
+        <link refid="_u_i_mask_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>engine/include/core/graph/components/ui/UIPanel.h</label>
+        <link refid="_u_i_panel_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>engine/include/core/graph/components/ui/UISlider.h</label>
+        <link refid="_u_i_slider_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>engine/include/core/graph/components/ui/UIText.h</label>
+        <link refid="_u_i_text_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>engine/include/core/graph/components/ui/UITransform.h</label>
+        <link refid="_u_i_transform_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>engine/include/core/platform/Platform.h</label>
+        <link refid="_platform_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>engine/include/core/procedural/CellularAutomataMapGenerator.h</label>
+        <link refid="_cellular_automata_map_generator_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>engine/include/core/render/Camera.h</label>
+        <link refid="_camera_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>engine/include/core/render/RenderManager.h</label>
+        <link refid="_render_manager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>engine/include/core/render/elements/Batch.h</label>
+        <link refid="_batch_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>engine/include/core/render/elements/FrameBuffer.h</label>
+        <link refid="_frame_buffer_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>engine/include/core/render/elements/IRenderizable.h</label>
+        <link refid="_i_renderizable_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>engine/include/core/render/elements/Shader.h</label>
+        <link refid="_shader_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>engine/include/core/render/elements/ShaderManager.h</label>
+        <link refid="_shader_manager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>engine/include/core/render/elements/SpriteBatch.h</label>
+        <link refid="_sprite_batch_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>engine/include/core/render/elements/SpriteBatchRenderFunctions.h</label>
+        <link refid="_sprite_batch_render_functions_8h_source"/>
+      </node>
+      <node id="67">
+        <label>engine/include/core/render/elements/Texture.h</label>
+        <link refid="_texture_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>engine/include/core/render/elements/TextureAtlasManager.h</label>
+        <link refid="_texture_atlas_manager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>engine/include/core/render/elements/ViewPort.h</label>
+        <link refid="_view_port_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>engine/include/core/render/shapes/DebugShape.h</label>
+        <link refid="_debug_shape_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>engine/include/core/render/window/Window.h</label>
+        <link refid="_window_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>engine/include/core/systems/animationSystem/Animation.h</label>
+        <link refid="_animation_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>engine/include/core/systems/animationSystem/AnimationSystem.h</label>
+        <link refid="_animation_system_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>engine/include/core/systems/configSystem/ConfigManager.h</label>
+        <link refid="_config_manager_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>engine/include/core/systems/console/Console.h</label>
+        <link refid="_console_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>engine/include/core/systems/ecsSystem/ECSManager.h</label>
+        <link refid="_e_c_s_manager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>engine/include/core/systems/ecsSystem/ECSSystem.h</label>
+        <link refid="_e_c_s_system_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>engine/include/core/systems/eventSystem/ControllerEvent.h</label>
+        <link refid="_controller_event_8h_source"/>
+      </node>
+      <node id="48">
+        <label>engine/include/core/systems/eventSystem/MobileEvent.h</label>
+        <link refid="_mobile_event_8h_source"/>
+      </node>
+      <node id="61">
+        <label>engine/include/core/systems/fileSystem/FileManager.h</label>
+        <link refid="_file_manager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>engine/include/core/systems/inputSystem/input/ControllerInput.h</label>
+        <link refid="_controller_input_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>engine/include/core/systems/inputSystem/input/Input.h</label>
+        <link refid="_input_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>engine/include/core/systems/inputSystem/input/KeyboardInput.h</label>
+        <link refid="_keyboard_input_8h_source"/>
+      </node>
+      <node id="44">
+        <label>engine/include/core/systems/inputSystem/input/MobileInput.h</label>
+        <link refid="_mobile_input_8h_source"/>
+      </node>
+      <node id="45">
+        <label>engine/include/core/systems/inputSystem/input/MouseInput.h</label>
+        <link refid="_mouse_input_8h_source"/>
+      </node>
+      <node id="46">
+        <label>engine/include/core/systems/inputSystem/input/WindowInput.h</label>
+        <link refid="_window_input_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>engine/include/core/systems/localization/LocalizationManager.h</label>
+        <link refid="_localization_manager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>engine/include/core/systems/physicsSystem/PhysicsBody.h</label>
+        <link refid="_physics_body_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>engine/include/core/systems/physicsSystem/PhysicsManager.h</label>
+        <link refid="_physics_manager_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>engine/include/core/systems/soundSystem/SoundManager.h</label>
+        <link refid="_sound_manager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>engine/include/core/systems/uiSystem/Canvas.h</label>
+        <link refid="_canvas_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>engine/include/core/systems/uiSystem/FontManager.h</label>
+        <link refid="_font_manager_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>engine/include/core/systems/uiSystem/SceneManager.h</label>
+        <link refid="_scene_manager_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>engine/include/core/util/Functions.h</label>
+        <link refid="_functions_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>engine/include/core/util/Mat2.h</label>
+        <link refid="_mat2_8h_source"/>
+      </node>
+      <node id="52">
+        <label>engine/include/core/util/Pool.h</label>
+        <link refid="_pool_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>engine/include/core/util/Rect.h</label>
+        <link refid="_rect_8h_source"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>engine/include/core/util/Util.h</label>
+        <link refid="_util_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/util/Vec.h</label>
+        <link refid="_vec_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_r_d_e_1_1_vec2" prot="public">RDE::Vec2</innerclass>
+    <innernamespace refid="namespace_r_d_e">RDE</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>borja<sp/>on<sp/>9/12/21.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RDE_VEC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDE_VEC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;glm/glm.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/Core.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_d_e" kindref="compound">RDE</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="16" refid="struct_r_d_e_1_1_vec2" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>m[1][1];</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>v[2];</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>x;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>y;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2</ref>(T<sp/>_x,<sp/>T<sp/>_y)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>_x;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>_y;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set(T<sp/>_x,<sp/>T<sp/>_y)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>_x;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>_y;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref>&amp;<sp/>_vec)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>_vec.x;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>_vec.y;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dotProduct(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref>&amp;<sp/>_p)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>*<sp/>_p.x<sp/>+<sp/>y<sp/>*<sp/>_p.y;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref><sp/>crossProduct(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_scalar)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>-_scalar<sp/>*<sp/>y,<sp/>_scalar<sp/>*<sp/>x<sp/>};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>crossProduct(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref><sp/>_vec)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>*<sp/>_vec.y<sp/>-<sp/>y<sp/>*<sp/>_vec.x;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref>&amp;<sp/>_p)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::sqrt((_p.x<sp/>-<sp/>x)<sp/>*<sp/>(_p.x<sp/>-<sp/>x)<sp/>+<sp/>(_p.y<sp/>-<sp/>y)<sp/>*<sp/>(_p.y<sp/>-<sp/>y));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distanceSqr(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref>&amp;<sp/>_p)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref><sp/>c<sp/>=<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>-<sp/>_p;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c.dotProduct(c);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>magnitude()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::sqrt(x<sp/>*<sp/>x<sp/>+<sp/>y<sp/>*<sp/>y);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>magnitudeSqr()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>*<sp/>x<sp/>+<sp/>y<sp/>*<sp/>y;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>normalize()<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_magnitude<sp/>=<sp/>magnitude();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_magnitude<sp/>&gt;<sp/>EPSILON)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_invMagnitude<sp/>=<sp/>1.0f<sp/>/<sp/>_magnitude;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>*=<sp/>_invMagnitude;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>*=<sp/>_invMagnitude;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotate(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_degrees)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>_radians<sp/>=<sp/>glm::radians(_degrees);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_c<sp/>=<sp/>std::cos(_radians);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_s<sp/>=<sp/>std::sin(_radians);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_xRotated<sp/>=<sp/>x<sp/>*<sp/>_c<sp/>-<sp/>y<sp/>*<sp/>_s;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_yRotated<sp/>=<sp/>x<sp/>*<sp/>_s<sp/>+<sp/>y<sp/>*<sp/>_c;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>_xRotated;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>_yRotated;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isInside(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref>&amp;<sp/>_rectCenter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref>&amp;<sp/>_rectSize)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>&gt;=<sp/>_rectCenter.x<sp/>-<sp/>_rectSize.x<sp/>/<sp/>2.f<sp/>&amp;&amp;<sp/>x<sp/>&lt;=<sp/>_rectCenter.x<sp/>+<sp/>_rectSize.x<sp/>/<sp/>2.f<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>&gt;=<sp/>_rectCenter.y<sp/>-<sp/>_rectSize.y<sp/>/<sp/>2.f<sp/>&amp;&amp;<sp/>y<sp/>&lt;=<sp/>_rectCenter.y<sp/>+<sp/>_rectSize.y<sp/>/<sp/>2.f;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref><sp/>operator+(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref>&amp;<sp/>_rhs)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2</ref>(<sp/>x<sp/>+<sp/>_rhs.x,<sp/>y<sp/>+<sp/>_rhs.y<sp/>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref><sp/>operator+(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_s)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2</ref>(<sp/>x<sp/>+<sp/>_s,<sp/>y<sp/>+<sp/>_s<sp/>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator+=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2</ref>&amp;<sp/>_rhs)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>+=<sp/>_rhs.x;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>+=<sp/>_rhs.y;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref><sp/>operator-(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref>&amp;<sp/>_rhs)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2</ref>(<sp/>x<sp/>-<sp/>_rhs.x,<sp/>y<sp/>-<sp/>_rhs.y<sp/>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref><sp/>operator-(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_s)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2</ref>(<sp/>x<sp/>-<sp/>_s,<sp/>y<sp/>-<sp/>_s<sp/>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator-=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref>&amp;<sp/>_rhs)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>-=<sp/>_rhs.x;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>-=<sp/>_rhs.y;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref><sp/>operator<sp/>-()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>-x,<sp/>-y<sp/>};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref><sp/>operator*(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_scalar<sp/>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref>(<sp/>x<sp/>*<sp/>_scalar,<sp/>y<sp/>*<sp/>_scalar<sp/>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator<sp/>*=(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_scalar)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>*=<sp/>_scalar;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>*=<sp/>_scalar;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref><sp/>operator/(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_scalar<sp/>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref>(x<sp/>/<sp/>_scalar,<sp/>y<sp/>/<sp/>_scalar);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator<sp/>/=(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_scalar)<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>/=<sp/>_scalar;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>/=<sp/>_scalar;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator<sp/>==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;T&gt;</ref>&amp;<sp/>_rhs)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>==<sp/>_rhs.x<sp/>&amp;&amp;<sp/>y<sp/>==<sp/>_rhs.y;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;float&gt;</ref><sp/>operator*(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_scalar,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2&lt;float&gt;</ref>&amp;<sp/>_vec)<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>_scalar<sp/>*<sp/>_vec.x,<sp/>_scalar<sp/>*<sp/>_vec.y<sp/>};</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Vec2&lt;int&gt;<sp/>operator*(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_scalar,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2&lt;int&gt;&amp;<sp/>_vec)<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>(int)(_scalar<sp/>*<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)_vec.x),<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(_scalar<sp/>*<sp/>(float)_vec.y)<sp/>};</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Vec2&lt;double&gt;<sp/>operator*(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_scalar,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2&lt;double&gt;&amp;<sp/>_vec)<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>_scalar<sp/>*<sp/>_vec.x,<sp/>_scalar<sp/>*<sp/>_vec.y<sp/>};</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Vec2&lt;long&gt;<sp/>operator*(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_scalar,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2&lt;long&gt;&amp;<sp/>_vec)<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>(long)(_scalar<sp/>*<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)_vec.x),<sp/>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal">)(_scalar<sp/>*<sp/>(float)_vec.y)<sp/>};</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Vec2&lt;int&gt;<sp/>Vec2I;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Vec2&lt;float&gt;<sp/>Vec2F;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/>operator&lt;&lt;(std::ostream&amp;<sp/>_os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2I&amp;<sp/>_vec){</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_os<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;(&apos;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>_vec.x<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>_vec.y<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;)&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_os;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/>operator&lt;&lt;(std::ostream&amp;<sp/>_os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2F&amp;<sp/>_vec){</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_os<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;(&apos;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>_vec.x<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>_vec.y<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;)&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_os;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2F<sp/>&amp;<sp/>_v0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_num)<sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_v0.x<sp/>==<sp/>(float)_num<sp/>&amp;&amp;<sp/>_v0.y<sp/>==<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)_num;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2F<sp/>&amp;<sp/>_v0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_num)<sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_v0.x<sp/>==<sp/>_num<sp/>&amp;&amp;<sp/>_v0.y<sp/>==<sp/>_num;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2F<sp/>&amp;<sp/>_v0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_num)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_v0.x<sp/>&lt;<sp/>_num<sp/>||<sp/>_v0.y<sp/>&lt;<sp/>_num;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2F<sp/>&amp;<sp/>_v0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_num)<sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_v0.x<sp/>&lt;=<sp/>_num<sp/>||<sp/>_v0.y<sp/>&lt;=<sp/>_num;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2F<sp/>&amp;<sp/>_v0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_num)<sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_v0.x<sp/>&gt;<sp/>_num<sp/>||<sp/>_v0.y<sp/>&gt;<sp/>_num;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&gt;=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2F<sp/>&amp;<sp/>_v0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_num)<sp/>{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_v0.x<sp/>&gt;=<sp/>_num<sp/>||<sp/>_v0.y<sp/>&gt;=<sp/>_num;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2F<sp/>&amp;<sp/>_v0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2F<sp/>&amp;<sp/>_v1)<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_v0.x<sp/>!=<sp/>_v1.x<sp/>||<sp/>_v0.y<sp/>!=<sp/>_v1.y;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2I<sp/>&amp;<sp/>_v0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_num)<sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_v0.x<sp/>==<sp/>_num<sp/>&amp;&amp;<sp/>_v0.y<sp/>==<sp/>_num;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2I<sp/>&amp;<sp/>_v0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_num)<sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_v0.x<sp/>==<sp/>_num<sp/>&amp;&amp;<sp/>_v0.y<sp/>==<sp/>_num;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2F<sp/>&amp;<sp/>_v0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_num)<sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(_v0<sp/>==<sp/>(float)_num);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2F<sp/>&amp;<sp/>_v0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_num)<sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(_v0<sp/>==<sp/>_num);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2I<sp/>&amp;<sp/>_v0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_num)<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(_v0<sp/>==<sp/>_num);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vec2I<sp/>&amp;<sp/>_v0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_num)<sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(_v0<sp/>==<sp/>_num);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//RDE_VEC_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="engine/include/core/util/Vec.h"/>
+  </compounddef>
+</doxygen>

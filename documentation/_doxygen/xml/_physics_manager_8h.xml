@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_physics_manager_8h" kind="file" language="C++">
+    <compoundname>PhysicsManager.h</compoundname>
+    <includes refid="_util_8h" local="yes">core/util/Util.h</includes>
+    <includes refid="_physics_body_8h" local="yes">core/systems/physicsSystem/PhysicsBody.h</includes>
+    <includes local="no">set</includes>
+    <includedby refid="_manager_8h" local="yes">engine/include/core/Manager.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>core/Core.h</label>
+        <link refid="_core_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>core/graph/components/ComponentBase.h</label>
+        <link refid="_component_base_8h_source"/>
+      </node>
+      <node id="34">
+        <label>core/graph/components/Transform.h</label>
+        <link refid="_transform_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>core/platform/PlatformHeaderSDL.h</label>
+        <link refid="_platform_header_s_d_l_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>core/platform/PlatformHeaderSDLImage.h</label>
+        <link refid="_platform_header_s_d_l_image_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>core/render/shapes/DebugShape.h</label>
+        <link refid="_debug_shape_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>core/systems/physicsSystem/PhysicsBody.h</label>
+        <link refid="_physics_body_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/systems/physicsSystem/PhysicsManager.h</label>
+        <link refid="_physics_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Clock.h</label>
+        <link refid="_clock_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Color.h</label>
+        <link refid="_color_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Delegate.h</label>
+        <link refid="_delegate_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Delta.h</label>
+        <link refid="_delta_8h_source"/>
+      </node>
+      <node id="20">
+        <label>Functions.h</label>
+        <link refid="_functions_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Random.h</label>
+        <link refid="_random_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Rect.h</label>
+        <link refid="_rect_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>core/util/Util.h</label>
+        <link refid="_util_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Vec.h</label>
+        <link refid="_vec_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>SDL.h</label>
+      </node>
+      <node id="24">
+        <label>SDL2/SDL_image.h</label>
+      </node>
+      <node id="27">
+        <label>algorithm</label>
+      </node>
+      <node id="33">
+        <label>chipmunk/chipmunk.h</label>
+      </node>
+      <node id="26">
+        <label>chrono</label>
+      </node>
+      <node id="7">
+        <label>cmath</label>
+      </node>
+      <node id="12">
+        <label>cstdint</label>
+      </node>
+      <node id="37">
+        <label>entt/entity/entity.hpp</label>
+      </node>
+      <node id="17">
+        <label>exception</label>
+      </node>
+      <node id="18">
+        <label>functional</label>
+      </node>
+      <node id="35">
+        <label>glm/ext/matrix_transform.hpp</label>
+      </node>
+      <node id="8">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="36">
+        <label>glm/gtc/quaternion.hpp</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="30">
+        <label>map</label>
+      </node>
+      <node id="29">
+        <label>memory</label>
+      </node>
+      <node id="6">
+        <label>ostream</label>
+      </node>
+      <node id="15">
+        <label>random</label>
+      </node>
+      <node id="39">
+        <label>set</label>
+      </node>
+      <node id="25">
+        <label>sstream</label>
+      </node>
+      <node id="19">
+        <label>unordered_map</label>
+      </node>
+      <node id="28">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>engine/include/RDE.h</label>
+        <link refid="_r_d_e_8h_source"/>
+      </node>
+      <node id="5">
+        <label>engine/include/RDEEntry.h</label>
+        <link refid="_r_d_e_entry_8h_source"/>
+      </node>
+      <node id="3">
+        <label>engine/include/core/Engine.h</label>
+        <link refid="_engine_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>engine/include/core/Manager.h</label>
+        <link refid="_manager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/systems/physicsSystem/PhysicsManager.h</label>
+        <link refid="_physics_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_r_d_e_1_1_debug_options" prot="public">RDE::DebugOptions</innerclass>
+    <innerclass refid="struct_r_d_e_1_1_physics_collision_callbacks" prot="public">RDE::PhysicsCollisionCallbacks</innerclass>
+    <innerclass refid="class_r_d_e_1_1_physics_manager" prot="public">RDE::PhysicsManager</innerclass>
+    <innernamespace refid="namespace_r_d_e">RDE</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_physics_manager_8h_1a810c37a8d1a49cc6c87ab066dfbfc91d" prot="public" static="no">
+        <name>MAX_MASKS</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h" line="34" column="13" bodyfile="engine/include/core/systems/physicsSystem/PhysicsManager.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>borja<sp/>on<sp/>22/04/22.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RDE_PHYSICS_MANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDE_PHYSICS_MANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/util/Util.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/systems/physicsSystem/PhysicsBody.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_d_e" kindref="compound">RDE</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">RenderManager;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="struct_r_d_e_1_1_debug_options" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_r_d_e_1_1_debug_options" kindref="compound">DebugOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showGeneralDebug<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showCircleLines<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showBoxLines<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showPolygonLines<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showCircleRadius<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showPolygonRadius<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showBoxRadius<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref><sp/>circleLineColor<sp/>=<sp/>Color::Blue;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref><sp/>boxLineColor<sp/>=<sp/>Color::Blue;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref><sp/>polygonLineColor<sp/>=<sp/>Color::Blue;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref><sp/>circleRadiusColor<sp/>=<sp/>Color::Yellow;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref><sp/>boxRadiusColor<sp/>=<sp/>Color::Yellow;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref><sp/>polygonRadiusColor<sp/>=<sp/>Color::Yellow;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>because<sp/>uint<sp/>has<sp/>a<sp/>maximum<sp/>of<sp/>32<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifndef<sp/>MAX_MASKS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>MAX_MASKS<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="struct_r_d_e_1_1_physics_collision_callbacks" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_r_d_e_1_1_physics_collision_callbacks" kindref="compound">PhysicsCollisionCallbacks</ref><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt;void(<ref refid="struct_r_d_e_1_1_physics_body" kindref="compound">PhysicsBody</ref>*<sp/>bodyA,<sp/><ref refid="struct_r_d_e_1_1_physics_body" kindref="compound">PhysicsBody</ref>*<sp/>bodyB)&gt;<sp/>onCollisionEnter;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt;void(<ref refid="struct_r_d_e_1_1_physics_body" kindref="compound">PhysicsBody</ref>*<sp/>bodyA,<sp/><ref refid="struct_r_d_e_1_1_physics_body" kindref="compound">PhysicsBody</ref>*<sp/>bodyB)&gt;<sp/>onCollisionStay;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt;void(<ref refid="struct_r_d_e_1_1_physics_body" kindref="compound">PhysicsBody</ref>*<sp/>bodyA,<sp/><ref refid="struct_r_d_e_1_1_physics_body" kindref="compound">PhysicsBody</ref>*<sp/>bodyB)&gt;<sp/>onCollisionExit;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_r_d_e_1_1_physics_manager" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_physics_manager" kindref="compound">PhysicsManager</ref><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="struct_r_d_e_1_1_physics_body" kindref="compound">PhysicsBody</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;PhysicsBody*&gt;<sp/>bodies;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cpSpace*<sp/>space;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_physics_collision_callbacks" kindref="compound">PhysicsCollisionCallbacks</ref><sp/>collisionCallbacksTable[MAX_MASKS][MAX_MASKS];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/>gravity<sp/>=<sp/>{0.f,<sp/>-100.f};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>simulate<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_debug_options" kindref="compound">DebugOptions</ref><sp/>debugOptions;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>destroy();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update(<ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref><sp/>_dt);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>step(<ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref><sp/>_fxDt);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add(<ref refid="struct_r_d_e_1_1_physics_body" kindref="compound">PhysicsBody</ref>*<sp/>_physicsBody);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>remove(<ref refid="struct_r_d_e_1_1_physics_body" kindref="compound">PhysicsBody</ref>*<sp/>_physicsBody);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>debugRender(<ref refid="class_r_d_e_1_1_render_manager" kindref="compound">RenderManager</ref>*<sp/>_renderManager);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addCollisionCallbacks(uint<sp/>_maskA,<sp/>uint<sp/>_maskB,<sp/><ref refid="struct_r_d_e_1_1_physics_collision_callbacks" kindref="compound">PhysicsCollisionCallbacks</ref><sp/>_callbacks);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_physics_collision_callbacks" kindref="compound">PhysicsCollisionCallbacks</ref>&amp;<sp/>getCollisionCallbacks(uint<sp/>_maskA,<sp/>uint<sp/>_maskB);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setGravity(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref>&amp;<sp/>_gravity);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/>getGravity();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getStepIterations();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setStepIterations(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_iterations);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>drawPolygon(<ref refid="struct_r_d_e_1_1_physics_body" kindref="compound">PhysicsBody</ref>*<sp/>_physicsBody,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_shape_config" kindref="compound">ShapeConfig</ref>&amp;<sp/>_shapeConfig,<sp/><ref refid="class_r_d_e_1_1_render_manager" kindref="compound">RenderManager</ref>*<sp/>_renderManager,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref>&amp;<sp/>_lineColor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref>&amp;<sp/>_radiusColor,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_showLines,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_showRadius);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>cpBool<sp/>onCollisionEnter(cpArbiter*<sp/>_arbiter,<sp/>cpSpace*<sp/>_space,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_data);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onCollisionExit(cpArbiter*<sp/>_arbiter,<sp/>cpSpace*<sp/>_space,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_data);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onCollisionStay(cpArbiter*<sp/>_arbiter,<sp/>cpSpace*<sp/>_space,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_data);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//RDE_PHYSICS_MANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="engine/include/core/systems/physicsSystem/PhysicsManager.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_console" kind="class" language="C++" prot="public">
+    <compoundname>RDE::Console</compoundname>
+    <includes refid="_console_8h" local="no">Console.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_console_1a262ed07cfc20d3a11fee5952d0df8aef" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="struct_r_d_e_1_1_return_delegate" kindref="compound">ReturnDelegate</ref>&lt; Logs(const std::vector&lt; std::string &gt; &amp;)&gt; &gt;</type>
+        <definition>std::map&lt;std::string, ReturnDelegate&lt;Logs (const std::vector&lt;std::string&gt;&amp;)&gt; &gt; RDE::Console::commands</definition>
+        <argsstring></argsstring>
+        <name>commands</name>
+        <qualifiedname>RDE::Console::commands</qualifiedname>
+        <briefdescription>
+<para>All the registeredCommands. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="50" column="22" bodyfile="engine/include/core/systems/console/Console.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_console_1a55a82890d324ed45e3c676a402e40e30" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>std::map&lt;std::string, std::string&gt; RDE::Console::commandsAndDescriptions</definition>
+        <argsstring></argsstring>
+        <name>commandsAndDescriptions</name>
+        <qualifiedname>RDE::Console::commandsAndDescriptions</qualifiedname>
+        <briefdescription>
+<para>All the descriptions of the commands. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="55" column="22" bodyfile="engine/include/core/systems/console/Console.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_console_1ae606c51681147435fa7ddd4ac3d86d4c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_r_d_e_1_1_command" kindref="compound">Command</ref> &gt;</type>
+        <definition>std::vector&lt;Command&gt; RDE::Console::commandHistory</definition>
+        <argsstring></argsstring>
+        <name>commandHistory</name>
+        <qualifiedname>RDE::Console::commandHistory</qualifiedname>
+        <briefdescription>
+<para>History of the used commands. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="81" column="25" bodyfile="engine/include/core/systems/console/Console.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_console_1a7b1213be1d037c669a76b3442e494cda" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::Console::historyPtr</definition>
+        <argsstring></argsstring>
+        <name>historyPtr</name>
+        <qualifiedname>RDE::Console::historyPtr</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Pointer to the current command in the history list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="86" column="17" bodyfile="engine/include/core/systems/console/Console.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_console_1a156cfb3cbcb5e3ea1d8ca407ff2991d7" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; RDE::Console::logs</definition>
+        <argsstring></argsstring>
+        <name>logs</name>
+        <qualifiedname>RDE::Console::logs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="89" column="25" bodyfile="engine/include/core/systems/console/Console.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_console_1a161737ce7d08b02ca6da7a20a327db1a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Logs</type>
+        <definition>Logs RDE::Console::help</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;_arguments={})</argsstring>
+        <name>help</name>
+        <qualifiedname>RDE::Console::help</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>_arguments</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Internal command &apos;help&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_arguments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Logs </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="62" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_console_1a8b78886e4ddbc2c2b26d9ea6e94aca86" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Logs</type>
+        <definition>Logs RDE::Console::clear</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;_arguments={})</argsstring>
+        <name>clear</name>
+        <qualifiedname>RDE::Console::clear</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>_arguments</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Internal command &apos;clear&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_arguments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Logs </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="69" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_console_1a3e70a5baa94c19c9ab19b8b2973298bf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Logs</type>
+        <definition>Logs RDE::Console::printHistory</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;_arguments={})</argsstring>
+        <name>printHistory</name>
+        <qualifiedname>RDE::Console::printHistory</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>_arguments</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Internal command &apos;printHistory&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_arguments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Logs </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="76" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_console_1acce3e9246fe936132df5a4be657ae1ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Console::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>RDE::Console::init</qualifiedname>
+        <briefdescription>
+<para>Initiates all the crucial elements of the <ref refid="class_r_d_e_1_1_console" kindref="compound">Console</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This function should not be called by end users. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="96" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_console_1a860ae2bce22cd78a37f78fca79a5e2ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>auto</type>
+            <declname>Func</declname>
+            <defname>Func</defname>
+          </param>
+          <param>
+            <type>typename Class</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void RDE::Console::addCommand</definition>
+        <argsstring>(const std::string &amp;_commandName, const std::string &amp;_description, Class *_class=nullptr, const std::string &amp;_argumentsDescription=&quot;&quot;)</argsstring>
+        <name>addCommand</name>
+        <qualifiedname>RDE::Console::addCommand</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_commandName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_description</declname>
+        </param>
+        <param>
+          <type>Class *</type>
+          <declname>_class</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_argumentsDescription</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>This function allows to create a custom command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_commandName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name you will use to call the command. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the description displayed if command &apos;help&apos; is called. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_class</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this is the instance of the class that contains the function to be called, usually just pass &apos;this&apos;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_argumentsDescription</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the arguments that should be passed that will be displayed if &apos;help&apos; is called. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="106" column="18" bodyfile="engine/include/core/systems/console/Console.h" bodystart="106" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_console_1a3e4cdd2ab2ae2a9aaeab1565e61fe200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Console::deleteCommand</definition>
+        <argsstring>(const std::string &amp;_commandName)</argsstring>
+        <name>deleteCommand</name>
+        <qualifiedname>RDE::Console::deleteCommand</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_commandName</declname>
+        </param>
+        <briefdescription>
+<para>Deletes a before created command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_commandName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_command" kindref="compound">Command</ref> to remove from the registry </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="119" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_console_1ac6f2dc70921f2698e38d3b4bc5fe7f66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Logs</type>
+        <definition>Logs RDE::Console::call</definition>
+        <argsstring>(const Command &amp;_command)</argsstring>
+        <name>call</name>
+        <qualifiedname>RDE::Console::call</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_command" kindref="compound">Command</ref> &amp;</type>
+          <declname>_command</declname>
+        </param>
+        <briefdescription>
+<para>Invokes a command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This function should not be called by end users. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Commadn name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Logs </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="127" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_console_1ae3706c62b6eefe9a0831d02b2b33e983" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Console::collectLogs</definition>
+        <argsstring>(const Logs &amp;_log)</argsstring>
+        <name>collectLogs</name>
+        <qualifiedname>RDE::Console::collectLogs</qualifiedname>
+        <param>
+          <type>const Logs &amp;</type>
+          <declname>_log</declname>
+        </param>
+        <briefdescription>
+<para>Gets the logs of a command call. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This function should not be called by end users. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_log</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logs </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="134" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_console_1a3363ab84a2e827089973b2c5ef03fcdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::Console::getUpCommand</definition>
+        <argsstring>()</argsstring>
+        <name>getUpCommand</name>
+        <qualifiedname>RDE::Console::getUpCommand</qualifiedname>
+        <briefdescription>
+<para>Gets the upper command of the historyPtr. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This function should not be called by end users. </para>
+</simplesect>
+<simplesect kind="return"><para>std::string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="141" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_console_1a5f22373c1835ecfd4d36a15081abaf5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::Console::getDownCommand</definition>
+        <argsstring>()</argsstring>
+        <name>getDownCommand</name>
+        <qualifiedname>RDE::Console::getDownCommand</qualifiedname>
+        <briefdescription>
+<para>Gets the lower command of the historyPtr. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This function should not be called by end users. </para>
+</simplesect>
+<simplesect kind="return"><para>std::string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/console/Console.h" line="148" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is a class basically used for debugging and allows to create custom commands to execute on runtime. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="attention"><para>All managers destroy all the resources before closing the application, it is not needed to be done by the end user. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="engine/include/core/systems/console/Console.h" line="45" column="5" bodyfile="engine/include/core/systems/console/Console.h" bodystart="45" bodyend="149"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_console_1a860ae2bce22cd78a37f78fca79a5e2ef" prot="public" virt="non-virtual"><scope>RDE::Console</scope><name>addCommand</name></member>
+      <member refid="class_r_d_e_1_1_console_1ac6f2dc70921f2698e38d3b4bc5fe7f66" prot="public" virt="non-virtual"><scope>RDE::Console</scope><name>call</name></member>
+      <member refid="class_r_d_e_1_1_console_1a8b78886e4ddbc2c2b26d9ea6e94aca86" prot="private" virt="non-virtual"><scope>RDE::Console</scope><name>clear</name></member>
+      <member refid="class_r_d_e_1_1_console_1ae3706c62b6eefe9a0831d02b2b33e983" prot="public" virt="non-virtual"><scope>RDE::Console</scope><name>collectLogs</name></member>
+      <member refid="class_r_d_e_1_1_console_1ae606c51681147435fa7ddd4ac3d86d4c" prot="private" virt="non-virtual"><scope>RDE::Console</scope><name>commandHistory</name></member>
+      <member refid="class_r_d_e_1_1_console_1a262ed07cfc20d3a11fee5952d0df8aef" prot="private" virt="non-virtual"><scope>RDE::Console</scope><name>commands</name></member>
+      <member refid="class_r_d_e_1_1_console_1a55a82890d324ed45e3c676a402e40e30" prot="private" virt="non-virtual"><scope>RDE::Console</scope><name>commandsAndDescriptions</name></member>
+      <member refid="class_r_d_e_1_1_console_1a3e4cdd2ab2ae2a9aaeab1565e61fe200" prot="public" virt="non-virtual"><scope>RDE::Console</scope><name>deleteCommand</name></member>
+      <member refid="class_r_d_e_1_1_console_1a5f22373c1835ecfd4d36a15081abaf5d" prot="public" virt="non-virtual"><scope>RDE::Console</scope><name>getDownCommand</name></member>
+      <member refid="class_r_d_e_1_1_console_1a3363ab84a2e827089973b2c5ef03fcdf" prot="public" virt="non-virtual"><scope>RDE::Console</scope><name>getUpCommand</name></member>
+      <member refid="class_r_d_e_1_1_console_1a161737ce7d08b02ca6da7a20a327db1a" prot="private" virt="non-virtual"><scope>RDE::Console</scope><name>help</name></member>
+      <member refid="class_r_d_e_1_1_console_1a7b1213be1d037c669a76b3442e494cda" prot="private" virt="non-virtual"><scope>RDE::Console</scope><name>historyPtr</name></member>
+      <member refid="class_r_d_e_1_1_console_1acce3e9246fe936132df5a4be657ae1ee" prot="public" virt="non-virtual"><scope>RDE::Console</scope><name>init</name></member>
+      <member refid="class_r_d_e_1_1_console_1a156cfb3cbcb5e3ea1d8ca407ff2991d7" prot="public" virt="non-virtual"><scope>RDE::Console</scope><name>logs</name></member>
+      <member refid="class_r_d_e_1_1_console_1a3e70a5baa94c19c9ab19b8b2973298bf" prot="private" virt="non-virtual"><scope>RDE::Console</scope><name>printHistory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

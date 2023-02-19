@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_51a55f445279fd08a517b494ea4b09ae" kind="dir">
+    <compoundname>engine/include/core/systems/eventSystem</compoundname>
+    <innerfile refid="_controller_event_8h">ControllerEvent.h</innerfile>
+    <innerfile refid="_event_8h">Event.h</innerfile>
+    <innerfile refid="_event_bus_8h">EventBus.h</innerfile>
+    <innerfile refid="_key_event_8h">KeyEvent.h</innerfile>
+    <innerfile refid="_mobile_event_8h">MobileEvent.h</innerfile>
+    <innerfile refid="_mouse_event_8h">MouseEvent.h</innerfile>
+    <innerfile refid="_window_event_8h">WindowEvent.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/eventSystem/"/>
+  </compounddef>
+</doxygen>

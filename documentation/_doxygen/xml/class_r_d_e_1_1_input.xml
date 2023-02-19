@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_input" kind="class" language="C++" prot="public">
+    <compoundname>RDE::Input</compoundname>
+    <derivedcompoundref refid="class_r_d_e_1_1_controller_input" prot="public" virt="non-virtual">RDE::ControllerInput</derivedcompoundref>
+    <derivedcompoundref refid="class_r_d_e_1_1_keyboard_input" prot="public" virt="non-virtual">RDE::KeyboardInput</derivedcompoundref>
+    <derivedcompoundref refid="class_r_d_e_1_1_mobile_input" prot="public" virt="non-virtual">RDE::MobileInput</derivedcompoundref>
+    <derivedcompoundref refid="class_r_d_e_1_1_mouse_input" prot="public" virt="non-virtual">RDE::MouseInput</derivedcompoundref>
+    <derivedcompoundref refid="class_r_d_e_1_1_window_input" prot="public" virt="non-virtual">RDE::WindowInput</derivedcompoundref>
+    <includes refid="_input_8h" local="no">Input.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_r_d_e_1_1_input_1af0e8c3dcc20b7ddcaf63506363a22821" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class InputManager</definition>
+        <argsstring></argsstring>
+        <name>InputManager</name>
+        <qualifiedname>RDE::Input::InputManager</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_input_manager" kindref="compound">InputManager</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/Input.h" line="72" column="22" bodyfile="engine/include/core/systems/inputSystem/input/Input.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_input_1a5bf86e083b55251e1ea4c3c814e3b3db" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> *</type>
+        <definition>Window* RDE::Input::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>RDE::Input::window</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/Input.h" line="77" column="20" bodyfile="engine/include/core/systems/inputSystem/input/Input.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_input_1ac6c4192a1132075c8cf505dfcf79bf73" prot="protected" static="no" mutable="no">
+        <type>std::unordered_map&lt; int, <ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt; void(SDL_Event &amp;)&gt; &gt;</type>
+        <definition>std::unordered_map&lt;int, UniqueDelegate&lt;void(SDL_Event&amp;)&gt; &gt; RDE::Input::events</definition>
+        <argsstring></argsstring>
+        <name>events</name>
+        <qualifiedname>RDE::Input::events</qualifiedname>
+        <briefdescription>
+<para>Map EventID -&gt; Callback for event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/Input.h" line="82" column="32" bodyfile="engine/include/core/systems/inputSystem/input/Input.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_input_1a0f6948c9ed8dd70e436b9f647ef55cf3" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespace_r_d_e_1aba599888c87f5bf9b6052d710bc6923f" kindref="member">SystemEventEnum</ref> &gt;</type>
+        <definition>std::vector&lt;SystemEventEnum&gt; RDE::Input::ignoredEvents</definition>
+        <argsstring></argsstring>
+        <name>ignoredEvents</name>
+        <qualifiedname>RDE::Input::ignoredEvents</qualifiedname>
+        <briefdescription>
+<para>Events that the system doesn&apos;t handle on purpose. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/Input.h" line="87" column="25" bodyfile="engine/include/core/systems/inputSystem/input/Input.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_input_1a536e12c69a33f9e454c26368f751da79" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref> *</type>
+        <definition>Engine* RDE::Input::engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <qualifiedname>RDE::Input::engine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/Input.h" line="92" column="20" bodyfile="engine/include/core/systems/inputSystem/input/Input.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_input_1a881b09a394276e2f88f45ff2662ea832" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RDE::Input::pollEvent</definition>
+        <argsstring>(SDL_Event &amp;_event)</argsstring>
+        <name>pollEvent</name>
+        <qualifiedname>RDE::Input::pollEvent</qualifiedname>
+        <param>
+          <type>SDL_Event &amp;</type>
+          <declname>_event</declname>
+        </param>
+        <briefdescription>
+<para>This method takes a raw SDL event and transforms it to a <ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref> event and starts the handling process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SDL event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/Input.h" line="100" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_input_1a4805e279579b7cc4c1928f467e9803f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RDE::Input::ignoreEvent</definition>
+        <argsstring>(const SDL_EventType &amp;_eventType)</argsstring>
+        <name>ignoreEvent</name>
+        <qualifiedname>RDE::Input::ignoreEvent</qualifiedname>
+        <param>
+          <type>const SDL_EventType &amp;</type>
+          <declname>_eventType</declname>
+        </param>
+        <briefdescription>
+<para>Checks if an specific event must or not be ignored. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_eventType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/Input.h" line="107" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is the base for any input specific class that the engine wants to implement. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RDE::ControllerInput</label>
+        <link refid="class_r_d_e_1_1_controller_input"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RDE::Input</label>
+        <link refid="class_r_d_e_1_1_input"/>
+      </node>
+      <node id="3">
+        <label>RDE::KeyboardInput</label>
+        <link refid="class_r_d_e_1_1_keyboard_input"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RDE::MobileInput</label>
+        <link refid="class_r_d_e_1_1_mobile_input"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>RDE::MouseInput</label>
+        <link refid="class_r_d_e_1_1_mouse_input"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>RDE::WindowInput</label>
+        <link refid="class_r_d_e_1_1_window_input"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="12">
+        <label>RDE::Delegate&lt; void()&gt;</label>
+        <link refid="struct_r_d_e_1_1_delegate"/>
+      </node>
+      <node id="10">
+        <label>RDE::Delegate&lt; void(const RDE::Vec2 &amp;)&gt;</label>
+        <link refid="struct_r_d_e_1_1_delegate"/>
+      </node>
+      <node id="11">
+        <label>RDE::Delegate&lt; void(int)&gt;</label>
+        <link refid="struct_r_d_e_1_1_delegate"/>
+      </node>
+      <node id="26">
+        <label>RDE::Color</label>
+        <link refid="struct_r_d_e_1_1_color"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>Black</edgelabel>
+          <edgelabel>Blue</edgelabel>
+          <edgelabel>Brown</edgelabel>
+          <edgelabel>Disabled</edgelabel>
+          <edgelabel>Gray</edgelabel>
+          <edgelabel>Green</edgelabel>
+          <edgelabel>Magenta</edgelabel>
+          <edgelabel>NO_COLOR</edgelabel>
+          <edgelabel>Orange</edgelabel>
+          <edgelabel>Placeholder</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>RDE::ConfigManager</label>
+        <link refid="class_r_d_e_1_1_config_manager"/>
+      </node>
+      <node id="21">
+        <label>RDE::Console</label>
+        <link refid="class_r_d_e_1_1_console"/>
+      </node>
+      <node id="28">
+        <label>RDE::ControllerVibrationManager</label>
+        <link refid="class_r_d_e_1_1_controller_vibration_manager"/>
+      </node>
+      <node id="25">
+        <label>RDE::DebugOptions</label>
+        <link refid="struct_r_d_e_1_1_debug_options"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>boxLineColor</edgelabel>
+          <edgelabel>boxRadiusColor</edgelabel>
+          <edgelabel>circleLineColor</edgelabel>
+          <edgelabel>circleRadiusColor</edgelabel>
+          <edgelabel>polygonLineColor</edgelabel>
+          <edgelabel>polygonRadiusColor</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>RDE::ECSManager</label>
+        <link refid="class_r_d_e_1_1_e_c_s_manager"/>
+      </node>
+      <node id="13">
+        <label>RDE::Engine</label>
+        <link refid="class_r_d_e_1_1_engine"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>manager</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>rdeConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>RDE::FileManager</label>
+        <link refid="class_r_d_e_1_1_file_manager"/>
+      </node>
+      <node id="18">
+        <label>RDE::FontManager</label>
+        <link refid="class_r_d_e_1_1_font_manager"/>
+      </node>
+      <node id="1">
+        <label>RDE::Input</label>
+        <link refid="class_r_d_e_1_1_input"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>window</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>RDE::InputManager</label>
+        <link refid="class_r_d_e_1_1_input_manager"/>
+      </node>
+      <node id="8">
+        <label>RDE::LocalizationConfig</label>
+        <link refid="struct_r_d_e_1_1_localization_config"/>
+      </node>
+      <node id="31">
+        <label>RDE::LocalizationInfo</label>
+        <link refid="struct_r_d_e_1_1_localization_info"/>
+      </node>
+      <node id="30">
+        <label>RDE::LocalizationManager</label>
+        <link refid="class_r_d_e_1_1_localization_manager"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>localizationInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>RDE::Manager</label>
+        <link refid="class_r_d_e_1_1_manager"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>configManager</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>textureManager</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>shaderManager</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>fontManager</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>soundManager</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>inputManager</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>consoleManager</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>ecsManager</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>physics</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>fileManager</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>controllerVibrationManager</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>renderManager</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>localizationManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>RDE::PhysicsManager</label>
+        <link refid="class_r_d_e_1_1_physics_manager"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>debugOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RDE::RDEConfig</label>
+        <link refid="struct_r_d_e_1_1_r_d_e_config"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>windowData</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>projectData</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>RDE::RDEConfig::ProjectProperties</label>
+        <link refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>localizationConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>RDE::RDEConfig::WindowProperties</label>
+        <link refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>resolution</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>RDE::RenderManager</label>
+        <link refid="class_r_d_e_1_1_render_manager"/>
+      </node>
+      <node id="22">
+        <label>RDE::SceneManager</label>
+        <link refid="class_r_d_e_1_1_scene_manager"/>
+      </node>
+      <node id="17">
+        <label>RDE::ShaderManager</label>
+        <link refid="class_r_d_e_1_1_shader_manager"/>
+      </node>
+      <node id="19">
+        <label>RDE::SoundManager</label>
+        <link refid="class_r_d_e_1_1_sound_manager"/>
+      </node>
+      <node id="16">
+        <label>RDE::TextureAtlasManager</label>
+        <link refid="class_r_d_e_1_1_texture_atlas_manager"/>
+      </node>
+      <node id="2">
+        <label>RDE::Window</label>
+        <link refid="class_r_d_e_1_1_window"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>eventCallback</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>shouldUpdateWindow</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>onWindowMovedCallback</edgelabel>
+          <edgelabel>onWindowResizedCallback</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>onWindowDisplayChangedCallback</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>onWindowFocusedCallback</edgelabel>
+          <edgelabel>onWindowMaximizedCallback</edgelabel>
+          <edgelabel>onWindowMinimizedCallback</edgelabel>
+          <edgelabel>onWindowUnfocusedCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>RDE::UniqueDelegate&lt; bool()&gt;</label>
+        <link refid="struct_r_d_e_1_1_unique_delegate"/>
+      </node>
+      <node id="3">
+        <label>RDE::UniqueDelegate&lt; void(RDE::Event &amp;)&gt;</label>
+        <link refid="struct_r_d_e_1_1_unique_delegate"/>
+      </node>
+      <node id="6">
+        <label>RDE::Vec2&lt; int &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/inputSystem/input/Input.h" line="71" column="5" bodyfile="engine/include/core/systems/inputSystem/input/Input.h" bodystart="71" bodyend="108"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_input_1a536e12c69a33f9e454c26368f751da79" prot="protected" virt="non-virtual"><scope>RDE::Input</scope><name>engine</name></member>
+      <member refid="class_r_d_e_1_1_input_1ac6c4192a1132075c8cf505dfcf79bf73" prot="protected" virt="non-virtual"><scope>RDE::Input</scope><name>events</name></member>
+      <member refid="class_r_d_e_1_1_input_1a0f6948c9ed8dd70e436b9f647ef55cf3" prot="protected" virt="non-virtual"><scope>RDE::Input</scope><name>ignoredEvents</name></member>
+      <member refid="class_r_d_e_1_1_input_1a4805e279579b7cc4c1928f467e9803f2" prot="public" virt="non-virtual"><scope>RDE::Input</scope><name>ignoreEvent</name></member>
+      <member refid="class_r_d_e_1_1_input_1af0e8c3dcc20b7ddcaf63506363a22821" prot="private" virt="non-virtual"><scope>RDE::Input</scope><name>InputManager</name></member>
+      <member refid="class_r_d_e_1_1_input_1a881b09a394276e2f88f45ff2662ea832" prot="public" virt="non-virtual"><scope>RDE::Input</scope><name>pollEvent</name></member>
+      <member refid="class_r_d_e_1_1_input_1a5bf86e083b55251e1ea4c3c814e3b3db" prot="protected" virt="non-virtual"><scope>RDE::Input</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

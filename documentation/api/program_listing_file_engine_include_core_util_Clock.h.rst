@@ -1,0 +1,38 @@
+
+.. _program_listing_file_engine_include_core_util_Clock.h:
+
+Program Listing for File Clock.h
+================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_util_Clock.h>` (``engine/include/core/util/Clock.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #ifndef RDE_CLOCK_H
+   #define RDE_CLOCK_H
+   
+   #include <cstdint>
+   
+   namespace RDE {
+   
+       class Clock {
+           private:
+               uint64_t startTime;
+   
+           public:
+               explicit Clock();
+   
+               [[nodiscard]] uint64_t getElapsedTimeSc() const;
+   
+               [[nodiscard]] uint64_t getElapsedTimeMs() const;
+   
+               uint64_t restart();
+       };
+   
+   }
+   
+   #endif //RDE_CLOCK_H

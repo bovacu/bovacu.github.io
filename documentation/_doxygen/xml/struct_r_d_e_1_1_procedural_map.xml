@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_procedural_map" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::ProceduralMap</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_procedural_map_1ad42bc457ac0bf377762d0d7fc2b58f5c" prot="public" static="no" mutable="no">
+        <type>Matrix2D</type>
+        <definition>Matrix2D RDE::ProceduralMap::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>RDE::ProceduralMap::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="22" column="18" bodyfile="engine/include/core/procedural/CellularAutomataMapGenerator.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_procedural_map_1abac5c0525b86f9bcdc7878e1aa373366" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_generation_settings" kindref="compound">GenerationSettings</ref></type>
+        <definition>GenerationSettings RDE::ProceduralMap::settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <qualifiedname>RDE::ProceduralMap::settings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="23" column="28" bodyfile="engine/include/core/procedural/CellularAutomataMapGenerator.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>RDE::GenerationSettings</label>
+        <link refid="struct_r_d_e_1_1_generation_settings"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RDE::ProceduralMap</label>
+        <link refid="struct_r_d_e_1_1_procedural_map"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>settings</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RDE::Vec2&lt; int &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="21" column="5" bodyfile="engine/include/core/procedural/CellularAutomataMapGenerator.h" bodystart="21" bodyend="24"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_procedural_map_1ad42bc457ac0bf377762d0d7fc2b58f5c" prot="public" virt="non-virtual"><scope>RDE::ProceduralMap</scope><name>data</name></member>
+      <member refid="struct_r_d_e_1_1_procedural_map_1abac5c0525b86f9bcdc7878e1aa373366" prot="public" virt="non-virtual"><scope>RDE::ProceduralMap</scope><name>settings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

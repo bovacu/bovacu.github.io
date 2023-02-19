@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespace_r_d_e_1_1_util_1_1_graphics" kind="namespace" language="C++">
+    <compoundname>RDE::Util::Graphics</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_functions_8h_1af7ff20136966df510c40b74da68a1b0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char * RDE::Util::Graphics::getScreenPixels</definition>
+        <argsstring>(Window &amp;_window)</argsstring>
+        <name>getScreenPixels</name>
+        <qualifiedname>RDE::Util::Graphics::getScreenPixels</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> &amp;</type>
+          <declname>_window</declname>
+        </param>
+        <briefdescription>
+<para>Returns the pixels of the current drawn screen. @warn The pointer returned must be freed after use! </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Windows of the application </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>unsigned char* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="613" column="27" declfile="engine/include/core/util/Functions.h" declline="613" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1a46fb2cb34f76af4ac64621c1de9288e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char * RDE::Util::Graphics::getAreaOfScreenPixels</definition>
+        <argsstring>(Window &amp;_window, const Vec2I &amp;_position, const Vec2I &amp;_size)</argsstring>
+        <name>getAreaOfScreenPixels</name>
+        <qualifiedname>RDE::Util::Graphics::getAreaOfScreenPixels</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> &amp;</type>
+          <declname>_window</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref> &amp;</type>
+          <declname>_position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref> &amp;</type>
+          <declname>_size</declname>
+        </param>
+        <briefdescription>
+<para>Returns the pixels of a specific are of the current drawn screen. @warn The pointer returned must be freed after use! </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Windows of the application </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Center position of the screenshot to be taken. The coordinates system is centered on the screen center, as the whole engine. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the screenshoot, it will be x/2 to each X-axis side and y/2 to each Y-axis side. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>unsigned char* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="623" column="27" declfile="engine/include/core/util/Functions.h" declline="623" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1ab7e8971a8b45590549e2515f7031be5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Util::Graphics::takeScreenshot</definition>
+        <argsstring>(Window &amp;_window, const std::string &amp;_path)</argsstring>
+        <name>takeScreenshot</name>
+        <qualifiedname>RDE::Util::Graphics::takeScreenshot</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> &amp;</type>
+          <declname>_window</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_path</declname>
+        </param>
+        <briefdescription>
+<para>Takes a screenshot of the whole application window and saves it to a path. The name and extension of the screenshot has to be provided. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application <ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Full path to where the image is saved including the name and extension of the file. Supported extensions [png, jpg, jpeg, bmp]. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="630" column="18" declfile="engine/include/core/util/Functions.h" declline="630" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1abf482a5b07f351a48442fc16986fb360" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Util::Graphics::takeScreenshot</definition>
+        <argsstring>(Window &amp;_window, const Vec2I &amp;_position, const Vec2I &amp;_size, const std::string &amp;_path)</argsstring>
+        <name>takeScreenshot</name>
+        <qualifiedname>RDE::Util::Graphics::takeScreenshot</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> &amp;</type>
+          <declname>_window</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref> &amp;</type>
+          <declname>_position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref> &amp;</type>
+          <declname>_size</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_path</declname>
+        </param>
+        <briefdescription>
+<para>Takes a screenshot of an area of window and saves it to a path. The name and extension of the screenshot has to be provided. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application <ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Center position of the screenshot to be taken. The coordinates system is centered on the screen center, as the whole engine. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the screenshoot, it will be x/2 to each X-axis side and y/2 to each Y-axis side. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Full path to where the image is saved including the name and extension of the file. Supported extensions [png, jpg, jpeg, bmp]. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="639" column="18" declfile="engine/include/core/util/Functions.h" declline="639" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1ae74d1e64675f33f2961bc463d0b7fa11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_c_p_u_texture" kindref="compound">CPUTexture</ref> *</type>
+        <definition>CPUTexture * RDE::Util::Graphics::pixelsToCPUTexture</definition>
+        <argsstring>(const Vec2I &amp;_size, unsigned char *_pixels)</argsstring>
+        <name>pixelsToCPUTexture</name>
+        <qualifiedname>RDE::Util::Graphics::pixelsToCPUTexture</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref> &amp;</type>
+          <declname>_size</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>_pixels</declname>
+        </param>
+        <briefdescription>
+<para>Transforms an array of pixels into a <ref refid="class_r_d_e_1_1_c_p_u_texture" kindref="compound">CPUTexture</ref> so they can be manipulated and rendered easier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the pixels in rows and columns. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_pixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of pixels. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>CPUTexture* @warn If the <ref refid="class_r_d_e_1_1_c_p_u_texture" kindref="compound">CPUTexture</ref> is not going to be attached to a renderer component, user need to manually free it. If attached to an IRenderizable, the engine will destroy it automatically. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="649" column="24" declfile="engine/include/core/util/Functions.h" declline="649" declcolumn="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/util/Functions.h" line="605" column="1"/>
+  </compounddef>
+</doxygen>

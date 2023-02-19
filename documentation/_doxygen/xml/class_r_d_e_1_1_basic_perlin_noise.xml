@@ -1,0 +1,860 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_basic_perlin_noise" kind="class" language="C++" prot="public">
+    <compoundname>RDE::BasicPerlinNoise</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class Float</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_r_d_e_1_1_basic_perlin_noise_1a2769e03ad1da8feeb1696240544074c5" prot="public" static="no">
+        <type>std::array&lt; std::uint8_t, 256 &gt;</type>
+        <definition>using RDE::BasicPerlinNoise&lt; Float &gt;::state_type =  std::array&lt;std::uint8_t, 256&gt;</definition>
+        <argsstring></argsstring>
+        <name>state_type</name>
+        <qualifiedname>RDE::BasicPerlinNoise::state_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="103" column="9" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_r_d_e_1_1_basic_perlin_noise_1a9a745a718cc35ae485284785d11588bc" prot="public" static="no">
+        <type>Float</type>
+        <definition>using RDE::BasicPerlinNoise&lt; Float &gt;::value_type =  Float</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>RDE::BasicPerlinNoise::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="105" column="9" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_r_d_e_1_1_basic_perlin_noise_1abf7fb90c04c5513ef7d90d302ddb7b8e" prot="public" static="no">
+        <type>std::mt19937</type>
+        <definition>using RDE::BasicPerlinNoise&lt; Float &gt;::default_random_engine =  std::mt19937</definition>
+        <argsstring></argsstring>
+        <name>default_random_engine</name>
+        <qualifiedname>RDE::BasicPerlinNoise::default_random_engine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="107" column="9" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_r_d_e_1_1_basic_perlin_noise_1a9f9806ec2c8424f19d970f4dda4dd441" prot="public" static="no">
+        <type>typename default_random_engine::result_type</type>
+        <definition>using RDE::BasicPerlinNoise&lt; Float &gt;::seed_type =  typename default_random_engine::result_type</definition>
+        <argsstring></argsstring>
+        <name>seed_type</name>
+        <qualifiedname>RDE::BasicPerlinNoise::seed_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="109" column="9" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_basic_perlin_noise_1ad1b0817e84df3e94be1cdf3fdf793810" prot="private" static="no" mutable="no">
+        <type>state_type</type>
+        <definition>state_type RDE::BasicPerlinNoise&lt; Float &gt;::m_permutation</definition>
+        <argsstring></argsstring>
+        <name>m_permutation</name>
+        <qualifiedname>RDE::BasicPerlinNoise::m_permutation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="246" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a7df80c4d220c3f29bc9179e12bda7436" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr RDE::BasicPerlinNoise&lt; Float &gt;::BasicPerlinNoise</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>BasicPerlinNoise</name>
+        <qualifiedname>RDE::BasicPerlinNoise::BasicPerlinNoise</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="117" column="19" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="416" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a8a02400ad0bb2aafdf5a7bf3e0af6f5f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::BasicPerlinNoise&lt; Float &gt;::BasicPerlinNoise</definition>
+        <argsstring>(seed_type seed)</argsstring>
+        <name>BasicPerlinNoise</name>
+        <qualifiedname>RDE::BasicPerlinNoise::BasicPerlinNoise</qualifiedname>
+        <param>
+          <type>seed_type</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="120" column="18" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="432" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a7e307a7115bfe333e0d4554065fd2084" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class URBG</type>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt; std::conjunction_v&lt; std::is_invocable&lt; URBG &amp; &gt;, std::is_unsigned&lt; std::invoke_result_t&lt; URBG &amp; &gt; &gt; &gt; &gt; *</type>
+            <defval>nullptr</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>RDE::BasicPerlinNoise&lt; Float &gt;::BasicPerlinNoise</definition>
+        <argsstring>(URBG &amp;&amp;urbg)</argsstring>
+        <name>BasicPerlinNoise</name>
+        <qualifiedname>RDE::BasicPerlinNoise::BasicPerlinNoise</qualifiedname>
+        <param>
+          <type>URBG &amp;&amp;</type>
+          <declname>urbg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="124" column="18" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="439" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a6dfcf9793d7c82677fd5f5612ed2a159" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::BasicPerlinNoise&lt; Float &gt;::reseed</definition>
+        <argsstring>(seed_type seed)</argsstring>
+        <name>reseed</name>
+        <qualifiedname>RDE::BasicPerlinNoise::reseed</qualifiedname>
+        <param>
+          <type>seed_type</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="131" column="14" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="447" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1adc19845983c4d130cd38cfa633966dae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class URBG</type>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt; std::conjunction_v&lt; std::is_invocable&lt; URBG &amp; &gt;, std::is_unsigned&lt; std::invoke_result_t&lt; URBG &amp; &gt; &gt; &gt; &gt; *</type>
+            <defval>nullptr</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void RDE::BasicPerlinNoise&lt; Float &gt;::reseed</definition>
+        <argsstring>(URBG &amp;&amp;urbg)</argsstring>
+        <name>reseed</name>
+        <qualifiedname>RDE::BasicPerlinNoise::reseed</qualifiedname>
+        <param>
+          <type>URBG &amp;&amp;</type>
+          <declname>urbg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="134" column="14" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="454" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a2d53b167101f69ff4713b3312a1ae487" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr const state_type &amp;</type>
+        <definition>constexpr const BasicPerlinNoise&lt; Float &gt;::state_type &amp; RDE::BasicPerlinNoise&lt; Float &gt;::serialize</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>serialize</name>
+        <qualifiedname>RDE::BasicPerlinNoise::serialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="142" column="36" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="464" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1ae24141c7c1f4c03f12eb0886a194a61b" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr void</type>
+        <definition>constexpr void RDE::BasicPerlinNoise&lt; Float &gt;::deserialize</definition>
+        <argsstring>(const state_type &amp;state) noexcept</argsstring>
+        <name>deserialize</name>
+        <qualifiedname>RDE::BasicPerlinNoise::deserialize</qualifiedname>
+        <param>
+          <type>const state_type &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="144" column="24" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="470" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1ac48e9b07a4114bbeabb80654f473c6e8" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::noise1D</definition>
+        <argsstring>(value_type x) const noexcept</argsstring>
+        <name>noise1D</name>
+        <qualifiedname>RDE::BasicPerlinNoise::noise1D</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="152" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="478" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1afc79d045bba1af8658b071e985c5c320" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::noise2D</definition>
+        <argsstring>(value_type x, value_type y) const noexcept</argsstring>
+        <name>noise2D</name>
+        <qualifiedname>RDE::BasicPerlinNoise::noise2D</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="155" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="486" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a412b6609e53e7673f404d7f5fee8bf40" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::noise3D</definition>
+        <argsstring>(value_type x, value_type y, value_type z) const noexcept</argsstring>
+        <name>noise3D</name>
+        <qualifiedname>RDE::BasicPerlinNoise::noise3D</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="158" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="494" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a34c5e5af7f781784af0cef4830b4444c" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::noise1D_01</definition>
+        <argsstring>(value_type x) const noexcept</argsstring>
+        <name>noise1D_01</name>
+        <qualifiedname>RDE::BasicPerlinNoise::noise1D_01</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="166" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="544" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a1f2243dcdf1a314b9ab6066186e978bd" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::noise2D_01</definition>
+        <argsstring>(value_type x, value_type y) const noexcept</argsstring>
+        <name>noise2D_01</name>
+        <qualifiedname>RDE::BasicPerlinNoise::noise2D_01</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="169" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="550" bodyend="553"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a5ef9c755446225015305b03ede4224d6" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::noise3D_01</definition>
+        <argsstring>(value_type x, value_type y, value_type z) const noexcept</argsstring>
+        <name>noise3D_01</name>
+        <qualifiedname>RDE::BasicPerlinNoise::noise3D_01</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="172" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="556" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a72b2bf49b63edaedcc4c0610618907fa" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::octave1D</definition>
+        <argsstring>(value_type x, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>octave1D</name>
+        <qualifiedname>RDE::BasicPerlinNoise::octave1D</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="180" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="564" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a48881dd2cdb8bfd486f180b5680bb470" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::octave2D</definition>
+        <argsstring>(value_type x, value_type y, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>octave2D</name>
+        <qualifiedname>RDE::BasicPerlinNoise::octave2D</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="183" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="570" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1afc3562246b6d6fe6ba7221f23f2c94a5" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::octave3D</definition>
+        <argsstring>(value_type x, value_type y, value_type z, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>octave3D</name>
+        <qualifiedname>RDE::BasicPerlinNoise::octave3D</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="186" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="576" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a09b62535e39ad56505b122ee8ab05a2d" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::octave1D_11</definition>
+        <argsstring>(value_type x, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>octave1D_11</name>
+        <qualifiedname>RDE::BasicPerlinNoise::octave1D_11</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="194" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="584" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1aa869475b36fac143e17147d6b2d62cb6" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::octave2D_11</definition>
+        <argsstring>(value_type x, value_type y, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>octave2D_11</name>
+        <qualifiedname>RDE::BasicPerlinNoise::octave2D_11</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="197" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="590" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1adae2c9d50b96c6f0aeb4ff6f8bc56ecd" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::octave3D_11</definition>
+        <argsstring>(value_type x, value_type y, value_type z, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>octave3D_11</name>
+        <qualifiedname>RDE::BasicPerlinNoise::octave3D_11</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="200" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="596" bodyend="599"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1ac3ab17afab9362489c66fc3f19b34e44" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::octave1D_01</definition>
+        <argsstring>(value_type x, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>octave1D_01</name>
+        <qualifiedname>RDE::BasicPerlinNoise::octave1D_01</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="208" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="604" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a92edbc930149f7daed3a61de4f272e13" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::octave2D_01</definition>
+        <argsstring>(value_type x, value_type y, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>octave2D_01</name>
+        <qualifiedname>RDE::BasicPerlinNoise::octave2D_01</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="211" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="610" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a3b0fa6c2dceafcc0df7d608d70ec3848" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::octave3D_01</definition>
+        <argsstring>(value_type x, value_type y, value_type z, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>octave3D_01</name>
+        <qualifiedname>RDE::BasicPerlinNoise::octave3D_01</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="214" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="616" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1aafb5a189cd28d7d529e6f91f5223888c" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::normalizedOctave1D</definition>
+        <argsstring>(value_type x, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>normalizedOctave1D</name>
+        <qualifiedname>RDE::BasicPerlinNoise::normalizedOctave1D</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="222" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="624" bodyend="627"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a884c89aba0f1eb20369241dca6f467fb" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::normalizedOctave2D</definition>
+        <argsstring>(value_type x, value_type y, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>normalizedOctave2D</name>
+        <qualifiedname>RDE::BasicPerlinNoise::normalizedOctave2D</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="225" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="630" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a8f84fc2fcbf1a80c974e321be2693225" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::normalizedOctave3D</definition>
+        <argsstring>(value_type x, value_type y, value_type z, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>normalizedOctave3D</name>
+        <qualifiedname>RDE::BasicPerlinNoise::normalizedOctave3D</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="228" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="636" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a908becb33cda440cc52ebde327aac4a4" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::normalizedOctave1D_01</definition>
+        <argsstring>(value_type x, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>normalizedOctave1D_01</name>
+        <qualifiedname>RDE::BasicPerlinNoise::normalizedOctave1D_01</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="236" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="644" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1ae452e73654313855950aff30bb60b73b" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::normalizedOctave2D_01</definition>
+        <argsstring>(value_type x, value_type y, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>normalizedOctave2D_01</name>
+        <qualifiedname>RDE::BasicPerlinNoise::normalizedOctave2D_01</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="239" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="650" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_basic_perlin_noise_1a2d08f72a9119353c39d7e0f56ff1043e" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>BasicPerlinNoise&lt; Float &gt;::value_type RDE::BasicPerlinNoise&lt; Float &gt;::normalizedOctave3D_01</definition>
+        <argsstring>(value_type x, value_type y, value_type z, std::int32_t octaves, value_type persistence=value_type(0.5)) const noexcept</argsstring>
+        <name>normalizedOctave3D_01</name>
+        <qualifiedname>RDE::BasicPerlinNoise::normalizedOctave3D_01</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>octaves</declname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <declname>persistence</declname>
+          <defval>value_type(0.5)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/PerlinNoise.h" line="242" column="20" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="656" bodyend="659"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/util/PerlinNoise.h" line="92" column="5" bodyfile="engine/include/core/util/PerlinNoise.h" bodystart="93" bodyend="247"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a7df80c4d220c3f29bc9179e12bda7436" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>BasicPerlinNoise</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a8a02400ad0bb2aafdf5a7bf3e0af6f5f" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>BasicPerlinNoise</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a7e307a7115bfe333e0d4554065fd2084" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>BasicPerlinNoise</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1abf7fb90c04c5513ef7d90d302ddb7b8e" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>default_random_engine</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1ae24141c7c1f4c03f12eb0886a194a61b" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>deserialize</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1ad1b0817e84df3e94be1cdf3fdf793810" prot="private" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>m_permutation</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1ac48e9b07a4114bbeabb80654f473c6e8" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>noise1D</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a34c5e5af7f781784af0cef4830b4444c" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>noise1D_01</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1afc79d045bba1af8658b071e985c5c320" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>noise2D</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a1f2243dcdf1a314b9ab6066186e978bd" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>noise2D_01</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a412b6609e53e7673f404d7f5fee8bf40" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>noise3D</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a5ef9c755446225015305b03ede4224d6" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>noise3D_01</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1aafb5a189cd28d7d529e6f91f5223888c" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>normalizedOctave1D</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a908becb33cda440cc52ebde327aac4a4" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>normalizedOctave1D_01</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a884c89aba0f1eb20369241dca6f467fb" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>normalizedOctave2D</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1ae452e73654313855950aff30bb60b73b" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>normalizedOctave2D_01</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a8f84fc2fcbf1a80c974e321be2693225" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>normalizedOctave3D</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a2d08f72a9119353c39d7e0f56ff1043e" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>normalizedOctave3D_01</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a72b2bf49b63edaedcc4c0610618907fa" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>octave1D</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1ac3ab17afab9362489c66fc3f19b34e44" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>octave1D_01</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a09b62535e39ad56505b122ee8ab05a2d" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>octave1D_11</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a48881dd2cdb8bfd486f180b5680bb470" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>octave2D</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a92edbc930149f7daed3a61de4f272e13" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>octave2D_01</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1aa869475b36fac143e17147d6b2d62cb6" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>octave2D_11</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1afc3562246b6d6fe6ba7221f23f2c94a5" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>octave3D</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a3b0fa6c2dceafcc0df7d608d70ec3848" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>octave3D_01</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1adae2c9d50b96c6f0aeb4ff6f8bc56ecd" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>octave3D_11</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a6dfcf9793d7c82677fd5f5612ed2a159" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>reseed</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1adc19845983c4d130cd38cfa633966dae" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>reseed</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a9f9806ec2c8424f19d970f4dda4dd441" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>seed_type</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a2d53b167101f69ff4713b3312a1ae487" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>serialize</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a2769e03ad1da8feeb1696240544074c5" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>state_type</name></member>
+      <member refid="class_r_d_e_1_1_basic_perlin_noise_1a9a745a718cc35ae485284785d11588bc" prot="public" virt="non-virtual"><scope>RDE::BasicPerlinNoise</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

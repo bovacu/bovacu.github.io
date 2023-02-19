@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_char_info" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::CharInfo</compoundname>
+    <includes refid="_font_manager_8h" local="no">FontManager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_char_info_1a165387aab1167be519349a3f6545f2ea" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref></type>
+        <definition>Vec2I RDE::CharInfo::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>RDE::CharInfo::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="22" column="16" bodyfile="engine/include/core/systems/uiSystem/FontManager.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_char_info_1ae36c212ce92cb33b1125425d8047de41" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref></type>
+        <definition>Vec2I RDE::CharInfo::bearing</definition>
+        <argsstring></argsstring>
+        <name>bearing</name>
+        <qualifiedname>RDE::CharInfo::bearing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="23" column="16" bodyfile="engine/include/core/systems/uiSystem/FontManager.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_char_info_1a9b8492feaf8366b83f2fec8f6a3a95eb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref></type>
+        <definition>Vec2I RDE::CharInfo::advance</definition>
+        <argsstring></argsstring>
+        <name>advance</name>
+        <qualifiedname>RDE::CharInfo::advance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="24" column="16" bodyfile="engine/include/core/systems/uiSystem/FontManager.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_char_info_1a7be62e98c9e18b0d09afbacb3a10de25" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::CharInfo::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <qualifiedname>RDE::CharInfo::offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="25" column="16" bodyfile="engine/include/core/systems/uiSystem/FontManager.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This struct retains the information of each character. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>RDE::CharInfo</label>
+        <link refid="struct_r_d_e_1_1_char_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>advance</edgelabel>
+          <edgelabel>bearing</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>offset</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RDE::Vec2&lt; float &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+      <node id="2">
+        <label>RDE::Vec2&lt; int &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/uiSystem/FontManager.h" line="21" column="5" bodyfile="engine/include/core/systems/uiSystem/FontManager.h" bodystart="21" bodyend="26"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_char_info_1a9b8492feaf8366b83f2fec8f6a3a95eb" prot="public" virt="non-virtual"><scope>RDE::CharInfo</scope><name>advance</name></member>
+      <member refid="struct_r_d_e_1_1_char_info_1ae36c212ce92cb33b1125425d8047de41" prot="public" virt="non-virtual"><scope>RDE::CharInfo</scope><name>bearing</name></member>
+      <member refid="struct_r_d_e_1_1_char_info_1a7be62e98c9e18b0d09afbacb3a10de25" prot="public" virt="non-virtual"><scope>RDE::CharInfo</scope><name>offset</name></member>
+      <member refid="struct_r_d_e_1_1_char_info_1a165387aab1167be519349a3f6545f2ea" prot="public" virt="non-virtual"><scope>RDE::CharInfo</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

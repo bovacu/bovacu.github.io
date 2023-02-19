@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_node___json_pair" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::Node_JsonPair</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_node___json_pair_1a93f6df1ccc5c7aad989849db0b01d2a5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* RDE::Node_JsonPair::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <qualifiedname>RDE::Node_JsonPair::node</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="18" column="14" bodyfile="engine/include/core/systems/configSystem/ConfigManager.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_node___json_pair_1a37f7efefa5327cdbbc2583e94c15e890" prot="public" static="no" mutable="no">
+        <type>nlohmann::json</type>
+        <definition>nlohmann::json RDE::Node_JsonPair::json</definition>
+        <argsstring></argsstring>
+        <name>json</name>
+        <qualifiedname>RDE::Node_JsonPair::json</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="19" column="24" bodyfile="engine/include/core/systems/configSystem/ConfigManager.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>RDE::Node</label>
+        <link refid="struct_r_d_e_1_1_node"/>
+      </node>
+      <node id="1">
+        <label>RDE::Node_JsonPair</label>
+        <link refid="struct_r_d_e_1_1_node___json_pair"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="17" column="5" bodyfile="engine/include/core/systems/configSystem/ConfigManager.h" bodystart="17" bodyend="20"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_node___json_pair_1a37f7efefa5327cdbbc2583e94c15e890" prot="public" virt="non-virtual"><scope>RDE::Node_JsonPair</scope><name>json</name></member>
+      <member refid="struct_r_d_e_1_1_node___json_pair_1a93f6df1ccc5c7aad989849db0b01d2a5" prot="public" virt="non-virtual"><scope>RDE::Node_JsonPair</scope><name>node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_particle_data" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::ParticleData</compoundname>
+    <includes refid="_particle_system_8h" local="no">ParticleSystem.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_particle_data_1aed09c1dc438dde62d2897022b18d20cf" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 RDE::ParticleData::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <qualifiedname>RDE::ParticleData::position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="27" column="19" bodyfile="engine/include/core/graph/components/ParticleSystem.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_particle_data_1a349e507b4e0b0f631c9582bff27c9b17" prot="public" static="no" mutable="no">
+        <type>glm::vec2</type>
+        <definition>glm::vec2 RDE::ParticleData::velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <qualifiedname>RDE::ParticleData::velocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="28" column="19" bodyfile="engine/include/core/graph/components/ParticleSystem.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_particle_data_1a2338832fd48e0cde2b834e8d9c1d4b20" prot="public" static="no" mutable="no">
+        <type>glm::vec2</type>
+        <definition>glm::vec2 RDE::ParticleData::acceleration</definition>
+        <argsstring></argsstring>
+        <name>acceleration</name>
+        <qualifiedname>RDE::ParticleData::acceleration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="29" column="19" bodyfile="engine/include/core/graph/components/ParticleSystem.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_particle_data_1aca5e4be1966cd03ea182f20dccfd6015" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::ParticleData::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>RDE::ParticleData::color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="30" column="15" bodyfile="engine/include/core/graph/components/ParticleSystem.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_particle_data_1ad2bf023bfff8ee2a58497c03ad14d520" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::ParticleData::life</definition>
+        <argsstring></argsstring>
+        <name>life</name>
+        <qualifiedname>RDE::ParticleData::life</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="31" column="15" bodyfile="engine/include/core/graph/components/ParticleSystem.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_r_d_e_1_1_particle_data_1a2b76d5c491e22bd881e7a12d9f44f3de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ParticleData::reset</definition>
+        <argsstring>(const ParticleSystemConfig &amp;_particleSystemConfig, Transform *_parentTransform)</argsstring>
+        <name>reset</name>
+        <qualifiedname>RDE::ParticleData::reset</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_particle_system_config" kindref="compound">ParticleSystemConfig</ref> &amp;</type>
+          <declname>_particleSystemConfig</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> *</type>
+          <declname>_parentTransform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="33" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Information about a particle. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>RDE::Color</label>
+        <link refid="struct_r_d_e_1_1_color"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Black</edgelabel>
+          <edgelabel>Blue</edgelabel>
+          <edgelabel>Brown</edgelabel>
+          <edgelabel>Disabled</edgelabel>
+          <edgelabel>Gray</edgelabel>
+          <edgelabel>Green</edgelabel>
+          <edgelabel>Magenta</edgelabel>
+          <edgelabel>NO_COLOR</edgelabel>
+          <edgelabel>Orange</edgelabel>
+          <edgelabel>Placeholder</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RDE::ParticleData</label>
+        <link refid="struct_r_d_e_1_1_particle_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/graph/components/ParticleSystem.h" line="26" column="5" bodyfile="engine/include/core/graph/components/ParticleSystem.h" bodystart="26" bodyend="34"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_particle_data_1a2338832fd48e0cde2b834e8d9c1d4b20" prot="public" virt="non-virtual"><scope>RDE::ParticleData</scope><name>acceleration</name></member>
+      <member refid="struct_r_d_e_1_1_particle_data_1aca5e4be1966cd03ea182f20dccfd6015" prot="public" virt="non-virtual"><scope>RDE::ParticleData</scope><name>color</name></member>
+      <member refid="struct_r_d_e_1_1_particle_data_1ad2bf023bfff8ee2a58497c03ad14d520" prot="public" virt="non-virtual"><scope>RDE::ParticleData</scope><name>life</name></member>
+      <member refid="struct_r_d_e_1_1_particle_data_1aed09c1dc438dde62d2897022b18d20cf" prot="public" virt="non-virtual"><scope>RDE::ParticleData</scope><name>position</name></member>
+      <member refid="struct_r_d_e_1_1_particle_data_1a2b76d5c491e22bd881e7a12d9f44f3de" prot="public" virt="non-virtual"><scope>RDE::ParticleData</scope><name>reset</name></member>
+      <member refid="struct_r_d_e_1_1_particle_data_1a349e507b4e0b0f631c9582bff27c9b17" prot="public" virt="non-virtual"><scope>RDE::ParticleData</scope><name>velocity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

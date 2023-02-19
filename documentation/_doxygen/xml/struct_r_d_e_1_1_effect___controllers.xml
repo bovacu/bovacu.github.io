@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_effect___controllers" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::Effect_Controllers</compoundname>
+    <includes refid="_controller_input_8h" local="no">ControllerInput.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_effect___controllers_1a2c814d6997fbe5a61ff3d99bde12fa5a" prot="public" static="no" mutable="no">
+        <type>SDL_HapticEffect</type>
+        <definition>SDL_HapticEffect RDE::Effect_Controllers::vibrationEffect</definition>
+        <argsstring></argsstring>
+        <name>vibrationEffect</name>
+        <qualifiedname>RDE::Effect_Controllers::vibrationEffect</qualifiedname>
+        <briefdescription>
+<para>Vibration effect. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h" line="51" column="26" bodyfile="engine/include/core/systems/inputSystem/input/ControllerInput.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_effect___controllers_1a2f319f750f7ba5905a7041a8990b1e50" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::Effect_Controllers::vibrationEffectID</definition>
+        <argsstring></argsstring>
+        <name>vibrationEffectID</name>
+        <qualifiedname>RDE::Effect_Controllers::vibrationEffectID</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+<para>Vibration effect ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h" line="56" column="13" bodyfile="engine/include/core/systems/inputSystem/input/ControllerInput.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_effect___controllers_1a8dea5a2cb5a1a3d9124c3883c944dc94" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; RDE::Effect_Controllers::controllerIDs</definition>
+        <argsstring></argsstring>
+        <name>controllerIDs</name>
+        <qualifiedname>RDE::Effect_Controllers::controllerIDs</qualifiedname>
+        <initializer>= {  }</initializer>
+        <briefdescription>
+<para>Controllers binded to it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h" line="61" column="21" bodyfile="engine/include/core/systems/inputSystem/input/ControllerInput.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data struct that joins an specific vibration effect to many controllers. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h" line="47" column="5" bodyfile="engine/include/core/systems/inputSystem/input/ControllerInput.h" bodystart="47" bodyend="62"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_effect___controllers_1a8dea5a2cb5a1a3d9124c3883c944dc94" prot="public" virt="non-virtual"><scope>RDE::Effect_Controllers</scope><name>controllerIDs</name></member>
+      <member refid="struct_r_d_e_1_1_effect___controllers_1a2c814d6997fbe5a61ff3d99bde12fa5a" prot="public" virt="non-virtual"><scope>RDE::Effect_Controllers</scope><name>vibrationEffect</name></member>
+      <member refid="struct_r_d_e_1_1_effect___controllers_1a2f319f750f7ba5905a7041a8990b1e50" prot="public" virt="non-virtual"><scope>RDE::Effect_Controllers</scope><name>vibrationEffectID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

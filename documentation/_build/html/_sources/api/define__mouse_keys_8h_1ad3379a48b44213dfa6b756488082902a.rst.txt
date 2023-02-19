@@ -1,0 +1,14 @@
+.. _exhale_define__mouse_keys_8h_1ad3379a48b44213dfa6b756488082902a:
+
+Define MOUSE_BUTTON_MIDDLE
+==========================
+
+- Defined in :ref:`file_engine_include_core_systems_inputSystem_keysAndButtons_MouseKeys.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MOUSE_BUTTON_MIDDLE
+   :project: My Project

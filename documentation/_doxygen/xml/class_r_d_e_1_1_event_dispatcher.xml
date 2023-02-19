@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_event_dispatcher" kind="class" language="C++" prot="public">
+    <compoundname>RDE::EventDispatcher</compoundname>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_r_d_e_1_1_event_dispatcher_1a3dd4d3b4af79dae155f1a2f1093216b9" prot="private" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::function&lt; bool(T &amp;)&gt;</type>
+        <definition>using RDE::EventDispatcher::EventFn =  std::function&lt;bool(T&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>EventFn</name>
+        <qualifiedname>RDE::EventDispatcher::EventFn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is key. It defines a type of method that takes an <ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref>&amp; (although it is not checked to improve performance) as a parameter and returns a bool. This methods will be the ones that will execute as a callback when an event happens. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/Event.h" line="102" column="9" bodyfile="engine/include/core/systems/eventSystem/Event.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_event_dispatcher_1a464eb8c3d344e39293086d645357795d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> &amp;</type>
+        <definition>Event&amp; RDE::EventDispatcher::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <qualifiedname>RDE::EventDispatcher::event</qualifiedname>
+        <briefdescription>
+<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> to be handled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/Event.h" line="108" column="15" bodyfile="engine/include/core/systems/eventSystem/Event.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_event_dispatcher_1a77b805701eeb8a718e06c7d852d8b7e4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::EventDispatcher::EventDispatcher</definition>
+        <argsstring>(Event &amp;_event)</argsstring>
+        <name>EventDispatcher</name>
+        <qualifiedname>RDE::EventDispatcher::EventDispatcher</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>_event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/Event.h" line="111" column="18" bodyfile="engine/include/core/systems/eventSystem/Event.h" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_event_dispatcher_1ae78629a7234f5da6e51c5ae7bebda4d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool RDE::EventDispatcher::dispatchEvent</definition>
+        <argsstring>(const UniqueDelegate&lt; bool(T &amp;)&gt; &amp;_delegate)</argsstring>
+        <name>dispatchEvent</name>
+        <qualifiedname>RDE::EventDispatcher::dispatchEvent</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt; bool(T &amp;)&gt; &amp;</type>
+          <declname>_delegate</declname>
+        </param>
+        <briefdescription>
+<para>This method is used to handle internally the event (apart from the handling in the EventFunction callback). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback associated to the specific event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>This is why we needed the static version of getType.</para>
+<para>Using *(T*)&amp; was the only way I could find to make this work, fucking pointers. Update: it can be done via static_cast&lt;T&amp;&gt;.</para>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/Event.h" line="119" column="14" bodyfile="engine/include/core/systems/eventSystem/Event.h" bodystart="119" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_event_dispatcher_1a390cf0023b05b8733bcea928feacfc92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool RDE::EventDispatcher::dispatchEvent</definition>
+        <argsstring>()</argsstring>
+        <name>dispatchEvent</name>
+        <qualifiedname>RDE::EventDispatcher::dispatchEvent</qualifiedname>
+        <briefdescription>
+<para>This method is used to handle internally the event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/Event.h" line="137" column="14" bodyfile="engine/include/core/systems/eventSystem/Event.h" bodystart="137" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/eventSystem/Event.h" line="95" column="5" bodyfile="engine/include/core/systems/eventSystem/Event.h" bodystart="95" bodyend="141"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_event_dispatcher_1ae78629a7234f5da6e51c5ae7bebda4d5" prot="public" virt="non-virtual"><scope>RDE::EventDispatcher</scope><name>dispatchEvent</name></member>
+      <member refid="class_r_d_e_1_1_event_dispatcher_1a390cf0023b05b8733bcea928feacfc92" prot="public" virt="non-virtual"><scope>RDE::EventDispatcher</scope><name>dispatchEvent</name></member>
+      <member refid="class_r_d_e_1_1_event_dispatcher_1a464eb8c3d344e39293086d645357795d" prot="private" virt="non-virtual"><scope>RDE::EventDispatcher</scope><name>event</name></member>
+      <member refid="class_r_d_e_1_1_event_dispatcher_1a77b805701eeb8a718e06c7d852d8b7e4" prot="public" virt="non-virtual"><scope>RDE::EventDispatcher</scope><name>EventDispatcher</name></member>
+      <member refid="class_r_d_e_1_1_event_dispatcher_1a3dd4d3b4af79dae155f1a2f1093216b9" prot="private" virt="non-virtual"><scope>RDE::EventDispatcher</scope><name>EventFn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

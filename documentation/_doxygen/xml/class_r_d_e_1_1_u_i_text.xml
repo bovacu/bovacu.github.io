@@ -1,0 +1,521 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_u_i_text" kind="class" language="C++" prot="public">
+    <compoundname>RDE::UIText</compoundname>
+    <innerclass refid="struct_r_d_e_1_1_u_i_text_1_1_line_info" prot="protected">RDE::UIText::LineInfo</innerclass>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_r_d_e_1_1_u_i_text_1a9816083e25bae0b2f472e19382136687" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Canvas</definition>
+        <argsstring></argsstring>
+        <name>Canvas</name>
+        <qualifiedname>RDE::UIText::Canvas</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_canvas" kindref="compound">Canvas</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="24" column="22" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_u_i_text_1a66cc3374f0713c668bc5be24739a062c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class UIButton</definition>
+        <argsstring></argsstring>
+        <name>UIButton</name>
+        <qualifiedname>RDE::UIText::UIButton</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_u_i_button" kindref="compound">UIButton</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="25" column="22" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_u_i_text_1aae4eb1dc547f58a2f14226511f9e50b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class UICheckbox</definition>
+        <argsstring></argsstring>
+        <name>UICheckbox</name>
+        <qualifiedname>RDE::UIText::UICheckbox</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_u_i_checkbox" kindref="compound">UICheckbox</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="26" column="22" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_u_i_text_1a81389057cb77df846a91f948b46251cb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class UIInput</definition>
+        <argsstring></argsstring>
+        <name>UIInput</name>
+        <qualifiedname>RDE::UIText::UIInput</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_u_i_input" kindref="compound">UIInput</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="27" column="22" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_text_1a7e36666e4d79417121c5161c63d3b7f4" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> *</type>
+        <definition>Font* RDE::UIText::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <qualifiedname>RDE::UIText::font</qualifiedname>
+        <briefdescription>
+<para>The font used to render the text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="34" column="18" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_text_1a6432b0ec9ddd8b05610fd8c902509eda" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string RDE::UIText::innerText</definition>
+        <argsstring></argsstring>
+        <name>innerText</name>
+        <qualifiedname>RDE::UIText::innerText</qualifiedname>
+        <briefdescription>
+<para>Rendered text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="39" column="25" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_text_1a02bec38b1e4d1513fce17b4be643054d" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::UIText::textSize</definition>
+        <argsstring></argsstring>
+        <name>textSize</name>
+        <qualifiedname>RDE::UIText::textSize</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Size of the whole text as a rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="44" column="19" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_text_1a762e860880c99e5622d243e285ff215a" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::UIText::spaceBetweenChars</definition>
+        <argsstring></argsstring>
+        <name>spaceBetweenChars</name>
+        <qualifiedname>RDE::UIText::spaceBetweenChars</qualifiedname>
+        <initializer>= 0.f</initializer>
+        <briefdescription>
+<para>Amount of space between each character. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="49" column="19" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_text_1a493b6ae1cfc44e9838cc8ae7d2e076b8" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::UIText::newLineSize</definition>
+        <argsstring></argsstring>
+        <name>newLineSize</name>
+        <qualifiedname>RDE::UIText::newLineSize</qualifiedname>
+        <initializer>= 1.05f</initializer>
+        <briefdescription>
+<para>It is calculated as a % of the total height of the full text. Only applicable if it is multiline text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="54" column="19" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_text_1a4037c7d83e956ce8d0d78b5a5c743edf" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::UIText::fontSize</definition>
+        <argsstring></argsstring>
+        <name>fontSize</name>
+        <qualifiedname>RDE::UIText::fontSize</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Size of the font. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="59" column="17" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_text_1a1795988626291672c974096b2c28e616" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::tuple&lt; std::vector&lt; <ref refid="struct_r_d_e_1_1_u_i_text_1_1_line_info" kindref="compound">LineInfo</ref> &gt;, float, float &gt;</type>
+        <definition>std::tuple&lt; std::vector&lt; LineInfo &gt;, float, float &gt; RDE::UIText::calculateLinesInfo</definition>
+        <argsstring>(CharInfo *_chars) const</argsstring>
+        <name>calculateLinesInfo</name>
+        <qualifiedname>RDE::UIText::calculateLinesInfo</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_char_info" kindref="compound">CharInfo</ref> *</type>
+          <declname>_chars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="74" column="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_text_1a7f19065110a9df1da8fa9bdb8500e5f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RDE::UIText::UIText</definition>
+        <argsstring>(Node *_node, Scene *_scene, Canvas *_canvas, const UITextConfig &amp;_config)</argsstring>
+        <name>UIText</name>
+        <qualifiedname>RDE::UIText::UIText</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>_node</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_canvas" kindref="compound">Canvas</ref> *</type>
+          <declname>_canvas</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_u_i_text_config" kindref="compound">UITextConfig</ref> &amp;</type>
+          <declname>_config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="77" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_text_1afef7332659beb38b64c6b975ac6ac293" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RDE::UIText::UIText</definition>
+        <argsstring>(Node *_node, Manager *_manager, Graph *_graph, const UITextConfig &amp;_config)</argsstring>
+        <name>UIText</name>
+        <qualifiedname>RDE::UIText::UIText</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>_node</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> *</type>
+          <declname>_manager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_graph" kindref="compound">Graph</ref> *</type>
+          <declname>_graph</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_u_i_text_config" kindref="compound">UITextConfig</ref> &amp;</type>
+          <declname>_config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="78" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_text_1ac1eff660c4cc2f9ad1a763bff5f2c647" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::UIText::~UIText</definition>
+        <argsstring>()</argsstring>
+        <name>~UIText</name>
+        <qualifiedname>RDE::UIText::~UIText</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="79" column="13" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_text_1afde1ca5e2c3a6557828a1af54e5a6f06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RENDERIZABLE_UI_BASIC_METHODS() void setText(const std <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>RENDERIZABLE_UI_BASIC_METHODS() void setText(const std Vec2F RDE::UIText::getTextSize</definition>
+        <argsstring>()</argsstring>
+        <name>getTextSize</name>
+        <qualifiedname>RDE::UIText::getTextSize</qualifiedname>
+        <briefdescription>
+<para>Sets the text to be rendered. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text to render. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="89" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_text_1a05ca2241c83dd2b86becbe46ae4952b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::UIText::setFont</definition>
+        <argsstring>(Font *_font)</argsstring>
+        <name>setFont</name>
+        <qualifiedname>RDE::UIText::setFont</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> *</type>
+          <declname>_font</declname>
+        </param>
+        <briefdescription>
+<para>Sets the font. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="95" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_text_1ad7e1bca55463b5aab8568c366448a61d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> *</type>
+        <definition>Font * RDE::UIText::getFont</definition>
+        <argsstring>() const</argsstring>
+        <name>getFont</name>
+        <qualifiedname>RDE::UIText::getFont</qualifiedname>
+        <briefdescription>
+<para>Get sthe font. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Font* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="101" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_text_1ad9cd50f553d53bc9c5ec02054746f414" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; RDE::UIText::getText</definition>
+        <argsstring>() const</argsstring>
+        <name>getText</name>
+        <qualifiedname>RDE::UIText::getText</qualifiedname>
+        <briefdescription>
+<para>Gets the rendered text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const std::string&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="107" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_text_1ad1c81cc33c3efa77b5d0e68d6c33cb77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::UIText::setFontSize</definition>
+        <argsstring>(int _fontSize)</argsstring>
+        <name>setFontSize</name>
+        <qualifiedname>RDE::UIText::setFontSize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>_fontSize</declname>
+        </param>
+        <briefdescription>
+<para>Sets the font size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_fontSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the font. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="113" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_text_1a01d044a663798d1de9bc6bf94cf0b5bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RDE::UIText::getFontSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getFontSize</name>
+        <qualifiedname>RDE::UIText::getFontSize</qualifiedname>
+        <briefdescription>
+<para>Gets the font size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="119" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_text_1af826bc85cc57712c14d567cc5bc0a4c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::UIText::getSpacesBetweenChars</definition>
+        <argsstring>() const</argsstring>
+        <name>getSpacesBetweenChars</name>
+        <qualifiedname>RDE::UIText::getSpacesBetweenChars</qualifiedname>
+        <briefdescription>
+<para>Gets the space between characters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="125" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_text_1ad6e81dd46e05480a8a5be186f6220b7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::UIText::setSpacesBetweenChars</definition>
+        <argsstring>(float _spaceBetweenChars)</argsstring>
+        <name>setSpacesBetweenChars</name>
+        <qualifiedname>RDE::UIText::setSpacesBetweenChars</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_spaceBetweenChars</declname>
+        </param>
+        <briefdescription>
+<para>Sets the spaces between characters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_spaceBetweenChars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space between characters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="131" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_text_1ab43539e4f9caeb0bf7856a50db82267f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::UIText::getNewLineSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getNewLineSize</name>
+        <qualifiedname>RDE::UIText::getNewLineSize</qualifiedname>
+        <briefdescription>
+<para>Returns the size of the new line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="137" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>RDE::Font</label>
+        <link refid="class_r_d_e_1_1_font"/>
+      </node>
+      <node id="1">
+        <label>RDE::UIText</label>
+        <link refid="class_r_d_e_1_1_u_i_text"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>font</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>textSize</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RDE::Vec2&lt; float &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/graph/components/ui/UIText.h" line="23" column="5" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="23" bodyend="138"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_u_i_text_1a1795988626291672c974096b2c28e616" prot="protected" virt="non-virtual"><scope>RDE::UIText</scope><name>calculateLinesInfo</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1a9816083e25bae0b2f472e19382136687" prot="private" virt="non-virtual"><scope>RDE::UIText</scope><name>Canvas</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1a7e36666e4d79417121c5161c63d3b7f4" prot="protected" virt="non-virtual"><scope>RDE::UIText</scope><name>font</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1a4037c7d83e956ce8d0d78b5a5c743edf" prot="protected" virt="non-virtual"><scope>RDE::UIText</scope><name>fontSize</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1ad7e1bca55463b5aab8568c366448a61d" prot="public" virt="non-virtual"><scope>RDE::UIText</scope><name>getFont</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1a01d044a663798d1de9bc6bf94cf0b5bb" prot="public" virt="non-virtual"><scope>RDE::UIText</scope><name>getFontSize</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1ab43539e4f9caeb0bf7856a50db82267f" prot="public" virt="non-virtual"><scope>RDE::UIText</scope><name>getNewLineSize</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1af826bc85cc57712c14d567cc5bc0a4c0" prot="public" virt="non-virtual"><scope>RDE::UIText</scope><name>getSpacesBetweenChars</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1ad9cd50f553d53bc9c5ec02054746f414" prot="public" virt="non-virtual"><scope>RDE::UIText</scope><name>getText</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1afde1ca5e2c3a6557828a1af54e5a6f06" prot="public" virt="non-virtual"><scope>RDE::UIText</scope><name>getTextSize</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1a6432b0ec9ddd8b05610fd8c902509eda" prot="protected" virt="non-virtual"><scope>RDE::UIText</scope><name>innerText</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1a493b6ae1cfc44e9838cc8ae7d2e076b8" prot="protected" virt="non-virtual"><scope>RDE::UIText</scope><name>newLineSize</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1a05ca2241c83dd2b86becbe46ae4952b9" prot="public" virt="non-virtual"><scope>RDE::UIText</scope><name>setFont</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1ad1c81cc33c3efa77b5d0e68d6c33cb77" prot="public" virt="non-virtual"><scope>RDE::UIText</scope><name>setFontSize</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1ad6e81dd46e05480a8a5be186f6220b7f" prot="public" virt="non-virtual"><scope>RDE::UIText</scope><name>setSpacesBetweenChars</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1a762e860880c99e5622d243e285ff215a" prot="protected" virt="non-virtual"><scope>RDE::UIText</scope><name>spaceBetweenChars</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1a02bec38b1e4d1513fce17b4be643054d" prot="protected" virt="non-virtual"><scope>RDE::UIText</scope><name>textSize</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1a66cc3374f0713c668bc5be24739a062c" prot="private" virt="non-virtual"><scope>RDE::UIText</scope><name>UIButton</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1aae4eb1dc547f58a2f14226511f9e50b5" prot="private" virt="non-virtual"><scope>RDE::UIText</scope><name>UICheckbox</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1a81389057cb77df846a91f948b46251cb" prot="private" virt="non-virtual"><scope>RDE::UIText</scope><name>UIInput</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1a7f19065110a9df1da8fa9bdb8500e5f5" prot="public" virt="non-virtual"><scope>RDE::UIText</scope><name>UIText</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1afef7332659beb38b64c6b975ac6ac293" prot="public" virt="non-virtual"><scope>RDE::UIText</scope><name>UIText</name></member>
+      <member refid="class_r_d_e_1_1_u_i_text_1ac1eff660c4cc2f9ad1a763bff5f2c647" prot="public" virt="non-virtual"><scope>RDE::UIText</scope><name>~UIText</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

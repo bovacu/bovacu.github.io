@@ -1,0 +1,14 @@
+.. _exhale_function__functions_8h_1a191195a8534a593882dfaf3a74044763:
+
+Function RDE::Util::Easing::inQuadratic
+=======================================
+
+- Defined in :ref:`file_engine_include_core_util_Functions.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: RDE::Util::Easing::inQuadratic(float, float, float, float)
+   :project: My Project

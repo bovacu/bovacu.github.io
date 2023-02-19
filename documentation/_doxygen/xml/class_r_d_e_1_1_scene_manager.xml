@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_scene_manager" kind="class" language="C++" prot="public">
+    <compoundname>RDE::SceneManager</compoundname>
+    <includes refid="_scene_manager_8h" local="no">SceneManager.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_r_d_e_1_1_scene_manager_1aed8714396345e5fc5b1a2bf7ccaed500" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ConfigManager</definition>
+        <argsstring></argsstring>
+        <name>ConfigManager</name>
+        <qualifiedname>RDE::SceneManager::ConfigManager</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_config_manager" kindref="compound">ConfigManager</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/SceneManager.h" line="22" column="22" bodyfile="engine/include/core/systems/uiSystem/SceneManager.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_scene_manager_1a4cf989dd8ee7f91fb878f9b63bade4c9" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> * &gt;</type>
+        <definition>std::unordered_map&lt;std::string, Scene*&gt; RDE::SceneManager::scenes</definition>
+        <argsstring></argsstring>
+        <name>scenes</name>
+        <qualifiedname>RDE::SceneManager::scenes</qualifiedname>
+        <briefdescription>
+<para>Map SceneName -&gt; Scene*. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/SceneManager.h" line="28" column="32" bodyfile="engine/include/core/systems/uiSystem/SceneManager.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_scene_manager_1a60717be9d92c584ee2466c053cedba56" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+        <definition>Scene* RDE::SceneManager::sceneDisplayed</definition>
+        <argsstring></argsstring>
+        <name>sceneDisplayed</name>
+        <qualifiedname>RDE::SceneManager::sceneDisplayed</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Current displaying scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/SceneManager.h" line="33" column="19" bodyfile="engine/include/core/systems/uiSystem/SceneManager.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_scene_manager_1ab03239eb2f2cc16d8fb976bc8ccb0246" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref> *</type>
+        <definition>Engine* RDE::SceneManager::engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <qualifiedname>RDE::SceneManager::engine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/SceneManager.h" line="38" column="20" bodyfile="engine/include/core/systems/uiSystem/SceneManager.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_scene_manager_1a5b2a02d49f6d1dddb60de465cc675624" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+        <definition>Scene* RDE::SceneManager::defaultScene</definition>
+        <argsstring></argsstring>
+        <name>defaultScene</name>
+        <qualifiedname>RDE::SceneManager::defaultScene</qualifiedname>
+        <briefdescription>
+<para>This scene is used just in case end-user unloads the current scene without any other scene loaded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/SceneManager.h" line="44" column="19" bodyfile="engine/include/core/systems/uiSystem/SceneManager.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_scene_manager_1ad850cf0482381f61da7a91984992d638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::SceneManager::init</definition>
+        <argsstring>(Engine *_engine)</argsstring>
+        <name>init</name>
+        <qualifiedname>RDE::SceneManager::init</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref> *</type>
+          <declname>_engine</declname>
+        </param>
+        <briefdescription>
+<para>Initiates the system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This function should not be called by end users. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_engine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/SceneManager.h" line="52" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_scene_manager_1ad826d228ac3716f8e9ea36f874123263" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::SceneManager::loadScene</definition>
+        <argsstring>(Scene *_scene, const std::string &amp;_sceneName)</argsstring>
+        <name>loadScene</name>
+        <qualifiedname>RDE::SceneManager::loadScene</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_sceneName</declname>
+        </param>
+        <briefdescription>
+<para>Loads a scene in memory, but it not shows it yet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> to load </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_sceneName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/SceneManager.h" line="59" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_scene_manager_1afffb5b434d520b28e145737815c51ba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::SceneManager::displayScene</definition>
+        <argsstring>(const std::string &amp;_sceneName)</argsstring>
+        <name>displayScene</name>
+        <qualifiedname>RDE::SceneManager::displayScene</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_sceneName</declname>
+        </param>
+        <briefdescription>
+<para>Renders a scene that has been loaded previously. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sceneName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/SceneManager.h" line="65" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_scene_manager_1af2bc41d918a29b9c5c0b617207b5d674" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+        <definition>Scene * RDE::SceneManager::getScene</definition>
+        <argsstring>(const std::string &amp;_sceneName)</argsstring>
+        <name>getScene</name>
+        <qualifiedname>RDE::SceneManager::getScene</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_sceneName</declname>
+        </param>
+        <briefdescription>
+<para>Returns an specific scene by name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sceneName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Scene* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/SceneManager.h" line="72" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_scene_manager_1ac9ec20d58a4b1fdf48dd2ef26ed80087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+        <definition>Scene * RDE::SceneManager::getDisplayedScene</definition>
+        <argsstring>()</argsstring>
+        <name>getDisplayedScene</name>
+        <qualifiedname>RDE::SceneManager::getDisplayedScene</qualifiedname>
+        <briefdescription>
+<para>Returns the current displayed scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Scene* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/SceneManager.h" line="78" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_scene_manager_1a9204a414e16fda6d7116b0d930eb69ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::SceneManager::unloadScene</definition>
+        <argsstring>(const std::string &amp;_sceneName)</argsstring>
+        <name>unloadScene</name>
+        <qualifiedname>RDE::SceneManager::unloadScene</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_sceneName</declname>
+        </param>
+        <briefdescription>
+<para>Unloads from memory an specific scene. If the displayed scene is unloaded, a default one will be displayed until displayScene is called again on another loaded scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sceneName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/SceneManager.h" line="85" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_scene_manager_1a7e0cdcbf8f66fd7efc47efff6da76ef3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::SceneManager::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>RDE::SceneManager::destroy</qualifiedname>
+        <briefdescription>
+<para>Destroys the system and all the loaded scenes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This function should not be called by end users. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/SceneManager.h" line="91" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is in charge of loading and unloading scenes in memory and to decided when to render each one. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="attention"><para>All managers destroy all the resources before closing the application, it is not needed to be done by the end user. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="engine/include/core/systems/uiSystem/SceneManager.h" line="20" column="5" bodyfile="engine/include/core/systems/uiSystem/SceneManager.h" bodystart="20" bodyend="92"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_scene_manager_1aed8714396345e5fc5b1a2bf7ccaed500" prot="private" virt="non-virtual"><scope>RDE::SceneManager</scope><name>ConfigManager</name></member>
+      <member refid="class_r_d_e_1_1_scene_manager_1a5b2a02d49f6d1dddb60de465cc675624" prot="private" virt="non-virtual"><scope>RDE::SceneManager</scope><name>defaultScene</name></member>
+      <member refid="class_r_d_e_1_1_scene_manager_1a7e0cdcbf8f66fd7efc47efff6da76ef3" prot="public" virt="non-virtual"><scope>RDE::SceneManager</scope><name>destroy</name></member>
+      <member refid="class_r_d_e_1_1_scene_manager_1afffb5b434d520b28e145737815c51ba8" prot="public" virt="non-virtual"><scope>RDE::SceneManager</scope><name>displayScene</name></member>
+      <member refid="class_r_d_e_1_1_scene_manager_1ab03239eb2f2cc16d8fb976bc8ccb0246" prot="private" virt="non-virtual"><scope>RDE::SceneManager</scope><name>engine</name></member>
+      <member refid="class_r_d_e_1_1_scene_manager_1ac9ec20d58a4b1fdf48dd2ef26ed80087" prot="public" virt="non-virtual"><scope>RDE::SceneManager</scope><name>getDisplayedScene</name></member>
+      <member refid="class_r_d_e_1_1_scene_manager_1af2bc41d918a29b9c5c0b617207b5d674" prot="public" virt="non-virtual"><scope>RDE::SceneManager</scope><name>getScene</name></member>
+      <member refid="class_r_d_e_1_1_scene_manager_1ad850cf0482381f61da7a91984992d638" prot="public" virt="non-virtual"><scope>RDE::SceneManager</scope><name>init</name></member>
+      <member refid="class_r_d_e_1_1_scene_manager_1ad826d228ac3716f8e9ea36f874123263" prot="public" virt="non-virtual"><scope>RDE::SceneManager</scope><name>loadScene</name></member>
+      <member refid="class_r_d_e_1_1_scene_manager_1a60717be9d92c584ee2466c053cedba56" prot="private" virt="non-virtual"><scope>RDE::SceneManager</scope><name>sceneDisplayed</name></member>
+      <member refid="class_r_d_e_1_1_scene_manager_1a4cf989dd8ee7f91fb878f9b63bade4c9" prot="private" virt="non-virtual"><scope>RDE::SceneManager</scope><name>scenes</name></member>
+      <member refid="class_r_d_e_1_1_scene_manager_1a9204a414e16fda6d7116b0d930eb69ad" prot="public" virt="non-virtual"><scope>RDE::SceneManager</scope><name>unloadScene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

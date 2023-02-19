@@ -1,0 +1,1264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_file_manager" kind="class" language="C++" prot="public">
+    <compoundname>RDE::FileManager</compoundname>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1aa3e92a17f4feb1c1c5f89f3ff093f2b6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::checkFileMode</definition>
+        <argsstring>(FileHandler *_handler, const FileMode &amp;_expected)</argsstring>
+        <name>checkFileMode</name>
+        <qualifiedname>RDE::FileManager::checkFileMode</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespace_r_d_e_1a97f3c44a3f84f98854392a7eef21619c" kindref="member">FileMode</ref> &amp;</type>
+          <declname>_expected</declname>
+        </param>
+        <briefdescription>
+<para>Checks the file mode and if it doesn&apos;t match, it changes it to the expected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_expected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expected file mode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="108" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a48c0d38805185621821aeec4e85698b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+        <definition>FileHandler * RDE::FileManager::open</definition>
+        <argsstring>(const std::string &amp;_filePath, const FileMode &amp;_fileMode, bool _silentNotFound=false)</argsstring>
+        <name>open</name>
+        <qualifiedname>RDE::FileManager::open</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_filePath</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespace_r_d_e_1a97f3c44a3f84f98854392a7eef21619c" kindref="member">FileMode</ref> &amp;</type>
+          <declname>_fileMode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_silentNotFound</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Opens a file, it must exist. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_fileMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_silentNotFound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Don&apos;t shout if there is an error </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FileHandler* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="119" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a2e431e82911ba35794087892f0051ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::close</definition>
+        <argsstring>(FileHandler *_file)</argsstring>
+        <name>close</name>
+        <qualifiedname>RDE::FileManager::close</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_file</declname>
+        </param>
+        <briefdescription>
+<para>Closes a file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="125" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a740c01a5be33ecd83ba5d0c4cee0139a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_file" kindref="compound">FileStr</ref></type>
+        <definition>FileStr RDE::FileManager::readFullFile</definition>
+        <argsstring>(FileHandler *_handler)</argsstring>
+        <name>readFullFile</name>
+        <qualifiedname>RDE::FileManager::readFullFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <briefdescription>
+<para>Reads the full file into a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FileStr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="132" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1ac46daed54d52905f3f46357f75b760f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_file" kindref="compound">FileLines</ref></type>
+        <definition>FileLines RDE::FileManager::readAllLinesFile</definition>
+        <argsstring>(FileHandler *_handler)</argsstring>
+        <name>readAllLinesFile</name>
+        <qualifiedname>RDE::FileManager::readAllLinesFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <briefdescription>
+<para>Reads the full file into separated lines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FileLines </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="139" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a7b22964d836f3fd08b5d9fcc6a3a123f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_file" kindref="compound">FileStr</ref></type>
+        <definition>FileStr RDE::FileManager::readChunkFile</definition>
+        <argsstring>(FileHandler *_handler, int _initByte, int _endByte)</argsstring>
+        <name>readChunkFile</name>
+        <qualifiedname>RDE::FileManager::readChunkFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_initByte</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_endByte</declname>
+        </param>
+        <briefdescription>
+<para>Reads a chunk of a file from init point to end point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_initByte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Init point to read. 1 -&gt; 1 char, 2 -&gt; 2 chars ... </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_endByte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End point to read 1 -&gt; 1 char, 2 -&gt; 2 chars ... </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FileStr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="148" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a2ff41d46a536277af0800e971cac4670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_file" kindref="compound">FileStr</ref></type>
+        <definition>FileStr RDE::FileManager::readLineInFile</definition>
+        <argsstring>(FileHandler *_handler, int _line)</argsstring>
+        <name>readLineInFile</name>
+        <qualifiedname>RDE::FileManager::readLineInFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_line</declname>
+        </param>
+        <briefdescription>
+<para>Reads a line in the file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line to read </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FileStr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="156" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a1498ef71c02f20586415fc8dda0154e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_file" kindref="compound">FileLines</ref></type>
+        <definition>FileLines RDE::FileManager::readLinesInFile</definition>
+        <argsstring>(FileHandler *_handler, std::vector&lt; int &gt; &amp;_lines)</argsstring>
+        <name>readLinesInFile</name>
+        <qualifiedname>RDE::FileManager::readLinesInFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>_lines</declname>
+        </param>
+        <briefdescription>
+<para>Reads a list of lines in the file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_lines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of lines to read </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FileLines </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="164" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1acdf9bb324fa958f71f7f7e9588f58f61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::writeChunkToFile</definition>
+        <argsstring>(FileHandler *_handler, const char *_content, size_t _size)</argsstring>
+        <name>writeChunkToFile</name>
+        <qualifiedname>RDE::FileManager::writeChunkToFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>_content</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_size</declname>
+        </param>
+        <briefdescription>
+<para>Writes some text to the file and replaces its previous content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="172" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1afa66f52a4cc78faaa52d0813b0156f76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::writeChunkToFile</definition>
+        <argsstring>(FileHandler *_handler, const std::string &amp;_content)</argsstring>
+        <name>writeChunkToFile</name>
+        <qualifiedname>RDE::FileManager::writeChunkToFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_content</declname>
+        </param>
+        <briefdescription>
+<para>Writes some text to the file and replaces its previous content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="179" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a62ca57f5ac38a3db763a56edbe6b341e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::appendChunkToFile</definition>
+        <argsstring>(FileHandler *_handler, const char *_content, size_t _size, int _where)</argsstring>
+        <name>appendChunkToFile</name>
+        <qualifiedname>RDE::FileManager::appendChunkToFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>_content</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_where</declname>
+        </param>
+        <briefdescription>
+<para>Writes some text to the file on an specific point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the text </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_where</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point in the file. 1 -&gt; after character 1, 15 -&gt; after character 15 ... </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="188" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a2d162feaef7c1998f4484543ad2f3487" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::appendChunkToFile</definition>
+        <argsstring>(FileHandler *_handler, const std::string &amp;_content, int _where)</argsstring>
+        <name>appendChunkToFile</name>
+        <qualifiedname>RDE::FileManager::appendChunkToFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_content</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_where</declname>
+        </param>
+        <briefdescription>
+<para>Writes some text to the file on an specific point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_where</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point in the file. 1 -&gt; after character 1, 15 -&gt; after character 15 ... </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="196" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a5b283878bb61de54c8fbe37c8f68ce75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::appendChunkToFileAtEnd</definition>
+        <argsstring>(FileHandler *_handler, const char *_content, size_t _size)</argsstring>
+        <name>appendChunkToFileAtEnd</name>
+        <qualifiedname>RDE::FileManager::appendChunkToFileAtEnd</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>_content</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_size</declname>
+        </param>
+        <briefdescription>
+<para>Writes some text at the end of the current file content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="204" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a4da2a9003534a12a5469ff2e7ae3fbd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::appendChunkToFileAtEnd</definition>
+        <argsstring>(FileHandler *_handler, const std::string &amp;_content)</argsstring>
+        <name>appendChunkToFileAtEnd</name>
+        <qualifiedname>RDE::FileManager::appendChunkToFileAtEnd</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_content</declname>
+        </param>
+        <briefdescription>
+<para>Writes some text at the end of the current file content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="211" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a2ee5474d6debc3544f97ba219aa450ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::appendChunkInLineToFile</definition>
+        <argsstring>(FileHandler *_handler, const char *_content, size_t _size, int _line)</argsstring>
+        <name>appendChunkInLineToFile</name>
+        <qualifiedname>RDE::FileManager::appendChunkInLineToFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>_content</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_line</declname>
+        </param>
+        <briefdescription>
+<para>Writes some text in an specific line of the file. The previous content of the line is moved to the next line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the text </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line to write the text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="221" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a36bf7e8a64b146895f439c61326727c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::appendChunkInLineToFile</definition>
+        <argsstring>(FileHandler *_handler, const std::string &amp;_content, int _line)</argsstring>
+        <name>appendChunkInLineToFile</name>
+        <qualifiedname>RDE::FileManager::appendChunkInLineToFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_content</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_line</declname>
+        </param>
+        <briefdescription>
+<para>Writes some text in an specific line of the file. The previous content of the line is moved to the next line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line to write the text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="230" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a4e7bed9ddb625b19ecfb2e6c34c95c69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::appendChunkAtEndOfLine</definition>
+        <argsstring>(FileHandler *_handler, const char *_content, size_t _size, int _line)</argsstring>
+        <name>appendChunkAtEndOfLine</name>
+        <qualifiedname>RDE::FileManager::appendChunkAtEndOfLine</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>_content</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_line</declname>
+        </param>
+        <briefdescription>
+<para>Writes some text at the end of an specific line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the text </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line to write the text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="239" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1ad92418c589d47733c36b1ccf24dc643a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::appendChunkAtEndOfLine</definition>
+        <argsstring>(FileHandler *_handler, const std::string &amp;_content, int _line)</argsstring>
+        <name>appendChunkAtEndOfLine</name>
+        <qualifiedname>RDE::FileManager::appendChunkAtEndOfLine</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_content</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_line</declname>
+        </param>
+        <briefdescription>
+<para>Writes some text at the end of an specific line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line to write the text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="247" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a0a7baa4cf1b638d4b9a5c6df5945ebb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::replaceChunkInFile</definition>
+        <argsstring>(FileHandler *_handler, const std::string &amp;_old, const std::string &amp;_new)</argsstring>
+        <name>replaceChunkInFile</name>
+        <qualifiedname>RDE::FileManager::replaceChunkInFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_old</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_new</declname>
+        </param>
+        <briefdescription>
+<para>Replaces all of the _old occurrences with the _new text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_old</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text to be replaced </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_new</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Replacing text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="255" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a4b849b64685ab0ae47f7027f08410ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::clearFile</definition>
+        <argsstring>(FileHandler *_handler)</argsstring>
+        <name>clearFile</name>
+        <qualifiedname>RDE::FileManager::clearFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <briefdescription>
+<para>Empties the file content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="261" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a750f8de6256c4d96bae3c003fcfa5502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::removeFile</definition>
+        <argsstring>(std::string &amp;_filePath)</argsstring>
+        <name>removeFile</name>
+        <qualifiedname>RDE::FileManager::removeFile</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>_filePath</declname>
+        </param>
+        <briefdescription>
+<para>Deletes the file from the file system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the file to delete </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="267" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1aefa629365f8ea325b93e4aeceade185d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::removeChunkLineInFile</definition>
+        <argsstring>(FileHandler *_handler, int _line)</argsstring>
+        <name>removeChunkLineInFile</name>
+        <qualifiedname>RDE::FileManager::removeChunkLineInFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_line</declname>
+        </param>
+        <briefdescription>
+<para>Removes a line from the file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="274" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1ae11b6c38414cf8b61e897ebc85cd0b8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::removeChunkLinesInFile</definition>
+        <argsstring>(FileHandler *_handler, std::vector&lt; int &gt; &amp;_lines)</argsstring>
+        <name>removeChunkLinesInFile</name>
+        <qualifiedname>RDE::FileManager::removeChunkLinesInFile</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>_lines</declname>
+        </param>
+        <briefdescription>
+<para>Removes a list of lines from the file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_lines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of lines to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="281" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a2b4100f778cdc239a0c0635d49f1285b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::removeChunk</definition>
+        <argsstring>(FileHandler *_handler, int _initByte, int _endByte)</argsstring>
+        <name>removeChunk</name>
+        <qualifiedname>RDE::FileManager::removeChunk</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+          <declname>_handler</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_initByte</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_endByte</declname>
+        </param>
+        <briefdescription>
+<para>Removes an amount of text from the file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_file" kindref="compound">File</ref> handler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_initByte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Init point to read. 1 -&gt; 1 char, 2 -&gt; 2 chars ... </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_endByte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End point to read 1 -&gt; 1 char, 2 -&gt; 2 chars ... </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="289" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1abab6d77347bec7dfb55ca79ff43241cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_file_handler" kindref="compound">FileHandler</ref> *</type>
+        <definition>FileHandler * RDE::FileManager::createFile</definition>
+        <argsstring>(const std::string &amp;_filePath)</argsstring>
+        <name>createFile</name>
+        <qualifiedname>RDE::FileManager::createFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_filePath</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new file in the file system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the new file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FileHandler* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="296" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a5f9e7d731bdc86fab646d1b1c892e45a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FileManager::moveOrRenameFile</definition>
+        <argsstring>(const std::string &amp;_filePath, const std::string &amp;_newName)</argsstring>
+        <name>moveOrRenameFile</name>
+        <qualifiedname>RDE::FileManager::moveOrRenameFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_filePath</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_newName</declname>
+        </param>
+        <briefdescription>
+<para>Renames or moves a file in the file system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_newName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New name or path for the file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="303" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_file_manager_1a8b903eff07972502ef02caf3014c136a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RDE::FileManager::fileExists</definition>
+        <argsstring>(const std::string &amp;_pathToFile)</argsstring>
+        <name>fileExists</name>
+        <qualifiedname>RDE::FileManager::fileExists</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_pathToFile</declname>
+        </param>
+        <briefdescription>
+<para>Returns if the file exists or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_pathToFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="310" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/fileSystem/FileManager.h" line="101" column="5" bodyfile="engine/include/core/systems/fileSystem/FileManager.h" bodystart="101" bodyend="311"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_file_manager_1a4e7bed9ddb625b19ecfb2e6c34c95c69" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>appendChunkAtEndOfLine</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1ad92418c589d47733c36b1ccf24dc643a" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>appendChunkAtEndOfLine</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a2ee5474d6debc3544f97ba219aa450ec" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>appendChunkInLineToFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a36bf7e8a64b146895f439c61326727c7" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>appendChunkInLineToFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a62ca57f5ac38a3db763a56edbe6b341e" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>appendChunkToFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a2d162feaef7c1998f4484543ad2f3487" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>appendChunkToFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a5b283878bb61de54c8fbe37c8f68ce75" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>appendChunkToFileAtEnd</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a4da2a9003534a12a5469ff2e7ae3fbd1" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>appendChunkToFileAtEnd</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1aa3e92a17f4feb1c1c5f89f3ff093f2b6" prot="private" virt="non-virtual"><scope>RDE::FileManager</scope><name>checkFileMode</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a4b849b64685ab0ae47f7027f08410ede" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>clearFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a2e431e82911ba35794087892f0051ce7" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>close</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1abab6d77347bec7dfb55ca79ff43241cf" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>createFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a8b903eff07972502ef02caf3014c136a" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>fileExists</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a5f9e7d731bdc86fab646d1b1c892e45a" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>moveOrRenameFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a48c0d38805185621821aeec4e85698b3" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>open</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1ac46daed54d52905f3f46357f75b760f8" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>readAllLinesFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a7b22964d836f3fd08b5d9fcc6a3a123f" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>readChunkFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a740c01a5be33ecd83ba5d0c4cee0139a" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>readFullFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a2ff41d46a536277af0800e971cac4670" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>readLineInFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a1498ef71c02f20586415fc8dda0154e4" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>readLinesInFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a2b4100f778cdc239a0c0635d49f1285b" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>removeChunk</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1aefa629365f8ea325b93e4aeceade185d" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>removeChunkLineInFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1ae11b6c38414cf8b61e897ebc85cd0b8a" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>removeChunkLinesInFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a750f8de6256c4d96bae3c003fcfa5502" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>removeFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1a0a7baa4cf1b638d4b9a5c6df5945ebb6" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>replaceChunkInFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1acdf9bb324fa958f71f7f7e9588f58f61" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>writeChunkToFile</name></member>
+      <member refid="class_r_d_e_1_1_file_manager_1afa66f52a4cc78faaa52d0813b0156f76" prot="public" virt="non-virtual"><scope>RDE::FileManager</scope><name>writeChunkToFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

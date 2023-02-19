@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_transition_params" kind="class" language="C++" prot="public">
+    <compoundname>RDE::TransitionParams</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_transition_params_1a25e68963ed9012844f163afcb9bae9d9" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* RDE::TransitionParams::whatEver</definition>
+        <argsstring></argsstring>
+        <name>whatEver</name>
+        <qualifiedname>RDE::TransitionParams::whatEver</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="33" column="18" bodyfile="engine/include/core/systems/animationSystem/AnimationSystem.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_transition_params_1acbc435eb775ca59f83842fb60042e509" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void RDE::TransitionParams::setValue</definition>
+        <argsstring>(T &amp;_value)</argsstring>
+        <name>setValue</name>
+        <qualifiedname>RDE::TransitionParams::setValue</qualifiedname>
+        <param>
+          <type>T &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="37" column="18" bodyfile="engine/include/core/systems/animationSystem/AnimationSystem.h" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transition_params_1aabfd99f88c70563c8ac09a42600e1917" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T &amp; RDE::TransitionParams::getValue</definition>
+        <argsstring>()</argsstring>
+        <name>getValue</name>
+        <qualifiedname>RDE::TransitionParams::getValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="42" column="15" bodyfile="engine/include/core/systems/animationSystem/AnimationSystem.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="30" column="5" bodyfile="engine/include/core/systems/animationSystem/AnimationSystem.h" bodystart="30" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_transition_params_1aabfd99f88c70563c8ac09a42600e1917" prot="public" virt="non-virtual"><scope>RDE::TransitionParams</scope><name>getValue</name></member>
+      <member refid="class_r_d_e_1_1_transition_params_1acbc435eb775ca59f83842fb60042e509" prot="public" virt="non-virtual"><scope>RDE::TransitionParams</scope><name>setValue</name></member>
+      <member refid="class_r_d_e_1_1_transition_params_1a25e68963ed9012844f163afcb9bae9d9" prot="private" virt="non-virtual"><scope>RDE::TransitionParams</scope><name>whatEver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

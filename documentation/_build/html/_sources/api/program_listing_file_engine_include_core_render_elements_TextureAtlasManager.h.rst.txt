@@ -1,0 +1,106 @@
+
+.. _program_listing_file_engine_include_core_render_elements_TextureAtlasManager.h:
+
+Program Listing for File TextureAtlasManager.h
+==============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_render_elements_TextureAtlasManager.h>` (``engine/include/core/render/elements/TextureAtlasManager.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // Created by borja on 6/1/22.
+   
+   
+   #ifndef RDE_TEXTURE_ATLAS_H
+   #define RDE_TEXTURE_ATLAS_H
+   
+   
+   #include "nlohmann/json.hpp"
+   #include "core/util/Util.h"
+   
+   #ifdef USE_ZLIB
+   #include <zlib.h>
+   #endif
+   
+   #include "Texture.h"
+   #include "core/systems/fileSystem/FileManager.h"
+   
+   namespace RDE {
+   
+       struct Atlas {
+           Texture* texture;
+   
+           std::string name;
+   
+           std::unordered_map<std::string, Texture*> subTextures;
+   
+           uint textureWidth = 0;
+   
+           uint textureHeight = 0;
+   
+           Atlas() {
+               texture = new Texture;
+           }
+   
+           ~Atlas() {
+               for(auto& _texture : subTextures)
+                   delete _texture.second;
+   
+               delete texture;
+           }
+   
+           void debugInfo() {
+               Util::Log::info("Atlas: ", name);
+               Util::Log::info("   - Texture: ", &texture);
+               Util::Log::info("   - subTextures size: ", subTextures.size());
+               Util::Log::info("   - textureWidth: ", textureWidth);
+               Util::Log::info("   - textureHeight: ", textureHeight);
+           }
+       };
+   
+       struct TextureInfo {
+           float kb;
+   
+           uint numberOfTiles;
+   
+           uint textureWidth;
+   
+           uint textureHeight;
+   
+           const char* name;
+       };
+   
+       class TextureAtlasManager {
+           private:
+               std::unordered_map<std::string, Atlas*> atlases;
+               FileManager* fileManager = nullptr;
+   
+           public:
+               void init(FileManager* _fileManager);
+   
+               bool loadSpriteSheet(const std::string& _spriteSheetPath);
+   
+               Texture* getSubTexture(const std::string& _atlasName, const std::string& _textureName);
+   
+               Atlas* getAtlas(const std::string& _atlasName);
+   
+               void unloadAtlas(const std::string& _atlasName);
+   
+               std::vector<TextureInfo> getTexturesInfo();
+   
+               void destroy();
+   
+               TextureAtlasManager() {};
+   
+           private:
+               void cropTextures(Atlas& _atlas, const nlohmann::json& _spritesNode);
+   
+               void cropNinePatchSubTextures(Texture* _texture, const nlohmann::json& _spriteNode);
+       };
+   
+   }
+   
+   
+   #endif //RDE_TEXTURE_ATLAS_H

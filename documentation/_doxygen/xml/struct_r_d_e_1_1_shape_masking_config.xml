@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_shape_masking_config" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::ShapeMaskingConfig</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_shape_masking_config_1aa30b3ad1ffa616d563d123d365bbd107" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint RDE::ShapeMaskingConfig::group</definition>
+        <argsstring></argsstring>
+        <name>group</name>
+        <qualifiedname>RDE::ShapeMaskingConfig::group</qualifiedname>
+        <initializer>= CP_NO_GROUP</initializer>
+        <briefdescription>
+<para>A value shared across different shapes. All shapes under the same group won&apos;t collide. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="34" column="14" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_shape_masking_config_1a45ce353f30fd5e471d4fb95fbed9b657" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint RDE::ShapeMaskingConfig::mask</definition>
+        <argsstring></argsstring>
+        <name>mask</name>
+        <qualifiedname>RDE::ShapeMaskingConfig::mask</qualifiedname>
+        <initializer>= CP_ALL_CATEGORIES</initializer>
+        <briefdescription>
+<para>Those are the categories that the shape belongs to. Must be a 2^n. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="39" column="14" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_shape_masking_config_1a1f4279b670fb88dc0634b88ec504c1f1" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint RDE::ShapeMaskingConfig::toCollideWith</definition>
+        <argsstring></argsstring>
+        <name>toCollideWith</name>
+        <qualifiedname>RDE::ShapeMaskingConfig::toCollideWith</qualifiedname>
+        <initializer>= CP_ALL_CATEGORIES</initializer>
+        <briefdescription>
+<para>Those are the categories the shape will collide with .Must be a 2^n. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="44" column="14" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="29" column="5" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="29" bodyend="45"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_shape_masking_config_1aa30b3ad1ffa616d563d123d365bbd107" prot="public" virt="non-virtual"><scope>RDE::ShapeMaskingConfig</scope><name>group</name></member>
+      <member refid="struct_r_d_e_1_1_shape_masking_config_1a45ce353f30fd5e471d4fb95fbed9b657" prot="public" virt="non-virtual"><scope>RDE::ShapeMaskingConfig</scope><name>mask</name></member>
+      <member refid="struct_r_d_e_1_1_shape_masking_config_1a1f4279b670fb88dc0634b88ec504c1f1" prot="public" virt="non-virtual"><scope>RDE::ShapeMaskingConfig</scope><name>toCollideWith</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

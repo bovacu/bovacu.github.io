@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_controller_input_8h" kind="file" language="C++">
+    <compoundname>ControllerInput.h</compoundname>
+    <includes refid="_util_8h" local="yes">core/util/Util.h</includes>
+    <includes refid="_controller_buttons_8h" local="yes">core/systems/inputSystem/keysAndButtons/ControllerButtons.h</includes>
+    <includes refid="_input_8h" local="yes">Input.h</includes>
+    <includedby refid="_manager_8h" local="yes">engine/include/core/Manager.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>core/Core.h</label>
+        <link refid="_core_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>core/platform/PlatformHeaderSDL.h</label>
+        <link refid="_platform_header_s_d_l_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>core/platform/PlatformHeaderSDLImage.h</label>
+        <link refid="_platform_header_s_d_l_image_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>core/render/window/Window.h</label>
+        <link refid="_window_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>core/systems/eventSystem/Event.h</label>
+        <link refid="_event_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/systems/inputSystem/input/ControllerInput.h</label>
+        <link refid="_controller_input_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Input.h</label>
+        <link refid="_input_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>core/systems/inputSystem/keysAndButtons/ControllerButtons.h</label>
+        <link refid="_controller_buttons_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>core/systems/inputSystem/keysAndButtons/KeyboardKeys.h</label>
+        <link refid="_keyboard_keys_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>core/systems/inputSystem/keysAndButtons/MouseKeys.h</label>
+        <link refid="_mouse_keys_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Clock.h</label>
+        <link refid="_clock_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Color.h</label>
+        <link refid="_color_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Delegate.h</label>
+        <link refid="_delegate_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Delta.h</label>
+        <link refid="_delta_8h_source"/>
+      </node>
+      <node id="20">
+        <label>Functions.h</label>
+        <link refid="_functions_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Random.h</label>
+        <link refid="_random_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Rect.h</label>
+        <link refid="_rect_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>core/util/Util.h</label>
+        <link refid="_util_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Vec.h</label>
+        <link refid="_vec_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>SDL.h</label>
+      </node>
+      <node id="24">
+        <label>SDL2/SDL_image.h</label>
+      </node>
+      <node id="27">
+        <label>algorithm</label>
+      </node>
+      <node id="26">
+        <label>chrono</label>
+      </node>
+      <node id="7">
+        <label>cmath</label>
+      </node>
+      <node id="12">
+        <label>cstdint</label>
+      </node>
+      <node id="17">
+        <label>exception</label>
+      </node>
+      <node id="18">
+        <label>functional</label>
+      </node>
+      <node id="8">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="30">
+        <label>map</label>
+      </node>
+      <node id="29">
+        <label>memory</label>
+      </node>
+      <node id="6">
+        <label>ostream</label>
+      </node>
+      <node id="15">
+        <label>random</label>
+      </node>
+      <node id="25">
+        <label>sstream</label>
+      </node>
+      <node id="37">
+        <label>string</label>
+      </node>
+      <node id="19">
+        <label>unordered_map</label>
+      </node>
+      <node id="28">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>engine/include/RDE.h</label>
+        <link refid="_r_d_e_8h_source"/>
+      </node>
+      <node id="5">
+        <label>engine/include/RDEEntry.h</label>
+        <link refid="_r_d_e_entry_8h_source"/>
+      </node>
+      <node id="3">
+        <label>engine/include/core/Engine.h</label>
+        <link refid="_engine_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>engine/include/core/Manager.h</label>
+        <link refid="_manager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/systems/inputSystem/input/ControllerInput.h</label>
+        <link refid="_controller_input_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_r_d_e_1_1_vibration_config" prot="public">RDE::VibrationConfig</innerclass>
+    <innerclass refid="struct_r_d_e_1_1_effect___controllers" prot="public">RDE::Effect_Controllers</innerclass>
+    <innerclass refid="class_r_d_e_1_1_controller_vibration_manager" prot="public">RDE::ControllerVibrationManager</innerclass>
+    <innerclass refid="struct_r_d_e_1_1_controller" prot="public">RDE::Controller</innerclass>
+    <innerclass refid="class_r_d_e_1_1_controller_input" prot="public">RDE::ControllerInput</innerclass>
+    <innernamespace refid="namespace_r_d_e">RDE</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Created<sp/>by<sp/>borja<sp/>on<sp/>6/2/22.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RDE_CONTROLLER_INPUT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDE_CONTROLLER_INPUT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/util/Util.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/systems/inputSystem/keysAndButtons/ControllerButtons.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Input.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_d_e" kindref="compound">RDE</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="struct_r_d_e_1_1_vibration_config" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_r_d_e_1_1_vibration_config" kindref="compound">VibrationConfig</ref><sp/>{</highlight></codeline>
+<codeline lineno="21" refid="struct_r_d_e_1_1_vibration_config_1a7e23870a1cfbcaaa488902fa6d037b1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vibration_config_1a7e23870a1cfbcaaa488902fa6d037b1d" kindref="member">durationInSeconds</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="struct_r_d_e_1_1_vibration_config_1a31a241647e178dfc5e8a7d807da863d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vibration_config_1a31a241647e178dfc5e8a7d807da863d7" kindref="member">delayToGetToMaxForce</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="struct_r_d_e_1_1_vibration_config_1a80e0b983e562fcd6b208d55321cce183" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vibration_config_1a80e0b983e562fcd6b208d55321cce183" kindref="member">delayToGetToMinForce</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="struct_r_d_e_1_1_vibration_config_1aa368cf80ef2e448873f72927c9440305" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vibration_config_1aa368cf80ef2e448873f72927c9440305" kindref="member">force</ref>;<sp/></highlight><highlight class="comment">//<sp/>0-32767</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="struct_r_d_e_1_1_vibration_config_1a6ce74a962498839d66e9ce5b0df0e108" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vibration_config_1a6ce74a962498839d66e9ce5b0df0e108" kindref="member">period</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="struct_r_d_e_1_1_effect___controllers" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_r_d_e_1_1_effect___controllers" kindref="compound">Effect_Controllers</ref><sp/>{</highlight></codeline>
+<codeline lineno="51" refid="struct_r_d_e_1_1_effect___controllers_1a2c814d6997fbe5a61ff3d99bde12fa5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_HapticEffect<sp/><ref refid="struct_r_d_e_1_1_effect___controllers_1a2c814d6997fbe5a61ff3d99bde12fa5a" kindref="member">vibrationEffect</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="struct_r_d_e_1_1_effect___controllers_1a2f319f750f7ba5905a7041a8990b1e50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_effect___controllers_1a2f319f750f7ba5905a7041a8990b1e50" kindref="member">vibrationEffectID</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="struct_r_d_e_1_1_effect___controllers_1a8dea5a2cb5a1a3d9124c3883c944dc94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="struct_r_d_e_1_1_effect___controllers_1a8dea5a2cb5a1a3d9124c3883c944dc94" kindref="member">controllerIDs</ref><sp/>=<sp/>{<sp/><sp/>};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ControllerInput;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Controller;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="class_r_d_e_1_1_controller_vibration_manager" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_controller_vibration_manager" kindref="compound">ControllerVibrationManager</ref><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_controller_input" kindref="compound">ControllerInput</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;std::string,<sp/>Effect_Controllers&gt;<sp/>effects;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;int,<sp/>Controller*&gt;*<sp/>controllers<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init(std::unordered_map&lt;int,<sp/>Controller*&gt;*<sp/>_controllers);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>destroy();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_controller_vibration_manager" kindref="compound">ControllerVibrationManager</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="class_r_d_e_1_1_controller_vibration_manager_1ad4578841fa682410ff81e2e08373b8cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_vibration_manager_1ad4578841fa682410ff81e2e08373b8cd" kindref="member">assignVibrationEffectToController</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>_effectName,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_r_d_e_1_1_controller_vibration_manager_1a85952afbb07e88d5fb7cfa67a476ef55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_vibration_manager_1a85952afbb07e88d5fb7cfa67a476ef55" kindref="member">addVibrationEffect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>_effectName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vibration_config" kindref="compound">VibrationConfig</ref>&amp;<sp/>_config);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="class_r_d_e_1_1_controller_vibration_manager_1ac352966d3fe7dc2935e892aa3ed25b5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_vibration_manager_1ac352966d3fe7dc2935e892aa3ed25b5d" kindref="member">removeVibrationEffect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>_effectName);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="struct_r_d_e_1_1_controller" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_r_d_e_1_1_controller" kindref="compound">Controller</ref><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_controller" kindref="compound">Controller</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="struct_r_d_e_1_1_controller_1a61f1cfad9208d4d0c074e651c0990986" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_controller_1a61f1cfad9208d4d0c074e651c0990986" kindref="member">ID</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="struct_r_d_e_1_1_controller_1a33dcb25e7d232b4161dcbf8a9166c5a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;ControllerButtons,<sp/>int&gt;<sp/><sp/><ref refid="struct_r_d_e_1_1_controller_1a33dcb25e7d232b4161dcbf8a9166c5a4" kindref="member">pressedGamepadButtons</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="struct_r_d_e_1_1_controller_1a080ea24f77b25c5b2d3d99a477ccff8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;ControllerAxis,<sp/>int&gt;<sp/><sp/><ref refid="struct_r_d_e_1_1_controller_1a080ea24f77b25c5b2d3d99a477ccff8d" kindref="member">pressedGamepadAxis</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="struct_r_d_e_1_1_controller_1a94bbb8bb69b21656dce7d860215ea477" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/><ref refid="struct_r_d_e_1_1_controller_1a94bbb8bb69b21656dce7d860215ea477" kindref="member">leftJoystickValue</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="struct_r_d_e_1_1_controller_1a63e57361cb00edea7742f92b54dac279" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/><ref refid="struct_r_d_e_1_1_controller_1a63e57361cb00edea7742f92b54dac279" kindref="member">rightJoystickValue</ref>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="struct_r_d_e_1_1_controller_1a34b0ccb4ea36f8e5b54ecddaced902a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/><ref refid="struct_r_d_e_1_1_controller_1a34b0ccb4ea36f8e5b54ecddaced902a7" kindref="member">backButtonsValue</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="struct_r_d_e_1_1_controller_1a68aa8b4215e0bef970f0fcd11fd68875" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_GameController*<sp/><ref refid="struct_r_d_e_1_1_controller_1a68aa8b4215e0bef970f0fcd11fd68875" kindref="member">sdlGameController</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="struct_r_d_e_1_1_controller_1a9b28b250a619d1b1753e2e359fa0c1cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_Haptic*<sp/><ref refid="struct_r_d_e_1_1_controller_1a9b28b250a619d1b1753e2e359fa0c1cb" kindref="member">vibration</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="class_r_d_e_1_1_controller_input" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_controller_input" kindref="compound">ControllerInput</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input" kindref="compound">Input</ref><sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;int,<sp/>Controller*&gt;<sp/>controllers;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>controllerCounter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="186" refid="class_r_d_e_1_1_controller_input_1ac5d2ee33e5658b6982cba76434867592" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_input_1ac5d2ee33e5658b6982cba76434867592" kindref="member">init</ref>(<ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref>*<sp/>_engine,<sp/><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref>*<sp/>_window);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="class_r_d_e_1_1_controller_input_1abb9b3db12e8dcef12c8caf7e1bc04e80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_input_1abb9b3db12e8dcef12c8caf7e1bc04e80" kindref="member">getButtonState</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_keyOrButton,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="class_r_d_e_1_1_controller_input_1a1a512ef31b2aace191abc251f97ba712" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_input_1a1a512ef31b2aace191abc251f97ba712" kindref="member">setButtonState</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_keyOrButton,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_state,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="class_r_d_e_1_1_controller_input_1a7e13941ac40e7e533deb811ebcac378b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_input_1a7e13941ac40e7e533deb811ebcac378b" kindref="member">getAxisState</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_keyOrButton,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="class_r_d_e_1_1_controller_input_1ad5d1fcab1bf8339d286c8a915ee2f5fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_input_1ad5d1fcab1bf8339d286c8a915ee2f5fb" kindref="member">setAxisState</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_keyOrButton,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_state,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="class_r_d_e_1_1_controller_input_1a865f5ad88bffbbd03381cf9d548427e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_input_1a865f5ad88bffbbd03381cf9d548427e2" kindref="member">vibrate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>_vibrateEffect,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="class_r_d_e_1_1_controller_input_1ad3da3dd9479d2328b1ac61b4540ed81a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_input_1ad3da3dd9479d2328b1ac61b4540ed81a" kindref="member">initControllers</ref>();</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="class_r_d_e_1_1_controller_input_1aaf24779f10db0b58f51a1229b97191b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/><ref refid="class_r_d_e_1_1_controller_input_1aaf24779f10db0b58f51a1229b97191b4" kindref="member">getAxisValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ControllerAxis&amp;<sp/>_axis,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="class_r_d_e_1_1_controller_input_1a0b25a71cdfc756b5bd8768cb818dfed6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_input_1a0b25a71cdfc756b5bd8768cb818dfed6" kindref="member">reassignController</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_as);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="class_r_d_e_1_1_controller_input_1a1281901d5bf51b04ece2113675ebe4e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_input_1a1281901d5bf51b04ece2113675ebe4e4" kindref="member">hasController</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_id);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260" refid="class_r_d_e_1_1_controller_input_1af6cd98383ba494cbadc5c2c1780c7c94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_input_1af6cd98383ba494cbadc5c2c1780c7c94" kindref="member">playerIndexToInnerControllerID</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_playerIndex);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="class_r_d_e_1_1_controller_input_1a70916354852a2ba6561bd53e89d6f4a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_input_1a70916354852a2ba6561bd53e89d6f4a7" kindref="member">destroy</ref>();</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onControllerMoved(SDL_Event&amp;<sp/>_event);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onControllerButtonDown(SDL_Event&amp;<sp/>_event);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onControllerButtonUp(SDL_Event&amp;<sp/>_event);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onControllerConnected(SDL_Event&amp;<sp/>_event);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onControllerDisconnected(SDL_Event&amp;<sp/>_event);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//RDE_CONTROLLER_INPUT_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_disabled_for_late_update" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::DisabledForLateUpdate</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_disabled_for_late_update_1a57d4082c2b3d593ddcbb806ca2ac0dc1" prot="private" static="no" mutable="no">
+        <type>short</type>
+        <definition>short RDE::DisabledForLateUpdate::foo</definition>
+        <argsstring></argsstring>
+        <name>foo</name>
+        <qualifiedname>RDE::DisabledForLateUpdate::foo</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>This element is needed, otherwise an empty struct won&apos;t compile (don&apos;t know exactly why). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Components.h" line="103" column="19" bodyfile="engine/include/core/graph/components/Components.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_r_d_e_1_1_disabled_for_late_update_1aee9e400b86d7cb7048cc10bca3a2d7ef" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::DisabledForLateUpdate::DisabledForLateUpdate</definition>
+        <argsstring>(Node *_node, Manager *_manager, Graph *_graph)</argsstring>
+        <name>DisabledForLateUpdate</name>
+        <qualifiedname>RDE::DisabledForLateUpdate::DisabledForLateUpdate</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>_node</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> *</type>
+          <declname>_manager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_graph" kindref="compound">Graph</ref> *</type>
+          <declname>_graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Components.h" line="97" column="18" bodyfile="engine/include/core/graph/components/Components.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/graph/components/Components.h" line="96" column="5" bodyfile="engine/include/core/graph/components/Components.h" bodystart="96" bodyend="104"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_disabled_for_late_update_1aee9e400b86d7cb7048cc10bca3a2d7ef" prot="public" virt="non-virtual"><scope>RDE::DisabledForLateUpdate</scope><name>DisabledForLateUpdate</name></member>
+      <member refid="struct_r_d_e_1_1_disabled_for_late_update_1a57d4082c2b3d593ddcbb806ca2ac0dc1" prot="private" virt="non-virtual"><scope>RDE::DisabledForLateUpdate</scope><name>foo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_font_manager" kind="class" language="C++" prot="public">
+    <compoundname>RDE::FontManager</compoundname>
+    <includes refid="_font_manager_8h" local="no">FontManager.h</includes>
+    <innerclass refid="struct_r_d_e_1_1_font_manager_1_1_font_handler" prot="private">RDE::FontManager::FontHandler</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_font_manager_1adb05ad84b31c982f91db62c220dcbcb2" prot="private" static="no" mutable="no">
+        <type>FT_Library</type>
+        <definition>FT_Library RDE::FontManager::ftLibrary</definition>
+        <argsstring></argsstring>
+        <name>ftLibrary</name>
+        <qualifiedname>RDE::FontManager::ftLibrary</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Freetype library. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="114" column="24" bodyfile="engine/include/core/systems/uiSystem/FontManager.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_font_manager_1a9bd63f142d6996e46a8c215c027445b1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_file_manager" kindref="compound">FileManager</ref> *</type>
+        <definition>FileManager* RDE::FontManager::fileManager</definition>
+        <argsstring></argsstring>
+        <name>fileManager</name>
+        <qualifiedname>RDE::FontManager::fileManager</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="115" column="25" bodyfile="engine/include/core/systems/uiSystem/FontManager.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_font_manager_1a4aa52edc091fc3f255b5ec47b688b3ee" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, std::vector&lt; FontHandler &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::string, std::vector&lt;FontHandler&gt; &gt; RDE::FontManager::fonts</definition>
+        <argsstring></argsstring>
+        <name>fonts</name>
+        <qualifiedname>RDE::FontManager::fonts</qualifiedname>
+        <briefdescription>
+<para>Map FontName -&gt; std::vector&lt;FontHandler&gt; because a font can have many sub-fonts with different sizes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="120" column="32" bodyfile="engine/include/core/systems/uiSystem/FontManager.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_font_manager_1ae77168424872c9bdcac484c00b737463" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::FontManager::maxDifferenceBetweenFontSizesBeforeCreatingANewOne</definition>
+        <argsstring></argsstring>
+        <name>maxDifferenceBetweenFontSizesBeforeCreatingANewOne</name>
+        <qualifiedname>RDE::FontManager::maxDifferenceBetweenFontSizesBeforeCreatingANewOne</qualifiedname>
+        <initializer>= 5</initializer>
+        <briefdescription>
+<para>This is the maximum difference between a registered font size and a requested one. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="126" column="17" bodyfile="engine/include/core/systems/uiSystem/FontManager.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_font_manager_1a594bb5502c8c3815b1ff73e72979fede" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::FontManager::FontManager</definition>
+        <argsstring>()</argsstring>
+        <name>FontManager</name>
+        <qualifiedname>RDE::FontManager::FontManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="129" column="13" bodyfile="engine/include/core/systems/uiSystem/FontManager.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_font_manager_1a9fcf7a6bf4a1d767ab3d6bbff0783e45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FontManager::init</definition>
+        <argsstring>(FileManager *_fileManager)</argsstring>
+        <name>init</name>
+        <qualifiedname>RDE::FontManager::init</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_manager" kindref="compound">FileManager</ref> *</type>
+          <declname>_fileManager</declname>
+        </param>
+        <briefdescription>
+<para>Initiates the system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This function should not be called by the end users. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="135" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_font_manager_1a245dbb380f7771a88752f678f030b8b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FontManager::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>RDE::FontManager::destroy</qualifiedname>
+        <briefdescription>
+<para>Destroys the system and all loaded fonts. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This function should not be called by the end users. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="141" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_font_manager_1a5e820b47a48658553d0750fea50ba0fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> *</type>
+        <definition>Font * RDE::FontManager::loadFont</definition>
+        <argsstring>(FileManager &amp;_fileManager, const std::string &amp;_pathToFont, int _fontSize=24)</argsstring>
+        <name>loadFont</name>
+        <qualifiedname>RDE::FontManager::loadFont</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_manager" kindref="compound">FileManager</ref> &amp;</type>
+          <declname>_fileManager</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_pathToFont</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_fontSize</declname>
+          <defval>24</defval>
+        </param>
+        <briefdescription>
+<para>This function loads a font with a default font size of 24. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_pathToFont</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to font file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_fontSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Font* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="149" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_font_manager_1a8e5c8350c79d4006368a57d149046f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> *</type>
+        <definition>Font * RDE::FontManager::getDefaultFont</definition>
+        <argsstring>(const std::string &amp;_fontName)</argsstring>
+        <name>getDefaultFont</name>
+        <qualifiedname>RDE::FontManager::getDefaultFont</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_fontName</declname>
+        </param>
+        <briefdescription>
+<para>Returns the font with the initialized font size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_fontName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Font* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="156" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_font_manager_1ac5d1840e31debe746e25290bd4dba12d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> *</type>
+        <definition>Font * RDE::FontManager::getSpecificFont</definition>
+        <argsstring>(const std::string &amp;_fontName, int _fontSize)</argsstring>
+        <name>getSpecificFont</name>
+        <qualifiedname>RDE::FontManager::getSpecificFont</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_fontName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_fontSize</declname>
+        </param>
+        <briefdescription>
+<para>his function tries to return the font with the specific font size. If the font size is near enough to one already loaded, it will return it. Otherwise it will create a new font with the desired size because if using one too far from the loaded fonts sizes, it will be blurry and bad rendered. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_fontName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_fontSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>font size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Font* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="166" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_font_manager_1a54fe18b8c3e6de8c4d5a1442f050c071" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FontManager::unloadFullFont</definition>
+        <argsstring>(const std::string &amp;_fontName)</argsstring>
+        <name>unloadFullFont</name>
+        <qualifiedname>RDE::FontManager::unloadFullFont</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_fontName</declname>
+        </param>
+        <briefdescription>
+<para>This function unloads a font with all the sub-fonts created by size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_fontName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="172" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_font_manager_1a23f4945486946c98999d7ebe9040b8b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::FontManager::unloadSpecificFont</definition>
+        <argsstring>(const std::string &amp;_fontName, int _fontSize)</argsstring>
+        <name>unloadSpecificFont</name>
+        <qualifiedname>RDE::FontManager::unloadSpecificFont</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_fontName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_fontSize</declname>
+        </param>
+        <briefdescription>
+<para>This function unloads a specific font size of the full font. If no fonts sizes left when this is called, it will remove the full font from memory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_fontName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_fontSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="180" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_font_manager_1a920b4493e6a7a25a6c17134109c9c2c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> * &gt;</type>
+        <definition>std::vector&lt; Font * &gt; RDE::FontManager::getAllFonts</definition>
+        <argsstring>()</argsstring>
+        <name>getAllFonts</name>
+        <qualifiedname>RDE::FontManager::getAllFonts</qualifiedname>
+        <briefdescription>
+<para>Returns all of the fonts loaded in memory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::vector&lt;Font*&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="186" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class manages all the fonts of the applications. It loads, unloads and gets the fonts of memory. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="attention"><para>All managers destroy all the resources before closing the application, it is not needed to be done by the end user. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="engine/include/core/systems/uiSystem/FontManager.h" line="100" column="5" bodyfile="engine/include/core/systems/uiSystem/FontManager.h" bodystart="100" bodyend="187"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_font_manager_1a245dbb380f7771a88752f678f030b8b3" prot="public" virt="non-virtual"><scope>RDE::FontManager</scope><name>destroy</name></member>
+      <member refid="class_r_d_e_1_1_font_manager_1a9bd63f142d6996e46a8c215c027445b1" prot="private" virt="non-virtual"><scope>RDE::FontManager</scope><name>fileManager</name></member>
+      <member refid="class_r_d_e_1_1_font_manager_1a594bb5502c8c3815b1ff73e72979fede" prot="public" virt="non-virtual"><scope>RDE::FontManager</scope><name>FontManager</name></member>
+      <member refid="class_r_d_e_1_1_font_manager_1a4aa52edc091fc3f255b5ec47b688b3ee" prot="private" virt="non-virtual"><scope>RDE::FontManager</scope><name>fonts</name></member>
+      <member refid="class_r_d_e_1_1_font_manager_1adb05ad84b31c982f91db62c220dcbcb2" prot="private" virt="non-virtual"><scope>RDE::FontManager</scope><name>ftLibrary</name></member>
+      <member refid="class_r_d_e_1_1_font_manager_1a920b4493e6a7a25a6c17134109c9c2c1" prot="public" virt="non-virtual"><scope>RDE::FontManager</scope><name>getAllFonts</name></member>
+      <member refid="class_r_d_e_1_1_font_manager_1a8e5c8350c79d4006368a57d149046f33" prot="public" virt="non-virtual"><scope>RDE::FontManager</scope><name>getDefaultFont</name></member>
+      <member refid="class_r_d_e_1_1_font_manager_1ac5d1840e31debe746e25290bd4dba12d" prot="public" virt="non-virtual"><scope>RDE::FontManager</scope><name>getSpecificFont</name></member>
+      <member refid="class_r_d_e_1_1_font_manager_1a9fcf7a6bf4a1d767ab3d6bbff0783e45" prot="public" virt="non-virtual"><scope>RDE::FontManager</scope><name>init</name></member>
+      <member refid="class_r_d_e_1_1_font_manager_1a5e820b47a48658553d0750fea50ba0fb" prot="public" virt="non-virtual"><scope>RDE::FontManager</scope><name>loadFont</name></member>
+      <member refid="class_r_d_e_1_1_font_manager_1ae77168424872c9bdcac484c00b737463" prot="public" virt="non-virtual"><scope>RDE::FontManager</scope><name>maxDifferenceBetweenFontSizesBeforeCreatingANewOne</name></member>
+      <member refid="class_r_d_e_1_1_font_manager_1a54fe18b8c3e6de8c4d5a1442f050c071" prot="public" virt="non-virtual"><scope>RDE::FontManager</scope><name>unloadFullFont</name></member>
+      <member refid="class_r_d_e_1_1_font_manager_1a23f4945486946c98999d7ebe9040b8b2" prot="public" virt="non-virtual"><scope>RDE::FontManager</scope><name>unloadSpecificFont</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

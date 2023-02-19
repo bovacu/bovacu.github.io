@@ -1,0 +1,14 @@
+.. _exhale_variable__core_8h_1a5ab7c04f01ae029341fd50906f9214f0:
+
+Variable currentDPI
+===================
+
+- Defined in :ref:`file_engine_include_core_Core.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: currentDPI
+   :project: My Project

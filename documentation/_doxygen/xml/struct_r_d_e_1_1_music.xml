@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_music" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::Music</compoundname>
+    <basecompoundref refid="struct_r_d_e_1_1_sound" prot="public" virt="non-virtual">RDE::Sound</basecompoundref>
+    <includes refid="_sound_manager_8h" local="no">SoundManager.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="struct_r_d_e_1_1_music_1aee940642f2974e262db9284c0b1d9766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class SoundManager</definition>
+        <argsstring></argsstring>
+        <name>SoundManager</name>
+        <qualifiedname>RDE::Music::SoundManager</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_sound_manager" kindref="compound">SoundManager</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/soundSystem/SoundManager.h" line="45" column="22" bodyfile="engine/include/core/systems/soundSystem/SoundManager.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_music_1a5c7b0e40baaa164813989e0c51d63cc5" prot="private" static="no" mutable="no">
+        <type>Mix_Music *</type>
+        <definition>Mix_Music* RDE::Music::musicID</definition>
+        <argsstring></argsstring>
+        <name>musicID</name>
+        <qualifiedname>RDE::Music::musicID</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>SDL music. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/soundSystem/SoundManager.h" line="50" column="23" bodyfile="engine/include/core/systems/soundSystem/SoundManager.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Background music. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RDE::Music</label>
+        <link refid="struct_r_d_e_1_1_music"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::Sound</label>
+        <link refid="struct_r_d_e_1_1_sound"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RDE::Music</label>
+        <link refid="struct_r_d_e_1_1_music"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::Sound</label>
+        <link refid="struct_r_d_e_1_1_sound"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/soundSystem/SoundManager.h" line="44" column="5" bodyfile="engine/include/core/systems/soundSystem/SoundManager.h" bodystart="44" bodyend="51"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_music_1a5c7b0e40baaa164813989e0c51d63cc5" prot="private" virt="non-virtual"><scope>RDE::Music</scope><name>musicID</name></member>
+      <member refid="struct_r_d_e_1_1_sound_1adbfb11fdd0b435d31a9e968b17ce8057" prot="public" virt="non-virtual"><scope>RDE::Music</scope><name>name</name></member>
+      <member refid="struct_r_d_e_1_1_sound_1a64fae59a58c96e6ebceb4490512b7baf" prot="public" virt="non-virtual"><scope>RDE::Music</scope><name>path</name></member>
+      <member refid="struct_r_d_e_1_1_sound_1a142d610866851f4fca51dc34b24c0bdd" prot="public" virt="non-virtual"><scope>RDE::Music</scope><name>repeat</name></member>
+      <member refid="struct_r_d_e_1_1_music_1aee940642f2974e262db9284c0b1d9766" prot="public" virt="non-virtual"><scope>RDE::Music</scope><name>SoundManager</name></member>
+      <member refid="struct_r_d_e_1_1_sound_1a48c37eca741477788586c0d567e9d279" prot="public" virt="non-virtual"><scope>RDE::Music</scope><name>speed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

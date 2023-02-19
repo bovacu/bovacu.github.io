@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_cellular_automata" kind="class" language="C++" prot="public">
+    <compoundname>RDE::CellularAutomata</compoundname>
+    <basecompoundref refid="class_r_d_e_1_1_map_generator" prot="public" virt="non-virtual">RDE::MapGenerator</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_cellular_automata_1a979ca7d7f333e5fbb62b1e52ff0bf2e4" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_procedural_map" kindref="compound">ProceduralMap</ref></type>
+        <definition>ProceduralMap RDE::CellularAutomata::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <qualifiedname>RDE::CellularAutomata::map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="36" column="27" bodyfile="engine/include/core/procedural/CellularAutomataMapGenerator.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_cellular_automata_1a9ce308277a76d52259550f34fdff77d8" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_random" kindref="compound">Random</ref></type>
+        <definition>Random RDE::CellularAutomata::random</definition>
+        <argsstring></argsstring>
+        <name>random</name>
+        <qualifiedname>RDE::CellularAutomata::random</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="37" column="20" bodyfile="engine/include/core/procedural/CellularAutomataMapGenerator.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_cellular_automata_1af20fe1ae60bbfaf4ecfbcf3eed5fb6d1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::CellularAutomata::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <qualifiedname>RDE::CellularAutomata::create</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="40" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_cellular_automata_1a00a8950989551f53df2f87ecd9d0d29a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::CellularAutomata::destroy</definition>
+        <argsstring>() const</argsstring>
+        <name>destroy</name>
+        <qualifiedname>RDE::CellularAutomata::destroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="41" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_cellular_automata_1aadbd895e15b25c83b569b2cd1d061a38" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::CellularAutomata::fillData</definition>
+        <argsstring>()</argsstring>
+        <name>fillData</name>
+        <qualifiedname>RDE::CellularAutomata::fillData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="42" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_cellular_automata_1a49c932cba2c426a7caa467bebbb63758" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RDE::CellularAutomata::getNeighbourCellCount</definition>
+        <argsstring>(int _x, int _y) const</argsstring>
+        <name>getNeighbourCellCount</name>
+        <qualifiedname>RDE::CellularAutomata::getNeighbourCellCount</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="43" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_cellular_automata_1a8f1e94aaa09cc177e70171c3dda2d47c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::CellularAutomata::step</definition>
+        <argsstring>()</argsstring>
+        <name>step</name>
+        <qualifiedname>RDE::CellularAutomata::step</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="44" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_cellular_automata_1a8ec1be76d8af40189b9b07e6a288ff8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RDE::CellularAutomata::init</definition>
+        <argsstring>(const GenerationSettings &amp;_settings) override</argsstring>
+        <name>init</name>
+        <qualifiedname>RDE::CellularAutomata::init</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_map_generator_1ac36c107e6e643f79de66bd1d5e3fb5ed">init</reimplements>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_generation_settings" kindref="compound">GenerationSettings</ref> &amp;</type>
+          <declname>_settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="47" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_cellular_automata_1a4d0e9a7551b7060b1656aa2a6258c13e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_r_d_e_1_1_procedural_map" kindref="compound">ProceduralMap</ref> &amp;</type>
+        <definition>ProceduralMap &amp; RDE::CellularAutomata::getMap</definition>
+        <argsstring>() override</argsstring>
+        <name>getMap</name>
+        <qualifiedname>RDE::CellularAutomata::getMap</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_map_generator_1a8e821b379df7b305281eaae8f4bf03f3">getMap</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="48" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_cellular_automata_1a289ebb0fd25429a7aaa4b236b4bbeb8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RDE::CellularAutomata::reset</definition>
+        <argsstring>(const GenerationSettings &amp;_settings) override</argsstring>
+        <name>reset</name>
+        <qualifiedname>RDE::CellularAutomata::reset</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_map_generator_1af3c858cd265acadb7d4015c21ed1bd7d">reset</reimplements>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_generation_settings" kindref="compound">GenerationSettings</ref> &amp;</type>
+          <declname>_settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="49" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_cellular_automata_1a51cb2e86a8e24490b2b4e5352095226c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RDE::CellularAutomata::~CellularAutomata</definition>
+        <argsstring>() override</argsstring>
+        <name>~CellularAutomata</name>
+        <qualifiedname>RDE::CellularAutomata::~CellularAutomata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="50" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RDE::CellularAutomata</label>
+        <link refid="class_r_d_e_1_1_cellular_automata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::MapGenerator</label>
+        <link refid="class_r_d_e_1_1_map_generator"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RDE::CellularAutomata</label>
+        <link refid="class_r_d_e_1_1_cellular_automata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::MapGenerator</label>
+        <link refid="class_r_d_e_1_1_map_generator"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/procedural/CellularAutomataMapGenerator.h" line="34" column="5" bodyfile="engine/include/core/procedural/CellularAutomataMapGenerator.h" bodystart="34" bodyend="51"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_cellular_automata_1af20fe1ae60bbfaf4ecfbcf3eed5fb6d1" prot="private" virt="non-virtual"><scope>RDE::CellularAutomata</scope><name>create</name></member>
+      <member refid="class_r_d_e_1_1_cellular_automata_1a00a8950989551f53df2f87ecd9d0d29a" prot="private" virt="non-virtual"><scope>RDE::CellularAutomata</scope><name>destroy</name></member>
+      <member refid="class_r_d_e_1_1_cellular_automata_1aadbd895e15b25c83b569b2cd1d061a38" prot="private" virt="non-virtual"><scope>RDE::CellularAutomata</scope><name>fillData</name></member>
+      <member refid="class_r_d_e_1_1_cellular_automata_1a4d0e9a7551b7060b1656aa2a6258c13e" prot="public" virt="virtual"><scope>RDE::CellularAutomata</scope><name>getMap</name></member>
+      <member refid="class_r_d_e_1_1_cellular_automata_1a49c932cba2c426a7caa467bebbb63758" prot="private" virt="non-virtual"><scope>RDE::CellularAutomata</scope><name>getNeighbourCellCount</name></member>
+      <member refid="class_r_d_e_1_1_cellular_automata_1a8ec1be76d8af40189b9b07e6a288ff8a" prot="public" virt="virtual"><scope>RDE::CellularAutomata</scope><name>init</name></member>
+      <member refid="class_r_d_e_1_1_cellular_automata_1a979ca7d7f333e5fbb62b1e52ff0bf2e4" prot="private" virt="non-virtual"><scope>RDE::CellularAutomata</scope><name>map</name></member>
+      <member refid="class_r_d_e_1_1_cellular_automata_1a9ce308277a76d52259550f34fdff77d8" prot="private" virt="non-virtual"><scope>RDE::CellularAutomata</scope><name>random</name></member>
+      <member refid="class_r_d_e_1_1_cellular_automata_1a289ebb0fd25429a7aaa4b236b4bbeb8b" prot="public" virt="virtual"><scope>RDE::CellularAutomata</scope><name>reset</name></member>
+      <member refid="class_r_d_e_1_1_cellular_automata_1a8f1e94aaa09cc177e70171c3dda2d47c" prot="private" virt="non-virtual"><scope>RDE::CellularAutomata</scope><name>step</name></member>
+      <member refid="class_r_d_e_1_1_cellular_automata_1a51cb2e86a8e24490b2b4e5352095226c" prot="public" virt="non-virtual"><scope>RDE::CellularAutomata</scope><name>~CellularAutomata</name></member>
+      <member refid="class_r_d_e_1_1_map_generator_1a66248efe6b7010f83541fe59fba4c7a4" prot="public" virt="virtual"><scope>RDE::CellularAutomata</scope><name>~MapGenerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_window_resized_event" kind="class" language="C++" prot="public">
+    <compoundname>RDE::WindowResizedEvent</compoundname>
+    <basecompoundref refid="class_r_d_e_1_1_event" prot="public" virt="non-virtual">RDE::Event</basecompoundref>
+    <includes refid="_window_event_8h" local="no">WindowEvent.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_window_resized_event_1a315763be4cdab4d44b5e27940a9f3477" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int RDE::WindowResizedEvent::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>RDE::WindowResizedEvent::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="13" column="26" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_window_resized_event_1a5e5ad7c5bf12b4e6fdb4c377dc3ac819" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int RDE::WindowResizedEvent::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>RDE::WindowResizedEvent::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="13" column="32" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_window_resized_event_1a172f4eb2be6ac595aa356d60719306c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::WindowResizedEvent::WindowResizedEvent</definition>
+        <argsstring>(unsigned int _width, unsigned int _height)</argsstring>
+        <name>WindowResizedEvent</name>
+        <qualifiedname>RDE::WindowResizedEvent::WindowResizedEvent</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="16" column="13" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_window_resized_event_1a4e3556b21c668e8bcca570e230341e77" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int RDE::WindowResizedEvent::getWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getWidth</name>
+        <qualifiedname>RDE::WindowResizedEvent::getWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the new width that resizing event is setting. <simplesect kind="return"><para>New width of the window. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="20" column="34" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_window_resized_event_1af8ea439d389e9b005b468615247beb23" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int RDE::WindowResizedEvent::getHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>getHeight</name>
+        <qualifiedname>RDE::WindowResizedEvent::getHeight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the new height that resizing event is setting. <simplesect kind="return"><para>New height of the window. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="24" column="34" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_window_resized_event_1a250e17dd672e67ac21b730a6b35e7755" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::WindowResizedEvent::toString</definition>
+        <argsstring>() const override</argsstring>
+        <name>toString</name>
+        <qualifiedname>RDE::WindowResizedEvent::toString</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a2ad3c2a15cf1a3d619cfada8dbf02638">toString</reimplements>
+        <briefdescription>
+<para>Returns all the event in form of string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="26" column="26" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_window_resized_event_1a380d8378e87a2b6aa974bc5a65a60c50" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref></type>
+        <definition>EventType RDE::WindowResizedEvent::getEventType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getEventType</name>
+        <qualifiedname>RDE::WindowResizedEvent::getEventType</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a17812fdef1f1bc1517e7658cbdf8ba3b">getEventType</reimplements>
+        <briefdescription>
+<para>Returns the event type from the current object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>EventType </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="34" column="24" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_window_resized_event_1a4bb961282e079dc9060e3e3e21e61feb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char * RDE::WindowResizedEvent::getName</definition>
+        <argsstring>() const override</argsstring>
+        <name>getName</name>
+        <qualifiedname>RDE::WindowResizedEvent::getName</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a3ea36fb9accc90c88c34d946515724a9">getName</reimplements>
+        <briefdescription>
+<para>Returns the event name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const char* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="35" column="25" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_window_resized_event_1a60a5614ca52d288df0de79ae1853e97b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int RDE::WindowResizedEvent::getCategoryFlags</definition>
+        <argsstring>() const override</argsstring>
+        <name>getCategoryFlags</name>
+        <qualifiedname>RDE::WindowResizedEvent::getCategoryFlags</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a1578cfc2a5212ffb46108acf3b6c51fd">getCategoryFlags</reimplements>
+        <briefdescription>
+<para>Returns the categories of an event condensed on a single int. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="36" column="18" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_window_resized_event_1a5032df2b2c6f9a0800acd86d38bae18a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref></type>
+        <definition>static EventType RDE::WindowResizedEvent::getStaticType</definition>
+        <argsstring>()</argsstring>
+        <name>getStaticType</name>
+        <qualifiedname>RDE::WindowResizedEvent::getStaticType</qualifiedname>
+        <briefdescription>
+<para>Implementation of the rest of the static and virtual methods. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="33" column="30" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class represents all of the events that involves resizing the window. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RDE::Event</label>
+        <link refid="class_r_d_e_1_1_event"/>
+      </node>
+      <node id="1">
+        <label>RDE::WindowResizedEvent</label>
+        <link refid="class_r_d_e_1_1_window_resized_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>RDE::Event</label>
+        <link refid="class_r_d_e_1_1_event"/>
+      </node>
+      <node id="1">
+        <label>RDE::WindowResizedEvent</label>
+        <link refid="class_r_d_e_1_1_window_resized_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="11" column="5" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="11" bodyend="37"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_window_resized_event_1a60a5614ca52d288df0de79ae1853e97b" prot="public" virt="virtual"><scope>RDE::WindowResizedEvent</scope><name>getCategoryFlags</name></member>
+      <member refid="class_r_d_e_1_1_window_resized_event_1a380d8378e87a2b6aa974bc5a65a60c50" prot="public" virt="virtual"><scope>RDE::WindowResizedEvent</scope><name>getEventType</name></member>
+      <member refid="class_r_d_e_1_1_window_resized_event_1af8ea439d389e9b005b468615247beb23" prot="public" virt="non-virtual"><scope>RDE::WindowResizedEvent</scope><name>getHeight</name></member>
+      <member refid="class_r_d_e_1_1_window_resized_event_1a4bb961282e079dc9060e3e3e21e61feb" prot="public" virt="virtual"><scope>RDE::WindowResizedEvent</scope><name>getName</name></member>
+      <member refid="class_r_d_e_1_1_window_resized_event_1a5032df2b2c6f9a0800acd86d38bae18a" prot="public" virt="non-virtual"><scope>RDE::WindowResizedEvent</scope><name>getStaticType</name></member>
+      <member refid="class_r_d_e_1_1_window_resized_event_1a4e3556b21c668e8bcca570e230341e77" prot="public" virt="non-virtual"><scope>RDE::WindowResizedEvent</scope><name>getWidth</name></member>
+      <member refid="class_r_d_e_1_1_event_1a372a2b0c1a05c7f8b7e48bfbac7042d0" prot="public" virt="non-virtual"><scope>RDE::WindowResizedEvent</scope><name>handled</name></member>
+      <member refid="class_r_d_e_1_1_window_resized_event_1a5e5ad7c5bf12b4e6fdb4c377dc3ac819" prot="private" virt="non-virtual"><scope>RDE::WindowResizedEvent</scope><name>height</name></member>
+      <member refid="class_r_d_e_1_1_event_1a853416fc3754e4052bf7f24d081f82fd" prot="public" virt="non-virtual"><scope>RDE::WindowResizedEvent</scope><name>isInCategory</name></member>
+      <member refid="class_r_d_e_1_1_window_resized_event_1a250e17dd672e67ac21b730a6b35e7755" prot="public" virt="virtual"><scope>RDE::WindowResizedEvent</scope><name>toString</name></member>
+      <member refid="class_r_d_e_1_1_window_resized_event_1a315763be4cdab4d44b5e27940a9f3477" prot="private" virt="non-virtual"><scope>RDE::WindowResizedEvent</scope><name>width</name></member>
+      <member refid="class_r_d_e_1_1_window_resized_event_1a172f4eb2be6ac595aa356d60719306c9" prot="public" virt="non-virtual"><scope>RDE::WindowResizedEvent</scope><name>WindowResizedEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

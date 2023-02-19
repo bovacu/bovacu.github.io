@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_mouse_button_pressed_event" kind="class" language="C++" prot="public">
+    <compoundname>RDE::MouseButtonPressedEvent</compoundname>
+    <basecompoundref refid="class_r_d_e_1_1_mouse_button_event" prot="public" virt="non-virtual">RDE::MouseButtonEvent</basecompoundref>
+    <includes refid="_mouse_event_8h" local="no">MouseEvent.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_mouse_button_pressed_event_1a68b269754cffaa13ee74d344b45de6c7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::MouseButtonPressedEvent::repeatedTimes</definition>
+        <argsstring></argsstring>
+        <name>repeatedTimes</name>
+        <qualifiedname>RDE::MouseButtonPressedEvent::repeatedTimes</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/MouseEvent.h" line="97" column="17" bodyfile="engine/include/core/systems/eventSystem/MouseEvent.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_mouse_button_pressed_event_1a768ec3909fd6021ee7f12165bab70f18" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::MouseButtonPressedEvent::MouseButtonPressedEvent</definition>
+        <argsstring>(MouseCode _mouseButton)</argsstring>
+        <name>MouseButtonPressedEvent</name>
+        <qualifiedname>RDE::MouseButtonPressedEvent::MouseButtonPressedEvent</qualifiedname>
+        <param>
+          <type><ref refid="namespace_r_d_e_1a6079d97bd2b05de1813ab71932242c87" kindref="member">MouseCode</ref></type>
+          <declname>_mouseButton</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/MouseEvent.h" line="100" column="22" bodyfile="engine/include/core/systems/eventSystem/MouseEvent.h" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_mouse_button_pressed_event_1aeb5d0996bf2f9dafaec5c36594df564a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int RDE::MouseButtonPressedEvent::getRepeatedTimes</definition>
+        <argsstring>() const</argsstring>
+        <name>getRepeatedTimes</name>
+        <qualifiedname>RDE::MouseButtonPressedEvent::getRepeatedTimes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/MouseEvent.h" line="101" column="25" bodyfile="engine/include/core/systems/eventSystem/MouseEvent.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_mouse_button_pressed_event_1a9e68f4947bdc26da60640fa834cf8814" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::MouseButtonPressedEvent::toString</definition>
+        <argsstring>() const override</argsstring>
+        <name>toString</name>
+        <qualifiedname>RDE::MouseButtonPressedEvent::toString</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a2ad3c2a15cf1a3d619cfada8dbf02638">toString</reimplements>
+        <briefdescription>
+<para>Returns all the event in form of string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/MouseEvent.h" line="103" column="26" bodyfile="engine/include/core/systems/eventSystem/MouseEvent.h" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_mouse_button_pressed_event_1ae282d8325da0204046cf891c129d105e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref></type>
+        <definition>EventType RDE::MouseButtonPressedEvent::getEventType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getEventType</name>
+        <qualifiedname>RDE::MouseButtonPressedEvent::getEventType</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a17812fdef1f1bc1517e7658cbdf8ba3b">getEventType</reimplements>
+        <briefdescription>
+<para>Returns the event type from the current object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>EventType </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/MouseEvent.h" line="111" column="24" bodyfile="engine/include/core/systems/eventSystem/MouseEvent.h" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_mouse_button_pressed_event_1a210674f2d025912cd520363692460eb7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char * RDE::MouseButtonPressedEvent::getName</definition>
+        <argsstring>() const override</argsstring>
+        <name>getName</name>
+        <qualifiedname>RDE::MouseButtonPressedEvent::getName</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a3ea36fb9accc90c88c34d946515724a9">getName</reimplements>
+        <briefdescription>
+<para>Returns the event name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const char* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/MouseEvent.h" line="112" column="25" bodyfile="engine/include/core/systems/eventSystem/MouseEvent.h" bodystart="112" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_mouse_button_pressed_event_1a8661260c3c660d9e26864b27ec28e5f5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref></type>
+        <definition>static EventType RDE::MouseButtonPressedEvent::getStaticType</definition>
+        <argsstring>()</argsstring>
+        <name>getStaticType</name>
+        <qualifiedname>RDE::MouseButtonPressedEvent::getStaticType</qualifiedname>
+        <briefdescription>
+<para>Implementation of the rest of the static and virtual methods. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/MouseEvent.h" line="110" column="30" bodyfile="engine/include/core/systems/eventSystem/MouseEvent.h" bodystart="110" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class represents all of the events that involves pressing the mouse buttons. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>RDE::Event</label>
+        <link refid="class_r_d_e_1_1_event"/>
+      </node>
+      <node id="2">
+        <label>RDE::MouseButtonEvent</label>
+        <link refid="class_r_d_e_1_1_mouse_button_event"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RDE::MouseButtonPressedEvent</label>
+        <link refid="class_r_d_e_1_1_mouse_button_pressed_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>RDE::Event</label>
+        <link refid="class_r_d_e_1_1_event"/>
+      </node>
+      <node id="2">
+        <label>RDE::MouseButtonEvent</label>
+        <link refid="class_r_d_e_1_1_mouse_button_event"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RDE::MouseButtonPressedEvent</label>
+        <link refid="class_r_d_e_1_1_mouse_button_pressed_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/eventSystem/MouseEvent.h" line="95" column="5" bodyfile="engine/include/core/systems/eventSystem/MouseEvent.h" bodystart="95" bodyend="113"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_mouse_button_event_1a194cf5a435726cc3e4a430edd73b2be1" prot="public" virt="virtual"><scope>RDE::MouseButtonPressedEvent</scope><name>getCategoryFlags</name></member>
+      <member refid="class_r_d_e_1_1_mouse_button_pressed_event_1ae282d8325da0204046cf891c129d105e" prot="public" virt="virtual"><scope>RDE::MouseButtonPressedEvent</scope><name>getEventType</name></member>
+      <member refid="class_r_d_e_1_1_mouse_button_event_1a006911236eb711a5783e6601115be521" prot="public" virt="non-virtual"><scope>RDE::MouseButtonPressedEvent</scope><name>getMouseButton</name></member>
+      <member refid="class_r_d_e_1_1_mouse_button_pressed_event_1a210674f2d025912cd520363692460eb7" prot="public" virt="virtual"><scope>RDE::MouseButtonPressedEvent</scope><name>getName</name></member>
+      <member refid="class_r_d_e_1_1_mouse_button_pressed_event_1aeb5d0996bf2f9dafaec5c36594df564a" prot="public" virt="non-virtual"><scope>RDE::MouseButtonPressedEvent</scope><name>getRepeatedTimes</name></member>
+      <member refid="class_r_d_e_1_1_mouse_button_pressed_event_1a8661260c3c660d9e26864b27ec28e5f5" prot="public" virt="non-virtual"><scope>RDE::MouseButtonPressedEvent</scope><name>getStaticType</name></member>
+      <member refid="class_r_d_e_1_1_event_1a372a2b0c1a05c7f8b7e48bfbac7042d0" prot="public" virt="non-virtual"><scope>RDE::MouseButtonPressedEvent</scope><name>handled</name></member>
+      <member refid="class_r_d_e_1_1_event_1a853416fc3754e4052bf7f24d081f82fd" prot="public" virt="non-virtual"><scope>RDE::MouseButtonPressedEvent</scope><name>isInCategory</name></member>
+      <member refid="class_r_d_e_1_1_mouse_button_event_1ad364e3f5ec8ef100fd03ce7f542b8759" prot="protected" virt="non-virtual"><scope>RDE::MouseButtonPressedEvent</scope><name>mouseButton</name></member>
+      <member refid="class_r_d_e_1_1_mouse_button_event_1aed84270165ee7b6e14d6a1cbd6f64ac7" prot="protected" virt="non-virtual"><scope>RDE::MouseButtonPressedEvent</scope><name>MouseButtonEvent</name></member>
+      <member refid="class_r_d_e_1_1_mouse_button_pressed_event_1a768ec3909fd6021ee7f12165bab70f18" prot="public" virt="non-virtual"><scope>RDE::MouseButtonPressedEvent</scope><name>MouseButtonPressedEvent</name></member>
+      <member refid="class_r_d_e_1_1_mouse_button_pressed_event_1a68b269754cffaa13ee74d344b45de6c7" prot="private" virt="non-virtual"><scope>RDE::MouseButtonPressedEvent</scope><name>repeatedTimes</name></member>
+      <member refid="class_r_d_e_1_1_mouse_button_pressed_event_1a9e68f4947bdc26da60640fa834cf8814" prot="public" virt="virtual"><scope>RDE::MouseButtonPressedEvent</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

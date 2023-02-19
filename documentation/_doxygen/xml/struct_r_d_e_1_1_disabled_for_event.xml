@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_disabled_for_event" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::DisabledForEvent</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_disabled_for_event_1a50b5e1fcc394fdc2e8b408bcb19e19ee" prot="private" static="no" mutable="no">
+        <type>short</type>
+        <definition>short RDE::DisabledForEvent::foo</definition>
+        <argsstring></argsstring>
+        <name>foo</name>
+        <qualifiedname>RDE::DisabledForEvent::foo</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>This element is needed, otherwise an empty struct won&apos;t compile (don&apos;t know exactly why). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Components.h" line="73" column="19" bodyfile="engine/include/core/graph/components/Components.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_r_d_e_1_1_disabled_for_event_1a5fa71fa55811f9baf33e339846a1053f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::DisabledForEvent::DisabledForEvent</definition>
+        <argsstring>(Node *_node, Manager *_manager, Graph *_graph)</argsstring>
+        <name>DisabledForEvent</name>
+        <qualifiedname>RDE::DisabledForEvent::DisabledForEvent</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>_node</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> *</type>
+          <declname>_manager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_graph" kindref="compound">Graph</ref> *</type>
+          <declname>_graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Components.h" line="67" column="18" bodyfile="engine/include/core/graph/components/Components.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/graph/components/Components.h" line="66" column="5" bodyfile="engine/include/core/graph/components/Components.h" bodystart="66" bodyend="74"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_disabled_for_event_1a5fa71fa55811f9baf33e339846a1053f" prot="public" virt="non-virtual"><scope>RDE::DisabledForEvent</scope><name>DisabledForEvent</name></member>
+      <member refid="struct_r_d_e_1_1_disabled_for_event_1a50b5e1fcc394fdc2e8b408bcb19e19ee" prot="private" virt="non-virtual"><scope>RDE::DisabledForEvent</scope><name>foo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

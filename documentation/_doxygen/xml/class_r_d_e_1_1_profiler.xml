@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_profiler" kind="class" language="C++" prot="public">
+    <compoundname>RDE::Profiler</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_profiler_1a8aa4f1ffbd43aa3b74f9a56d1cbaa7e7" prot="private" static="yes" mutable="no">
+        <type>std::unordered_map&lt; ProfilerState, <ref refid="struct_r_d_e_1_1_state" kindref="compound">State</ref> &gt;</type>
+        <definition>std::unordered_map&lt;ProfilerState, State&gt; RDE::Profiler::states</definition>
+        <argsstring></argsstring>
+        <name>states</name>
+        <qualifiedname>RDE::Profiler::states</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="77" column="39" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_profiler_1add5e5de42344eb021996db93ff780024" prot="private" static="yes" mutable="no">
+        <type>std::unordered_map&lt; ProfilerState, <ref refid="struct_r_d_e_1_1_state" kindref="compound">State</ref> &gt;</type>
+        <definition>std::unordered_map&lt;ProfilerState, State&gt; RDE::Profiler::lastStates</definition>
+        <argsstring></argsstring>
+        <name>lastStates</name>
+        <qualifiedname>RDE::Profiler::lastStates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="78" column="39" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_profiler_1aaf93a1db002d269f52b787b6d5187ee8" prot="private" static="yes" mutable="no">
+        <type>struct sysinfo</type>
+        <definition>struct sysinfo RDE::Profiler::systemInfo</definition>
+        <argsstring></argsstring>
+        <name>systemInfo</name>
+        <qualifiedname>RDE::Profiler::systemInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="79" column="33" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_profiler_1a431852bb0992db429badac0785ad1ffd" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int RDE::Profiler::parseLine</definition>
+        <argsstring>(char *line)</argsstring>
+        <name>parseLine</name>
+        <qualifiedname>RDE::Profiler::parseLine</qualifiedname>
+        <param>
+          <type>char *</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="81" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_profiler_1a2575bd38180bc0010ae865fb1e8a0297" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int RDE::Profiler::getValue</definition>
+        <argsstring>()</argsstring>
+        <name>getValue</name>
+        <qualifiedname>RDE::Profiler::getValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="82" column="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_profiler_1aca4961a5a2930e8be75cff05e1216b90" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RDE::Profiler::beginFrame</definition>
+        <argsstring>(float _dt)</argsstring>
+        <name>beginFrame</name>
+        <qualifiedname>RDE::Profiler::beginFrame</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="85" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_profiler_1a6d523fb5ec20f86a56271147c16eaa65" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RDE::Profiler::begin</definition>
+        <argsstring>(ProfilerState _state)</argsstring>
+        <name>begin</name>
+        <qualifiedname>RDE::Profiler::begin</qualifiedname>
+        <param>
+          <type>ProfilerState</type>
+          <declname>_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="86" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_profiler_1a387603773da4767e38ecf91eef305cee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RDE::Profiler::end</definition>
+        <argsstring>(ProfilerState _state)</argsstring>
+        <name>end</name>
+        <qualifiedname>RDE::Profiler::end</qualifiedname>
+        <param>
+          <type>ProfilerState</type>
+          <declname>_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="87" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_profiler_1a19745a4f9345811a913c785b39ebf22a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RDE::Profiler::endFrame</definition>
+        <argsstring>()</argsstring>
+        <name>endFrame</name>
+        <qualifiedname>RDE::Profiler::endFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="88" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_profiler_1af756bc84d45f8fda5fd8e1fc64ced9f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unordered_map&lt; ProfilerState, <ref refid="struct_r_d_e_1_1_state" kindref="compound">State</ref> &gt; &amp;</type>
+        <definition>static std::unordered_map&lt; ProfilerState, State &gt; &amp; RDE::Profiler::getStates</definition>
+        <argsstring>()</argsstring>
+        <name>getStates</name>
+        <qualifiedname>RDE::Profiler::getStates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="89" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_profiler_1a76dd3305cda76c2e04b2aef2a19055de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u_long *</type>
+        <definition>static u_long * RDE::Profiler::getTotalVirtualMemory</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalVirtualMemory</name>
+        <qualifiedname>RDE::Profiler::getTotalVirtualMemory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="91" column="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/profiling/Profiler.h" line="75" column="5" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="75" bodyend="92"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_profiler_1a6d523fb5ec20f86a56271147c16eaa65" prot="public" virt="non-virtual"><scope>RDE::Profiler</scope><name>begin</name></member>
+      <member refid="class_r_d_e_1_1_profiler_1aca4961a5a2930e8be75cff05e1216b90" prot="public" virt="non-virtual"><scope>RDE::Profiler</scope><name>beginFrame</name></member>
+      <member refid="class_r_d_e_1_1_profiler_1a387603773da4767e38ecf91eef305cee" prot="public" virt="non-virtual"><scope>RDE::Profiler</scope><name>end</name></member>
+      <member refid="class_r_d_e_1_1_profiler_1a19745a4f9345811a913c785b39ebf22a" prot="public" virt="non-virtual"><scope>RDE::Profiler</scope><name>endFrame</name></member>
+      <member refid="class_r_d_e_1_1_profiler_1af756bc84d45f8fda5fd8e1fc64ced9f1" prot="public" virt="non-virtual"><scope>RDE::Profiler</scope><name>getStates</name></member>
+      <member refid="class_r_d_e_1_1_profiler_1a76dd3305cda76c2e04b2aef2a19055de" prot="public" virt="non-virtual"><scope>RDE::Profiler</scope><name>getTotalVirtualMemory</name></member>
+      <member refid="class_r_d_e_1_1_profiler_1a2575bd38180bc0010ae865fb1e8a0297" prot="private" virt="non-virtual"><scope>RDE::Profiler</scope><name>getValue</name></member>
+      <member refid="class_r_d_e_1_1_profiler_1add5e5de42344eb021996db93ff780024" prot="private" virt="non-virtual"><scope>RDE::Profiler</scope><name>lastStates</name></member>
+      <member refid="class_r_d_e_1_1_profiler_1a431852bb0992db429badac0785ad1ffd" prot="private" virt="non-virtual"><scope>RDE::Profiler</scope><name>parseLine</name></member>
+      <member refid="class_r_d_e_1_1_profiler_1a8aa4f1ffbd43aa3b74f9a56d1cbaa7e7" prot="private" virt="non-virtual"><scope>RDE::Profiler</scope><name>states</name></member>
+      <member refid="class_r_d_e_1_1_profiler_1aaf93a1db002d269f52b787b6d5187ee8" prot="private" virt="non-virtual"><scope>RDE::Profiler</scope><name>systemInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_u_i_slider" kind="class" language="C++" prot="public">
+    <compoundname>RDE::UISlider</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_slider_1a1f862775ed8e098b6bb7b95e7c724b0d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::UISlider::mouseDown</definition>
+        <argsstring></argsstring>
+        <name>mouseDown</name>
+        <qualifiedname>RDE::UISlider::mouseDown</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="35" column="18" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_slider_1a2c4805a4ea50b7a7e3dca01f8a71fed5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_u_i_image" kindref="compound">UIImage</ref> *</type>
+        <definition>UIImage* RDE::UISlider::backgroundBarSprite</definition>
+        <argsstring></argsstring>
+        <name>backgroundBarSprite</name>
+        <qualifiedname>RDE::UISlider::backgroundBarSprite</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="36" column="21" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_slider_1adebf9926fcea1e37d2ec69a270689172" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_u_i_image" kindref="compound">UIImage</ref> *</type>
+        <definition>UIImage* RDE::UISlider::fillBarSprite</definition>
+        <argsstring></argsstring>
+        <name>fillBarSprite</name>
+        <qualifiedname>RDE::UISlider::fillBarSprite</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="38" column="21" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_slider_1aa5ed14e40a451105ec4584295267e602" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* RDE::UISlider::fillBarNode</definition>
+        <argsstring></argsstring>
+        <name>fillBarNode</name>
+        <qualifiedname>RDE::UISlider::fillBarNode</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="39" column="18" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_slider_1a1b14334fcd25da4c1ae986bfcf527085" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_u_i_image" kindref="compound">UIImage</ref> *</type>
+        <definition>UIImage* RDE::UISlider::handleSprite</definition>
+        <argsstring></argsstring>
+        <name>handleSprite</name>
+        <qualifiedname>RDE::UISlider::handleSprite</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="41" column="21" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_slider_1afa29d0959a03aa8feff1a234667aa7b7" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* RDE::UISlider::handleNode</definition>
+        <argsstring></argsstring>
+        <name>handleNode</name>
+        <qualifiedname>RDE::UISlider::handleNode</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="42" column="18" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_slider_1ab9b6ac1e562eeda5e05414ae9ddaf3ad" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_u_i_transform" kindref="compound">UITransform</ref> *</type>
+        <definition>UITransform* RDE::UISlider::backgroundBarTransform</definition>
+        <argsstring></argsstring>
+        <name>backgroundBarTransform</name>
+        <qualifiedname>RDE::UISlider::backgroundBarTransform</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="44" column="25" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_slider_1a9d1714cafc55ac7c66901e5c9716e095" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_u_i_transform" kindref="compound">UITransform</ref> *</type>
+        <definition>UITransform* RDE::UISlider::fillBarTransform</definition>
+        <argsstring></argsstring>
+        <name>fillBarTransform</name>
+        <qualifiedname>RDE::UISlider::fillBarTransform</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="45" column="25" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_slider_1ab60ec74eff163fcc302a4382baa57ef0" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_u_i_transform" kindref="compound">UITransform</ref> *</type>
+        <definition>UITransform* RDE::UISlider::handleTransform</definition>
+        <argsstring></argsstring>
+        <name>handleTransform</name>
+        <qualifiedname>RDE::UISlider::handleTransform</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="46" column="25" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_u_i_slider_1a670fa0dca2f5f6e95ebf61d09742cf72" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::UISlider::percentageFilled</definition>
+        <argsstring></argsstring>
+        <name>percentageFilled</name>
+        <qualifiedname>RDE::UISlider::percentageFilled</qualifiedname>
+        <initializer>= 0.f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="48" column="19" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_slider_1af84e76a075c7f7e840e2dcdb1e810ee5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>RENDERIZABLE_UI_BASIC_PROPERTIES() public</type>
+        <definition>RENDERIZABLE_UI_BASIC_PROPERTIES() public RDE::UISlider::~UISlider</definition>
+        <argsstring>()</argsstring>
+        <name>~UISlider</name>
+        <qualifiedname>RDE::UISlider::~UISlider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="54" column="13" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_slider_1a4f5386e02e9f49f48ac230c6437fe99d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RDE::UISlider::RENDERIZABLE_UI_BASIC_METHODS</definition>
+        <argsstring>() void onUpdate(Delta _dt)</argsstring>
+        <name>RENDERIZABLE_UI_BASIC_METHODS</name>
+        <qualifiedname>RDE::UISlider::RENDERIZABLE_UI_BASIC_METHODS</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="56" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_slider_1aff66fd5239839f76bd24493dea41bfd1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::UISlider::setFilledPercentage</definition>
+        <argsstring>(float _percentage)</argsstring>
+        <name>setFilledPercentage</name>
+        <qualifiedname>RDE::UISlider::setFilledPercentage</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_percentage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="60" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_slider_1a27bbf27ef3a45eefc3842174d46c3603" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::UISlider::getFilledPercentage</definition>
+        <argsstring>() const</argsstring>
+        <name>getFilledPercentage</name>
+        <qualifiedname>RDE::UISlider::getFilledPercentage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="61" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_slider_1a906d40c3feb9b75d870c1305994958c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node * RDE::UISlider::getFillBarNode</definition>
+        <argsstring>()</argsstring>
+        <name>getFillBarNode</name>
+        <qualifiedname>RDE::UISlider::getFillBarNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="63" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_slider_1ac9d727e6ee2c1b63f57d50b0918cf3db" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node * RDE::UISlider::getHandleNode</definition>
+        <argsstring>()</argsstring>
+        <name>getHandleNode</name>
+        <qualifiedname>RDE::UISlider::getHandleNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="64" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_slider_1ab03926849726aaf0e12af29982c76c43" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::UISlider::onMouseClicked</definition>
+        <argsstring>(MouseCode _mouseCode)</argsstring>
+        <name>onMouseClicked</name>
+        <qualifiedname>RDE::UISlider::onMouseClicked</qualifiedname>
+        <param>
+          <type><ref refid="namespace_r_d_e_1a6079d97bd2b05de1813ab71932242c87" kindref="member">MouseCode</ref></type>
+          <declname>_mouseCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="67" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_slider_1ae2750eac0222caddf5ccb50ea76a9d00" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::UISlider::onMouseReleased</definition>
+        <argsstring>(MouseCode _mouseCode)</argsstring>
+        <name>onMouseReleased</name>
+        <qualifiedname>RDE::UISlider::onMouseReleased</qualifiedname>
+        <param>
+          <type><ref refid="namespace_r_d_e_1a6079d97bd2b05de1813ab71932242c87" kindref="member">MouseCode</ref></type>
+          <declname>_mouseCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="68" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/graph/components/ui/UISlider.h" line="33" column="5" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="33" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_u_i_slider_1a2c4805a4ea50b7a7e3dca01f8a71fed5" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>backgroundBarSprite</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1ab9b6ac1e562eeda5e05414ae9ddaf3ad" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>backgroundBarTransform</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1aa5ed14e40a451105ec4584295267e602" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>fillBarNode</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1adebf9926fcea1e37d2ec69a270689172" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>fillBarSprite</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1a9d1714cafc55ac7c66901e5c9716e095" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>fillBarTransform</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1a906d40c3feb9b75d870c1305994958c7" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>getFillBarNode</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1a27bbf27ef3a45eefc3842174d46c3603" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>getFilledPercentage</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1ac9d727e6ee2c1b63f57d50b0918cf3db" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>getHandleNode</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1afa29d0959a03aa8feff1a234667aa7b7" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>handleNode</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1a1b14334fcd25da4c1ae986bfcf527085" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>handleSprite</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1ab60ec74eff163fcc302a4382baa57ef0" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>handleTransform</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1a1f862775ed8e098b6bb7b95e7c724b0d" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>mouseDown</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1ab03926849726aaf0e12af29982c76c43" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>onMouseClicked</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1ae2750eac0222caddf5ccb50ea76a9d00" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>onMouseReleased</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1a670fa0dca2f5f6e95ebf61d09742cf72" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>percentageFilled</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1a4f5386e02e9f49f48ac230c6437fe99d" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>RENDERIZABLE_UI_BASIC_METHODS</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1aff66fd5239839f76bd24493dea41bfd1" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>setFilledPercentage</name></member>
+      <member refid="class_r_d_e_1_1_u_i_slider_1af84e76a075c7f7e840e2dcdb1e810ee5" prot="private" virt="non-virtual"><scope>RDE::UISlider</scope><name>~UISlider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

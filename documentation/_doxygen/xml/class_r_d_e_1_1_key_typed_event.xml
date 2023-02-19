@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_key_typed_event" kind="class" language="C++" prot="public">
+    <compoundname>RDE::KeyTypedEvent</compoundname>
+    <basecompoundref refid="class_r_d_e_1_1_key_event" prot="public" virt="non-virtual">RDE::KeyEvent</basecompoundref>
+    <includes refid="_key_event_8h" local="no">KeyEvent.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_key_typed_event_1ae0d87d8f35e5da357cac4d7c7d731be7" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char RDE::KeyTypedEvent::typedChar</definition>
+        <argsstring></argsstring>
+        <name>typedChar</name>
+        <qualifiedname>RDE::KeyTypedEvent::typedChar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/KeyEvent.h" line="63" column="18" bodyfile="engine/include/core/systems/eventSystem/KeyEvent.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_key_typed_event_1a02e8b2746bcaf9a91ae2c85d4645becf" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::KeyTypedEvent::KeyTypedEvent</definition>
+        <argsstring>(KeyCode _keyCode)</argsstring>
+        <name>KeyTypedEvent</name>
+        <qualifiedname>RDE::KeyTypedEvent::KeyTypedEvent</qualifiedname>
+        <param>
+          <type><ref refid="namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde" kindref="member">KeyCode</ref></type>
+          <declname>_keyCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/KeyEvent.h" line="66" column="22" bodyfile="engine/include/core/systems/eventSystem/KeyEvent.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_key_typed_event_1ae63bcf280aeef066a4847e1f0f7e22b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char RDE::KeyTypedEvent::getCharTyped</definition>
+        <argsstring>() const</argsstring>
+        <name>getCharTyped</name>
+        <qualifiedname>RDE::KeyTypedEvent::getCharTyped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the number of times in a sequence that the key has been pressed. <simplesect kind="return"><para>The char typed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/KeyEvent.h" line="70" column="26" bodyfile="engine/include/core/systems/eventSystem/KeyEvent.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_key_typed_event_1a235c2654c87eb820ffece67a48b9e4f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::KeyTypedEvent::toString</definition>
+        <argsstring>() const override</argsstring>
+        <name>toString</name>
+        <qualifiedname>RDE::KeyTypedEvent::toString</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a2ad3c2a15cf1a3d619cfada8dbf02638">toString</reimplements>
+        <briefdescription>
+<para>Returns all the event in form of string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/KeyEvent.h" line="72" column="26" bodyfile="engine/include/core/systems/eventSystem/KeyEvent.h" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_key_typed_event_1a72ed09614d6c4a0a4cfe4f98a7c51fb8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref></type>
+        <definition>EventType RDE::KeyTypedEvent::getEventType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getEventType</name>
+        <qualifiedname>RDE::KeyTypedEvent::getEventType</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a17812fdef1f1bc1517e7658cbdf8ba3b">getEventType</reimplements>
+        <briefdescription>
+<para>Returns the event type from the current object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>EventType </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/KeyEvent.h" line="80" column="24" bodyfile="engine/include/core/systems/eventSystem/KeyEvent.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_key_typed_event_1ad05113ebe41c6fe11fb1d95ddffa5507" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char * RDE::KeyTypedEvent::getName</definition>
+        <argsstring>() const override</argsstring>
+        <name>getName</name>
+        <qualifiedname>RDE::KeyTypedEvent::getName</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a3ea36fb9accc90c88c34d946515724a9">getName</reimplements>
+        <briefdescription>
+<para>Returns the event name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const char* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/KeyEvent.h" line="81" column="25" bodyfile="engine/include/core/systems/eventSystem/KeyEvent.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_key_typed_event_1ad6cc3864041f659326c4c774b16e98e9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref></type>
+        <definition>static EventType RDE::KeyTypedEvent::getStaticType</definition>
+        <argsstring>()</argsstring>
+        <name>getStaticType</name>
+        <qualifiedname>RDE::KeyTypedEvent::getStaticType</qualifiedname>
+        <briefdescription>
+<para>Implementation of the rest of the static and virtual methods. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/KeyEvent.h" line="79" column="30" bodyfile="engine/include/core/systems/eventSystem/KeyEvent.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class represents all of the events that involves typing a key. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>RDE::Event</label>
+        <link refid="class_r_d_e_1_1_event"/>
+      </node>
+      <node id="2">
+        <label>RDE::KeyEvent</label>
+        <link refid="class_r_d_e_1_1_key_event"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RDE::KeyTypedEvent</label>
+        <link refid="class_r_d_e_1_1_key_typed_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>RDE::Event</label>
+        <link refid="class_r_d_e_1_1_event"/>
+      </node>
+      <node id="2">
+        <label>RDE::KeyEvent</label>
+        <link refid="class_r_d_e_1_1_key_event"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RDE::KeyTypedEvent</label>
+        <link refid="class_r_d_e_1_1_key_typed_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/eventSystem/KeyEvent.h" line="61" column="5" bodyfile="engine/include/core/systems/eventSystem/KeyEvent.h" bodystart="61" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_key_event_1a0b94c88fae0d3a28a7e10a016a178eaf" prot="public" virt="virtual"><scope>RDE::KeyTypedEvent</scope><name>getCategoryFlags</name></member>
+      <member refid="class_r_d_e_1_1_key_typed_event_1ae63bcf280aeef066a4847e1f0f7e22b6" prot="public" virt="non-virtual"><scope>RDE::KeyTypedEvent</scope><name>getCharTyped</name></member>
+      <member refid="class_r_d_e_1_1_key_typed_event_1a72ed09614d6c4a0a4cfe4f98a7c51fb8" prot="public" virt="virtual"><scope>RDE::KeyTypedEvent</scope><name>getEventType</name></member>
+      <member refid="class_r_d_e_1_1_key_event_1ade11851cd15223b44137a279ee8b1912" prot="public" virt="non-virtual"><scope>RDE::KeyTypedEvent</scope><name>getKeyCode</name></member>
+      <member refid="class_r_d_e_1_1_key_typed_event_1ad05113ebe41c6fe11fb1d95ddffa5507" prot="public" virt="virtual"><scope>RDE::KeyTypedEvent</scope><name>getName</name></member>
+      <member refid="class_r_d_e_1_1_key_typed_event_1ad6cc3864041f659326c4c774b16e98e9" prot="public" virt="non-virtual"><scope>RDE::KeyTypedEvent</scope><name>getStaticType</name></member>
+      <member refid="class_r_d_e_1_1_event_1a372a2b0c1a05c7f8b7e48bfbac7042d0" prot="public" virt="non-virtual"><scope>RDE::KeyTypedEvent</scope><name>handled</name></member>
+      <member refid="class_r_d_e_1_1_event_1a853416fc3754e4052bf7f24d081f82fd" prot="public" virt="non-virtual"><scope>RDE::KeyTypedEvent</scope><name>isInCategory</name></member>
+      <member refid="class_r_d_e_1_1_key_event_1af4427c761a48970ac4d83f5809f5aa28" prot="protected" virt="non-virtual"><scope>RDE::KeyTypedEvent</scope><name>keyCode</name></member>
+      <member refid="class_r_d_e_1_1_key_event_1a5f73d024909461c538c35717975789c1" prot="protected" virt="non-virtual"><scope>RDE::KeyTypedEvent</scope><name>KeyEvent</name></member>
+      <member refid="class_r_d_e_1_1_key_typed_event_1a02e8b2746bcaf9a91ae2c85d4645becf" prot="public" virt="non-virtual"><scope>RDE::KeyTypedEvent</scope><name>KeyTypedEvent</name></member>
+      <member refid="class_r_d_e_1_1_key_typed_event_1a235c2654c87eb820ffece67a48b9e4f2" prot="public" virt="virtual"><scope>RDE::KeyTypedEvent</scope><name>toString</name></member>
+      <member refid="class_r_d_e_1_1_key_typed_event_1ae0d87d8f35e5da357cac4d7c7d731be7" prot="private" virt="non-virtual"><scope>RDE::KeyTypedEvent</scope><name>typedChar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

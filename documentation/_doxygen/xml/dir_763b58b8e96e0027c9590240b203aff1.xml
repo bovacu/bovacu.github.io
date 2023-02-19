@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_763b58b8e96e0027c9590240b203aff1" kind="dir">
+    <compoundname>engine/include/core</compoundname>
+    <innerdir refid="dir_796eca9d85597f4ea82f9d5434b33c27">engine/include/core/graph</innerdir>
+    <innerdir refid="dir_72e17221e0bed2a09062ffa2034b4971">engine/include/core/platform</innerdir>
+    <innerdir refid="dir_c315e8318044ffaff61f4f311cfe6cc4">engine/include/core/procedural</innerdir>
+    <innerdir refid="dir_3e2b54ee172c83e3d74c66ed2f50c8cb">engine/include/core/render</innerdir>
+    <innerdir refid="dir_3c5ebec328bdc54a8791127d83b9685c">engine/include/core/systems</innerdir>
+    <innerdir refid="dir_bd3c25508da6e3509031cda38887e3a9">engine/include/core/util</innerdir>
+    <innerfile refid="_core_8h">Core.h</innerfile>
+    <innerfile refid="_engine_8h">Engine.h</innerfile>
+    <innerfile refid="_manager_8h">Manager.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_file_handler" kind="class" language="C++" prot="public">
+    <compoundname>RDE::FileHandler</compoundname>
+    <includes refid="_file_manager_8h" local="no">FileManager.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_r_d_e_1_1_file_handler_1a8480b1a0f54b1d000032cac98fa83b3f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class FileManager</definition>
+        <argsstring></argsstring>
+        <name>FileManager</name>
+        <qualifiedname>RDE::FileHandler::FileManager</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_manager" kindref="compound">FileManager</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="59" column="22" bodyfile="engine/include/core/systems/fileSystem/FileManager.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_file_handler_1af2b5d273541c3a24b692eac845a337ac" prot="private" static="no" mutable="no">
+        <type>SDL_RWops *</type>
+        <definition>SDL_RWops* RDE::FileHandler::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <qualifiedname>RDE::FileHandler::file</qualifiedname>
+        <briefdescription>
+<para>Raw data of the file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="65" column="23" bodyfile="engine/include/core/systems/fileSystem/FileManager.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_file_handler_1a4571df4201a938f6227119c8e2b72ef6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_r_d_e_1a97f3c44a3f84f98854392a7eef21619c" kindref="member">FileMode</ref></type>
+        <definition>FileMode RDE::FileHandler::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <qualifiedname>RDE::FileHandler::mode</qualifiedname>
+        <briefdescription>
+<para>Operations that it will work with. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="70" column="22" bodyfile="engine/include/core/systems/fileSystem/FileManager.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_file_handler_1aaaf0d90a2585157adc3591c5d6fb1f48" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string RDE::FileHandler::originalPath</definition>
+        <argsstring></argsstring>
+        <name>originalPath</name>
+        <qualifiedname>RDE::FileHandler::originalPath</qualifiedname>
+        <briefdescription>
+<para>Path to the file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="75" column="25" bodyfile="engine/include/core/systems/fileSystem/FileManager.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_file_handler_1a990b4f3defc11c1fad6f06bfd235ef6f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::FileHandler::FileHandler</definition>
+        <argsstring>(SDL_RWops *_file, const FileMode &amp;_mode, const std::string &amp;_originalPath)</argsstring>
+        <name>FileHandler</name>
+        <qualifiedname>RDE::FileHandler::FileHandler</qualifiedname>
+        <param>
+          <type>SDL_RWops *</type>
+          <declname>_file</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespace_r_d_e_1a97f3c44a3f84f98854392a7eef21619c" kindref="member">FileMode</ref> &amp;</type>
+          <declname>_mode</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_originalPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="78" column="13" bodyfile="engine/include/core/systems/fileSystem/FileManager.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_file_handler_1a8b10dcdb8243182565fb2e20d19babc4" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char * RDE::FileHandler::modeToChar</definition>
+        <argsstring>(const FileMode &amp;_mode)</argsstring>
+        <name>modeToChar</name>
+        <qualifiedname>RDE::FileHandler::modeToChar</qualifiedname>
+        <param>
+          <type>const <ref refid="namespace_r_d_e_1a97f3c44a3f84f98854392a7eef21619c" kindref="member">FileMode</ref> &amp;</type>
+          <declname>_mode</declname>
+        </param>
+        <briefdescription>
+<para>Converts engine&apos;s file mode to SDL file mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>const char* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="85" column="31" bodyfile="engine/include/core/systems/fileSystem/FileManager.h" bodystart="85" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class representes a loaded file. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/fileSystem/FileManager.h" line="57" column="5" bodyfile="engine/include/core/systems/fileSystem/FileManager.h" bodystart="57" bodyend="96"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_file_handler_1af2b5d273541c3a24b692eac845a337ac" prot="private" virt="non-virtual"><scope>RDE::FileHandler</scope><name>file</name></member>
+      <member refid="class_r_d_e_1_1_file_handler_1a990b4f3defc11c1fad6f06bfd235ef6f" prot="private" virt="non-virtual"><scope>RDE::FileHandler</scope><name>FileHandler</name></member>
+      <member refid="class_r_d_e_1_1_file_handler_1a8480b1a0f54b1d000032cac98fa83b3f" prot="private" virt="non-virtual"><scope>RDE::FileHandler</scope><name>FileManager</name></member>
+      <member refid="class_r_d_e_1_1_file_handler_1a4571df4201a938f6227119c8e2b72ef6" prot="private" virt="non-virtual"><scope>RDE::FileHandler</scope><name>mode</name></member>
+      <member refid="class_r_d_e_1_1_file_handler_1a8b10dcdb8243182565fb2e20d19babc4" prot="private" virt="non-virtual"><scope>RDE::FileHandler</scope><name>modeToChar</name></member>
+      <member refid="class_r_d_e_1_1_file_handler_1aaaf0d90a2585157adc3591c5d6fb1f48" prot="private" virt="non-virtual"><scope>RDE::FileHandler</scope><name>originalPath</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

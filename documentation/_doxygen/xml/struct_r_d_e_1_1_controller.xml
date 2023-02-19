@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_controller" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::Controller</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_controller_1a61f1cfad9208d4d0c074e651c0990986" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::Controller::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>RDE::Controller::ID</qualifiedname>
+        <briefdescription>
+<para>ID of the controller in the system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h" line="127" column="17" bodyfile="engine/include/core/systems/inputSystem/input/ControllerInput.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_controller_1a33dcb25e7d232b4161dcbf8a9166c5a4" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11" kindref="member">ControllerButtons</ref>, int &gt;</type>
+        <definition>std::unordered_map&lt;ControllerButtons, int&gt; RDE::Controller::pressedGamepadButtons</definition>
+        <argsstring></argsstring>
+        <name>pressedGamepadButtons</name>
+        <qualifiedname>RDE::Controller::pressedGamepadButtons</qualifiedname>
+        <briefdescription>
+<para>Map ControllerButton -&gt; <ref refid="struct_r_d_e_1_1_state" kindref="compound">State</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h" line="132" column="33" bodyfile="engine/include/core/systems/inputSystem/input/ControllerInput.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_controller_1a080ea24f77b25c5b2d3d99a477ccff8d" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; ControllerAxis, int &gt;</type>
+        <definition>std::unordered_map&lt;ControllerAxis, int&gt; RDE::Controller::pressedGamepadAxis</definition>
+        <argsstring></argsstring>
+        <name>pressedGamepadAxis</name>
+        <qualifiedname>RDE::Controller::pressedGamepadAxis</qualifiedname>
+        <briefdescription>
+<para>Map ControllerAxis -&gt; <ref refid="struct_r_d_e_1_1_state" kindref="compound">State</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h" line="137" column="33" bodyfile="engine/include/core/systems/inputSystem/input/ControllerInput.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_controller_1a94bbb8bb69b21656dce7d860215ea477" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::Controller::leftJoystickValue</definition>
+        <argsstring></argsstring>
+        <name>leftJoystickValue</name>
+        <qualifiedname>RDE::Controller::leftJoystickValue</qualifiedname>
+        <briefdescription>
+<para>Left joystick value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h" line="142" column="19" bodyfile="engine/include/core/systems/inputSystem/input/ControllerInput.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_controller_1a63e57361cb00edea7742f92b54dac279" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::Controller::rightJoystickValue</definition>
+        <argsstring></argsstring>
+        <name>rightJoystickValue</name>
+        <qualifiedname>RDE::Controller::rightJoystickValue</qualifiedname>
+        <briefdescription>
+<para>Right joystick value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h" line="147" column="19" bodyfile="engine/include/core/systems/inputSystem/input/ControllerInput.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_controller_1a34b0ccb4ea36f8e5b54ecddaced902a7" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::Controller::backButtonsValue</definition>
+        <argsstring></argsstring>
+        <name>backButtonsValue</name>
+        <qualifiedname>RDE::Controller::backButtonsValue</qualifiedname>
+        <briefdescription>
+<para>Back pedals values, X = left, Y = right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h" line="152" column="19" bodyfile="engine/include/core/systems/inputSystem/input/ControllerInput.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_controller_1a68aa8b4215e0bef970f0fcd11fd68875" prot="public" static="no" mutable="no">
+        <type>SDL_GameController *</type>
+        <definition>SDL_GameController* RDE::Controller::sdlGameController</definition>
+        <argsstring></argsstring>
+        <name>sdlGameController</name>
+        <qualifiedname>RDE::Controller::sdlGameController</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Inner SDL controller. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h" line="157" column="32" bodyfile="engine/include/core/systems/inputSystem/input/ControllerInput.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_controller_1a9b28b250a619d1b1753e2e359fa0c1cb" prot="public" static="no" mutable="no">
+        <type>SDL_Haptic *</type>
+        <definition>SDL_Haptic* RDE::Controller::vibration</definition>
+        <argsstring></argsstring>
+        <name>vibration</name>
+        <qualifiedname>RDE::Controller::vibration</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>SDL Vibration effect. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h" line="162" column="24" bodyfile="engine/include/core/systems/inputSystem/input/ControllerInput.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_r_d_e_1_1_controller_1adae773eb1d0d51f5a26edb140b4b3616" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RDE::Controller::Controller</definition>
+        <argsstring>(int _controllerID)</argsstring>
+        <name>Controller</name>
+        <qualifiedname>RDE::Controller::Controller</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>_controllerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h" line="122" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>RDE::Controller</label>
+        <link refid="struct_r_d_e_1_1_controller"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>backButtonsValue</edgelabel>
+          <edgelabel>leftJoystickValue</edgelabel>
+          <edgelabel>rightJoystickValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::Vec2&lt; float &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/inputSystem/input/ControllerInput.h" line="119" column="5" bodyfile="engine/include/core/systems/inputSystem/input/ControllerInput.h" bodystart="119" bodyend="163"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_controller_1a34b0ccb4ea36f8e5b54ecddaced902a7" prot="public" virt="non-virtual"><scope>RDE::Controller</scope><name>backButtonsValue</name></member>
+      <member refid="struct_r_d_e_1_1_controller_1adae773eb1d0d51f5a26edb140b4b3616" prot="public" virt="non-virtual"><scope>RDE::Controller</scope><name>Controller</name></member>
+      <member refid="struct_r_d_e_1_1_controller_1a61f1cfad9208d4d0c074e651c0990986" prot="public" virt="non-virtual"><scope>RDE::Controller</scope><name>ID</name></member>
+      <member refid="struct_r_d_e_1_1_controller_1a94bbb8bb69b21656dce7d860215ea477" prot="public" virt="non-virtual"><scope>RDE::Controller</scope><name>leftJoystickValue</name></member>
+      <member refid="struct_r_d_e_1_1_controller_1a080ea24f77b25c5b2d3d99a477ccff8d" prot="public" virt="non-virtual"><scope>RDE::Controller</scope><name>pressedGamepadAxis</name></member>
+      <member refid="struct_r_d_e_1_1_controller_1a33dcb25e7d232b4161dcbf8a9166c5a4" prot="public" virt="non-virtual"><scope>RDE::Controller</scope><name>pressedGamepadButtons</name></member>
+      <member refid="struct_r_d_e_1_1_controller_1a63e57361cb00edea7742f92b54dac279" prot="public" virt="non-virtual"><scope>RDE::Controller</scope><name>rightJoystickValue</name></member>
+      <member refid="struct_r_d_e_1_1_controller_1a68aa8b4215e0bef970f0fcd11fd68875" prot="public" virt="non-virtual"><scope>RDE::Controller</scope><name>sdlGameController</name></member>
+      <member refid="struct_r_d_e_1_1_controller_1a9b28b250a619d1b1753e2e359fa0c1cb" prot="public" virt="non-virtual"><scope>RDE::Controller</scope><name>vibration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,933 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_engine" kind="class" language="C++" prot="public">
+    <compoundname>RDE::Engine</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_engine_1ab672cbfabf5685fd5d6990a1d8926c55" prot="public" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref></type>
+        <definition>Manager RDE::Engine::manager</definition>
+        <argsstring></argsstring>
+        <name>manager</name>
+        <qualifiedname>RDE::Engine::manager</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="110" column="21" bodyfile="engine/include/core/Engine.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_engine_1a7b9cbb04241539e9d945ddd2e250712f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_r_d_e_config" kindref="compound">RDEConfig</ref></type>
+        <definition>RDEConfig RDE::Engine::rdeConfig</definition>
+        <argsstring></argsstring>
+        <name>rdeConfig</name>
+        <qualifiedname>RDE::Engine::rdeConfig</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="struct_r_d_e_1_1_r_d_e_config" kindref="compound">RDEConfig</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="115" column="23" bodyfile="engine/include/core/Engine.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_engine_1ab6daa9bb1480a5129d512a4eaba82daa" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::Engine::fixedDelta</definition>
+        <argsstring></argsstring>
+        <name>fixedDelta</name>
+        <qualifiedname>RDE::Engine::fixedDelta</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+<para><ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref> time of the Fixed Update method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="121" column="19" bodyfile="engine/include/core/Engine.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_engine_1a809aac7ef8cfef8a8c50840e0a75d9c8" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int RDE::Engine::fpsCounter</definition>
+        <argsstring></argsstring>
+        <name>fpsCounter</name>
+        <qualifiedname>RDE::Engine::fpsCounter</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>FPS counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="126" column="26" bodyfile="engine/include/core/Engine.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_engine_1afcf7f06f3475e8f0a465edf99bd3048f" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int RDE::Engine::frameCounter</definition>
+        <argsstring></argsstring>
+        <name>frameCounter</name>
+        <qualifiedname>RDE::Engine::frameCounter</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Frame counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="131" column="26" bodyfile="engine/include/core/Engine.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_engine_1aa5069d7ce3562f6ee624ccbf76fabf96" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::Engine::backgroundColor</definition>
+        <argsstring></argsstring>
+        <name>backgroundColor</name>
+        <qualifiedname>RDE::Engine::backgroundColor</qualifiedname>
+        <initializer>= Color::Red</initializer>
+        <briefdescription>
+<para><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref> of the background. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="136" column="19" bodyfile="engine/include/core/Engine.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_engine_1a51e3bcb47993a878819e3fcf5a3b9956" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref> *</type>
+        <definition>FrameBuffer* RDE::Engine::frameBuffer</definition>
+        <argsstring></argsstring>
+        <name>frameBuffer</name>
+        <qualifiedname>RDE::Engine::frameBuffer</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="141" column="25" bodyfile="engine/include/core/Engine.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_engine_1a191125c983ba4124764b52bbf1c7840c" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt; void(<ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref> *)&gt;</type>
+        <definition>UniqueDelegate&lt;void(FrameBuffer*)&gt; RDE::Engine::redirectionFunc</definition>
+        <argsstring></argsstring>
+        <name>redirectionFunc</name>
+        <qualifiedname>RDE::Engine::redirectionFunc</qualifiedname>
+        <briefdescription>
+<para>Function to render in a custom way. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="146" column="28" bodyfile="engine/include/core/Engine.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_engine_1a865bbb13b6f6876dff32f3940da14746" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt; void(<ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref> *)&gt;</type>
+        <definition>UniqueDelegate&lt;void(FrameBuffer*)&gt; RDE::Engine::imGuiRedirectionFunc</definition>
+        <argsstring></argsstring>
+        <name>imGuiRedirectionFunc</name>
+        <qualifiedname>RDE::Engine::imGuiRedirectionFunc</qualifiedname>
+        <briefdescription>
+<para>Function to render to ImGui. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="151" column="28" bodyfile="engine/include/core/Engine.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_engine_1a95176766486badc0bfb0e8d6c2ee42cb" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> *</type>
+        <definition>Window* RDE::Engine::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>RDE::Engine::window</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="156" column="20" bodyfile="engine/include/core/Engine.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_engine_1ae6260bbb7a74f31c38bc15f1f32bad87" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_im_gui_scene" kindref="compound">ImGuiScene</ref> *</type>
+        <definition>ImGuiScene* RDE::Engine::imGuiLayer</definition>
+        <argsstring></argsstring>
+        <name>imGuiLayer</name>
+        <qualifiedname>RDE::Engine::imGuiLayer</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>ImGui <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> to show and do debugging operations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_r_d_e_1_1_im_gui_scene" kindref="compound">ImGuiScene</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="163" column="24" bodyfile="engine/include/core/Engine.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_engine_1af5228ba629780423041ae928e61bc659" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt; bool(<ref refid="class_r_d_e_1_1_window_resized_event" kindref="compound">WindowResizedEvent</ref> &amp;)&gt;</type>
+        <definition>UniqueDelegate&lt;bool(WindowResizedEvent&amp;)&gt; RDE::Engine::wreDel</definition>
+        <argsstring></argsstring>
+        <name>wreDel</name>
+        <qualifiedname>RDE::Engine::wreDel</qualifiedname>
+        <briefdescription>
+<para>Callback for window resizing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="169" column="28" bodyfile="engine/include/core/Engine.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_engine_1a0ed1f7c09abdeca68f21fd30a2eeeb13" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_platform" kindref="compound">Platform</ref></type>
+        <definition>Platform RDE::Engine::platform</definition>
+        <argsstring></argsstring>
+        <name>platform</name>
+        <qualifiedname>RDE::Engine::platform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="171" column="22" bodyfile="engine/include/core/Engine.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1a07431cc535c561948cefad6465bd3a25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RDE::Engine::Engine</definition>
+        <argsstring>()</argsstring>
+        <name>Engine</name>
+        <qualifiedname>RDE::Engine::Engine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="174" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1afe3f132024b3e5da6b4062058e7a6e80" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RDE::Engine::getFps</definition>
+        <argsstring>() const</argsstring>
+        <name>getFps</name>
+        <qualifiedname>RDE::Engine::getFps</qualifiedname>
+        <briefdescription>
+<para>This method provides the number of FPS in any given moment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the number of FPS </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="180" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1a7545d98469bc2847d7387bbd59de64be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::Engine::geFixedDelta</definition>
+        <argsstring>() const</argsstring>
+        <name>geFixedDelta</name>
+        <qualifiedname>RDE::Engine::geFixedDelta</qualifiedname>
+        <briefdescription>
+<para>Returns the delta used in the FixedUpdate method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The FPS as milliseconds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="186" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1ae75182149da4f8e73cde6676c876318f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Engine::setFixedDelta</definition>
+        <argsstring>(float _fixedDelta)</argsstring>
+        <name>setFixedDelta</name>
+        <qualifiedname>RDE::Engine::setFixedDelta</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_fixedDelta</declname>
+        </param>
+        <briefdescription>
+<para>Sets the delta to use in the FixedUpdate method, usually 1/60, 1/50 or 1/30. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="191" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1a3fb62992879390472608b7dabab9fab6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Engine::onInit</definition>
+        <argsstring>(Scene *_scene)</argsstring>
+        <name>onInit</name>
+        <qualifiedname>RDE::Engine::onInit</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <briefdescription>
+<para>This initiates some crucial parts of the engine and also the main scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Main scene </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="198" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1a50e15e79f6cc302680fff482c8c547d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Engine::onRun</definition>
+        <argsstring>()</argsstring>
+        <name>onRun</name>
+        <qualifiedname>RDE::Engine::onRun</qualifiedname>
+        <briefdescription>
+<para>This method is the main loop of the game, runs until the window is closed or running attribute is set to false. Runs with an independent frame rate loop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="204" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1af46636437b15e19ebe1a8ddc5e96c818" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Engine::onEvent</definition>
+        <argsstring>(Event &amp;_event)</argsstring>
+        <name>onEvent</name>
+        <qualifiedname>RDE::Engine::onEvent</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>_event</declname>
+        </param>
+        <briefdescription>
+<para>This methods handles all the events that can&apos;t be handle in any given moment, such as resizing the window, closing the window, moving it... </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> to be handled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="212" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1aa673be7b927fd9dafee85dd1e37064a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Engine::onUpdate</definition>
+        <argsstring>(Delta _dt)</argsstring>
+        <name>onUpdate</name>
+        <qualifiedname>RDE::Engine::onUpdate</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref></type>
+          <declname>_dt</declname>
+        </param>
+        <briefdescription>
+<para>This method handles the non-physics based updates of the game and also is used to capture all the inputs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_dt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of time passed from the previous frame to this current one. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="218" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1a6af36b9cd4abdcc55b9e80106c9fa406" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Engine::onFixedUpdate</definition>
+        <argsstring>(Delta _fixedDt)</argsstring>
+        <name>onFixedUpdate</name>
+        <qualifiedname>RDE::Engine::onFixedUpdate</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref></type>
+          <declname>_fixedDt</declname>
+        </param>
+        <briefdescription>
+<para>This method is like onUpdate, but this one handles the physics-based updates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_fixedDt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fixed value to multiply the physics movements, by default 1 / 60. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="224" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1a1dbcefc1e49f66322204c8281a638446" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Engine::onLateUpdate</definition>
+        <argsstring>(Delta _dt)</argsstring>
+        <name>onLateUpdate</name>
+        <qualifiedname>RDE::Engine::onLateUpdate</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref></type>
+          <declname>_dt</declname>
+        </param>
+        <briefdescription>
+<para>This method is called once onUpdate and onFixedUpdate are finished, but before onRender. This is the perfect place to remove elements from collections used in onUpdate or onFixedUpdate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_dt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of time passed from the previous frame to this current one. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="231" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1ae11cd40f884e38168360763eb4e5602b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Engine::onRender</definition>
+        <argsstring>(Delta _dt)</argsstring>
+        <name>onRender</name>
+        <qualifiedname>RDE::Engine::onRender</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref></type>
+          <declname>_dt</declname>
+        </param>
+        <briefdescription>
+<para>This method is used to render everything in our game, renderization shouldn&apos;t be done other method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_dt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of time passed from the previous frame to this current one. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="237" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1ae8dc5c504f624b83a6997f7b8fbfbc68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Engine::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>RDE::Engine::destroy</qualifiedname>
+        <briefdescription>
+<para>Frees all memory and resources allocated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="242" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1a30a4d2764f220e9b0333530fb8f6986c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> *</type>
+        <definition>Window * RDE::Engine::getWindow</definition>
+        <argsstring>()</argsstring>
+        <name>getWindow</name>
+        <qualifiedname>RDE::Engine::getWindow</qualifiedname>
+        <briefdescription>
+<para>Returns the <ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The main window. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="248" column="20" bodyfile="engine/include/core/Engine.h" bodystart="248" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1ad8ea51127f19a4b95f24244c48dfff32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Engine::setRenderingRedirection</definition>
+        <argsstring>(UniqueDelegate&lt; void(FrameBuffer *)&gt; &amp;_redirectionFunc)</argsstring>
+        <name>setRenderingRedirection</name>
+        <qualifiedname>RDE::Engine::setRenderingRedirection</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt; void(<ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref> *)&gt; &amp;</type>
+          <declname>_redirectionFunc</declname>
+        </param>
+        <briefdescription>
+<para>Allows the end-user to render to something different than the default window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_redirectionFunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="254" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1a036ea486447300e582e3c1bf2d035060" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Engine::setRenderingRedirectionToImGui</definition>
+        <argsstring>(UniqueDelegate&lt; void(FrameBuffer *)&gt; &amp;_redirectionFunc)</argsstring>
+        <name>setRenderingRedirectionToImGui</name>
+        <qualifiedname>RDE::Engine::setRenderingRedirectionToImGui</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt; void(<ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref> *)&gt; &amp;</type>
+          <declname>_redirectionFunc</declname>
+        </param>
+        <briefdescription>
+<para>Allows the end-user to render to ImGui specifically. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_redirectionFunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="260" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1ad231ed26e0a483581c7600b7e8cb3953" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RDE::Engine::onWindowResized</definition>
+        <argsstring>(WindowResizedEvent &amp;_e)</argsstring>
+        <name>onWindowResized</name>
+        <qualifiedname>RDE::Engine::onWindowResized</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_window_resized_event" kindref="compound">WindowResizedEvent</ref> &amp;</type>
+          <declname>_e</declname>
+        </param>
+        <briefdescription>
+<para>Callback to execute when the window is resized. Returns if the event was handled or if it should be treated in deeper layers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> of resizing. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="269" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1a9f05d8e22d989719fabee6dbe4058498" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Logs</type>
+        <definition>Logs RDE::Engine::changeColorConsoleCommand</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;_args)</argsstring>
+        <name>changeColorConsoleCommand</name>
+        <qualifiedname>RDE::Engine::changeColorConsoleCommand</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>_args</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="struct_r_d_e_1_1_command" kindref="compound">Command</ref> for the internal console. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Logs </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="276" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1a41fbf89ef86e1e508eb658a818b669c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Logs</type>
+        <definition>Logs RDE::Engine::setParentCommand</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;_args)</argsstring>
+        <name>setParentCommand</name>
+        <qualifiedname>RDE::Engine::setParentCommand</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>_args</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="struct_r_d_e_1_1_command" kindref="compound">Command</ref> for the internal console. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Logs </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="283" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_engine_1ae6b4b51eea6ac35f7e28fecb6e415c1c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Logs</type>
+        <definition>Logs RDE::Engine::componentsCommands</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;_args)</argsstring>
+        <name>componentsCommands</name>
+        <qualifiedname>RDE::Engine::componentsCommands</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>_args</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="struct_r_d_e_1_1_command" kindref="compound">Command</ref> for the internal console. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Logs </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="290" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="14">
+        <label>RDE::Color</label>
+        <link refid="struct_r_d_e_1_1_color"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>Black</edgelabel>
+          <edgelabel>Blue</edgelabel>
+          <edgelabel>Brown</edgelabel>
+          <edgelabel>Disabled</edgelabel>
+          <edgelabel>Gray</edgelabel>
+          <edgelabel>Green</edgelabel>
+          <edgelabel>Magenta</edgelabel>
+          <edgelabel>NO_COLOR</edgelabel>
+          <edgelabel>Orange</edgelabel>
+          <edgelabel>Placeholder</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RDE::ConfigManager</label>
+        <link refid="class_r_d_e_1_1_config_manager"/>
+      </node>
+      <node id="9">
+        <label>RDE::Console</label>
+        <link refid="class_r_d_e_1_1_console"/>
+      </node>
+      <node id="16">
+        <label>RDE::ControllerVibrationManager</label>
+        <link refid="class_r_d_e_1_1_controller_vibration_manager"/>
+      </node>
+      <node id="13">
+        <label>RDE::DebugOptions</label>
+        <link refid="struct_r_d_e_1_1_debug_options"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>boxLineColor</edgelabel>
+          <edgelabel>boxRadiusColor</edgelabel>
+          <edgelabel>circleLineColor</edgelabel>
+          <edgelabel>circleRadiusColor</edgelabel>
+          <edgelabel>polygonLineColor</edgelabel>
+          <edgelabel>polygonRadiusColor</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>RDE::ECSManager</label>
+        <link refid="class_r_d_e_1_1_e_c_s_manager"/>
+      </node>
+      <node id="1">
+        <label>RDE::Engine</label>
+        <link refid="class_r_d_e_1_1_engine"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>manager</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>rdeConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>RDE::FileManager</label>
+        <link refid="class_r_d_e_1_1_file_manager"/>
+      </node>
+      <node id="6">
+        <label>RDE::FontManager</label>
+        <link refid="class_r_d_e_1_1_font_manager"/>
+      </node>
+      <node id="8">
+        <label>RDE::InputManager</label>
+        <link refid="class_r_d_e_1_1_input_manager"/>
+      </node>
+      <node id="24">
+        <label>RDE::LocalizationConfig</label>
+        <link refid="struct_r_d_e_1_1_localization_config"/>
+      </node>
+      <node id="19">
+        <label>RDE::LocalizationInfo</label>
+        <link refid="struct_r_d_e_1_1_localization_info"/>
+      </node>
+      <node id="18">
+        <label>RDE::LocalizationManager</label>
+        <link refid="class_r_d_e_1_1_localization_manager"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>localizationInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::Manager</label>
+        <link refid="class_r_d_e_1_1_manager"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>configManager</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>textureManager</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>shaderManager</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>fontManager</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>soundManager</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>inputManager</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>consoleManager</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ecsManager</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>physics</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>fileManager</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>controllerVibrationManager</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>renderManager</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>localizationManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>RDE::PhysicsManager</label>
+        <link refid="class_r_d_e_1_1_physics_manager"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>debugOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>RDE::RDEConfig</label>
+        <link refid="struct_r_d_e_1_1_r_d_e_config"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>windowData</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>projectData</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>RDE::RDEConfig::ProjectProperties</label>
+        <link refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>localizationConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>RDE::RDEConfig::WindowProperties</label>
+        <link refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>resolution</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>RDE::RenderManager</label>
+        <link refid="class_r_d_e_1_1_render_manager"/>
+      </node>
+      <node id="10">
+        <label>RDE::SceneManager</label>
+        <link refid="class_r_d_e_1_1_scene_manager"/>
+      </node>
+      <node id="5">
+        <label>RDE::ShaderManager</label>
+        <link refid="class_r_d_e_1_1_shader_manager"/>
+      </node>
+      <node id="7">
+        <label>RDE::SoundManager</label>
+        <link refid="class_r_d_e_1_1_sound_manager"/>
+      </node>
+      <node id="4">
+        <label>RDE::TextureAtlasManager</label>
+        <link refid="class_r_d_e_1_1_texture_atlas_manager"/>
+      </node>
+      <node id="22">
+        <label>RDE::Vec2&lt; int &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/Engine.h" line="105" column="5" bodyfile="engine/include/core/Engine.h" bodystart="105" bodyend="291"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_engine_1aa5069d7ce3562f6ee624ccbf76fabf96" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>backgroundColor</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a9f05d8e22d989719fabee6dbe4058498" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>changeColorConsoleCommand</name></member>
+      <member refid="class_r_d_e_1_1_engine_1ae6b4b51eea6ac35f7e28fecb6e415c1c" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>componentsCommands</name></member>
+      <member refid="class_r_d_e_1_1_engine_1ae8dc5c504f624b83a6997f7b8fbfbc68" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>destroy</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a07431cc535c561948cefad6465bd3a25" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>Engine</name></member>
+      <member refid="class_r_d_e_1_1_engine_1ab6daa9bb1480a5129d512a4eaba82daa" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>fixedDelta</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a809aac7ef8cfef8a8c50840e0a75d9c8" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>fpsCounter</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a51e3bcb47993a878819e3fcf5a3b9956" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>frameBuffer</name></member>
+      <member refid="class_r_d_e_1_1_engine_1afcf7f06f3475e8f0a465edf99bd3048f" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>frameCounter</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a7545d98469bc2847d7387bbd59de64be" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>geFixedDelta</name></member>
+      <member refid="class_r_d_e_1_1_engine_1afe3f132024b3e5da6b4062058e7a6e80" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>getFps</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a30a4d2764f220e9b0333530fb8f6986c" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>getWindow</name></member>
+      <member refid="class_r_d_e_1_1_engine_1ae6260bbb7a74f31c38bc15f1f32bad87" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>imGuiLayer</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a865bbb13b6f6876dff32f3940da14746" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>imGuiRedirectionFunc</name></member>
+      <member refid="class_r_d_e_1_1_engine_1ab672cbfabf5685fd5d6990a1d8926c55" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>manager</name></member>
+      <member refid="class_r_d_e_1_1_engine_1af46636437b15e19ebe1a8ddc5e96c818" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>onEvent</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a6af36b9cd4abdcc55b9e80106c9fa406" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>onFixedUpdate</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a3fb62992879390472608b7dabab9fab6" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>onInit</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a1dbcefc1e49f66322204c8281a638446" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>onLateUpdate</name></member>
+      <member refid="class_r_d_e_1_1_engine_1ae11cd40f884e38168360763eb4e5602b" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>onRender</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a50e15e79f6cc302680fff482c8c547d0" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>onRun</name></member>
+      <member refid="class_r_d_e_1_1_engine_1aa673be7b927fd9dafee85dd1e37064a9" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>onUpdate</name></member>
+      <member refid="class_r_d_e_1_1_engine_1ad231ed26e0a483581c7600b7e8cb3953" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>onWindowResized</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a0ed1f7c09abdeca68f21fd30a2eeeb13" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>platform</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a7b9cbb04241539e9d945ddd2e250712f" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>rdeConfig</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a191125c983ba4124764b52bbf1c7840c" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>redirectionFunc</name></member>
+      <member refid="class_r_d_e_1_1_engine_1ae75182149da4f8e73cde6676c876318f" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>setFixedDelta</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a41fbf89ef86e1e508eb658a818b669c3" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>setParentCommand</name></member>
+      <member refid="class_r_d_e_1_1_engine_1ad8ea51127f19a4b95f24244c48dfff32" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>setRenderingRedirection</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a036ea486447300e582e3c1bf2d035060" prot="public" virt="non-virtual"><scope>RDE::Engine</scope><name>setRenderingRedirectionToImGui</name></member>
+      <member refid="class_r_d_e_1_1_engine_1a95176766486badc0bfb0e8d6c2ee42cb" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>window</name></member>
+      <member refid="class_r_d_e_1_1_engine_1af5228ba629780423041ae928e61bc659" prot="private" virt="non-virtual"><scope>RDE::Engine</scope><name>wreDel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

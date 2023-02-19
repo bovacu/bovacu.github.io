@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_animation_system" kind="class" language="C++" prot="public">
+    <compoundname>RDE::AnimationSystem</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_animation_system_1a01775d3fbdeb5ce41690138f0b588140" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="struct_r_d_e_1_1_animation_node" kindref="compound">AnimationNode</ref> &gt;</type>
+        <definition>std::unordered_map&lt;std::string, AnimationNode&gt; RDE::AnimationSystem::animations</definition>
+        <argsstring></argsstring>
+        <name>animations</name>
+        <qualifiedname>RDE::AnimationSystem::animations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="52" column="32" bodyfile="engine/include/core/systems/animationSystem/AnimationSystem.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_animation_system_1a536f2c7df8a8794360f4449f8108ba6b" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_animation_node" kindref="compound">AnimationNode</ref> *</type>
+        <definition>AnimationNode* RDE::AnimationSystem::currentNode</definition>
+        <argsstring></argsstring>
+        <name>currentNode</name>
+        <qualifiedname>RDE::AnimationSystem::currentNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="53" column="27" bodyfile="engine/include/core/systems/animationSystem/AnimationSystem.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_animation_system_1a71ec508e9f28a64e3fd4eca6064658d3" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_event_bus" kindref="compound">EventBus</ref>&lt; std::string, <ref refid="class_r_d_e_1_1_transition_params" kindref="compound">TransitionParams</ref> &gt;</type>
+        <definition>EventBus&lt;std::string, TransitionParams&gt; RDE::AnimationSystem::bus</definition>
+        <argsstring></argsstring>
+        <name>bus</name>
+        <qualifiedname>RDE::AnimationSystem::bus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="54" column="22" bodyfile="engine/include/core/systems/animationSystem/AnimationSystem.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_animation_system_1a6ac30572bda45d36ae65f6fa14c1f8a9" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> *</type>
+        <definition>Manager* RDE::AnimationSystem::manager</definition>
+        <argsstring></argsstring>
+        <name>manager</name>
+        <qualifiedname>RDE::AnimationSystem::manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="55" column="21" bodyfile="engine/include/core/systems/animationSystem/AnimationSystem.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_system_1a222cd3cc935a3d2fc5062fc16ab3c4b5" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RDE::AnimationSystem::AnimationSystem</definition>
+        <argsstring>(Manager *_manager)</argsstring>
+        <name>AnimationSystem</name>
+        <qualifiedname>RDE::AnimationSystem::AnimationSystem</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> *</type>
+          <declname>_manager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="58" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_system_1a5723f11008c998e96438439ab8502e1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_animation" kindref="compound">Animation</ref> *</type>
+        <definition>Animation * RDE::AnimationSystem::createAnimation</definition>
+        <argsstring>(const std::string &amp;_animName, const std::string &amp;_atlas, const std::vector&lt; int &gt; &amp;_indices)</argsstring>
+        <name>createAnimation</name>
+        <qualifiedname>RDE::AnimationSystem::createAnimation</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_animName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_atlas</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>_indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="59" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_system_1acc2c5fc8d85daa3ddd25349ec117b367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::AnimationSystem::setAnimationTimeBetweenFrames</definition>
+        <argsstring>(const std::string &amp;_animation, float _timeBetweenFrames)</argsstring>
+        <name>setAnimationTimeBetweenFrames</name>
+        <qualifiedname>RDE::AnimationSystem::setAnimationTimeBetweenFrames</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_animation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_timeBetweenFrames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="61" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_system_1afb926edd4575e81e2c7e2e7afd351fef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::AnimationSystem::getAnimationTimeBetweenFrames</definition>
+        <argsstring>(const std::string &amp;_animation)</argsstring>
+        <name>getAnimationTimeBetweenFrames</name>
+        <qualifiedname>RDE::AnimationSystem::getAnimationTimeBetweenFrames</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_animation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="62" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_system_1add93fa40c43c57879bad41e3bab4024f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::AnimationSystem::setInitialAnimation</definition>
+        <argsstring>(const std::string &amp;_animationName)</argsstring>
+        <name>setInitialAnimation</name>
+        <qualifiedname>RDE::AnimationSystem::setInitialAnimation</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_animationName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="64" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_system_1a15cb5e5ae52a5a2f3b2dc10b1727dee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>auto</type>
+            <declname>TransitionFunc</declname>
+            <defname>TransitionFunc</defname>
+          </param>
+          <param>
+            <type>typename Class</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void RDE::AnimationSystem::createTransition</definition>
+        <argsstring>(const std::string &amp;_initialAnimation, const std::string &amp;_finalAnimation, Class *_class)</argsstring>
+        <name>createTransition</name>
+        <qualifiedname>RDE::AnimationSystem::createTransition</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_initialAnimation</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_finalAnimation</declname>
+        </param>
+        <param>
+          <type>Class *</type>
+          <declname>_class</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="67" column="18" bodyfile="engine/include/core/systems/animationSystem/AnimationSystem.h" bodystart="80" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_system_1a3eccdd3f346d3270f9c450ae798935c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_animation_node" kindref="compound">AnimationNode</ref> *</type>
+        <definition>AnimationNode * RDE::AnimationSystem::getCurrentAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentAnimation</name>
+        <qualifiedname>RDE::AnimationSystem::getCurrentAnimation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="69" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_system_1ae91026733e2713670da85cce23ba1888" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::AnimationSystem::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>RDE::AnimationSystem::start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="71" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_system_1a2b31831cd8e195020a6877f097ccad87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::AnimationSystem::pause</definition>
+        <argsstring>()</argsstring>
+        <name>pause</name>
+        <qualifiedname>RDE::AnimationSystem::pause</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="72" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_system_1ac1dc61143674be638925300493cae3e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::AnimationSystem::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>RDE::AnimationSystem::stop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="73" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_system_1aa79f169b77d79bee07a4868af6f1eae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::AnimationSystem::restart</definition>
+        <argsstring>()</argsstring>
+        <name>restart</name>
+        <qualifiedname>RDE::AnimationSystem::restart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="74" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_animation_system_1a2bbf9c7aceffd6d6f309297d3fc19471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::AnimationSystem::update</definition>
+        <argsstring>(float _dt, SpriteRenderer *_spriteRenderer, TransitionParams _params={})</argsstring>
+        <name>update</name>
+        <qualifiedname>RDE::AnimationSystem::update</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_dt</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_sprite_renderer" kindref="compound">SpriteRenderer</ref> *</type>
+          <declname>_spriteRenderer</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_transition_params" kindref="compound">TransitionParams</ref></type>
+          <declname>_params</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="76" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/animationSystem/AnimationSystem.h" line="50" column="5" bodyfile="engine/include/core/systems/animationSystem/AnimationSystem.h" bodystart="50" bodyend="77"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_animation_system_1a01775d3fbdeb5ce41690138f0b588140" prot="private" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>animations</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1a222cd3cc935a3d2fc5062fc16ab3c4b5" prot="public" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>AnimationSystem</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1a71ec508e9f28a64e3fd4eca6064658d3" prot="private" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>bus</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1a5723f11008c998e96438439ab8502e1d" prot="public" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>createAnimation</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1a15cb5e5ae52a5a2f3b2dc10b1727dee8" prot="public" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>createTransition</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1a536f2c7df8a8794360f4449f8108ba6b" prot="private" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>currentNode</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1afb926edd4575e81e2c7e2e7afd351fef" prot="public" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>getAnimationTimeBetweenFrames</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1a3eccdd3f346d3270f9c450ae798935c4" prot="public" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>getCurrentAnimation</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1a6ac30572bda45d36ae65f6fa14c1f8a9" prot="private" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>manager</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1a2b31831cd8e195020a6877f097ccad87" prot="public" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>pause</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1aa79f169b77d79bee07a4868af6f1eae6" prot="public" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>restart</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1acc2c5fc8d85daa3ddd25349ec117b367" prot="public" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>setAnimationTimeBetweenFrames</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1add93fa40c43c57879bad41e3bab4024f" prot="public" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>setInitialAnimation</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1ae91026733e2713670da85cce23ba1888" prot="public" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>start</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1ac1dc61143674be638925300493cae3e0" prot="public" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>stop</name></member>
+      <member refid="class_r_d_e_1_1_animation_system_1a2bbf9c7aceffd6d6f309297d3fc19471" prot="public" virt="non-virtual"><scope>RDE::AnimationSystem</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

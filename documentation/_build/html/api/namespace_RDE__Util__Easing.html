@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namespace RDE::Util::Easing &mdash; RDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Namespace RDE::Util::GL" href="namespace_RDE__Util__GL.html" />
+    <link rel="prev" title="Namespace RDE::Util" href="namespace_RDE__Util.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            RDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="namespace_RDE.html">Namespace RDE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_RDE__perlin_detail.html">Namespace RDE::perlin_detail</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_RDE__Util.html">Namespace RDE::Util</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Namespace RDE::Util::Easing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_RDE__Util__GL.html">Namespace RDE::Util::GL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_RDE__Util__Graphics.html">Namespace RDE::Util::Graphics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_RDE__Util__Log.html">Namespace RDE::Util::Log</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_RDE__Util__Math.html">Namespace RDE::Util::Math</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_RDE__Util__String.html">Namespace RDE::Util::String</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_RDE__Util__Texture.html">Namespace RDE::Util::Texture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_std.html">Namespace std</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="library_root.html">Library API</a></li>
+      <li class="breadcrumb-item active">Namespace RDE::Util::Easing</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/namespace_RDE__Util__Easing.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="namespace-rde-util-easing">
+<span id="id1"></span><h1>Namespace RDE::Util::Easing<a class="headerlink" href="#namespace-rde-util-easing" title="Permalink to this heading"></a></h1>
+<nav class="contents local" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#functions" id="id2">Functions</a></p></li>
+</ul>
+</nav>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function__functions_8h_1a36e0b1bfb28aaac45bf23ac65f274fd0.html#exhale-function-functions-8h-1a36e0b1bfb28aaac45bf23ac65f274fd0"><span class="std std-ref">Function RDE::Util::Easing::inCircular</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1a7fa62ed249b247fcc1ea7ea935db2718.html#exhale-function-functions-8h-1a7fa62ed249b247fcc1ea7ea935db2718"><span class="std std-ref">Function RDE::Util::Easing::inCubic</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1a4d361a2a6bff9ad6aa3ba79ecdf2bf1a.html#exhale-function-functions-8h-1a4d361a2a6bff9ad6aa3ba79ecdf2bf1a"><span class="std std-ref">Function RDE::Util::Easing::inExponential</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1a3c2bc62e173cff916fe72abe06504540.html#exhale-function-functions-8h-1a3c2bc62e173cff916fe72abe06504540"><span class="std std-ref">Function RDE::Util::Easing::inLinear</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1a3eb240ea0cf21008da647dfcfbc18016.html#exhale-function-functions-8h-1a3eb240ea0cf21008da647dfcfbc18016"><span class="std std-ref">Function RDE::Util::Easing::inOutCircular</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1aa47adc5eb60e7d806d965a984ca83ea7.html#exhale-function-functions-8h-1aa47adc5eb60e7d806d965a984ca83ea7"><span class="std std-ref">Function RDE::Util::Easing::inOutCubic</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1a69566b594c471e87d25d9b46be59f460.html#exhale-function-functions-8h-1a69566b594c471e87d25d9b46be59f460"><span class="std std-ref">Function RDE::Util::Easing::inOutExponential</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1a95229e2610c32727967fcf0a1b3f2e3a.html#exhale-function-functions-8h-1a95229e2610c32727967fcf0a1b3f2e3a"><span class="std std-ref">Function RDE::Util::Easing::inOutQuadratic</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1a44512da0dbf80642a2c0d1cefa9e9408.html#exhale-function-functions-8h-1a44512da0dbf80642a2c0d1cefa9e9408"><span class="std std-ref">Function RDE::Util::Easing::inOutQuartic</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1a74549639c32ada0c0878575bdafefcde.html#exhale-function-functions-8h-1a74549639c32ada0c0878575bdafefcde"><span class="std std-ref">Function RDE::Util::Easing::inOutQuintic</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1ac133cce11dcc1c10ef1616206b3cb826.html#exhale-function-functions-8h-1ac133cce11dcc1c10ef1616206b3cb826"><span class="std std-ref">Function RDE::Util::Easing::inOutSine</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1a191195a8534a593882dfaf3a74044763.html#exhale-function-functions-8h-1a191195a8534a593882dfaf3a74044763"><span class="std std-ref">Function RDE::Util::Easing::inQuadratic</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1a790995c3ed7c7e1c4dd543453f7c9fb0.html#exhale-function-functions-8h-1a790995c3ed7c7e1c4dd543453f7c9fb0"><span class="std std-ref">Function RDE::Util::Easing::inQuartic</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1acf00882688631c2b74b49905b24a0fcf.html#exhale-function-functions-8h-1acf00882688631c2b74b49905b24a0fcf"><span class="std std-ref">Function RDE::Util::Easing::inQuintic</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1adb21c9feff77d501268292ab3ad6cc0e.html#exhale-function-functions-8h-1adb21c9feff77d501268292ab3ad6cc0e"><span class="std std-ref">Function RDE::Util::Easing::inSine</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1af6e20cbfcc8fe0fcc9a5a55657f55ad9.html#exhale-function-functions-8h-1af6e20cbfcc8fe0fcc9a5a55657f55ad9"><span class="std std-ref">Function RDE::Util::Easing::outCircular</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1ad1cc35b7de358069de0e68ce1a036be2.html#exhale-function-functions-8h-1ad1cc35b7de358069de0e68ce1a036be2"><span class="std std-ref">Function RDE::Util::Easing::outCubic</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1a6e3e89d7ecef58f79edd79269e92056f.html#exhale-function-functions-8h-1a6e3e89d7ecef58f79edd79269e92056f"><span class="std std-ref">Function RDE::Util::Easing::outExponential</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1a9d08640b19c504efc963bcd6a7d47888.html#exhale-function-functions-8h-1a9d08640b19c504efc963bcd6a7d47888"><span class="std std-ref">Function RDE::Util::Easing::outQuadratic</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1a52ef8a8c5e8e8b35bd407775a4415f46.html#exhale-function-functions-8h-1a52ef8a8c5e8e8b35bd407775a4415f46"><span class="std std-ref">Function RDE::Util::Easing::outQuartic</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1a09bbb0e5cbb7eef505129853d12e797b.html#exhale-function-functions-8h-1a09bbb0e5cbb7eef505129853d12e797b"><span class="std std-ref">Function RDE::Util::Easing::outQuintic</span></a></p></li>
+<li><p><a class="reference internal" href="function__functions_8h_1ac57de300940fa1c0d042d055eba9539c.html#exhale-function-functions-8h-1ac57de300940fa1c0d042d055eba9539c"><span class="std std-ref">Function RDE::Util::Easing::outSine</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="namespace_RDE__Util.html" class="btn btn-neutral float-left" title="Namespace RDE::Util" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="namespace_RDE__Util__GL.html" class="btn btn-neutral float-right" title="Namespace RDE::Util::GL" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

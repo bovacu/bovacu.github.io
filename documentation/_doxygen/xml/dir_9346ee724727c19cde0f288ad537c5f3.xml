@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_9346ee724727c19cde0f288ad537c5f3" kind="dir">
+    <compoundname>engine/include/core/graph/components</compoundname>
+    <innerdir refid="dir_255e0b9a846191303a011c813bf9b576">engine/include/core/graph/components/ui</innerdir>
+    <innerfile refid="_component_base_8h">ComponentBase.h</innerfile>
+    <innerfile refid="_components_8h">Components.h</innerfile>
+    <innerfile refid="_dynamic_sprite_renderer_8h">DynamicSpriteRenderer.h</innerfile>
+    <innerfile refid="_node_8h">Node.h</innerfile>
+    <innerfile refid="_particle_system_8h">ParticleSystem.h</innerfile>
+    <innerfile refid="_sprite_renderer_8h">SpriteRenderer.h</innerfile>
+    <innerfile refid="_text_renderer_8h">TextRenderer.h</innerfile>
+    <innerfile refid="_transform_8h">Transform.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/graph/components/"/>
+  </compounddef>
+</doxygen>

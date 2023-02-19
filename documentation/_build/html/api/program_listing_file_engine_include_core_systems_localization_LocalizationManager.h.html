@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File LocalizationManager.h &mdash; RDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            RDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">Library API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Program Listing for File LocalizationManager.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file_engine_include_core_systems_localization_LocalizationManager.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-localizationmanager-h">
+<span id="program-listing-file-engine-include-core-systems-localization-localizationmanager-h"></span><h1>Program Listing for File LocalizationManager.h<a class="headerlink" href="#program-listing-for-file-localizationmanager-h" title="Permalink to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file_engine_include_core_systems_localization_LocalizationManager.h.html#file-engine-include-core-systems-localization-localizationmanager-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">engine/include/core/systems/localization/LocalizationManager.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//</span>
+<span class="c1">// Created by borja on 10/1/22.</span>
+<span class="c1">//</span>
+
+<span class="cp">#ifndef RDE_LOCALIZATION_MANAGER_H</span>
+<span class="cp">#define RDE_LOCALIZATION_MANAGER_H</span>
+
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;core/Core.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;nlohmann/json.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;core/util/Functions.h&quot;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">RDE</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">LocalizationInfo</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">enum</span><span class="w"> </span><span class="nc">Language</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">EN_US</span><span class="p">,</span><span class="w"> </span><span class="n">EN_GB</span><span class="p">,</span><span class="w"> </span><span class="n">EN_CA</span><span class="p">,</span><span class="w"> </span><span class="n">ES_MX</span><span class="p">,</span><span class="w"> </span><span class="n">ES_ES</span><span class="p">,</span><span class="w"> </span><span class="n">PT_BR</span><span class="p">,</span><span class="w"> </span><span class="n">FR</span><span class="p">,</span><span class="w"> </span><span class="n">ZH</span><span class="p">,</span><span class="w"> </span><span class="n">RU</span><span class="p">,</span><span class="w"> </span><span class="n">DE</span><span class="p">,</span><span class="w"> </span><span class="n">IT</span><span class="p">,</span><span class="w"> </span><span class="n">JP</span><span class="p">,</span><span class="w"> </span><span class="n">MAX</span><span class="w"> </span><span class="p">};</span>
+<span class="w">        </span><span class="n">Language</span><span class="w"> </span><span class="n">language</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="nf">toString</span><span class="p">(</span><span class="n">Language</span><span class="w"> </span><span class="n">_language</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">_language</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">EN_US</span><span class="p">:</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;en-us&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">ES_ES</span><span class="p">:</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;es-es&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">PT_BR</span><span class="p">:</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;pt-br&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">FR</span><span class="p">:</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;fr&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">EN_GB</span><span class="p">:</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;en-gb&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">EN_CA</span><span class="p">:</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;en-ca&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">ES_MX</span><span class="p">:</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;es-mx&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">ZH</span><span class="p">:</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;zh&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">RU</span><span class="p">:</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;ru&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">DE</span><span class="p">:</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;de&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">IT</span><span class="p">:</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;it&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">JP</span><span class="p">:</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;jp&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="k">default</span><span class="o">:</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;NON_LANGUAGE&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">Language</span><span class="w"> </span><span class="nf">toEnum</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">_language</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">toEnum</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">_language</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">Language</span><span class="w"> </span><span class="nf">toEnum</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_language</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">auto</span><span class="w"> </span><span class="n">_strCpy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_language</span><span class="p">;</span>
+<span class="w">            </span><span class="n">_strCpy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Util</span><span class="o">::</span><span class="n">String</span><span class="o">::</span><span class="n">toLower</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">);</span>
+
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;en_us&quot;</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">EN_US</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">))</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">EN_US</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;es&quot;</span><span class="p">))</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">ES_ES</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;es_es&quot;</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">ES_ES</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;pt&quot;</span><span class="p">))</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">PT_BR</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;pt_br&quot;</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">PT_BR</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;fr&quot;</span><span class="p">))</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">FR</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;en_gb&quot;</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">EN_GB</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;en_ca&quot;</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">EN_CA</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;es_mx&quot;</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">ES_MX</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;zh&quot;</span><span class="p">))</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">ZH</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;ru&quot;</span><span class="p">))</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">RU</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;de&quot;</span><span class="p">))</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">DE</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;it&quot;</span><span class="p">))</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">IT</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal</span><span class="p">(</span><span class="n">_strCpy</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">_strCpy</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;jp&quot;</span><span class="p">))</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">JP</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">Util</span><span class="o">::</span><span class="n">Log</span><span class="o">::</span><span class="n">warn</span><span class="p">(</span><span class="s">&quot;Locale: &#39;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_language</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&#39; is not implemented in the engine, defaulting to english&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">Language</span><span class="o">::</span><span class="n">EN_US</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">Engine</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">LocalizationManager</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">        </span><span class="k">friend</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Manager</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">private</span><span class="o">:</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">LocalizationInfo</span><span class="o">::</span><span class="n">Language</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">localizationTable</span><span class="p">;</span>
+<span class="w">            </span><span class="n">Engine</span><span class="o">*</span><span class="w"> </span><span class="n">engine</span><span class="p">;</span>
+
+<span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">Any</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">enum</span><span class="w"> </span><span class="nc">Type</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">Int</span><span class="p">,</span><span class="w"> </span><span class="n">UInt</span><span class="p">,</span><span class="w"> </span><span class="n">Long</span><span class="p">,</span><span class="w"> </span><span class="n">ULong</span><span class="p">,</span><span class="w"> </span><span class="n">Float</span><span class="p">,</span><span class="w"> </span><span class="n">Double</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="p">};</span>
+
+<span class="w">                </span><span class="k">private</span><span class="o">:</span>
+<span class="w">                    </span><span class="n">Type</span><span class="w"> </span><span class="n">type</span><span class="p">;</span>
+<span class="w">                    </span><span class="k">union</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="kt">int</span><span class="w">     </span><span class="n">INT</span><span class="p">;</span>
+<span class="w">                        </span><span class="n">uint</span><span class="w">    </span><span class="n">UINT</span><span class="p">;</span>
+<span class="w">                        </span><span class="kt">long</span><span class="w">    </span><span class="n">LONG</span><span class="p">;</span>
+<span class="w">                        </span><span class="n">ulong</span><span class="w">   </span><span class="n">ULONG</span><span class="p">;</span>
+<span class="w">                        </span><span class="kt">float</span><span class="w">   </span><span class="n">FLOAT</span><span class="p">;</span>
+<span class="w">                        </span><span class="kt">double</span><span class="w">  </span><span class="n">DOUBLE</span><span class="p">;</span>
+<span class="w">                        </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w">   </span><span class="n">STRING</span><span class="p">;</span>
+<span class="w">                    </span><span class="p">}</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="p">};</span>
+
+<span class="w">                </span><span class="k">public</span><span class="o">:</span>
+<span class="w">                    </span><span class="c1">// DO NOT SET HERE explicit ON CONSTRUCTORS</span>
+<span class="w">                    </span><span class="n">Any</span><span class="p">(</span><span class="kt">int</span><span class="w">   </span><span class="n">_e</span><span class="p">)</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">INT</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">_e</span><span class="p">;</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Int</span><span class="p">;</span><span class="w">     </span><span class="p">}</span>
+<span class="w">                    </span><span class="n">Any</span><span class="p">(</span><span class="n">uint</span><span class="w">   </span><span class="n">_e</span><span class="p">)</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">UINT</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">_e</span><span class="p">;</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UInt</span><span class="p">;</span><span class="w">    </span><span class="p">}</span>
+<span class="w">                    </span><span class="n">Any</span><span class="p">(</span><span class="kt">long</span><span class="w">   </span><span class="n">_e</span><span class="p">)</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">LONG</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">_e</span><span class="p">;</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Long</span><span class="p">;</span><span class="w">    </span><span class="p">}</span>
+<span class="w">                    </span><span class="n">Any</span><span class="p">(</span><span class="n">ulong</span><span class="w">   </span><span class="n">_e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">ULONG</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">_e</span><span class="p">;</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ULong</span><span class="p">;</span><span class="w">   </span><span class="p">}</span>
+<span class="w">                    </span><span class="n">Any</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">_e</span><span class="p">)</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">FLOAT</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">_e</span><span class="p">;</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Float</span><span class="p">;</span><span class="w">   </span><span class="p">}</span>
+<span class="w">                    </span><span class="n">Any</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">_e</span><span class="p">)</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">DOUBLE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_e</span><span class="p">;</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Double</span><span class="p">;</span><span class="w">  </span><span class="p">}</span>
+<span class="w">                    </span><span class="n">Any</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">_e</span><span class="p">)</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">STRING</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_e</span><span class="p">;</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">String</span><span class="p">;</span><span class="w">  </span><span class="p">}</span>
+<span class="w">                    </span><span class="n">Any</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">_e</span><span class="p">)</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">STRING</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_e</span><span class="p">.</span><span class="n">c_str</span><span class="p">();</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">String</span><span class="p">;</span><span class="w">  </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="n">Type</span><span class="w"> </span><span class="n">getType</span><span class="p">()</span><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">type</span><span class="p">;</span><span class="w">        </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">getInt</span><span class="p">()</span><span class="w">      </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">INT</span><span class="p">;</span><span class="w">    </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">getFloat</span><span class="p">()</span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">FLOAT</span><span class="p">;</span><span class="w">  </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">getDouble</span><span class="p">()</span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">DOUBLE</span><span class="p">;</span><span class="w">  </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">getString</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">STRING</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="n">uint</span><span class="w"> </span><span class="n">getUInt</span><span class="p">()</span><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">UINT</span><span class="p">;</span><span class="w">   </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">getLong</span><span class="p">()</span><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">LONG</span><span class="p">;</span><span class="w">   </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="n">ulong</span><span class="w"> </span><span class="n">getULong</span><span class="p">()</span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">ULONG</span><span class="p">;</span><span class="w">  </span><span class="p">}</span>
+<span class="w">            </span><span class="p">};</span>
+
+<span class="w">        </span><span class="k">public</span><span class="o">:</span>
+<span class="w">            </span><span class="n">LocalizationInfo</span><span class="w"> </span><span class="n">localizationInfo</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">private</span><span class="o">:</span>
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="n">init</span><span class="p">(</span><span class="n">Engine</span><span class="o">*</span><span class="w"> </span><span class="n">_engine</span><span class="p">);</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">localizeSubstitution</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_string</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_replacement</span><span class="p">);</span>
+
+<span class="w">        </span><span class="k">public</span><span class="o">:</span>
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="n">loadAllLanguages</span><span class="p">();</span>
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="nf">loadLanguage</span><span class="p">(</span><span class="n">LocalizationInfo</span><span class="o">::</span><span class="n">Language</span><span class="w"> </span><span class="n">_language</span><span class="p">);</span>
+
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">localize</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_key</span><span class="p">);</span>
+
+<span class="w">            </span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="p">...</span><span class="w"> </span><span class="n">Args</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">localize</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_key</span><span class="p">,</span><span class="w"> </span><span class="n">Args</span><span class="o">&amp;</span><span class="p">...</span><span class="w"> </span><span class="n">_args</span><span class="p">);</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="p">...</span><span class="w"> </span><span class="n">Args</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">LocalizationManager</span><span class="o">::</span><span class="n">localize</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_key</span><span class="p">,</span><span class="w"> </span><span class="n">Args</span><span class="o">&amp;</span><span class="p">...</span><span class="w"> </span><span class="n">_args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Any</span><span class="o">&gt;</span><span class="w"> </span><span class="n">_vec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">_args</span><span class="p">...</span><span class="w"> </span><span class="p">};</span>
+
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">localizationTable</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">localizationInfo</span><span class="p">.</span><span class="n">language</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">localizationTable</span><span class="p">.</span><span class="n">end</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">Util</span><span class="o">::</span><span class="n">Log</span><span class="o">::</span><span class="n">error</span><span class="p">(</span><span class="s">&quot;Tried to localize to language &#39;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">LocalizationInfo</span><span class="o">::</span><span class="n">toString</span><span class="p">(</span><span class="n">localizationInfo</span><span class="p">.</span><span class="n">language</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;&#39;, but it wasn&#39;t loaded&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">Util</span><span class="o">::</span><span class="n">String</span><span class="o">::</span><span class="n">appendToString</span><span class="p">(</span><span class="s">&quot;NotLanguageLoadedLocalizationError -&gt; &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">localizationInfo</span><span class="p">.</span><span class="n">language</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">localizationTable</span><span class="p">[</span><span class="n">localizationInfo</span><span class="p">.</span><span class="n">language</span><span class="p">].</span><span class="n">find</span><span class="p">(</span><span class="n">_key</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">localizationTable</span><span class="p">[</span><span class="n">localizationInfo</span><span class="p">.</span><span class="n">language</span><span class="p">].</span><span class="n">end</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">Util</span><span class="o">::</span><span class="n">Log</span><span class="o">::</span><span class="n">error</span><span class="p">(</span><span class="s">&quot;Tried to localize key &#39;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_key</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&#39;, but it wasn&#39;t found!&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">Util</span><span class="o">::</span><span class="n">String</span><span class="o">::</span><span class="n">appendToString</span><span class="p">(</span><span class="s">&quot;KeyNotFoundLocalizationError -&gt; &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_key</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">_string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">localizationTable</span><span class="p">[</span><span class="n">localizationInfo</span><span class="p">.</span><span class="n">language</span><span class="p">][</span><span class="n">_key</span><span class="p">];</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_i</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">_vec</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">_i</span><span class="p">.</span><span class="n">getType</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">Any</span><span class="o">::</span><span class="no">Int</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">_string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">localizeSubstitution</span><span class="p">(</span><span class="n">_string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">_i</span><span class="p">.</span><span class="n">getInt</span><span class="p">()));</span>
+<span class="w">                    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">Any</span><span class="o">::</span><span class="no">UInt</span><span class="p">:{</span>
+<span class="w">                    </span><span class="n">_string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">localizeSubstitution</span><span class="p">(</span><span class="n">_string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">_i</span><span class="p">.</span><span class="n">getUInt</span><span class="p">()));</span>
+<span class="w">                    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">Any</span><span class="o">::</span><span class="no">Long</span><span class="p">:{</span>
+<span class="w">                    </span><span class="n">_string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">localizeSubstitution</span><span class="p">(</span><span class="n">_string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">_i</span><span class="p">.</span><span class="n">getLong</span><span class="p">()));</span>
+<span class="w">                    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">Any</span><span class="o">::</span><span class="no">ULong</span><span class="p">:{</span>
+<span class="w">                    </span><span class="n">_string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">localizeSubstitution</span><span class="p">(</span><span class="n">_string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">_i</span><span class="p">.</span><span class="n">getULong</span><span class="p">()));</span>
+<span class="w">                    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">Any</span><span class="o">::</span><span class="no">Float</span><span class="p">:{</span>
+<span class="w">                    </span><span class="n">_string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">localizeSubstitution</span><span class="p">(</span><span class="n">_string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">_i</span><span class="p">.</span><span class="n">getFloat</span><span class="p">()));</span>
+<span class="w">                    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">Any</span><span class="o">::</span><span class="no">Double</span><span class="p">:{</span>
+<span class="w">                    </span><span class="n">_string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">localizeSubstitution</span><span class="p">(</span><span class="n">_string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">_i</span><span class="p">.</span><span class="n">getDouble</span><span class="p">()));</span>
+<span class="w">                    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">Any</span><span class="o">::</span><span class="no">String</span><span class="p">:{</span>
+<span class="w">                    </span><span class="n">_string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">localizeSubstitution</span><span class="p">(</span><span class="n">_string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">_i</span><span class="p">.</span><span class="n">getString</span><span class="p">()));</span>
+<span class="w">                    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">_string</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="p">}</span>
+
+<span class="cp">#endif </span><span class="c1">//RDE_LOCALIZATION_MANAGER_H</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

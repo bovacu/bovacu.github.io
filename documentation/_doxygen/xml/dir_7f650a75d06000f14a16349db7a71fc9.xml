@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_7f650a75d06000f14a16349db7a71fc9" kind="dir">
+    <compoundname>engine/include/core/systems/uiSystem</compoundname>
+    <innerfile refid="_canvas_8h">Canvas.h</innerfile>
+    <innerfile refid="_font_manager_8h">FontManager.h</innerfile>
+    <innerfile refid="_scene_manager_8h">SceneManager.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/uiSystem/"/>
+  </compounddef>
+</doxygen>

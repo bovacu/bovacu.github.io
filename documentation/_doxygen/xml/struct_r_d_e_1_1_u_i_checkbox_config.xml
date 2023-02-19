@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_u_i_checkbox_config" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::UICheckboxConfig</compoundname>
+    <basecompoundref refid="struct_r_d_e_1_1_common_u_i_config" prot="public" virt="non-virtual">RDE::CommonUIConfig</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_checkbox_config_1a48d62de724e4f8a3a59a8292c1360853" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string RDE::UICheckboxConfig::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <qualifiedname>RDE::UICheckboxConfig::text</qualifiedname>
+        <initializer>= &quot;Checkbox text&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UICheckbox.h" line="21" column="21" bodyfile="engine/include/core/graph/components/ui/UICheckbox.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_checkbox_config_1a209029c40b3380843b44a37147d292d7" prot="public" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>Texture* RDE::UICheckboxConfig::checkboxTickTexture</definition>
+        <argsstring></argsstring>
+        <name>checkboxTickTexture</name>
+        <qualifiedname>RDE::UICheckboxConfig::checkboxTickTexture</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UICheckbox.h" line="22" column="17" bodyfile="engine/include/core/graph/components/ui/UICheckbox.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_checkbox_config_1ad9c93147e02f027a2b0b554bd54c2f2e" prot="public" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>Texture* RDE::UICheckboxConfig::checkboxBackgroundTexture</definition>
+        <argsstring></argsstring>
+        <name>checkboxBackgroundTexture</name>
+        <qualifiedname>RDE::UICheckboxConfig::checkboxBackgroundTexture</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UICheckbox.h" line="23" column="17" bodyfile="engine/include/core/graph/components/ui/UICheckbox.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_checkbox_config_1afcb9b3373d3e5a984002a31b9c158b1f" prot="public" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> *</type>
+        <definition>Font* RDE::UICheckboxConfig::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <qualifiedname>RDE::UICheckboxConfig::font</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UICheckbox.h" line="25" column="14" bodyfile="engine/include/core/graph/components/ui/UICheckbox.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_checkbox_config_1a738d20d50700c43e04a84f7cbd1463d1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::UICheckboxConfig::checkboxColor</definition>
+        <argsstring></argsstring>
+        <name>checkboxColor</name>
+        <qualifiedname>RDE::UICheckboxConfig::checkboxColor</qualifiedname>
+        <initializer>= Color::White</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UICheckbox.h" line="26" column="15" bodyfile="engine/include/core/graph/components/ui/UICheckbox.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_checkbox_config_1af99d4ee20a521e6a1f766f20135f101e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::UICheckboxConfig::textColor</definition>
+        <argsstring></argsstring>
+        <name>textColor</name>
+        <qualifiedname>RDE::UICheckboxConfig::textColor</qualifiedname>
+        <initializer>= Color::White</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UICheckbox.h" line="27" column="15" bodyfile="engine/include/core/graph/components/ui/UICheckbox.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_checkbox_config_1a4dbd24466a8e629511bddde533ebfdaa" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::UICheckboxConfig::tickColor</definition>
+        <argsstring></argsstring>
+        <name>tickColor</name>
+        <qualifiedname>RDE::UICheckboxConfig::tickColor</qualifiedname>
+        <initializer>= Color::White</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UICheckbox.h" line="28" column="15" bodyfile="engine/include/core/graph/components/ui/UICheckbox.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_checkbox_config_1a5cc40019499228d0c6fe513c7b462f7b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::UICheckboxConfig::checked</definition>
+        <argsstring></argsstring>
+        <name>checked</name>
+        <qualifiedname>RDE::UICheckboxConfig::checked</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UICheckbox.h" line="30" column="14" bodyfile="engine/include/core/graph/components/ui/UICheckbox.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_checkbox_config_1a8eaf7404a66611b452ca5625730839c2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::UICheckboxConfig::checkboxTextOffset</definition>
+        <argsstring></argsstring>
+        <name>checkboxTextOffset</name>
+        <qualifiedname>RDE::UICheckboxConfig::checkboxTextOffset</qualifiedname>
+        <initializer>= { 5.f, 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UICheckbox.h" line="31" column="15" bodyfile="engine/include/core/graph/components/ui/UICheckbox.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RDE::CommonUIConfig</label>
+        <link refid="struct_r_d_e_1_1_common_u_i_config"/>
+      </node>
+      <node id="1">
+        <label>RDE::UICheckboxConfig</label>
+        <link refid="struct_r_d_e_1_1_u_i_checkbox_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>RDE::Color</label>
+        <link refid="struct_r_d_e_1_1_color"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Black</edgelabel>
+          <edgelabel>Blue</edgelabel>
+          <edgelabel>Brown</edgelabel>
+          <edgelabel>Disabled</edgelabel>
+          <edgelabel>Gray</edgelabel>
+          <edgelabel>Green</edgelabel>
+          <edgelabel>Magenta</edgelabel>
+          <edgelabel>NO_COLOR</edgelabel>
+          <edgelabel>Orange</edgelabel>
+          <edgelabel>Placeholder</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::CommonUIConfig</label>
+        <link refid="struct_r_d_e_1_1_common_u_i_config"/>
+      </node>
+      <node id="10">
+        <label>RDE::Font</label>
+        <link refid="class_r_d_e_1_1_font"/>
+      </node>
+      <node id="8">
+        <label>RDE::NineSlice</label>
+        <link refid="struct_r_d_e_1_1_nine_slice"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>subRects</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RDE::Texture</label>
+        <link refid="class_r_d_e_1_1_texture"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>textureSize</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>spriteSheetSize</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>region</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>nineSlice</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RDE::UICheckboxConfig</label>
+        <link refid="struct_r_d_e_1_1_u_i_checkbox_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>checkboxBackgroundTexture</edgelabel>
+          <edgelabel>checkboxTickTexture</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>font</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>checkboxColor</edgelabel>
+          <edgelabel>textColor</edgelabel>
+          <edgelabel>tickColor</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>checkboxTextOffset</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>RDE::Vec2&lt; T &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+      <node id="6">
+        <label>RDE::Rect&lt; Vec2F &gt;</label>
+        <link refid="struct_r_d_e_1_1_rect"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>bottomLeftCorner</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>RDE::Rect&lt; Vec2I &gt;</label>
+        <link refid="struct_r_d_e_1_1_rect"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>bottomLeftCorner</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RDE::Vec2&lt; float &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+      <node id="5">
+        <label>RDE::Vec2&lt; int &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/graph/components/ui/UICheckbox.h" line="20" column="5" bodyfile="engine/include/core/graph/components/ui/UICheckbox.h" bodystart="20" bodyend="32"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_u_i_checkbox_config_1ad9c93147e02f027a2b0b554bd54c2f2e" prot="public" virt="non-virtual"><scope>RDE::UICheckboxConfig</scope><name>checkboxBackgroundTexture</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_checkbox_config_1a738d20d50700c43e04a84f7cbd1463d1" prot="public" virt="non-virtual"><scope>RDE::UICheckboxConfig</scope><name>checkboxColor</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_checkbox_config_1a8eaf7404a66611b452ca5625730839c2" prot="public" virt="non-virtual"><scope>RDE::UICheckboxConfig</scope><name>checkboxTextOffset</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_checkbox_config_1a209029c40b3380843b44a37147d292d7" prot="public" virt="non-virtual"><scope>RDE::UICheckboxConfig</scope><name>checkboxTickTexture</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_checkbox_config_1a5cc40019499228d0c6fe513c7b462f7b" prot="public" virt="non-virtual"><scope>RDE::UICheckboxConfig</scope><name>checked</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_checkbox_config_1afcb9b3373d3e5a984002a31b9c158b1f" prot="public" virt="non-virtual"><scope>RDE::UICheckboxConfig</scope><name>font</name></member>
+      <member refid="struct_r_d_e_1_1_common_u_i_config_1a9d7646a4577f33c7a933456c2c9f792e" prot="public" virt="non-virtual"><scope>RDE::UICheckboxConfig</scope><name>stopFurtherClicks</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_checkbox_config_1a48d62de724e4f8a3a59a8292c1360853" prot="public" virt="non-virtual"><scope>RDE::UICheckboxConfig</scope><name>text</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_checkbox_config_1af99d4ee20a521e6a1f766f20135f101e" prot="public" virt="non-virtual"><scope>RDE::UICheckboxConfig</scope><name>textColor</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_checkbox_config_1a4dbd24466a8e629511bddde533ebfdaa" prot="public" virt="non-virtual"><scope>RDE::UICheckboxConfig</scope><name>tickColor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

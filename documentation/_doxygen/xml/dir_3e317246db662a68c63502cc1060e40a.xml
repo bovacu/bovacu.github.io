@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_3e317246db662a68c63502cc1060e40a" kind="dir">
+    <compoundname>engine/include/core/render/window</compoundname>
+    <innerfile refid="_android_window_8h">AndroidWindow.h</innerfile>
+    <innerfile refid="_i_o_s_window_8h">IOSWindow.h</innerfile>
+    <innerfile refid="_linux_window_8h">LinuxWindow.h</innerfile>
+    <innerfile refid="_mac_window_8h">MacWindow.h</innerfile>
+    <innerfile refid="_window_8h">Window.h</innerfile>
+    <innerfile refid="_windows_window_8h">WindowsWindow.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/render/window/"/>
+  </compounddef>
+</doxygen>

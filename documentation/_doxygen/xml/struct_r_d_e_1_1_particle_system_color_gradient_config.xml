@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_particle_system_color_gradient_config" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::ParticleSystemColorGradientConfig</compoundname>
+    <includes refid="_particle_system_8h" local="no">ParticleSystem.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_particle_system_color_gradient_config_1a52483f46ef0b033adc7b269db00f36ef" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::ParticleSystemColorGradientConfig::initColor</definition>
+        <argsstring></argsstring>
+        <name>initColor</name>
+        <qualifiedname>RDE::ParticleSystemColorGradientConfig::initColor</qualifiedname>
+        <initializer>= Color::White</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="40" column="15" bodyfile="engine/include/core/graph/components/ParticleSystem.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_particle_system_color_gradient_config_1aa9148c68e97d8ffd8595dc296af26889" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::ParticleSystemColorGradientConfig::endColor</definition>
+        <argsstring></argsstring>
+        <name>endColor</name>
+        <qualifiedname>RDE::ParticleSystemColorGradientConfig::endColor</qualifiedname>
+        <initializer>= Color::NO_COLOR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="41" column="15" bodyfile="engine/include/core/graph/components/ParticleSystem.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Config for color gradient. TODO: improve this to be able to have &apos;n&apos; colors and traverse through them. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>RDE::Color</label>
+        <link refid="struct_r_d_e_1_1_color"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Black</edgelabel>
+          <edgelabel>Blue</edgelabel>
+          <edgelabel>Brown</edgelabel>
+          <edgelabel>Disabled</edgelabel>
+          <edgelabel>Gray</edgelabel>
+          <edgelabel>Green</edgelabel>
+          <edgelabel>Magenta</edgelabel>
+          <edgelabel>NO_COLOR</edgelabel>
+          <edgelabel>Orange</edgelabel>
+          <edgelabel>Placeholder</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RDE::ParticleSystemColorGradientConfig</label>
+        <link refid="struct_r_d_e_1_1_particle_system_color_gradient_config"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>endColor</edgelabel>
+          <edgelabel>initColor</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/graph/components/ParticleSystem.h" line="39" column="5" bodyfile="engine/include/core/graph/components/ParticleSystem.h" bodystart="39" bodyend="42"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_particle_system_color_gradient_config_1aa9148c68e97d8ffd8595dc296af26889" prot="public" virt="non-virtual"><scope>RDE::ParticleSystemColorGradientConfig</scope><name>endColor</name></member>
+      <member refid="struct_r_d_e_1_1_particle_system_color_gradient_config_1a52483f46ef0b033adc7b269db00f36ef" prot="public" virt="non-virtual"><scope>RDE::ParticleSystemColorGradientConfig</scope><name>initColor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_state" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::State</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_state_1ac3fd6ad413da17c4d660a5a9d7771231" prot="public" static="yes" mutable="no">
+        <type>std::unordered_map&lt; ProfilerState, std::string &gt;</type>
+        <definition>std::unordered_map&lt;ProfilerState, std::string&gt; RDE::State::stateToNameDict</definition>
+        <argsstring></argsstring>
+        <name>stateToNameDict</name>
+        <qualifiedname>RDE::State::stateToNameDict</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="37" column="35" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_state_1afcdea5dcbdf0baa4aa43f7a2f90a7b25" prot="public" static="no" mutable="no">
+        <type>std::chrono::system_clock::time_point</type>
+        <definition>std::chrono::system_clock::time_point RDE::State::init</definition>
+        <argsstring></argsstring>
+        <name>init</name>
+        <qualifiedname>RDE::State::init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="38" column="47" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_state_1ab7a66037f02c26fcd76980e222968193" prot="public" static="no" mutable="no">
+        <type>std::chrono::system_clock::time_point</type>
+        <definition>std::chrono::system_clock::time_point RDE::State::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <qualifiedname>RDE::State::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="39" column="47" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_state_1a4fdb1328c0906ffca39932d712cf9009" prot="public" static="no" mutable="no">
+        <type>ProfilerState</type>
+        <definition>ProfilerState RDE::State::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>RDE::State::state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="40" column="23" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_state_1ac63f94ec45e3bed7e20a828fbe8abe42" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::State::active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <qualifiedname>RDE::State::active</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="41" column="14" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_r_d_e_1_1_state_1acd7a91cae0f542a2f3513ed89ad433ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::State::toString</definition>
+        <argsstring>() const</argsstring>
+        <name>toString</name>
+        <qualifiedname>RDE::State::toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="43" column="22" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="43" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/profiling/Profiler.h" line="36" column="5" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="36" bodyend="48"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_state_1ac63f94ec45e3bed7e20a828fbe8abe42" prot="public" virt="non-virtual"><scope>RDE::State</scope><name>active</name></member>
+      <member refid="struct_r_d_e_1_1_state_1ab7a66037f02c26fcd76980e222968193" prot="public" virt="non-virtual"><scope>RDE::State</scope><name>end</name></member>
+      <member refid="struct_r_d_e_1_1_state_1afcdea5dcbdf0baa4aa43f7a2f90a7b25" prot="public" virt="non-virtual"><scope>RDE::State</scope><name>init</name></member>
+      <member refid="struct_r_d_e_1_1_state_1a4fdb1328c0906ffca39932d712cf9009" prot="public" virt="non-virtual"><scope>RDE::State</scope><name>state</name></member>
+      <member refid="struct_r_d_e_1_1_state_1ac3fd6ad413da17c4d660a5a9d7771231" prot="public" virt="non-virtual"><scope>RDE::State</scope><name>stateToNameDict</name></member>
+      <member refid="struct_r_d_e_1_1_state_1acd7a91cae0f542a2f3513ed89ad433ee" prot="public" virt="non-virtual"><scope>RDE::State</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

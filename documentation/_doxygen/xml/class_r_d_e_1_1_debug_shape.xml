@@ -1,0 +1,644 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_debug_shape" kind="class" language="C++" prot="public">
+    <compoundname>RDE::DebugShape</compoundname>
+    <includes refid="_debug_shape_8h" local="no">DebugShape.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_debug_shape_1a45cd9acbd614dccd509cc0eb99cc9cb4" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::DebugShape::innerColor</definition>
+        <argsstring></argsstring>
+        <name>innerColor</name>
+        <qualifiedname>RDE::DebugShape::innerColor</qualifiedname>
+        <initializer>= Color::Green</initializer>
+        <briefdescription>
+<para><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref> of the inner part of the Shape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="20" column="19" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_debug_shape_1a09fb44ce731d13424f394f3ae4030171" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::DebugShape::outerColor</definition>
+        <argsstring></argsstring>
+        <name>outerColor</name>
+        <qualifiedname>RDE::DebugShape::outerColor</qualifiedname>
+        <initializer>= Color::Blue</initializer>
+        <briefdescription>
+<para><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref> of the outline. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="25" column="19" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_debug_shape_1a0e2fc74f8ca50e21ae1ac9845220a346" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::DebugShape::showInner</definition>
+        <argsstring></argsstring>
+        <name>showInner</name>
+        <qualifiedname>RDE::DebugShape::showInner</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>If the inner color is rendered. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="30" column="18" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_debug_shape_1afacde030aff401f53fd11187855a453a" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::DebugShape::showOuter</definition>
+        <argsstring></argsstring>
+        <name>showOuter</name>
+        <qualifiedname>RDE::DebugShape::showOuter</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>If the outline color is rendered. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="35" column="18" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_debug_shape_1a43dc6f6f8ddfd3ce7db16201dbc58a7d" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &gt;</type>
+        <definition>std::vector&lt;Vec2F&gt; RDE::DebugShape::points</definition>
+        <argsstring></argsstring>
+        <name>points</name>
+        <qualifiedname>RDE::DebugShape::points</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Points that define the complex shape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="40" column="25" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_debug_shape_1af11e2329dd4a9cb5b9f768970f590564" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::DebugShape::center</definition>
+        <argsstring></argsstring>
+        <name>center</name>
+        <qualifiedname>RDE::DebugShape::center</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Center of the complex shape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="45" column="19" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_debug_shape_1adaa505d745682a3bc40d9cdf41b6df02" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::DebugShape::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <qualifiedname>RDE::DebugShape::rotation</qualifiedname>
+        <initializer>= 0.f</initializer>
+        <briefdescription>
+<para>Angle in degrees. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="51" column="19" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1abaaa7ddc8df06916996c09ce6ed73e58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref> &amp;</type>
+        <definition>Color &amp; RDE::DebugShape::getInnerColor</definition>
+        <argsstring>()</argsstring>
+        <name>getInnerColor</name>
+        <qualifiedname>RDE::DebugShape::getInnerColor</qualifiedname>
+        <briefdescription>
+<para>Returns the inner color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="59" column="19" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a639bdfcb2fbf6bd84738b3ce78d3b60d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref> &amp;</type>
+        <definition>Color &amp; RDE::DebugShape::getOuterColor</definition>
+        <argsstring>()</argsstring>
+        <name>getOuterColor</name>
+        <qualifiedname>RDE::DebugShape::getOuterColor</qualifiedname>
+        <briefdescription>
+<para>Returns the outline color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="67" column="19" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a139d4f2b08ed73e15b97c2db48f591b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; Vec2F &gt; &amp; RDE::DebugShape::getPoints</definition>
+        <argsstring>()</argsstring>
+        <name>getPoints</name>
+        <qualifiedname>RDE::DebugShape::getPoints</qualifiedname>
+        <briefdescription>
+<para>Returns the shape data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::vector&lt;Vec2F&gt;&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="75" column="25" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a4e801d74e469a66471d60f87ca2099d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::DebugShape::addPoint</definition>
+        <argsstring>(const Vec2F &amp;_point)</argsstring>
+        <name>addPoint</name>
+        <qualifiedname>RDE::DebugShape::addPoint</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_point</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new point to the geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New point </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="83" column="18" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a651a9ec55a5ea7c34395a692f669e65c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::DebugShape::removePoint</definition>
+        <argsstring>(int _vertex)</argsstring>
+        <name>removePoint</name>
+        <qualifiedname>RDE::DebugShape::removePoint</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>_vertex</declname>
+        </param>
+        <briefdescription>
+<para>Removes a point from the geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_vertex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="91" column="18" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a28d870980c7f6d5c20f0a8339041eda9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::DebugShape::setOutlineColor</definition>
+        <argsstring>(const Color &amp;_color)</argsstring>
+        <name>setOutlineColor</name>
+        <qualifiedname>RDE::DebugShape::setOutlineColor</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>_color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the outline color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Outline <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="99" column="18" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a7dacdedea4015f874ae86126b2f42bf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::DebugShape::setInnerColor</definition>
+        <argsstring>(const Color &amp;_color)</argsstring>
+        <name>setInnerColor</name>
+        <qualifiedname>RDE::DebugShape::setInnerColor</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>_color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the inner color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Inner color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="107" column="18" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="107" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a422b866d05391b243595076784e8218e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::DebugShape::showOutsideColor</definition>
+        <argsstring>(bool _show)</argsstring>
+        <name>showOutsideColor</name>
+        <qualifiedname>RDE::DebugShape::showOutsideColor</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>_show</declname>
+        </param>
+        <briefdescription>
+<para>Sets if the outline is shown or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_show</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable or disable the color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="115" column="18" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="115" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a5c15d990be10506a3eb28f0fdcab09fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::DebugShape::showInnerColor</definition>
+        <argsstring>(bool _show)</argsstring>
+        <name>showInnerColor</name>
+        <qualifiedname>RDE::DebugShape::showInnerColor</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>_show</declname>
+        </param>
+        <briefdescription>
+<para>Sets if the inner is shown or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_show</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable or disable the color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="123" column="18" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="123" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a84dbc462b01bf9c1037cd38765beb626" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::DebugShape::setPosition</definition>
+        <argsstring>(const Vec2F &amp;_position)</argsstring>
+        <name>setPosition</name>
+        <qualifiedname>RDE::DebugShape::setPosition</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_position</declname>
+        </param>
+        <briefdescription>
+<para>Sets the position of the complex shape. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New position </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="131" column="18" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="131" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a4bdaac3058ba43af174538a3915e8f4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::DebugShape::getPosition</definition>
+        <argsstring>()</argsstring>
+        <name>getPosition</name>
+        <qualifiedname>RDE::DebugShape::getPosition</qualifiedname>
+        <briefdescription>
+<para>Returns the position of the complex shape. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vec2F </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="139" column="19" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a09aedc1c7525c4c4c8a0b03e3b6828d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::DebugShape::setRotation</definition>
+        <argsstring>(float _rotation)</argsstring>
+        <name>setRotation</name>
+        <qualifiedname>RDE::DebugShape::setRotation</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_rotation</declname>
+        </param>
+        <briefdescription>
+<para>Sets the rotation of the complex shape. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="148" column="18" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="148" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a84921c6a28412f8e5b57aa4c12d3ad9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::DebugShape::getRotation</definition>
+        <argsstring>()</argsstring>
+        <name>getRotation</name>
+        <qualifiedname>RDE::DebugShape::getRotation</qualifiedname>
+        <briefdescription>
+<para>Gets the rotation of the complex shape. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="156" column="19" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a02bccf5d0ff7f3189eb7fd8a1c6bb79a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RDE::DebugShape::isInnerShown</definition>
+        <argsstring>()</argsstring>
+        <name>isInnerShown</name>
+        <qualifiedname>RDE::DebugShape::isInnerShown</qualifiedname>
+        <briefdescription>
+<para>Returns if the inner color is drawn or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="165" column="18" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="165" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a04b64bbf02fe8328731cd088d43ef533" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RDE::DebugShape::isOuterShown</definition>
+        <argsstring>()</argsstring>
+        <name>isOuterShown</name>
+        <qualifiedname>RDE::DebugShape::isOuterShown</qualifiedname>
+        <briefdescription>
+<para>Returns if the outline color is drawn or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="173" column="18" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="173" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1a481ede4c1156c82149342e8f57f8ea47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::DebugShape::makeCircle</definition>
+        <argsstring>(const Vec2F &amp;_center, float _radius, int _precision=50)</argsstring>
+        <name>makeCircle</name>
+        <qualifiedname>RDE::DebugShape::makeCircle</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_radius</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_precision</declname>
+          <defval>50</defval>
+        </param>
+        <briefdescription>
+<para>Makes the complex shape a circle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Center of the circle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Radius of the circle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How pretty the circle should be, the prettier, the more expensive in computing work </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="183" column="18" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="183" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_debug_shape_1af5cc1b3672711c93ef00bccfb523fcb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::DebugShape::makeSquare</definition>
+        <argsstring>(const Vec2F &amp;_position, const Vec2F &amp;_size)</argsstring>
+        <name>makeSquare</name>
+        <qualifiedname>RDE::DebugShape::makeSquare</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_size</declname>
+        </param>
+        <briefdescription>
+<para>Makes the complex shape a square. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the square </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the square </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/shapes/DebugShape.h" line="199" column="18" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="199" bodyend="204"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class represents a Complex Geometry debugging shape. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>RDE::Color</label>
+        <link refid="struct_r_d_e_1_1_color"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Black</edgelabel>
+          <edgelabel>Blue</edgelabel>
+          <edgelabel>Brown</edgelabel>
+          <edgelabel>Disabled</edgelabel>
+          <edgelabel>Gray</edgelabel>
+          <edgelabel>Green</edgelabel>
+          <edgelabel>Magenta</edgelabel>
+          <edgelabel>NO_COLOR</edgelabel>
+          <edgelabel>Orange</edgelabel>
+          <edgelabel>Placeholder</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RDE::DebugShape</label>
+        <link refid="class_r_d_e_1_1_debug_shape"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>innerColor</edgelabel>
+          <edgelabel>outerColor</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>center</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RDE::Vec2&lt; float &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/render/shapes/DebugShape.h" line="14" column="5" bodyfile="engine/include/core/render/shapes/DebugShape.h" bodystart="14" bodyend="205"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_debug_shape_1a4e801d74e469a66471d60f87ca2099d7" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>addPoint</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1af11e2329dd4a9cb5b9f768970f590564" prot="protected" virt="non-virtual"><scope>RDE::DebugShape</scope><name>center</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1abaaa7ddc8df06916996c09ce6ed73e58" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>getInnerColor</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a639bdfcb2fbf6bd84738b3ce78d3b60d" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>getOuterColor</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a139d4f2b08ed73e15b97c2db48f591b3" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>getPoints</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a4bdaac3058ba43af174538a3915e8f4d" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>getPosition</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a84921c6a28412f8e5b57aa4c12d3ad9d" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>getRotation</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a45cd9acbd614dccd509cc0eb99cc9cb4" prot="protected" virt="non-virtual"><scope>RDE::DebugShape</scope><name>innerColor</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a02bccf5d0ff7f3189eb7fd8a1c6bb79a" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>isInnerShown</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a04b64bbf02fe8328731cd088d43ef533" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>isOuterShown</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a481ede4c1156c82149342e8f57f8ea47" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>makeCircle</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1af5cc1b3672711c93ef00bccfb523fcb9" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>makeSquare</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a09fb44ce731d13424f394f3ae4030171" prot="protected" virt="non-virtual"><scope>RDE::DebugShape</scope><name>outerColor</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a43dc6f6f8ddfd3ce7db16201dbc58a7d" prot="protected" virt="non-virtual"><scope>RDE::DebugShape</scope><name>points</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a651a9ec55a5ea7c34395a692f669e65c" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>removePoint</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1adaa505d745682a3bc40d9cdf41b6df02" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>rotation</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a7dacdedea4015f874ae86126b2f42bf0" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>setInnerColor</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a28d870980c7f6d5c20f0a8339041eda9" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>setOutlineColor</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a84dbc462b01bf9c1037cd38765beb626" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>setPosition</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a09aedc1c7525c4c4c8a0b03e3b6828d1" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>setRotation</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a0e2fc74f8ca50e21ae1ac9845220a346" prot="protected" virt="non-virtual"><scope>RDE::DebugShape</scope><name>showInner</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a5c15d990be10506a3eb28f0fdcab09fb" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>showInnerColor</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1afacde030aff401f53fd11187855a453a" prot="protected" virt="non-virtual"><scope>RDE::DebugShape</scope><name>showOuter</name></member>
+      <member refid="class_r_d_e_1_1_debug_shape_1a422b866d05391b243595076784e8218e" prot="public" virt="non-virtual"><scope>RDE::DebugShape</scope><name>showOutsideColor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

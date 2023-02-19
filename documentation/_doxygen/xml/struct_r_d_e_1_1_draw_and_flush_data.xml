@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_draw_and_flush_data" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::DrawAndFlushData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_draw_and_flush_data_1a497a8840f291205da6b293370d8cda78" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_r_d_e_1_1_open_g_l_vertex" kindref="compound">OpenGLVertex</ref> &gt;</type>
+        <definition>std::vector&lt;OpenGLVertex&gt; RDE::DrawAndFlushData::vertices</definition>
+        <argsstring></argsstring>
+        <name>vertices</name>
+        <qualifiedname>RDE::DrawAndFlushData::vertices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/IRenderizable.h" line="35" column="21" bodyfile="engine/include/core/render/elements/IRenderizable.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_draw_and_flush_data_1a1aec72d62fd5d0865cfe6bda1302092e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; uint32_t &gt;</type>
+        <definition>std::vector&lt;uint32_t&gt; RDE::DrawAndFlushData::indices</definition>
+        <argsstring></argsstring>
+        <name>indices</name>
+        <qualifiedname>RDE::DrawAndFlushData::indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/IRenderizable.h" line="36" column="21" bodyfile="engine/include/core/render/elements/IRenderizable.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_draw_and_flush_data_1ae8df4f01e1a33809b6d7e2b7846d9400" prot="public" static="no" mutable="no">
+        <type>ShaderID</type>
+        <definition>ShaderID RDE::DrawAndFlushData::shaderID</definition>
+        <argsstring></argsstring>
+        <name>shaderID</name>
+        <qualifiedname>RDE::DrawAndFlushData::shaderID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/IRenderizable.h" line="37" column="18" bodyfile="engine/include/core/render/elements/IRenderizable.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_draw_and_flush_data_1a763e378e34c996a354744bb179784479" prot="public" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint RDE::DrawAndFlushData::textureID</definition>
+        <argsstring></argsstring>
+        <name>textureID</name>
+        <qualifiedname>RDE::DrawAndFlushData::textureID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/IRenderizable.h" line="38" column="16" bodyfile="engine/include/core/render/elements/IRenderizable.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/render/elements/IRenderizable.h" line="34" column="5" bodyfile="engine/include/core/render/elements/IRenderizable.h" bodystart="34" bodyend="39"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_draw_and_flush_data_1a1aec72d62fd5d0865cfe6bda1302092e" prot="public" virt="non-virtual"><scope>RDE::DrawAndFlushData</scope><name>indices</name></member>
+      <member refid="struct_r_d_e_1_1_draw_and_flush_data_1ae8df4f01e1a33809b6d7e2b7846d9400" prot="public" virt="non-virtual"><scope>RDE::DrawAndFlushData</scope><name>shaderID</name></member>
+      <member refid="struct_r_d_e_1_1_draw_and_flush_data_1a763e378e34c996a354744bb179784479" prot="public" virt="non-virtual"><scope>RDE::DrawAndFlushData</scope><name>textureID</name></member>
+      <member refid="struct_r_d_e_1_1_draw_and_flush_data_1a497a8840f291205da6b293370d8cda78" prot="public" virt="non-virtual"><scope>RDE::DrawAndFlushData</scope><name>vertices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

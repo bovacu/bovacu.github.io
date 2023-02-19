@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_u_i_text_1_1_line_info" kind="struct" language="C++" prot="protected">
+    <compoundname>RDE::UIText::LineInfo</compoundname>
+    <includes refid="_u_i_text_8h" local="no">UIText.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_text_1_1_line_info_1a8fc0c28e22e716578d49ff16c6888619" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string RDE::UIText::LineInfo::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <qualifiedname>RDE::UIText::LineInfo::line</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="71" column="29" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_text_1_1_line_info_1a2e66f9fd7335edf2b6f13c5289902f37" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::UIText::LineInfo::biggestCharHeight</definition>
+        <argsstring></argsstring>
+        <name>biggestCharHeight</name>
+        <qualifiedname>RDE::UIText::LineInfo::biggestCharHeight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIText.h" line="72" column="23" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Recalculates the dimensions of the new text as a rectangle. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the inner text. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="engine/include/core/graph/components/ui/UIText.h" line="70" column="13" bodyfile="engine/include/core/graph/components/ui/UIText.h" bodystart="70" bodyend="73"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_u_i_text_1_1_line_info_1a2e66f9fd7335edf2b6f13c5289902f37" prot="public" virt="non-virtual"><scope>RDE::UIText::LineInfo</scope><name>biggestCharHeight</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_text_1_1_line_info_1a8fc0c28e22e716578d49ff16c6888619" prot="public" virt="non-virtual"><scope>RDE::UIText::LineInfo</scope><name>line</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

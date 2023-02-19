@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_file" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::File</compoundname>
+    <includes refid="_file_manager_8h" local="no">FileManager.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_file_1a060ff85c4b9726b6b0046fb5dfc9ddca" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T RDE::File&lt; T &gt;::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <qualifiedname>RDE::File::content</qualifiedname>
+        <briefdescription>
+<para>Type of content, usually a simple string or a std::vector&lt;string&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="42" column="11" bodyfile="engine/include/core/systems/fileSystem/FileManager.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_file_1a027a00857a12e98fcaa79ab5eb87fe89" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_r_d_e_1af73271e68dfcca1334f5923de88acdde" kindref="member">FileResult</ref></type>
+        <definition>FileResult RDE::File&lt; T &gt;::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <qualifiedname>RDE::File::result</qualifiedname>
+        <initializer>= FileResult::FILE_OK</initializer>
+        <briefdescription>
+<para>Result of the operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/fileSystem/FileManager.h" line="47" column="20" bodyfile="engine/include/core/systems/fileSystem/FileManager.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This represents the content of a file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of content </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="engine/include/core/systems/fileSystem/FileManager.h" line="38" column="5" bodyfile="engine/include/core/systems/fileSystem/FileManager.h" bodystart="38" bodyend="48"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_file_1a060ff85c4b9726b6b0046fb5dfc9ddca" prot="public" virt="non-virtual"><scope>RDE::File</scope><name>content</name></member>
+      <member refid="struct_r_d_e_1_1_file_1a027a00857a12e98fcaa79ab5eb87fe89" prot="public" virt="non-virtual"><scope>RDE::File</scope><name>result</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

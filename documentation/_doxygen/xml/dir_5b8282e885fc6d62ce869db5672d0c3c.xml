@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_5b8282e885fc6d62ce869db5672d0c3c" kind="dir">
+    <compoundname>engine/include/core/systems/physicsSystem</compoundname>
+    <innerfile refid="_physics_body_8h">PhysicsBody.h</innerfile>
+    <innerfile refid="_physics_manager_8h">PhysicsManager.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/physicsSystem/"/>
+  </compounddef>
+</doxygen>

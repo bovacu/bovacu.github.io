@@ -1,0 +1,164 @@
+
+.. _program_listing_file_engine_include_core_systems_physicsSystem_PhysicsBody.h:
+
+Program Listing for File PhysicsBody.h
+======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_systems_physicsSystem_PhysicsBody.h>` (``engine/include/core/systems/physicsSystem/PhysicsBody.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   //
+   // Created by borja on 9/16/22.
+   //
+   
+   #ifndef RDE_PHYSICS_BODY_H
+   #define RDE_PHYSICS_BODY_H
+   
+   
+   #include "core/render/shapes/DebugShape.h"
+   #include "chipmunk/chipmunk.h"
+   #include "core/graph/components/Transform.h"
+   #include "core/graph/components/ComponentBase.h"
+   
+   namespace RDE {
+   
+       enum PhysicsBodyType {
+           STATIC,
+           KINEMATIC,
+           DYNAMIC
+       };
+   
+       enum PhysicsShapeType {
+           BOX,
+           CIRCLE,
+           POLYGON,
+           SEGMENT
+       };
+   
+       struct ShapeMaskingConfig {
+   
+           uint group = CP_NO_GROUP;
+   
+           uint mask = CP_ALL_CATEGORIES;
+   
+           uint toCollideWith = CP_ALL_CATEGORIES;
+       };
+   
+       struct ShapeConfig {
+           ShapeMaskingConfig shapeMaskingConfig;
+           PhysicsShapeType type = PhysicsShapeType::BOX;
+           Vec2F offset = { 0.f, 0.f };
+           Vec2F size = { 32, 32 };
+           std::vector<Vec2F> vertices {  };
+           bool sensor = false;
+           float friction = 0.4f;
+           float restitution = 0.f;
+       };
+   
+       typedef ulong PhysicsShapeId;
+       struct PhysicsShape {
+           ShapeConfig shapeConfig {};
+           cpShape* shape = nullptr;
+           PhysicsShapeId id = 0;
+       };
+   
+       struct PhysicsBodyConfig {
+           ShapeConfig shapeConfig {  };
+           float mass = 1.0f;
+           PhysicsBodyType physicsBodyType = PhysicsBodyType::DYNAMIC;
+       };
+   
+       class Scene;
+       class Manager;
+       class Graph;
+   
+       struct Node;
+   
+       struct PhysicsBody : public ComponentBase {
+   
+           friend class PhysicsManager;
+           friend class Graph;
+   
+           private:
+               ulong keyCounter = 0;
+               cpBody* body = nullptr;
+               cpSpace* space = nullptr;
+               std::unordered_map<PhysicsShapeId, PhysicsShape> physicsShapes;
+   
+           public:
+               Transform* transform = nullptr;
+   
+           private:
+               void calculateDataForBox(ShapeConfig& _shapeConfig, float _bodyMass, PhysicsBodyType _bodyType);
+               void calculateDataForCircle(ShapeConfig& _shapeConfig, float _bodyMass, PhysicsBodyType _bodyType);
+               void calculateDataForPolygon(ShapeConfig& _shapeConfig, float _bodyMass, PhysicsBodyType _bodyType);
+               void calculateDataForSegment(ShapeConfig& _shapeConfig, float _bodyMass, PhysicsBodyType _bodyType);
+               void createBody(ShapeConfig& _shapeConfig, float _moment, float _bodyMass, PhysicsBodyType _bodyType);
+               void setupShape(ShapeConfig& _shapeConfig);
+   
+           public:
+               PhysicsBody(Node* _node, Manager* _manager, Graph* _graph, PhysicsBodyConfig& _bodyConfig);
+               ~PhysicsBody();
+               void update();
+   
+               PhysicsShapeId addShape(ShapeConfig& _shapeConfig, const Vec2F& _position = {0.f, 0.f}, float _rotation = 0.f);
+               bool removeShape(PhysicsShapeId _id);
+   
+               void setGroup(PhysicsShapeId _shapeID, uint _group);
+               void removeGroup(PhysicsShapeId _shapeID);
+   
+               void setMask(PhysicsShapeId _shapeID, uint _mask);
+               void removeMask(PhysicsShapeId _shapeID);
+   
+               void setToCollideWiths(PhysicsShapeId _shapeID, uint _toCollideWiths);
+               void removeToCollideWiths(PhysicsShapeId _shapeID);
+   
+               void addMaskFilter(PhysicsShapeId _shapeID, uint _masksToAdd);
+               void removeMaskFilter(PhysicsShapeId _shapeID, uint _masksToRemove);
+               void resetMaskFilter(PhysicsShapeId _shapeID);
+   
+               uint getMasks(PhysicsShapeId _shapeID);
+               uint getGroups(PhysicsShapeId _shapeID);
+               uint getToCollideWiths(PhysicsShapeId _shapeID);
+   
+               void setBodyType(const PhysicsBodyType& _physicsBodyType);
+               PhysicsBodyType getBodyType();
+   
+               void setMass(float _mass);
+               float getMass();
+   
+               void setFriction(PhysicsShapeId _shapeID, float _friction);
+               float getFriction(PhysicsShapeId _shapeID);
+   
+               void setRestitution(PhysicsShapeId _shapeID, float _restitution);
+               float getRestitution(PhysicsShapeId _shapeID);
+   
+               void setLinearVelocity(const Vec2F& _linearVelocity);
+               Vec2F getLinearVelocity();
+   
+               void setAngularLinearVelocity(float _linearAngularVelocity);
+               float getAngularLinearVelocity();
+   
+               void setCenterOfGravity(const Vec2F& _centerOfGravity);
+               Vec2F getCenterOfGravity();
+   
+               void setGhost(PhysicsShapeId _shapeID, bool _ghost);
+               bool isGhost(PhysicsShapeId _shapeID);
+   
+               void applyImpulseLocal(const Vec2F& _impulse, const Vec2F& _where);
+               void applyImpulseWorld(const Vec2F& _impulse, const Vec2F& _where);
+   
+               void applyForceLocal(const Vec2F& _force, const Vec2F& _where);
+               void applyForceWorld(const Vec2F& _force, const Vec2F& _where);
+   
+               void setEnabled(bool _enabled) override;
+               bool isEnabled() override;
+       };
+   
+   }
+   
+   
+   #endif //RDE_PHYSICS_BODY_H

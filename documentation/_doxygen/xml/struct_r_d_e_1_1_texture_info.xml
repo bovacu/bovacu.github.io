@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_texture_info" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::TextureInfo</compoundname>
+    <includes refid="_texture_atlas_manager_8h" local="no">TextureAtlasManager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_texture_info_1a4a4be2ebef67eda43afbf7c0133487e7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::TextureInfo::kb</definition>
+        <argsstring></argsstring>
+        <name>kb</name>
+        <qualifiedname>RDE::TextureInfo::kb</qualifiedname>
+        <briefdescription>
+<para>Size of the Sprite Sheet in Kilobytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="80" column="15" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_texture_info_1a694a066203d0543269ccb1f7649de975" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint RDE::TextureInfo::numberOfTiles</definition>
+        <argsstring></argsstring>
+        <name>numberOfTiles</name>
+        <qualifiedname>RDE::TextureInfo::numberOfTiles</qualifiedname>
+        <briefdescription>
+<para>Number of sub-sprites that the Sprite Sheet has. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="85" column="14" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_texture_info_1a81063f8e9132b196cbf7311a8bf4d877" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint RDE::TextureInfo::textureWidth</definition>
+        <argsstring></argsstring>
+        <name>textureWidth</name>
+        <qualifiedname>RDE::TextureInfo::textureWidth</qualifiedname>
+        <briefdescription>
+<para>Width of the Sprite Sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="90" column="14" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_texture_info_1a3e43e765871e1b96477161614d6c0eda" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint RDE::TextureInfo::textureHeight</definition>
+        <argsstring></argsstring>
+        <name>textureHeight</name>
+        <qualifiedname>RDE::TextureInfo::textureHeight</qualifiedname>
+        <briefdescription>
+<para>Height of the Sprite Sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="95" column="14" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_texture_info_1a7645b3b3da1ddd1b65ceca0ae31d411d" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* RDE::TextureInfo::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>RDE::TextureInfo::name</qualifiedname>
+        <briefdescription>
+<para>Name of the Sprite Sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="100" column="20" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data struct use to render debug info with the <ref refid="class_r_d_e_1_1_im_gui_scene" kindref="compound">ImGuiScene</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="76" column="5" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="76" bodyend="101"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_texture_info_1a4a4be2ebef67eda43afbf7c0133487e7" prot="public" virt="non-virtual"><scope>RDE::TextureInfo</scope><name>kb</name></member>
+      <member refid="struct_r_d_e_1_1_texture_info_1a7645b3b3da1ddd1b65ceca0ae31d411d" prot="public" virt="non-virtual"><scope>RDE::TextureInfo</scope><name>name</name></member>
+      <member refid="struct_r_d_e_1_1_texture_info_1a694a066203d0543269ccb1f7649de975" prot="public" virt="non-virtual"><scope>RDE::TextureInfo</scope><name>numberOfTiles</name></member>
+      <member refid="struct_r_d_e_1_1_texture_info_1a3e43e765871e1b96477161614d6c0eda" prot="public" virt="non-virtual"><scope>RDE::TextureInfo</scope><name>textureHeight</name></member>
+      <member refid="struct_r_d_e_1_1_texture_info_1a81063f8e9132b196cbf7311a8bf4d877" prot="public" virt="non-virtual"><scope>RDE::TextureInfo</scope><name>textureWidth</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

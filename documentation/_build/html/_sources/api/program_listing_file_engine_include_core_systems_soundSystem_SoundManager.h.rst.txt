@@ -1,0 +1,114 @@
+
+.. _program_listing_file_engine_include_core_systems_soundSystem_SoundManager.h:
+
+Program Listing for File SoundManager.h
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_engine_include_core_systems_soundSystem_SoundManager.h>` (``engine/include/core/systems/soundSystem/SoundManager.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // Created by borja on 30/1/22.
+   
+   
+   #ifndef RDE_SOUND_MANAGER_H
+   #define RDE_SOUND_MANAGER_H
+   
+   
+   #include "core/util/Util.h"
+   #include "core/platform/PlatformHeaderSDLMixer.h"
+   
+   namespace RDE {
+   
+       class SoundManager;
+   
+       struct Sound {
+           public:
+               std::string path;
+   
+               std::string name;
+   
+               int repeat = 0;
+   
+               float speed = 1;
+       };
+   
+       struct Music : Sound {
+           friend class SoundManager;
+           private:
+               Mix_Music* musicID = nullptr;
+       };
+   
+       struct Sfx : Sound {
+           friend class SoundManager;
+           public:
+               int channel = -1;
+           private:
+               Mix_Chunk* sfxID = nullptr;
+       };
+   
+       class SoundManager {
+           private:
+               std::unordered_map<std::string, Music> musics;
+   
+               std::unordered_map<std::string, Sfx> sfxs;
+   
+               Sfx* currentSfx = nullptr;
+   
+               Music* currentMusic = nullptr;
+   
+           public:
+               SoundManager(SoundManager const&) = delete;
+               void operator=(SoundManager const&)  = delete;
+   
+               void init();
+   
+               void destroy();
+   
+               Music& loadMusic(const std::string& _musicPath);
+   
+               Sfx& loadSfx(const std::string& _sfxPath);
+   
+               void unloadMusic(const std::string& _musicName);
+   
+               void unloadSfx(const std::string& _sfxName);
+   
+               Music& getMusic(const std::string& _musicName);
+   
+               Sfx& getSfx(const std::string& _sfxName);
+   
+               void playMusic(const std::string& _musicName);
+   
+               void playSfx(const std::string& _sfxName);
+   
+               void pauseMusic(const std::string& _musicName);
+   
+               void pauseSfx(const std::string& _sfxName);
+   
+               void resumeMusic(const std::string& _musicName);
+   
+               void resumeSfx(const std::string& _sfxName);
+   
+               void stopMusic(const std::string& _musicName);
+   
+               void stopSfx(const std::string& _sfxName);
+   
+               void setMusicVolume(int _volume);
+   
+               void setSfxVolume(int _volume);
+   
+               void pauseAll();
+   
+               void stopAll();
+   
+               void resumeAll();
+   
+               SoundManager() {}
+       };
+   
+   }
+   
+   
+   #endif //RDE_SOUND_MANAGER_H

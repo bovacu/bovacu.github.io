@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_34f0a74eb63609ff1820a1e1f841bef7" kind="dir">
+    <compoundname>engine/include/core/render/shapes</compoundname>
+    <innerfile refid="_debug_shape_8h">DebugShape.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/render/shapes/"/>
+  </compounddef>
+</doxygen>

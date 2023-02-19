@@ -1,0 +1,14 @@
+.. _exhale_define__core_8h_1ab29b0993c07533d0145b76944bfdf1f7:
+
+Define SAFE_POINTER
+===================
+
+- Defined in :ref:`file_engine_include_core_Core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SAFE_POINTER
+   :project: My Project

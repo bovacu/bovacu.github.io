@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_physics_body_config" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::PhysicsBodyConfig</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_physics_body_config_1a37926353cf322b91c9bcd399200e8366" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_shape_config" kindref="compound">ShapeConfig</ref></type>
+        <definition>ShapeConfig RDE::PhysicsBodyConfig::shapeConfig</definition>
+        <argsstring></argsstring>
+        <name>shapeConfig</name>
+        <qualifiedname>RDE::PhysicsBodyConfig::shapeConfig</qualifiedname>
+        <initializer>{  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="66" column="21" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_physics_body_config_1ac3c3e7bec066ee8d95c73b1330c76a74" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::PhysicsBodyConfig::mass</definition>
+        <argsstring></argsstring>
+        <name>mass</name>
+        <qualifiedname>RDE::PhysicsBodyConfig::mass</qualifiedname>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="67" column="15" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_physics_body_config_1a8419282423e637420f83c2589a1e9b0e" prot="public" static="no" mutable="no">
+        <type>PhysicsBodyType</type>
+        <definition>PhysicsBodyType RDE::PhysicsBodyConfig::physicsBodyType</definition>
+        <argsstring></argsstring>
+        <name>physicsBodyType</name>
+        <qualifiedname>RDE::PhysicsBodyConfig::physicsBodyType</qualifiedname>
+        <initializer>= PhysicsBodyType::DYNAMIC</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="68" column="25" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>RDE::PhysicsBodyConfig</label>
+        <link refid="struct_r_d_e_1_1_physics_body_config"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>shapeConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::ShapeConfig</label>
+        <link refid="struct_r_d_e_1_1_shape_config"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>shapeMaskingConfig</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>offset</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RDE::ShapeMaskingConfig</label>
+        <link refid="struct_r_d_e_1_1_shape_masking_config"/>
+      </node>
+      <node id="4">
+        <label>RDE::Vec2&lt; float &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="65" column="5" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="65" bodyend="69"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_physics_body_config_1ac3c3e7bec066ee8d95c73b1330c76a74" prot="public" virt="non-virtual"><scope>RDE::PhysicsBodyConfig</scope><name>mass</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_config_1a8419282423e637420f83c2589a1e9b0e" prot="public" virt="non-virtual"><scope>RDE::PhysicsBodyConfig</scope><name>physicsBodyType</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_config_1a37926353cf322b91c9bcd399200e8366" prot="public" virt="non-virtual"><scope>RDE::PhysicsBodyConfig</scope><name>shapeConfig</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

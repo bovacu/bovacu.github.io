@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_texture_atlas_manager" kind="class" language="C++" prot="public">
+    <compoundname>RDE::TextureAtlasManager</compoundname>
+    <includes refid="_texture_atlas_manager_8h" local="no">TextureAtlasManager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_texture_atlas_manager_1a8b57a74934b7d7b794db056e3bbe5a7d" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="struct_r_d_e_1_1_atlas" kindref="compound">Atlas</ref> * &gt;</type>
+        <definition>std::unordered_map&lt;std::string, Atlas*&gt; RDE::TextureAtlasManager::atlases</definition>
+        <argsstring></argsstring>
+        <name>atlases</name>
+        <qualifiedname>RDE::TextureAtlasManager::atlases</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="109" column="32" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_texture_atlas_manager_1ae5b49e0cd0e48a40ccb416b90206a060" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_file_manager" kindref="compound">FileManager</ref> *</type>
+        <definition>FileManager* RDE::TextureAtlasManager::fileManager</definition>
+        <argsstring></argsstring>
+        <name>fileManager</name>
+        <qualifiedname>RDE::TextureAtlasManager::fileManager</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="110" column="25" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_texture_atlas_manager_1a4014c0688d994fb9de02d1b511a8b679" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::TextureAtlasManager::init</definition>
+        <argsstring>(FileManager *_fileManager)</argsstring>
+        <name>init</name>
+        <qualifiedname>RDE::TextureAtlasManager::init</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_manager" kindref="compound">FileManager</ref> *</type>
+          <declname>_fileManager</declname>
+        </param>
+        <briefdescription>
+<para>Initiates the sound system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This function should not be called by end users. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="117" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_texture_atlas_manager_1a31ffc1b76cc093607dd2bed69448cdfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RDE::TextureAtlasManager::loadSpriteSheet</definition>
+        <argsstring>(const std::string &amp;_spriteSheetPath)</argsstring>
+        <name>loadSpriteSheet</name>
+        <qualifiedname>RDE::TextureAtlasManager::loadSpriteSheet</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_spriteSheetPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="119" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_texture_atlas_manager_1a11cfd2fbc1f1d32bb0991e3f97cea720" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>Texture * RDE::TextureAtlasManager::getSubTexture</definition>
+        <argsstring>(const std::string &amp;_atlasName, const std::string &amp;_textureName)</argsstring>
+        <name>getSubTexture</name>
+        <qualifiedname>RDE::TextureAtlasManager::getSubTexture</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_atlasName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_textureName</declname>
+        </param>
+        <briefdescription>
+<para>This function returns a sub-texture inside the Sprite Sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_atlasName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sprite sheet name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_textureName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>it is the name defined in the YAML generated by TexturePacker. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="126" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_texture_atlas_manager_1a39680dae212e9308857bbdc36b0538d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_atlas" kindref="compound">Atlas</ref> *</type>
+        <definition>Atlas * RDE::TextureAtlasManager::getAtlas</definition>
+        <argsstring>(const std::string &amp;_atlasName)</argsstring>
+        <name>getAtlas</name>
+        <qualifiedname>RDE::TextureAtlasManager::getAtlas</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_atlasName</declname>
+        </param>
+        <briefdescription>
+<para>Returns the Sprite Sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_atlasName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the <ref refid="struct_r_d_e_1_1_atlas" kindref="compound">Atlas</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Atlas* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="133" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_texture_atlas_manager_1a57e0024f7e7fcc097d76666ed2830af6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::TextureAtlasManager::unloadAtlas</definition>
+        <argsstring>(const std::string &amp;_atlasName)</argsstring>
+        <name>unloadAtlas</name>
+        <qualifiedname>RDE::TextureAtlasManager::unloadAtlas</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_atlasName</declname>
+        </param>
+        <briefdescription>
+<para>This functions unloads from memory an specific Sprite Sheet. Useful when switching between scenes and some Sprite Sheet are not more in need. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_atlasName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the Altas </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="140" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_texture_atlas_manager_1af3605d1b3aa0195fa6f5bed87a86f04f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="struct_r_d_e_1_1_texture_info" kindref="compound">TextureInfo</ref> &gt;</type>
+        <definition>std::vector&lt; TextureInfo &gt; RDE::TextureAtlasManager::getTexturesInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getTexturesInfo</name>
+        <qualifiedname>RDE::TextureAtlasManager::getTexturesInfo</qualifiedname>
+        <briefdescription>
+<para>Debug function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::vector&lt;TextureInfo&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="146" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_texture_atlas_manager_1a1a92797241a4911bcadbac770b405483" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::TextureAtlasManager::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>RDE::TextureAtlasManager::destroy</qualifiedname>
+        <briefdescription>
+<para>This function cleans all of the Sprite Sheets loaded in memory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This is not meant to be called by end-users. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="152" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_texture_atlas_manager_1a75ca0c355e55008553bcb9b2bac399ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::TextureAtlasManager::TextureAtlasManager</definition>
+        <argsstring>()</argsstring>
+        <name>TextureAtlasManager</name>
+        <qualifiedname>RDE::TextureAtlasManager::TextureAtlasManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="154" column="13" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="154" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_texture_atlas_manager_1ad43cee848821d69cb8532cc3545f222c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::TextureAtlasManager::cropTextures</definition>
+        <argsstring>(Atlas &amp;_atlas, const nlohmann::json &amp;_spritesNode)</argsstring>
+        <name>cropTextures</name>
+        <qualifiedname>RDE::TextureAtlasManager::cropTextures</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_atlas" kindref="compound">Atlas</ref> &amp;</type>
+          <declname>_atlas</declname>
+        </param>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>_spritesNode</declname>
+        </param>
+        <briefdescription>
+<para>Divides the Sprite Sheet into sub-sprites. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_atlas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_atlas" kindref="compound">Atlas</ref> to be divided. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_spritesNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TexturePacker information about how it is sub-divided </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="162" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_texture_atlas_manager_1a40adfdb5d1f3c4dfdd59a4a6f8e8d7f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::TextureAtlasManager::cropNinePatchSubTextures</definition>
+        <argsstring>(Texture *_texture, const nlohmann::json &amp;_spriteNode)</argsstring>
+        <name>cropNinePatchSubTextures</name>
+        <qualifiedname>RDE::TextureAtlasManager::cropNinePatchSubTextures</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> *</type>
+          <declname>_texture</declname>
+        </param>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>_spriteNode</declname>
+        </param>
+        <briefdescription>
+<para>Divides a Sprite into 9 sub-sprites to render the <ref refid="struct_r_d_e_1_1_nine_slice" kindref="compound">NineSlice</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> to sub-divide </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_spriteNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TexturePacker information about how it is sub-divided </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="169" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This manager holds all the atlases and stores them in memory. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="attention"><para>All managers destroy all the resources before closing the application, it is not needed to be done by the end user. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="107" column="5" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="107" bodyend="170"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_texture_atlas_manager_1a8b57a74934b7d7b794db056e3bbe5a7d" prot="private" virt="non-virtual"><scope>RDE::TextureAtlasManager</scope><name>atlases</name></member>
+      <member refid="class_r_d_e_1_1_texture_atlas_manager_1a40adfdb5d1f3c4dfdd59a4a6f8e8d7f4" prot="private" virt="non-virtual"><scope>RDE::TextureAtlasManager</scope><name>cropNinePatchSubTextures</name></member>
+      <member refid="class_r_d_e_1_1_texture_atlas_manager_1ad43cee848821d69cb8532cc3545f222c" prot="private" virt="non-virtual"><scope>RDE::TextureAtlasManager</scope><name>cropTextures</name></member>
+      <member refid="class_r_d_e_1_1_texture_atlas_manager_1a1a92797241a4911bcadbac770b405483" prot="public" virt="non-virtual"><scope>RDE::TextureAtlasManager</scope><name>destroy</name></member>
+      <member refid="class_r_d_e_1_1_texture_atlas_manager_1ae5b49e0cd0e48a40ccb416b90206a060" prot="private" virt="non-virtual"><scope>RDE::TextureAtlasManager</scope><name>fileManager</name></member>
+      <member refid="class_r_d_e_1_1_texture_atlas_manager_1a39680dae212e9308857bbdc36b0538d3" prot="public" virt="non-virtual"><scope>RDE::TextureAtlasManager</scope><name>getAtlas</name></member>
+      <member refid="class_r_d_e_1_1_texture_atlas_manager_1a11cfd2fbc1f1d32bb0991e3f97cea720" prot="public" virt="non-virtual"><scope>RDE::TextureAtlasManager</scope><name>getSubTexture</name></member>
+      <member refid="class_r_d_e_1_1_texture_atlas_manager_1af3605d1b3aa0195fa6f5bed87a86f04f" prot="public" virt="non-virtual"><scope>RDE::TextureAtlasManager</scope><name>getTexturesInfo</name></member>
+      <member refid="class_r_d_e_1_1_texture_atlas_manager_1a4014c0688d994fb9de02d1b511a8b679" prot="public" virt="non-virtual"><scope>RDE::TextureAtlasManager</scope><name>init</name></member>
+      <member refid="class_r_d_e_1_1_texture_atlas_manager_1a31ffc1b76cc093607dd2bed69448cdfc" prot="public" virt="non-virtual"><scope>RDE::TextureAtlasManager</scope><name>loadSpriteSheet</name></member>
+      <member refid="class_r_d_e_1_1_texture_atlas_manager_1a75ca0c355e55008553bcb9b2bac399ca" prot="public" virt="non-virtual"><scope>RDE::TextureAtlasManager</scope><name>TextureAtlasManager</name></member>
+      <member refid="class_r_d_e_1_1_texture_atlas_manager_1a57e0024f7e7fcc097d76666ed2830af6" prot="public" virt="non-virtual"><scope>RDE::TextureAtlasManager</scope><name>unloadAtlas</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

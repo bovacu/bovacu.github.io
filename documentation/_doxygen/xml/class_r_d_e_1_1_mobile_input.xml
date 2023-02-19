@@ -1,0 +1,609 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_mobile_input" kind="class" language="C++" prot="public">
+    <compoundname>RDE::MobileInput</compoundname>
+    <basecompoundref refid="class_r_d_e_1_1_input" prot="public" virt="non-virtual">RDE::Input</basecompoundref>
+    <includes refid="_mobile_input_8h" local="no">MobileInput.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_mobile_input_1a3a826a4b4b63dd70c76a04b6111a5bc0" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; int, int &gt;</type>
+        <definition>std::unordered_map&lt;int, int&gt; RDE::MobileInput::pressedFingers</definition>
+        <argsstring></argsstring>
+        <name>pressedFingers</name>
+        <qualifiedname>RDE::MobileInput::pressedFingers</qualifiedname>
+        <briefdescription>
+<para>Map FingerID -&gt; <ref refid="struct_r_d_e_1_1_state" kindref="compound">State</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/MobileInput.h" line="21" column="32" bodyfile="engine/include/core/systems/inputSystem/input/MobileInput.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_mobile_input_1a921b7cc2fcf0588157aa58a9207ed97d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::MobileInput::pressure</definition>
+        <argsstring></argsstring>
+        <name>pressure</name>
+        <qualifiedname>RDE::MobileInput::pressure</qualifiedname>
+        <briefdescription>
+<para>Pressure used on the clicks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/MobileInput.h" line="26" column="19" bodyfile="engine/include/core/systems/inputSystem/input/MobileInput.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_mobile_input_1af945285c34822102c7e096980744ac6a" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::MobileInput::fingerPosInit</definition>
+        <argsstring></argsstring>
+        <name>fingerPosInit</name>
+        <qualifiedname>RDE::MobileInput::fingerPosInit</qualifiedname>
+        <briefdescription>
+<para>Initial position of a click. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/MobileInput.h" line="31" column="19" bodyfile="engine/include/core/systems/inputSystem/input/MobileInput.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_mobile_input_1a872670218cfaf875178dec8b44c0d3a4" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::MobileInput::fingerPosEnd</definition>
+        <argsstring></argsstring>
+        <name>fingerPosEnd</name>
+        <qualifiedname>RDE::MobileInput::fingerPosEnd</qualifiedname>
+        <briefdescription>
+<para>Final position of a click. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/MobileInput.h" line="36" column="19" bodyfile="engine/include/core/systems/inputSystem/input/MobileInput.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_mobile_input_1a5caa74568a40c1a5223052b608d4522e" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::MobileInput::fingerMoveDistance</definition>
+        <argsstring></argsstring>
+        <name>fingerMoveDistance</name>
+        <qualifiedname>RDE::MobileInput::fingerMoveDistance</qualifiedname>
+        <briefdescription>
+<para>Distance moved by the finger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/MobileInput.h" line="41" column="19" bodyfile="engine/include/core/systems/inputSystem/input/MobileInput.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_mobile_input_1ad21c6dacffff316c381d629c826098b1" prot="private" static="no" mutable="no">
+        <type>TimeStamp</type>
+        <definition>TimeStamp RDE::MobileInput::initOfTouch</definition>
+        <argsstring></argsstring>
+        <name>initOfTouch</name>
+        <qualifiedname>RDE::MobileInput::initOfTouch</qualifiedname>
+        <briefdescription>
+<para>Moment in time of the initial click. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/MobileInput.h" line="46" column="23" bodyfile="engine/include/core/systems/inputSystem/input/MobileInput.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_mobile_input_1a483f2753cb9c5cc83b5f22fc3de78531" prot="private" static="no" mutable="no">
+        <type>TimeStamp</type>
+        <definition>TimeStamp RDE::MobileInput::endOfTouch</definition>
+        <argsstring></argsstring>
+        <name>endOfTouch</name>
+        <qualifiedname>RDE::MobileInput::endOfTouch</qualifiedname>
+        <briefdescription>
+<para>Moment in time of the end of click. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/MobileInput.h" line="51" column="23" bodyfile="engine/include/core/systems/inputSystem/input/MobileInput.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_mobile_input_1a89ec28da364c73f20eaeea4e711ddf85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::MobileInput::init</definition>
+        <argsstring>(Engine *_engine, Window *_window)</argsstring>
+        <name>init</name>
+        <qualifiedname>RDE::MobileInput::init</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref> *</type>
+          <declname>_engine</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> *</type>
+          <declname>_window</declname>
+        </param>
+        <briefdescription>
+<para>Initiates the system and sets the initial states. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_engine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/MobileInput.h" line="59" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_mobile_input_1a894b26e2a43d5762bf40e5e9bb4e9b05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RDE::MobileInput::getState</definition>
+        <argsstring>(int _keyOrButton)</argsstring>
+        <name>getState</name>
+        <qualifiedname>RDE::MobileInput::getState</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>_keyOrButton</declname>
+        </param>
+        <briefdescription>
+<para>Gets the state of a finger. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_keyOrButton</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Finger </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/MobileInput.h" line="66" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_mobile_input_1aec61c0402e6dee508509acbd671a1b88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::MobileInput::setState</definition>
+        <argsstring>(int _keyOrButton, int _state)</argsstring>
+        <name>setState</name>
+        <qualifiedname>RDE::MobileInput::setState</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>_keyOrButton</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_state</declname>
+        </param>
+        <briefdescription>
+<para>Sets the state of a finger. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_keyOrButton</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Finger </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_state" kindref="compound">State</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/MobileInput.h" line="73" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_mobile_input_1ade2c8b4a83233b39891dcc92a0268c20" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::MobileInput::onTouchDown</definition>
+        <argsstring>(SDL_Event &amp;_event)</argsstring>
+        <name>onTouchDown</name>
+        <qualifiedname>RDE::MobileInput::onTouchDown</qualifiedname>
+        <param>
+          <type>SDL_Event &amp;</type>
+          <declname>_event</declname>
+        </param>
+        <briefdescription>
+<para>Handles the touch down event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/MobileInput.h" line="80" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_mobile_input_1ad47bfa4721a17b209ca0d0a2dcecabaa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::MobileInput::onTouchUp</definition>
+        <argsstring>(SDL_Event &amp;_event)</argsstring>
+        <name>onTouchUp</name>
+        <qualifiedname>RDE::MobileInput::onTouchUp</qualifiedname>
+        <param>
+          <type>SDL_Event &amp;</type>
+          <declname>_event</declname>
+        </param>
+        <briefdescription>
+<para>Handles the touch up event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/MobileInput.h" line="86" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_mobile_input_1add2c0cf7e2cd0bc081375aa6fd13c4ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::MobileInput::onTouchMoved</definition>
+        <argsstring>(SDL_Event &amp;_event)</argsstring>
+        <name>onTouchMoved</name>
+        <qualifiedname>RDE::MobileInput::onTouchMoved</qualifiedname>
+        <param>
+          <type>SDL_Event &amp;</type>
+          <declname>_event</declname>
+        </param>
+        <briefdescription>
+<para>Handles the touch moved event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/MobileInput.h" line="92" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class handles all of the mobile events. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RDE::Input</label>
+        <link refid="class_r_d_e_1_1_input"/>
+      </node>
+      <node id="1">
+        <label>RDE::MobileInput</label>
+        <link refid="class_r_d_e_1_1_mobile_input"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>RDE::Delegate&lt; void()&gt;</label>
+        <link refid="struct_r_d_e_1_1_delegate"/>
+      </node>
+      <node id="11">
+        <label>RDE::Delegate&lt; void(const RDE::Vec2 &amp;)&gt;</label>
+        <link refid="struct_r_d_e_1_1_delegate"/>
+      </node>
+      <node id="12">
+        <label>RDE::Delegate&lt; void(int)&gt;</label>
+        <link refid="struct_r_d_e_1_1_delegate"/>
+      </node>
+      <node id="27">
+        <label>RDE::Color</label>
+        <link refid="struct_r_d_e_1_1_color"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>Black</edgelabel>
+          <edgelabel>Blue</edgelabel>
+          <edgelabel>Brown</edgelabel>
+          <edgelabel>Disabled</edgelabel>
+          <edgelabel>Gray</edgelabel>
+          <edgelabel>Green</edgelabel>
+          <edgelabel>Magenta</edgelabel>
+          <edgelabel>NO_COLOR</edgelabel>
+          <edgelabel>Orange</edgelabel>
+          <edgelabel>Placeholder</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>RDE::ConfigManager</label>
+        <link refid="class_r_d_e_1_1_config_manager"/>
+      </node>
+      <node id="22">
+        <label>RDE::Console</label>
+        <link refid="class_r_d_e_1_1_console"/>
+      </node>
+      <node id="29">
+        <label>RDE::ControllerVibrationManager</label>
+        <link refid="class_r_d_e_1_1_controller_vibration_manager"/>
+      </node>
+      <node id="26">
+        <label>RDE::DebugOptions</label>
+        <link refid="struct_r_d_e_1_1_debug_options"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>boxLineColor</edgelabel>
+          <edgelabel>boxRadiusColor</edgelabel>
+          <edgelabel>circleLineColor</edgelabel>
+          <edgelabel>circleRadiusColor</edgelabel>
+          <edgelabel>polygonLineColor</edgelabel>
+          <edgelabel>polygonRadiusColor</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>RDE::ECSManager</label>
+        <link refid="class_r_d_e_1_1_e_c_s_manager"/>
+      </node>
+      <node id="14">
+        <label>RDE::Engine</label>
+        <link refid="class_r_d_e_1_1_engine"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>manager</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>rdeConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>RDE::FileManager</label>
+        <link refid="class_r_d_e_1_1_file_manager"/>
+      </node>
+      <node id="19">
+        <label>RDE::FontManager</label>
+        <link refid="class_r_d_e_1_1_font_manager"/>
+      </node>
+      <node id="2">
+        <label>RDE::Input</label>
+        <link refid="class_r_d_e_1_1_input"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>window</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>RDE::InputManager</label>
+        <link refid="class_r_d_e_1_1_input_manager"/>
+      </node>
+      <node id="9">
+        <label>RDE::LocalizationConfig</label>
+        <link refid="struct_r_d_e_1_1_localization_config"/>
+      </node>
+      <node id="32">
+        <label>RDE::LocalizationInfo</label>
+        <link refid="struct_r_d_e_1_1_localization_info"/>
+      </node>
+      <node id="31">
+        <label>RDE::LocalizationManager</label>
+        <link refid="class_r_d_e_1_1_localization_manager"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>localizationInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>RDE::Manager</label>
+        <link refid="class_r_d_e_1_1_manager"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>engine</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>configManager</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>textureManager</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>shaderManager</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>fontManager</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>soundManager</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>inputManager</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>consoleManager</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>sceneManager</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>ecsManager</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>physics</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>fileManager</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>controllerVibrationManager</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>renderManager</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>localizationManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RDE::MobileInput</label>
+        <link refid="class_r_d_e_1_1_mobile_input"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>RDE::PhysicsManager</label>
+        <link refid="class_r_d_e_1_1_physics_manager"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>debugOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>RDE::RDEConfig</label>
+        <link refid="struct_r_d_e_1_1_r_d_e_config"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>windowData</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>projectData</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>RDE::RDEConfig::ProjectProperties</label>
+        <link refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>localizationConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>RDE::RDEConfig::WindowProperties</label>
+        <link refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>resolution</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>RDE::RenderManager</label>
+        <link refid="class_r_d_e_1_1_render_manager"/>
+      </node>
+      <node id="23">
+        <label>RDE::SceneManager</label>
+        <link refid="class_r_d_e_1_1_scene_manager"/>
+      </node>
+      <node id="18">
+        <label>RDE::ShaderManager</label>
+        <link refid="class_r_d_e_1_1_shader_manager"/>
+      </node>
+      <node id="20">
+        <label>RDE::SoundManager</label>
+        <link refid="class_r_d_e_1_1_sound_manager"/>
+      </node>
+      <node id="17">
+        <label>RDE::TextureAtlasManager</label>
+        <link refid="class_r_d_e_1_1_texture_atlas_manager"/>
+      </node>
+      <node id="3">
+        <label>RDE::Window</label>
+        <link refid="class_r_d_e_1_1_window"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>eventCallback</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>shouldUpdateWindow</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>onWindowMovedCallback</edgelabel>
+          <edgelabel>onWindowResizedCallback</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>onWindowDisplayChangedCallback</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>onWindowFocusedCallback</edgelabel>
+          <edgelabel>onWindowMaximizedCallback</edgelabel>
+          <edgelabel>onWindowMinimizedCallback</edgelabel>
+          <edgelabel>onWindowUnfocusedCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>RDE::UniqueDelegate&lt; bool()&gt;</label>
+        <link refid="struct_r_d_e_1_1_unique_delegate"/>
+      </node>
+      <node id="4">
+        <label>RDE::UniqueDelegate&lt; void(RDE::Event &amp;)&gt;</label>
+        <link refid="struct_r_d_e_1_1_unique_delegate"/>
+      </node>
+      <node id="7">
+        <label>RDE::Vec2&lt; int &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/inputSystem/input/MobileInput.h" line="16" column="5" bodyfile="engine/include/core/systems/inputSystem/input/MobileInput.h" bodystart="16" bodyend="93"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_mobile_input_1a483f2753cb9c5cc83b5f22fc3de78531" prot="private" virt="non-virtual"><scope>RDE::MobileInput</scope><name>endOfTouch</name></member>
+      <member refid="class_r_d_e_1_1_input_1a536e12c69a33f9e454c26368f751da79" prot="protected" virt="non-virtual"><scope>RDE::MobileInput</scope><name>engine</name></member>
+      <member refid="class_r_d_e_1_1_input_1ac6c4192a1132075c8cf505dfcf79bf73" prot="protected" virt="non-virtual"><scope>RDE::MobileInput</scope><name>events</name></member>
+      <member refid="class_r_d_e_1_1_mobile_input_1a5caa74568a40c1a5223052b608d4522e" prot="private" virt="non-virtual"><scope>RDE::MobileInput</scope><name>fingerMoveDistance</name></member>
+      <member refid="class_r_d_e_1_1_mobile_input_1a872670218cfaf875178dec8b44c0d3a4" prot="private" virt="non-virtual"><scope>RDE::MobileInput</scope><name>fingerPosEnd</name></member>
+      <member refid="class_r_d_e_1_1_mobile_input_1af945285c34822102c7e096980744ac6a" prot="private" virt="non-virtual"><scope>RDE::MobileInput</scope><name>fingerPosInit</name></member>
+      <member refid="class_r_d_e_1_1_mobile_input_1a894b26e2a43d5762bf40e5e9bb4e9b05" prot="public" virt="non-virtual"><scope>RDE::MobileInput</scope><name>getState</name></member>
+      <member refid="class_r_d_e_1_1_input_1a0f6948c9ed8dd70e436b9f647ef55cf3" prot="protected" virt="non-virtual"><scope>RDE::MobileInput</scope><name>ignoredEvents</name></member>
+      <member refid="class_r_d_e_1_1_input_1a4805e279579b7cc4c1928f467e9803f2" prot="public" virt="non-virtual"><scope>RDE::MobileInput</scope><name>ignoreEvent</name></member>
+      <member refid="class_r_d_e_1_1_mobile_input_1a89ec28da364c73f20eaeea4e711ddf85" prot="public" virt="non-virtual"><scope>RDE::MobileInput</scope><name>init</name></member>
+      <member refid="class_r_d_e_1_1_mobile_input_1ad21c6dacffff316c381d629c826098b1" prot="private" virt="non-virtual"><scope>RDE::MobileInput</scope><name>initOfTouch</name></member>
+      <member refid="class_r_d_e_1_1_mobile_input_1ade2c8b4a83233b39891dcc92a0268c20" prot="private" virt="non-virtual"><scope>RDE::MobileInput</scope><name>onTouchDown</name></member>
+      <member refid="class_r_d_e_1_1_mobile_input_1add2c0cf7e2cd0bc081375aa6fd13c4ab" prot="private" virt="non-virtual"><scope>RDE::MobileInput</scope><name>onTouchMoved</name></member>
+      <member refid="class_r_d_e_1_1_mobile_input_1ad47bfa4721a17b209ca0d0a2dcecabaa" prot="private" virt="non-virtual"><scope>RDE::MobileInput</scope><name>onTouchUp</name></member>
+      <member refid="class_r_d_e_1_1_input_1a881b09a394276e2f88f45ff2662ea832" prot="public" virt="non-virtual"><scope>RDE::MobileInput</scope><name>pollEvent</name></member>
+      <member refid="class_r_d_e_1_1_mobile_input_1a3a826a4b4b63dd70c76a04b6111a5bc0" prot="private" virt="non-virtual"><scope>RDE::MobileInput</scope><name>pressedFingers</name></member>
+      <member refid="class_r_d_e_1_1_mobile_input_1a921b7cc2fcf0588157aa58a9207ed97d" prot="private" virt="non-virtual"><scope>RDE::MobileInput</scope><name>pressure</name></member>
+      <member refid="class_r_d_e_1_1_mobile_input_1aec61c0402e6dee508509acbd671a1b88" prot="public" virt="non-virtual"><scope>RDE::MobileInput</scope><name>setState</name></member>
+      <member refid="class_r_d_e_1_1_input_1a5bf86e083b55251e1ea4c3c814e3b3db" prot="protected" virt="non-virtual"><scope>RDE::MobileInput</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

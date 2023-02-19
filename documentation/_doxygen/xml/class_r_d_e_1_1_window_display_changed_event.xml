@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_window_display_changed_event" kind="class" language="C++" prot="public">
+    <compoundname>RDE::WindowDisplayChangedEvent</compoundname>
+    <basecompoundref refid="class_r_d_e_1_1_event" prot="public" virt="non-virtual">RDE::Event</basecompoundref>
+    <includes refid="_window_event_8h" local="no">WindowEvent.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_window_display_changed_event_1a278346701ba7932bc2d0111abe123827" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::WindowDisplayChangedEvent::windowDisplayIndex</definition>
+        <argsstring></argsstring>
+        <name>windowDisplayIndex</name>
+        <qualifiedname>RDE::WindowDisplayChangedEvent::windowDisplayIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="78" column="17" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_window_display_changed_event_1a8eab6d21302713fb3c562d8707c0f875" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::WindowDisplayChangedEvent::WindowDisplayChangedEvent</definition>
+        <argsstring>(int _windowDisplayIndex)</argsstring>
+        <name>WindowDisplayChangedEvent</name>
+        <qualifiedname>RDE::WindowDisplayChangedEvent::WindowDisplayChangedEvent</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>_windowDisplayIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="81" column="22" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_window_display_changed_event_1aeaa8215bbeda011784b08e5b0d765b2b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int RDE::WindowDisplayChangedEvent::getWindowDisplayIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>getWindowDisplayIndex</name>
+        <qualifiedname>RDE::WindowDisplayChangedEvent::getWindowDisplayIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="82" column="18" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_window_display_changed_event_1a2eef7ffdad28fcab02d80003cb9c4859" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::WindowDisplayChangedEvent::toString</definition>
+        <argsstring>() const override</argsstring>
+        <name>toString</name>
+        <qualifiedname>RDE::WindowDisplayChangedEvent::toString</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a2ad3c2a15cf1a3d619cfada8dbf02638">toString</reimplements>
+        <briefdescription>
+<para>Returns all the event in form of string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="84" column="26" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_window_display_changed_event_1a184346a0b010b69a244ddfe8e6977bca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref></type>
+        <definition>EventType RDE::WindowDisplayChangedEvent::getEventType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getEventType</name>
+        <qualifiedname>RDE::WindowDisplayChangedEvent::getEventType</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a17812fdef1f1bc1517e7658cbdf8ba3b">getEventType</reimplements>
+        <briefdescription>
+<para>Returns the event type from the current object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>EventType </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="92" column="24" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_window_display_changed_event_1a82dbe50b0d05a36ccd1fe961cad7e110" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char * RDE::WindowDisplayChangedEvent::getName</definition>
+        <argsstring>() const override</argsstring>
+        <name>getName</name>
+        <qualifiedname>RDE::WindowDisplayChangedEvent::getName</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a3ea36fb9accc90c88c34d946515724a9">getName</reimplements>
+        <briefdescription>
+<para>Returns the event name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const char* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="93" column="25" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_window_display_changed_event_1a5c709dce9d078618972a2a1d01b68ae9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int RDE::WindowDisplayChangedEvent::getCategoryFlags</definition>
+        <argsstring>() const override</argsstring>
+        <name>getCategoryFlags</name>
+        <qualifiedname>RDE::WindowDisplayChangedEvent::getCategoryFlags</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a1578cfc2a5212ffb46108acf3b6c51fd">getCategoryFlags</reimplements>
+        <briefdescription>
+<para>Returns the categories of an event condensed on a single int. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="94" column="18" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_window_display_changed_event_1a1b0b6f0f7e3a52e63bb0e6590b1ec13e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref></type>
+        <definition>static EventType RDE::WindowDisplayChangedEvent::getStaticType</definition>
+        <argsstring>()</argsstring>
+        <name>getStaticType</name>
+        <qualifiedname>RDE::WindowDisplayChangedEvent::getStaticType</qualifiedname>
+        <briefdescription>
+<para>Implementation of the rest of the static and virtual methods. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="91" column="30" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class represents all of the events that involves changing the display of the window. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RDE::Event</label>
+        <link refid="class_r_d_e_1_1_event"/>
+      </node>
+      <node id="1">
+        <label>RDE::WindowDisplayChangedEvent</label>
+        <link refid="class_r_d_e_1_1_window_display_changed_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>RDE::Event</label>
+        <link refid="class_r_d_e_1_1_event"/>
+      </node>
+      <node id="1">
+        <label>RDE::WindowDisplayChangedEvent</label>
+        <link refid="class_r_d_e_1_1_window_display_changed_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="76" column="5" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="76" bodyend="95"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_window_display_changed_event_1a5c709dce9d078618972a2a1d01b68ae9" prot="public" virt="virtual"><scope>RDE::WindowDisplayChangedEvent</scope><name>getCategoryFlags</name></member>
+      <member refid="class_r_d_e_1_1_window_display_changed_event_1a184346a0b010b69a244ddfe8e6977bca" prot="public" virt="virtual"><scope>RDE::WindowDisplayChangedEvent</scope><name>getEventType</name></member>
+      <member refid="class_r_d_e_1_1_window_display_changed_event_1a82dbe50b0d05a36ccd1fe961cad7e110" prot="public" virt="virtual"><scope>RDE::WindowDisplayChangedEvent</scope><name>getName</name></member>
+      <member refid="class_r_d_e_1_1_window_display_changed_event_1a1b0b6f0f7e3a52e63bb0e6590b1ec13e" prot="public" virt="non-virtual"><scope>RDE::WindowDisplayChangedEvent</scope><name>getStaticType</name></member>
+      <member refid="class_r_d_e_1_1_window_display_changed_event_1aeaa8215bbeda011784b08e5b0d765b2b" prot="public" virt="non-virtual"><scope>RDE::WindowDisplayChangedEvent</scope><name>getWindowDisplayIndex</name></member>
+      <member refid="class_r_d_e_1_1_event_1a372a2b0c1a05c7f8b7e48bfbac7042d0" prot="public" virt="non-virtual"><scope>RDE::WindowDisplayChangedEvent</scope><name>handled</name></member>
+      <member refid="class_r_d_e_1_1_event_1a853416fc3754e4052bf7f24d081f82fd" prot="public" virt="non-virtual"><scope>RDE::WindowDisplayChangedEvent</scope><name>isInCategory</name></member>
+      <member refid="class_r_d_e_1_1_window_display_changed_event_1a2eef7ffdad28fcab02d80003cb9c4859" prot="public" virt="virtual"><scope>RDE::WindowDisplayChangedEvent</scope><name>toString</name></member>
+      <member refid="class_r_d_e_1_1_window_display_changed_event_1a8eab6d21302713fb3c562d8707c0f875" prot="public" virt="non-virtual"><scope>RDE::WindowDisplayChangedEvent</scope><name>WindowDisplayChangedEvent</name></member>
+      <member refid="class_r_d_e_1_1_window_display_changed_event_1a278346701ba7932bc2d0111abe123827" prot="private" virt="non-virtual"><scope>RDE::WindowDisplayChangedEvent</scope><name>windowDisplayIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

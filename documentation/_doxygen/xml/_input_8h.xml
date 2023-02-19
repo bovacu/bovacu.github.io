@@ -1,0 +1,559 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_input_8h" kind="file" language="C++">
+    <compoundname>Input.h</compoundname>
+    <includes refid="_platform_header_s_d_l_8h" local="yes">core/platform/PlatformHeaderSDL.h</includes>
+    <includes refid="_keyboard_keys_8h" local="yes">core/systems/inputSystem/keysAndButtons/KeyboardKeys.h</includes>
+    <includes refid="_mouse_keys_8h" local="yes">core/systems/inputSystem/keysAndButtons/MouseKeys.h</includes>
+    <includes refid="_controller_buttons_8h" local="yes">core/systems/inputSystem/keysAndButtons/ControllerButtons.h</includes>
+    <includes refid="_util_8h" local="yes">core/util/Util.h</includes>
+    <includes refid="_window_8h" local="yes">core/render/window/Window.h</includes>
+    <includedby refid="_r_d_e_8h" local="yes">engine/include/RDE.h</includedby>
+    <includedby refid="_manager_8h" local="yes">engine/include/core/Manager.h</includedby>
+    <includedby refid="_platform_8h" local="yes">engine/include/core/platform/Platform.h</includedby>
+    <includedby refid="_controller_input_8h" local="yes">engine/include/core/systems/inputSystem/input/ControllerInput.h</includedby>
+    <includedby refid="_keyboard_input_8h" local="yes">engine/include/core/systems/inputSystem/input/KeyboardInput.h</includedby>
+    <includedby refid="_mobile_input_8h" local="yes">engine/include/core/systems/inputSystem/input/MobileInput.h</includedby>
+    <includedby refid="_mouse_input_8h" local="yes">engine/include/core/systems/inputSystem/input/MouseInput.h</includedby>
+    <includedby refid="_window_input_8h" local="yes">engine/include/core/systems/inputSystem/input/WindowInput.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>core/Core.h</label>
+        <link refid="_core_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>core/platform/PlatformHeaderSDL.h</label>
+        <link refid="_platform_header_s_d_l_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>core/platform/PlatformHeaderSDLImage.h</label>
+        <link refid="_platform_header_s_d_l_image_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>core/render/window/Window.h</label>
+        <link refid="_window_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>core/systems/eventSystem/Event.h</label>
+        <link refid="_event_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/systems/inputSystem/input/Input.h</label>
+        <link refid="_input_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>core/systems/inputSystem/keysAndButtons/ControllerButtons.h</label>
+        <link refid="_controller_buttons_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>core/systems/inputSystem/keysAndButtons/KeyboardKeys.h</label>
+        <link refid="_keyboard_keys_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>core/systems/inputSystem/keysAndButtons/MouseKeys.h</label>
+        <link refid="_mouse_keys_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Clock.h</label>
+        <link refid="_clock_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Color.h</label>
+        <link refid="_color_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Delegate.h</label>
+        <link refid="_delegate_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Delta.h</label>
+        <link refid="_delta_8h_source"/>
+      </node>
+      <node id="25">
+        <label>Functions.h</label>
+        <link refid="_functions_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Random.h</label>
+        <link refid="_random_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Rect.h</label>
+        <link refid="_rect_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>core/util/Util.h</label>
+        <link refid="_util_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Vec.h</label>
+        <link refid="_vec_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SDL.h</label>
+      </node>
+      <node id="27">
+        <label>SDL2/SDL_image.h</label>
+      </node>
+      <node id="30">
+        <label>algorithm</label>
+      </node>
+      <node id="29">
+        <label>chrono</label>
+      </node>
+      <node id="13">
+        <label>cmath</label>
+      </node>
+      <node id="7">
+        <label>cstdint</label>
+      </node>
+      <node id="22">
+        <label>exception</label>
+      </node>
+      <node id="23">
+        <label>functional</label>
+      </node>
+      <node id="14">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="33">
+        <label>map</label>
+      </node>
+      <node id="32">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>ostream</label>
+      </node>
+      <node id="20">
+        <label>random</label>
+      </node>
+      <node id="28">
+        <label>sstream</label>
+      </node>
+      <node id="36">
+        <label>string</label>
+      </node>
+      <node id="24">
+        <label>unordered_map</label>
+      </node>
+      <node id="31">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>engine/include/RDE.h</label>
+        <link refid="_r_d_e_8h_source"/>
+      </node>
+      <node id="5">
+        <label>engine/include/RDEEntry.h</label>
+        <link refid="_r_d_e_entry_8h_source"/>
+      </node>
+      <node id="4">
+        <label>engine/include/core/Engine.h</label>
+        <link refid="_engine_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>engine/include/core/Manager.h</label>
+        <link refid="_manager_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>engine/include/core/graph/ImGuiScene.h</label>
+        <link refid="_im_gui_scene_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>engine/include/core/graph/Scene.h</label>
+        <link refid="_scene_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>engine/include/core/platform/Platform.h</label>
+        <link refid="_platform_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>engine/include/core/systems/configSystem/ConfigManager.h</label>
+        <link refid="_config_manager_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>engine/include/core/systems/inputSystem/input/ControllerInput.h</label>
+        <link refid="_controller_input_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/systems/inputSystem/input/Input.h</label>
+        <link refid="_input_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>engine/include/core/systems/inputSystem/input/KeyboardInput.h</label>
+        <link refid="_keyboard_input_8h_source"/>
+      </node>
+      <node id="9">
+        <label>engine/include/core/systems/inputSystem/input/MobileInput.h</label>
+        <link refid="_mobile_input_8h_source"/>
+      </node>
+      <node id="10">
+        <label>engine/include/core/systems/inputSystem/input/MouseInput.h</label>
+        <link refid="_mouse_input_8h_source"/>
+      </node>
+      <node id="11">
+        <label>engine/include/core/systems/inputSystem/input/WindowInput.h</label>
+        <link refid="_window_input_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_r_d_e_1_1_input" prot="public">RDE::Input</innerclass>
+    <innerclass refid="class_r_d_e_1_1_input_manager" prot="public">RDE::InputManager</innerclass>
+    <innernamespace refid="namespace_r_d_e">RDE</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_input_8h_1ab6e1838b5bf1b1f2d202b4202b0b884d" prot="public" static="no">
+        <name>RDE_INPUT_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/Input.h" line="4" column="9" bodyfile="engine/include/core/systems/inputSystem/input/Input.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_input_8h_1af4c7e44be388ec3ad52622f3e1e4e6bc" prot="public" static="no">
+        <name>SDL_JOYSTICK_DISABLED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/inputSystem/input/Input.h" line="15" column="9" bodyfile="engine/include/core/systems/inputSystem/input/Input.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RDE_INPUT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDE_INPUT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/platform/PlatformHeaderSDL.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/systems/inputSystem/keysAndButtons/KeyboardKeys.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/systems/inputSystem/keysAndButtons/MouseKeys.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/systems/inputSystem/keysAndButtons/ControllerButtons.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/util/Util.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/render/window/Window.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SDL_JOYSTICK_DISABLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDL_JOYSTICK_DISABLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_d_e" kindref="compound">RDE</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="namespace_r_d_e_1aba599888c87f5bf9b6052d710bc6923f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1aba599888c87f5bf9b6052d710bc6923f" kindref="member">SystemEventEnum</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WINDOW_EVENT<sp/>=<sp/>SDL_WINDOWEVENT,<sp/>QUIT_E<sp/>=<sp/>SDL_QUIT,<sp/>WINDOW_EXIT_E<sp/>=<sp/>SDL_WINDOWEVENT_LEAVE,<sp/>WINDOW_RESIZED_E<sp/>=<sp/>SDL_WINDOWEVENT_RESIZED,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WINDOW_FOCUS_E<sp/>=<sp/>SDL_WINDOWEVENT_FOCUS_GAINED,<sp/>WINDOW_LOST_FOCUS_E<sp/>=<sp/>SDL_WINDOWEVENT_FOCUS_LOST,<sp/>WINDOW_AUDIO_DEVICE_CONNECTED_E<sp/>=<sp/>SDL_AUDIODEVICEADDED,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WINDOW_AUDIO_DEVICE_DISCONNECTED_E<sp/>=<sp/>SDL_AUDIODEVICEREMOVED,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>APP_ON_DESTROY_E<sp/>=<sp/>SDL_APP_TERMINATING,<sp/>APP_DID_ENTER_BACK_E<sp/>=<sp/>SDL_APP_DIDENTERBACKGROUND,<sp/>APP_DID_ENTER_FOREG_E<sp/>=<sp/>SDL_APP_DIDENTERFOREGROUND,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>APP_WILL_ENTER_BACK_E<sp/>=<sp/>SDL_APP_WILLENTERBACKGROUND,<sp/>APP_WILL_ENTER_FOREG<sp/>=<sp/>SDL_APP_WILLENTERFOREGROUND,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>KEY_DOWN_E<sp/>=<sp/>SDL_KEYDOWN,<sp/>KEY_UP_E<sp/>=<sp/>SDL_KEYUP,<sp/>KEY_MAP_CHANGED_E<sp/>=<sp/>SDL_KEYMAPCHANGED,<sp/>KEY_TEXT_INPUT_E<sp/>=<sp/>SDL_TEXTINPUT,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>KEY_TEXT_EDITING_E<sp/>=<sp/>SDL_TEXTEDITING,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MOUSE_MOVED_E<sp/>=<sp/>SDL_MOUSEMOTION,<sp/>MOUSE_DOWN_E<sp/>=<sp/>SDL_MOUSEBUTTONDOWN,<sp/>MOUSE_UP_E<sp/>=<sp/>SDL_MOUSEBUTTONUP,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MOUSE_SCROLLED_E<sp/>=<sp/>SDL_MOUSEWHEEL,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GAMEPAD_JOYSTICK<sp/>=<sp/>SDL_CONTROLLERAXISMOTION,<sp/>GAMEPAD_BUTTON_DOWN<sp/>=<sp/>SDL_CONTROLLERBUTTONDOWN,<sp/>GAMEPAD_BUTTON_UP<sp/>=<sp/>SDL_CONTROLLERBUTTONUP,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GAMEPAD_CONNECTED_E<sp/>=<sp/>SDL_CONTROLLERDEVICEADDED,<sp/>GAMEPAD_DISCONNECTED_E<sp/>=<sp/>SDL_CONTROLLERDEVICEREMOVED,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JOYSTICK_HAT_MOTION_E<sp/>=<sp/>SDL_JOYHATMOTION,<sp/>JOYSTICK_BALL_MOTION_E<sp/>=<sp/>SDL_JOYBALLMOTION,<sp/>JOYSTICK_BUTTON_DOWN_E<sp/>=<sp/>SDL_JOYBUTTONDOWN,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JOYSTICK_BUTTON_UP_E<sp/>=<sp/>SDL_JOYBUTTONUP,<sp/>JOYSTICK_CONNECTED_E<sp/>=<sp/>SDL_JOYDEVICEADDED,<sp/>JOYSTICK_DISCONNECTED_E<sp/>=<sp/>SDL_JOYDEVICEREMOVED,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JOYSTICK_AXIS_MOTION_E<sp/>=<sp/>SDL_JOYAXISMOTION,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MOBILE_TOUCH_DOWN_E<sp/>=<sp/>SDL_FINGERDOWN,<sp/>MOBILE_TOUCH_UP_E<sp/>=<sp/>SDL_FINGERUP,<sp/>MOBILE_TOUCH_MOVED<sp/>=<sp/>SDL_FINGERMOTION,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UNKNOWN</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="namespace_r_d_e_1a7366e3aaf50893b069748c2821751d2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1a7366e3aaf50893b069748c2821751d2e" kindref="member">InputType</ref><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WINDOW,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MOUSE,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>KEYBOARD,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONTROLLER,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MOBILE</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Engine;<sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Manager;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">WindowInput;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">KeyboardInput;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MouseInput;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ControllerInput;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MobileInput;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="class_r_d_e_1_1_input" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_input" kindref="compound">Input</ref><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_input_manager" kindref="compound">InputManager</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77" refid="class_r_d_e_1_1_input_1a5bf86e083b55251e1ea4c3c814e3b3db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref>*<sp/><ref refid="class_r_d_e_1_1_input_1a5bf86e083b55251e1ea4c3c814e3b3db" kindref="member">window</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="class_r_d_e_1_1_input_1ac6c4192a1132075c8cf505dfcf79bf73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;int,<sp/><ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt;void(SDL_Event&amp;)&gt;&gt;<sp/><ref refid="class_r_d_e_1_1_input_1ac6c4192a1132075c8cf505dfcf79bf73" kindref="member">events</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="class_r_d_e_1_1_input_1a0f6948c9ed8dd70e436b9f647ef55cf3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SystemEventEnum&gt;<sp/><ref refid="class_r_d_e_1_1_input_1a0f6948c9ed8dd70e436b9f647ef55cf3" kindref="member">ignoredEvents</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_r_d_e_1_1_input_1a536e12c69a33f9e454c26368f751da79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref>*<sp/><ref refid="class_r_d_e_1_1_input_1a536e12c69a33f9e454c26368f751da79" kindref="member">engine</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100" refid="class_r_d_e_1_1_input_1a881b09a394276e2f88f45ff2662ea832" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_1a881b09a394276e2f88f45ff2662ea832" kindref="member">pollEvent</ref>(SDL_Event&amp;<sp/>_event);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="class_r_d_e_1_1_input_1a4805e279579b7cc4c1928f467e9803f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_1a4805e279579b7cc4c1928f467e9803f2" kindref="member">ignoreEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_EventType&amp;<sp/>_eventType);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="class_r_d_e_1_1_input_manager" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_input_manager" kindref="compound">InputManager</ref><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_window_input" kindref="compound">WindowInput</ref>*<sp/>windowInput;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_keyboard_input" kindref="compound">KeyboardInput</ref>*<sp/>keyboardInput;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_mouse_input" kindref="compound">MouseInput</ref>*<sp/>mouseInput;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_controller_input" kindref="compound">ControllerInput</ref>*<sp/>controllerInput;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_mobile_input" kindref="compound">MobileInput</ref>*<sp/>mobileInput;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref>*<sp/>engine;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="154" refid="class_r_d_e_1_1_input_manager_1a801b49121f48955ef095d97af7fdd5a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a801b49121f48955ef095d97af7fdd5a8" kindref="member">init</ref>(<ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref>*<sp/>_engine,<sp/><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref>*<sp/>_window);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="class_r_d_e_1_1_input_manager_1a2115cb69b4f71c626b824339b465eb26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a2115cb69b4f71c626b824339b465eb26" kindref="member">destroy</ref>();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="class_r_d_e_1_1_input_manager_1a831dc97613ff2754094efab87aad4c78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a831dc97613ff2754094efab87aad4c78" kindref="member">pollEvents</ref>();</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="174" refid="class_r_d_e_1_1_input_manager_1af87de5cc1a9e715f31b6e61f43160dbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1af87de5cc1a9e715f31b6e61f43160dbe" kindref="member">isKeyJustPressed</ref>(<ref refid="namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde" kindref="member">KeyCode</ref><sp/>_key);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="class_r_d_e_1_1_input_manager_1a18ba2bf0cfe0ed1bb755976ba5ba156f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a18ba2bf0cfe0ed1bb755976ba5ba156f" kindref="member">isKeyJustReleased</ref>(<ref refid="namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde" kindref="member">KeyCode</ref><sp/>_key);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="class_r_d_e_1_1_input_manager_1a5f36ac467a41d4897ed020e31c99274e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a5f36ac467a41d4897ed020e31c99274e" kindref="member">isKeyPressed</ref>(<ref refid="namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde" kindref="member">KeyCode</ref><sp/>_key);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="class_r_d_e_1_1_input_manager_1afba59b338702ae9884258e92c9d5507b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1afba59b338702ae9884258e92c9d5507b" kindref="member">isKeyReleased</ref>(<ref refid="namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde" kindref="member">KeyCode</ref><sp/>_key);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="class_r_d_e_1_1_input_manager_1a8617526af870d2b427a0b2f817d1c004" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a8617526af870d2b427a0b2f817d1c004" kindref="member">isMouseJustPressed</ref>(<ref refid="namespace_r_d_e_1a6079d97bd2b05de1813ab71932242c87" kindref="member">MouseCode</ref><sp/>_button);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="class_r_d_e_1_1_input_manager_1a34c1930540c60508b7f8d8db2b64cc40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a34c1930540c60508b7f8d8db2b64cc40" kindref="member">isMouseJustReleased</ref>(<ref refid="namespace_r_d_e_1a6079d97bd2b05de1813ab71932242c87" kindref="member">MouseCode</ref><sp/>_button);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="class_r_d_e_1_1_input_manager_1a293cad5478ca5cae8bdbef25925ee1f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a293cad5478ca5cae8bdbef25925ee1f1" kindref="member">isMousePressed</ref>(<ref refid="namespace_r_d_e_1a6079d97bd2b05de1813ab71932242c87" kindref="member">MouseCode</ref><sp/>_button);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="class_r_d_e_1_1_input_manager_1acb889c95a989d9077cd1ccc7c00e6369" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1acb889c95a989d9077cd1ccc7c00e6369" kindref="member">isMouseReleased</ref>(<ref refid="namespace_r_d_e_1a6079d97bd2b05de1813ab71932242c87" kindref="member">MouseCode</ref><sp/>_button);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="class_r_d_e_1_1_input_manager_1aaa0491636c9c36f91f9d4608daf06b82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/><ref refid="class_r_d_e_1_1_input_manager_1aaa0491636c9c36f91f9d4608daf06b82" kindref="member">getMousePosScreenCoords</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_centeredMiddleScreen<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="class_r_d_e_1_1_input_manager_1a967bc8b7dc0c81a73b7ee0025dcf7167" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/><ref refid="class_r_d_e_1_1_input_manager_1a967bc8b7dc0c81a73b7ee0025dcf7167" kindref="member">getMousePosWorldPos</ref>();</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="class_r_d_e_1_1_input_manager_1a14115c36583f3b0049cbfb598287d6af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/><ref refid="class_r_d_e_1_1_input_manager_1a14115c36583f3b0049cbfb598287d6af" kindref="member">getMousePosCanvas</ref>();</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="class_r_d_e_1_1_input_manager_1a50bba8199d23559a5d8a0fccac8072ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a50bba8199d23559a5d8a0fccac8072ca" kindref="member">reassignController</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_as);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="class_r_d_e_1_1_input_manager_1afcae7ae2faeb7286463318ace4c36afa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1afcae7ae2faeb7286463318ace4c36afa" kindref="member">isGamepadButtonJustPressed</ref>(<ref refid="namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11" kindref="member">ControllerButtons</ref><sp/>_button,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="class_r_d_e_1_1_input_manager_1a7db337c4d9a1844e957f648058aefed6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a7db337c4d9a1844e957f648058aefed6" kindref="member">isGamepadButtonJustReleased</ref>(<ref refid="namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11" kindref="member">ControllerButtons</ref><sp/>_button,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="class_r_d_e_1_1_input_manager_1aa4c9dbdecd87178a8c1c48937b5dc64e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1aa4c9dbdecd87178a8c1c48937b5dc64e" kindref="member">isGamepadButtonPressed</ref>(<ref refid="namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11" kindref="member">ControllerButtons</ref><sp/>_button,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="class_r_d_e_1_1_input_manager_1a7a4c758460d107421340e3b92879bece" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a7a4c758460d107421340e3b92879bece" kindref="member">isGamepadButtonReleased</ref>(<ref refid="namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11" kindref="member">ControllerButtons</ref><sp/>_button,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="class_r_d_e_1_1_input_manager_1a64eb9f9c65e2952b36765eb20d2e448c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a64eb9f9c65e2952b36765eb20d2e448c" kindref="member">gamepadVibrate</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID<sp/>=<sp/>0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>_vibrationEffectName<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300" refid="class_r_d_e_1_1_input_manager_1afbe17078026be04576ede4e99ed85492" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1afbe17078026be04576ede4e99ed85492" kindref="member">isGamepadAxisJustPressed</ref>(ControllerAxis<sp/>_axis,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308" refid="class_r_d_e_1_1_input_manager_1ae5205477c272d262a3f46cfabd0e6985" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1ae5205477c272d262a3f46cfabd0e6985" kindref="member">isGamepadAxisPressed</ref>(ControllerAxis<sp/>_axis,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="class_r_d_e_1_1_input_manager_1a0903888e9c9bb7ac94afb71773a2fbbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a0903888e9c9bb7ac94afb71773a2fbbc" kindref="member">isGamepadAxisReleased</ref>(ControllerAxis<sp/>_axis,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_controllerID<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324" refid="class_r_d_e_1_1_input_manager_1af79d4da8ba0c14b9fd1e7720f5581cbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1af79d4da8ba0c14b9fd1e7720f5581cbc" kindref="member">isMobileScreenJustPressed</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_fingerID);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331" refid="class_r_d_e_1_1_input_manager_1a3a13bdd1ba6b67c011b6df020da328d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a3a13bdd1ba6b67c011b6df020da328d5" kindref="member">isMobileScreenJustReleased</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_fingerID);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338" refid="class_r_d_e_1_1_input_manager_1a3f0862a0d386ffab7538b6f9be74c824" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a3f0862a0d386ffab7538b6f9be74c824" kindref="member">isMobileScreenPressed</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_fingerID);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345" refid="class_r_d_e_1_1_input_manager_1a9af54f92b148548e116351cf6bb8b26e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a9af54f92b148548e116351cf6bb8b26e" kindref="member">isMobileScreenRelease</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_fingerID);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352" refid="class_r_d_e_1_1_input_manager_1a9843994fc09ce4c3e06a06638bd0d413" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SystemEventEnum&gt;<sp/><ref refid="class_r_d_e_1_1_input_manager_1a9843994fc09ce4c3e06a06638bd0d413" kindref="member">getEventsIgnored</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1a7366e3aaf50893b069748c2821751d2e" kindref="member">InputType</ref>&amp;<sp/>_inputType);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359" refid="class_r_d_e_1_1_input_manager_1aa248f40a4580eb333f9a9768535b638c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1aa248f40a4580eb333f9a9768535b638c" kindref="member">addEventToIgnore</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1a7366e3aaf50893b069748c2821751d2e" kindref="member">InputType</ref>&amp;<sp/>_inputType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1aba599888c87f5bf9b6052d710bc6923f" kindref="member">SystemEventEnum</ref>&amp;<sp/>_event);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366" refid="class_r_d_e_1_1_input_manager_1a576f44a427ec39346ebc348350cd78d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_input_manager_1a576f44a427ec39346ebc348350cd78d4" kindref="member">removeEventToIgnore</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1a7366e3aaf50893b069748c2821751d2e" kindref="member">InputType</ref>&amp;<sp/>_inputType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1aba599888c87f5bf9b6052d710bc6923f" kindref="member">SystemEventEnum</ref>&amp;<sp/>_event);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="368"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//RDE_INPUT_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="engine/include/core/systems/inputSystem/input/Input.h"/>
+  </compounddef>
+</doxygen>

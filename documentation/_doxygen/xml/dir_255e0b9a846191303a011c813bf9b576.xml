@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_255e0b9a846191303a011c813bf9b576" kind="dir">
+    <compoundname>engine/include/core/graph/components/ui</compoundname>
+    <innerfile refid="_u_i_8h">UI.h</innerfile>
+    <innerfile refid="_u_i_button_8h">UIButton.h</innerfile>
+    <innerfile refid="_u_i_checkbox_8h">UICheckbox.h</innerfile>
+    <innerfile refid="_u_i_image_8h">UIImage.h</innerfile>
+    <innerfile refid="_u_i_input_8h">UIInput.h</innerfile>
+    <innerfile refid="_u_i_mask_8h">UIMask.h</innerfile>
+    <innerfile refid="_u_i_panel_8h">UIPanel.h</innerfile>
+    <innerfile refid="_u_i_slider_8h">UISlider.h</innerfile>
+    <innerfile refid="_u_i_text_8h">UIText.h</innerfile>
+    <innerfile refid="_u_i_transform_8h">UITransform.h</innerfile>
+    <innerfile refid="_u_i_updater_functions_8h">UIUpdaterFunctions.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/graph/components/ui/"/>
+  </compounddef>
+</doxygen>

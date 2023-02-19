@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Function RDE::Util::Graphics::getScreenPixels &mdash; RDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Function RDE::Util::Graphics::pixelsToCPUTexture" href="function__functions_8h_1ae74d1e64675f33f2961bc463d0b7fa11.html" />
+    <link rel="prev" title="Function RDE::Util::Graphics::getAreaOfScreenPixels" href="function__functions_8h_1a46fb2cb34f76af4ac64621c1de9288e8.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            RDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#functions">Functions</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="function__engine_8h_1a3c04138a5bfe5d72780bb7e82a18e627.html">Function main(int, char **)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__r_d_e_entry_8h_1a2201d4f3fe424b79dbb580041d738741.html">Function main(int, char **)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a23cdc628354fa01dd38d9c356229b5a5.html">Function RDE::calculateGeometryForSpriteRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a695191e11afa9c81cdfd9384ee51c907.html">Function RDE::calculateGeometryForTextRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a94d9b83a19a943ced5b9b33fdbc706dd.html">Function RDE::calculateGeometryForUIImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a6d8146f6c3b0e8cd774d17300eb2c212.html">Function RDE::calculateGeometryForUIText</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a335ccd7ecc7c58c031c78c522b27b7a6.html">Function RDE::createEngine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a3509a91ee91868dca99cd4794957277b.html">Function RDE::drawBatchedSpriteRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a57f355ca797c64f15019ba997dd80773.html">Function RDE::drawBatchedTextRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a57aa5ea3c40e971ea4d37d123af87562.html">Function RDE::drawBatchedUIImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1acda874193a4b374d7c7ed24148f710a8.html">Function RDE::drawBatchedUIText</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1ad5502d2a48019d5e8449e0bd979a25e4.html">Function RDE::onUpdateUIInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a8d5a5b3dd53cb2180dd19a22fd8a0104.html">Function RDE::onUpdateUISlider</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a5c516a1612b0bbbaa39d9378fa731cac.html">Function RDE::operator!=(const Vec2F&amp;, const Vec2F&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1ac8daab738d4b2724400208c53db04c26.html">Function RDE::operator!=(const Vec2F&amp;, int)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a77ea93cff51f21f9d5bc8308fa098de7.html">Function RDE::operator!=(const Vec2F&amp;, float)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1ad4ab7144c6bb76492024a590348d0a93.html">Function RDE::operator!=(const Vec2I&amp;, int)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1af99eac18286748cdc94363993d9420b1.html">Function RDE::operator!=(const Vec2I&amp;, float)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a66c3a8ea59b41b2b3334dc036431c6d2.html">Function RDE::operator*(float, const Vec2&lt;float&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a6d67bcb68203a614cc7d4e860e7ca2ed.html">Function RDE::operator*(float, const Vec2&lt;int&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a45265503f69e4f5bbc27a7ff61d8a265.html">Function RDE::operator*(float, const Vec2&lt;double&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a0416271fc2df42eb145611e78ee381d5.html">Function RDE::operator*(float, const Vec2&lt;long&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a87e6a05eca29c9fc3b1eeae3624b2434.html">Function RDE::operator&lt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a4a458b0767d484f1dc627fa462b577e0.html">Function RDE::operator&lt;&lt;(std::ostream&amp;, KeyCode)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a155493e0e54a348ce7a6b421a2d686e1.html">Function RDE::operator&lt;&lt;(std::ostream&amp;, MouseCode)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1ab0576f8ff643747e51e9ca581bf246f6.html">Function RDE::operator&lt;&lt;(std::ostream&amp;, const State&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a978ae4f5471a04641450fe9afce564be.html">Function RDE::operator&lt;&lt;(std::ostream&amp;, const Color&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1acd992a010bfd85cbff026db61c4364dd.html">Function RDE::operator&lt;&lt;(std::ostream&amp;, const IntRect&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1ab444e0a99624fbbb1427011b0eaaa274.html">Function RDE::operator&lt;&lt;(std::ostream&amp;, const Vec2I&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1adf69b052eb5d115516a31168d6a2ef77.html">Function RDE::operator&lt;&lt;(std::ostream&amp;, const Vec2F&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a58bd58ec857052bd9494d5e9e7f7fbd4.html">Function RDE::operator&lt;=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a1524316e7649d280239b1ddff17ee994.html">Function RDE::operator==(const Color&amp;, const Color&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a3c0bc9f8be28f32267ef3db8df33dfa1.html">Function RDE::operator==(const Vec2F&amp;, int)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a10c46639647b4d3e51a721c6237c3372.html">Function RDE::operator==(const Vec2F&amp;, float)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1ae920828b40496032c0af8aea6f7e0031.html">Function RDE::operator==(const Vec2I&amp;, int)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1ad2892b6650e14b9042c012fa56990c39.html">Function RDE::operator==(const Vec2I&amp;, float)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a918439f7c16faca09dbffcbe8938bb68.html">Function RDE::operator&gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_namespace_r_d_e_1a1718f9e66cb049118af7b87db988f2bc.html">Function RDE::operator&gt;=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__perlin_noise_8h_1af0d71a08eb32726283e31d0ace13dfde.html">Template Function RDE::perlin_detail::Clamp_11</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__perlin_noise_8h_1af23f8650ce4b91d7a412f803fd27941f.html">Template Function RDE::perlin_detail::Fade</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__perlin_noise_8h_1a531f63dd4c088c68ea6ef424c621e0da.html">Template Function RDE::perlin_detail::Grad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__perlin_noise_8h_1ab919efa060bc9c902653e97746263b31.html">Template Function RDE::perlin_detail::Lerp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__perlin_noise_8h_1a91ce478f343b685f315e4ed8980c8042.html">Template Function RDE::perlin_detail::MaxAmplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__perlin_noise_8h_1a5c84ab7f97a8e00ed13006e31c6f28e7.html">Template Function RDE::perlin_detail::Octave1D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__perlin_noise_8h_1a883987ca1b7e9935a15a284a9fc5893a.html">Template Function RDE::perlin_detail::Octave2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__perlin_noise_8h_1a00a28743cffa1f81687ef31466b8c9d8.html">Template Function RDE::perlin_detail::Octave3D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__perlin_noise_8h_1a361a7641c18466695912b1323c711410.html">Template Function RDE::perlin_detail::Random</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__perlin_noise_8h_1a7c2447b8f20754e42d5480fc61b05613.html">Template Function RDE::perlin_detail::Remap_01</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__perlin_noise_8h_1ad41fa2b994cc83b7b5b42e575660ab0b.html">Template Function RDE::perlin_detail::RemapClamp_01</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__perlin_noise_8h_1a0d46538ee99c3b51146839fe329d4674.html">Template Function RDE::perlin_detail::Shuffle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a36e0b1bfb28aaac45bf23ac65f274fd0.html">Function RDE::Util::Easing::inCircular</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a7fa62ed249b247fcc1ea7ea935db2718.html">Function RDE::Util::Easing::inCubic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a4d361a2a6bff9ad6aa3ba79ecdf2bf1a.html">Function RDE::Util::Easing::inExponential</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a3c2bc62e173cff916fe72abe06504540.html">Function RDE::Util::Easing::inLinear</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a3eb240ea0cf21008da647dfcfbc18016.html">Function RDE::Util::Easing::inOutCircular</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1aa47adc5eb60e7d806d965a984ca83ea7.html">Function RDE::Util::Easing::inOutCubic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a69566b594c471e87d25d9b46be59f460.html">Function RDE::Util::Easing::inOutExponential</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a95229e2610c32727967fcf0a1b3f2e3a.html">Function RDE::Util::Easing::inOutQuadratic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a44512da0dbf80642a2c0d1cefa9e9408.html">Function RDE::Util::Easing::inOutQuartic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a74549639c32ada0c0878575bdafefcde.html">Function RDE::Util::Easing::inOutQuintic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1ac133cce11dcc1c10ef1616206b3cb826.html">Function RDE::Util::Easing::inOutSine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a191195a8534a593882dfaf3a74044763.html">Function RDE::Util::Easing::inQuadratic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a790995c3ed7c7e1c4dd543453f7c9fb0.html">Function RDE::Util::Easing::inQuartic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1acf00882688631c2b74b49905b24a0fcf.html">Function RDE::Util::Easing::inQuintic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1adb21c9feff77d501268292ab3ad6cc0e.html">Function RDE::Util::Easing::inSine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1af6e20cbfcc8fe0fcc9a5a55657f55ad9.html">Function RDE::Util::Easing::outCircular</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1ad1cc35b7de358069de0e68ce1a036be2.html">Function RDE::Util::Easing::outCubic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a6e3e89d7ecef58f79edd79269e92056f.html">Function RDE::Util::Easing::outExponential</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a9d08640b19c504efc963bcd6a7d47888.html">Function RDE::Util::Easing::outQuadratic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a52ef8a8c5e8e8b35bd407775a4415f46.html">Function RDE::Util::Easing::outQuartic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a09bbb0e5cbb7eef505129853d12e797b.html">Function RDE::Util::Easing::outQuintic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1ac57de300940fa1c0d042d055eba9539c.html">Function RDE::Util::Easing::outSine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1af7484090de5bee92b8e0b428e3c2fc89.html">Function RDE::Util::GL::checkError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a46fb2cb34f76af4ac64621c1de9288e8.html">Function RDE::Util::Graphics::getAreaOfScreenPixels</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Function RDE::Util::Graphics::getScreenPixels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1ae74d1e64675f33f2961bc463d0b7fa11.html">Function RDE::Util::Graphics::pixelsToCPUTexture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1ab7e8971a8b45590549e2515f7031be5d.html">Function RDE::Util::Graphics::takeScreenshot(Window&amp;, const std::string&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1abf482a5b07f351a48442fc16986fb360.html">Function RDE::Util::Graphics::takeScreenshot(Window&amp;, const Vec2I&amp;, const Vec2I&amp;, const std::string&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a8919befb0f78dc26a5bd7961bf87af89.html">Template Function RDE::Util::Log::__printer(const char *, const char *, Arg1&amp;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a171c5c412d3c2df053366473d708dc37.html">Template Function RDE::Util::Log::__printer(const char *, const char *, Arg1&amp;&amp;, Args&amp;&amp;…)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a3047aa78ee7f963dcceb6d2f98bc42f6.html">Function RDE::Util::Log::__printTime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1abc401013bdb9e49eb34c8ebb6d517994.html">Template Function RDE::Util::Log::debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a5ed94f4557d4c7bc42248733c4349c9a.html">Template Function RDE::Util::Log::error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1aff4ea860d934e0168f9c01e0eb915af9.html">Template Function RDE::Util::Log::info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1afd78bfb0b3d5c1b96c31449d92fff91c.html">Template Function RDE::Util::Log::printerd(const char *, const char *, Arg1&amp;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a46039cf560e0953ecc20e36538d4568b.html">Template Function RDE::Util::Log::printerd(const char *, const char *, Arg1&amp;&amp;, Args&amp;&amp;…)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a97c79860cc934caee2733da859d7f0e7.html">Function RDE::Util::Log::printTimed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1afb53acfe775154c0231ef8ea3d433b6d.html">Template Function RDE::Util::Log::success</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1aa428d90b2ffca47952a8856f21b282b0.html">Template Function RDE::Util::Log::warn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1af83db2d45589f9199c1d792815726d36.html">Function RDE::Util::Math::approximatelyEqual(float, float)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a1a0ded09b74a0b5e79464dc144b1bf06.html">Function RDE::Util::Math::approximatelyEqual(float, float, float)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a77fd35244af315eca806eaff457a6eeb.html">Function RDE::Util::Math::approximatelyEqual(const Vec2F&amp;, const Vec2F&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1aa7b180b52a833ede3c8d623e292f7fab.html">Function RDE::Util::Math::approximatelyEqual(const Vec2F&amp;, const Vec2F&amp;, float)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a5ebbaf6e0a9a97e7797131e7e0a53cb4.html">Template Function RDE::Util::Math::clamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a8eefa63586a635298f4a8f036cf140f5.html">Function RDE::Util::Math::clampD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a55bd73071e2e4535961433e51dab289e.html">Function RDE::Util::Math::clampF</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1ac4d25c6913b44c272bda7c166544eee8.html">Function RDE::Util::Math::clampI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1aee9b4457b734c06f259b641cb10ff4ed.html">Function RDE::Util::Math::clampL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1aa51f87b557a2867f8121faed432af2be.html">Function RDE::Util::Math::colorToUint32_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1ac1525eeec526c8928e0ea263270a1fb0.html">Function RDE::Util::Math::degreesToRadians</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1ae42a602213fc22b9c0ab673690e66c16.html">Function RDE::Util::Math::radiansToDegrees</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1aaed01fb503ff327b9af33542e0ea8bcd.html">Function RDE::Util::Math::screenToWorldCoords(const ViewPort *, const Vec2F&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1acd79eb9930c120f73b01384658180385.html">Function RDE::Util::Math::screenToWorldCoords(const ViewPort *, float&amp;, float&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1ab74aea8a7e8fa986eb3c35221196345e.html">Function RDE::Util::Math::worldToScreenCoords</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a05158c36e029ca9ffd6c321a358f6110.html">Function RDE::Util::Math::worldToScreenCoordsUI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a18b79473676b83086abc42c6f4942cff.html">Function RDE::Util::Math::worldToScreenSize(const ViewPort *, const Vec2F&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a0970cbe8be756cada5c8521c94306d4a.html">Function RDE::Util::Math::worldToScreenSize(const ViewPort *, float&amp;, float&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1ad3f9b84db581c4623539466f515787d3.html">Function RDE::Util::Math::worldToScreenSizeUI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a671ae17cbc069c7a9e1983ce958258de.html">Template Function RDE::Util::String::__append(std::stringstream&amp;, Arg1&amp;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a98bce40d295aa275927b9936df0ea4fc.html">Template Function RDE::Util::String::__append(std::stringstream&amp;, Arg1&amp;&amp;, Args&amp;&amp;…)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a54f19d85128e85beaf6c12d4e52cb550.html">Template Function RDE::Util::String::appendToString</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a6a0e5f8c8ebf15094301fd0c47acad04.html">Function RDE::Util::String::getFileExtension</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1ae27306020c47753da9392b8ab91af655.html">Function RDE::Util::String::getFileNameFromPath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a19bc361c51f0f6fd176adc474f41b672.html">Function RDE::Util::String::getPathFromFilePath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1ab3dc16f5d25ee39bcd8bca09896104c2.html">Function RDE::Util::String::replaceAll</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a6ad87e348395317259b9863a8da8c80f.html">Function RDE::Util::String::split</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a9671322e5a63437d5d95daae5395ec7e.html">Function RDE::Util::String::splitGetIndex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a8f8893852a01b624a708fef1b0288692.html">Function RDE::Util::String::toLower</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1ab2ac17ddc47736d957e5f74ae996b63c.html">Function RDE::Util::String::toUpper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1a845f117393c352abe7f353dabe834e28.html">Function RDE::Util::Texture::getSDLSurface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__functions_8h_1aef32aa2fb6751a40db1691ef025cda58.html">Function RDE::Util::Texture::invertSDLSurface</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="library_root.html">Library API</a></li>
+      <li class="breadcrumb-item active">Function RDE::Util::Graphics::getScreenPixels</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/function__functions_8h_1af7ff20136966df510c40b74da68a1b0a.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="function-rde-util-graphics-getscreenpixels">
+<span id="exhale-function-functions-8h-1af7ff20136966df510c40b74da68a1b0a"></span><h1>Function RDE::Util::Graphics::getScreenPixels<a class="headerlink" href="#function-rde-util-graphics-getscreenpixels" title="Permalink to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_engine_include_core_util_Functions.h.html#file-engine-include-core-util-functions-h"><span class="std std-ref">File Functions.h</span></a></p></li>
+</ul>
+<section id="function-documentation">
+<h2>Function Documentation<a class="headerlink" href="#function-documentation" title="Permalink to this heading"></a></h2>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE4Util8Graphics15getScreenPixelsER6Window">
+<span id="_CPPv3N3RDE4Util8Graphics15getScreenPixelsER6Window"></span><span id="_CPPv2N3RDE4Util8Graphics15getScreenPixelsER6Window"></span><span id="RDE::Util::Graphics::getScreenPixels__WindowR"></span><span class="target" id="_functions_8h_1af7ff20136966df510c40b74da68a1b0a"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-prename descclassname"><span class="n"><span class="pre">RDE</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Util</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Graphics</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">getScreenPixels</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_window.html#_CPPv4N3RDE6WindowE" title="RDE::Window"><span class="n"><span class="pre">Window</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_window</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE4Util8Graphics15getScreenPixelsER6Window" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the pixels of the current drawn screen. &#64;warn The pointer returned must be freed after use! </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_window</strong> – Windows of the application </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>unsigned char* </p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="function__functions_8h_1a46fb2cb34f76af4ac64621c1de9288e8.html" class="btn btn-neutral float-left" title="Function RDE::Util::Graphics::getAreaOfScreenPixels" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="function__functions_8h_1ae74d1e64675f33f2961bc463d0b7fa11.html" class="btn btn-neutral float-right" title="Function RDE::Util::Graphics::pixelsToCPUTexture" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

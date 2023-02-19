@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_color" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::Color</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1a17653324227c64607a3946b3b8c51f94" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char RDE::Color::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <qualifiedname>RDE::Color::r</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="17" column="23" bodyfile="engine/include/core/util/Color.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1a3834bb0d11fa8fc32acaf8705c631500" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char RDE::Color::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <qualifiedname>RDE::Color::g</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="17" column="25" bodyfile="engine/include/core/util/Color.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1ac551a17512f27f5f00c3daef68629506" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char RDE::Color::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>RDE::Color::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="17" column="27" bodyfile="engine/include/core/util/Color.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1aebe7bccebaec6465a1da2ecf4a01a6fd" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char RDE::Color::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>RDE::Color::a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="17" column="29" bodyfile="engine/include/core/util/Color.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1aa59ef1b7b83e316671155e8a32817169" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::White</definition>
+        <argsstring></argsstring>
+        <name>White</name>
+        <qualifiedname>RDE::Color::White</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="22" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1a67166aaf37d93877aae831f590138f06" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::Black</definition>
+        <argsstring></argsstring>
+        <name>Black</name>
+        <qualifiedname>RDE::Color::Black</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="23" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1ad20449b637e4c99a10bc43ea373cdffa" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::Blue</definition>
+        <argsstring></argsstring>
+        <name>Blue</name>
+        <qualifiedname>RDE::Color::Blue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="24" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1a4c446e75a56e1fd84985feed83758c08" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::Red</definition>
+        <argsstring></argsstring>
+        <name>Red</name>
+        <qualifiedname>RDE::Color::Red</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="25" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1a8ea38b2bf5496cfca97d9022cec74894" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::Yellow</definition>
+        <argsstring></argsstring>
+        <name>Yellow</name>
+        <qualifiedname>RDE::Color::Yellow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="26" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1af681e182370dd257c32b76b68002a7cf" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::Magenta</definition>
+        <argsstring></argsstring>
+        <name>Magenta</name>
+        <qualifiedname>RDE::Color::Magenta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="27" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1a49c5b8655f71d7e7569fa6c8c6ab9e07" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::Orange</definition>
+        <argsstring></argsstring>
+        <name>Orange</name>
+        <qualifiedname>RDE::Color::Orange</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="28" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1a911cecfbf2302d2bb397aa060b29ee8a" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::Green</definition>
+        <argsstring></argsstring>
+        <name>Green</name>
+        <qualifiedname>RDE::Color::Green</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="29" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1aa840405d11a5b7c4524f58dc39a2fccf" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::Brown</definition>
+        <argsstring></argsstring>
+        <name>Brown</name>
+        <qualifiedname>RDE::Color::Brown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="30" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1ae3dee33d973001e5bebed79edf1f88c6" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::Purple</definition>
+        <argsstring></argsstring>
+        <name>Purple</name>
+        <qualifiedname>RDE::Color::Purple</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="31" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1aa2cfa2fe6413c66bef63eeb08c32fa6f" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::Gray</definition>
+        <argsstring></argsstring>
+        <name>Gray</name>
+        <qualifiedname>RDE::Color::Gray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="32" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1a4d10874fbc8982956711c16e58ab6c36" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::Transparent</definition>
+        <argsstring></argsstring>
+        <name>Transparent</name>
+        <qualifiedname>RDE::Color::Transparent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="33" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1a7d45ff2132c1ae84a96e43cf8721a3fa" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::Disabled</definition>
+        <argsstring></argsstring>
+        <name>Disabled</name>
+        <qualifiedname>RDE::Color::Disabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="34" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1a49fe27da8bc428edd87af0f2bafa30ab" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::Placeholder</definition>
+        <argsstring></argsstring>
+        <name>Placeholder</name>
+        <qualifiedname>RDE::Color::Placeholder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="35" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_color_1a64c122b36c953e09c2164863d9ad15bb" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>const Color RDE::Color::NO_COLOR</definition>
+        <argsstring></argsstring>
+        <name>NO_COLOR</name>
+        <qualifiedname>RDE::Color::NO_COLOR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="36" column="28" bodyfile="engine/include/core/util/Color.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_r_d_e_1_1_color_1a9b9b318121761f9ad2ea035107254af7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::Color::Color</definition>
+        <argsstring>()</argsstring>
+        <name>Color</name>
+        <qualifiedname>RDE::Color::Color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="19" column="9" bodyfile="engine/include/core/util/Color.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_color_1ae148103343cabbba991a70c699df3f8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::Color::Color</definition>
+        <argsstring>(unsigned char _r, unsigned char _g, unsigned char _b, unsigned char _a=255)</argsstring>
+        <name>Color</name>
+        <qualifiedname>RDE::Color::Color</qualifiedname>
+        <param>
+          <type>unsigned char</type>
+          <declname>_r</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>_g</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>_b</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>_a</declname>
+          <defval>255</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Color.h" line="20" column="9" bodyfile="engine/include/core/util/Color.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>RDE::Color</label>
+        <link refid="struct_r_d_e_1_1_color"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>Black</edgelabel>
+          <edgelabel>Blue</edgelabel>
+          <edgelabel>Brown</edgelabel>
+          <edgelabel>Disabled</edgelabel>
+          <edgelabel>Gray</edgelabel>
+          <edgelabel>Green</edgelabel>
+          <edgelabel>Magenta</edgelabel>
+          <edgelabel>NO_COLOR</edgelabel>
+          <edgelabel>Orange</edgelabel>
+          <edgelabel>Placeholder</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/util/Color.h" line="16" column="5" bodyfile="engine/include/core/util/Color.h" bodystart="16" bodyend="37"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_color_1aebe7bccebaec6465a1da2ecf4a01a6fd" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>a</name></member>
+      <member refid="struct_r_d_e_1_1_color_1ac551a17512f27f5f00c3daef68629506" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>b</name></member>
+      <member refid="struct_r_d_e_1_1_color_1a67166aaf37d93877aae831f590138f06" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Black</name></member>
+      <member refid="struct_r_d_e_1_1_color_1ad20449b637e4c99a10bc43ea373cdffa" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Blue</name></member>
+      <member refid="struct_r_d_e_1_1_color_1aa840405d11a5b7c4524f58dc39a2fccf" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Brown</name></member>
+      <member refid="struct_r_d_e_1_1_color_1a9b9b318121761f9ad2ea035107254af7" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Color</name></member>
+      <member refid="struct_r_d_e_1_1_color_1ae148103343cabbba991a70c699df3f8d" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Color</name></member>
+      <member refid="struct_r_d_e_1_1_color_1a7d45ff2132c1ae84a96e43cf8721a3fa" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Disabled</name></member>
+      <member refid="struct_r_d_e_1_1_color_1a3834bb0d11fa8fc32acaf8705c631500" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>g</name></member>
+      <member refid="struct_r_d_e_1_1_color_1aa2cfa2fe6413c66bef63eeb08c32fa6f" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Gray</name></member>
+      <member refid="struct_r_d_e_1_1_color_1a911cecfbf2302d2bb397aa060b29ee8a" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Green</name></member>
+      <member refid="struct_r_d_e_1_1_color_1af681e182370dd257c32b76b68002a7cf" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Magenta</name></member>
+      <member refid="struct_r_d_e_1_1_color_1a64c122b36c953e09c2164863d9ad15bb" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>NO_COLOR</name></member>
+      <member refid="struct_r_d_e_1_1_color_1a49c5b8655f71d7e7569fa6c8c6ab9e07" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Orange</name></member>
+      <member refid="struct_r_d_e_1_1_color_1a49fe27da8bc428edd87af0f2bafa30ab" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Placeholder</name></member>
+      <member refid="struct_r_d_e_1_1_color_1ae3dee33d973001e5bebed79edf1f88c6" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Purple</name></member>
+      <member refid="struct_r_d_e_1_1_color_1a17653324227c64607a3946b3b8c51f94" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>r</name></member>
+      <member refid="struct_r_d_e_1_1_color_1a4c446e75a56e1fd84985feed83758c08" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Red</name></member>
+      <member refid="struct_r_d_e_1_1_color_1a4d10874fbc8982956711c16e58ab6c36" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Transparent</name></member>
+      <member refid="struct_r_d_e_1_1_color_1aa59ef1b7b83e316671155e8a32817169" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>White</name></member>
+      <member refid="struct_r_d_e_1_1_color_1a8ea38b2bf5496cfca97d9022cec74894" prot="public" virt="non-virtual"><scope>RDE::Color</scope><name>Yellow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

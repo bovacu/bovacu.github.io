@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_key_event_8h" kind="file" language="C++">
+    <compoundname>KeyEvent.h</compoundname>
+    <includes refid="_event_8h" local="yes">Event.h</includes>
+    <includes refid="_keyboard_keys_8h" local="yes">core/systems/inputSystem/keysAndButtons/KeyboardKeys.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>core/Core.h</label>
+        <link refid="_core_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>core/platform/PlatformHeaderSDL.h</label>
+        <link refid="_platform_header_s_d_l_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Event.h</label>
+        <link refid="_event_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/systems/eventSystem/KeyEvent.h</label>
+        <link refid="_key_event_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>core/systems/inputSystem/keysAndButtons/KeyboardKeys.h</label>
+        <link refid="_keyboard_keys_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>core/util/Delegate.h</label>
+        <link refid="_delegate_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>SDL.h</label>
+      </node>
+      <node id="12">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>exception</label>
+      </node>
+      <node id="5">
+        <label>functional</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="13">
+        <label>ostream</label>
+      </node>
+      <node id="10">
+        <label>sstream</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_r_d_e_1_1_key_event" prot="public">RDE::KeyEvent</innerclass>
+    <innerclass refid="class_r_d_e_1_1_key_pressed_event" prot="public">RDE::KeyPressedEvent</innerclass>
+    <innerclass refid="class_r_d_e_1_1_key_typed_event" prot="public">RDE::KeyTypedEvent</innerclass>
+    <innerclass refid="class_r_d_e_1_1_key_released_event" prot="public">RDE::KeyReleasedEvent</innerclass>
+    <innerclass refid="class_r_d_e_1_1_text_typed_event" prot="public">RDE::TextTypedEvent</innerclass>
+    <innernamespace refid="namespace_r_d_e">RDE</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_key_event_8h_1a6d18e323f0516f23ec96a2de282e6393" prot="public" static="no">
+        <name>RDE_KEY_EVENT_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/KeyEvent.h" line="4" column="9" bodyfile="engine/include/core/systems/eventSystem/KeyEvent.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RDE_KEY_EVENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDE_KEY_EVENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Event.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/systems/inputSystem/keysAndButtons/KeyboardKeys.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_d_e" kindref="compound">RDE</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_r_d_e_1_1_key_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_key_event" kindref="compound">KeyEvent</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde" kindref="member">KeyCode</ref><sp/>keyCode;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_key_event" kindref="compound">KeyEvent</ref>(<ref refid="namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde" kindref="member">KeyCode</ref><sp/>_keyCode)<sp/>:<sp/>keyCode(_keyCode)<sp/>{}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23" refid="class_r_d_e_1_1_key_event_1ade11851cd15223b44137a279ee8b1912" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde" kindref="member">KeyCode</ref><sp/><ref refid="class_r_d_e_1_1_key_event_1ade11851cd15223b44137a279ee8b1912" kindref="member">getKeyCode</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>keyCode;<sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_r_d_e_1_1_key_event_1a0b94c88fae0d3a28a7e10a016a178eaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_key_event_1a0b94c88fae0d3a28a7e10a016a178eaf" kindref="member">getCategoryFlags</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca3b5209376a15c504ff190a432b361a42" kindref="member">EventCategory::EventCategoryKeyboard</ref><sp/>|<sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca33d5a1e945f153a324a8a9bff626fb9f" kindref="member">EventCategory::EventCategoryInput</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_r_d_e_1_1_key_pressed_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_key_pressed_event" kindref="compound">KeyPressedEvent</ref><sp/><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_key_event" kindref="compound">KeyEvent</ref><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>repeatedTimes;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_key_pressed_event" kindref="compound">KeyPressedEvent</ref>(<ref refid="namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde" kindref="member">KeyCode</ref><sp/>_keyCode,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_repeatedTimes)<sp/>:<sp/><ref refid="class_r_d_e_1_1_key_event" kindref="compound">KeyEvent</ref>(_keyCode),<sp/>repeatedTimes(_repeatedTimes)<sp/>{}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_r_d_e_1_1_key_pressed_event_1a81ba80ec596b48e891651ebe3d8c552b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_key_pressed_event_1a81ba80ec596b48e891651ebe3d8c552b" kindref="member">getRepeatedTimes</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>repeatedTimes;<sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_r_d_e_1_1_key_pressed_event_1aa656648ac7ea3ce68e0493b626847bc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::string<sp/><ref refid="class_r_d_e_1_1_key_pressed_event_1aa656648ac7ea3ce68e0493b626847bc0" kindref="member">toString</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>_sst;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_sst<sp/>&lt;&lt;<sp/><ref refid="class_r_d_e_1_1_key_pressed_event_1afd2037c8e878ab0b59d08f0b60daaee2" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>Key<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(char)keyCode<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>keyCode<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>(down<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>repeatedTimes<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>times)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sst.str();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="class_r_d_e_1_1_key_pressed_event_1a79284fa5558cc44404d46e3ceed68616" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/><ref refid="class_r_d_e_1_1_key_pressed_event_1a79284fa5558cc44404d46e3ceed68616" kindref="member">getStaticType</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EventType::KeyPressed;<sp/>}</highlight></codeline>
+<codeline lineno="53" refid="class_r_d_e_1_1_key_pressed_event_1abbf71b55d16e391fa89e290d773a1d4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/><ref refid="class_r_d_e_1_1_key_pressed_event_1abbf71b55d16e391fa89e290d773a1d4b" kindref="member">getEventType</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_key_pressed_event_1a79284fa5558cc44404d46e3ceed68616" kindref="member">getStaticType</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="54" refid="class_r_d_e_1_1_key_pressed_event_1afd2037c8e878ab0b59d08f0b60daaee2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_r_d_e_1_1_key_pressed_event_1afd2037c8e878ab0b59d08f0b60daaee2" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;KeyPressed&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="class_r_d_e_1_1_key_typed_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_key_typed_event" kindref="compound">KeyTypedEvent</ref><sp/><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_key_event" kindref="compound">KeyEvent</ref><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>typedChar;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_key_typed_event" kindref="compound">KeyTypedEvent</ref>(<ref refid="namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde" kindref="member">KeyCode</ref><sp/>_keyCode)<sp/>:<sp/><ref refid="class_r_d_e_1_1_key_event" kindref="compound">KeyEvent</ref>(_keyCode),<sp/>typedChar((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">)keyCode)<sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="class_r_d_e_1_1_key_typed_event_1ae63bcf280aeef066a4847e1f0f7e22b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_key_typed_event_1ae63bcf280aeef066a4847e1f0f7e22b6" kindref="member">getCharTyped</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">)typedChar;<sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_r_d_e_1_1_key_typed_event_1a235c2654c87eb820ffece67a48b9e4f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::string<sp/><ref refid="class_r_d_e_1_1_key_typed_event_1a235c2654c87eb820ffece67a48b9e4f2" kindref="member">toString</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>_sst;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_sst<sp/>&lt;&lt;<sp/><ref refid="class_r_d_e_1_1_key_typed_event_1ad05113ebe41c6fe11fb1d95ddffa5507" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>Key<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(char)keyCode;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sst.str();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_r_d_e_1_1_key_typed_event_1ad6cc3864041f659326c4c774b16e98e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/><ref refid="class_r_d_e_1_1_key_typed_event_1ad6cc3864041f659326c4c774b16e98e9" kindref="member">getStaticType</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EventType::KeyTyped;<sp/>}</highlight></codeline>
+<codeline lineno="80" refid="class_r_d_e_1_1_key_typed_event_1a72ed09614d6c4a0a4cfe4f98a7c51fb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/><ref refid="class_r_d_e_1_1_key_typed_event_1a72ed09614d6c4a0a4cfe4f98a7c51fb8" kindref="member">getEventType</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_key_typed_event_1ad6cc3864041f659326c4c774b16e98e9" kindref="member">getStaticType</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="81" refid="class_r_d_e_1_1_key_typed_event_1ad05113ebe41c6fe11fb1d95ddffa5507" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_r_d_e_1_1_key_typed_event_1ad05113ebe41c6fe11fb1d95ddffa5507" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;KeyTyped&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="class_r_d_e_1_1_key_released_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_key_released_event" kindref="compound">KeyReleasedEvent</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_key_event" kindref="compound">KeyEvent</ref><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_key_released_event" kindref="compound">KeyReleasedEvent</ref>(<ref refid="namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde" kindref="member">KeyCode</ref><sp/>_keyCode)<sp/>:<sp/><ref refid="class_r_d_e_1_1_key_event" kindref="compound">KeyEvent</ref>(_keyCode)<sp/>{}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_r_d_e_1_1_key_released_event_1a3bba6cb7d03c2413b0f7d4938bddec86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::string<sp/><ref refid="class_r_d_e_1_1_key_released_event_1a3bba6cb7d03c2413b0f7d4938bddec86" kindref="member">toString</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>_sst;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_sst<sp/>&lt;&lt;<sp/><ref refid="class_r_d_e_1_1_key_released_event_1aa03fa16e20920bb0e0036471d6b7976e" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>Key<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(char)keyCode<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>keyCode<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sst.str();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="class_r_d_e_1_1_key_released_event_1a1f636002b90533aa019457847b9e4ee1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/><ref refid="class_r_d_e_1_1_key_released_event_1a1f636002b90533aa019457847b9e4ee1" kindref="member">getStaticType</ref>()<sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EventType::KeyReleased;<sp/>}</highlight></codeline>
+<codeline lineno="100" refid="class_r_d_e_1_1_key_released_event_1ac02fde366e96a2aff793fc76ea43783d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/><ref refid="class_r_d_e_1_1_key_released_event_1ac02fde366e96a2aff793fc76ea43783d" kindref="member">getEventType</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_key_released_event_1a1f636002b90533aa019457847b9e4ee1" kindref="member">getStaticType</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="101" refid="class_r_d_e_1_1_key_released_event_1aa03fa16e20920bb0e0036471d6b7976e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_r_d_e_1_1_key_released_event_1aa03fa16e20920bb0e0036471d6b7976e" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;KeyReleased&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="class_r_d_e_1_1_text_typed_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_text_typed_event" kindref="compound">TextTypedEvent</ref><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_key_event" kindref="compound">KeyEvent</ref><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_text_typed_event" kindref="compound">TextTypedEvent</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>_text)<sp/>:<sp/><ref refid="class_r_d_e_1_1_key_event" kindref="compound">KeyEvent</ref>(KeyCode::D0)<sp/>{<sp/>text<sp/>=<sp/>std::string(_text);<sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>text;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="class_r_d_e_1_1_text_typed_event_1a06ae1f0680295401d69e35f991bc395c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::string<sp/><ref refid="class_r_d_e_1_1_text_typed_event_1a06ae1f0680295401d69e35f991bc395c" kindref="member">toString</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>_sst;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_sst<sp/>&lt;&lt;<sp/><ref refid="class_r_d_e_1_1_text_typed_event_1a411d034b22aee666ae634d6ca31f6903" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>Text<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>text;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sst.str();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="class_r_d_e_1_1_text_typed_event_1a76c40c9082b39ad1cc4b2e330551134d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/><ref refid="class_r_d_e_1_1_text_typed_event_1a76c40c9082b39ad1cc4b2e330551134d" kindref="member">getStaticType</ref>()<sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EventType::TextTyped;<sp/>}</highlight></codeline>
+<codeline lineno="120" refid="class_r_d_e_1_1_text_typed_event_1ad3e8988140cf0292880530717edbc9f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/><ref refid="class_r_d_e_1_1_text_typed_event_1ad3e8988140cf0292880530717edbc9f7" kindref="member">getEventType</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_text_typed_event_1a76c40c9082b39ad1cc4b2e330551134d" kindref="member">getStaticType</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="121" refid="class_r_d_e_1_1_text_typed_event_1a411d034b22aee666ae634d6ca31f6903" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_r_d_e_1_1_text_typed_event_1a411d034b22aee666ae634d6ca31f6903" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;TextTyped&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//RDE_KEY_EVENT_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="engine/include/core/systems/eventSystem/KeyEvent.h"/>
+  </compounddef>
+</doxygen>

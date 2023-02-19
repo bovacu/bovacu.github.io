@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_rendering_tree_data" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::RenderingTreeData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_rendering_tree_data_1a9426893e65f3d0a6581cc3f52e152a63" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::tuple&lt; <ref refid="struct_r_d_e_1_1_renderizable_inner_data" kindref="compound">RenderizableInnerData</ref> *, <ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> *, void * &gt; &gt;</type>
+        <definition>std::vector&lt;std::tuple&lt;RenderizableInnerData*, Transform*, void*&gt; &gt; RDE::RenderingTreeData::sprites</definition>
+        <argsstring></argsstring>
+        <name>sprites</name>
+        <qualifiedname>RDE::RenderingTreeData::sprites</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/Graph.h" line="50" column="21" bodyfile="engine/include/core/graph/Graph.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_rendering_tree_data_1ac9776fd7010d943fcf2fa127059925c0" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::tuple&lt; <ref refid="struct_r_d_e_1_1_renderizable_inner_data" kindref="compound">RenderizableInnerData</ref> *, <ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> *, void * &gt; &gt;</type>
+        <definition>std::vector&lt;std::tuple&lt;RenderizableInnerData*, Transform*, void*&gt; &gt; RDE::RenderingTreeData::dynamicSprites</definition>
+        <argsstring></argsstring>
+        <name>dynamicSprites</name>
+        <qualifiedname>RDE::RenderingTreeData::dynamicSprites</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/Graph.h" line="51" column="21" bodyfile="engine/include/core/graph/Graph.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_rendering_tree_data_1ac48b4e769075eac418a30351745c85c4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::tuple&lt; <ref refid="struct_r_d_e_1_1_renderizable_inner_data" kindref="compound">RenderizableInnerData</ref> *, <ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> *, void * &gt; &gt;</type>
+        <definition>std::vector&lt;std::tuple&lt;RenderizableInnerData*, Transform*, void*&gt; &gt; RDE::RenderingTreeData::particleSystmes</definition>
+        <argsstring></argsstring>
+        <name>particleSystmes</name>
+        <qualifiedname>RDE::RenderingTreeData::particleSystmes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/Graph.h" line="52" column="21" bodyfile="engine/include/core/graph/Graph.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_rendering_tree_data_1a661712a43cd67f49a321c6748d1ad149" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::tuple&lt; <ref refid="struct_r_d_e_1_1_renderizable_inner_data" kindref="compound">RenderizableInnerData</ref> *, <ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> *, void * &gt; &gt;</type>
+        <definition>std::vector&lt;std::tuple&lt;RenderizableInnerData*, Transform*, void*&gt; &gt; RDE::RenderingTreeData::texts</definition>
+        <argsstring></argsstring>
+        <name>texts</name>
+        <qualifiedname>RDE::RenderingTreeData::texts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/Graph.h" line="53" column="21" bodyfile="engine/include/core/graph/Graph.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_rendering_tree_data_1ae54241c194b10d619592a95c7fd1b162" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::tuple&lt; <ref refid="struct_r_d_e_1_1_renderizable_inner_data" kindref="compound">RenderizableInnerData</ref> *, <ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> *, void * &gt; &gt;</type>
+        <definition>std::vector&lt;std::tuple&lt;RenderizableInnerData*, Transform*, void*&gt; &gt; RDE::RenderingTreeData::uiImages</definition>
+        <argsstring></argsstring>
+        <name>uiImages</name>
+        <qualifiedname>RDE::RenderingTreeData::uiImages</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/Graph.h" line="55" column="21" bodyfile="engine/include/core/graph/Graph.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_rendering_tree_data_1a1da602d299e9b16a554a16e34d911163" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::tuple&lt; <ref refid="struct_r_d_e_1_1_renderizable_inner_data" kindref="compound">RenderizableInnerData</ref> *, <ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> *, void * &gt; &gt;</type>
+        <definition>std::vector&lt;std::tuple&lt;RenderizableInnerData*, Transform*, void*&gt; &gt; RDE::RenderingTreeData::uiTexts</definition>
+        <argsstring></argsstring>
+        <name>uiTexts</name>
+        <qualifiedname>RDE::RenderingTreeData::uiTexts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/Graph.h" line="56" column="21" bodyfile="engine/include/core/graph/Graph.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_rendering_tree_data_1a3361476d18741e019ab4d03014505a9d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> * &gt;</type>
+        <definition>std::vector&lt;Transform*&gt; RDE::RenderingTreeData::dirtyTransforms</definition>
+        <argsstring></argsstring>
+        <name>dirtyTransforms</name>
+        <qualifiedname>RDE::RenderingTreeData::dirtyTransforms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/Graph.h" line="58" column="21" bodyfile="engine/include/core/graph/Graph.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_rendering_tree_data_1a0c0a52fa4cdb72664f1db17dd2d65280" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::RenderingTreeData::isRenderizableTreeDirty</definition>
+        <argsstring></argsstring>
+        <name>isRenderizableTreeDirty</name>
+        <qualifiedname>RDE::RenderingTreeData::isRenderizableTreeDirty</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/Graph.h" line="59" column="14" bodyfile="engine/include/core/graph/Graph.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_rendering_tree_data_1ae28af6328d1013224d081a3f3dd56582" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::RenderingTreeData::isUI</definition>
+        <argsstring></argsstring>
+        <name>isUI</name>
+        <qualifiedname>RDE::RenderingTreeData::isUI</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/Graph.h" line="60" column="14" bodyfile="engine/include/core/graph/Graph.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/graph/Graph.h" line="49" column="5" bodyfile="engine/include/core/graph/Graph.h" bodystart="49" bodyend="61"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_rendering_tree_data_1a3361476d18741e019ab4d03014505a9d" prot="public" virt="non-virtual"><scope>RDE::RenderingTreeData</scope><name>dirtyTransforms</name></member>
+      <member refid="struct_r_d_e_1_1_rendering_tree_data_1ac9776fd7010d943fcf2fa127059925c0" prot="public" virt="non-virtual"><scope>RDE::RenderingTreeData</scope><name>dynamicSprites</name></member>
+      <member refid="struct_r_d_e_1_1_rendering_tree_data_1a0c0a52fa4cdb72664f1db17dd2d65280" prot="public" virt="non-virtual"><scope>RDE::RenderingTreeData</scope><name>isRenderizableTreeDirty</name></member>
+      <member refid="struct_r_d_e_1_1_rendering_tree_data_1ae28af6328d1013224d081a3f3dd56582" prot="public" virt="non-virtual"><scope>RDE::RenderingTreeData</scope><name>isUI</name></member>
+      <member refid="struct_r_d_e_1_1_rendering_tree_data_1ac48b4e769075eac418a30351745c85c4" prot="public" virt="non-virtual"><scope>RDE::RenderingTreeData</scope><name>particleSystmes</name></member>
+      <member refid="struct_r_d_e_1_1_rendering_tree_data_1a9426893e65f3d0a6581cc3f52e152a63" prot="public" virt="non-virtual"><scope>RDE::RenderingTreeData</scope><name>sprites</name></member>
+      <member refid="struct_r_d_e_1_1_rendering_tree_data_1a661712a43cd67f49a321c6748d1ad149" prot="public" virt="non-virtual"><scope>RDE::RenderingTreeData</scope><name>texts</name></member>
+      <member refid="struct_r_d_e_1_1_rendering_tree_data_1ae54241c194b10d619592a95c7fd1b162" prot="public" virt="non-virtual"><scope>RDE::RenderingTreeData</scope><name>uiImages</name></member>
+      <member refid="struct_r_d_e_1_1_rendering_tree_data_1a1da602d299e9b16a554a16e34d911163" prot="public" virt="non-virtual"><scope>RDE::RenderingTreeData</scope><name>uiTexts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

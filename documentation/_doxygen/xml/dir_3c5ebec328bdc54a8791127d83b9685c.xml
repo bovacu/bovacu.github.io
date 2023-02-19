@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_3c5ebec328bdc54a8791127d83b9685c" kind="dir">
+    <compoundname>engine/include/core/systems</compoundname>
+    <innerdir refid="dir_142f4245efdeb9dbaa9ff83415eddd2c">engine/include/core/systems/animationSystem</innerdir>
+    <innerdir refid="dir_95aaa773f8a3e7b1bf93408f2c570ff5">engine/include/core/systems/configSystem</innerdir>
+    <innerdir refid="dir_a1af1ac75003bd7c132ffdd29851bb6b">engine/include/core/systems/console</innerdir>
+    <innerdir refid="dir_ce12bcea4824054bb4e2562fc933ddf8">engine/include/core/systems/ecsSystem</innerdir>
+    <innerdir refid="dir_51a55f445279fd08a517b494ea4b09ae">engine/include/core/systems/eventSystem</innerdir>
+    <innerdir refid="dir_eca85454ab945d2862fcc94bab1728fc">engine/include/core/systems/fileSystem</innerdir>
+    <innerdir refid="dir_ed537a2374bf527c1b340ecec07de2d4">engine/include/core/systems/inputSystem</innerdir>
+    <innerdir refid="dir_e4fef15ed70fbe555a7b3090b7ae866a">engine/include/core/systems/localization</innerdir>
+    <innerdir refid="dir_5b8282e885fc6d62ce869db5672d0c3c">engine/include/core/systems/physicsSystem</innerdir>
+    <innerdir refid="dir_da284e06e928434a9509a268f74345e9">engine/include/core/systems/profiling</innerdir>
+    <innerdir refid="dir_9e6db0e6a925922bb8eb809bc51f2cca">engine/include/core/systems/soundSystem</innerdir>
+    <innerdir refid="dir_7f650a75d06000f14a16349db7a71fc9">engine/include/core/systems/uiSystem</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/"/>
+  </compounddef>
+</doxygen>

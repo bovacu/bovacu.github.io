@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_u_i_image" kind="class" language="C++" prot="public">
+    <compoundname>RDE::UIImage</compoundname>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_r_d_e_1_1_u_i_image_1a7c21a6a79edfaa706593a5cdce1fc423" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class UIPanel</definition>
+        <argsstring></argsstring>
+        <name>UIPanel</name>
+        <qualifiedname>RDE::UIImage::UIPanel</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_u_i_panel" kindref="compound">UIPanel</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="32" column="22" bodyfile="engine/include/core/graph/components/ui/UIImage.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_u_i_image_1a66cc3374f0713c668bc5be24739a062c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class UIButton</definition>
+        <argsstring></argsstring>
+        <name>UIButton</name>
+        <qualifiedname>RDE::UIImage::UIButton</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_u_i_button" kindref="compound">UIButton</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="33" column="22" bodyfile="engine/include/core/graph/components/ui/UIImage.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_u_i_image_1a81389057cb77df846a91f948b46251cb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class UIInput</definition>
+        <argsstring></argsstring>
+        <name>UIInput</name>
+        <qualifiedname>RDE::UIImage::UIInput</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_u_i_input" kindref="compound">UIInput</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="34" column="22" bodyfile="engine/include/core/graph/components/ui/UIImage.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_u_i_image_1aae4eb1dc547f58a2f14226511f9e50b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class UICheckbox</definition>
+        <argsstring></argsstring>
+        <name>UICheckbox</name>
+        <qualifiedname>RDE::UIImage::UICheckbox</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_u_i_checkbox" kindref="compound">UICheckbox</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="35" column="22" bodyfile="engine/include/core/graph/components/ui/UIImage.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_u_i_image_1a2ccf58e0c1bdbe0639aa1bb3431c2999" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class UISlider</definition>
+        <argsstring></argsstring>
+        <name>UISlider</name>
+        <qualifiedname>RDE::UIImage::UISlider</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_u_i_slider" kindref="compound">UISlider</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="36" column="22" bodyfile="engine/include/core/graph/components/ui/UIImage.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_image_1a654d5fce941eea3b44d905340373d30a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RENDERIZABLE_UI_BASIC_PROPERTIES() public</type>
+        <definition>RENDERIZABLE_UI_BASIC_PROPERTIES() public RDE::UIImage::UIImage</definition>
+        <argsstring>(Node *_node, Manager *_manager, Graph *_graph, const UIImageConfig &amp;_config={})</argsstring>
+        <name>UIImage</name>
+        <qualifiedname>RDE::UIImage::UIImage</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>_node</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> *</type>
+          <declname>_manager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_graph" kindref="compound">Graph</ref> *</type>
+          <declname>_graph</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_u_i_image_config" kindref="compound">UIImageConfig</ref> &amp;</type>
+          <declname>_config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="42" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_image_1a4942c4df34e3ca0d7cfa9cf72f1533a9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::UIImage::~UIImage</definition>
+        <argsstring>()</argsstring>
+        <name>~UIImage</name>
+        <qualifiedname>RDE::UIImage::~UIImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="43" column="13" bodyfile="engine/include/core/graph/components/ui/UIImage.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_image_1ad03bb737d27d46dc9eae077fdb2dd04d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RENDERIZABLE_UI_BASIC_METHODS() std std::string</type>
+        <definition>RENDERIZABLE_UI_BASIC_METHODS() std std::string RDE::UIImage::getTextureName</definition>
+        <argsstring>()</argsstring>
+        <name>getTextureName</name>
+        <qualifiedname>RDE::UIImage::getTextureName</qualifiedname>
+        <briefdescription>
+<para>Gets the path where the SpriteSheet is stored. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string</para>
+</simplesect>
+Gets the name of the file od the SpriteSheet without the extension. <simplesect kind="return"><para>std::string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="57" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_image_1a8b65d39a79704c6a174cde9edc30e2e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::UIImage::getTextureExtension</definition>
+        <argsstring>()</argsstring>
+        <name>getTextureExtension</name>
+        <qualifiedname>RDE::UIImage::getTextureExtension</qualifiedname>
+        <briefdescription>
+<para>Gets the extension of the file of the SpriteSheet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="63" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_image_1ac691bb640e0d71d907cf637d6d662fd1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::UIImage::setImageRenderingType</definition>
+        <argsstring>(ImageRenderingType _imageRenderingType)</argsstring>
+        <name>setImageRenderingType</name>
+        <qualifiedname>RDE::UIImage::setImageRenderingType</qualifiedname>
+        <param>
+          <type>ImageRenderingType</type>
+          <declname>_imageRenderingType</declname>
+        </param>
+        <briefdescription>
+<para>Sets the rendering type of the <ref refid="class_r_d_e_1_1_u_i_image" kindref="compound">UIImage</ref>. Can be any element of &apos;ImageRenderingType&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Normal: Will display the image as usual.</para>
+</listitem><listitem><para>Vertical: The image will be displayed normally if percentage is 1f, the lower the percentage, the less vertically will be shown (from top to bottom).</para>
+</listitem><listitem><para>Horizontal: The image will be displayed normally if percentage is 1f, the lower the percentage, the less horizontally will be shown (from left to right).</para>
+</listitem><listitem><para>Radial: The image will be displayed normally if percentage is 1f, the lower the percentage, the less in a 360 angle will be shown (from lower-middle in a counter-clock counter-wise).</para>
+</listitem></itemizedlist>
+</para>
+<para>If Nine-Slice is selected and the texture doesn&apos;t have a Nine-Slice, the effect won&apos;t have effect and a warning log will be shown. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_imageRenderingType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ImageRenderingType </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="79" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_image_1a590ccf1caa3b63c6ae67709d330211de" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ImageRenderingType</type>
+        <definition>ImageRenderingType RDE::UIImage::getImageRenderingType</definition>
+        <argsstring>() const</argsstring>
+        <name>getImageRenderingType</name>
+        <qualifiedname>RDE::UIImage::getImageRenderingType</qualifiedname>
+        <briefdescription>
+<para>Returns the type of rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ImageRenderingType </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="85" column="20" bodyfile="engine/include/core/graph/components/ui/UIImage.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_image_1a2c44824fe087206f3412a9c16ef1e037" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RDE::UIImage::isPartialRenderingInverted</definition>
+        <argsstring>() const</argsstring>
+        <name>isPartialRenderingInverted</name>
+        <qualifiedname>RDE::UIImage::isPartialRenderingInverted</qualifiedname>
+        <briefdescription>
+<para>Returns if the rendering is inverted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="91" column="6" bodyfile="engine/include/core/graph/components/ui/UIImage.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_image_1a7e97bb4c3b3c2741e73411d50edde30e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::UIImage::setPartialRenderingInverted</definition>
+        <argsstring>(bool _inverted)</argsstring>
+        <name>setPartialRenderingInverted</name>
+        <qualifiedname>RDE::UIImage::setPartialRenderingInverted</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>_inverted</declname>
+        </param>
+        <briefdescription>
+<para>This will invert the regular patter image rendering. Only applied if the rendering type is PartialVertical, PartialHorizontal or PartialRadial. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_inverted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True/False </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="98" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_image_1a663828e459f0248ed76ae7a52b9a77b4" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::UIImage::getPartialRenderingPercentage</definition>
+        <argsstring>() const</argsstring>
+        <name>getPartialRenderingPercentage</name>
+        <qualifiedname>RDE::UIImage::getPartialRenderingPercentage</qualifiedname>
+        <briefdescription>
+<para>Returns the amount filled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="104" column="8" bodyfile="engine/include/core/graph/components/ui/UIImage.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_u_i_image_1af11cb8915adaa2ef872c389e023fea06" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::UIImage::setPartialRenderingPercentage</definition>
+        <argsstring>(float _percentage)</argsstring>
+        <name>setPartialRenderingPercentage</name>
+        <qualifiedname>RDE::UIImage::setPartialRenderingPercentage</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_percentage</declname>
+        </param>
+        <briefdescription>
+<para>Sets how much the partial image will be drawn. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_percentage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Percentage [0f, 1f] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UIImage.h" line="110" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/graph/components/ui/UIImage.h" line="31" column="5" bodyfile="engine/include/core/graph/components/ui/UIImage.h" bodystart="31" bodyend="111"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_u_i_image_1a590ccf1caa3b63c6ae67709d330211de" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>getImageRenderingType</name></member>
+      <member refid="class_r_d_e_1_1_u_i_image_1a663828e459f0248ed76ae7a52b9a77b4" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>getPartialRenderingPercentage</name></member>
+      <member refid="class_r_d_e_1_1_u_i_image_1a8b65d39a79704c6a174cde9edc30e2e4" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>getTextureExtension</name></member>
+      <member refid="class_r_d_e_1_1_u_i_image_1ad03bb737d27d46dc9eae077fdb2dd04d" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>getTextureName</name></member>
+      <member refid="class_r_d_e_1_1_u_i_image_1a2c44824fe087206f3412a9c16ef1e037" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>isPartialRenderingInverted</name></member>
+      <member refid="class_r_d_e_1_1_u_i_image_1ac691bb640e0d71d907cf637d6d662fd1" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>setImageRenderingType</name></member>
+      <member refid="class_r_d_e_1_1_u_i_image_1a7e97bb4c3b3c2741e73411d50edde30e" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>setPartialRenderingInverted</name></member>
+      <member refid="class_r_d_e_1_1_u_i_image_1af11cb8915adaa2ef872c389e023fea06" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>setPartialRenderingPercentage</name></member>
+      <member refid="class_r_d_e_1_1_u_i_image_1a66cc3374f0713c668bc5be24739a062c" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>UIButton</name></member>
+      <member refid="class_r_d_e_1_1_u_i_image_1aae4eb1dc547f58a2f14226511f9e50b5" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>UICheckbox</name></member>
+      <member refid="class_r_d_e_1_1_u_i_image_1a654d5fce941eea3b44d905340373d30a" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>UIImage</name></member>
+      <member refid="class_r_d_e_1_1_u_i_image_1a81389057cb77df846a91f948b46251cb" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>UIInput</name></member>
+      <member refid="class_r_d_e_1_1_u_i_image_1a7c21a6a79edfaa706593a5cdce1fc423" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>UIPanel</name></member>
+      <member refid="class_r_d_e_1_1_u_i_image_1a2ccf58e0c1bdbe0639aa1bb3431c2999" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>UISlider</name></member>
+      <member refid="class_r_d_e_1_1_u_i_image_1a4942c4df34e3ca0d7cfa9cf72f1533a9" prot="private" virt="non-virtual"><scope>RDE::UIImage</scope><name>~UIImage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

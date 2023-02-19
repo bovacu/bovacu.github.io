@@ -1,0 +1,14 @@
+.. _exhale_define__graph_8h_1a256a3be77cbbfaf29192264d4706992e:
+
+Define NODE_ID_NULL
+===================
+
+- Defined in :ref:`file_engine_include_core_graph_Graph.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: NODE_ID_NULL
+   :project: My Project

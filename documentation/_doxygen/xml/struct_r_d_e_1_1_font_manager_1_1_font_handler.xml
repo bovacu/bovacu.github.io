@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_font_manager_1_1_font_handler" kind="struct" language="C++" prot="private">
+    <compoundname>RDE::FontManager::FontHandler</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_font_manager_1_1_font_handler_1ae5bcc20ff317ae629a803de3e6e08443" prot="public" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> *</type>
+        <definition>Font* RDE::FontManager::FontHandler::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <qualifiedname>RDE::FontManager::FontHandler::font</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="106" column="18" bodyfile="engine/include/core/systems/uiSystem/FontManager.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_font_manager_1_1_font_handler_1a0dfee03e741b230cab04a47a68b76beb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::FontManager::FontHandler::fontSize</definition>
+        <argsstring></argsstring>
+        <name>fontSize</name>
+        <qualifiedname>RDE::FontManager::FontHandler::fontSize</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/FontManager.h" line="107" column="17" bodyfile="engine/include/core/systems/uiSystem/FontManager.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data struct containing a <ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref> and it&apos;s size. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>RDE::Font</label>
+        <link refid="class_r_d_e_1_1_font"/>
+      </node>
+      <node id="1">
+        <label>RDE::FontManager::FontHandler</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>font</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/uiSystem/FontManager.h" line="105" column="9" bodyfile="engine/include/core/systems/uiSystem/FontManager.h" bodystart="105" bodyend="108"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_font_manager_1_1_font_handler_1ae5bcc20ff317ae629a803de3e6e08443" prot="public" virt="non-virtual"><scope>RDE::FontManager::FontHandler</scope><name>font</name></member>
+      <member refid="struct_r_d_e_1_1_font_manager_1_1_font_handler_1a0dfee03e741b230cab04a47a68b76beb" prot="public" virt="non-virtual"><scope>RDE::FontManager::FontHandler</scope><name>fontSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

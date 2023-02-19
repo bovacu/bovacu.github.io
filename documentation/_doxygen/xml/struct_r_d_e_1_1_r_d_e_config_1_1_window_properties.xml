@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::RDEConfig::WindowProperties</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a30afc362ec8dd69e9c72a763cd859cd0" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string RDE::RDEConfig::WindowProperties::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <qualifiedname>RDE::RDEConfig::WindowProperties::title</qualifiedname>
+        <initializer>= &quot;Default&quot;</initializer>
+        <briefdescription>
+<para>Title of the window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="42" column="25" bodyfile="engine/include/core/Engine.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a05b2813e4b840016192501c68d719362" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref></type>
+        <definition>Vec2I RDE::RDEConfig::WindowProperties::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>RDE::RDEConfig::WindowProperties::size</qualifiedname>
+        <initializer>{ 1280, 720 }</initializer>
+        <briefdescription>
+<para>Size of the window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="47" column="19" bodyfile="engine/include/core/Engine.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a04a5c86e11fed280af0c123087cbed26" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref></type>
+        <definition>Vec2I RDE::RDEConfig::WindowProperties::resolution</definition>
+        <argsstring></argsstring>
+        <name>resolution</name>
+        <qualifiedname>RDE::RDEConfig::WindowProperties::resolution</qualifiedname>
+        <initializer>{ 1280, 720 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="49" column="19" bodyfile="engine/include/core/Engine.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a00fdcdc40f195b0301d4ce88b070069c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::RDEConfig::WindowProperties::fullScreen</definition>
+        <argsstring></argsstring>
+        <name>fullScreen</name>
+        <qualifiedname>RDE::RDEConfig::WindowProperties::fullScreen</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Fullscreen active or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="54" column="18" bodyfile="engine/include/core/Engine.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a33def3e5d1634561119cb59954295af6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::RDEConfig::WindowProperties::vsync</definition>
+        <argsstring></argsstring>
+        <name>vsync</name>
+        <qualifiedname>RDE::RDEConfig::WindowProperties::vsync</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>VSync active or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="59" column="18" bodyfile="engine/include/core/Engine.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1aaffe9253a244078359618fd412e75513" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::RDEConfig::WindowProperties::allowRunningOnBackground</definition>
+        <argsstring></argsstring>
+        <name>allowRunningOnBackground</name>
+        <qualifiedname>RDE::RDEConfig::WindowProperties::allowRunningOnBackground</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Allows the game to run even if it is not focused. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="64" column="18" bodyfile="engine/include/core/Engine.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a7f3d7399db730acaf8f9e8284a037543" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::RDEConfig::WindowProperties::verticalDpi</definition>
+        <argsstring></argsstring>
+        <name>verticalDpi</name>
+        <qualifiedname>RDE::RDEConfig::WindowProperties::verticalDpi</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="66" column="19" bodyfile="engine/include/core/Engine.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1ac1bd73447c40e9f8d3e8908dcb2aafa8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::RDEConfig::WindowProperties::horizontalDpi</definition>
+        <argsstring></argsstring>
+        <name>horizontalDpi</name>
+        <qualifiedname>RDE::RDEConfig::WindowProperties::horizontalDpi</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="66" column="32" bodyfile="engine/include/core/Engine.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1acb6971b822d0a8946321925fa4e09ab5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::RDEConfig::WindowProperties::diagonalDpi</definition>
+        <argsstring></argsstring>
+        <name>diagonalDpi</name>
+        <qualifiedname>RDE::RDEConfig::WindowProperties::diagonalDpi</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="66" column="47" bodyfile="engine/include/core/Engine.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>RDE::RDEConfig::WindowProperties</label>
+        <link refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>resolution</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::Vec2&lt; int &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/Engine.h" line="38" column="9" bodyfile="engine/include/core/Engine.h" bodystart="38" bodyend="67"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1aaffe9253a244078359618fd412e75513" prot="public" virt="non-virtual"><scope>RDE::RDEConfig::WindowProperties</scope><name>allowRunningOnBackground</name></member>
+      <member refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1acb6971b822d0a8946321925fa4e09ab5" prot="public" virt="non-virtual"><scope>RDE::RDEConfig::WindowProperties</scope><name>diagonalDpi</name></member>
+      <member refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a00fdcdc40f195b0301d4ce88b070069c" prot="public" virt="non-virtual"><scope>RDE::RDEConfig::WindowProperties</scope><name>fullScreen</name></member>
+      <member refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1ac1bd73447c40e9f8d3e8908dcb2aafa8" prot="public" virt="non-virtual"><scope>RDE::RDEConfig::WindowProperties</scope><name>horizontalDpi</name></member>
+      <member refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a04a5c86e11fed280af0c123087cbed26" prot="public" virt="non-virtual"><scope>RDE::RDEConfig::WindowProperties</scope><name>resolution</name></member>
+      <member refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a05b2813e4b840016192501c68d719362" prot="public" virt="non-virtual"><scope>RDE::RDEConfig::WindowProperties</scope><name>size</name></member>
+      <member refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a30afc362ec8dd69e9c72a763cd859cd0" prot="public" virt="non-virtual"><scope>RDE::RDEConfig::WindowProperties</scope><name>title</name></member>
+      <member refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a7f3d7399db730acaf8f9e8284a037543" prot="public" virt="non-virtual"><scope>RDE::RDEConfig::WindowProperties</scope><name>verticalDpi</name></member>
+      <member refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a33def3e5d1634561119cb59954295af6" prot="public" virt="non-virtual"><scope>RDE::RDEConfig::WindowProperties</scope><name>vsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

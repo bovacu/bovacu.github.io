@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_event_8h" kind="file" language="C++">
+    <compoundname>Event.h</compoundname>
+    <includes refid="_delegate_8h" local="yes">core/util/Delegate.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">sstream</includes>
+    <includedby refid="_graph_8h" local="yes">engine/include/core/graph/Graph.h</includedby>
+    <includedby refid="_window_8h" local="yes">engine/include/core/render/window/Window.h</includedby>
+    <includedby refid="_controller_event_8h" local="yes">engine/include/core/systems/eventSystem/ControllerEvent.h</includedby>
+    <includedby refid="_key_event_8h" local="yes">engine/include/core/systems/eventSystem/KeyEvent.h</includedby>
+    <includedby refid="_mobile_event_8h" local="yes">engine/include/core/systems/eventSystem/MobileEvent.h</includedby>
+    <includedby refid="_mouse_event_8h" local="yes">engine/include/core/systems/eventSystem/MouseEvent.h</includedby>
+    <includedby refid="_window_event_8h" local="yes">engine/include/core/systems/eventSystem/WindowEvent.h</includedby>
+    <includedby refid="_scene_manager_8h" local="yes">engine/include/core/systems/uiSystem/SceneManager.h</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>core/Core.h</label>
+        <link refid="_core_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/systems/eventSystem/Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>core/util/Delegate.h</label>
+        <link refid="_delegate_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>exception</label>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="9">
+        <label>sstream</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>engine/include/RDE.h</label>
+        <link refid="_r_d_e_8h_source"/>
+      </node>
+      <node id="7">
+        <label>engine/include/RDEEntry.h</label>
+        <link refid="_r_d_e_entry_8h_source"/>
+      </node>
+      <node id="5">
+        <label>engine/include/core/Engine.h</label>
+        <link refid="_engine_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>engine/include/core/Manager.h</label>
+        <link refid="_manager_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>engine/include/core/graph/Graph.h</label>
+        <link refid="_graph_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>engine/include/core/graph/ImGuiScene.h</label>
+        <link refid="_im_gui_scene_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>engine/include/core/graph/Scene.h</label>
+        <link refid="_scene_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>engine/include/core/graph/components/Node.h</label>
+        <link refid="_node_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>engine/include/core/graph/components/ParticleSystem.h</label>
+        <link refid="_particle_system_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>engine/include/core/graph/components/ui/UIMask.h</label>
+        <link refid="_u_i_mask_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>engine/include/core/platform/Platform.h</label>
+        <link refid="_platform_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>engine/include/core/render/Camera.h</label>
+        <link refid="_camera_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>engine/include/core/render/RenderManager.h</label>
+        <link refid="_render_manager_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>engine/include/core/render/elements/SpriteBatch.h</label>
+        <link refid="_sprite_batch_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>engine/include/core/render/window/Window.h</label>
+        <link refid="_window_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>engine/include/core/systems/configSystem/ConfigManager.h</label>
+        <link refid="_config_manager_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>engine/include/core/systems/ecsSystem/ECSManager.h</label>
+        <link refid="_e_c_s_manager_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>engine/include/core/systems/ecsSystem/ECSSystem.h</label>
+        <link refid="_e_c_s_system_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>engine/include/core/systems/eventSystem/ControllerEvent.h</label>
+        <link refid="_controller_event_8h_source"/>
+      </node>
+      <node id="1">
+        <label>engine/include/core/systems/eventSystem/Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>engine/include/core/systems/eventSystem/KeyEvent.h</label>
+        <link refid="_key_event_8h_source"/>
+      </node>
+      <node id="28">
+        <label>engine/include/core/systems/eventSystem/MobileEvent.h</label>
+        <link refid="_mobile_event_8h_source"/>
+      </node>
+      <node id="29">
+        <label>engine/include/core/systems/eventSystem/MouseEvent.h</label>
+        <link refid="_mouse_event_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>engine/include/core/systems/eventSystem/WindowEvent.h</label>
+        <link refid="_window_event_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>engine/include/core/systems/inputSystem/input/ControllerInput.h</label>
+        <link refid="_controller_input_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>engine/include/core/systems/inputSystem/input/Input.h</label>
+        <link refid="_input_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>engine/include/core/systems/inputSystem/input/KeyboardInput.h</label>
+        <link refid="_keyboard_input_8h_source"/>
+      </node>
+      <node id="23">
+        <label>engine/include/core/systems/inputSystem/input/MobileInput.h</label>
+        <link refid="_mobile_input_8h_source"/>
+      </node>
+      <node id="24">
+        <label>engine/include/core/systems/inputSystem/input/MouseInput.h</label>
+        <link refid="_mouse_input_8h_source"/>
+      </node>
+      <node id="25">
+        <label>engine/include/core/systems/inputSystem/input/WindowInput.h</label>
+        <link refid="_window_input_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>engine/include/core/systems/uiSystem/Canvas.h</label>
+        <link refid="_canvas_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>engine/include/core/systems/uiSystem/SceneManager.h</label>
+        <link refid="_scene_manager_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_r_d_e_1_1_event" prot="public">RDE::Event</innerclass>
+    <innerclass refid="class_r_d_e_1_1_event_dispatcher" prot="public">RDE::EventDispatcher</innerclass>
+    <innernamespace refid="namespace_r_d_e">RDE</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_event_8h_1aa60ef088a0fda7e675adbcbe814a5f2f" prot="public" static="no">
+        <name>RDE_EVENT_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/Event.h" line="4" column="9" bodyfile="engine/include/core/systems/eventSystem/Event.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RDE_EVENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDE_EVENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/util/Delegate.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_d_e" kindref="compound">RDE</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/>:<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>None,<sp/>WindowClosed,<sp/>WindowResized,<sp/>WindowMoved,<sp/>WindowFocused,<sp/>WindowLostFocus,<sp/>GameFrame,<sp/>GameUpdate,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameRender,<sp/>KeyPressed,<sp/>KeyDown,<sp/>KeyReleased,<sp/>KeyTyped,<sp/>TextTyped,<sp/>MouseButtonPressed,<sp/>MouseButtonDown,<sp/>MouseButtonReleased,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MouseScrolled,<sp/>MouseMoved,<sp/>WindowMinimized,<sp/>WindowDisplayChanged,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ControllerAxisMoved,<sp/>ControllerButtonDown,<sp/>ControllerButtonUp,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MobileTouchDown,<sp/>MobileTouchUp,<sp/>MobileTouchMoved</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebec" kindref="member">EventCategory</ref><sp/>:<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>None,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EventCategoryGame<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1u<sp/>&lt;&lt;<sp/>0u,<sp/></highlight></codeline>
+<codeline lineno="36" refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca33d5a1e945f153a324a8a9bff626fb9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca33d5a1e945f153a324a8a9bff626fb9f" kindref="member">EventCategoryInput</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1u<sp/>&lt;&lt;<sp/>1u,<sp/></highlight></codeline>
+<codeline lineno="37" refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca3b5209376a15c504ff190a432b361a42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca3b5209376a15c504ff190a432b361a42" kindref="member">EventCategoryKeyboard</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1u<sp/>&lt;&lt;<sp/>2u,<sp/></highlight></codeline>
+<codeline lineno="38" refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca67e7c901aa61c40bc84af9f8018b8bcf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca67e7c901aa61c40bc84af9f8018b8bcf" kindref="member">EventCategoryMouse</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1u<sp/>&lt;&lt;<sp/>3u,<sp/></highlight></codeline>
+<codeline lineno="39" refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebecaa553577a639f202201963039c3ab7e95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebecaa553577a639f202201963039c3ab7e95" kindref="member">EventCategoryMouseButton</ref><sp/><sp/><sp/><sp/>=<sp/>1u<sp/>&lt;&lt;<sp/>4u,<sp/></highlight></codeline>
+<codeline lineno="40" refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca2e12bc5e6bf5596ffeba63c4487de0fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca2e12bc5e6bf5596ffeba63c4487de0fd" kindref="member">EventCategoryControllerButton</ref><sp/><sp/><sp/><sp/>=<sp/>1u<sp/>&lt;&lt;<sp/>5u,<sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca16c99034a83594545ba60b04a60b21bc" kindref="member">EventCategoryMobileInput</ref><sp/><sp/><sp/><sp/>=<sp/>1u<sp/>&lt;&lt;<sp/>6u<sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca16c99034a83594545ba60b04a60b21bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_r_d_e_1_1_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54" refid="class_r_d_e_1_1_event_1a372a2b0c1a05c7f8b7e48bfbac7042d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_event_1a372a2b0c1a05c7f8b7e48bfbac7042d0" kindref="member">handled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="61" refid="class_r_d_e_1_1_event_1a5c2348312219e998d3c5e0cdc916bbc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/><ref refid="class_r_d_e_1_1_event_1a5c2348312219e998d3c5e0cdc916bbc6" kindref="member">getStaticType</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EventType::None;<sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="class_r_d_e_1_1_event_1a17812fdef1f1bc1517e7658cbdf8ba3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/><ref refid="class_r_d_e_1_1_event_1a17812fdef1f1bc1517e7658cbdf8ba3b" kindref="member">getEventType</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_r_d_e_1_1_event_1a3ea36fb9accc90c88c34d946515724a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_r_d_e_1_1_event_1a3ea36fb9accc90c88c34d946515724a9" kindref="member">getName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_r_d_e_1_1_event_1a1578cfc2a5212ffb46108acf3b6c51fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_event_1a1578cfc2a5212ffb46108acf3b6c51fd" kindref="member">getCategoryFlags</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="class_r_d_e_1_1_event_1a2ad3c2a15cf1a3d619cfada8dbf02638" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_r_d_e_1_1_event_1a2ad3c2a15cf1a3d619cfada8dbf02638" kindref="member">toString</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Not<sp/>defined<sp/>in<sp/>specific<sp/>class&quot;</highlight><highlight class="normal">;<sp/>};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_r_d_e_1_1_event_1a853416fc3754e4052bf7f24d081f82fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_event_1a853416fc3754e4052bf7f24d081f82fd" kindref="member">isInCategory</ref>(<ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebec" kindref="member">EventCategory</ref><sp/>_category)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal">)<ref refid="class_r_d_e_1_1_event_1a1578cfc2a5212ffb46108acf3b6c51fd" kindref="member">getCategoryFlags</ref>()<sp/>&amp;<sp/>_category;<sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="class_r_d_e_1_1_event_dispatcher" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_event_dispatcher" kindref="compound">EventDispatcher</ref><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">EventFn<sp/>=<sp/>std::function&lt;bool(T&amp;)&gt;;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref>&amp;<sp/>event;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_event_dispatcher" kindref="compound">EventDispatcher</ref>(<ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref>&amp;<sp/>_event)<sp/>:<sp/>event(_event)<sp/>{}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="119" refid="class_r_d_e_1_1_event_dispatcher_1ae78629a7234f5da6e51c5ae7bebda4d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_event_dispatcher_1ae78629a7234f5da6e51c5ae7bebda4d5" kindref="member">dispatchEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(T&amp;)&gt;&amp;<sp/>_delegate)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(event.<ref refid="class_r_d_e_1_1_event_1a372a2b0c1a05c7f8b7e48bfbac7042d0" kindref="member">handled</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="class_r_d_e_1_1_event_1a17812fdef1f1bc1517e7658cbdf8ba3b" kindref="member">getEventType</ref>()<sp/>==<sp/>T::getStaticType())<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.handled<sp/>=<sp/>_delegate(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">T&amp;</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(event));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="137" refid="class_r_d_e_1_1_event_dispatcher_1a390cf0023b05b8733bcea928feacfc92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_event_dispatcher_1a390cf0023b05b8733bcea928feacfc92" kindref="member">dispatchEvent</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(event.<ref refid="class_r_d_e_1_1_event_1a372a2b0c1a05c7f8b7e48bfbac7042d0" kindref="member">handled</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.getEventType()<sp/>==<sp/>T::getStaticType();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//RDE_EVENT_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="engine/include/core/systems/eventSystem/Event.h"/>
+  </compounddef>
+</doxygen>

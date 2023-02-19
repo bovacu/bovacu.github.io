@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_rolling_buffer" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::RollingBuffer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_rolling_buffer_1aba768f95987e2328099da287b871becd" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::RollingBuffer::Span</definition>
+        <argsstring></argsstring>
+        <name>Span</name>
+        <qualifiedname>RDE::RollingBuffer::Span</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="68" column="15" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_rolling_buffer_1a6fdb36e2e56a681a346b004c82b96a9c" prot="public" static="no" mutable="no">
+        <type>ImVector&lt; ImVec2 &gt;</type>
+        <definition>ImVector&lt;ImVec2&gt; RDE::RollingBuffer::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <qualifiedname>RDE::RollingBuffer::Data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="69" column="18" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/profiling/Profiler.h" line="67" column="5" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="67" bodyend="72"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_rolling_buffer_1a6fdb36e2e56a681a346b004c82b96a9c" prot="public" virt="non-virtual"><scope>RDE::RollingBuffer</scope><name>Data</name></member>
+      <member refid="struct_r_d_e_1_1_rolling_buffer_1aba768f95987e2328099da287b871becd" prot="public" virt="non-virtual"><scope>RDE::RollingBuffer</scope><name>Span</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

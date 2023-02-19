@@ -1,0 +1,14 @@
+.. _exhale_define__core_8h_1a788a2a6594b97a8a91130b93a0705e5b:
+
+Define FRIEND_STRUCT
+====================
+
+- Defined in :ref:`file_engine_include_core_Core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FRIEND_STRUCT
+   :project: My Project

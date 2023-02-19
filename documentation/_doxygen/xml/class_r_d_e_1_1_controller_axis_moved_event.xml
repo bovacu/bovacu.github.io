@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_controller_axis_moved_event" kind="class" language="C++" prot="public">
+    <compoundname>RDE::ControllerAxisMovedEvent</compoundname>
+    <basecompoundref refid="class_r_d_e_1_1_event" prot="public" virt="non-virtual">RDE::Event</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_controller_axis_moved_event_1ae6674763acab56e423d3c6a3bfcdc9d2" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::ControllerAxisMovedEvent::leftJoy</definition>
+        <argsstring></argsstring>
+        <name>leftJoy</name>
+        <qualifiedname>RDE::ControllerAxisMovedEvent::leftJoy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="17" column="19" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_controller_axis_moved_event_1a536822ae5398fe09305284acecbc9f97" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::ControllerAxisMovedEvent::rightJoy</definition>
+        <argsstring></argsstring>
+        <name>rightJoy</name>
+        <qualifiedname>RDE::ControllerAxisMovedEvent::rightJoy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="17" column="27" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_controller_axis_moved_event_1a58a3d6e014fb0cb9fc8f96ded3cc00f9" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::ControllerAxisMovedEvent::backButtons</definition>
+        <argsstring></argsstring>
+        <name>backButtons</name>
+        <qualifiedname>RDE::ControllerAxisMovedEvent::backButtons</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="17" column="36" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_axis_moved_event_1a0f8dac303f36dc57c6b08e59327cfa05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::ControllerAxisMovedEvent::ControllerAxisMovedEvent</definition>
+        <argsstring>(const Vec2F &amp;_leftJoy, const Vec2F &amp;_rightJoy, const Vec2F &amp;_backButtons)</argsstring>
+        <name>ControllerAxisMovedEvent</name>
+        <qualifiedname>RDE::ControllerAxisMovedEvent::ControllerAxisMovedEvent</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_leftJoy</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_rightJoy</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_backButtons</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="20" column="13" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="20" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_axis_moved_event_1a36336d3a378a80279d4bf40e11f43633" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::ControllerAxisMovedEvent::getLeftJoy</definition>
+        <argsstring>() const</argsstring>
+        <name>getLeftJoy</name>
+        <qualifiedname>RDE::ControllerAxisMovedEvent::getLeftJoy</qualifiedname>
+        <briefdescription>
+<para>Returns how much the left joystick of the controller was moved, normalized. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vec2F </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="26" column="27" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_axis_moved_event_1a3433b04360701164d60a35194f1a8d25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::ControllerAxisMovedEvent::getRightJoy</definition>
+        <argsstring>() const</argsstring>
+        <name>getRightJoy</name>
+        <qualifiedname>RDE::ControllerAxisMovedEvent::getRightJoy</qualifiedname>
+        <briefdescription>
+<para>Returns how much the right joystick of the controller was moved, normalized. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vec2F </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="32" column="27" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_axis_moved_event_1aeb98c6f07d9890046b411515278de1ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::ControllerAxisMovedEvent::getBackButtons</definition>
+        <argsstring>() const</argsstring>
+        <name>getBackButtons</name>
+        <qualifiedname>RDE::ControllerAxisMovedEvent::getBackButtons</qualifiedname>
+        <briefdescription>
+<para>Returns how much the back buttons of the controller were moved, normalized. X = left, Y = right. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vec2F </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="38" column="27" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_axis_moved_event_1a0e9e5df29171182531d977878e8eb17f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::ControllerAxisMovedEvent::toString</definition>
+        <argsstring>() const override</argsstring>
+        <name>toString</name>
+        <qualifiedname>RDE::ControllerAxisMovedEvent::toString</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a2ad3c2a15cf1a3d619cfada8dbf02638">toString</reimplements>
+        <briefdescription>
+<para>Returns all the event in form of string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="40" column="26" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_axis_moved_event_1ab0fc21dd3fb9e3108c53dfbfa6024759" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref></type>
+        <definition>EventType RDE::ControllerAxisMovedEvent::getEventType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getEventType</name>
+        <qualifiedname>RDE::ControllerAxisMovedEvent::getEventType</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a17812fdef1f1bc1517e7658cbdf8ba3b">getEventType</reimplements>
+        <briefdescription>
+<para>Returns the event type from the current object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>EventType </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="47" column="24" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_axis_moved_event_1adcfb33ddc02ab1c9fdc293cdb11e017b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char * RDE::ControllerAxisMovedEvent::getName</definition>
+        <argsstring>() const override</argsstring>
+        <name>getName</name>
+        <qualifiedname>RDE::ControllerAxisMovedEvent::getName</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a3ea36fb9accc90c88c34d946515724a9">getName</reimplements>
+        <briefdescription>
+<para>Returns the event name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const char* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="48" column="25" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_axis_moved_event_1a701a6ca9674adfbabfd24f6d5433aa02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int RDE::ControllerAxisMovedEvent::getCategoryFlags</definition>
+        <argsstring>() const override</argsstring>
+        <name>getCategoryFlags</name>
+        <qualifiedname>RDE::ControllerAxisMovedEvent::getCategoryFlags</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a1578cfc2a5212ffb46108acf3b6c51fd">getCategoryFlags</reimplements>
+        <briefdescription>
+<para>Returns the categories of an event condensed on a single int. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="49" column="18" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_axis_moved_event_1a1bb712e6ee4f46560b24da9bdb9ff2c9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref></type>
+        <definition>static EventType RDE::ControllerAxisMovedEvent::getStaticType</definition>
+        <argsstring>()</argsstring>
+        <name>getStaticType</name>
+        <qualifiedname>RDE::ControllerAxisMovedEvent::getStaticType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="46" column="30" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RDE::ControllerAxisMovedEvent</label>
+        <link refid="class_r_d_e_1_1_controller_axis_moved_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::Event</label>
+        <link refid="class_r_d_e_1_1_event"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RDE::ControllerAxisMovedEvent</label>
+        <link refid="class_r_d_e_1_1_controller_axis_moved_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::Event</label>
+        <link refid="class_r_d_e_1_1_event"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="15" column="5" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="15" bodyend="50"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_controller_axis_moved_event_1a58a3d6e014fb0cb9fc8f96ded3cc00f9" prot="private" virt="non-virtual"><scope>RDE::ControllerAxisMovedEvent</scope><name>backButtons</name></member>
+      <member refid="class_r_d_e_1_1_controller_axis_moved_event_1a0f8dac303f36dc57c6b08e59327cfa05" prot="public" virt="non-virtual"><scope>RDE::ControllerAxisMovedEvent</scope><name>ControllerAxisMovedEvent</name></member>
+      <member refid="class_r_d_e_1_1_controller_axis_moved_event_1aeb98c6f07d9890046b411515278de1ff" prot="public" virt="non-virtual"><scope>RDE::ControllerAxisMovedEvent</scope><name>getBackButtons</name></member>
+      <member refid="class_r_d_e_1_1_controller_axis_moved_event_1a701a6ca9674adfbabfd24f6d5433aa02" prot="public" virt="virtual"><scope>RDE::ControllerAxisMovedEvent</scope><name>getCategoryFlags</name></member>
+      <member refid="class_r_d_e_1_1_controller_axis_moved_event_1ab0fc21dd3fb9e3108c53dfbfa6024759" prot="public" virt="virtual"><scope>RDE::ControllerAxisMovedEvent</scope><name>getEventType</name></member>
+      <member refid="class_r_d_e_1_1_controller_axis_moved_event_1a36336d3a378a80279d4bf40e11f43633" prot="public" virt="non-virtual"><scope>RDE::ControllerAxisMovedEvent</scope><name>getLeftJoy</name></member>
+      <member refid="class_r_d_e_1_1_controller_axis_moved_event_1adcfb33ddc02ab1c9fdc293cdb11e017b" prot="public" virt="virtual"><scope>RDE::ControllerAxisMovedEvent</scope><name>getName</name></member>
+      <member refid="class_r_d_e_1_1_controller_axis_moved_event_1a3433b04360701164d60a35194f1a8d25" prot="public" virt="non-virtual"><scope>RDE::ControllerAxisMovedEvent</scope><name>getRightJoy</name></member>
+      <member refid="class_r_d_e_1_1_controller_axis_moved_event_1a1bb712e6ee4f46560b24da9bdb9ff2c9" prot="public" virt="non-virtual"><scope>RDE::ControllerAxisMovedEvent</scope><name>getStaticType</name></member>
+      <member refid="class_r_d_e_1_1_event_1a372a2b0c1a05c7f8b7e48bfbac7042d0" prot="public" virt="non-virtual"><scope>RDE::ControllerAxisMovedEvent</scope><name>handled</name></member>
+      <member refid="class_r_d_e_1_1_event_1a853416fc3754e4052bf7f24d081f82fd" prot="public" virt="non-virtual"><scope>RDE::ControllerAxisMovedEvent</scope><name>isInCategory</name></member>
+      <member refid="class_r_d_e_1_1_controller_axis_moved_event_1ae6674763acab56e423d3c6a3bfcdc9d2" prot="private" virt="non-virtual"><scope>RDE::ControllerAxisMovedEvent</scope><name>leftJoy</name></member>
+      <member refid="class_r_d_e_1_1_controller_axis_moved_event_1a536822ae5398fe09305284acecbc9f97" prot="private" virt="non-virtual"><scope>RDE::ControllerAxisMovedEvent</scope><name>rightJoy</name></member>
+      <member refid="class_r_d_e_1_1_controller_axis_moved_event_1a0e9e5df29171182531d977878e8eb17f" prot="public" virt="virtual"><scope>RDE::ControllerAxisMovedEvent</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

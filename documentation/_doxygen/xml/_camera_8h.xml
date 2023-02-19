@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_camera_8h" kind="file" language="C++">
+    <compoundname>Camera.h</compoundname>
+    <includes refid="_component_base_8h" local="yes">core/graph/components/ComponentBase.h</includes>
+    <includes local="no">glm/ext/matrix_float4x4.hpp</includes>
+    <includes refid="_util_8h" local="yes">core/util/Util.h</includes>
+    <includes refid="_mouse_event_8h" local="yes">core/systems/eventSystem/MouseEvent.h</includes>
+    <includes refid="_view_port_8h" local="yes">core/render/elements/ViewPort.h</includes>
+    <includes local="yes">entt/entity/entity.hpp</includes>
+    <includedby refid="_sprite_batch_8h" local="yes">engine/include/core/render/elements/SpriteBatch.h</includedby>
+    <includedby refid="_canvas_8h" local="yes">engine/include/core/systems/uiSystem/Canvas.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>core/Core.h</label>
+        <link refid="_core_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>core/graph/components/ComponentBase.h</label>
+        <link refid="_component_base_8h_source"/>
+      </node>
+      <node id="23">
+        <label>core/platform/PlatformHeaderSDL.h</label>
+        <link refid="_platform_header_s_d_l_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>core/platform/PlatformHeaderSDLImage.h</label>
+        <link refid="_platform_header_s_d_l_image_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/render/Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>core/render/elements/ViewPort.h</label>
+        <link refid="_view_port_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Event.h</label>
+        <link refid="_event_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>core/systems/eventSystem/MouseEvent.h</label>
+        <link refid="_mouse_event_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>core/systems/inputSystem/keysAndButtons/KeyboardKeys.h</label>
+        <link refid="_keyboard_keys_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>core/systems/inputSystem/keysAndButtons/MouseKeys.h</label>
+        <link refid="_mouse_keys_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Clock.h</label>
+        <link refid="_clock_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Color.h</label>
+        <link refid="_color_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Delegate.h</label>
+        <link refid="_delegate_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Delta.h</label>
+        <link refid="_delta_8h_source"/>
+      </node>
+      <node id="22">
+        <label>Functions.h</label>
+        <link refid="_functions_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Random.h</label>
+        <link refid="_random_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Rect.h</label>
+        <link refid="_rect_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>core/util/Util.h</label>
+        <link refid="_util_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Vec.h</label>
+        <link refid="_vec_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>SDL.h</label>
+      </node>
+      <node id="26">
+        <label>SDL2/SDL_image.h</label>
+      </node>
+      <node id="29">
+        <label>algorithm</label>
+      </node>
+      <node id="28">
+        <label>chrono</label>
+      </node>
+      <node id="9">
+        <label>cmath</label>
+      </node>
+      <node id="14">
+        <label>cstdint</label>
+      </node>
+      <node id="39">
+        <label>entt/entity/entity.hpp</label>
+      </node>
+      <node id="19">
+        <label>exception</label>
+      </node>
+      <node id="20">
+        <label>functional</label>
+      </node>
+      <node id="3">
+        <label>glm/ext/matrix_float4x4.hpp</label>
+      </node>
+      <node id="10">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="32">
+        <label>map</label>
+      </node>
+      <node id="31">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>ostream</label>
+      </node>
+      <node id="17">
+        <label>random</label>
+      </node>
+      <node id="27">
+        <label>sstream</label>
+      </node>
+      <node id="35">
+        <label>string</label>
+      </node>
+      <node id="21">
+        <label>unordered_map</label>
+      </node>
+      <node id="30">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>engine/include/RDE.h</label>
+        <link refid="_r_d_e_8h_source"/>
+      </node>
+      <node id="7">
+        <label>engine/include/RDEEntry.h</label>
+        <link refid="_r_d_e_entry_8h_source"/>
+      </node>
+      <node id="6">
+        <label>engine/include/core/Engine.h</label>
+        <link refid="_engine_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>engine/include/core/Manager.h</label>
+        <link refid="_manager_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>engine/include/core/graph/ImGuiScene.h</label>
+        <link refid="_im_gui_scene_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>engine/include/core/graph/Scene.h</label>
+        <link refid="_scene_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/render/Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>engine/include/core/render/RenderManager.h</label>
+        <link refid="_render_manager_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>engine/include/core/render/elements/SpriteBatch.h</label>
+        <link refid="_sprite_batch_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>engine/include/core/systems/configSystem/ConfigManager.h</label>
+        <link refid="_config_manager_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>engine/include/core/systems/uiSystem/Canvas.h</label>
+        <link refid="_canvas_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_r_d_e_1_1_camera" prot="public">RDE::Camera</innerclass>
+    <innernamespace refid="namespace_r_d_e">RDE</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Created<sp/>by<sp/>borja<sp/>on<sp/>30/12/21.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RDE_CAMERA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDE_CAMERA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/graph/components/ComponentBase.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;glm/ext/matrix_float4x4.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/util/Util.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/systems/eventSystem/MouseEvent.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/render/elements/ViewPort.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;entt/entity/entity.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_d_e" kindref="compound">RDE</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>entt::entity<sp/><ref refid="namespace_r_d_e_1a9feedbb7b8355f0ee9c64cfaa2a474d1" kindref="member">NodeID</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Transform;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SceneManager;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Window;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Manager;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Graph;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Node;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_r_d_e_1_1_camera" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_camera" kindref="compound">Camera</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="struct_component_base" kindref="compound">ComponentBase</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref><sp/>size;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>zoom<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>zoomSpeed<sp/>=<sp/>0.25f;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glm::mat4<sp/>projectionMatrix;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glm::mat4<sp/>viewMatrix<sp/>{1.f};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glm::mat4<sp/>viewProjectionMatrix;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_view_port" kindref="compound">ViewPort</ref>*<sp/>viewport;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dirty<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>*<sp/>node;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_camera" kindref="compound">Camera</ref>(<ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>*<sp/>_node,<sp/><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref>*<sp/>_manager,<sp/><ref refid="class_r_d_e_1_1_graph" kindref="compound">Graph</ref>*<sp/>_graph,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref>*<sp/>_window);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_camera" kindref="compound">~Camera</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="class_r_d_e_1_1_camera_1a13e20a7b9630fba06105b7f8a044c0af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_camera_1a13e20a7b9630fba06105b7f8a044c0af" kindref="member">onEvent</ref>(<ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref>&amp;<sp/>_event);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="class_r_d_e_1_1_camera_1aaf24a7a5e05a27cef295887936ec4a65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_camera_1aaf24a7a5e05a27cef295887936ec4a65" kindref="member">onMouseScrolled</ref>(<ref refid="class_r_d_e_1_1_mouse_scrolled_event" kindref="compound">MouseScrolledEvent</ref>&amp;<sp/>_event);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="class_r_d_e_1_1_camera_1ac8004416c55854033c06e15b543be311" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_camera_1ac8004416c55854033c06e15b543be311" kindref="member">onResize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_height);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="class_r_d_e_1_1_camera_1a214f5ecf148ff86c6c19cd2d768347b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glm::mat4&amp;<sp/><ref refid="class_r_d_e_1_1_camera_1a214f5ecf148ff86c6c19cd2d768347b4" kindref="member">getProjectionMatrix</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="class_r_d_e_1_1_camera_1a3e8b2a4e68b09fa99615e2b77efdece2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glm::mat4&amp;<sp/><ref refid="class_r_d_e_1_1_camera_1a3e8b2a4e68b09fa99615e2b77efdece2" kindref="member">getViewMatrix</ref>();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="class_r_d_e_1_1_camera_1a28387c8cfdd38e6168e97eceafcb3193" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glm::mat4&amp;<sp/><ref refid="class_r_d_e_1_1_camera_1a28387c8cfdd38e6168e97eceafcb3193" kindref="member">getViewProjectionMatrix</ref>();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="class_r_d_e_1_1_camera_1a4b0fb6433bc73b54ad5aa414857599c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_camera_1a4b0fb6433bc73b54ad5aa414857599c4" kindref="member">setCameraSize</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref>&amp;<sp/>_cameraSize);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="class_r_d_e_1_1_camera_1a215a0c283f918b370e292469f2f2cc39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_camera_1a215a0c283f918b370e292469f2f2cc39" kindref="member">setCameraSize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_height);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="class_r_d_e_1_1_camera_1a801f41ffe11592861bc21ab4a24f3dae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref><sp/><ref refid="class_r_d_e_1_1_camera_1a801f41ffe11592861bc21ab4a24f3dae" kindref="member">getCameraSize</ref>();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="class_r_d_e_1_1_camera_1a79a657325281a0aa007f311795de7c83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_camera_1a79a657325281a0aa007f311795de7c83" kindref="member">getAspectRatio</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="class_r_d_e_1_1_camera_1a2995a758689eb468c911f26e9d982bdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_camera_1a2995a758689eb468c911f26e9d982bdd" kindref="member">getCurrentZoomLevel</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="class_r_d_e_1_1_camera_1ae11fc91a0b94a8fad84a7f5794f13b35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_camera_1ae11fc91a0b94a8fad84a7f5794f13b35" kindref="member">setCurrentZoomLevel</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_zoomLevel);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="class_r_d_e_1_1_camera_1a6971ac4973e3eef4fb4681238a70ad65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_camera_1a6971ac4973e3eef4fb4681238a70ad65" kindref="member">getZoomSpeed</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="class_r_d_e_1_1_camera_1aa32940427e587870533235f52c8b80b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_camera_1aa32940427e587870533235f52c8b80b5" kindref="member">setZoomSpeed</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_zoomSpeed);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glm::mat4&amp;<sp/>operator()<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_camera" kindref="compound">Camera</ref>&amp;<sp/>_camera)<sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>projectionMatrix;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="class_r_d_e_1_1_camera_1aeabb13becf64ff561a3a6b2bed0cc7c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="class_r_d_e_1_1_view_port" kindref="compound">ViewPort</ref>*<sp/><ref refid="class_r_d_e_1_1_camera_1aeabb13becf64ff561a3a6b2bed0cc7c7" kindref="member">getViewport</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isLandscape();</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="class_r_d_e_1_1_camera_1a4d5478f520b545d1a081f6f61fd2e16e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_camera_1a4d5478f520b545d1a081f6f61fd2e16e" kindref="member">isElementInside</ref>(<ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref>*<sp/>_transform,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref>&amp;<sp/>_size)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update();</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setEnabled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_enabled)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isEnabled()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>recalculateViewMatrix();</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//RDE_CAMERA_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="engine/include/core/render/Camera.h"/>
+  </compounddef>
+</doxygen>

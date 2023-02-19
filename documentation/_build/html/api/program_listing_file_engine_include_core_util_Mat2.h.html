@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File Mat2.h &mdash; RDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            RDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">Library API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Program Listing for File Mat2.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file_engine_include_core_util_Mat2.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-mat2-h">
+<span id="program-listing-file-engine-include-core-util-mat2-h"></span><h1>Program Listing for File Mat2.h<a class="headerlink" href="#program-listing-for-file-mat2-h" title="Permalink to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file_engine_include_core_util_Mat2.h.html#file-engine-include-core-util-mat2-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">engine/include/core/util/Mat2.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//</span>
+<span class="c1">// Created by borja on 9/16/22.</span>
+<span class="c1">//</span>
+
+<span class="cp">#ifndef RDE_MAT2_H</span>
+<span class="cp">#define RDE_MAT2_H</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cmath&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;core/util/Vec.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;core/Core.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;core/util/Functions.h&quot;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">RDE</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">Mat2</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">union</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="kt">float</span><span class="w"> </span><span class="n">m00</span><span class="p">,</span><span class="w"> </span><span class="n">m01</span><span class="p">;</span>
+<span class="w">                </span><span class="kt">float</span><span class="w"> </span><span class="n">m10</span><span class="p">,</span><span class="w"> </span><span class="n">m11</span><span class="p">;</span>
+<span class="w">            </span><span class="p">};</span>
+
+<span class="w">            </span><span class="kt">float</span><span class="w"> </span><span class="n">m</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">];</span>
+<span class="w">            </span><span class="kt">float</span><span class="w"> </span><span class="n">v</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="k">public</span><span class="o">:</span>
+<span class="w">            </span><span class="n">Mat2</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">                </span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">                </span><span class="n">m</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">                </span><span class="n">m</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">explicit</span><span class="w"> </span><span class="n">Mat2</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">_degrees</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">rotate</span><span class="p">(</span><span class="n">_degrees</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">Mat2</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">_m00</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">_m01</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">_m10</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">_m11</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_m00</span><span class="p">;</span>
+<span class="w">                </span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_m01</span><span class="p">;</span>
+<span class="w">                </span><span class="n">m</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_m10</span><span class="p">;</span>
+<span class="w">                </span><span class="n">m</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_m11</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="n">rotate</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">_degrees</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">auto</span><span class="w"> </span><span class="n">_radians</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Util</span><span class="o">::</span><span class="n">Math</span><span class="o">::</span><span class="n">degreesToRadians</span><span class="p">(</span><span class="n">_degrees</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">float</span><span class="w"> </span><span class="n">_cos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="w"> </span><span class="n">_radians</span><span class="w"> </span><span class="p">);</span>
+<span class="w">                </span><span class="kt">float</span><span class="w"> </span><span class="n">_sin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="w"> </span><span class="n">_radians</span><span class="w"> </span><span class="p">);</span>
+
+<span class="w">                </span><span class="n">m00</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_cos</span><span class="p">;</span><span class="w"> </span><span class="n">m01</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="n">_sin</span><span class="p">;</span>
+<span class="w">                </span><span class="n">m10</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_sin</span><span class="p">;</span><span class="w"> </span><span class="n">m11</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="n">_cos</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="n">Mat2</span><span class="w"> </span><span class="n">abs</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="w"> </span><span class="n">m00</span><span class="w"> </span><span class="p">),</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="w"> </span><span class="n">m01</span><span class="w"> </span><span class="p">),</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="w"> </span><span class="n">m10</span><span class="w"> </span><span class="p">),</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="w"> </span><span class="n">m11</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">};</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="n">Vec2F</span><span class="w"> </span><span class="n">axisX</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">Vec2F</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">m00</span><span class="p">,</span><span class="w"> </span><span class="n">m10</span><span class="w"> </span><span class="p">};</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="n">Vec2F</span><span class="w"> </span><span class="n">axisY</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">Vec2F</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">m01</span><span class="p">,</span><span class="w"> </span><span class="n">m11</span><span class="w"> </span><span class="p">};</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="n">Mat2</span><span class="w"> </span><span class="n">transpose</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">m00</span><span class="p">,</span><span class="w"> </span><span class="n">m10</span><span class="p">,</span><span class="w"> </span><span class="n">m01</span><span class="p">,</span><span class="w"> </span><span class="n">m11</span><span class="w"> </span><span class="p">};</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">Vec2F</span><span class="w"> </span><span class="k">operator</span><span class="o">*</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Vec2F</span><span class="o">&amp;</span><span class="w"> </span><span class="n">rhs</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">m00</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rhs</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">m01</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rhs</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">m10</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rhs</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">m11</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rhs</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="p">};</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">Mat2</span><span class="w"> </span><span class="k">operator</span><span class="o">*</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Mat2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">rhs</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rhs</span><span class="p">.</span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rhs</span><span class="p">.</span><span class="n">m</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+<span class="w">                        </span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rhs</span><span class="p">.</span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rhs</span><span class="p">.</span><span class="n">m</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">                        </span><span class="n">m</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rhs</span><span class="p">.</span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">m</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rhs</span><span class="p">.</span><span class="n">m</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+<span class="w">                        </span><span class="n">m</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rhs</span><span class="p">.</span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">m</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rhs</span><span class="p">.</span><span class="n">m</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+<span class="w">                </span><span class="p">};</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="p">}</span>
+
+<span class="cp">#endif </span><span class="c1">//RDE_MAT2_H</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

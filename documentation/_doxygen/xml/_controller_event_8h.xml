@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_controller_event_8h" kind="file" language="C++">
+    <compoundname>ControllerEvent.h</compoundname>
+    <includes refid="_event_8h" local="yes">Event.h</includes>
+    <includes refid="_keyboard_keys_8h" local="yes">core/systems/inputSystem/keysAndButtons/KeyboardKeys.h</includes>
+    <includes refid="_mouse_keys_8h" local="yes">core/systems/inputSystem/keysAndButtons/MouseKeys.h</includes>
+    <includes refid="_controller_buttons_8h" local="yes">core/systems/inputSystem/keysAndButtons/ControllerButtons.h</includes>
+    <includes refid="_vec_8h" local="yes">core/util/Vec.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>core/Core.h</label>
+        <link refid="_core_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>core/platform/PlatformHeaderSDL.h</label>
+        <link refid="_platform_header_s_d_l_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/systems/eventSystem/ControllerEvent.h</label>
+        <link refid="_controller_event_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Event.h</label>
+        <link refid="_event_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>core/systems/inputSystem/keysAndButtons/ControllerButtons.h</label>
+        <link refid="_controller_buttons_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>core/systems/inputSystem/keysAndButtons/KeyboardKeys.h</label>
+        <link refid="_keyboard_keys_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>core/systems/inputSystem/keysAndButtons/MouseKeys.h</label>
+        <link refid="_mouse_keys_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>core/util/Delegate.h</label>
+        <link refid="_delegate_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>core/util/Vec.h</label>
+        <link refid="_vec_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>SDL.h</label>
+      </node>
+      <node id="19">
+        <label>cmath</label>
+      </node>
+      <node id="12">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>exception</label>
+      </node>
+      <node id="5">
+        <label>functional</label>
+      </node>
+      <node id="20">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="13">
+        <label>ostream</label>
+      </node>
+      <node id="10">
+        <label>sstream</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_r_d_e_1_1_controller_axis_moved_event" prot="public">RDE::ControllerAxisMovedEvent</innerclass>
+    <innerclass refid="class_r_d_e_1_1_controller_button_down_event" prot="public">RDE::ControllerButtonDownEvent</innerclass>
+    <innerclass refid="class_r_d_e_1_1_controller_button_up_event" prot="public">RDE::ControllerButtonUpEvent</innerclass>
+    <innernamespace refid="namespace_r_d_e">RDE</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Created<sp/>by<sp/>borja<sp/>on<sp/>30/1/22.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RDE_JOYSTICK_EVENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDE_JOYSTICK_EVENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Event.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/systems/inputSystem/keysAndButtons/KeyboardKeys.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/systems/inputSystem/keysAndButtons/MouseKeys.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/systems/inputSystem/keysAndButtons/ControllerButtons.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/util/Vec.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_d_e" kindref="compound">RDE</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_r_d_e_1_1_controller_axis_moved_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_controller_axis_moved_event" kindref="compound">ControllerAxisMovedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/>leftJoy,<sp/>rightJoy,<sp/>backButtons;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_controller_axis_moved_event" kindref="compound">ControllerAxisMovedEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref>&amp;<sp/>_leftJoy,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref>&amp;<sp/>_rightJoy,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref>&amp;<sp/>_backButtons)<sp/>:<sp/>leftJoy(_leftJoy),<sp/>rightJoy(_rightJoy),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>backButtons(_backButtons)<sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="26" refid="class_r_d_e_1_1_controller_axis_moved_event_1a36336d3a378a80279d4bf40e11f43633" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/><ref refid="class_r_d_e_1_1_controller_axis_moved_event_1a36336d3a378a80279d4bf40e11f43633" kindref="member">getLeftJoy</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>leftJoy;<sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_r_d_e_1_1_controller_axis_moved_event_1a3433b04360701164d60a35194f1a8d25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/><ref refid="class_r_d_e_1_1_controller_axis_moved_event_1a3433b04360701164d60a35194f1a8d25" kindref="member">getRightJoy</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rightJoy;<sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_r_d_e_1_1_controller_axis_moved_event_1aeb98c6f07d9890046b411515278de1ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/><ref refid="class_r_d_e_1_1_controller_axis_moved_event_1aeb98c6f07d9890046b411515278de1ff" kindref="member">getBackButtons</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>backButtons;<sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_r_d_e_1_1_controller_axis_moved_event_1a0e9e5df29171182531d977878e8eb17f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::string<sp/><ref refid="class_r_d_e_1_1_controller_axis_moved_event_1a0e9e5df29171182531d977878e8eb17f" kindref="member">toString</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>_sst;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_sst<sp/>&lt;&lt;<sp/><ref refid="class_r_d_e_1_1_controller_axis_moved_event_1adcfb33ddc02ab1c9fdc293cdb11e017b" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>LJ<sp/>(x<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>leftJoy.x<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>y<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>leftJoy.y<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>--<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>RJ<sp/>(x<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>rightJoy.x<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>y<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>rightJoy.y<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>--<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>BB<sp/>(x<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>backButtons.x<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>y<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>backButtons.y<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sst.str();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/>getStaticType()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EventType::ControllerAxisMoved;<sp/>}</highlight></codeline>
+<codeline lineno="47" refid="class_r_d_e_1_1_controller_axis_moved_event_1ab0fc21dd3fb9e3108c53dfbfa6024759" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/><ref refid="class_r_d_e_1_1_controller_axis_moved_event_1ab0fc21dd3fb9e3108c53dfbfa6024759" kindref="member">getEventType</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getStaticType();<sp/>}</highlight></codeline>
+<codeline lineno="48" refid="class_r_d_e_1_1_controller_axis_moved_event_1adcfb33ddc02ab1c9fdc293cdb11e017b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_r_d_e_1_1_controller_axis_moved_event_1adcfb33ddc02ab1c9fdc293cdb11e017b" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;JoystickAxisMoved&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="49" refid="class_r_d_e_1_1_controller_axis_moved_event_1a701a6ca9674adfbabfd24f6d5433aa02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_axis_moved_event_1a701a6ca9674adfbabfd24f6d5433aa02" kindref="member">getCategoryFlags</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca33d5a1e945f153a324a8a9bff626fb9f" kindref="member">EventCategoryInput</ref><sp/>|<sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca2e12bc5e6bf5596ffeba63c4487de0fd" kindref="member">EventCategoryControllerButton</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_r_d_e_1_1_controller_button_down_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_controller_button_down_event" kindref="compound">ControllerButtonDownEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11" kindref="member">ControllerButtons</ref><sp/>button;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_button_down_event" kindref="compound">ControllerButtonDownEvent</ref>(<ref refid="namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11" kindref="member">ControllerButtons</ref><sp/>_button)<sp/>:<sp/>button(_button)<sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="class_r_d_e_1_1_controller_button_down_event_1a21453da13381202e3c2c75d237b0fa46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11" kindref="member">ControllerButtons</ref><sp/><ref refid="class_r_d_e_1_1_controller_button_down_event_1a21453da13381202e3c2c75d237b0fa46" kindref="member">getButton</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>button;<sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="class_r_d_e_1_1_controller_button_down_event_1aeadfe1d15108bf92c1ac56cd4202b6dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::string<sp/><ref refid="class_r_d_e_1_1_controller_button_down_event_1aeadfe1d15108bf92c1ac56cd4202b6dd" kindref="member">toString</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>_sst;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_sst<sp/>&lt;&lt;<sp/><ref refid="class_r_d_e_1_1_controller_button_down_event_1a44818b6022e996c140beb241967e026e" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>Button<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::string(ControllerKeysStr[(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)button]);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sst.str();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/>getStaticType()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EventType::ControllerButtonDown;<sp/>}</highlight></codeline>
+<codeline lineno="74" refid="class_r_d_e_1_1_controller_button_down_event_1a85c174b30a3e0b4b951bd3a52bdfdb91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/><ref refid="class_r_d_e_1_1_controller_button_down_event_1a85c174b30a3e0b4b951bd3a52bdfdb91" kindref="member">getEventType</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getStaticType();<sp/>}</highlight></codeline>
+<codeline lineno="75" refid="class_r_d_e_1_1_controller_button_down_event_1a44818b6022e996c140beb241967e026e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_r_d_e_1_1_controller_button_down_event_1a44818b6022e996c140beb241967e026e" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;JoystickButtonDown&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="76" refid="class_r_d_e_1_1_controller_button_down_event_1a81093cd460064ef577d9de09eeccd286" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_button_down_event_1a81093cd460064ef577d9de09eeccd286" kindref="member">getCategoryFlags</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca33d5a1e945f153a324a8a9bff626fb9f" kindref="member">EventCategoryInput</ref><sp/>|<sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca2e12bc5e6bf5596ffeba63c4487de0fd" kindref="member">EventCategoryControllerButton</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_r_d_e_1_1_controller_button_up_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_controller_button_up_event" kindref="compound">ControllerButtonUpEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11" kindref="member">ControllerButtons</ref><sp/>button;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_button_up_event" kindref="compound">ControllerButtonUpEvent</ref>(<ref refid="namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11" kindref="member">ControllerButtons</ref><sp/>_button)<sp/>:<sp/>button(_button)<sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="class_r_d_e_1_1_controller_button_up_event_1a853cd73b036cc1dd680f6f8a57e85d99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11" kindref="member">ControllerButtons</ref><sp/><ref refid="class_r_d_e_1_1_controller_button_up_event_1a853cd73b036cc1dd680f6f8a57e85d99" kindref="member">getButton</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>button;<sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_r_d_e_1_1_controller_button_up_event_1ab4953f7e64ac84a9ad98cec81c63c107" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::string<sp/><ref refid="class_r_d_e_1_1_controller_button_up_event_1ab4953f7e64ac84a9ad98cec81c63c107" kindref="member">toString</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>_sst;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_sst<sp/>&lt;&lt;<sp/><ref refid="class_r_d_e_1_1_controller_button_up_event_1a9990f415e84ba589fbd0d1eb9ce92b0e" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>Button<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::string(ControllerKeysStr[(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)button]);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sst.str();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/>getStaticType()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EventType::ControllerButtonUp;<sp/>}</highlight></codeline>
+<codeline lineno="99" refid="class_r_d_e_1_1_controller_button_up_event_1a30c54968d9e1f011a922d10b6b72f8aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref><sp/><ref refid="class_r_d_e_1_1_controller_button_up_event_1a30c54968d9e1f011a922d10b6b72f8aa" kindref="member">getEventType</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getStaticType();<sp/>}</highlight></codeline>
+<codeline lineno="100" refid="class_r_d_e_1_1_controller_button_up_event_1a9990f415e84ba589fbd0d1eb9ce92b0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_r_d_e_1_1_controller_button_up_event_1a9990f415e84ba589fbd0d1eb9ce92b0e" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;JoystickButtonUp&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="101" refid="class_r_d_e_1_1_controller_button_up_event_1af3526cb7b09afd323b1febd6c2ff5e62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_controller_button_up_event_1af3526cb7b09afd323b1febd6c2ff5e62" kindref="member">getCategoryFlags</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca33d5a1e945f153a324a8a9bff626fb9f" kindref="member">EventCategoryInput</ref><sp/>|<sp/><ref refid="namespace_r_d_e_1a00758501ad8446164e00cc44b096ebeca2e12bc5e6bf5596ffeba63c4487de0fd" kindref="member">EventCategoryControllerButton</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//RDE_JOYSTICK_EVENT_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="engine/include/core/systems/eventSystem/ControllerEvent.h"/>
+  </compounddef>
+</doxygen>

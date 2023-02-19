@@ -1,0 +1,482 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_particle_system" kind="class" language="C++" prot="public">
+    <compoundname>RDE::ParticleSystem</compoundname>
+    <includes refid="_particle_system_8h" local="no">ParticleSystem.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_particle_system_1a6504185312aadf00363c8b1a4fc6615d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_pool" kindref="compound">Pool</ref>&lt; <ref refid="struct_r_d_e_1_1_particle_data" kindref="compound">ParticleData</ref> &gt;</type>
+        <definition>Pool&lt;ParticleData&gt; RDE::ParticleSystem::pool</definition>
+        <argsstring></argsstring>
+        <name>pool</name>
+        <qualifiedname>RDE::ParticleSystem::pool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="79" column="18" bodyfile="engine/include/core/graph/components/ParticleSystem.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_particle_system_1acd21de9306eb5681a1f7558466f66c98" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_r_d_e_1_1_particle_data" kindref="compound">ParticleData</ref> &gt;</type>
+        <definition>std::vector&lt;ParticleData&gt; RDE::ParticleSystem::usedParticles</definition>
+        <argsstring></argsstring>
+        <name>usedParticles</name>
+        <qualifiedname>RDE::ParticleSystem::usedParticles</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="80" column="25" bodyfile="engine/include/core/graph/components/ParticleSystem.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_particle_system_1a4e596c57e3433654c477c35bb2e58532" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::ParticleSystem::isPlaying</definition>
+        <argsstring></argsstring>
+        <name>isPlaying</name>
+        <qualifiedname>RDE::ParticleSystem::isPlaying</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="81" column="18" bodyfile="engine/include/core/graph/components/ParticleSystem.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_particle_system_1aa705bb3ce5a09b6a263be80cc7023465" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_particle_system_config" kindref="compound">ParticleSystemConfig</ref></type>
+        <definition>ParticleSystemConfig RDE::ParticleSystem::particleSystemConfig</definition>
+        <argsstring></argsstring>
+        <name>particleSystemConfig</name>
+        <qualifiedname>RDE::ParticleSystem::particleSystemConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="84" column="34" bodyfile="engine/include/core/graph/components/ParticleSystem.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_particle_system_1a462d155ee0d1ded18bf4b10b7313fd53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RENDERIZABLE_BASIC_PROPERTIES() public</type>
+        <definition>RENDERIZABLE_BASIC_PROPERTIES() public RDE::ParticleSystem::ParticleSystem</definition>
+        <argsstring>(Node *_node, Manager *_manager, Graph *_graph, const ParticleSystemConfig &amp;_particleSystemConfig)</argsstring>
+        <name>ParticleSystem</name>
+        <qualifiedname>RDE::ParticleSystem::ParticleSystem</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>_node</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> *</type>
+          <declname>_manager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_graph" kindref="compound">Graph</ref> *</type>
+          <declname>_graph</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_particle_system_config" kindref="compound">ParticleSystemConfig</ref> &amp;</type>
+          <declname>_particleSystemConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="90" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_particle_system_1a69b154ae7bf5d6956f87ec225e4b14ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ParticleSystem::update</definition>
+        <argsstring>(Delta dt)</argsstring>
+        <name>update</name>
+        <qualifiedname>RDE::ParticleSystem::update</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref></type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="91" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_particle_system_1ab4768e0a787d4e889a84908f78d0d329" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RDE::ParticleSystem::RENDERIZABLE_BASIC_METHODS</definition>
+        <argsstring>() void play()</argsstring>
+        <name>RENDERIZABLE_BASIC_METHODS</name>
+        <qualifiedname>RDE::ParticleSystem::RENDERIZABLE_BASIC_METHODS</qualifiedname>
+        <briefdescription>
+<para>Starts the particle system. By default the particle system won&apos;t start until this method is called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="94" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_particle_system_1af8ebfc1d7812a43ed461cf60e0327d84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ParticleSystem::pause</definition>
+        <argsstring>()</argsstring>
+        <name>pause</name>
+        <qualifiedname>RDE::ParticleSystem::pause</qualifiedname>
+        <briefdescription>
+<para>Pauses the emission of particles, but the current emitted particles will continue their life cycle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="104" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_particle_system_1af955d85dbea694ba17e4d70dcead2bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ParticleSystem::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>RDE::ParticleSystem::stop</qualifiedname>
+        <briefdescription>
+<para>Pauses the emission of particles, removing all particles and resetting the particle system to config values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="109" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_particle_system_1a67a609d45abf1be56403e1f058cac14f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ParticleSystem::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>RDE::ParticleSystem::reset</qualifiedname>
+        <briefdescription>
+<para>Resets the particle system to config values, but does not stop the emission. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="114" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_particle_system_1a46bfa4ebbe5f585be970f1e32a2289a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ParticleSystem::drawBatched</definition>
+        <argsstring>(std::vector&lt; OpenGLVertex &gt; &amp;_vertices, std::vector&lt; uint32_t &gt; &amp;_indices, Transform *_transform, const ViewPort *_viewport)</argsstring>
+        <name>drawBatched</name>
+        <qualifiedname>RDE::ParticleSystem::drawBatched</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_r_d_e_1_1_open_g_l_vertex" kindref="compound">OpenGLVertex</ref> &gt; &amp;</type>
+          <declname>_vertices</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; uint32_t &gt; &amp;</type>
+          <declname>_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> *</type>
+          <declname>_transform</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_r_d_e_1_1_view_port" kindref="compound">ViewPort</ref> *</type>
+          <declname>_viewport</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="116" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_particle_system_1ad16d68e8190b9c92867cadc218a509af" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_particle_data" kindref="compound">ParticleData</ref></type>
+        <definition>ParticleData RDE::ParticleSystem::allocator</definition>
+        <argsstring>()</argsstring>
+        <name>allocator</name>
+        <qualifiedname>RDE::ParticleSystem::allocator</qualifiedname>
+        <briefdescription>
+<para>Allocator for <ref refid="struct_r_d_e_1_1_particle_data" kindref="compound">ParticleData</ref>, needed by the pool system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_r_d_e_1_1_particle_data" kindref="compound">ParticleData</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="123" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_particle_system_1a8c5e997cae426ff92e955fb92a5e666b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ParticleSystem::defaultEffect</definition>
+        <argsstring>(ParticleData &amp;_particleData, Delta _dt, const ParticleSystemConfig &amp;_config)</argsstring>
+        <name>defaultEffect</name>
+        <qualifiedname>RDE::ParticleSystem::defaultEffect</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_particle_data" kindref="compound">ParticleData</ref> &amp;</type>
+          <declname>_particleData</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref></type>
+          <declname>_dt</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_particle_system_config" kindref="compound">ParticleSystemConfig</ref> &amp;</type>
+          <declname>_config</declname>
+        </param>
+        <briefdescription>
+<para>Default effect to for the particles, it is like a smokey fire. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_particleData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_particle_data" kindref="compound">ParticleData</ref> to modify. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_dt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref> time. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial configuration of the system. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="131" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_particle_system_1abf0a063aacd0936222836f3285788555" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::ParticleSystem::defaultColorInterpolationFunction</definition>
+        <argsstring>(ParticleData &amp;_particleData, Delta _dt, const ParticleSystemConfig &amp;_config)</argsstring>
+        <name>defaultColorInterpolationFunction</name>
+        <qualifiedname>RDE::ParticleSystem::defaultColorInterpolationFunction</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_particle_data" kindref="compound">ParticleData</ref> &amp;</type>
+          <declname>_particleData</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref></type>
+          <declname>_dt</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_particle_system_config" kindref="compound">ParticleSystemConfig</ref> &amp;</type>
+          <declname>_config</declname>
+        </param>
+        <briefdescription>
+<para>Default color interpolation function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_particleData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_r_d_e_1_1_particle_data" kindref="compound">ParticleData</ref> to modify. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_dt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref> time. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial configuration of the system. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ParticleSystem.h" line="140" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Component that emits particles in a customizable way. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>RDE::Color</label>
+        <link refid="struct_r_d_e_1_1_color"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Black</edgelabel>
+          <edgelabel>Blue</edgelabel>
+          <edgelabel>Brown</edgelabel>
+          <edgelabel>Disabled</edgelabel>
+          <edgelabel>Gray</edgelabel>
+          <edgelabel>Green</edgelabel>
+          <edgelabel>Magenta</edgelabel>
+          <edgelabel>NO_COLOR</edgelabel>
+          <edgelabel>Orange</edgelabel>
+          <edgelabel>Placeholder</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>RDE::NineSlice</label>
+        <link refid="struct_r_d_e_1_1_nine_slice"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>subRects</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RDE::ParticleSystem</label>
+        <link refid="class_r_d_e_1_1_particle_system"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>particleSystemConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>RDE::ParticleSystemCallbacksConfig</label>
+        <link refid="struct_r_d_e_1_1_particle_system_callbacks_config"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>effectFunction</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>colorInterpolationFunction</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RDE::ParticleSystemColorGradientConfig</label>
+        <link refid="struct_r_d_e_1_1_particle_system_color_gradient_config"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>endColor</edgelabel>
+          <edgelabel>initColor</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::ParticleSystemConfig</label>
+        <link refid="struct_r_d_e_1_1_particle_system_config"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>colorGradientConfig</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>callbacksConfig</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>dataConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>RDE::ParticleSystemDataConfig</label>
+        <link refid="struct_r_d_e_1_1_particle_system_data_config"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>texture</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>RDE::Texture</label>
+        <link refid="class_r_d_e_1_1_texture"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>textureSize</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>spriteSheetSize</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>region</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>nineSlice</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>RDE::Vec2&lt; T &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+      <node id="12">
+        <label>RDE::Rect&lt; Vec2F &gt;</label>
+        <link refid="struct_r_d_e_1_1_rect"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>bottomLeftCorner</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>RDE::Rect&lt; Vec2I &gt;</label>
+        <link refid="struct_r_d_e_1_1_rect"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>bottomLeftCorner</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>RDE::UniqueDelegate&lt; RDE::Color(RDE::ParticleData &amp;, RDE::Delta, const RDE::ParticleSystemConfig &amp;)&gt;</label>
+        <link refid="struct_r_d_e_1_1_unique_delegate"/>
+      </node>
+      <node id="6">
+        <label>RDE::UniqueDelegate&lt; void(RDE::ParticleData &amp;, RDE::Delta, const RDE::ParticleSystemConfig &amp;)&gt;</label>
+        <link refid="struct_r_d_e_1_1_unique_delegate"/>
+      </node>
+      <node id="10">
+        <label>RDE::Vec2&lt; float &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+      <node id="11">
+        <label>RDE::Vec2&lt; int &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/graph/components/ParticleSystem.h" line="77" column="5" bodyfile="engine/include/core/graph/components/ParticleSystem.h" bodystart="77" bodyend="141"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_particle_system_1ad16d68e8190b9c92867cadc218a509af" prot="private" virt="non-virtual"><scope>RDE::ParticleSystem</scope><name>allocator</name></member>
+      <member refid="class_r_d_e_1_1_particle_system_1abf0a063aacd0936222836f3285788555" prot="private" virt="non-virtual"><scope>RDE::ParticleSystem</scope><name>defaultColorInterpolationFunction</name></member>
+      <member refid="class_r_d_e_1_1_particle_system_1a8c5e997cae426ff92e955fb92a5e666b" prot="private" virt="non-virtual"><scope>RDE::ParticleSystem</scope><name>defaultEffect</name></member>
+      <member refid="class_r_d_e_1_1_particle_system_1a46bfa4ebbe5f585be970f1e32a2289a5" prot="public" virt="non-virtual"><scope>RDE::ParticleSystem</scope><name>drawBatched</name></member>
+      <member refid="class_r_d_e_1_1_particle_system_1a4e596c57e3433654c477c35bb2e58532" prot="private" virt="non-virtual"><scope>RDE::ParticleSystem</scope><name>isPlaying</name></member>
+      <member refid="class_r_d_e_1_1_particle_system_1a462d155ee0d1ded18bf4b10b7313fd53" prot="public" virt="non-virtual"><scope>RDE::ParticleSystem</scope><name>ParticleSystem</name></member>
+      <member refid="class_r_d_e_1_1_particle_system_1aa705bb3ce5a09b6a263be80cc7023465" prot="public" virt="non-virtual"><scope>RDE::ParticleSystem</scope><name>particleSystemConfig</name></member>
+      <member refid="class_r_d_e_1_1_particle_system_1af8ebfc1d7812a43ed461cf60e0327d84" prot="public" virt="non-virtual"><scope>RDE::ParticleSystem</scope><name>pause</name></member>
+      <member refid="class_r_d_e_1_1_particle_system_1a6504185312aadf00363c8b1a4fc6615d" prot="private" virt="non-virtual"><scope>RDE::ParticleSystem</scope><name>pool</name></member>
+      <member refid="class_r_d_e_1_1_particle_system_1ab4768e0a787d4e889a84908f78d0d329" prot="public" virt="non-virtual"><scope>RDE::ParticleSystem</scope><name>RENDERIZABLE_BASIC_METHODS</name></member>
+      <member refid="class_r_d_e_1_1_particle_system_1a67a609d45abf1be56403e1f058cac14f" prot="public" virt="non-virtual"><scope>RDE::ParticleSystem</scope><name>reset</name></member>
+      <member refid="class_r_d_e_1_1_particle_system_1af955d85dbea694ba17e4d70dcead2bc2" prot="public" virt="non-virtual"><scope>RDE::ParticleSystem</scope><name>stop</name></member>
+      <member refid="class_r_d_e_1_1_particle_system_1a69b154ae7bf5d6956f87ec225e4b14ed" prot="public" virt="non-virtual"><scope>RDE::ParticleSystem</scope><name>update</name></member>
+      <member refid="class_r_d_e_1_1_particle_system_1acd21de9306eb5681a1f7558466f66c98" prot="private" virt="non-virtual"><scope>RDE::ParticleSystem</scope><name>usedParticles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

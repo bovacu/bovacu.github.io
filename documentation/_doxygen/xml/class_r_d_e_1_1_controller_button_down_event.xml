@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_controller_button_down_event" kind="class" language="C++" prot="public">
+    <compoundname>RDE::ControllerButtonDownEvent</compoundname>
+    <basecompoundref refid="class_r_d_e_1_1_event" prot="public" virt="non-virtual">RDE::Event</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_controller_button_down_event_1af79a8f1deece94ee54355f1cf8296699" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11" kindref="member">ControllerButtons</ref></type>
+        <definition>ControllerButtons RDE::ControllerButtonDownEvent::button</definition>
+        <argsstring></argsstring>
+        <name>button</name>
+        <qualifiedname>RDE::ControllerButtonDownEvent::button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="56" column="31" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_button_down_event_1aa69255b772e28e8a15413af70e8728be" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::ControllerButtonDownEvent::ControllerButtonDownEvent</definition>
+        <argsstring>(ControllerButtons _button)</argsstring>
+        <name>ControllerButtonDownEvent</name>
+        <qualifiedname>RDE::ControllerButtonDownEvent::ControllerButtonDownEvent</qualifiedname>
+        <param>
+          <type><ref refid="namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11" kindref="member">ControllerButtons</ref></type>
+          <declname>_button</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="59" column="22" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_button_down_event_1a21453da13381202e3c2c75d237b0fa46" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11" kindref="member">ControllerButtons</ref></type>
+        <definition>ControllerButtons RDE::ControllerButtonDownEvent::getButton</definition>
+        <argsstring>() const</argsstring>
+        <name>getButton</name>
+        <qualifiedname>RDE::ControllerButtonDownEvent::getButton</qualifiedname>
+        <briefdescription>
+<para>Returns the pressed button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>GamePadButtons </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="65" column="39" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_button_down_event_1aeadfe1d15108bf92c1ac56cd4202b6dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::ControllerButtonDownEvent::toString</definition>
+        <argsstring>() const override</argsstring>
+        <name>toString</name>
+        <qualifiedname>RDE::ControllerButtonDownEvent::toString</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a2ad3c2a15cf1a3d619cfada8dbf02638">toString</reimplements>
+        <briefdescription>
+<para>Returns all the event in form of string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="67" column="26" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_button_down_event_1a85c174b30a3e0b4b951bd3a52bdfdb91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref></type>
+        <definition>EventType RDE::ControllerButtonDownEvent::getEventType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getEventType</name>
+        <qualifiedname>RDE::ControllerButtonDownEvent::getEventType</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a17812fdef1f1bc1517e7658cbdf8ba3b">getEventType</reimplements>
+        <briefdescription>
+<para>Returns the event type from the current object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>EventType </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="74" column="24" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_button_down_event_1a44818b6022e996c140beb241967e026e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char * RDE::ControllerButtonDownEvent::getName</definition>
+        <argsstring>() const override</argsstring>
+        <name>getName</name>
+        <qualifiedname>RDE::ControllerButtonDownEvent::getName</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a3ea36fb9accc90c88c34d946515724a9">getName</reimplements>
+        <briefdescription>
+<para>Returns the event name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const char* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="75" column="25" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_button_down_event_1a81093cd460064ef577d9de09eeccd286" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int RDE::ControllerButtonDownEvent::getCategoryFlags</definition>
+        <argsstring>() const override</argsstring>
+        <name>getCategoryFlags</name>
+        <qualifiedname>RDE::ControllerButtonDownEvent::getCategoryFlags</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a1578cfc2a5212ffb46108acf3b6c51fd">getCategoryFlags</reimplements>
+        <briefdescription>
+<para>Returns the categories of an event condensed on a single int. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="76" column="18" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_controller_button_down_event_1a643c7b63a4dfcaebac48eca5a0c054b2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref></type>
+        <definition>static EventType RDE::ControllerButtonDownEvent::getStaticType</definition>
+        <argsstring>()</argsstring>
+        <name>getStaticType</name>
+        <qualifiedname>RDE::ControllerButtonDownEvent::getStaticType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="73" column="30" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RDE::ControllerButtonDownEvent</label>
+        <link refid="class_r_d_e_1_1_controller_button_down_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::Event</label>
+        <link refid="class_r_d_e_1_1_event"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RDE::ControllerButtonDownEvent</label>
+        <link refid="class_r_d_e_1_1_controller_button_down_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::Event</label>
+        <link refid="class_r_d_e_1_1_event"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/eventSystem/ControllerEvent.h" line="54" column="5" bodyfile="engine/include/core/systems/eventSystem/ControllerEvent.h" bodystart="54" bodyend="77"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_controller_button_down_event_1af79a8f1deece94ee54355f1cf8296699" prot="private" virt="non-virtual"><scope>RDE::ControllerButtonDownEvent</scope><name>button</name></member>
+      <member refid="class_r_d_e_1_1_controller_button_down_event_1aa69255b772e28e8a15413af70e8728be" prot="public" virt="non-virtual"><scope>RDE::ControllerButtonDownEvent</scope><name>ControllerButtonDownEvent</name></member>
+      <member refid="class_r_d_e_1_1_controller_button_down_event_1a21453da13381202e3c2c75d237b0fa46" prot="public" virt="non-virtual"><scope>RDE::ControllerButtonDownEvent</scope><name>getButton</name></member>
+      <member refid="class_r_d_e_1_1_controller_button_down_event_1a81093cd460064ef577d9de09eeccd286" prot="public" virt="virtual"><scope>RDE::ControllerButtonDownEvent</scope><name>getCategoryFlags</name></member>
+      <member refid="class_r_d_e_1_1_controller_button_down_event_1a85c174b30a3e0b4b951bd3a52bdfdb91" prot="public" virt="virtual"><scope>RDE::ControllerButtonDownEvent</scope><name>getEventType</name></member>
+      <member refid="class_r_d_e_1_1_controller_button_down_event_1a44818b6022e996c140beb241967e026e" prot="public" virt="virtual"><scope>RDE::ControllerButtonDownEvent</scope><name>getName</name></member>
+      <member refid="class_r_d_e_1_1_controller_button_down_event_1a643c7b63a4dfcaebac48eca5a0c054b2" prot="public" virt="non-virtual"><scope>RDE::ControllerButtonDownEvent</scope><name>getStaticType</name></member>
+      <member refid="class_r_d_e_1_1_event_1a372a2b0c1a05c7f8b7e48bfbac7042d0" prot="public" virt="non-virtual"><scope>RDE::ControllerButtonDownEvent</scope><name>handled</name></member>
+      <member refid="class_r_d_e_1_1_event_1a853416fc3754e4052bf7f24d081f82fd" prot="public" virt="non-virtual"><scope>RDE::ControllerButtonDownEvent</scope><name>isInCategory</name></member>
+      <member refid="class_r_d_e_1_1_controller_button_down_event_1aeadfe1d15108bf92c1ac56cd4202b6dd" prot="public" virt="virtual"><scope>RDE::ControllerButtonDownEvent</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

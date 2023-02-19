@@ -1,0 +1,14 @@
+.. _exhale_define__core_8h_1a0071776d348b01fa3df01457867045f3:
+
+Define TEXTURE_FRAGMENT_SHADER_CORE
+===================================
+
+- Defined in :ref:`file_engine_include_core_Core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: TEXTURE_FRAGMENT_SHADER_CORE
+   :project: My Project

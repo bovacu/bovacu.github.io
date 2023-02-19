@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespace_r_d_e_1_1_util_1_1_texture" kind="namespace" language="C++">
+    <compoundname>RDE::Util::Texture</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_functions_8h_1aef32aa2fb6751a40db1691ef025cda58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int RDE::Util::Texture::invertSDLSurface</definition>
+        <argsstring>(SDL_Surface *surface)</argsstring>
+        <name>invertSDLSurface</name>
+        <qualifiedname>RDE::Util::Texture::invertSDLSurface</qualifiedname>
+        <param>
+          <type>SDL_Surface *</type>
+          <declname>surface</declname>
+        </param>
+        <briefdescription>
+<para>SDL2 loads the texture backwards so this returns it to its normal state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>surface</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SDL2 surface needed to load the texture. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="501" column="24" bodyfile="engine/include/core/util/Functions.h" bodystart="501" bodyend="554"/>
+      </memberdef>
+      <memberdef kind="function" id="_functions_8h_1a845f117393c352abe7f353dabe834e28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SDL_Surface *</type>
+        <definition>SDL_Surface * RDE::Util::Texture::getSDLSurface</definition>
+        <argsstring>(const std::string &amp;_pathToFile, int _changeFormat=-1)</argsstring>
+        <name>getSDLSurface</name>
+        <qualifiedname>RDE::Util::Texture::getSDLSurface</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_pathToFile</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_changeFormat</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Generates and SDL2 surface to work with the texture when loading it. Remember to free the surface! </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_imageFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw data of the SpriteSheet. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_pathToFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SDL_Surface* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Functions.h" line="562" column="32" bodyfile="engine/include/core/util/Functions.h" bodystart="562" bodyend="592"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/util/Functions.h" line="495" column="1"/>
+  </compounddef>
+</doxygen>

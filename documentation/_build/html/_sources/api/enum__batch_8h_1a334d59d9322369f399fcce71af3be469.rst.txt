@@ -1,0 +1,14 @@
+.. _exhale_enum__batch_8h_1a334d59d9322369f399fcce71af3be469:
+
+Enum BatchPriority
+==================
+
+- Defined in :ref:`file_engine_include_core_render_elements_Batch.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: BatchPriority
+   :project: My Project

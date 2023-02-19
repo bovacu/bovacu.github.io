@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Shader &mdash; RDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class ShaderManager" href="class_r_d_e_1_1_shader_manager.html" />
+    <link rel="prev" title="Class SceneManager" href="class_r_d_e_1_1_scene_manager.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            RDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="struct_component_base.html">Struct ComponentBase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_active.html">Struct Active</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_animation_node.html">Struct AnimationNode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_animation_transition.html">Struct AnimationTransition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_atlas.html">Struct Atlas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_canvas_element.html">Struct CanvasElement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_canvas_event_stopper.html">Struct CanvasEventStopper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_char_info.html">Struct CharInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_color.html">Struct Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_command.html">Struct Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_common_u_i_config.html">Struct CommonUIConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_controller.html">Struct Controller</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_debug_options.html">Struct DebugOptions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_delegate.html">Template Struct Delegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct Delegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_event.html">Struct DisabledForEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_fixed_update.html">Struct DisabledForFixedUpdate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_late_update.html">Struct DisabledForLateUpdate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_render.html">Struct DisabledForRender</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_update.html">Struct DisabledForUpdate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_draw_and_flush_data.html">Struct DrawAndFlushData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_dynamic_sprite_renderer_config.html">Struct DynamicSpriteRendererConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_effect___controllers.html">Struct Effect_Controllers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_file.html">Template Struct File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_font_manager_1_1_font_handler.html">Struct FontManager::FontHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_frame_buffer_specification.html">Struct FrameBufferSpecification</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_generation_settings.html">Struct GenerationSettings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_config.html">Struct LocalizationConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_info.html">Struct LocalizationInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_manager_1_1_any.html">Struct LocalizationManager::Any</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_mat2.html">Struct Mat2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_music.html">Struct Music</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_nine_slice.html">Struct NineSlice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_node.html">Struct Node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_node___json_pair.html">Struct Node_JsonPair</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_noise_map.html">Struct NoiseMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_open_g_l_vertex.html">Struct OpenGLVertex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_open_g_l_vertex_debug.html">Struct OpenGLVertexDebug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_data.html">Struct ParticleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_callbacks_config.html">Struct ParticleSystemCallbacksConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_color_gradient_config.html">Struct ParticleSystemColorGradientConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_config.html">Struct ParticleSystemConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_data_config.html">Struct ParticleSystemDataConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_body.html">Struct PhysicsBody</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_body_config.html">Struct PhysicsBodyConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_collision_callbacks.html">Struct PhysicsCollisionCallbacks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_shape.html">Struct PhysicsShape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_probability.html">Struct Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_procedural_map.html">Struct ProceduralMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config.html">Struct RDEConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties.html">Struct RDEConfig::ProjectProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties.html">Struct RDEConfig::WindowProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rect.html">Template Struct Rect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rendering_tree_data.html">Struct RenderingTreeData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_renderizable_inner_data.html">Struct RenderizableInnerData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_renderizable_inner_data_u_i.html">Struct RenderizableInnerDataUI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_return_delegate.html">Template Struct ReturnDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct ReturnDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rolling_buffer.html">Struct RollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_scrolling_buffer.html">Struct ScrollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sfx.html">Struct Sfx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_shape_config.html">Struct ShapeConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_shape_masking_config.html">Struct ShapeMaskingConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sound.html">Struct Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sprite_renderer_config.html">Struct SpriteRendererConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_state.html">Struct State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_stub.html">Template Struct Stub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_stub_3_01_r_07_args_8_8_8_08_4.html">Template Struct Stub&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_tag.html">Struct Tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_text_renderer_1_1_line_info.html">Struct TextRenderer::LineInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_text_renderer_config.html">Struct TextRendererConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_texture_info.html">Struct TextureInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_anchor.html">Struct UIAnchor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_button_config.html">Struct UIButtonConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_checkbox_config.html">Struct UICheckboxConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_image_config.html">Struct UIImageConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_input_config.html">Struct UIInputConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_panel_config.html">Struct UIPanelConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_slider_config.html">Struct UISliderConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_text_1_1_line_info.html">Struct UIText::LineInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_text_config.html">Struct UITextConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_transform.html">Struct UITransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_unique_delegate.html">Template Struct UniqueDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_unique_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct UniqueDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_updatable_data.html">Struct UpdatableData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vec2.html">Template Struct Vec2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vertex_config.html">Struct VertexConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vibration_config.html">Struct VibrationConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_animation.html">Class Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_animation_system.html">Class AnimationSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_bad_delegate_call.html">Class BadDelegateCall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_bad_e_c_s_system_swap.html">Class BadECSSystemSwap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_basic_perlin_noise.html">Template Class BasicPerlinNoise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_batch.html">Class Batch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_camera.html">Class Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_canvas.html">Class Canvas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_cellular_automata.html">Class CellularAutomata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_clock.html">Class Clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_config_manager.html">Class ConfigManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_console.html">Class Console</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_axis_moved_event.html">Class ControllerAxisMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_button_down_event.html">Class ControllerButtonDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_button_up_event.html">Class ControllerButtonUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_input.html">Class ControllerInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_vibration_manager.html">Class ControllerVibrationManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html">Class CPUTexture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_debug_shape.html">Class DebugShape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_delta.html">Class Delta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_dynamic_sprite_renderer.html">Class DynamicSpriteRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_e_c_s_manager.html">Class ECSManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_e_c_s_system.html">Class ECSSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_engine.html">Class Engine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event.html">Class Event</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_bus.html">Template Class EventBus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_bus_1_1_handler_id.html">Class EventBus::HandlerId</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_dispatcher.html">Class EventDispatcher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_file_handler.html">Class FileHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_file_manager.html">Class FileManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_font.html">Class Font</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_font_manager.html">Class FontManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_frame_buffer.html">Class FrameBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_graph.html">Class Graph</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_im_gui_scene.html">Class ImGuiScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_input.html">Class Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_input_manager.html">Class InputManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_keyboard_input.html">Class KeyboardInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_event.html">Class KeyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_pressed_event.html">Class KeyPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_released_event.html">Class KeyReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_typed_event.html">Class KeyTypedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_load_vertex_config_not_invoked.html">Class LoadVertexConfigNotInvoked</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_localization_manager.html">Class LocalizationManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_manager.html">Class Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_map_generator.html">Class MapGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_input.html">Class MobileInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_down_event.html">Class MobileTouchDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_moved_event.html">Class MobileTouchMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_up_event.html">Class MobileTouchUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_event.html">Class MouseButtonEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_pressed_event.html">Class MouseButtonPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_released_event.html">Class MouseButtonReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_input.html">Class MouseInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_moved_event.html">Class MouseMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_scrolled_event.html">Class MouseScrolledEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_particle_system.html">Class ParticleSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_perlin_noise_manager.html">Class PerlinNoiseManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_physics_manager.html">Class PhysicsManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_platform.html">Class Platform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_pool.html">Template Class Pool</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_profiler.html">Class Profiler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_random.html">Class Random</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_render_manager.html">Class RenderManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_scene.html">Class Scene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_scene_manager.html">Class SceneManager</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class Shader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_shader_manager.html">Class ShaderManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sound_manager.html">Class SoundManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_batch.html">Class SpriteBatch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_batch_1_1_debug.html">Class SpriteBatch::Debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_renderer.html">Class SpriteRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_text_renderer.html">Class TextRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_text_typed_event.html">Class TextTypedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_texture.html">Class Texture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_texture_atlas_manager.html">Class TextureAtlasManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_transform.html">Class Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_transition_params.html">Class TransitionParams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_button.html">Class UIButton</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_checkbox.html">Class UICheckbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_image.html">Class UIImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_input.html">Class UIInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_interactable.html">Class UIInteractable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_mask.html">Class UIMask</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_panel.html">Class UIPanel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_slider.html">Class UISlider</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_text.html">Class UIText</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_view_port.html">Class ViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window.html">Class Window</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_closed_event.html">Class WindowClosedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_display_changed_event.html">Class WindowDisplayChangedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_frame_event.html">Class WindowFrameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_input.html">Class WindowInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_minimized_event.html">Class WindowMinimizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_moved_event.html">Class WindowMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_render_event.html">Class WindowRenderEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_resized_event.html">Class WindowResizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_update_event.html">Class WindowUpdateEvent</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="library_root.html">Library API</a></li>
+      <li class="breadcrumb-item active">Class Shader</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/class_r_d_e_1_1_shader.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-shader">
+<span id="exhale-class-class-r-d-e-1-1-shader"></span><h1>Class Shader<a class="headerlink" href="#class-shader" title="Permalink to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_engine_include_core_render_elements_Shader.h.html#file-engine-include-core-render-elements-shader-h"><span class="std std-ref">File Shader.h</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE6ShaderE">
+<span id="_CPPv3N3RDE6ShaderE"></span><span id="_CPPv2N3RDE6ShaderE"></span><span id="RDE::Shader"></span><span class="target" id="class_r_d_e_1_1_shader"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Shader</span></span></span><a class="headerlink" href="#_CPPv4N3RDE6ShaderE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This class represents the <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> program compiled and stored in the GPU. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE6Shader6ShaderEv">
+<span id="_CPPv3N3RDE6Shader6ShaderEv"></span><span id="_CPPv2N3RDE6Shader6ShaderEv"></span><span id="RDE::Shader::Shader"></span><span class="target" id="class_r_d_e_1_1_shader_1a61515c8b6cb5787d6d085db5536c28f2"></span><span class="sig-name descname"><span class="n"><span class="pre">Shader</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Shader6ShaderEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE6ShaderD0Ev">
+<span id="_CPPv3N3RDE6ShaderD0Ev"></span><span id="_CPPv2N3RDE6ShaderD0Ev"></span><span id="RDE::Shader::~Shader"></span><span class="target" id="class_r_d_e_1_1_shader_1a24e172a2b494e30864f1ede3d955d5d9"></span><span class="sig-name descname"><span class="n"><span class="pre">~Shader</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6ShaderD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE6Shader13loadFromFilesERKNSt6stringERKNSt6stringEP11FileManager">
+<span id="_CPPv3N3RDE6Shader13loadFromFilesERKNSt6stringERKNSt6stringEP11FileManager"></span><span id="_CPPv2N3RDE6Shader13loadFromFilesERKNSt6stringERKNSt6stringEP11FileManager"></span><span id="RDE::Shader::loadFromFiles__ssCR.ssCR.FileManagerP"></span><span class="target" id="class_r_d_e_1_1_shader_1ada40e73ca060a0d38e618f536e32a6f1"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadFromFiles</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_vertex</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_fragment</span></span>, <a class="reference internal" href="class_r_d_e_1_1_file_manager.html#_CPPv4N3RDE11FileManagerE" title="RDE::FileManager"><span class="n"><span class="pre">FileManager</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_fileManager</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Shader13loadFromFilesERKNSt6stringERKNSt6stringEP11FileManager" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Loads a <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> from a file. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_vertex</strong> – Vertex <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> </p></li>
+<li><p><strong>_fragment</strong> – Fragment <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ID of the <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> on the GPU </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE6Shader15loadFromStringsERKNSt6stringERKNSt6stringE">
+<span id="_CPPv3N3RDE6Shader15loadFromStringsERKNSt6stringERKNSt6stringE"></span><span id="_CPPv2N3RDE6Shader15loadFromStringsERKNSt6stringERKNSt6stringE"></span><span id="RDE::Shader::loadFromStrings__ssCR.ssCR"></span><span class="target" id="class_r_d_e_1_1_shader_1a992a722745eddbf893a6f83c67029828"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadFromStrings</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_vertex</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_fragment</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Shader15loadFromStringsERKNSt6stringERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Loads a <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> from a string. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_vertex</strong> – Vertex <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> </p></li>
+<li><p><strong>_fragment</strong> – Fragment <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ID of the <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> on the GPU </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE6Shader16loadVertexConfigERKNSt6vectorI12VertexConfigEEKNSt6vectorIPKcEEi">
+<span id="_CPPv3N3RDE6Shader16loadVertexConfigERKNSt6vectorI12VertexConfigEEKNSt6vectorIPKcEEi"></span><span id="_CPPv2N3RDE6Shader16loadVertexConfigERKNSt6vectorI12VertexConfigEEKNSt6vectorIPKcEEi"></span><span id="RDE::Shader::loadVertexConfig__std::vector:VertexConfig:CR.std::vector:cCP:C.i"></span><span class="target" id="class_r_d_e_1_1_shader_1a8285f69e8d673b6088e09ae46d6ce0bd"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadVertexConfig</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="struct_r_d_e_1_1_vertex_config.html#_CPPv4N3RDE12VertexConfigE" title="RDE::VertexConfig"><span class="n"><span class="pre">VertexConfig</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_verticesConfig</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_uniforms</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_maxIndicesPerDrawCall</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Shader16loadVertexConfigERKNSt6vectorI12VertexConfigEEKNSt6vectorIPKcEEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Loads the data structure that is going to be sent to the GPU. This method MUST be called. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3RDE6Shader11getShaderIDEv">
+<span id="_CPPv3NK3RDE6Shader11getShaderIDEv"></span><span id="_CPPv2NK3RDE6Shader11getShaderIDEv"></span><span id="RDE::Shader::getShaderIDC"></span><span class="target" id="class_r_d_e_1_1_shader_1a1aff2d31e9ce64100f8ba0ac0afc060d"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getShaderID</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader11getShaderIDEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the ID of the <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> on the GPU. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>uint </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3RDE6Shader19getDynamicShaderVAOEv">
+<span id="_CPPv3NK3RDE6Shader19getDynamicShaderVAOEv"></span><span id="_CPPv2NK3RDE6Shader19getDynamicShaderVAOEv"></span><span id="RDE::Shader::getDynamicShaderVAOC"></span><span class="target" id="class_r_d_e_1_1_shader_1af20661a9f8ff098226b0f5997b8a1c6c"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDynamicShaderVAO</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader19getDynamicShaderVAOEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the ID of the dynamic drawing VAO on the GPU. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>uint </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3RDE6Shader19getDynamicShaderIBOEv">
+<span id="_CPPv3NK3RDE6Shader19getDynamicShaderIBOEv"></span><span id="_CPPv2NK3RDE6Shader19getDynamicShaderIBOEv"></span><span id="RDE::Shader::getDynamicShaderIBOC"></span><span class="target" id="class_r_d_e_1_1_shader_1a9d78918ccc8c0015dc8f618c9ed224c2"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDynamicShaderIBO</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader19getDynamicShaderIBOEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the ID of the dynamic drawing IBO on the GPU. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>uint </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3RDE6Shader19getDynamicShaderVBOEv">
+<span id="_CPPv3NK3RDE6Shader19getDynamicShaderVBOEv"></span><span id="_CPPv2NK3RDE6Shader19getDynamicShaderVBOEv"></span><span id="RDE::Shader::getDynamicShaderVBOC"></span><span class="target" id="class_r_d_e_1_1_shader_1a22fe772aa067a6ae77100408924f1e3e"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDynamicShaderVBO</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader19getDynamicShaderVBOEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the ID of the dynamic drawing VBO on the GPU. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>uint </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3RDE6Shader18getStaticShaderVAOEv">
+<span id="_CPPv3NK3RDE6Shader18getStaticShaderVAOEv"></span><span id="_CPPv2NK3RDE6Shader18getStaticShaderVAOEv"></span><span id="RDE::Shader::getStaticShaderVAOC"></span><span class="target" id="class_r_d_e_1_1_shader_1a6a725effeb4ef64ea3ab242c1a53f2c0"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getStaticShaderVAO</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader18getStaticShaderVAOEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the ID of the static drawing VAO on the GPU. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>uint </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3RDE6Shader18getStaticShaderIBOEv">
+<span id="_CPPv3NK3RDE6Shader18getStaticShaderIBOEv"></span><span id="_CPPv2NK3RDE6Shader18getStaticShaderIBOEv"></span><span id="RDE::Shader::getStaticShaderIBOC"></span><span class="target" id="class_r_d_e_1_1_shader_1a5a209b937e761100692b38b94afe810e"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getStaticShaderIBO</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader18getStaticShaderIBOEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the ID of the static drawing IBO on the GPU. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>uint </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3RDE6Shader18getStaticShaderVBOEv">
+<span id="_CPPv3NK3RDE6Shader18getStaticShaderVBOEv"></span><span id="_CPPv2NK3RDE6Shader18getStaticShaderVBOEv"></span><span id="RDE::Shader::getStaticShaderVBOC"></span><span class="target" id="class_r_d_e_1_1_shader_1a60bd56ad8dbbeeec25d5feb7b7687850"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getStaticShaderVBO</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader18getStaticShaderVBOEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the ID of the static drawing VBO on the GPU. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>uint </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3RDE6Shader23getShaderVertexDataSizeEv">
+<span id="_CPPv3NK3RDE6Shader23getShaderVertexDataSizeEv"></span><span id="_CPPv2NK3RDE6Shader23getShaderVertexDataSizeEv"></span><span id="RDE::Shader::getShaderVertexDataSizeC"></span><span class="target" id="class_r_d_e_1_1_shader_1a536ee9675f4277e1e71c3eb6e16c1ecc"></span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getShaderVertexDataSize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader23getShaderVertexDataSizeEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the size of the VertexData structure in bytes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>long </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE6Shader20setUniformValueFloatEPKc14RDE_UNIFORM_FVP7GLfloat9GLboolean">
+<span id="_CPPv3N3RDE6Shader20setUniformValueFloatEPKc14RDE_UNIFORM_FVP7GLfloat9GLboolean"></span><span id="_CPPv2N3RDE6Shader20setUniformValueFloatEPKc14RDE_UNIFORM_FVP7GLfloat9GLboolean"></span><span id="RDE::Shader::setUniformValueFloat__cCP.RDE_UNIFORM_FV.GLfloatP.GLboolean"></span><span class="target" id="class_r_d_e_1_1_shader_1a6b70d75548334c0a686e5bc97f3e2684"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setUniformValueFloat</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_uniformName</span></span>, <a class="reference internal" href="enum_namespace_r_d_e_1a95da56214350f01c5f94f8e37195cc6d.html#_CPPv4N3RDE14RDE_UNIFORM_FVE" title="RDE::RDE_UNIFORM_FV"><span class="n"><span class="pre">RDE_UNIFORM_FV</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_type</span></span>, <span class="n"><span class="pre">GLfloat</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_data</span></span>, <span class="n"><span class="pre">GLboolean</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_transpose</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">GL_FALSE</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Shader20setUniformValueFloatEPKc14RDE_UNIFORM_FVP7GLfloat9GLboolean" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the value of an existing uniform. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_uniformName</strong> – The name of the uniform in the shader </p></li>
+<li><p><strong>_type</strong> – The type of uniform we are setting, check RDE_UNIFORM_FV enum options </p></li>
+<li><p><strong>_data</strong> – The actual data to send </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE6Shader18setUniformValueIntEPKc14RDE_UNIFORM_IVP5GLint">
+<span id="_CPPv3N3RDE6Shader18setUniformValueIntEPKc14RDE_UNIFORM_IVP5GLint"></span><span id="_CPPv2N3RDE6Shader18setUniformValueIntEPKc14RDE_UNIFORM_IVP5GLint"></span><span id="RDE::Shader::setUniformValueInt__cCP.RDE_UNIFORM_IV.GLintP"></span><span class="target" id="class_r_d_e_1_1_shader_1acfd68c78402a4ea830cf1d821178b982"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setUniformValueInt</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_uniformName</span></span>, <a class="reference internal" href="enum_namespace_r_d_e_1aa442da21122dddd6a8856e0bfc24c86e.html#_CPPv4N3RDE14RDE_UNIFORM_IVE" title="RDE::RDE_UNIFORM_IV"><span class="n"><span class="pre">RDE_UNIFORM_IV</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_type</span></span>, <span class="n"><span class="pre">GLint</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_data</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Shader18setUniformValueIntEPKc14RDE_UNIFORM_IVP5GLint" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the value of an existing uniform. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_uniformName</strong> – The name of the uniform in the shader </p></li>
+<li><p><strong>_type</strong> – The type of uniform we are setting, check RDE_UNIFORM_IV enum options </p></li>
+<li><p><strong>_data</strong> – The actual data to send </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE6Shader19setUniformValueUIntEPKc15RDE_UNIFORM_UIVP6GLuint">
+<span id="_CPPv3N3RDE6Shader19setUniformValueUIntEPKc15RDE_UNIFORM_UIVP6GLuint"></span><span id="_CPPv2N3RDE6Shader19setUniformValueUIntEPKc15RDE_UNIFORM_UIVP6GLuint"></span><span id="RDE::Shader::setUniformValueUInt__cCP.RDE_UNIFORM_UIV.GLuintP"></span><span class="target" id="class_r_d_e_1_1_shader_1a562eaae722942a4d315bc7297693bda7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setUniformValueUInt</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_uniformName</span></span>, <a class="reference internal" href="enum_namespace_r_d_e_1a5eba8c0bb1379fa821c063ddade77d8d.html#_CPPv4N3RDE15RDE_UNIFORM_UIVE" title="RDE::RDE_UNIFORM_UIV"><span class="n"><span class="pre">RDE_UNIFORM_UIV</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_type</span></span>, <span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_data</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Shader19setUniformValueUIntEPKc15RDE_UNIFORM_UIVP6GLuint" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the value of an existing uniform. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_uniformName</strong> – The name of the uniform in the shader </p></li>
+<li><p><strong>_type</strong> – The type of uniform we are setting, check RDE_UNIFORM_UIV enum options </p></li>
+<li><p><strong>_data</strong> – The actual data to send </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="class_r_d_e_1_1_scene_manager.html" class="btn btn-neutral float-left" title="Class SceneManager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="class_r_d_e_1_1_shader_manager.html" class="btn btn-neutral float-right" title="Class ShaderManager" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

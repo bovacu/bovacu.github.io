@@ -1,0 +1,506 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_u_i_text_8h" kind="file" language="C++">
+    <compoundname>UIText.h</compoundname>
+    <includes refid="_u_i_8h" local="yes">core/graph/components/ui/UI.h</includes>
+    <includes refid="_i_renderizable_8h" local="yes">core/render/elements/IRenderizable.h</includes>
+    <includes refid="_font_manager_8h" local="yes">core/systems/uiSystem/FontManager.h</includes>
+    <includedby refid="_r_d_e_8h" local="yes">engine/include/RDE.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>core/Core.h</label>
+        <link refid="_core_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>core/graph/components/ComponentBase.h</label>
+        <link refid="_component_base_8h_source"/>
+      </node>
+      <node id="46">
+        <label>core/graph/components/Transform.h</label>
+        <link refid="_transform_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>core/graph/components/ui/UI.h</label>
+        <link refid="_u_i_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/graph/components/ui/UIText.h</label>
+        <link refid="_u_i_text_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>core/platform/PlatformHeaderSDL.h</label>
+        <link refid="_platform_header_s_d_l_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>core/platform/PlatformHeaderSDLImage.h</label>
+        <link refid="_platform_header_s_d_l_image_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>core/render/elements/Batch.h</label>
+        <link refid="_batch_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>core/render/elements/IRenderizable.h</label>
+        <link refid="_i_renderizable_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Shader.h</label>
+        <link refid="_shader_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>core/render/elements/ShaderManager.h</label>
+        <link refid="_shader_manager_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>core/render/elements/Texture.h</label>
+        <link refid="_texture_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>core/render/elements/Vertex.h</label>
+        <link refid="_vertex_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>core/systems/fileSystem/FileManager.h</label>
+        <link refid="_file_manager_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>core/systems/inputSystem/keysAndButtons/ControllerButtons.h</label>
+        <link refid="_controller_buttons_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>core/systems/inputSystem/keysAndButtons/KeyboardKeys.h</label>
+        <link refid="_keyboard_keys_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>core/systems/inputSystem/keysAndButtons/MouseKeys.h</label>
+        <link refid="_mouse_keys_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>core/systems/uiSystem/FontManager.h</label>
+        <link refid="_font_manager_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Clock.h</label>
+        <link refid="_clock_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>core/util/Color.h</label>
+        <link refid="_color_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Delegate.h</label>
+        <link refid="_delegate_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Delta.h</label>
+        <link refid="_delta_8h_source"/>
+      </node>
+      <node id="26">
+        <label>Functions.h</label>
+        <link refid="_functions_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Random.h</label>
+        <link refid="_random_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>core/util/Rect.h</label>
+        <link refid="_rect_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>core/util/Util.h</label>
+        <link refid="_util_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Vec.h</label>
+        <link refid="_vec_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>SDL.h</label>
+      </node>
+      <node id="30">
+        <label>SDL2/SDL_image.h</label>
+      </node>
+      <node id="33">
+        <label>algorithm</label>
+      </node>
+      <node id="32">
+        <label>chrono</label>
+      </node>
+      <node id="11">
+        <label>cmath</label>
+      </node>
+      <node id="19">
+        <label>cstdint</label>
+      </node>
+      <node id="3">
+        <label>entt/entity/entity.hpp</label>
+      </node>
+      <node id="23">
+        <label>exception</label>
+      </node>
+      <node id="55">
+        <label>freetype/freetype.h</label>
+      </node>
+      <node id="54">
+        <label>ft2build.h</label>
+      </node>
+      <node id="24">
+        <label>functional</label>
+      </node>
+      <node id="14">
+        <label>glad/glad.h</label>
+      </node>
+      <node id="43">
+        <label>glm/ext/matrix_float4x4.hpp</label>
+      </node>
+      <node id="47">
+        <label>glm/ext/matrix_transform.hpp</label>
+      </node>
+      <node id="12">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="48">
+        <label>glm/gtc/quaternion.hpp</label>
+      </node>
+      <node id="40">
+        <label>glm/vec2.hpp</label>
+      </node>
+      <node id="41">
+        <label>glm/vec3.hpp</label>
+      </node>
+      <node id="42">
+        <label>glm/vec4.hpp</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="36">
+        <label>map</label>
+      </node>
+      <node id="35">
+        <label>memory</label>
+      </node>
+      <node id="10">
+        <label>ostream</label>
+      </node>
+      <node id="21">
+        <label>random</label>
+      </node>
+      <node id="31">
+        <label>sstream</label>
+      </node>
+      <node id="38">
+        <label>string</label>
+      </node>
+      <node id="25">
+        <label>unordered_map</label>
+      </node>
+      <node id="34">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>engine/include/RDE.h</label>
+        <link refid="_r_d_e_8h_source"/>
+      </node>
+      <node id="1">
+        <label>engine/include/core/graph/components/ui/UIText.h</label>
+        <link refid="_u_i_text_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_r_d_e_1_1_u_i_text_config" prot="public">RDE::UITextConfig</innerclass>
+    <innerclass refid="class_r_d_e_1_1_u_i_text" prot="public">RDE::UIText</innerclass>
+    <innerclass refid="struct_r_d_e_1_1_u_i_text_1_1_line_info" prot="protected">RDE::UIText::LineInfo</innerclass>
+    <innernamespace refid="namespace_r_d_e">RDE</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>borja<sp/>on<sp/>10/26/22.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RDE_UI_TEXT_RENDERER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDE_UI_TEXT_RENDERER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/graph/components/ui/UI.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/render/elements/IRenderizable.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/systems/uiSystem/FontManager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_d_e" kindref="compound">RDE</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Scene;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Canvas;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="struct_r_d_e_1_1_u_i_text_config" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_r_d_e_1_1_u_i_text_config" kindref="compound">UITextConfig</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_common_u_i_config" kindref="compound">CommonUIConfig</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref>*<sp/>font<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Hello<sp/>Duck!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref><sp/>textColor<sp/>=<sp/>Color::White;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_r_d_e_1_1_u_i_text" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_u_i_text" kindref="compound">UIText</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_canvas" kindref="compound">Canvas</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_u_i_button" kindref="compound">UIButton</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_u_i_checkbox" kindref="compound">UICheckbox</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_u_i_input" kindref="compound">UIInput</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34" refid="class_r_d_e_1_1_u_i_text_1a7e36666e4d79417121c5161c63d3b7f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref>*<sp/><ref refid="class_r_d_e_1_1_u_i_text_1a7e36666e4d79417121c5161c63d3b7f4" kindref="member">font</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_r_d_e_1_1_u_i_text_1a6432b0ec9ddd8b05610fd8c902509eda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_r_d_e_1_1_u_i_text_1a6432b0ec9ddd8b05610fd8c902509eda" kindref="member">innerText</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_r_d_e_1_1_u_i_text_1a02bec38b1e4d1513fce17b4be643054d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/><ref refid="class_r_d_e_1_1_u_i_text_1a02bec38b1e4d1513fce17b4be643054d" kindref="member">textSize</ref><sp/>{};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_r_d_e_1_1_u_i_text_1a762e860880c99e5622d243e285ff215a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_u_i_text_1a762e860880c99e5622d243e285ff215a" kindref="member">spaceBetweenChars</ref><sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_r_d_e_1_1_u_i_text_1a493b6ae1cfc44e9838cc8ae7d2e076b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_u_i_text_1a493b6ae1cfc44e9838cc8ae7d2e076b8" kindref="member">newLineSize</ref><sp/>=<sp/>1.05f;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_r_d_e_1_1_u_i_text_1a4037c7d83e956ce8d0d78b5a5c743edf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_u_i_text_1a4037c7d83e956ce8d0d78b5a5c743edf" kindref="member">fontSize</ref><sp/>{};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RENDERIZABLE_UI_BASIC_PROPERTIES()</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>public:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>recalcTextDimensions(const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>_text);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="struct_r_d_e_1_1_u_i_text_1_1_line_info" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>struct<sp/><ref refid="struct_r_d_e_1_1_u_i_text_1_1_line_info" kindref="compound">LineInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>line;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>biggestCharHeight;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::tuple&lt;std::vector&lt;LineInfo&gt;,<sp/>float,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;<sp/>calculateLinesInfo(<ref refid="struct_r_d_e_1_1_char_info" kindref="compound">CharInfo</ref>*<sp/>_chars)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_u_i_text" kindref="compound">UIText</ref>(<ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>*<sp/>_node,<sp/><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/><ref refid="class_r_d_e_1_1_canvas" kindref="compound">Canvas</ref>*<sp/>_canvas,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_u_i_text_config" kindref="compound">UITextConfig</ref>&amp;<sp/>_config);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_u_i_text" kindref="compound">UIText</ref>(<ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>*<sp/>_node,<sp/><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref>*<sp/>_manager,<sp/><ref refid="class_r_d_e_1_1_graph" kindref="compound">Graph</ref>*<sp/>_graph,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_u_i_text_config" kindref="compound">UITextConfig</ref>&amp;<sp/>_config);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_u_i_text" kindref="compound">~UIText</ref>()<sp/>{<sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RENDERIZABLE_UI_BASIC_METHODS()</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>setText(const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>_text);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="class_r_d_e_1_1_u_i_text_1afde1ca5e2c3a6557828a1af54e5a6f06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref><sp/><ref refid="class_r_d_e_1_1_u_i_text_1afde1ca5e2c3a6557828a1af54e5a6f06" kindref="member">getTextSize</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="class_r_d_e_1_1_u_i_text_1a05ca2241c83dd2b86becbe46ae4952b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_u_i_text_1a05ca2241c83dd2b86becbe46ae4952b9" kindref="member">setFont</ref>(<ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref>*<sp/>_font);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="class_r_d_e_1_1_u_i_text_1ad7e1bca55463b5aab8568c366448a61d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="class_r_d_e_1_1_font" kindref="compound">Font</ref>*<sp/><ref refid="class_r_d_e_1_1_u_i_text_1ad7e1bca55463b5aab8568c366448a61d" kindref="member">getFont</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="class_r_d_e_1_1_u_i_text_1ad9cd50f553d53bc9c5ec02054746f414" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><ref refid="class_r_d_e_1_1_u_i_text_1ad9cd50f553d53bc9c5ec02054746f414" kindref="member">getText</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="class_r_d_e_1_1_u_i_text_1ad1c81cc33c3efa77b5d0e68d6c33cb77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_u_i_text_1ad1c81cc33c3efa77b5d0e68d6c33cb77" kindref="member">setFontSize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_fontSize);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="class_r_d_e_1_1_u_i_text_1a01d044a663798d1de9bc6bf94cf0b5bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_u_i_text_1a01d044a663798d1de9bc6bf94cf0b5bb" kindref="member">getFontSize</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="class_r_d_e_1_1_u_i_text_1af826bc85cc57712c14d567cc5bc0a4c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_u_i_text_1af826bc85cc57712c14d567cc5bc0a4c0" kindref="member">getSpacesBetweenChars</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="class_r_d_e_1_1_u_i_text_1ad6e81dd46e05480a8a5be186f6220b7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_u_i_text_1ad6e81dd46e05480a8a5be186f6220b7f" kindref="member">setSpacesBetweenChars</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_spaceBetweenChars);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="class_r_d_e_1_1_u_i_text_1ab43539e4f9caeb0bf7856a50db82267f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_u_i_text_1ab43539e4f9caeb0bf7856a50db82267f" kindref="member">getNewLineSize</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>RDE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//RDE_UI_TEXT_RENDERER_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="engine/include/core/graph/components/ui/UIText.h"/>
+  </compounddef>
+</doxygen>

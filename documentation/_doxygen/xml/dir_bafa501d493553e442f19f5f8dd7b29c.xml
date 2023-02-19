@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_bafa501d493553e442f19f5f8dd7b29c" kind="dir">
+    <compoundname>engine/include</compoundname>
+    <innerdir refid="dir_763b58b8e96e0027c9590240b203aff1">engine/include/core</innerdir>
+    <innerfile refid="_r_d_e_8h">RDE.h</innerfile>
+    <innerfile refid="_r_d_e_entry_8h">RDEEntry.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/"/>
+  </compounddef>
+</doxygen>

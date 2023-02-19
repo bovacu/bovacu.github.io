@@ -1,0 +1,14 @@
+.. _exhale_define__clock_8h_1aa81d327c62337048c9f53a9e63b426ae:
+
+Define RDE_CLOCK_H
+==================
+
+- Defined in :ref:`file_engine_include_core_util_Clock.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: RDE_CLOCK_H
+   :project: My Project

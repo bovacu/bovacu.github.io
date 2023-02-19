@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_u_i_slider_config" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::UISliderConfig</compoundname>
+    <basecompoundref refid="struct_r_d_e_1_1_common_u_i_config" prot="public" virt="non-virtual">RDE::CommonUIConfig</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_slider_config_1a289ea7ee2394e8d56ee794691ea67469" prot="public" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>Texture* RDE::UISliderConfig::backgroundBarTexture</definition>
+        <argsstring></argsstring>
+        <name>backgroundBarTexture</name>
+        <qualifiedname>RDE::UISliderConfig::backgroundBarTexture</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="16" column="17" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_slider_config_1a76f7ef6f7cca97945843d1933c5bc142" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::UISliderConfig::backgroundBarColor</definition>
+        <argsstring></argsstring>
+        <name>backgroundBarColor</name>
+        <qualifiedname>RDE::UISliderConfig::backgroundBarColor</qualifiedname>
+        <initializer>= Color::White</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="17" column="15" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_slider_config_1a15a667f66cee481ecb3d86245474517f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::UISliderConfig::barSize</definition>
+        <argsstring></argsstring>
+        <name>barSize</name>
+        <qualifiedname>RDE::UISliderConfig::barSize</qualifiedname>
+        <initializer>= { 256.f, 12.f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="18" column="15" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_slider_config_1af4e03d851278361a7c585103049e4483" prot="public" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>Texture* RDE::UISliderConfig::fillingBarTexture</definition>
+        <argsstring></argsstring>
+        <name>fillingBarTexture</name>
+        <qualifiedname>RDE::UISliderConfig::fillingBarTexture</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="20" column="17" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_slider_config_1ab9c3d42b2792952922ffc48fbe1812a9" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::UISliderConfig::fillingBarColor</definition>
+        <argsstring></argsstring>
+        <name>fillingBarColor</name>
+        <qualifiedname>RDE::UISliderConfig::fillingBarColor</qualifiedname>
+        <initializer>= Color::Green</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="21" column="15" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_slider_config_1a1e12392f305f1349abc8a7acd9a9453b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::UISliderConfig::percentageFilled</definition>
+        <argsstring></argsstring>
+        <name>percentageFilled</name>
+        <qualifiedname>RDE::UISliderConfig::percentageFilled</qualifiedname>
+        <initializer>= 0.25f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="22" column="15" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_slider_config_1a9a75b111e92fe6b1cf3a1196f1b8c3fc" prot="public" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>Texture* RDE::UISliderConfig::handleTexture</definition>
+        <argsstring></argsstring>
+        <name>handleTexture</name>
+        <qualifiedname>RDE::UISliderConfig::handleTexture</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="24" column="17" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_u_i_slider_config_1ae1a3294d056b3b96eab25ebc845f2913" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color RDE::UISliderConfig::handleColor</definition>
+        <argsstring></argsstring>
+        <name>handleColor</name>
+        <qualifiedname>RDE::UISliderConfig::handleColor</qualifiedname>
+        <initializer>= Color::Disabled</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/ui/UISlider.h" line="25" column="15" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RDE::CommonUIConfig</label>
+        <link refid="struct_r_d_e_1_1_common_u_i_config"/>
+      </node>
+      <node id="1">
+        <label>RDE::UISliderConfig</label>
+        <link refid="struct_r_d_e_1_1_u_i_slider_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>RDE::Color</label>
+        <link refid="struct_r_d_e_1_1_color"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>Black</edgelabel>
+          <edgelabel>Blue</edgelabel>
+          <edgelabel>Brown</edgelabel>
+          <edgelabel>Disabled</edgelabel>
+          <edgelabel>Gray</edgelabel>
+          <edgelabel>Green</edgelabel>
+          <edgelabel>Magenta</edgelabel>
+          <edgelabel>NO_COLOR</edgelabel>
+          <edgelabel>Orange</edgelabel>
+          <edgelabel>Placeholder</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::CommonUIConfig</label>
+        <link refid="struct_r_d_e_1_1_common_u_i_config"/>
+      </node>
+      <node id="8">
+        <label>RDE::NineSlice</label>
+        <link refid="struct_r_d_e_1_1_nine_slice"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>subRects</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RDE::Texture</label>
+        <link refid="class_r_d_e_1_1_texture"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>textureSize</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>spriteSheetSize</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>region</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>nineSlice</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RDE::UISliderConfig</label>
+        <link refid="struct_r_d_e_1_1_u_i_slider_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>backgroundBarTexture</edgelabel>
+          <edgelabel>fillingBarTexture</edgelabel>
+          <edgelabel>handleTexture</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>backgroundBarColor</edgelabel>
+          <edgelabel>fillingBarColor</edgelabel>
+          <edgelabel>handleColor</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>barSize</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>RDE::Vec2&lt; T &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+      <node id="6">
+        <label>RDE::Rect&lt; Vec2F &gt;</label>
+        <link refid="struct_r_d_e_1_1_rect"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>bottomLeftCorner</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>RDE::Rect&lt; Vec2I &gt;</label>
+        <link refid="struct_r_d_e_1_1_rect"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>bottomLeftCorner</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RDE::Vec2&lt; float &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+      <node id="5">
+        <label>RDE::Vec2&lt; int &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/graph/components/ui/UISlider.h" line="15" column="5" bodyfile="engine/include/core/graph/components/ui/UISlider.h" bodystart="15" bodyend="26"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_u_i_slider_config_1a76f7ef6f7cca97945843d1933c5bc142" prot="public" virt="non-virtual"><scope>RDE::UISliderConfig</scope><name>backgroundBarColor</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_slider_config_1a289ea7ee2394e8d56ee794691ea67469" prot="public" virt="non-virtual"><scope>RDE::UISliderConfig</scope><name>backgroundBarTexture</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_slider_config_1a15a667f66cee481ecb3d86245474517f" prot="public" virt="non-virtual"><scope>RDE::UISliderConfig</scope><name>barSize</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_slider_config_1ab9c3d42b2792952922ffc48fbe1812a9" prot="public" virt="non-virtual"><scope>RDE::UISliderConfig</scope><name>fillingBarColor</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_slider_config_1af4e03d851278361a7c585103049e4483" prot="public" virt="non-virtual"><scope>RDE::UISliderConfig</scope><name>fillingBarTexture</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_slider_config_1ae1a3294d056b3b96eab25ebc845f2913" prot="public" virt="non-virtual"><scope>RDE::UISliderConfig</scope><name>handleColor</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_slider_config_1a9a75b111e92fe6b1cf3a1196f1b8c3fc" prot="public" virt="non-virtual"><scope>RDE::UISliderConfig</scope><name>handleTexture</name></member>
+      <member refid="struct_r_d_e_1_1_u_i_slider_config_1a1e12392f305f1349abc8a7acd9a9453b" prot="public" virt="non-virtual"><scope>RDE::UISliderConfig</scope><name>percentageFilled</name></member>
+      <member refid="struct_r_d_e_1_1_common_u_i_config_1a9d7646a4577f33c7a933456c2c9f792e" prot="public" virt="non-virtual"><scope>RDE::UISliderConfig</scope><name>stopFurtherClicks</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

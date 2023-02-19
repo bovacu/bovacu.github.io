@@ -1,0 +1,84 @@
+
+.. _file_engine_include_core_Manager.h:
+
+File Manager.h
+==============
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core>` (``engine/include/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/Manager.h``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_Manager.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``core/render/RenderManager.h`` (:ref:`file_engine_include_core_render_RenderManager.h`)
+
+- ``core/render/elements/ShaderManager.h`` (:ref:`file_engine_include_core_render_elements_ShaderManager.h`)
+
+- ``core/render/elements/TextureAtlasManager.h`` (:ref:`file_engine_include_core_render_elements_TextureAtlasManager.h`)
+
+- ``core/systems/configSystem/ConfigManager.h`` (:ref:`file_engine_include_core_systems_configSystem_ConfigManager.h`)
+
+- ``core/systems/console/Console.h`` (:ref:`file_engine_include_core_systems_console_Console.h`)
+
+- ``core/systems/ecsSystem/ECSManager.h`` (:ref:`file_engine_include_core_systems_ecsSystem_ECSManager.h`)
+
+- ``core/systems/fileSystem/FileManager.h`` (:ref:`file_engine_include_core_systems_fileSystem_FileManager.h`)
+
+- ``core/systems/inputSystem/input/ControllerInput.h`` (:ref:`file_engine_include_core_systems_inputSystem_input_ControllerInput.h`)
+
+- ``core/systems/inputSystem/input/Input.h`` (:ref:`file_engine_include_core_systems_inputSystem_input_Input.h`)
+
+- ``core/systems/localization/LocalizationManager.h`` (:ref:`file_engine_include_core_systems_localization_LocalizationManager.h`)
+
+- ``core/systems/physicsSystem/PhysicsManager.h`` (:ref:`file_engine_include_core_systems_physicsSystem_PhysicsManager.h`)
+
+- ``core/systems/soundSystem/SoundManager.h`` (:ref:`file_engine_include_core_systems_soundSystem_SoundManager.h`)
+
+- ``core/systems/uiSystem/FontManager.h`` (:ref:`file_engine_include_core_systems_uiSystem_FontManager.h`)
+
+- ``core/systems/uiSystem/SceneManager.h`` (:ref:`file_engine_include_core_systems_uiSystem_SceneManager.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_core_Engine.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_RDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_r_d_e_1_1_manager`
+

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_window_render_event" kind="class" language="C++" prot="public">
+    <compoundname>RDE::WindowRenderEvent</compoundname>
+    <basecompoundref refid="class_r_d_e_1_1_event" prot="public" virt="non-virtual">RDE::Event</basecompoundref>
+    <includes refid="_window_event_8h" local="no">WindowEvent.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_window_render_event_1a7f83d45009bb3d473ae8f0bbcad888be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string RDE::WindowRenderEvent::toString</definition>
+        <argsstring>() const override</argsstring>
+        <name>toString</name>
+        <qualifiedname>RDE::WindowRenderEvent::toString</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a2ad3c2a15cf1a3d619cfada8dbf02638">toString</reimplements>
+        <briefdescription>
+<para>Returns all the event in form of string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="188" column="26" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="188" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_window_render_event_1ac607703f8384990f7016d9baa3f1d04d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref></type>
+        <definition>EventType RDE::WindowRenderEvent::getEventType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getEventType</name>
+        <qualifiedname>RDE::WindowRenderEvent::getEventType</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a17812fdef1f1bc1517e7658cbdf8ba3b">getEventType</reimplements>
+        <briefdescription>
+<para>Returns the event type from the current object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>EventType </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="196" column="24" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="196" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_window_render_event_1ad70ce63974bab6a072c91110d3bde54a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char * RDE::WindowRenderEvent::getName</definition>
+        <argsstring>() const override</argsstring>
+        <name>getName</name>
+        <qualifiedname>RDE::WindowRenderEvent::getName</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a3ea36fb9accc90c88c34d946515724a9">getName</reimplements>
+        <briefdescription>
+<para>Returns the event name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const char* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="197" column="25" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_window_render_event_1add1d0dfe2df25d75005f5367dff5dfc1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int RDE::WindowRenderEvent::getCategoryFlags</definition>
+        <argsstring>() const override</argsstring>
+        <name>getCategoryFlags</name>
+        <qualifiedname>RDE::WindowRenderEvent::getCategoryFlags</qualifiedname>
+        <reimplements refid="class_r_d_e_1_1_event_1a1578cfc2a5212ffb46108acf3b6c51fd">getCategoryFlags</reimplements>
+        <briefdescription>
+<para>Returns the categories of an event condensed on a single int. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="198" column="18" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="198" bodyend="198"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_window_render_event_1a43b3c3a4da2b9e658cbd306d6182f6c1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_r_d_e_1af739ab5b6aed02ef5ab138f6f9ebe912" kindref="member">EventType</ref></type>
+        <definition>static EventType RDE::WindowRenderEvent::getStaticType</definition>
+        <argsstring>()</argsstring>
+        <name>getStaticType</name>
+        <qualifiedname>RDE::WindowRenderEvent::getStaticType</qualifiedname>
+        <briefdescription>
+<para>Implementation of the rest of the static and virtual methods. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="195" column="30" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="195" bodyend="195"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class represents all of the events that involves rendering the window. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RDE::Event</label>
+        <link refid="class_r_d_e_1_1_event"/>
+      </node>
+      <node id="1">
+        <label>RDE::WindowRenderEvent</label>
+        <link refid="class_r_d_e_1_1_window_render_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>RDE::Event</label>
+        <link refid="class_r_d_e_1_1_event"/>
+      </node>
+      <node id="1">
+        <label>RDE::WindowRenderEvent</label>
+        <link refid="class_r_d_e_1_1_window_render_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/eventSystem/WindowEvent.h" line="186" column="5" bodyfile="engine/include/core/systems/eventSystem/WindowEvent.h" bodystart="186" bodyend="199"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_window_render_event_1add1d0dfe2df25d75005f5367dff5dfc1" prot="public" virt="virtual"><scope>RDE::WindowRenderEvent</scope><name>getCategoryFlags</name></member>
+      <member refid="class_r_d_e_1_1_window_render_event_1ac607703f8384990f7016d9baa3f1d04d" prot="public" virt="virtual"><scope>RDE::WindowRenderEvent</scope><name>getEventType</name></member>
+      <member refid="class_r_d_e_1_1_window_render_event_1ad70ce63974bab6a072c91110d3bde54a" prot="public" virt="virtual"><scope>RDE::WindowRenderEvent</scope><name>getName</name></member>
+      <member refid="class_r_d_e_1_1_window_render_event_1a43b3c3a4da2b9e658cbd306d6182f6c1" prot="public" virt="non-virtual"><scope>RDE::WindowRenderEvent</scope><name>getStaticType</name></member>
+      <member refid="class_r_d_e_1_1_event_1a372a2b0c1a05c7f8b7e48bfbac7042d0" prot="public" virt="non-virtual"><scope>RDE::WindowRenderEvent</scope><name>handled</name></member>
+      <member refid="class_r_d_e_1_1_event_1a853416fc3754e4052bf7f24d081f82fd" prot="public" virt="non-virtual"><scope>RDE::WindowRenderEvent</scope><name>isInCategory</name></member>
+      <member refid="class_r_d_e_1_1_window_render_event_1a7f83d45009bb3d473ae8f0bbcad888be" prot="public" virt="virtual"><scope>RDE::WindowRenderEvent</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

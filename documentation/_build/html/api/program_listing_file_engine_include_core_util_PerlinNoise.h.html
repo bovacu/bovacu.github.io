@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File PerlinNoise.h &mdash; RDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            RDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">Library API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Program Listing for File PerlinNoise.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file_engine_include_core_util_PerlinNoise.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-perlinnoise-h">
+<span id="program-listing-file-engine-include-core-util-perlinnoise-h"></span><h1>Program Listing for File PerlinNoise.h<a class="headerlink" href="#program-listing-for-file-perlinnoise-h" title="Permalink to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file_engine_include_core_util_PerlinNoise.h.html#file-engine-include-core-util-perlinnoise-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">engine/include/core/util/PerlinNoise.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Created by borja on 23/12/21.</span>
+
+<span class="cp">#ifndef RDE_PERLIN_NOISE_H</span>
+<span class="cp">#define RDE_PERLIN_NOISE_H</span>
+
+<span class="c1">//----------------------------------------------------------------------------------------</span>
+<span class="c1">//</span>
+<span class="c1">//  siv::PerlinNoise</span>
+<span class="c1">//  Perlin noise library for modern C++</span>
+<span class="c1">//</span>
+<span class="c1">//  Copyright (C) 2013-2021 Ryo Suzuki &lt;reputeless@gmail.com&gt;</span>
+<span class="c1">//</span>
+<span class="c1">//  Permission is hereby granted, free of charge, to any person obtaining a copy</span>
+<span class="c1">//  of this software and associated documentation files(the &quot;Software&quot;), to deal</span>
+<span class="c1">//  in the Software without restriction, including without limitation the rights</span>
+<span class="c1">//  to use, copy, modify, merge, publish, distribute, sublicense, and / or sell</span>
+<span class="c1">//  copies of the Software, and to permit persons to whom the Software is</span>
+<span class="c1">//  furnished to do so, subject to the following conditions :</span>
+<span class="c1">//</span>
+<span class="c1">//  The above copyright notice and this permission notice shall be included in</span>
+<span class="c1">//  all copies or substantial portions of the Software.</span>
+<span class="c1">//</span>
+<span class="c1">//  THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
+<span class="c1">//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
+<span class="c1">//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE</span>
+<span class="c1">//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
+<span class="c1">//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<span class="c1">//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN</span>
+<span class="c1">//  THE SOFTWARE.</span>
+<span class="c1">//</span>
+<span class="c1">//----------------------------------------------------------------------------------------</span>
+
+<span class="cp"># pragma once</span>
+<span class="cp">#</span><span class="w"> </span><span class="cp">include</span><span class="w"> </span><span class="cpf">&lt;cstdint&gt;</span>
+<span class="cp">#</span><span class="w"> </span><span class="cp">include</span><span class="w"> </span><span class="cpf">&lt;algorithm&gt;</span>
+<span class="cp">#</span><span class="w"> </span><span class="cp">include</span><span class="w"> </span><span class="cpf">&lt;array&gt;</span>
+<span class="cp">#</span><span class="w"> </span><span class="cp">include</span><span class="w"> </span><span class="cpf">&lt;iterator&gt;</span>
+<span class="cp">#</span><span class="w"> </span><span class="cp">include</span><span class="w"> </span><span class="cpf">&lt;numeric&gt;</span>
+<span class="cp">#</span><span class="w"> </span><span class="cp">include</span><span class="w"> </span><span class="cpf">&lt;random&gt;</span>
+<span class="cp">#</span><span class="w"> </span><span class="cp">include</span><span class="w"> </span><span class="cpf">&lt;type_traits&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unordered_map&gt;</span>
+
+<span class="cp"># if __has_include(&lt;concepts&gt;) &amp;&amp; defined(__cpp_concepts)</span>
+<span class="cp">#</span><span class="w">   </span><span class="cp">include</span><span class="w"> </span><span class="cpf">&lt;concepts&gt;</span>
+<span class="cp"># endif</span>
+
+
+<span class="c1">// Library major version</span>
+<span class="cp"># define SIVPERLIN_VERSION_MAJOR            3</span>
+
+<span class="c1">// Library minor version</span>
+<span class="cp"># define SIVPERLIN_VERSION_MINOR            0</span>
+
+<span class="c1">// Library revision version</span>
+<span class="cp"># define SIVPERLIN_VERSION_REVISION         0</span>
+
+<span class="c1">// Library version</span>
+<span class="cp"># define SIVPERLIN_VERSION          ((SIVPERLIN_VERSION_MAJOR * 100 * 100) + (SIVPERLIN_VERSION_MINOR * 100) + (SIVPERLIN_VERSION_REVISION))</span>
+
+
+<span class="c1">// [[nodiscard]] for constructors</span>
+<span class="cp"># if (201907L &lt;= __has_cpp_attribute(nodiscard))</span>
+<span class="cp">#   define SIVPERLIN_NODISCARD_CXX20 [[nodiscard]]</span>
+<span class="cp"># else</span>
+<span class="cp">#   define SIVPERLIN_NODISCARD_CXX20</span>
+<span class="cp"># endif</span>
+
+
+<span class="c1">// std::uniform_random_bit_generator concept</span>
+<span class="cp"># if __cpp_lib_concepts</span>
+<span class="cp">#   define SIVPERLIN_CONCEPT_URBG  template &lt;std::uniform_random_bit_generator URBG&gt;</span>
+<span class="cp">#   define SIVPERLIN_CONCEPT_URBG_ template &lt;std::uniform_random_bit_generator URBG&gt;</span>
+<span class="cp"># else</span>
+<span class="cp">#   define SIVPERLIN_CONCEPT_URBG  template &lt;class URBG, std::enable_if_t&lt;std::conjunction_v&lt;std::is_invocable&lt;URBG&amp;&gt;, std::is_unsigned&lt;std::invoke_result_t&lt;URBG&amp;&gt;&gt;&gt;&gt;* = nullptr&gt;</span>
+<span class="cp">#   define SIVPERLIN_CONCEPT_URBG_ template &lt;class URBG, std::enable_if_t&lt;std::conjunction_v&lt;std::is_invocable&lt;URBG&amp;&gt;, std::is_unsigned&lt;std::invoke_result_t&lt;URBG&amp;&gt;&gt;&gt;&gt;*&gt;</span>
+<span class="cp"># endif</span>
+
+
+<span class="c1">// arbitrary value for increasing entropy</span>
+<span class="cp"># ifndef SIVPERLIN_DEFAULT_Y</span>
+<span class="cp">#   define SIVPERLIN_DEFAULT_Y (0.12345)</span>
+<span class="cp"># endif</span>
+
+<span class="c1">// arbitrary value for increasing entropy</span>
+<span class="cp"># ifndef SIVPERLIN_DEFAULT_Z</span>
+<span class="cp">#   define SIVPERLIN_DEFAULT_Z (0.34567)</span>
+<span class="cp"># endif</span>
+
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">RDE</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">public</span><span class="o">:</span>
+
+<span class="w">        </span><span class="k">static_assert</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_floating_point_v</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">//</span>
+<span class="w">        </span><span class="c1">//  Typedefs</span>
+<span class="w">        </span><span class="c1">//</span>
+
+<span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="n">state_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint8_t</span><span class="p">,</span><span class="w"> </span><span class="mi">256</span><span class="o">&gt;</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Float</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="n">default_random_engine</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">mt19937</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="n">seed_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">default_random_engine</span><span class="o">::</span><span class="n">result_type</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">//</span>
+<span class="w">        </span><span class="c1">//  Constructors</span>
+<span class="w">        </span><span class="c1">//</span>
+
+<span class="w">        </span><span class="n">SIVPERLIN_NODISCARD_CXX20</span>
+<span class="w">        </span><span class="k">constexpr</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="p">()</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">SIVPERLIN_NODISCARD_CXX20</span>
+<span class="w">        </span><span class="k">explicit</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="p">(</span><span class="n">seed_type</span><span class="w"> </span><span class="n">seed</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">SIVPERLIN_CONCEPT_URBG</span>
+<span class="w">        </span><span class="n">SIVPERLIN_NODISCARD_CXX20</span>
+<span class="w">        </span><span class="k">explicit</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="p">(</span><span class="n">URBG</span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">urbg</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">//</span>
+<span class="w">        </span><span class="c1">//  Reseed</span>
+<span class="w">        </span><span class="c1">//</span>
+
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">reseed</span><span class="p">(</span><span class="n">seed_type</span><span class="w"> </span><span class="n">seed</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">SIVPERLIN_CONCEPT_URBG</span>
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="n">reseed</span><span class="p">(</span><span class="n">URBG</span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">urbg</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">//</span>
+<span class="w">        </span><span class="c1">//  Serialization</span>
+<span class="w">        </span><span class="c1">//</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="k">constexpr</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">state_type</span><span class="o">&amp;</span><span class="w"> </span><span class="n">serialize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">constexpr</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">deserialize</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">state_type</span><span class="o">&amp;</span><span class="w"> </span><span class="n">state</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">//</span>
+<span class="w">        </span><span class="c1">//  Noise (The result is in the range [-1, 1])</span>
+<span class="w">        </span><span class="c1">//</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">noise1D</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">noise2D</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">noise3D</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">//</span>
+<span class="w">        </span><span class="c1">//  Noise (The result is remapped to the range [0, 1])</span>
+<span class="w">        </span><span class="c1">//</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">noise1D_01</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">noise2D_01</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">noise3D_01</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">//</span>
+<span class="w">        </span><span class="c1">//  Octave noise (The result can be out of the range [-1, 1])</span>
+<span class="w">        </span><span class="c1">//</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">octave1D</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">octave2D</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">octave3D</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">//</span>
+<span class="w">        </span><span class="c1">//  Octave noise (The result is clamped to the range [-1, 1])</span>
+<span class="w">        </span><span class="c1">//</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">octave1D_11</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">octave2D_11</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">octave3D_11</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">//</span>
+<span class="w">        </span><span class="c1">//  Octave noise (The result is clamped and remapped to the range [0, 1])</span>
+<span class="w">        </span><span class="c1">//</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">octave1D_01</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">octave2D_01</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">octave3D_01</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">//</span>
+<span class="w">        </span><span class="c1">//  Octave noise (The result is normalized to the range [-1, 1])</span>
+<span class="w">        </span><span class="c1">//</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">normalizedOctave1D</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">normalizedOctave2D</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">normalizedOctave3D</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">//</span>
+<span class="w">        </span><span class="c1">//  Octave noise (The result is normalized and remapped to the range [0, 1])</span>
+<span class="w">        </span><span class="c1">//</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">normalizedOctave1D_01</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">normalizedOctave2D_01</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="n">normalizedOctave3D_01</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">private</span><span class="o">:</span>
+
+<span class="w">        </span><span class="n">state_type</span><span class="w"> </span><span class="n">m_permutation</span><span class="p">;</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="n">PerlinNoise</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">namespace</span><span class="w"> </span><span class="nn">perlin_detail</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">//</span>
+<span class="w">        </span><span class="c1">//  These functions are provided for consistency.</span>
+<span class="w">        </span><span class="c1">//  You may get different results from std::shuffle() with different standard library implementations.</span>
+<span class="w">        </span><span class="c1">//</span>
+<span class="w">        </span><span class="n">SIVPERLIN_CONCEPT_URBG</span>
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">Random</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">max</span><span class="p">,</span><span class="w"> </span><span class="n">URBG</span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">urbg</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">urbg</span><span class="p">()</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="n">max</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">RandomIt</span><span class="p">,</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">URBG</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">Shuffle</span><span class="p">(</span><span class="n">RandomIt</span><span class="w"> </span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">RandomIt</span><span class="w"> </span><span class="n">last</span><span class="p">,</span><span class="w"> </span><span class="n">URBG</span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">urbg</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">first</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">last</span><span class="p">)</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="k">return</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">using</span><span class="w"> </span><span class="n">difference_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">std</span><span class="o">::</span><span class="n">iterator_traits</span><span class="o">&lt;</span><span class="n">RandomIt</span><span class="o">&gt;::</span><span class="n">difference_type</span><span class="p">;</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">RandomIt</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">last</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">it</span><span class="p">)</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint64_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">first</span><span class="p">);</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">iter_swap</span><span class="p">(</span><span class="n">it</span><span class="p">,</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">difference_type</span><span class="o">&gt;</span><span class="p">(</span><span class="n">Random</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">forward</span><span class="o">&lt;</span><span class="n">URBG</span><span class="o">&gt;</span><span class="p">(</span><span class="n">urbg</span><span class="p">))));</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="c1">//</span>
+
+<span class="w">        </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">Fade</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">t</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">15</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">Lerp</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">t</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">t</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">Grad</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">hash</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hash</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">15</span><span class="p">;</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">u</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">12</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">14</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">z</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">((</span><span class="n">h</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">u</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">-</span><span class="n">u</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">((</span><span class="n">h</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">-</span><span class="n">v</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">Remap_01</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Float</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Float</span><span class="p">(</span><span class="mf">0.5</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">Clamp_11</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">clamp</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">Float</span><span class="p">(</span><span class="mf">-1.0</span><span class="p">),</span><span class="w"> </span><span class="n">Float</span><span class="p">(</span><span class="mf">1.0</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">RemapClamp_01</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">Float</span><span class="p">(</span><span class="mf">-1.0</span><span class="p">))</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">Float</span><span class="p">(</span><span class="mf">0.0</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Float</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">x</span><span class="p">)</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">Float</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Float</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Float</span><span class="p">(</span><span class="mf">0.5</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Noise</span><span class="p">,</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">Octave1D</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Noise</span><span class="o">&amp;</span><span class="w"> </span><span class="n">noise</span><span class="p">,</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">using</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Float</span><span class="p">;</span>
+<span class="w">            </span><span class="n">value_type</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">            </span><span class="n">value_type</span><span class="w"> </span><span class="n">amplitude</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">octaves</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">noise</span><span class="p">.</span><span class="n">noise1D</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">amplitude</span><span class="p">);</span>
+<span class="w">                </span><span class="n">x</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">                </span><span class="n">amplitude</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">persistence</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Noise</span><span class="p">,</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">Octave2D</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Noise</span><span class="o">&amp;</span><span class="w"> </span><span class="n">noise</span><span class="p">,</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">using</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Float</span><span class="p">;</span>
+<span class="w">            </span><span class="n">value_type</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">            </span><span class="n">value_type</span><span class="w"> </span><span class="n">amplitude</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">octaves</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">noise</span><span class="p">.</span><span class="n">noise2D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">amplitude</span><span class="p">);</span>
+<span class="w">                </span><span class="n">x</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">                </span><span class="n">y</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">                </span><span class="n">amplitude</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">persistence</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Noise</span><span class="p">,</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">Octave3D</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Noise</span><span class="o">&amp;</span><span class="w"> </span><span class="n">noise</span><span class="p">,</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">using</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Float</span><span class="p">;</span>
+<span class="w">            </span><span class="n">value_type</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">            </span><span class="n">value_type</span><span class="w"> </span><span class="n">amplitude</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">octaves</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">noise</span><span class="p">.</span><span class="n">noise3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">amplitude</span><span class="p">);</span>
+<span class="w">                </span><span class="n">x</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">                </span><span class="n">y</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">                </span><span class="n">z</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">                </span><span class="n">amplitude</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">persistence</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">MaxAmplitude</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Float</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">using</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Float</span><span class="p">;</span>
+<span class="w">            </span><span class="n">value_type</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">            </span><span class="n">value_type</span><span class="w"> </span><span class="n">amplitude</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">octaves</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">amplitude</span><span class="p">;</span>
+<span class="w">                </span><span class="n">amplitude</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">persistence</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">BasicPerlinNoise</span><span class="p">()</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">            </span><span class="o">:</span><span class="w"> </span><span class="n">m_permutation</span><span class="p">{</span><span class="w"> </span><span class="mi">151</span><span class="p">,</span><span class="mi">160</span><span class="p">,</span><span class="mi">137</span><span class="p">,</span><span class="mi">91</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">131</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">201</span><span class="p">,</span><span class="mi">95</span><span class="p">,</span><span class="mi">96</span><span class="p">,</span><span class="mi">53</span><span class="p">,</span><span class="mi">194</span><span class="p">,</span><span class="mi">233</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">225</span><span class="p">,</span><span class="mi">140</span><span class="p">,</span><span class="mi">36</span><span class="p">,</span><span class="mi">103</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">69</span><span class="p">,</span><span class="mi">142</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">99</span><span class="p">,</span><span class="mi">37</span><span class="p">,</span><span class="mi">240</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">190</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="mi">148</span><span class="p">,</span><span class="mi">247</span><span class="p">,</span><span class="mi">120</span><span class="p">,</span><span class="mi">234</span><span class="p">,</span><span class="mi">75</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">26</span><span class="p">,</span><span class="mi">197</span><span class="p">,</span><span class="mi">62</span><span class="p">,</span><span class="mi">94</span><span class="p">,</span><span class="mi">252</span><span class="p">,</span><span class="mi">219</span><span class="p">,</span><span class="mi">203</span><span class="p">,</span><span class="mi">117</span><span class="p">,</span><span class="mi">35</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">32</span><span class="p">,</span><span class="mi">57</span><span class="p">,</span><span class="mi">177</span><span class="p">,</span><span class="mi">33</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">88</span><span class="p">,</span><span class="mi">237</span><span class="p">,</span><span class="mi">149</span><span class="p">,</span><span class="mi">56</span><span class="p">,</span><span class="mi">87</span><span class="p">,</span><span class="mi">174</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">125</span><span class="p">,</span><span class="mi">136</span><span class="p">,</span><span class="mi">171</span><span class="p">,</span><span class="mi">168</span><span class="p">,</span><span class="w"> </span><span class="mi">68</span><span class="p">,</span><span class="mi">175</span><span class="p">,</span><span class="mi">74</span><span class="p">,</span><span class="mi">165</span><span class="p">,</span><span class="mi">71</span><span class="p">,</span><span class="mi">134</span><span class="p">,</span><span class="mi">139</span><span class="p">,</span><span class="mi">48</span><span class="p">,</span><span class="mi">27</span><span class="p">,</span><span class="mi">166</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">77</span><span class="p">,</span><span class="mi">146</span><span class="p">,</span><span class="mi">158</span><span class="p">,</span><span class="mi">231</span><span class="p">,</span><span class="mi">83</span><span class="p">,</span><span class="mi">111</span><span class="p">,</span><span class="mi">229</span><span class="p">,</span><span class="mi">122</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">211</span><span class="p">,</span><span class="mi">133</span><span class="p">,</span><span class="mi">230</span><span class="p">,</span><span class="mi">220</span><span class="p">,</span><span class="mi">105</span><span class="p">,</span><span class="mi">92</span><span class="p">,</span><span class="mi">41</span><span class="p">,</span><span class="mi">55</span><span class="p">,</span><span class="mi">46</span><span class="p">,</span><span class="mi">245</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">244</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">102</span><span class="p">,</span><span class="mi">143</span><span class="p">,</span><span class="mi">54</span><span class="p">,</span><span class="w"> </span><span class="mi">65</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">63</span><span class="p">,</span><span class="mi">161</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="mi">216</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">73</span><span class="p">,</span><span class="mi">209</span><span class="p">,</span><span class="mi">76</span><span class="p">,</span><span class="mi">132</span><span class="p">,</span><span class="mi">187</span><span class="p">,</span><span class="mi">208</span><span class="p">,</span><span class="w"> </span><span class="mi">89</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">169</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">196</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">135</span><span class="p">,</span><span class="mi">130</span><span class="p">,</span><span class="mi">116</span><span class="p">,</span><span class="mi">188</span><span class="p">,</span><span class="mi">159</span><span class="p">,</span><span class="mi">86</span><span class="p">,</span><span class="mi">164</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">109</span><span class="p">,</span><span class="mi">198</span><span class="p">,</span><span class="mi">173</span><span class="p">,</span><span class="mi">186</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="mi">64</span><span class="p">,</span><span class="mi">52</span><span class="p">,</span><span class="mi">217</span><span class="p">,</span><span class="mi">226</span><span class="p">,</span><span class="mi">250</span><span class="p">,</span><span class="mi">124</span><span class="p">,</span><span class="mi">123</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">5</span><span class="p">,</span><span class="mi">202</span><span class="p">,</span><span class="mi">38</span><span class="p">,</span><span class="mi">147</span><span class="p">,</span><span class="mi">118</span><span class="p">,</span><span class="mi">126</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">85</span><span class="p">,</span><span class="mi">212</span><span class="p">,</span><span class="mi">207</span><span class="p">,</span><span class="mi">206</span><span class="p">,</span><span class="mi">59</span><span class="p">,</span><span class="mi">227</span><span class="p">,</span><span class="mi">47</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">58</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">182</span><span class="p">,</span><span class="mi">189</span><span class="p">,</span><span class="mi">28</span><span class="p">,</span><span class="mi">42</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">223</span><span class="p">,</span><span class="mi">183</span><span class="p">,</span><span class="mi">170</span><span class="p">,</span><span class="mi">213</span><span class="p">,</span><span class="mi">119</span><span class="p">,</span><span class="mi">248</span><span class="p">,</span><span class="mi">152</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="mi">44</span><span class="p">,</span><span class="mi">154</span><span class="p">,</span><span class="mi">163</span><span class="p">,</span><span class="w"> </span><span class="mi">70</span><span class="p">,</span><span class="mi">221</span><span class="p">,</span><span class="mi">153</span><span class="p">,</span><span class="mi">101</span><span class="p">,</span><span class="mi">155</span><span class="p">,</span><span class="mi">167</span><span class="p">,</span><span class="w"> </span><span class="mi">43</span><span class="p">,</span><span class="mi">172</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">129</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">39</span><span class="p">,</span><span class="mi">253</span><span class="p">,</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span><span class="mi">98</span><span class="p">,</span><span class="mi">108</span><span class="p">,</span><span class="mi">110</span><span class="p">,</span><span class="mi">79</span><span class="p">,</span><span class="mi">113</span><span class="p">,</span><span class="mi">224</span><span class="p">,</span><span class="mi">232</span><span class="p">,</span><span class="mi">178</span><span class="p">,</span><span class="mi">185</span><span class="p">,</span><span class="w"> </span><span class="mi">112</span><span class="p">,</span><span class="mi">104</span><span class="p">,</span><span class="mi">218</span><span class="p">,</span><span class="mi">246</span><span class="p">,</span><span class="mi">97</span><span class="p">,</span><span class="mi">228</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">251</span><span class="p">,</span><span class="mi">34</span><span class="p">,</span><span class="mi">242</span><span class="p">,</span><span class="mi">193</span><span class="p">,</span><span class="mi">238</span><span class="p">,</span><span class="mi">210</span><span class="p">,</span><span class="mi">144</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">191</span><span class="p">,</span><span class="mi">179</span><span class="p">,</span><span class="mi">162</span><span class="p">,</span><span class="mi">241</span><span class="p">,</span><span class="w"> </span><span class="mi">81</span><span class="p">,</span><span class="mi">51</span><span class="p">,</span><span class="mi">145</span><span class="p">,</span><span class="mi">235</span><span class="p">,</span><span class="mi">249</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">239</span><span class="p">,</span><span class="mi">107</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">49</span><span class="p">,</span><span class="mi">192</span><span class="p">,</span><span class="mi">214</span><span class="p">,</span><span class="w"> </span><span class="mi">31</span><span class="p">,</span><span class="mi">181</span><span class="p">,</span><span class="mi">199</span><span class="p">,</span><span class="mi">106</span><span class="p">,</span><span class="mi">157</span><span class="p">,</span><span class="mi">184</span><span class="p">,</span><span class="w"> </span><span class="mi">84</span><span class="p">,</span><span class="mi">204</span><span class="p">,</span><span class="mi">176</span><span class="p">,</span><span class="mi">115</span><span class="p">,</span><span class="mi">121</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span><span class="mi">127</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">254</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">138</span><span class="p">,</span><span class="mi">236</span><span class="p">,</span><span class="mi">205</span><span class="p">,</span><span class="mi">93</span><span class="p">,</span><span class="mi">222</span><span class="p">,</span><span class="mi">114</span><span class="p">,</span><span class="mi">67</span><span class="p">,</span><span class="mi">29</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">72</span><span class="p">,</span><span class="mi">243</span><span class="p">,</span><span class="mi">141</span><span class="p">,</span><span class="mi">128</span><span class="p">,</span><span class="mi">195</span><span class="p">,</span><span class="mi">78</span><span class="p">,</span><span class="mi">66</span><span class="p">,</span><span class="mi">215</span><span class="p">,</span><span class="mi">61</span><span class="p">,</span><span class="mi">156</span><span class="p">,</span><span class="mi">180</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">{}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">BasicPerlinNoise</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">seed_type</span><span class="w"> </span><span class="n">seed</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">reseed</span><span class="p">(</span><span class="n">seed</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="n">SIVPERLIN_CONCEPT_URBG_</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">BasicPerlinNoise</span><span class="p">(</span><span class="n">URBG</span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">urbg</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">reseed</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">forward</span><span class="o">&lt;</span><span class="n">URBG</span><span class="o">&gt;</span><span class="p">(</span><span class="n">urbg</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">reseed</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">seed_type</span><span class="w"> </span><span class="n">seed</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">reseed</span><span class="p">(</span><span class="n">default_random_engine</span><span class="p">{</span><span class="w"> </span><span class="n">seed</span><span class="w"> </span><span class="p">});</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="n">SIVPERLIN_CONCEPT_URBG_</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">reseed</span><span class="p">(</span><span class="n">URBG</span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">urbg</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">iota</span><span class="p">(</span><span class="n">m_permutation</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">m_permutation</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="kt">uint8_t</span><span class="p">{</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">});</span>
+
+<span class="w">        </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Shuffle</span><span class="p">(</span><span class="n">m_permutation</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">m_permutation</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">forward</span><span class="o">&lt;</span><span class="n">URBG</span><span class="o">&gt;</span><span class="p">(</span><span class="n">urbg</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">state_type</span><span class="o">&amp;</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">serialize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">m_permutation</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">deserialize</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">state_type</span><span class="o">&amp;</span><span class="w"> </span><span class="n">state</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">m_permutation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">state</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">noise1D</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">noise3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span>
+<span class="w">                       </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">value_type</span><span class="o">&gt;</span><span class="p">(</span><span class="n">SIVPERLIN_DEFAULT_Y</span><span class="p">),</span>
+<span class="w">                       </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">value_type</span><span class="o">&gt;</span><span class="p">(</span><span class="n">SIVPERLIN_DEFAULT_Z</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">noise2D</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">noise3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span>
+<span class="w">                       </span><span class="n">y</span><span class="p">,</span>
+<span class="w">                       </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">value_type</span><span class="o">&gt;</span><span class="p">(</span><span class="n">SIVPERLIN_DEFAULT_Z</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">noise3D</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">_x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">floor</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">floor</span><span class="p">(</span><span class="n">y</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">_z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">floor</span><span class="p">(</span><span class="n">z</span><span class="p">);</span>
+
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">ix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_x</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">iy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_y</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">iz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_z</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">fx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">_x</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">fy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">_y</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">fz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">z</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">_z</span><span class="p">);</span>
+
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">u</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Fade</span><span class="p">(</span><span class="n">fx</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Fade</span><span class="p">(</span><span class="n">fy</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Fade</span><span class="p">(</span><span class="n">fz</span><span class="p">);</span>
+
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">m_permutation</span><span class="p">[</span><span class="n">ix</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">iy</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">m_permutation</span><span class="p">[(</span><span class="n">ix</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">iy</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">AA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">m_permutation</span><span class="p">[</span><span class="n">A</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">iz</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">AB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">m_permutation</span><span class="p">[(</span><span class="n">A</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">iz</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">BA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">m_permutation</span><span class="p">[</span><span class="n">B</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">iz</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">BB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">m_permutation</span><span class="p">[(</span><span class="n">B</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">iz</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">p0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Grad</span><span class="p">(</span><span class="n">m_permutation</span><span class="p">[</span><span class="n">AA</span><span class="p">],</span><span class="w"> </span><span class="n">fx</span><span class="p">,</span><span class="w"> </span><span class="n">fy</span><span class="p">,</span><span class="w"> </span><span class="n">fz</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">p1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Grad</span><span class="p">(</span><span class="n">m_permutation</span><span class="p">[</span><span class="n">BA</span><span class="p">],</span><span class="w"> </span><span class="n">fx</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">fy</span><span class="p">,</span><span class="w"> </span><span class="n">fz</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">p2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Grad</span><span class="p">(</span><span class="n">m_permutation</span><span class="p">[</span><span class="n">AB</span><span class="p">],</span><span class="w"> </span><span class="n">fx</span><span class="p">,</span><span class="w"> </span><span class="n">fy</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">fz</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">p3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Grad</span><span class="p">(</span><span class="n">m_permutation</span><span class="p">[</span><span class="n">BB</span><span class="p">],</span><span class="w"> </span><span class="n">fx</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">fy</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">fz</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">p4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Grad</span><span class="p">(</span><span class="n">m_permutation</span><span class="p">[(</span><span class="n">AA</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">],</span><span class="w"> </span><span class="n">fx</span><span class="p">,</span><span class="w"> </span><span class="n">fy</span><span class="p">,</span><span class="w"> </span><span class="n">fz</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">p5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Grad</span><span class="p">(</span><span class="n">m_permutation</span><span class="p">[(</span><span class="n">BA</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">],</span><span class="w"> </span><span class="n">fx</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">fy</span><span class="p">,</span><span class="w"> </span><span class="n">fz</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">p6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Grad</span><span class="p">(</span><span class="n">m_permutation</span><span class="p">[(</span><span class="n">AB</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">],</span><span class="w"> </span><span class="n">fx</span><span class="p">,</span><span class="w"> </span><span class="n">fy</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">fz</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">p7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Grad</span><span class="p">(</span><span class="n">m_permutation</span><span class="p">[(</span><span class="n">BB</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">255</span><span class="p">],</span><span class="w"> </span><span class="n">fx</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">fy</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">fz</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">q0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Lerp</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span><span class="w"> </span><span class="n">p1</span><span class="p">,</span><span class="w"> </span><span class="n">u</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">q1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Lerp</span><span class="p">(</span><span class="n">p2</span><span class="p">,</span><span class="w"> </span><span class="n">p3</span><span class="p">,</span><span class="w"> </span><span class="n">u</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">q2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Lerp</span><span class="p">(</span><span class="n">p4</span><span class="p">,</span><span class="w"> </span><span class="n">p5</span><span class="p">,</span><span class="w"> </span><span class="n">u</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">q3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Lerp</span><span class="p">(</span><span class="n">p6</span><span class="p">,</span><span class="w"> </span><span class="n">p7</span><span class="p">,</span><span class="w"> </span><span class="n">u</span><span class="p">);</span>
+
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">r0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Lerp</span><span class="p">(</span><span class="n">q0</span><span class="p">,</span><span class="w"> </span><span class="n">q1</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">r1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Lerp</span><span class="p">(</span><span class="n">q2</span><span class="p">,</span><span class="w"> </span><span class="n">q3</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="p">);</span>
+
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Lerp</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span><span class="w"> </span><span class="n">r1</span><span class="p">,</span><span class="w"> </span><span class="n">w</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">noise1D_01</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Remap_01</span><span class="p">(</span><span class="n">noise1D</span><span class="p">(</span><span class="n">x</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">noise2D_01</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Remap_01</span><span class="p">(</span><span class="n">noise2D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">noise3D_01</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Remap_01</span><span class="p">(</span><span class="n">noise3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">octave1D</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Octave1D</span><span class="p">(</span><span class="o">*</span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">octave2D</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Octave2D</span><span class="p">(</span><span class="o">*</span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">octave3D</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Octave3D</span><span class="p">(</span><span class="o">*</span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">octave1D_11</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Clamp_11</span><span class="p">(</span><span class="n">octave1D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">octave2D_11</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Clamp_11</span><span class="p">(</span><span class="n">octave2D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">octave3D_11</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Clamp_11</span><span class="p">(</span><span class="n">octave3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">octave1D_01</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">RemapClamp_01</span><span class="p">(</span><span class="n">octave1D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">octave2D_01</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">RemapClamp_01</span><span class="p">(</span><span class="n">octave2D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">octave3D_01</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">RemapClamp_01</span><span class="p">(</span><span class="n">octave3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">normalizedOctave1D</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">octave1D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">MaxAmplitude</span><span class="p">(</span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">normalizedOctave2D</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">octave2D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">MaxAmplitude</span><span class="p">(</span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">normalizedOctave3D</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">octave3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">MaxAmplitude</span><span class="p">(</span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">normalizedOctave1D_01</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Remap_01</span><span class="p">(</span><span class="n">normalizedOctave1D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">normalizedOctave2D_01</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Remap_01</span><span class="p">(</span><span class="n">normalizedOctave2D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Float</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">value_type</span><span class="w"> </span><span class="n">BasicPerlinNoise</span><span class="o">&lt;</span><span class="n">Float</span><span class="o">&gt;::</span><span class="n">normalizedOctave3D_01</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">persistence</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">perlin_detail</span><span class="o">::</span><span class="n">Remap_01</span><span class="p">(</span><span class="n">normalizedOctave3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">,</span><span class="w"> </span><span class="n">persistence</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="k">typedef</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">PerlinSeed</span><span class="p">;</span>
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">NoiseMap</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">float</span><span class="o">**</span><span class="w"> </span><span class="n">map</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">,</span><span class="w"> </span><span class="n">octaves</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">float</span><span class="w"> </span><span class="n">frequency</span><span class="p">;</span>
+<span class="w">        </span><span class="n">PerlinSeed</span><span class="w"> </span><span class="n">seed</span><span class="p">;</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">PerlinNoiseManager</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">private</span><span class="o">:</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">PerlinSeed</span><span class="p">,</span><span class="w"> </span><span class="n">NoiseMap</span><span class="o">&gt;</span><span class="w"> </span><span class="n">maps</span><span class="p">;</span>
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">counter</span><span class="p">;</span>
+<span class="w">            </span><span class="n">RDE</span><span class="o">::</span><span class="n">PerlinNoise</span><span class="w"> </span><span class="n">perlin</span><span class="p">{</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">};</span>
+<span class="w">        </span><span class="k">public</span><span class="o">:</span>
+<span class="w">            </span><span class="n">NoiseMap</span><span class="o">&amp;</span><span class="w"> </span><span class="n">generate2DMap</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">_width</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">_height</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">_frequency</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">_octaves</span><span class="p">,</span><span class="w"> </span><span class="n">PerlinSeed</span><span class="w"> </span><span class="n">_seed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">perlin</span><span class="p">.</span><span class="n">reseed</span><span class="p">(</span><span class="n">_seed</span><span class="p">);</span>
+<span class="w">                </span><span class="n">NoiseMap</span><span class="w"> </span><span class="n">_noiseMap</span><span class="w"> </span><span class="p">{</span><span class="k">nullptr</span><span class="p">,</span><span class="w"> </span><span class="n">_width</span><span class="p">,</span><span class="w"> </span><span class="n">_height</span><span class="p">,</span><span class="w"> </span><span class="n">_octaves</span><span class="p">,</span><span class="w"> </span><span class="n">_frequency</span><span class="p">,</span><span class="w"> </span><span class="n">_seed</span><span class="p">};</span>
+
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">_fx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">_frequency</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">_width</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">_fy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">_frequency</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">_height</span><span class="p">);</span>
+
+<span class="w">                </span><span class="k">auto</span><span class="w"> </span><span class="n">_map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">float</span><span class="o">*</span><span class="p">[</span><span class="n">_height</span><span class="p">];</span>
+
+<span class="w">                </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">_y</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">_height</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">_y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">_map</span><span class="p">[</span><span class="n">_y</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">float</span><span class="p">[</span><span class="n">_width</span><span class="p">];</span>
+<span class="w">                    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">_x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">_x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">_width</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">_x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="n">_map</span><span class="p">[</span><span class="n">_y</span><span class="p">][</span><span class="n">_x</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">perlin</span><span class="p">.</span><span class="n">octave2D_11</span><span class="p">((</span><span class="n">_x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">_fx</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="n">_y</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">_fy</span><span class="p">),</span><span class="w"> </span><span class="n">_octaves</span><span class="p">);</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">}</span>
+
+<span class="w">                </span><span class="n">_noiseMap</span><span class="p">.</span><span class="n">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_map</span><span class="p">;</span>
+<span class="w">                </span><span class="n">maps</span><span class="p">[</span><span class="n">_seed</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_noiseMap</span><span class="p">;</span>
+
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">maps</span><span class="p">[</span><span class="n">_seed</span><span class="p">];</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="kt">float</span><span class="w"> </span><span class="n">getPerlinNoise2DPointValue</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">_x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">_y</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">_width</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">_height</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">_frequency</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">_octaves</span><span class="p">,</span><span class="w"> </span><span class="n">PerlinSeed</span><span class="w"> </span><span class="n">_seed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">perlin</span><span class="p">.</span><span class="n">reseed</span><span class="p">(</span><span class="n">_seed</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">_fx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">_frequency</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">_width</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">_fy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">_frequency</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">_height</span><span class="p">);</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">perlin</span><span class="p">.</span><span class="n">octave2D_11</span><span class="p">((</span><span class="n">_x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">_fx</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="n">_y</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">_fy</span><span class="p">),</span><span class="w"> </span><span class="n">_octaves</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="n">clean</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">for</span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">_map</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">maps</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">_y</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">_map</span><span class="p">.</span><span class="n">second</span><span class="p">.</span><span class="n">height</span><span class="p">;</span><span class="w"> </span><span class="n">_y</span><span class="o">++</span><span class="p">)</span>
+<span class="w">                        </span><span class="k">delete</span><span class="p">[]</span><span class="w"> </span><span class="n">_map</span><span class="p">.</span><span class="n">second</span><span class="p">.</span><span class="n">map</span><span class="p">[</span><span class="n">_y</span><span class="p">];</span>
+<span class="w">                    </span><span class="k">delete</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="n">_map</span><span class="p">.</span><span class="n">second</span><span class="p">.</span><span class="n">map</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">NoiseMap</span><span class="o">&amp;</span><span class="w"> </span><span class="n">getNoiseMap</span><span class="p">(</span><span class="n">PerlinSeed</span><span class="w"> </span><span class="n">_seed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">maps</span><span class="p">[</span><span class="n">_seed</span><span class="p">];</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="n">removeNoiseMap</span><span class="p">(</span><span class="n">PerlinSeed</span><span class="w"> </span><span class="n">_seed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">_map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">maps</span><span class="p">[</span><span class="n">_seed</span><span class="p">];</span>
+<span class="w">                </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">_y</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">_map</span><span class="o">-&gt;</span><span class="n">height</span><span class="p">;</span><span class="w"> </span><span class="n">_y</span><span class="o">++</span><span class="p">)</span>
+<span class="w">                    </span><span class="k">delete</span><span class="p">[]</span><span class="w"> </span><span class="n">_map</span><span class="o">-&gt;</span><span class="n">map</span><span class="p">[</span><span class="n">_y</span><span class="p">];</span>
+<span class="w">                </span><span class="k">delete</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="n">_map</span><span class="o">-&gt;</span><span class="n">map</span><span class="p">;</span>
+
+<span class="w">                </span><span class="n">maps</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">_seed</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="p">}</span>
+
+<span class="cp"># undef SIVPERLIN_NODISCARD_CXX20</span>
+<span class="cp"># undef SIVPERLIN_CONCEPT_URBG</span>
+<span class="cp"># undef SIVPERLIN_CONCEPT_URBG_</span>
+
+<span class="cp">#endif </span><span class="c1">//RDE_PERLIN_NOISE_H</span>
+
+
+<span class="c1">// -------------------------&gt; EXAMPLE</span>
+<span class="c1">//# include &lt;cassert&gt;</span>
+<span class="c1">//# include &lt;iostream&gt;</span>
+<span class="c1">//# include &lt;fstream&gt;</span>
+<span class="c1">//# include &lt;sstream&gt;</span>
+<span class="c1">//# include &quot;core/util/PerlinNoise.h&quot;</span>
+<span class="c1">//</span>
+<span class="c1">//# pragma pack (push, 1)</span>
+<span class="c1">//struct BMPHeader</span>
+<span class="c1">//{</span>
+<span class="c1">//    std::uint16_t bfType;</span>
+<span class="c1">//    std::uint32_t bfSize;</span>
+<span class="c1">//    std::uint16_t bfReserved1;</span>
+<span class="c1">//    std::uint16_t bfReserved2;</span>
+<span class="c1">//    std::uint32_t bfOffBits;</span>
+<span class="c1">//    std::uint32_t biSize;</span>
+<span class="c1">//    std::int32_t  biWidth;</span>
+<span class="c1">//    std::int32_t  biHeight;</span>
+<span class="c1">//    std::uint16_t biPlanes;</span>
+<span class="c1">//    std::uint16_t biBitCount;</span>
+<span class="c1">//    std::uint32_t biCompression;</span>
+<span class="c1">//    std::uint32_t biSizeImage;</span>
+<span class="c1">//    std::int32_t  biXPelsPerMeter;</span>
+<span class="c1">//    std::int32_t  biYPelsPerMeter;</span>
+<span class="c1">//    std::uint32_t biClrUsed;</span>
+<span class="c1">//    std::uint32_t biClrImportant;</span>
+<span class="c1">//};</span>
+<span class="c1">//static_assert(sizeof(BMPHeader) == 54);</span>
+<span class="c1">//# pragma pack (pop)</span>
+<span class="c1">//</span>
+<span class="c1">//struct RGB</span>
+<span class="c1">//{</span>
+<span class="c1">//    double r = 0.0;</span>
+<span class="c1">//    double g = 0.0;</span>
+<span class="c1">//    double b = 0.0;</span>
+<span class="c1">//    constexpr RGB() = default;</span>
+<span class="c1">//    explicit constexpr RGB(double _rgb) noexcept</span>
+<span class="c1">//            : r{ _rgb }, g{ _rgb }, b{ _rgb } {}</span>
+<span class="c1">//    constexpr RGB(double _r, double _g, double _b) noexcept</span>
+<span class="c1">//            : r{ _r }, g{ _g }, b{ _b } {}</span>
+<span class="c1">//};</span>
+<span class="c1">//</span>
+<span class="c1">//class Image</span>
+<span class="c1">//{</span>
+<span class="c1">//    public:</span>
+<span class="c1">//</span>
+<span class="c1">//    Image() = default;</span>
+<span class="c1">//</span>
+<span class="c1">//    Image(std::size_t width, std::size_t height)</span>
+<span class="c1">//            : m_data(width* height)</span>
+<span class="c1">//            , m_width{ static_cast&lt;std::int32_t&gt;(width) }</span>
+<span class="c1">//            , m_height{ static_cast&lt;std::int32_t&gt;(height) } {}</span>
+<span class="c1">//</span>
+<span class="c1">//    void set(std::int32_t x, std::int32_t y, const RGB&amp; color)</span>
+<span class="c1">//    {</span>
+<span class="c1">//        if (not inBounds(y, x))</span>
+<span class="c1">//        {</span>
+<span class="c1">//            return;</span>
+<span class="c1">//        }</span>
+<span class="c1">//</span>
+<span class="c1">//        m_data[static_cast&lt;std::size_t&gt;(y) * m_width + x] = color;</span>
+<span class="c1">//    }</span>
+<span class="c1">//</span>
+<span class="c1">//    std::int32_t width() const noexcept { return m_width; }</span>
+<span class="c1">//</span>
+<span class="c1">//    std::int32_t height() const noexcept { return m_height; }</span>
+<span class="c1">//</span>
+<span class="c1">//    bool saveBMP(const std::string&amp; path)</span>
+<span class="c1">//    {</span>
+<span class="c1">//        const std::int32_t  rowSize = m_width * 3 + m_width % 4;</span>
+<span class="c1">//        const std::uint32_t bmpsize = rowSize * m_height;</span>
+<span class="c1">//        const BMPHeader header =</span>
+<span class="c1">//                {</span>
+<span class="c1">//                        0x4d42,</span>
+<span class="c1">//                        static_cast&lt;std::uint32_t&gt;(bmpsize + sizeof(BMPHeader)),</span>
+<span class="c1">//                        0, 0, sizeof(BMPHeader), 40,</span>
+<span class="c1">//                        m_width, m_height, 1, 24,</span>
+<span class="c1">//                        0, bmpsize, 0, 0, 0, 0</span>
+<span class="c1">//                };</span>
+<span class="c1">//</span>
+<span class="c1">//        if (std::ofstream ofs{ path, std::ios_base::binary })</span>
+<span class="c1">//        {</span>
+<span class="c1">//            ofs.write(reinterpret_cast&lt;const char*&gt;(&amp;header), sizeof(header));</span>
+<span class="c1">//</span>
+<span class="c1">//            std::vector&lt;std::uint8_t&gt; line(rowSize);</span>
+<span class="c1">//</span>
+<span class="c1">//            for (std::int32_t y = m_height - 1; -1 &lt; y; --y)</span>
+<span class="c1">//            {</span>
+<span class="c1">//                size_t pos = 0;</span>
+<span class="c1">//</span>
+<span class="c1">//                for (std::int32_t x = 0; x &lt; m_width; ++x)</span>
+<span class="c1">//                {</span>
+<span class="c1">//                    const RGB&amp; col = m_data[static_cast&lt;std::size_t&gt;(y) * m_width + x];</span>
+<span class="c1">//                    line[pos++] = ToUint8(col.b);</span>
+<span class="c1">//                    line[pos++] = ToUint8(col.g);</span>
+<span class="c1">//                    line[pos++] = ToUint8(col.r);</span>
+<span class="c1">//                }</span>
+<span class="c1">//</span>
+<span class="c1">//                ofs.write(reinterpret_cast&lt;const char*&gt;(line.data()), line.size());</span>
+<span class="c1">//            }</span>
+<span class="c1">//</span>
+<span class="c1">//            return true;</span>
+<span class="c1">//        }</span>
+<span class="c1">//        else</span>
+<span class="c1">//        {</span>
+<span class="c1">//            return false;</span>
+<span class="c1">//        }</span>
+<span class="c1">//    }</span>
+<span class="c1">//</span>
+<span class="c1">//    private:</span>
+<span class="c1">//</span>
+<span class="c1">//    std::vector&lt;RGB&gt; m_data;</span>
+<span class="c1">//</span>
+<span class="c1">//    std::int32_t m_width = 0, m_height = 0;</span>
+<span class="c1">//</span>
+<span class="c1">//    bool inBounds(std::int32_t y, std::int32_t x) const noexcept</span>
+<span class="c1">//    {</span>
+<span class="c1">//        return (0 &lt;= y) &amp;&amp; (y &lt; m_height) &amp;&amp; (0 &lt;= x) &amp;&amp; (x &lt; m_width);</span>
+<span class="c1">//    }</span>
+<span class="c1">//</span>
+<span class="c1">//    static constexpr std::uint8_t ToUint8(double x) noexcept</span>
+<span class="c1">//    {</span>
+<span class="c1">//        return (x &lt;= 0.0) ? 0 : (1.0 &lt;= x) ? 255 : static_cast&lt;std::uint8_t&gt;(x * 255.0 + 0.5);</span>
+<span class="c1">//    }</span>
+<span class="c1">//};</span>
+<span class="c1">//</span>
+<span class="c1">//void Test()</span>
+<span class="c1">//{</span>
+<span class="c1">//    siv::PerlinNoise perlinA{ std::random_device{} };</span>
+<span class="c1">//    siv::PerlinNoise perlinB;</span>
+<span class="c1">//</span>
+<span class="c1">//    perlinB.deserialize(perlinA.serialize());</span>
+<span class="c1">//</span>
+<span class="c1">//    assert(perlinA.octave3D(0.1, 0.2, 0.3, 4)</span>
+<span class="c1">//           == perlinB.octave3D(0.1, 0.2, 0.3, 4));</span>
+<span class="c1">//</span>
+<span class="c1">//    perlinA.reseed(12345u);</span>
+<span class="c1">//    perlinB.reseed(12345u);</span>
+<span class="c1">//</span>
+<span class="c1">//    assert(perlinA.octave3D(0.1, 0.2, 0.3, 4)</span>
+<span class="c1">//           == perlinB.octave3D(0.1, 0.2, 0.3, 4));</span>
+<span class="c1">//</span>
+<span class="c1">//    perlinA.reseed(std::mt19937{ 67890u });</span>
+<span class="c1">//    perlinB.reseed(std::mt19937{ 67890u });</span>
+<span class="c1">//</span>
+<span class="c1">//    assert(perlinA.octave3D(0.1, 0.2, 0.3, 4)</span>
+<span class="c1">//           == perlinB.octave3D(0.1, 0.2, 0.3, 4));</span>
+<span class="c1">//</span>
+<span class="c1">//    for (std::int32_t y = 0; y &lt; 20; ++y)</span>
+<span class="c1">//    {</span>
+<span class="c1">//        for (std::int32_t x = 0; x &lt; 20; ++x)</span>
+<span class="c1">//        {</span>
+<span class="c1">//            const double noise = perlinA.octave2D_01(x * 0.1, y * 0.1, 6);</span>
+<span class="c1">//            std::cout &lt;&lt; static_cast&lt;int&gt;(std::floor(noise * 10) - 0.5);</span>
+<span class="c1">//        }</span>
+<span class="c1">//        std::cout &lt;&lt; &#39;\n&#39;;</span>
+<span class="c1">//    }</span>
+<span class="c1">//}</span>
+<span class="c1">//</span>
+<span class="c1">//int main()</span>
+<span class="c1">//{</span>
+<span class="c1">//    Test();</span>
+<span class="c1">//</span>
+<span class="c1">//    Image image{ 512, 512 };</span>
+<span class="c1">//</span>
+<span class="c1">//    std::cout &lt;&lt; &quot;---------------------------------\n&quot;;</span>
+<span class="c1">//    std::cout &lt;&lt; &quot;* frequency [0.1 .. 8.0 .. 64.0] \n&quot;;</span>
+<span class="c1">//    std::cout &lt;&lt; &quot;* octaves   [1 .. 8 .. 16]       \n&quot;;</span>
+<span class="c1">//    std::cout &lt;&lt; &quot;* seed      [0 .. 2^32-1]        \n&quot;;</span>
+<span class="c1">//    std::cout &lt;&lt; &quot;---------------------------------\n&quot;;</span>
+<span class="c1">//</span>
+<span class="c1">//    for (;;)</span>
+<span class="c1">//    {</span>
+<span class="c1">//        double frequency;</span>
+<span class="c1">//        std::cout &lt;&lt; &quot;double frequency = &quot;;</span>
+<span class="c1">//        std::cin &gt;&gt; frequency;</span>
+<span class="c1">//        frequency = std::clamp(frequency, 0.1, 64.0);</span>
+<span class="c1">//</span>
+<span class="c1">//        std::int32_t octaves;</span>
+<span class="c1">//        std::cout &lt;&lt; &quot;int32 octaves    = &quot;;</span>
+<span class="c1">//        std::cin &gt;&gt; octaves;</span>
+<span class="c1">//        octaves = std::clamp(octaves, 1, 16);</span>
+<span class="c1">//</span>
+<span class="c1">//        std::uint32_t seed;</span>
+<span class="c1">//        std::cout &lt;&lt; &quot;uint32 seed      = &quot;;</span>
+<span class="c1">//        std::cin &gt;&gt; seed;</span>
+<span class="c1">//</span>
+<span class="c1">//        const siv::PerlinNoise perlin{ seed };</span>
+<span class="c1">//        const double fx = (frequency / image.width());</span>
+<span class="c1">//        const double fy = (frequency / image.height());</span>
+<span class="c1">//</span>
+<span class="c1">//        for (std::int32_t y = 0; y &lt; image.height(); ++y)</span>
+<span class="c1">//        {</span>
+<span class="c1">//            for (std::int32_t x = 0; x &lt; image.width(); ++x)</span>
+<span class="c1">//            {</span>
+<span class="c1">//                const RGB color(perlin.octave2D_01((x * fx), (y * fy), octaves));</span>
+<span class="c1">//                image.set(x, y, color);</span>
+<span class="c1">//            }</span>
+<span class="c1">//        }</span>
+<span class="c1">//</span>
+<span class="c1">//        std::stringstream ss;</span>
+<span class="c1">//        ss &lt;&lt; &#39;f&#39; &lt;&lt; frequency &lt;&lt; &#39;o&#39; &lt;&lt; octaves &lt;&lt; &#39;_&#39; &lt;&lt; seed &lt;&lt; &quot;.bmp&quot;;</span>
+<span class="c1">//</span>
+<span class="c1">//        if (image.saveBMP(ss.str()))</span>
+<span class="c1">//        {</span>
+<span class="c1">//            std::cout &lt;&lt; &quot;...saved \&quot;&quot; &lt;&lt; ss.str() &lt;&lt; &quot;\&quot;\n&quot;;</span>
+<span class="c1">//        }</span>
+<span class="c1">//        else</span>
+<span class="c1">//        {</span>
+<span class="c1">//            std::cout &lt;&lt; &quot;...failed\n&quot;;</span>
+<span class="c1">//        }</span>
+<span class="c1">//</span>
+<span class="c1">//        char c;</span>
+<span class="c1">//        std::cout &lt;&lt; &quot;continue? [y/n] &gt;&quot;;</span>
+<span class="c1">//        std::cin &gt;&gt; c;</span>
+<span class="c1">//        if (c != &#39;y&#39;) break;</span>
+<span class="c1">//        std::cout &lt;&lt; &#39;\n&#39;;</span>
+<span class="c1">//    }</span>
+<span class="c1">//}</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

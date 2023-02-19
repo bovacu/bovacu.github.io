@@ -1,0 +1,14 @@
+.. _exhale_define__core_8h_1a99269fe1483909f1a3dfd41849d5c459:
+
+Define TEXT_VERTEX_SHADER_CORE
+==============================
+
+- Defined in :ref:`file_engine_include_core_Core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: TEXT_VERTEX_SHADER_CORE
+   :project: My Project

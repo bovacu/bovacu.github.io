@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_updatable_data" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::UpdatableData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_updatable_data_1a434a03e47affae792697602ddbd8bd7b" prot="public" static="no" mutable="no">
+        <type>UpdatableType</type>
+        <definition>UpdatableType RDE::UpdatableData::updatableType</definition>
+        <argsstring></argsstring>
+        <name>updatableType</name>
+        <qualifiedname>RDE::UpdatableData::updatableType</qualifiedname>
+        <initializer>= UpdatableType::UT_NONE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/Canvas.h" line="26" column="23" bodyfile="engine/include/core/systems/uiSystem/Canvas.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_updatable_data_1a664c4f3546edad35adff5334f8fc803b" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* RDE::UpdatableData::updatable</definition>
+        <argsstring></argsstring>
+        <name>updatable</name>
+        <qualifiedname>RDE::UpdatableData::updatable</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/Canvas.h" line="27" column="14" bodyfile="engine/include/core/systems/uiSystem/Canvas.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/uiSystem/Canvas.h" line="25" column="5" bodyfile="engine/include/core/systems/uiSystem/Canvas.h" bodystart="25" bodyend="28"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_updatable_data_1a664c4f3546edad35adff5334f8fc803b" prot="public" virt="non-virtual"><scope>RDE::UpdatableData</scope><name>updatable</name></member>
+      <member refid="struct_r_d_e_1_1_updatable_data_1a434a03e47affae792697602ddbd8bd7b" prot="public" virt="non-virtual"><scope>RDE::UpdatableData</scope><name>updatableType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

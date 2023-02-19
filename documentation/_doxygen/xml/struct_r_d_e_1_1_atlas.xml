@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_atlas" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::Atlas</compoundname>
+    <includes refid="_texture_atlas_manager_8h" local="no">TextureAtlasManager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_atlas_1ac80d4f2c1d7bf5c116265d46eb0d8817" prot="public" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>Texture* RDE::Atlas::texture</definition>
+        <argsstring></argsstring>
+        <name>texture</name>
+        <qualifiedname>RDE::Atlas::texture</qualifiedname>
+        <briefdescription>
+<para><ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> containing the Sprite Sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="28" column="17" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_atlas_1afb5c6687e5ca0a03480d8f599c47c0d2" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string RDE::Atlas::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>RDE::Atlas::name</qualifiedname>
+        <briefdescription>
+<para>Name of the Sprite Sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="33" column="21" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_atlas_1a4ff1ef2ce84fb01e9c4d06d3d9a5f33e" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> * &gt;</type>
+        <definition>std::unordered_map&lt;std::string, Texture*&gt; RDE::Atlas::subTextures</definition>
+        <argsstring></argsstring>
+        <name>subTextures</name>
+        <qualifiedname>RDE::Atlas::subTextures</qualifiedname>
+        <briefdescription>
+<para>Map that holds each sub-sprite and its name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="38" column="28" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_atlas_1aa3940b1eafb423d15eda620fabb346e2" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint RDE::Atlas::textureWidth</definition>
+        <argsstring></argsstring>
+        <name>textureWidth</name>
+        <qualifiedname>RDE::Atlas::textureWidth</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Width of the Sprite Sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="43" column="14" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_atlas_1a4dc4acd83194fe02b939e262184c0e45" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint RDE::Atlas::textureHeight</definition>
+        <argsstring></argsstring>
+        <name>textureHeight</name>
+        <qualifiedname>RDE::Atlas::textureHeight</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Height of the Sprite Sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="48" column="14" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_r_d_e_1_1_atlas_1a1f245db70c0829488b29dd94f2060617" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::Atlas::Atlas</definition>
+        <argsstring>()</argsstring>
+        <name>Atlas</name>
+        <qualifiedname>RDE::Atlas::Atlas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="50" column="9" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_atlas_1ab7cbc7b289042483990a0c4b3239f5e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::Atlas::~Atlas</definition>
+        <argsstring>()</argsstring>
+        <name>~Atlas</name>
+        <qualifiedname>RDE::Atlas::~Atlas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="54" column="9" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="54" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_atlas_1a1a1747924be0cf811f2e28e313c90fce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Atlas::debugInfo</definition>
+        <argsstring>()</argsstring>
+        <name>debugInfo</name>
+        <qualifiedname>RDE::Atlas::debugInfo</qualifiedname>
+        <briefdescription>
+<para>Prints info about the Sprite Sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="64" column="14" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="64" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An atlas is a group of images normally related between them, or as also known, a Sprite Sheet. This struct holds all the information related to this Sprite Sheet and how the are separated. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>RDE::Atlas</label>
+        <link refid="struct_r_d_e_1_1_atlas"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>texture</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>RDE::NineSlice</label>
+        <link refid="struct_r_d_e_1_1_nine_slice"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>subRects</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::Texture</label>
+        <link refid="class_r_d_e_1_1_texture"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>textureSize</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>spriteSheetSize</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>region</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>nineSlice</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>RDE::Vec2&lt; T &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+      <node id="5">
+        <label>RDE::Rect&lt; Vec2F &gt;</label>
+        <link refid="struct_r_d_e_1_1_rect"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>bottomLeftCorner</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>RDE::Rect&lt; Vec2I &gt;</label>
+        <link refid="struct_r_d_e_1_1_rect"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>bottomLeftCorner</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RDE::Vec2&lt; float &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+      <node id="4">
+        <label>RDE::Vec2&lt; int &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/render/elements/TextureAtlasManager.h" line="24" column="5" bodyfile="engine/include/core/render/elements/TextureAtlasManager.h" bodystart="24" bodyend="71"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_atlas_1a1f245db70c0829488b29dd94f2060617" prot="public" virt="non-virtual"><scope>RDE::Atlas</scope><name>Atlas</name></member>
+      <member refid="struct_r_d_e_1_1_atlas_1a1a1747924be0cf811f2e28e313c90fce" prot="public" virt="non-virtual"><scope>RDE::Atlas</scope><name>debugInfo</name></member>
+      <member refid="struct_r_d_e_1_1_atlas_1afb5c6687e5ca0a03480d8f599c47c0d2" prot="public" virt="non-virtual"><scope>RDE::Atlas</scope><name>name</name></member>
+      <member refid="struct_r_d_e_1_1_atlas_1a4ff1ef2ce84fb01e9c4d06d3d9a5f33e" prot="public" virt="non-virtual"><scope>RDE::Atlas</scope><name>subTextures</name></member>
+      <member refid="struct_r_d_e_1_1_atlas_1ac80d4f2c1d7bf5c116265d46eb0d8817" prot="public" virt="non-virtual"><scope>RDE::Atlas</scope><name>texture</name></member>
+      <member refid="struct_r_d_e_1_1_atlas_1a4dc4acd83194fe02b939e262184c0e45" prot="public" virt="non-virtual"><scope>RDE::Atlas</scope><name>textureHeight</name></member>
+      <member refid="struct_r_d_e_1_1_atlas_1aa3940b1eafb423d15eda620fabb346e2" prot="public" virt="non-virtual"><scope>RDE::Atlas</scope><name>textureWidth</name></member>
+      <member refid="struct_r_d_e_1_1_atlas_1ab7cbc7b289042483990a0c4b3239f5e9" prot="public" virt="non-virtual"><scope>RDE::Atlas</scope><name>~Atlas</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

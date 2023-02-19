@@ -1,0 +1,1119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_physics_body" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::PhysicsBody</compoundname>
+    <basecompoundref refid="struct_component_base" prot="public" virt="non-virtual">ComponentBase</basecompoundref>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="struct_r_d_e_1_1_physics_body_1a139cf05ac01161b7071c8a037c841683" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class PhysicsManager</definition>
+        <argsstring></argsstring>
+        <name>PhysicsManager</name>
+        <qualifiedname>RDE::PhysicsBody::PhysicsManager</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_physics_manager" kindref="compound">PhysicsManager</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="79" column="22" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="struct_r_d_e_1_1_physics_body_1afab89afd724f1b07b1aaad6bdc61c47a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Graph</definition>
+        <argsstring></argsstring>
+        <name>Graph</name>
+        <qualifiedname>RDE::PhysicsBody::Graph</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_graph" kindref="compound">Graph</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="80" column="22" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_physics_body_1aa08824ebfc8241a89fd293be97cf5c20" prot="private" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong RDE::PhysicsBody::keyCounter</definition>
+        <argsstring></argsstring>
+        <name>keyCounter</name>
+        <qualifiedname>RDE::PhysicsBody::keyCounter</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="83" column="19" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_physics_body_1ad3f004a97668225946f73e82c315a0d3" prot="private" static="no" mutable="no">
+        <type>cpBody *</type>
+        <definition>cpBody* RDE::PhysicsBody::body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <qualifiedname>RDE::PhysicsBody::body</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="84" column="20" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_physics_body_1a957c36346657f34fe5d79822f26165e6" prot="private" static="no" mutable="no">
+        <type>cpSpace *</type>
+        <definition>cpSpace* RDE::PhysicsBody::space</definition>
+        <argsstring></argsstring>
+        <name>space</name>
+        <qualifiedname>RDE::PhysicsBody::space</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="85" column="21" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_physics_body_1a7dabc7a49841a8ec4b8ef3ce2f264faa" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; PhysicsShapeId, <ref refid="struct_r_d_e_1_1_physics_shape" kindref="compound">PhysicsShape</ref> &gt;</type>
+        <definition>std::unordered_map&lt;PhysicsShapeId, PhysicsShape&gt; RDE::PhysicsBody::physicsShapes</definition>
+        <argsstring></argsstring>
+        <name>physicsShapes</name>
+        <qualifiedname>RDE::PhysicsBody::physicsShapes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="86" column="32" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_physics_body_1af6fcef769b0508e13598683290b5c9b1" prot="public" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> *</type>
+        <definition>Transform* RDE::PhysicsBody::transform</definition>
+        <argsstring></argsstring>
+        <name>transform</name>
+        <qualifiedname>RDE::PhysicsBody::transform</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="89" column="23" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1ac997f0e1625f57039a901dd7b88221d9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::calculateDataForBox</definition>
+        <argsstring>(ShapeConfig &amp;_shapeConfig, float _bodyMass, PhysicsBodyType _bodyType)</argsstring>
+        <name>calculateDataForBox</name>
+        <qualifiedname>RDE::PhysicsBody::calculateDataForBox</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_shape_config" kindref="compound">ShapeConfig</ref> &amp;</type>
+          <declname>_shapeConfig</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_bodyMass</declname>
+        </param>
+        <param>
+          <type>PhysicsBodyType</type>
+          <declname>_bodyType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="92" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1ab64660034f6be602307aba6c76932698" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::calculateDataForCircle</definition>
+        <argsstring>(ShapeConfig &amp;_shapeConfig, float _bodyMass, PhysicsBodyType _bodyType)</argsstring>
+        <name>calculateDataForCircle</name>
+        <qualifiedname>RDE::PhysicsBody::calculateDataForCircle</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_shape_config" kindref="compound">ShapeConfig</ref> &amp;</type>
+          <declname>_shapeConfig</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_bodyMass</declname>
+        </param>
+        <param>
+          <type>PhysicsBodyType</type>
+          <declname>_bodyType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="93" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1ae89c384321cd024c3fd50c54102ee9cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::calculateDataForPolygon</definition>
+        <argsstring>(ShapeConfig &amp;_shapeConfig, float _bodyMass, PhysicsBodyType _bodyType)</argsstring>
+        <name>calculateDataForPolygon</name>
+        <qualifiedname>RDE::PhysicsBody::calculateDataForPolygon</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_shape_config" kindref="compound">ShapeConfig</ref> &amp;</type>
+          <declname>_shapeConfig</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_bodyMass</declname>
+        </param>
+        <param>
+          <type>PhysicsBodyType</type>
+          <declname>_bodyType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="94" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a4a4e21bf7c6b229bb2af966972368c23" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::calculateDataForSegment</definition>
+        <argsstring>(ShapeConfig &amp;_shapeConfig, float _bodyMass, PhysicsBodyType _bodyType)</argsstring>
+        <name>calculateDataForSegment</name>
+        <qualifiedname>RDE::PhysicsBody::calculateDataForSegment</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_shape_config" kindref="compound">ShapeConfig</ref> &amp;</type>
+          <declname>_shapeConfig</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_bodyMass</declname>
+        </param>
+        <param>
+          <type>PhysicsBodyType</type>
+          <declname>_bodyType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="95" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a1a293fb37abe4d326d154cc1d22f5fb4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::createBody</definition>
+        <argsstring>(ShapeConfig &amp;_shapeConfig, float _moment, float _bodyMass, PhysicsBodyType _bodyType)</argsstring>
+        <name>createBody</name>
+        <qualifiedname>RDE::PhysicsBody::createBody</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_shape_config" kindref="compound">ShapeConfig</ref> &amp;</type>
+          <declname>_shapeConfig</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_moment</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_bodyMass</declname>
+        </param>
+        <param>
+          <type>PhysicsBodyType</type>
+          <declname>_bodyType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="96" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1acfaf4f076b7c618f52e02505e41593a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::setupShape</definition>
+        <argsstring>(ShapeConfig &amp;_shapeConfig)</argsstring>
+        <name>setupShape</name>
+        <qualifiedname>RDE::PhysicsBody::setupShape</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_shape_config" kindref="compound">ShapeConfig</ref> &amp;</type>
+          <declname>_shapeConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="97" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1ad0f41133c6898cd300236fbadfb47a0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RDE::PhysicsBody::PhysicsBody</definition>
+        <argsstring>(Node *_node, Manager *_manager, Graph *_graph, PhysicsBodyConfig &amp;_bodyConfig)</argsstring>
+        <name>PhysicsBody</name>
+        <qualifiedname>RDE::PhysicsBody::PhysicsBody</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>_node</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> *</type>
+          <declname>_manager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_graph" kindref="compound">Graph</ref> *</type>
+          <declname>_graph</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_physics_body_config" kindref="compound">PhysicsBodyConfig</ref> &amp;</type>
+          <declname>_bodyConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="100" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a9b223c25408f3dd08d3666a2afce2493" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RDE::PhysicsBody::~PhysicsBody</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysicsBody</name>
+        <qualifiedname>RDE::PhysicsBody::~PhysicsBody</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="101" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a8607c73a87f5957f4432353d1501d5b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>RDE::PhysicsBody::update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="102" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1af71bc18a9a9dc54ccbdf4156942ee9d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PhysicsShapeId</type>
+        <definition>PhysicsShapeId RDE::PhysicsBody::addShape</definition>
+        <argsstring>(ShapeConfig &amp;_shapeConfig, const Vec2F &amp;_position={0.f, 0.f}, float _rotation=0.f)</argsstring>
+        <name>addShape</name>
+        <qualifiedname>RDE::PhysicsBody::addShape</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_shape_config" kindref="compound">ShapeConfig</ref> &amp;</type>
+          <declname>_shapeConfig</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_position</declname>
+          <defval>{0.f, 0.f}</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_rotation</declname>
+          <defval>0.f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="104" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a9db302f62dc9aacb88916d58bbd39b34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RDE::PhysicsBody::removeShape</definition>
+        <argsstring>(PhysicsShapeId _id)</argsstring>
+        <name>removeShape</name>
+        <qualifiedname>RDE::PhysicsBody::removeShape</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="105" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1aecf82539a3c1a195c611aa604d9ad5a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::setGroup</definition>
+        <argsstring>(PhysicsShapeId _shapeID, uint _group)</argsstring>
+        <name>setGroup</name>
+        <qualifiedname>RDE::PhysicsBody::setGroup</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>_group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="107" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a7e85d1cdb35a6e81aceaa92901ae3846" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::removeGroup</definition>
+        <argsstring>(PhysicsShapeId _shapeID)</argsstring>
+        <name>removeGroup</name>
+        <qualifiedname>RDE::PhysicsBody::removeGroup</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="108" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1abaef9a1be1c6c0c6114ad2298f8e2172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::setMask</definition>
+        <argsstring>(PhysicsShapeId _shapeID, uint _mask)</argsstring>
+        <name>setMask</name>
+        <qualifiedname>RDE::PhysicsBody::setMask</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>_mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="110" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a51909746e4d553da76107a859fc5a836" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::removeMask</definition>
+        <argsstring>(PhysicsShapeId _shapeID)</argsstring>
+        <name>removeMask</name>
+        <qualifiedname>RDE::PhysicsBody::removeMask</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="111" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a21615c17fb73ff2c038f499f553d0d31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::setToCollideWiths</definition>
+        <argsstring>(PhysicsShapeId _shapeID, uint _toCollideWiths)</argsstring>
+        <name>setToCollideWiths</name>
+        <qualifiedname>RDE::PhysicsBody::setToCollideWiths</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>_toCollideWiths</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="113" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1ad9560d0f20dd079450b1298c142ae14e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::removeToCollideWiths</definition>
+        <argsstring>(PhysicsShapeId _shapeID)</argsstring>
+        <name>removeToCollideWiths</name>
+        <qualifiedname>RDE::PhysicsBody::removeToCollideWiths</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="114" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1ac3630a8018f0fb87a31ed965b1ac0148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::addMaskFilter</definition>
+        <argsstring>(PhysicsShapeId _shapeID, uint _masksToAdd)</argsstring>
+        <name>addMaskFilter</name>
+        <qualifiedname>RDE::PhysicsBody::addMaskFilter</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>_masksToAdd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="116" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a3fc2a93008c497003700e76573402993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::removeMaskFilter</definition>
+        <argsstring>(PhysicsShapeId _shapeID, uint _masksToRemove)</argsstring>
+        <name>removeMaskFilter</name>
+        <qualifiedname>RDE::PhysicsBody::removeMaskFilter</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>_masksToRemove</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="117" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a0c143ada24cc0e095726a5ed0e553db0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::resetMaskFilter</definition>
+        <argsstring>(PhysicsShapeId _shapeID)</argsstring>
+        <name>resetMaskFilter</name>
+        <qualifiedname>RDE::PhysicsBody::resetMaskFilter</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="118" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1ae1f2f1fe2b9ca1c3385ada19b8d0aab9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint RDE::PhysicsBody::getMasks</definition>
+        <argsstring>(PhysicsShapeId _shapeID)</argsstring>
+        <name>getMasks</name>
+        <qualifiedname>RDE::PhysicsBody::getMasks</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="120" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1ace3716642d462c541b41e8487b274308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint RDE::PhysicsBody::getGroups</definition>
+        <argsstring>(PhysicsShapeId _shapeID)</argsstring>
+        <name>getGroups</name>
+        <qualifiedname>RDE::PhysicsBody::getGroups</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="121" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a23e234661db2e173609c6d623836eb2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint RDE::PhysicsBody::getToCollideWiths</definition>
+        <argsstring>(PhysicsShapeId _shapeID)</argsstring>
+        <name>getToCollideWiths</name>
+        <qualifiedname>RDE::PhysicsBody::getToCollideWiths</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="122" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a8bbf9ec69c589ccac85181397f4f49e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::setBodyType</definition>
+        <argsstring>(const PhysicsBodyType &amp;_physicsBodyType)</argsstring>
+        <name>setBodyType</name>
+        <qualifiedname>RDE::PhysicsBody::setBodyType</qualifiedname>
+        <param>
+          <type>const PhysicsBodyType &amp;</type>
+          <declname>_physicsBodyType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="124" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a39ead25c129028da90a3989078ae71cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PhysicsBodyType</type>
+        <definition>PhysicsBodyType RDE::PhysicsBody::getBodyType</definition>
+        <argsstring>()</argsstring>
+        <name>getBodyType</name>
+        <qualifiedname>RDE::PhysicsBody::getBodyType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="125" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a3d6d6a2b3ed5662d17507e838ae3bad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::setMass</definition>
+        <argsstring>(float _mass)</argsstring>
+        <name>setMass</name>
+        <qualifiedname>RDE::PhysicsBody::setMass</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_mass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="127" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1af41876aa804a3d7dc01f44584f3af16b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::PhysicsBody::getMass</definition>
+        <argsstring>()</argsstring>
+        <name>getMass</name>
+        <qualifiedname>RDE::PhysicsBody::getMass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="128" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1aeca48da212eed4c5d4d4e8ce2992dfdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::setFriction</definition>
+        <argsstring>(PhysicsShapeId _shapeID, float _friction)</argsstring>
+        <name>setFriction</name>
+        <qualifiedname>RDE::PhysicsBody::setFriction</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_friction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="130" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a2501dc2c9ef7e06995117054797acbf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::PhysicsBody::getFriction</definition>
+        <argsstring>(PhysicsShapeId _shapeID)</argsstring>
+        <name>getFriction</name>
+        <qualifiedname>RDE::PhysicsBody::getFriction</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="131" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a9089e0a73700865e7abd68503d0115a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::setRestitution</definition>
+        <argsstring>(PhysicsShapeId _shapeID, float _restitution)</argsstring>
+        <name>setRestitution</name>
+        <qualifiedname>RDE::PhysicsBody::setRestitution</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_restitution</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="133" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a05ef3e5e20bba180c96e5f2930360b94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::PhysicsBody::getRestitution</definition>
+        <argsstring>(PhysicsShapeId _shapeID)</argsstring>
+        <name>getRestitution</name>
+        <qualifiedname>RDE::PhysicsBody::getRestitution</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="134" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a44f123c9faf6a0e6a48564b41930edc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::setLinearVelocity</definition>
+        <argsstring>(const Vec2F &amp;_linearVelocity)</argsstring>
+        <name>setLinearVelocity</name>
+        <qualifiedname>RDE::PhysicsBody::setLinearVelocity</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_linearVelocity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="136" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a54fc7882f8a1152384bb68fe891523df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::PhysicsBody::getLinearVelocity</definition>
+        <argsstring>()</argsstring>
+        <name>getLinearVelocity</name>
+        <qualifiedname>RDE::PhysicsBody::getLinearVelocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="137" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1aa94e150f2987259659f6ee0cfe3c3008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::setAngularLinearVelocity</definition>
+        <argsstring>(float _linearAngularVelocity)</argsstring>
+        <name>setAngularLinearVelocity</name>
+        <qualifiedname>RDE::PhysicsBody::setAngularLinearVelocity</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_linearAngularVelocity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="139" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a8b9f4f231db258681b313ad9f41e78da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::PhysicsBody::getAngularLinearVelocity</definition>
+        <argsstring>()</argsstring>
+        <name>getAngularLinearVelocity</name>
+        <qualifiedname>RDE::PhysicsBody::getAngularLinearVelocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="140" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1abbdfbd3a170932f9576910468ad22e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::setCenterOfGravity</definition>
+        <argsstring>(const Vec2F &amp;_centerOfGravity)</argsstring>
+        <name>setCenterOfGravity</name>
+        <qualifiedname>RDE::PhysicsBody::setCenterOfGravity</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_centerOfGravity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="142" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a3773e07987817b434815d8953059c973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::PhysicsBody::getCenterOfGravity</definition>
+        <argsstring>()</argsstring>
+        <name>getCenterOfGravity</name>
+        <qualifiedname>RDE::PhysicsBody::getCenterOfGravity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="143" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a82a0a81d2e4e4a251b8885aac5d32793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::setGhost</definition>
+        <argsstring>(PhysicsShapeId _shapeID, bool _ghost)</argsstring>
+        <name>setGhost</name>
+        <qualifiedname>RDE::PhysicsBody::setGhost</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_ghost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="145" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a01700c904305dbd4a4be92d15e18dbae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RDE::PhysicsBody::isGhost</definition>
+        <argsstring>(PhysicsShapeId _shapeID)</argsstring>
+        <name>isGhost</name>
+        <qualifiedname>RDE::PhysicsBody::isGhost</qualifiedname>
+        <param>
+          <type>PhysicsShapeId</type>
+          <declname>_shapeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="146" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1ac997f006a7dc59468659f9d9bce086ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::applyImpulseLocal</definition>
+        <argsstring>(const Vec2F &amp;_impulse, const Vec2F &amp;_where)</argsstring>
+        <name>applyImpulseLocal</name>
+        <qualifiedname>RDE::PhysicsBody::applyImpulseLocal</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_impulse</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_where</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="148" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a581ac1bccee51b3755caab1c91942e76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::applyImpulseWorld</definition>
+        <argsstring>(const Vec2F &amp;_impulse, const Vec2F &amp;_where)</argsstring>
+        <name>applyImpulseWorld</name>
+        <qualifiedname>RDE::PhysicsBody::applyImpulseWorld</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_impulse</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_where</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="149" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1aa2dbff5a213205f2b203e66644ffbf25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::applyForceLocal</definition>
+        <argsstring>(const Vec2F &amp;_force, const Vec2F &amp;_where)</argsstring>
+        <name>applyForceLocal</name>
+        <qualifiedname>RDE::PhysicsBody::applyForceLocal</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_force</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_where</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="151" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1aa5914988fc228a1b86d577b0eb5f77b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::applyForceWorld</definition>
+        <argsstring>(const Vec2F &amp;_force, const Vec2F &amp;_where)</argsstring>
+        <name>applyForceWorld</name>
+        <qualifiedname>RDE::PhysicsBody::applyForceWorld</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_force</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_where</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="152" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1ae531d06be6d77037b6487b8faaeb03eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RDE::PhysicsBody::setEnabled</definition>
+        <argsstring>(bool _enabled) override</argsstring>
+        <name>setEnabled</name>
+        <qualifiedname>RDE::PhysicsBody::setEnabled</qualifiedname>
+        <reimplements refid="struct_component_base_1a5985a55f1b7d0559c6e04bf6931740bd">setEnabled</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>_enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="154" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_physics_body_1a045bafb00679a21d08d9064d2139a75d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool RDE::PhysicsBody::isEnabled</definition>
+        <argsstring>() override</argsstring>
+        <name>isEnabled</name>
+        <qualifiedname>RDE::PhysicsBody::isEnabled</qualifiedname>
+        <reimplements refid="struct_component_base_1a1a4f1ecee1f4e4841528402875858b9f">isEnabled</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="155" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ComponentBase</label>
+        <link refid="struct_component_base"/>
+      </node>
+      <node id="1">
+        <label>RDE::PhysicsBody</label>
+        <link refid="struct_r_d_e_1_1_physics_body"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ComponentBase</label>
+        <link refid="struct_component_base"/>
+      </node>
+      <node id="4">
+        <label>RDE::Node</label>
+        <link refid="struct_r_d_e_1_1_node"/>
+      </node>
+      <node id="1">
+        <label>RDE::PhysicsBody</label>
+        <link refid="struct_r_d_e_1_1_physics_body"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>transform</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RDE::Transform</label>
+        <link refid="class_r_d_e_1_1_transform"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>parentTransform</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/physicsSystem/PhysicsBody.h" line="77" column="5" bodyfile="engine/include/core/systems/physicsSystem/PhysicsBody.h" bodystart="77" bodyend="156"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_physics_body_1ac3630a8018f0fb87a31ed965b1ac0148" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>addMaskFilter</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1af71bc18a9a9dc54ccbdf4156942ee9d6" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>addShape</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1aa2dbff5a213205f2b203e66644ffbf25" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>applyForceLocal</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1aa5914988fc228a1b86d577b0eb5f77b4" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>applyForceWorld</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1ac997f006a7dc59468659f9d9bce086ca" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>applyImpulseLocal</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a581ac1bccee51b3755caab1c91942e76" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>applyImpulseWorld</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1ad3f004a97668225946f73e82c315a0d3" prot="private" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>body</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1ac997f0e1625f57039a901dd7b88221d9" prot="private" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>calculateDataForBox</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1ab64660034f6be602307aba6c76932698" prot="private" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>calculateDataForCircle</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1ae89c384321cd024c3fd50c54102ee9cd" prot="private" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>calculateDataForPolygon</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a4a4e21bf7c6b229bb2af966972368c23" prot="private" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>calculateDataForSegment</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a1a293fb37abe4d326d154cc1d22f5fb4" prot="private" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>createBody</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a8b9f4f231db258681b313ad9f41e78da" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>getAngularLinearVelocity</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a39ead25c129028da90a3989078ae71cf" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>getBodyType</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a3773e07987817b434815d8953059c973" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>getCenterOfGravity</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a2501dc2c9ef7e06995117054797acbf6" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>getFriction</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1ace3716642d462c541b41e8487b274308" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>getGroups</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a54fc7882f8a1152384bb68fe891523df" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>getLinearVelocity</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1ae1f2f1fe2b9ca1c3385ada19b8d0aab9" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>getMasks</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1af41876aa804a3d7dc01f44584f3af16b" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>getMass</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a05ef3e5e20bba180c96e5f2930360b94" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>getRestitution</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a23e234661db2e173609c6d623836eb2b" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>getToCollideWiths</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1afab89afd724f1b07b1aaad6bdc61c47a" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>Graph</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a045bafb00679a21d08d9064d2139a75d" prot="public" virt="virtual"><scope>RDE::PhysicsBody</scope><name>isEnabled</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a01700c904305dbd4a4be92d15e18dbae" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>isGhost</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1aa08824ebfc8241a89fd293be97cf5c20" prot="private" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>keyCounter</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1ad0f41133c6898cd300236fbadfb47a0e" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>PhysicsBody</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a139cf05ac01161b7071c8a037c841683" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>PhysicsManager</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a7dabc7a49841a8ec4b8ef3ce2f264faa" prot="private" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>physicsShapes</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a7e85d1cdb35a6e81aceaa92901ae3846" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>removeGroup</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a51909746e4d553da76107a859fc5a836" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>removeMask</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a3fc2a93008c497003700e76573402993" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>removeMaskFilter</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a9db302f62dc9aacb88916d58bbd39b34" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>removeShape</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1ad9560d0f20dd079450b1298c142ae14e" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>removeToCollideWiths</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a0c143ada24cc0e095726a5ed0e553db0" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>resetMaskFilter</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1aa94e150f2987259659f6ee0cfe3c3008" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>setAngularLinearVelocity</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a8bbf9ec69c589ccac85181397f4f49e1" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>setBodyType</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1abbdfbd3a170932f9576910468ad22e6f" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>setCenterOfGravity</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1ae531d06be6d77037b6487b8faaeb03eb" prot="public" virt="virtual"><scope>RDE::PhysicsBody</scope><name>setEnabled</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1aeca48da212eed4c5d4d4e8ce2992dfdc" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>setFriction</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a82a0a81d2e4e4a251b8885aac5d32793" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>setGhost</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1aecf82539a3c1a195c611aa604d9ad5a4" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>setGroup</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a44f123c9faf6a0e6a48564b41930edc2" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>setLinearVelocity</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1abaef9a1be1c6c0c6114ad2298f8e2172" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>setMask</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a3d6d6a2b3ed5662d17507e838ae3bad1" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>setMass</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a9089e0a73700865e7abd68503d0115a2" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>setRestitution</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a21615c17fb73ff2c038f499f553d0d31" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>setToCollideWiths</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1acfaf4f076b7c618f52e02505e41593a4" prot="private" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>setupShape</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a957c36346657f34fe5d79822f26165e6" prot="private" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>space</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1af6fcef769b0508e13598683290b5c9b1" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>transform</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a8607c73a87f5957f4432353d1501d5b5" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>update</name></member>
+      <member refid="struct_r_d_e_1_1_physics_body_1a9b223c25408f3dd08d3666a2afce2493" prot="public" virt="non-virtual"><scope>RDE::PhysicsBody</scope><name>~PhysicsBody</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

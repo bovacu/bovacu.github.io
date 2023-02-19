@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_dynamic_sprite_renderer_config" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::DynamicSpriteRendererConfig</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_dynamic_sprite_renderer_config_1acda0394155aca65957024db6445a65b6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2</ref>&lt; uint &gt;</type>
+        <definition>Vec2&lt;uint&gt; RDE::DynamicSpriteRendererConfig::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>RDE::DynamicSpriteRendererConfig::size</qualifiedname>
+        <initializer>= { 64, 64 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/DynamicSpriteRenderer.h" line="20" column="14" bodyfile="engine/include/core/graph/components/DynamicSpriteRenderer.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_dynamic_sprite_renderer_config_1a72419133e0d4131f87c04c732cc25047" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* RDE::DynamicSpriteRendererConfig::pixels</definition>
+        <argsstring></argsstring>
+        <name>pixels</name>
+        <qualifiedname>RDE::DynamicSpriteRendererConfig::pixels</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/DynamicSpriteRenderer.h" line="21" column="23" bodyfile="engine/include/core/graph/components/DynamicSpriteRenderer.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_dynamic_sprite_renderer_config_1afbf52226825b1bf6fea60ad3cb50c354" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_r_d_e_1a9b56064364720987212b6d168063d797" kindref="member">ImageType</ref></type>
+        <definition>ImageType RDE::DynamicSpriteRendererConfig::imageType</definition>
+        <argsstring></argsstring>
+        <name>imageType</name>
+        <qualifiedname>RDE::DynamicSpriteRendererConfig::imageType</qualifiedname>
+        <initializer>= ImageType::PNG</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/DynamicSpriteRenderer.h" line="22" column="19" bodyfile="engine/include/core/graph/components/DynamicSpriteRenderer.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>RDE::DynamicSpriteRendererConfig</label>
+        <link refid="struct_r_d_e_1_1_dynamic_sprite_renderer_config"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::Vec2&lt; uint &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/graph/components/DynamicSpriteRenderer.h" line="19" column="5" bodyfile="engine/include/core/graph/components/DynamicSpriteRenderer.h" bodystart="19" bodyend="23"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_dynamic_sprite_renderer_config_1afbf52226825b1bf6fea60ad3cb50c354" prot="public" virt="non-virtual"><scope>RDE::DynamicSpriteRendererConfig</scope><name>imageType</name></member>
+      <member refid="struct_r_d_e_1_1_dynamic_sprite_renderer_config_1a72419133e0d4131f87c04c732cc25047" prot="public" virt="non-virtual"><scope>RDE::DynamicSpriteRendererConfig</scope><name>pixels</name></member>
+      <member refid="struct_r_d_e_1_1_dynamic_sprite_renderer_config_1acda0394155aca65957024db6445a65b6" prot="public" virt="non-virtual"><scope>RDE::DynamicSpriteRendererConfig</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

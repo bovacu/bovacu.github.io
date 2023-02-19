@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Scene &mdash; RDE  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class SceneManager" href="class_r_d_e_1_1_scene_manager.html" />
+    <link rel="prev" title="Class RenderManager" href="class_r_d_e_1_1_render_manager.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            RDE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="struct_component_base.html">Struct ComponentBase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_active.html">Struct Active</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_animation_node.html">Struct AnimationNode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_animation_transition.html">Struct AnimationTransition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_atlas.html">Struct Atlas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_canvas_element.html">Struct CanvasElement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_canvas_event_stopper.html">Struct CanvasEventStopper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_char_info.html">Struct CharInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_color.html">Struct Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_command.html">Struct Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_common_u_i_config.html">Struct CommonUIConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_controller.html">Struct Controller</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_debug_options.html">Struct DebugOptions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_delegate.html">Template Struct Delegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct Delegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_event.html">Struct DisabledForEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_fixed_update.html">Struct DisabledForFixedUpdate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_late_update.html">Struct DisabledForLateUpdate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_render.html">Struct DisabledForRender</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_update.html">Struct DisabledForUpdate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_draw_and_flush_data.html">Struct DrawAndFlushData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_dynamic_sprite_renderer_config.html">Struct DynamicSpriteRendererConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_effect___controllers.html">Struct Effect_Controllers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_file.html">Template Struct File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_font_manager_1_1_font_handler.html">Struct FontManager::FontHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_frame_buffer_specification.html">Struct FrameBufferSpecification</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_generation_settings.html">Struct GenerationSettings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_config.html">Struct LocalizationConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_info.html">Struct LocalizationInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_manager_1_1_any.html">Struct LocalizationManager::Any</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_mat2.html">Struct Mat2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_music.html">Struct Music</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_nine_slice.html">Struct NineSlice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_node.html">Struct Node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_node___json_pair.html">Struct Node_JsonPair</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_noise_map.html">Struct NoiseMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_open_g_l_vertex.html">Struct OpenGLVertex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_open_g_l_vertex_debug.html">Struct OpenGLVertexDebug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_data.html">Struct ParticleData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_callbacks_config.html">Struct ParticleSystemCallbacksConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_color_gradient_config.html">Struct ParticleSystemColorGradientConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_config.html">Struct ParticleSystemConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_data_config.html">Struct ParticleSystemDataConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_body.html">Struct PhysicsBody</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_body_config.html">Struct PhysicsBodyConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_collision_callbacks.html">Struct PhysicsCollisionCallbacks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_shape.html">Struct PhysicsShape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_probability.html">Struct Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_procedural_map.html">Struct ProceduralMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config.html">Struct RDEConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties.html">Struct RDEConfig::ProjectProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties.html">Struct RDEConfig::WindowProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rect.html">Template Struct Rect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rendering_tree_data.html">Struct RenderingTreeData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_renderizable_inner_data.html">Struct RenderizableInnerData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_renderizable_inner_data_u_i.html">Struct RenderizableInnerDataUI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_return_delegate.html">Template Struct ReturnDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct ReturnDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rolling_buffer.html">Struct RollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_scrolling_buffer.html">Struct ScrollingBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sfx.html">Struct Sfx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_shape_config.html">Struct ShapeConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_shape_masking_config.html">Struct ShapeMaskingConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sound.html">Struct Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sprite_renderer_config.html">Struct SpriteRendererConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_state.html">Struct State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_stub.html">Template Struct Stub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_stub_3_01_r_07_args_8_8_8_08_4.html">Template Struct Stub&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_tag.html">Struct Tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_text_renderer_1_1_line_info.html">Struct TextRenderer::LineInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_text_renderer_config.html">Struct TextRendererConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_texture_info.html">Struct TextureInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_anchor.html">Struct UIAnchor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_button_config.html">Struct UIButtonConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_checkbox_config.html">Struct UICheckboxConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_image_config.html">Struct UIImageConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_input_config.html">Struct UIInputConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_panel_config.html">Struct UIPanelConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_slider_config.html">Struct UISliderConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_text_1_1_line_info.html">Struct UIText::LineInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_text_config.html">Struct UITextConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_transform.html">Struct UITransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_unique_delegate.html">Template Struct UniqueDelegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_unique_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct UniqueDelegate&lt; R(Args…) &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_updatable_data.html">Struct UpdatableData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vec2.html">Template Struct Vec2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vertex_config.html">Struct VertexConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vibration_config.html">Struct VibrationConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_animation.html">Class Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_animation_system.html">Class AnimationSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_bad_delegate_call.html">Class BadDelegateCall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_bad_e_c_s_system_swap.html">Class BadECSSystemSwap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_basic_perlin_noise.html">Template Class BasicPerlinNoise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_batch.html">Class Batch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_camera.html">Class Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_canvas.html">Class Canvas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_cellular_automata.html">Class CellularAutomata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_clock.html">Class Clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_config_manager.html">Class ConfigManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_console.html">Class Console</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_axis_moved_event.html">Class ControllerAxisMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_button_down_event.html">Class ControllerButtonDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_button_up_event.html">Class ControllerButtonUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_input.html">Class ControllerInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_vibration_manager.html">Class ControllerVibrationManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html">Class CPUTexture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_debug_shape.html">Class DebugShape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_delta.html">Class Delta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_dynamic_sprite_renderer.html">Class DynamicSpriteRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_e_c_s_manager.html">Class ECSManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_e_c_s_system.html">Class ECSSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_engine.html">Class Engine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event.html">Class Event</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_bus.html">Template Class EventBus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_bus_1_1_handler_id.html">Class EventBus::HandlerId</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_dispatcher.html">Class EventDispatcher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_file_handler.html">Class FileHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_file_manager.html">Class FileManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_font.html">Class Font</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_font_manager.html">Class FontManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_frame_buffer.html">Class FrameBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_graph.html">Class Graph</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_im_gui_scene.html">Class ImGuiScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_input.html">Class Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_input_manager.html">Class InputManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_keyboard_input.html">Class KeyboardInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_event.html">Class KeyEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_pressed_event.html">Class KeyPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_released_event.html">Class KeyReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_typed_event.html">Class KeyTypedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_load_vertex_config_not_invoked.html">Class LoadVertexConfigNotInvoked</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_localization_manager.html">Class LocalizationManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_manager.html">Class Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_map_generator.html">Class MapGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_input.html">Class MobileInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_down_event.html">Class MobileTouchDownEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_moved_event.html">Class MobileTouchMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_up_event.html">Class MobileTouchUpEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_event.html">Class MouseButtonEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_pressed_event.html">Class MouseButtonPressedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_released_event.html">Class MouseButtonReleasedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_input.html">Class MouseInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_moved_event.html">Class MouseMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_scrolled_event.html">Class MouseScrolledEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_particle_system.html">Class ParticleSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_perlin_noise_manager.html">Class PerlinNoiseManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_physics_manager.html">Class PhysicsManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_platform.html">Class Platform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_pool.html">Template Class Pool</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_profiler.html">Class Profiler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_random.html">Class Random</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_render_manager.html">Class RenderManager</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class Scene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_scene_manager.html">Class SceneManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_shader.html">Class Shader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_shader_manager.html">Class ShaderManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sound_manager.html">Class SoundManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_batch.html">Class SpriteBatch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_batch_1_1_debug.html">Class SpriteBatch::Debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_renderer.html">Class SpriteRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_text_renderer.html">Class TextRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_text_typed_event.html">Class TextTypedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_texture.html">Class Texture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_texture_atlas_manager.html">Class TextureAtlasManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_transform.html">Class Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_transition_params.html">Class TransitionParams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_button.html">Class UIButton</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_checkbox.html">Class UICheckbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_image.html">Class UIImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_input.html">Class UIInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_interactable.html">Class UIInteractable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_mask.html">Class UIMask</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_panel.html">Class UIPanel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_slider.html">Class UISlider</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_text.html">Class UIText</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_view_port.html">Class ViewPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window.html">Class Window</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_closed_event.html">Class WindowClosedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_display_changed_event.html">Class WindowDisplayChangedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_frame_event.html">Class WindowFrameEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_input.html">Class WindowInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_minimized_event.html">Class WindowMinimizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_moved_event.html">Class WindowMovedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_render_event.html">Class WindowRenderEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_resized_event.html">Class WindowResizedEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_update_event.html">Class WindowUpdateEvent</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RDE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="library_root.html">Library API</a></li>
+      <li class="breadcrumb-item active">Class Scene</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/class_r_d_e_1_1_scene.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-scene">
+<span id="exhale-class-class-r-d-e-1-1-scene"></span><h1>Class Scene<a class="headerlink" href="#class-scene" title="Permalink to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_engine_include_core_graph_Scene.h.html#file-engine-include-core-graph-scene-h"><span class="std std-ref">File Scene.h</span></a></p></li>
+</ul>
+<section id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this heading"></a></h2>
+<section id="derived-type">
+<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">RDE::ImGuiScene</span></code> (<a class="reference internal" href="class_r_d_e_1_1_im_gui_scene.html#exhale-class-class-r-d-e-1-1-im-gui-scene"><span class="std std-ref">Class ImGuiScene</span></a>)</p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5SceneE">
+<span id="_CPPv3N3RDE5SceneE"></span><span id="_CPPv2N3RDE5SceneE"></span><span id="RDE::Scene"></span><span class="target" id="class_r_d_e_1_1_scene"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Scene</span></span></span><a class="headerlink" href="#_CPPv4N3RDE5SceneE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This class represents what is rendered in the window and all its related systems. </p>
+<p>Subclassed by <a class="reference internal" href="class_r_d_e_1_1_im_gui_scene.html#class_r_d_e_1_1_im_gui_scene"><span class="std std-ref">RDE::ImGuiScene</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene5SceneEP6EngineRKNSt6stringE">
+<span id="_CPPv3N3RDE5Scene5SceneEP6EngineRKNSt6stringE"></span><span id="_CPPv2N3RDE5Scene5SceneEP6EngineRKNSt6stringE"></span><span id="RDE::Scene::Scene__EngineP.ssCR"></span><span class="target" id="class_r_d_e_1_1_scene_1a7481e65138731d137bf590765b30b4ba"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Scene</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_engine.html#_CPPv4N3RDE6EngineE" title="RDE::Engine"><span class="n"><span class="pre">Engine</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_engine</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_debugName</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;Scene&quot;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene5SceneEP6EngineRKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5SceneD0Ev">
+<span id="_CPPv3N3RDE5SceneD0Ev"></span><span id="_CPPv2N3RDE5SceneD0Ev"></span><span id="RDE::Scene::~Scene"></span><span class="target" id="class_r_d_e_1_1_scene_1a23589dc2561bead6d74ab9ca96fbee62"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Scene</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5SceneD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene7preInitEP7ManagerP6WindowRKN8nlohmann4jsonE">
+<span id="_CPPv3N3RDE5Scene7preInitEP7ManagerP6WindowRKN8nlohmann4jsonE"></span><span id="_CPPv2N3RDE5Scene7preInitEP7ManagerP6WindowRKN8nlohmann4jsonE"></span><span id="RDE::Scene::preInit__ManagerP.WindowP.nlohmann::jsonCR"></span><span class="target" id="class_r_d_e_1_1_scene_1a1abad6512acb752b7ae00831bfd4b3f6"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">preInit</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_manager.html#_CPPv4N3RDE7ManagerE" title="RDE::Manager"><span class="n"><span class="pre">Manager</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_manager</span></span>, <a class="reference internal" href="class_r_d_e_1_1_window.html#_CPPv4N3RDE6WindowE" title="RDE::Window"><span class="n"><span class="pre">Window</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_window</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">nlohmann</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">json</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_sceneJson</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene7preInitEP7ManagerP6WindowRKN8nlohmann4jsonE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function is called when loading the scene from the configuration, it is used to make a custom loading of your custom components for the internal ECS system. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_manager</strong> – gives access to all of the managers of the engine to load anything needed. </p></li>
+<li><p><strong>_window</strong> – the window of the application </p></li>
+<li><p><strong>_sceneJson</strong> – the configuration of the .yaml file used to load the scene </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene6onInitEv">
+<span id="_CPPv3N3RDE5Scene6onInitEv"></span><span id="_CPPv2N3RDE5Scene6onInitEv"></span><span id="RDE::Scene::onInit"></span><span class="target" id="class_r_d_e_1_1_scene_1a5f93bed54b22e5834a352892e3350f1e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInit</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene6onInitEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function is called only once and when the SceneManager/displayScene is invoked. It is used to initialized any needed values of the scene. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene7onEventER5Event">
+<span id="_CPPv3N3RDE5Scene7onEventER5Event"></span><span id="_CPPv2N3RDE5Scene7onEventER5Event"></span><span id="RDE::Scene::onEvent__EventR"></span><span class="target" id="class_r_d_e_1_1_scene_1aa9af7f58691de79d8f6f01da410779c2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onEvent</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_event.html#_CPPv4N3RDE5EventE" title="RDE::Event"><span class="n"><span class="pre">Event</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_event</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene7onEventER5Event" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function captures all the events that happen inside the application. It captures too mouse, keyboard and gamepads, but it is not recommended to use this input inside this function. The class <a class="reference internal" href="class_r_d_e_1_1_input_manager.html#class_r_d_e_1_1_input_manager"><span class="std std-ref">InputManager</span></a> is the one you are looking for. This is used to manage window related or screen related events mainly. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="class_r_d_e_1_1_input_manager.html#class_r_d_e_1_1_input_manager"><span class="std std-ref">InputManager</span></a> </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_event</strong> – the event that was just captured. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene8onUpdateE5Delta">
+<span id="_CPPv3N3RDE5Scene8onUpdateE5Delta"></span><span id="_CPPv2N3RDE5Scene8onUpdateE5Delta"></span><span id="RDE::Scene::onUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a538c7f27e8686c6265770cce4b2016f4"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene8onUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function is executed every frame of the application and here we should update logic and take inputs to update the logic and components. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_dt</strong> – time that passed between the current frame and the last one. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene13onFixedUpdateE5Delta">
+<span id="_CPPv3N3RDE5Scene13onFixedUpdateE5Delta"></span><span id="_CPPv2N3RDE5Scene13onFixedUpdateE5Delta"></span><span id="RDE::Scene::onFixedUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1aae3f084bca9e26bdd4a2849c126bb16f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onFixedUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene13onFixedUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function is called a fixed amount of times per second. By default it is 60 times per second, but it can be modified with Engine/setFixedDelta. This loop is used to handle physics and things that need a consistent frame rate to work properly. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_dt</strong> – fixed value initially set at 1/60/ </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene12onLateUpdateE5Delta">
+<span id="_CPPv3N3RDE5Scene12onLateUpdateE5Delta"></span><span id="_CPPv2N3RDE5Scene12onLateUpdateE5Delta"></span><span id="RDE::Scene::onLateUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a46c3ec5f961753bce8c33e0188a243ab"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onLateUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene12onLateUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function is called as the last update method, after update and fixedUpdate, which is an ideal place to remove elements. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_dt</strong> – time that passed between the current frame and the last one. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene13onImGuiRenderE5Delta">
+<span id="_CPPv3N3RDE5Scene13onImGuiRenderE5Delta"></span><span id="_CPPv2N3RDE5Scene13onImGuiRenderE5Delta"></span><span id="RDE::Scene::onImGuiRender__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1adcae6a87d1b027af90064c68aa218edd"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onImGuiRender</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene13onImGuiRenderE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function is used to render specifically ImGui elements, nothing else. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>the</strong> – time that passed between the current frame and the last one. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene13onDebugRenderE5Delta">
+<span id="_CPPv3N3RDE5Scene13onDebugRenderE5Delta"></span><span id="_CPPv2N3RDE5Scene13onDebugRenderE5Delta"></span><span id="RDE::Scene::onDebugRender__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1aa78dbdad2c06ad8fc6a2f658bf296f41"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onDebugRender</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene13onDebugRenderE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function is used to drawBatched debugging lines, squares, circles… </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>the</strong> – time that passed between the current frame and the last one. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene5onEndEv">
+<span id="_CPPv3N3RDE5Scene5onEndEv"></span><span id="_CPPv2N3RDE5Scene5onEndEv"></span><span id="RDE::Scene::onEnd"></span><span class="target" id="class_r_d_e_1_1_scene_1a934540e9d0ea6ef49d4bd9a359421a63"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onEnd</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene5onEndEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function is called when unloading the scene and should be used to release any allocated memory or resources. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene10getCamerasEv">
+<span id="_CPPv3N3RDE5Scene10getCamerasEv"></span><span id="_CPPv2N3RDE5Scene10getCamerasEv"></span><span id="RDE::Scene::getCameras"></span><span class="target" id="class_r_d_e_1_1_scene_1a4183a9b7dc2924ed74b22644ce83baae"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="class_r_d_e_1_1_camera.html#_CPPv4N3RDE6CameraE" title="RDE::Camera"><span class="n"><span class="pre">Camera</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getCameras</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene10getCamerasEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns all of the cameras used in the scene. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>std::vector&lt;Camera*&gt;&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene9addCameraEP6Window">
+<span id="_CPPv3N3RDE5Scene9addCameraEP6Window"></span><span id="_CPPv2N3RDE5Scene9addCameraEP6Window"></span><span id="RDE::Scene::addCamera__WindowP"></span><span class="target" id="class_r_d_e_1_1_scene_1a3b7c48b3120e76737e41d38a03d54c9d"></span><a class="reference internal" href="class_r_d_e_1_1_camera.html#_CPPv4N3RDE6CameraE" title="RDE::Camera"><span class="n"><span class="pre">Camera</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">addCamera</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_window.html#_CPPv4N3RDE6WindowE" title="RDE::Window"><span class="n"><span class="pre">Window</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">window</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene9addCameraEP6Window" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Adds a new camera to the scene and returns it to make any modifications needed. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>window</strong> – <a class="reference internal" href="class_r_d_e_1_1_window.html#class_r_d_e_1_1_window"><span class="std std-ref">Window</span></a> </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Camera* </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene12enableCameraEP4Nodeb">
+<span id="_CPPv3N3RDE5Scene12enableCameraEP4Nodeb"></span><span id="_CPPv2N3RDE5Scene12enableCameraEP4Nodeb"></span><span id="RDE::Scene::enableCamera__NodeP.b"></span><span class="target" id="class_r_d_e_1_1_scene_1aa0f7e1c45ff4c1ffe8d3c1947f15888a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">enableCamera</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_camera</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_enable</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene12enableCameraEP4Nodeb" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Activates or deactivates any given camera. If it is disabled, it won’t render anything. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_cameraID</strong> – <a class="reference internal" href="class_r_d_e_1_1_camera.html#class_r_d_e_1_1_camera"><span class="std std-ref">Camera</span></a> to enable or disable </p></li>
+<li><p><strong>_enable</strong> – If the camera gets enabled or disabled </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene12removeCameraEP4Node">
+<span id="_CPPv3N3RDE5Scene12removeCameraEP4Node"></span><span id="_CPPv2N3RDE5Scene12removeCameraEP4Node"></span><span id="RDE::Scene::removeCamera__NodeP"></span><span class="target" id="class_r_d_e_1_1_scene_1a9bce14fb3192f8cb5a206ff12dd8d4e1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeCamera</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_camera</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene12removeCameraEP4Node" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destroys a specific camera of the scene. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_cameraID</strong> – <a class="reference internal" href="class_r_d_e_1_1_camera.html#class_r_d_e_1_1_camera"><span class="std std-ref">Camera</span></a> to be destroyed </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene16switchMainCameraEP4Node">
+<span id="_CPPv3N3RDE5Scene16switchMainCameraEP4Node"></span><span id="_CPPv2N3RDE5Scene16switchMainCameraEP4Node"></span><span id="RDE::Scene::switchMainCamera__NodeP"></span><span class="target" id="class_r_d_e_1_1_scene_1a1cc41c6cc031495a6e618d4f02a03c94"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">switchMainCamera</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_camera</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene16switchMainCameraEP4Node" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets an specific camera as the main one. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_camera</strong> – <a class="reference internal" href="class_r_d_e_1_1_camera.html#class_r_d_e_1_1_camera"><span class="std std-ref">Camera</span></a> to be set as main </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3RDE5Scene7getNameEv">
+<span id="_CPPv3NK3RDE5Scene7getNameEv"></span><span id="_CPPv2NK3RDE5Scene7getNameEv"></span><span id="RDE::Scene::getNameC"></span><span class="target" id="class_r_d_e_1_1_scene_1a23c54ca1cc6bf3ab183df90155a5ede2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getName</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE5Scene7getNameEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the name of the scene. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>const std::string&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene10getPrefabsEv">
+<span id="_CPPv3N3RDE5Scene10getPrefabsEv"></span><span id="_CPPv2N3RDE5Scene10getPrefabsEv"></span><span id="RDE::Scene::getPrefabs"></span><span class="target" id="class_r_d_e_1_1_scene_1a276d0a3ad5704e603ab68971a5310c51"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="typedef__components_8h_1a52def656a21c22f8e6592a9f04842b84.html#_CPPv4N3RDE6NodeIDE" title="RDE::NodeID"><span class="n"><span class="pre">NodeID</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPrefabs</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene10getPrefabsEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns all of the prefabs IDs. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>std::vector&lt;NodeID&gt; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene9getPrefabERKNSt6stringE">
+<span id="_CPPv3N3RDE5Scene9getPrefabERKNSt6stringE"></span><span id="_CPPv2N3RDE5Scene9getPrefabERKNSt6stringE"></span><span id="RDE::Scene::getPrefab__ssCR"></span><span class="target" id="class_r_d_e_1_1_scene_1ac56a07a6bba79822346ff051294a0129"></span><a class="reference internal" href="typedef__components_8h_1a52def656a21c22f8e6592a9f04842b84.html#_CPPv4N3RDE6NodeIDE" title="RDE::NodeID"><span class="n"><span class="pre">NodeID</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPrefab</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_prefabKey</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene9getPrefabERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns a prefab by its key. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_prefabKey</strong> – Prefab key </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>NodeID </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene9debugNameE">
+<span id="_CPPv3N3RDE5Scene9debugNameE"></span><span id="_CPPv2N3RDE5Scene9debugNameE"></span><span id="RDE::Scene::debugName__ss"></span><span class="target" id="class_r_d_e_1_1_scene_1aea061d05b77210b98fc7843b07f41737"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">debugName</span></span></span><a class="headerlink" href="#_CPPv4N3RDE5Scene9debugNameE" title="Permalink to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="#class_r_d_e_1_1_scene"><span class="std std-ref">Scene</span></a> name. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene6engineE">
+<span id="_CPPv3N3RDE5Scene6engineE"></span><span id="_CPPv2N3RDE5Scene6engineE"></span><span id="RDE::Scene::engine__EngineP"></span><span class="target" id="class_r_d_e_1_1_scene_1afa4ac232dc674e635282b8fb05cb29d1"></span><a class="reference internal" href="class_r_d_e_1_1_engine.html#_CPPv4N3RDE6EngineE" title="RDE::Engine"><span class="n"><span class="pre">Engine</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">engine</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N3RDE5Scene6engineE" title="Permalink to this definition"></a><br /></dt>
+<dd><p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="class_r_d_e_1_1_engine.html#class_r_d_e_1_1_engine"><span class="std std-ref">Engine</span></a> </p>
+</div>
+</p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene5graphE">
+<span id="_CPPv3N3RDE5Scene5graphE"></span><span id="_CPPv2N3RDE5Scene5graphE"></span><span id="RDE::Scene::graph__GraphP"></span><span class="target" id="class_r_d_e_1_1_scene_1aae0da907049c45cbdb454e366a335622"></span><a class="reference internal" href="class_r_d_e_1_1_graph.html#_CPPv4N3RDE5GraphE" title="RDE::Graph"><span class="n"><span class="pre">Graph</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">graph</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N3RDE5Scene5graphE" title="Permalink to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="class_r_d_e_1_1_graph.html#class_r_d_e_1_1_graph"><span class="std std-ref">Graph</span></a> for entities hierarchy. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="class_r_d_e_1_1_graph.html#class_r_d_e_1_1_graph"><span class="std std-ref">Graph</span></a> </p>
+</div>
+</p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene6canvasE">
+<span id="_CPPv3N3RDE5Scene6canvasE"></span><span id="_CPPv2N3RDE5Scene6canvasE"></span><span id="RDE::Scene::canvas__CanvasP"></span><span class="target" id="class_r_d_e_1_1_scene_1ad3235cf59500100dfe9db64758fea45d"></span><a class="reference internal" href="class_r_d_e_1_1_canvas.html#_CPPv4N3RDE6CanvasE" title="RDE::Canvas"><span class="n"><span class="pre">Canvas</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">canvas</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N3RDE5Scene6canvasE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>All of the UI canvases that the scene has. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene10mainCameraE">
+<span id="_CPPv3N3RDE5Scene10mainCameraE"></span><span id="_CPPv2N3RDE5Scene10mainCameraE"></span><span id="RDE::Scene::mainCamera__CameraP"></span><span class="target" id="class_r_d_e_1_1_scene_1a4a9a5c34ee8f930e02273a32abc4c702"></span><a class="reference internal" href="class_r_d_e_1_1_camera.html#_CPPv4N3RDE6CameraE" title="RDE::Camera"><span class="n"><span class="pre">Camera</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">mainCamera</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N3RDE5Scene10mainCameraE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Main camera renderer. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-functions">Protected Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene16onDisplayChangedEv">
+<span id="_CPPv3N3RDE5Scene16onDisplayChangedEv"></span><span id="_CPPv2N3RDE5Scene16onDisplayChangedEv"></span><span id="RDE::Scene::onDisplayChanged"></span><span class="target" id="class_r_d_e_1_1_scene_1a94a9eb92a56862835c7efcc00db2d0c7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onDisplayChanged</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene16onDisplayChangedEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Callback for the <a class="reference internal" href="#class_r_d_e_1_1_scene"><span class="std std-ref">Scene</span></a> to refresh whatever is needed if the display is changed. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene12onInnerEventER5Event">
+<span id="_CPPv3N3RDE5Scene12onInnerEventER5Event"></span><span id="_CPPv2N3RDE5Scene12onInnerEventER5Event"></span><span id="RDE::Scene::onInnerEvent__EventR"></span><span class="target" id="class_r_d_e_1_1_scene_1a3dcf9b2f790f80884c7cf124667f4774"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerEvent</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_event.html#_CPPv4N3RDE5EventE" title="RDE::Event"><span class="n"><span class="pre">Event</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_event</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene12onInnerEventER5Event" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function captures all the events that happen inside the application. It captures too mouse, keyboard and gamepads, but it is not recommended to use this input inside this function. The class <a class="reference internal" href="class_r_d_e_1_1_input_manager.html#class_r_d_e_1_1_input_manager"><span class="std std-ref">InputManager</span></a> is the one you are looking for. This is used to manage window related or screen related events mainly. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="class_r_d_e_1_1_input_manager.html#class_r_d_e_1_1_input_manager"><span class="std std-ref">InputManager</span></a> </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_event</strong> – the event that was just captured. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene21onInnerEventHierarchyER5Event">
+<span id="_CPPv3N3RDE5Scene21onInnerEventHierarchyER5Event"></span><span id="_CPPv2N3RDE5Scene21onInnerEventHierarchyER5Event"></span><span id="RDE::Scene::onInnerEventHierarchy__EventR"></span><span class="target" id="class_r_d_e_1_1_scene_1a7aa68d1910d7f396a41efa82aaa3a0a7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerEventHierarchy</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_event.html#_CPPv4N3RDE5EventE" title="RDE::Event"><span class="n"><span class="pre">Event</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_event</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene21onInnerEventHierarchyER5Event" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene14onInnerEventUIER5Event">
+<span id="_CPPv3N3RDE5Scene14onInnerEventUIER5Event"></span><span id="_CPPv2N3RDE5Scene14onInnerEventUIER5Event"></span><span id="RDE::Scene::onInnerEventUI__EventR"></span><span class="target" id="class_r_d_e_1_1_scene_1a98f7e95734c85ee6eaf6a81ca0d6f1ef"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerEventUI</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_event.html#_CPPv4N3RDE5EventE" title="RDE::Event"><span class="n"><span class="pre">Event</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_event</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene14onInnerEventUIER5Event" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene13onInnerUpdateE5Delta">
+<span id="_CPPv3N3RDE5Scene13onInnerUpdateE5Delta"></span><span id="_CPPv2N3RDE5Scene13onInnerUpdateE5Delta"></span><span id="RDE::Scene::onInnerUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1aeeee37aeedfb3a43a0d2c0f46761b4dc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene13onInnerUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function is executed every frame of the application and here we should update logic and take inputs to update the logic and components. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_dt</strong> – time that passed between the current frame and the last one. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene22onInnerUpdateHierarchyE5Delta">
+<span id="_CPPv3N3RDE5Scene22onInnerUpdateHierarchyE5Delta"></span><span id="_CPPv2N3RDE5Scene22onInnerUpdateHierarchyE5Delta"></span><span id="RDE::Scene::onInnerUpdateHierarchy__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a6e9dcde9a7267050f1f41482615de41b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerUpdateHierarchy</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene22onInnerUpdateHierarchyE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene15onInnerUpdateUIE5Delta">
+<span id="_CPPv3N3RDE5Scene15onInnerUpdateUIE5Delta"></span><span id="_CPPv2N3RDE5Scene15onInnerUpdateUIE5Delta"></span><span id="RDE::Scene::onInnerUpdateUI__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a32c2d49169153e07110661b275e2b191"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerUpdateUI</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene15onInnerUpdateUIE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene18onInnerFixedUpdateE5Delta">
+<span id="_CPPv3N3RDE5Scene18onInnerFixedUpdateE5Delta"></span><span id="_CPPv2N3RDE5Scene18onInnerFixedUpdateE5Delta"></span><span id="RDE::Scene::onInnerFixedUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1ac9eb043f50a90e6619a179f6f1a1f1bb"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerFixedUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene18onInnerFixedUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function is called a fixed amount of times per second. By default it is 60 times per second, but it can be modified with Engine/setFixedDelta. This loop is used to handle physics and things that need a consistent frame rate to work properly. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_dt</strong> – fixed value initially set at 1/60/ </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene27onInnerFixedUpdateHierarchyE5Delta">
+<span id="_CPPv3N3RDE5Scene27onInnerFixedUpdateHierarchyE5Delta"></span><span id="_CPPv2N3RDE5Scene27onInnerFixedUpdateHierarchyE5Delta"></span><span id="RDE::Scene::onInnerFixedUpdateHierarchy__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a8345888e1c95f4686cee78d06d649a02"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerFixedUpdateHierarchy</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dtt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene27onInnerFixedUpdateHierarchyE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene20onInnerFixedUpdateUIE5Delta">
+<span id="_CPPv3N3RDE5Scene20onInnerFixedUpdateUIE5Delta"></span><span id="_CPPv2N3RDE5Scene20onInnerFixedUpdateUIE5Delta"></span><span id="RDE::Scene::onInnerFixedUpdateUI__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a2bd1519a85c3b2b2a9dc6a63dabaab4e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerFixedUpdateUI</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene20onInnerFixedUpdateUIE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene17onInnerLateUpdateE5Delta">
+<span id="_CPPv3N3RDE5Scene17onInnerLateUpdateE5Delta"></span><span id="_CPPv2N3RDE5Scene17onInnerLateUpdateE5Delta"></span><span id="RDE::Scene::onInnerLateUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a7cc78eed9a314f027d68eb1d9e94e809"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerLateUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene17onInnerLateUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function is called as the last update method, after update and fixedUpdate, which is an ideal place to remove elements. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_dt</strong> – time that passed between the current frame and the last one. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene26onInnerLateUpdateHierarchyE5Delta">
+<span id="_CPPv3N3RDE5Scene26onInnerLateUpdateHierarchyE5Delta"></span><span id="_CPPv2N3RDE5Scene26onInnerLateUpdateHierarchyE5Delta"></span><span id="RDE::Scene::onInnerLateUpdateHierarchy__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a5cda270df9a9e7e293f9bdf64946b095"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerLateUpdateHierarchy</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene26onInnerLateUpdateHierarchyE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene19onInnerLateUpdateUIE5Delta">
+<span id="_CPPv3N3RDE5Scene19onInnerLateUpdateUIE5Delta"></span><span id="_CPPv2N3RDE5Scene19onInnerLateUpdateUIE5Delta"></span><span id="RDE::Scene::onInnerLateUpdateUI__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1abe2cf4be993b75fbddb46d083d2c9402"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerLateUpdateUI</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene19onInnerLateUpdateUIE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene27recalculateRenderizableTreeEP4Node">
+<span id="_CPPv3N3RDE5Scene27recalculateRenderizableTreeEP4Node"></span><span id="_CPPv2N3RDE5Scene27recalculateRenderizableTreeEP4Node"></span><span id="RDE::Scene::recalculateRenderizableTree__NodeP"></span><span class="target" id="class_r_d_e_1_1_scene_1a2d4b686078ec833fd4170aca973e0a5b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">recalculateRenderizableTree</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_node</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene27recalculateRenderizableTreeEP4Node" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene29recalculateRenderizableTreeUIEP4Node">
+<span id="_CPPv3N3RDE5Scene29recalculateRenderizableTreeUIEP4Node"></span><span id="_CPPv2N3RDE5Scene29recalculateRenderizableTreeUIEP4Node"></span><span id="RDE::Scene::recalculateRenderizableTreeUI__NodeP"></span><span class="target" id="class_r_d_e_1_1_scene_1a09afbcd53b605f67a9475c467ccca966"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">recalculateRenderizableTreeUI</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_node</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene29recalculateRenderizableTreeUIEP4Node" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene13onInnerRenderE5Delta">
+<span id="_CPPv3N3RDE5Scene13onInnerRenderE5Delta"></span><span id="_CPPv2N3RDE5Scene13onInnerRenderE5Delta"></span><span id="RDE::Scene::onInnerRender__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a3090da5c4f6bb02a1e4200b77434628b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerRender</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene13onInnerRenderE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function is also called every frame and renders the geometry of the game. It is not virtual because the main rendering pipeline is handled inside the core of the engine. Users don’t need to mess with it. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>_dt</strong> – the time that passed between the current frame and the last one. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene22onInnerRenderHierarchyE5Delta">
+<span id="_CPPv3N3RDE5Scene22onInnerRenderHierarchyE5Delta"></span><span id="_CPPv2N3RDE5Scene22onInnerRenderHierarchyE5Delta"></span><span id="RDE::Scene::onInnerRenderHierarchy__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a491d38fc9d02d3d8b4a3476a570bf051"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerRenderHierarchy</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene22onInnerRenderHierarchyE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene15onInnerRenderUIE5Delta">
+<span id="_CPPv3N3RDE5Scene15onInnerRenderUIE5Delta"></span><span id="_CPPv2N3RDE5Scene15onInnerRenderUIE5Delta"></span><span id="RDE::Scene::onInnerRenderUI__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1ac61128ab369624f53d0ff7d6ccd4659f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerRenderUI</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene15onInnerRenderUIE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene14postRenderSyncEv">
+<span id="_CPPv3N3RDE5Scene14postRenderSyncEv"></span><span id="_CPPv2N3RDE5Scene14postRenderSyncEv"></span><span id="RDE::Scene::postRenderSync"></span><span class="target" id="class_r_d_e_1_1_scene_1a69163257e3ae1fb02a882e5d4cdf9796"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">postRenderSync</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene14postRenderSyncEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene16postRenderSyncUIEv">
+<span id="_CPPv3N3RDE5Scene16postRenderSyncUIEv"></span><span id="_CPPv2N3RDE5Scene16postRenderSyncUIEv"></span><span id="RDE::Scene::postRenderSyncUI"></span><span class="target" id="class_r_d_e_1_1_scene_1ace97848a19bd8364af76370e39b30c8b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">postRenderSyncUI</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene16postRenderSyncUIEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene18onInnerDebugRenderE5Delta">
+<span id="_CPPv3N3RDE5Scene18onInnerDebugRenderE5Delta"></span><span id="_CPPv2N3RDE5Scene18onInnerDebugRenderE5Delta"></span><span id="RDE::Scene::onInnerDebugRender__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a50fa39ffbc9efd9b2df0ef255b7bb689"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerDebugRender</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene18onInnerDebugRenderE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function is used to drawBatched debugging lines, squares, circles… </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>the</strong> – time that passed between the current frame and the last one. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene27onInnerDebugRenderHierarchyE5Delta">
+<span id="_CPPv3N3RDE5Scene27onInnerDebugRenderHierarchyE5Delta"></span><span id="_CPPv2N3RDE5Scene27onInnerDebugRenderHierarchyE5Delta"></span><span id="RDE::Scene::onInnerDebugRenderHierarchy__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a870645360c04836cd0b8b92675498a4e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerDebugRenderHierarchy</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene27onInnerDebugRenderHierarchyE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Scene20onInnerDebugRenderUIE5Delta">
+<span id="_CPPv3N3RDE5Scene20onInnerDebugRenderUIE5Delta"></span><span id="_CPPv2N3RDE5Scene20onInnerDebugRenderUIE5Delta"></span><span id="RDE::Scene::onInnerDebugRenderUI__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a2e87ac52be939606583149b2b5952d05"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerDebugRenderUI</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene20onInnerDebugRenderUIE5Delta" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="class_r_d_e_1_1_render_manager.html" class="btn btn-neutral float-left" title="Class RenderManager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="class_r_d_e_1_1_scene_manager.html" class="btn btn-neutral float-right" title="Class SceneManager" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

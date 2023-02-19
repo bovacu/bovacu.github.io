@@ -1,0 +1,1104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_engine_8h" kind="file" language="C++">
+    <compoundname>Engine.h</compoundname>
+    <includes refid="_window_8h" local="yes">core/render/window/Window.h</includes>
+    <includes refid="_window_event_8h" local="yes">core/systems/eventSystem/WindowEvent.h</includes>
+    <includes refid="_im_gui_scene_8h" local="yes">core/graph/ImGuiScene.h</includes>
+    <includes refid="_frame_buffer_8h" local="yes">core/render/elements/FrameBuffer.h</includes>
+    <includes refid="_manager_8h" local="yes">core/Manager.h</includes>
+    <includes refid="_config_manager_8h" local="yes">core/systems/configSystem/ConfigManager.h</includes>
+    <includes refid="_platform_8h" local="yes">core/platform/Platform.h</includes>
+    <includedby refid="_r_d_e_8h" local="yes">engine/include/RDE.h</includedby>
+    <includedby refid="_r_d_e_entry_8h" local="yes">engine/include/RDEEntry.h</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>core/Core.h</label>
+        <link refid="_core_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine/include/core/Engine.h</label>
+        <link refid="_engine_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>core/Manager.h</label>
+        <link refid="_manager_8h_source"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>core/graph/Graph.h</label>
+        <link refid="_graph_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>core/graph/ImGuiCore.h</label>
+        <link refid="_im_gui_core_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>core/graph/ImGuiScene.h</label>
+        <link refid="_im_gui_scene_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>core/graph/Scene.h</label>
+        <link refid="_scene_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>ComponentBase.h</label>
+        <link refid="_component_base_8h_source"/>
+      </node>
+      <node id="49">
+        <label>core/graph/components/Components.h</label>
+        <link refid="_components_8h_source"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>core/graph/components/Node.h</label>
+        <link refid="_node_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>core/graph/components/ParticleSystem.h</label>
+        <link refid="_particle_system_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>core/graph/components/SpriteRenderer.h</label>
+        <link refid="_sprite_renderer_8h_source"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>core/graph/components/TextRenderer.h</label>
+        <link refid="_text_renderer_8h_source"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>core/graph/components/Transform.h</label>
+        <link refid="_transform_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>core/graph/components/ui/UITransform.h</label>
+        <link refid="_u_i_transform_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>core/platform/Platform.h</label>
+        <link refid="_platform_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>core/platform/PlatformHeaderSDL.h</label>
+        <link refid="_platform_header_s_d_l_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>core/platform/PlatformHeaderSDLImage.h</label>
+        <link refid="_platform_header_s_d_l_image_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>core/platform/PlatformHeaderSDLMixer.h</label>
+        <link refid="_platform_header_s_d_l_mixer_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>core/render/Camera.h</label>
+        <link refid="_camera_8h_source"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>core/render/RenderManager.h</label>
+        <link refid="_render_manager_8h_source"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>core/render/elements/Batch.h</label>
+        <link refid="_batch_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>core/render/elements/FrameBuffer.h</label>
+        <link refid="_frame_buffer_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>core/render/elements/IRenderizable.h</label>
+        <link refid="_i_renderizable_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>core/render/elements/Shader.h</label>
+        <link refid="_shader_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>core/render/elements/ShaderManager.h</label>
+        <link refid="_shader_manager_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>core/render/elements/SpriteBatch.h</label>
+        <link refid="_sprite_batch_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>core/render/elements/Texture.h</label>
+        <link refid="_texture_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>core/render/elements/TextureAtlasManager.h</label>
+        <link refid="_texture_atlas_manager_8h_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>core/render/elements/Vertex.h</label>
+        <link refid="_vertex_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>core/render/elements/ViewPort.h</label>
+        <link refid="_view_port_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>core/render/shapes/DebugShape.h</label>
+        <link refid="_debug_shape_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>core/render/window/Window.h</label>
+        <link refid="_window_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>core/systems/configSystem/ConfigManager.h</label>
+        <link refid="_config_manager_8h_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>core/systems/console/Console.h</label>
+        <link refid="_console_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>core/systems/ecsSystem/ECSManager.h</label>
+        <link refid="_e_c_s_manager_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>core/systems/ecsSystem/ECSSystem.h</label>
+        <link refid="_e_c_s_system_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>core/systems/eventSystem/Event.h</label>
+        <link refid="_event_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>core/systems/eventSystem/MouseEvent.h</label>
+        <link refid="_mouse_event_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>core/systems/eventSystem/WindowEvent.h</label>
+        <link refid="_window_event_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>core/systems/fileSystem/FileManager.h</label>
+        <link refid="_file_manager_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>core/systems/inputSystem/input/ControllerInput.h</label>
+        <link refid="_controller_input_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Input.h</label>
+        <link refid="_input_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>core/systems/inputSystem/input/WindowInput.h</label>
+        <link refid="_window_input_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>core/systems/inputSystem/keysAndButtons/ControllerButtons.h</label>
+        <link refid="_controller_buttons_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>core/systems/inputSystem/keysAndButtons/KeyboardKeys.h</label>
+        <link refid="_keyboard_keys_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>core/systems/inputSystem/keysAndButtons/MouseKeys.h</label>
+        <link refid="_mouse_keys_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>core/systems/localization/LocalizationManager.h</label>
+        <link refid="_localization_manager_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>core/systems/physicsSystem/PhysicsBody.h</label>
+        <link refid="_physics_body_8h_source"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>core/systems/physicsSystem/PhysicsManager.h</label>
+        <link refid="_physics_manager_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>core/systems/profiling/Profiler.h</label>
+        <link refid="_profiler_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>core/systems/soundSystem/SoundManager.h</label>
+        <link refid="_sound_manager_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>core/systems/uiSystem/Canvas.h</label>
+        <link refid="_canvas_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>core/systems/uiSystem/FontManager.h</label>
+        <link refid="_font_manager_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>core/systems/uiSystem/SceneManager.h</label>
+        <link refid="_scene_manager_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Clock.h</label>
+        <link refid="_clock_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Color.h</label>
+        <link refid="_color_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>core/util/Delegate.h</label>
+        <link refid="_delegate_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Delta.h</label>
+        <link refid="_delta_8h_source"/>
+      </node>
+      <node id="31">
+        <label>Functions.h</label>
+        <link refid="_functions_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>core/util/Pool.h</label>
+        <link refid="_pool_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Random.h</label>
+        <link refid="_random_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>Rect.h</label>
+        <link refid="_rect_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>core/util/Util.h</label>
+        <link refid="_util_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>core/util/Vec.h</label>
+        <link refid="_vec_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>SDL.h</label>
+      </node>
+      <node id="33">
+        <label>SDL2/SDL_image.h</label>
+      </node>
+      <node id="85">
+        <label>SDL2/SDL_mixer.h</label>
+      </node>
+      <node id="34">
+        <label>algorithm</label>
+      </node>
+      <node id="93">
+        <label>chipmunk/chipmunk.h</label>
+      </node>
+      <node id="20">
+        <label>chrono</label>
+      </node>
+      <node id="11">
+        <label>cmath</label>
+      </node>
+      <node id="27">
+        <label>cstdint</label>
+      </node>
+      <node id="48">
+        <label>entt/entity/entity.hpp</label>
+      </node>
+      <node id="44">
+        <label>entt/entt.hpp</label>
+      </node>
+      <node id="4">
+        <label>exception</label>
+      </node>
+      <node id="82">
+        <label>freetype/freetype.h</label>
+      </node>
+      <node id="81">
+        <label>ft2build.h</label>
+      </node>
+      <node id="5">
+        <label>functional</label>
+      </node>
+      <node id="61">
+        <label>glad/glad.h</label>
+      </node>
+      <node id="55">
+        <label>glm/ext/matrix_float4x4.hpp</label>
+      </node>
+      <node id="46">
+        <label>glm/ext/matrix_transform.hpp</label>
+      </node>
+      <node id="99">
+        <label>glm/fwd.hpp</label>
+      </node>
+      <node id="12">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="47">
+        <label>glm/gtc/quaternion.hpp</label>
+      </node>
+      <node id="67">
+        <label>glm/vec2.hpp</label>
+      </node>
+      <node id="68">
+        <label>glm/vec3.hpp</label>
+      </node>
+      <node id="69">
+        <label>glm/vec4.hpp</label>
+      </node>
+      <node id="73">
+        <label>imgui.h</label>
+      </node>
+      <node id="74">
+        <label>imgui_impl_opengl3.h</label>
+      </node>
+      <node id="75">
+        <label>imgui_impl_sdl.h</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="37">
+        <label>map</label>
+      </node>
+      <node id="36">
+        <label>memory</label>
+      </node>
+      <node id="42">
+        <label>nlohmann/json.hpp</label>
+      </node>
+      <node id="10">
+        <label>ostream</label>
+      </node>
+      <node id="30">
+        <label>random</label>
+      </node>
+      <node id="94">
+        <label>set</label>
+      </node>
+      <node id="15">
+        <label>sstream</label>
+      </node>
+      <node id="70">
+        <label>stack</label>
+      </node>
+      <node id="14">
+        <label>string</label>
+      </node>
+      <node id="52">
+        <label>tuple</label>
+      </node>
+      <node id="89">
+        <label>type_traits</label>
+      </node>
+      <node id="6">
+        <label>unordered_map</label>
+      </node>
+      <node id="35">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>engine/include/RDE.h</label>
+        <link refid="_r_d_e_8h_source"/>
+      </node>
+      <node id="3">
+        <label>engine/include/RDEEntry.h</label>
+        <link refid="_r_d_e_entry_8h_source"/>
+      </node>
+      <node id="1">
+        <label>engine/include/core/Engine.h</label>
+        <link refid="_engine_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_r_d_e_1_1_localization_config" prot="public">RDE::LocalizationConfig</innerclass>
+    <innerclass refid="struct_r_d_e_1_1_r_d_e_config" prot="public">RDE::RDEConfig</innerclass>
+    <innerclass refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties" prot="public">RDE::RDEConfig::WindowProperties</innerclass>
+    <innerclass refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties" prot="public">RDE::RDEConfig::ProjectProperties</innerclass>
+    <innerclass refid="class_r_d_e_1_1_engine" prot="public">RDE::Engine</innerclass>
+    <innernamespace refid="namespace_r_d_e">RDE</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_engine_8h_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>This is an automatic &apos;main&apos; so the final user doesn&apos;t need to create one and can just run the game or apps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="16" column="5" bodyfile="engine/include/RDEEntry.h" bodystart="20" bodyend="39" declfile="engine/include/core/Engine.h" declline="16" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Created<sp/>by<sp/>borja<sp/>on<sp/>24/12/21.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RDE_ENGINE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDE_ENGINE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/render/window/Window.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/systems/eventSystem/WindowEvent.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/graph/ImGuiScene.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/render/elements/FrameBuffer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/Manager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/systems/configSystem/ConfigManager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;core/platform/Platform.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespace_r_d_e" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_d_e" kindref="compound">RDE</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="struct_r_d_e_1_1_localization_config" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_r_d_e_1_1_localization_config" kindref="compound">LocalizationConfig</ref><sp/>{</highlight></codeline>
+<codeline lineno="26" refid="struct_r_d_e_1_1_localization_config_1ae4aacaa7fa0553d967ecd6a6a3c5037e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="struct_r_d_e_1_1_localization_config_1ae4aacaa7fa0553d967ecd6a6a3c5037e" kindref="member">localizationPath</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="struct_r_d_e_1_1_localization_config_1aad5ac892a8ff8676ae02f0b5f4bfabbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="struct_r_d_e_1_1_localization_config_1aad5ac892a8ff8676ae02f0b5f4bfabbb" kindref="member">replacementSymbol</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;~&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="struct_r_d_e_1_1_r_d_e_config" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_r_d_e_1_1_r_d_e_config" kindref="compound">RDEConfig</ref><sp/>{</highlight></codeline>
+<codeline lineno="38" refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties" kindref="compound">WindowProperties</ref><sp/>{</highlight></codeline>
+<codeline lineno="42" refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a30afc362ec8dd69e9c72a763cd859cd0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a30afc362ec8dd69e9c72a763cd859cd0" kindref="member">title</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Default&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a05b2813e4b840016192501c68d719362" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref><sp/><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a05b2813e4b840016192501c68d719362" kindref="member">size</ref><sp/>{<sp/>1280,<sp/>720<sp/>};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2I</ref><sp/>resolution<sp/>{<sp/>1280,<sp/>720<sp/>};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a00fdcdc40f195b0301d4ce88b070069c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a00fdcdc40f195b0301d4ce88b070069c" kindref="member">fullScreen</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a33def3e5d1634561119cb59954295af6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1a33def3e5d1634561119cb59954295af6" kindref="member">vsync</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1aaffe9253a244078359618fd412e75513" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties_1aaffe9253a244078359618fd412e75513" kindref="member">allowRunningOnBackground</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>verticalDpi<sp/>=<sp/>0,<sp/>horizontalDpi<sp/>=<sp/>0,<sp/>diagonalDpi<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties" kindref="compound">ProjectProperties</ref><sp/>{</highlight></codeline>
+<codeline lineno="76" refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties_1a0ac8833fe7b72c16e97c4bfd5c7c8030" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties_1a0ac8833fe7b72c16e97c4bfd5c7c8030" kindref="member">iconPath</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties_1a52aabeb91f52187471f946ed8c91ec45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties_1a52aabeb91f52187471f946ed8c91ec45" kindref="member">resourcesPath</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties_1a99e92c63454ae3039d5a7aef7d6e2f62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_localization_config" kindref="compound">LocalizationConfig</ref><sp/><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties_1a99e92c63454ae3039d5a7aef7d6e2f62" kindref="member">localizationConfig</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="struct_r_d_e_1_1_r_d_e_config_1a4c486ec4afa5cb57154aed056bc8ebeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties" kindref="compound">WindowProperties</ref><sp/><ref refid="struct_r_d_e_1_1_r_d_e_config_1a4c486ec4afa5cb57154aed056bc8ebeb" kindref="member">windowData</ref><sp/>{};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="struct_r_d_e_1_1_r_d_e_config_1a4bf9a4cd0e17668ee314b31b424bed16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties" kindref="compound">ProjectProperties</ref><sp/><ref refid="struct_r_d_e_1_1_r_d_e_config_1a4bf9a4cd0e17668ee314b31b424bed16" kindref="member">projectData</ref><sp/>{};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="struct_r_d_e_1_1_r_d_e_config_1a0a7d8287f19030217b1df21038187f8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;std::string,<sp/>Scene*&gt;<sp/><ref refid="struct_r_d_e_1_1_r_d_e_config_1a0a7d8287f19030217b1df21038187f8c" kindref="member">registeredScenes</ref><sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="class_r_d_e_1_1_engine" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="110" refid="class_r_d_e_1_1_engine_1ab672cbfabf5685fd5d6990a1d8926c55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref><sp/><ref refid="class_r_d_e_1_1_engine_1ab672cbfabf5685fd5d6990a1d8926c55" kindref="member">manager</ref><sp/>{};</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="class_r_d_e_1_1_engine_1a7b9cbb04241539e9d945ddd2e250712f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_r_d_e_config" kindref="compound">RDEConfig</ref><sp/><ref refid="class_r_d_e_1_1_engine_1a7b9cbb04241539e9d945ddd2e250712f" kindref="member">rdeConfig</ref><sp/>{};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fixedDelta<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fpsCounter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frameCounter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_color" kindref="compound">Color</ref><sp/>backgroundColor<sp/>=<sp/>Color::Red;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref>*<sp/>frameBuffer<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt;void(<ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref>*)&gt;<sp/>redirectionFunc;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt;void(<ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref>*)&gt;<sp/>imGuiRedirectionFunc;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref>*<sp/>window<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#if<sp/>!IS_MOBILE()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_im_gui_scene" kindref="compound">ImGuiScene</ref>*<sp/>imGuiLayer<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt;bool(<ref refid="class_r_d_e_1_1_window_resized_event" kindref="compound">WindowResizedEvent</ref>&amp;)&gt;<sp/>wreDel;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_platform" kindref="compound">Platform</ref><sp/>platform;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref>();</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="class_r_d_e_1_1_engine_1afe3f132024b3e5da6b4062058e7a6e80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_engine_1afe3f132024b3e5da6b4062058e7a6e80" kindref="member">getFps</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="class_r_d_e_1_1_engine_1a7545d98469bc2847d7387bbd59de64be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_engine_1a7545d98469bc2847d7387bbd59de64be" kindref="member">geFixedDelta</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="class_r_d_e_1_1_engine_1ae75182149da4f8e73cde6676c876318f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_engine_1ae75182149da4f8e73cde6676c876318f" kindref="member">setFixedDelta</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_fixedDelta);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="class_r_d_e_1_1_engine_1a3fb62992879390472608b7dabab9fab6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_engine_1a3fb62992879390472608b7dabab9fab6" kindref="member">onInit</ref>(<ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="class_r_d_e_1_1_engine_1a50e15e79f6cc302680fff482c8c547d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_engine_1a50e15e79f6cc302680fff482c8c547d0" kindref="member">onRun</ref>();</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="class_r_d_e_1_1_engine_1af46636437b15e19ebe1a8ddc5e96c818" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_engine_1af46636437b15e19ebe1a8ddc5e96c818" kindref="member">onEvent</ref>(<ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref>&amp;<sp/>_event);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="class_r_d_e_1_1_engine_1aa673be7b927fd9dafee85dd1e37064a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_engine_1aa673be7b927fd9dafee85dd1e37064a9" kindref="member">onUpdate</ref>(<ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref><sp/>_dt);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="class_r_d_e_1_1_engine_1a6af36b9cd4abdcc55b9e80106c9fa406" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_engine_1a6af36b9cd4abdcc55b9e80106c9fa406" kindref="member">onFixedUpdate</ref>(<ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref><sp/>_fixedDt);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="class_r_d_e_1_1_engine_1a1dbcefc1e49f66322204c8281a638446" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_engine_1a1dbcefc1e49f66322204c8281a638446" kindref="member">onLateUpdate</ref>(<ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref><sp/>_dt);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="class_r_d_e_1_1_engine_1ae11cd40f884e38168360763eb4e5602b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_engine_1ae11cd40f884e38168360763eb4e5602b" kindref="member">onRender</ref>(<ref refid="class_r_d_e_1_1_delta" kindref="compound">Delta</ref><sp/>_dt);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="class_r_d_e_1_1_engine_1ae8dc5c504f624b83a6997f7b8fbfbc68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_engine_1ae8dc5c504f624b83a6997f7b8fbfbc68" kindref="member">destroy</ref>();</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="class_r_d_e_1_1_engine_1a30a4d2764f220e9b0333530fb8f6986c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref>*<sp/><ref refid="class_r_d_e_1_1_engine_1a30a4d2764f220e9b0333530fb8f6986c" kindref="member">getWindow</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>window;<sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="class_r_d_e_1_1_engine_1ad8ea51127f19a4b95f24244c48dfff32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_engine_1ad8ea51127f19a4b95f24244c48dfff32" kindref="member">setRenderingRedirection</ref>(<ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(<ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref>*)&gt;&amp;<sp/>_redirectionFunc);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260" refid="class_r_d_e_1_1_engine_1a036ea486447300e582e3c1bf2d035060" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_d_e_1_1_engine_1a036ea486447300e582e3c1bf2d035060" kindref="member">setRenderingRedirectionToImGui</ref>(<ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(<ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref>*)&gt;&amp;<sp/>_redirectionFunc);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>onWindowResized(<ref refid="class_r_d_e_1_1_window_resized_event" kindref="compound">WindowResizedEvent</ref>&amp;<sp/>_e);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Logs<sp/>changeColorConsoleCommand(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;&amp;<sp/>_args);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Logs<sp/>setParentCommand(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;&amp;<sp/>_args);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Logs<sp/>componentsCommands(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;&amp;<sp/>_args);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref>*<sp/>createEngine(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>_argv);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//RDE_ENGINE_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="engine/include/core/Engine.h"/>
+  </compounddef>
+</doxygen>

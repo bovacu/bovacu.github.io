@@ -1,0 +1,533 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_config_manager" kind="class" language="C++" prot="public">
+    <compoundname>RDE::ConfigManager</compoundname>
+    <includes refid="_config_manager_8h" local="no">ConfigManager.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1af52cd498ca8b89910a1e00da4cc61406" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ConfigManager::loadResources</definition>
+        <argsstring>(RDEConfig *_rdeConfig, Manager *_manager)</argsstring>
+        <name>loadResources</name>
+        <qualifiedname>RDE::ConfigManager::loadResources</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_r_d_e_config" kindref="compound">RDEConfig</ref> *</type>
+          <declname>_rdeConfig</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> *</type>
+          <declname>_manager</declname>
+        </param>
+        <briefdescription>
+<para>Loads assets that need to be loaded between different scenes (Must be a .json). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_rdeConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration of <ref refid="namespace_r_d_e" kindref="compound">RDE</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_manager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="33" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1a0ff3044295b382d8b81bcfddc4f7374a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ConfigManager::loadScene</definition>
+        <argsstring>(Manager *_manager, Scene *_scene, Window *_window, const std::string &amp;_configFilePath)</argsstring>
+        <name>loadScene</name>
+        <qualifiedname>RDE::ConfigManager::loadScene</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> *</type>
+          <declname>_manager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> *</type>
+          <declname>_window</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_configFilePath</declname>
+        </param>
+        <briefdescription>
+<para>This method allows the user to load a <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> through its configuration file (Must be a .json). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_manager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> of the engine </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_configFilePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the .yaml file that defines the <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="42" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1a6e070d340bb503cb1834062401b4c49f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ConfigManager::unloadScene</definition>
+        <argsstring>(Manager *_manager, Scene *_scene, const std::string &amp;_configFilePath)</argsstring>
+        <name>unloadScene</name>
+        <qualifiedname>RDE::ConfigManager::unloadScene</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> *</type>
+          <declname>_manager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_configFilePath</declname>
+        </param>
+        <briefdescription>
+<para>This method allows the user to unload a <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> through its configuration file (Must be a .json). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_manager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> of the engine </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_configFilePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the .yaml file that defines the <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="51" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1a5f7402100c05cb47f21f012eadfa728d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ConfigManager::loadRDEConfig</definition>
+        <argsstring>(RDEConfig *_config, FileManager &amp;_manager)</argsstring>
+        <name>loadRDEConfig</name>
+        <qualifiedname>RDE::ConfigManager::loadRDEConfig</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_r_d_e_config" kindref="compound">RDEConfig</ref> *</type>
+          <declname>_config</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_file_manager" kindref="compound">FileManager</ref> &amp;</type>
+          <declname>_manager</declname>
+        </param>
+        <briefdescription>
+<para>This method allows to load a custom configuration for the engine. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New Configuration for the engine </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="57" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1abbb0fcc42208813d59113d10533e1d77" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ConfigManager::instantiatePrefab</definition>
+        <argsstring>(Scene *_scene, const nlohmann::json &amp;_json)</argsstring>
+        <name>instantiatePrefab</name>
+        <qualifiedname>RDE::ConfigManager::instantiatePrefab</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>_json</declname>
+        </param>
+        <briefdescription>
+<para>Instantiates a previously loaded prefab. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_json</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="65" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1ad4c71d64b951606e31d0cb2a8da3a914" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unordered_map&lt; std::string, <ref refid="struct_r_d_e_1_1_node___json_pair" kindref="compound">Node_JsonPair</ref> &gt;</type>
+        <definition>std::unordered_map&lt; std::string, Node_JsonPair &gt; RDE::ConfigManager::createNodes</definition>
+        <argsstring>(Scene *_scene, const nlohmann::json &amp;_sceneJson)</argsstring>
+        <name>createNodes</name>
+        <qualifiedname>RDE::ConfigManager::createNodes</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>_sceneJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="67" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1ab68f29c225fc40cb00ba8187bcff4771" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ConfigManager::loadNodes</definition>
+        <argsstring>(Scene *_scene, Window *_window, const nlohmann::json &amp;_sceneJson, const std::unordered_map&lt; std::string, Node_JsonPair &gt; &amp;_nodes)</argsstring>
+        <name>loadNodes</name>
+        <qualifiedname>RDE::ConfigManager::loadNodes</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> *</type>
+          <declname>_window</declname>
+        </param>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>_sceneJson</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; std::string, <ref refid="struct_r_d_e_1_1_node___json_pair" kindref="compound">Node_JsonPair</ref> &gt; &amp;</type>
+          <declname>_nodes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="69" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1a8f6f12ab62d70858b8c40b6173ae1ab2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ConfigManager::loadAssets</definition>
+        <argsstring>(Manager *_manager, const nlohmann::json &amp;_json)</argsstring>
+        <name>loadAssets</name>
+        <qualifiedname>RDE::ConfigManager::loadAssets</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> *</type>
+          <declname>_manager</declname>
+        </param>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>_json</declname>
+        </param>
+        <briefdescription>
+<para>Loads all the assets defined in the .json for the <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_manager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref> <ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_json</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>EntityMap </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="78" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1ab220d0f0ead960dda43f29302cadb2a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ConfigManager::loadTransformComponent</definition>
+        <argsstring>(Scene *_scene, Node *_node, const nlohmann::json &amp;_transformJson)</argsstring>
+        <name>loadTransformComponent</name>
+        <qualifiedname>RDE::ConfigManager::loadTransformComponent</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>_node</declname>
+        </param>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>_transformJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="80" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1a25be17c74bff75133ac49636da679afc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ConfigManager::loadCameraComponent</definition>
+        <argsstring>(Node *_nodeD, Scene *_scene, Window *_window, const nlohmann::json &amp;_cameraJson)</argsstring>
+        <name>loadCameraComponent</name>
+        <qualifiedname>RDE::ConfigManager::loadCameraComponent</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>_nodeD</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> *</type>
+          <declname>_window</declname>
+        </param>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>_cameraJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="82" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1aa560ae268039f3ca915318a41545d378" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ConfigManager::loadSpriteRendererComponent</definition>
+        <argsstring>(Node *_node, Scene *_scene, const nlohmann::json &amp;_spriteRendererJson)</argsstring>
+        <name>loadSpriteRendererComponent</name>
+        <qualifiedname>RDE::ConfigManager::loadSpriteRendererComponent</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>_node</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>_spriteRendererJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="84" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1a39be27ffe7d6c3728442335c76c3de41" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ConfigManager::loadTextRendererComponent</definition>
+        <argsstring>(Node *_node, Scene *_scene, const nlohmann::json &amp;_textRendererJson)</argsstring>
+        <name>loadTextRendererComponent</name>
+        <qualifiedname>RDE::ConfigManager::loadTextRendererComponent</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>_node</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>_textRendererJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="86" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1a351c20f6b27ead0260b881ff1858a4f3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ConfigManager::loadBodyComponent</definition>
+        <argsstring>(Node *_node, Scene *_scene, const nlohmann::json &amp;_bodyJson)</argsstring>
+        <name>loadBodyComponent</name>
+        <qualifiedname>RDE::ConfigManager::loadBodyComponent</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>_node</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>_bodyJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="88" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1a1745a3be0f1b89e48346a560ed896726" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ConfigManager::unloadAssets</definition>
+        <argsstring>(Scene *_scene, const nlohmann::json &amp;_sceneJson)</argsstring>
+        <name>unloadAssets</name>
+        <qualifiedname>RDE::ConfigManager::unloadAssets</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>_sceneJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="90" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is in charge of generating the Scenes and set up the initial configurations of the engine defined by the end-user. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="26" column="5" bodyfile="engine/include/core/systems/configSystem/ConfigManager.h" bodystart="26" bodyend="91"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_config_manager_1ad4c71d64b951606e31d0cb2a8da3a914" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>createNodes</name></member>
+      <member refid="class_r_d_e_1_1_config_manager_1abbb0fcc42208813d59113d10533e1d77" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>instantiatePrefab</name></member>
+      <member refid="class_r_d_e_1_1_config_manager_1a8f6f12ab62d70858b8c40b6173ae1ab2" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadAssets</name></member>
+      <member refid="class_r_d_e_1_1_config_manager_1a351c20f6b27ead0260b881ff1858a4f3" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadBodyComponent</name></member>
+      <member refid="class_r_d_e_1_1_config_manager_1a25be17c74bff75133ac49636da679afc" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadCameraComponent</name></member>
+      <member refid="class_r_d_e_1_1_config_manager_1ab68f29c225fc40cb00ba8187bcff4771" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadNodes</name></member>
+      <member refid="class_r_d_e_1_1_config_manager_1a5f7402100c05cb47f21f012eadfa728d" prot="public" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadRDEConfig</name></member>
+      <member refid="class_r_d_e_1_1_config_manager_1af52cd498ca8b89910a1e00da4cc61406" prot="public" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadResources</name></member>
+      <member refid="class_r_d_e_1_1_config_manager_1a0ff3044295b382d8b81bcfddc4f7374a" prot="public" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadScene</name></member>
+      <member refid="class_r_d_e_1_1_config_manager_1aa560ae268039f3ca915318a41545d378" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadSpriteRendererComponent</name></member>
+      <member refid="class_r_d_e_1_1_config_manager_1a39be27ffe7d6c3728442335c76c3de41" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadTextRendererComponent</name></member>
+      <member refid="class_r_d_e_1_1_config_manager_1ab220d0f0ead960dda43f29302cadb2a3" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadTransformComponent</name></member>
+      <member refid="class_r_d_e_1_1_config_manager_1a1745a3be0f1b89e48346a560ed896726" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>unloadAssets</name></member>
+      <member refid="class_r_d_e_1_1_config_manager_1a6e070d340bb503cb1834062401b4c49f" prot="public" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>unloadScene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

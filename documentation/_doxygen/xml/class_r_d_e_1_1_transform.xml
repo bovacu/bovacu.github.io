@@ -1,0 +1,1171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_transform" kind="class" language="C++" prot="public">
+    <compoundname>RDE::Transform</compoundname>
+    <derivedcompoundref refid="struct_r_d_e_1_1_u_i_transform" prot="public" virt="non-virtual">RDE::UITransform</derivedcompoundref>
+    <includes refid="_transform_8h" local="no">Transform.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_r_d_e_1_1_transform_1a032858ae1fe02d2d1170981c2af2d67c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Scene</definition>
+        <argsstring></argsstring>
+        <name>Scene</name>
+        <qualifiedname>RDE::Transform::Scene</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="26" column="22" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_transform_1ad8bd9afbbd7af19d996da80e9d25890d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Camera</definition>
+        <argsstring></argsstring>
+        <name>Camera</name>
+        <qualifiedname>RDE::Transform::Camera</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_camera" kindref="compound">Camera</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="27" column="22" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_transform_1a9131e80805b446f695a03ca740437d30" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class SpriteRenderer</definition>
+        <argsstring></argsstring>
+        <name>SpriteRenderer</name>
+        <qualifiedname>RDE::Transform::SpriteRenderer</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_sprite_renderer" kindref="compound">SpriteRenderer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="28" column="22" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_transform_1a5501c7215968e1be0edf9f0b3c7e16c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class DynamicSpriteRenderer</definition>
+        <argsstring></argsstring>
+        <name>DynamicSpriteRenderer</name>
+        <qualifiedname>RDE::Transform::DynamicSpriteRenderer</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_dynamic_sprite_renderer" kindref="compound">DynamicSpriteRenderer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="29" column="22" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_transform_1a9764b9e107d83472b6a0ba6560a66eec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TextRenderer</definition>
+        <argsstring></argsstring>
+        <name>TextRenderer</name>
+        <qualifiedname>RDE::Transform::TextRenderer</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_text_renderer" kindref="compound">TextRenderer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="30" column="22" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_transform_1aeee2736151556a498635f05a3ae3b1b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class UIImage</definition>
+        <argsstring></argsstring>
+        <name>UIImage</name>
+        <qualifiedname>RDE::Transform::UIImage</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_u_i_image" kindref="compound">UIImage</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="31" column="22" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_transform_1a15bac633fa57dff1f82e6e488de8be1a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class UIText</definition>
+        <argsstring></argsstring>
+        <name>UIText</name>
+        <qualifiedname>RDE::Transform::UIText</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_u_i_text" kindref="compound">UIText</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="32" column="22" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_transform_1a4a0c4e03d40875dbce0d67bf699e8b27" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct PhysicsBody</definition>
+        <argsstring></argsstring>
+        <name>PhysicsBody</name>
+        <qualifiedname>RDE::Transform::PhysicsBody</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_physics_body" kindref="compound">PhysicsBody</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="34" column="23" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_transform_1a055de5a6e93a66760875ba92b437f925" prot="private" static="no" mutable="no">
+        <type>MAKE_CLASS_ITERABLE(std::vector&lt; <ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> * &gt;, <ref refid="class_r_d_e_1_1_transform_1addbd967ceef5ba001b9d62337359b7d8" kindref="member">children</ref>) protected glm::qua</type>
+        <definition>MAKE_CLASS_ITERABLE (std::vector&lt;Transform*&gt;, children) protected glm::qua RDE::Transform::innerRotation) </definition>
+        <argsstring>)</argsstring>
+        <name>innerRotation</name>
+        <qualifiedname>RDE::Transform::innerRotation</qualifiedname>
+        <initializer>= glm::quat(glm::vec3(0, 0, 0))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="40" column="23" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_transform_1a2cefd41043893c016ed3dbf9789f9640" prot="private" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 RDE::Transform::innerScale</definition>
+        <argsstring></argsstring>
+        <name>innerScale</name>
+        <qualifiedname>RDE::Transform::innerScale</qualifiedname>
+        <initializer>= glm::vec3(1.0f, 1.0f, 1.0f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="41" column="23" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_transform_1acbf316fee86d7620c50c5218c4eaf3e4" prot="private" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 RDE::Transform::worldMatrixCache</definition>
+        <argsstring></argsstring>
+        <name>worldMatrixCache</name>
+        <qualifiedname>RDE::Transform::worldMatrixCache</qualifiedname>
+        <initializer>{ 1.0f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="43" column="23" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_transform_1a43f6a2104ee1ab82779b9628fcd0cec6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::Transform::dirty</definition>
+        <argsstring></argsstring>
+        <name>dirty</name>
+        <qualifiedname>RDE::Transform::dirty</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="44" column="18" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_transform_1a9fe787106a5c2336e90a43ab03fa39c5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_graph" kindref="compound">Graph</ref> *</type>
+        <definition>Graph* RDE::Transform::graph</definition>
+        <argsstring></argsstring>
+        <name>graph</name>
+        <qualifiedname>RDE::Transform::graph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="46" column="19" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_transform_1aab66acbce0322792c6d451a14e4b7b71" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* RDE::Transform::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <qualifiedname>RDE::Transform::node</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="57" column="18" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_transform_1ab97dffffaa15c5be14d5b85ccd95a459" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_r_d_e_1a9feedbb7b8355f0ee9c64cfaa2a474d1" kindref="member">NodeID</ref></type>
+        <definition>NodeID RDE::Transform::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <qualifiedname>RDE::Transform::parent</qualifiedname>
+        <briefdescription>
+<para>ID of the direct parent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="63" column="20" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_transform_1a8bbfabc9122e4c5fad65c28932663e57" prot="public" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> *</type>
+        <definition>Transform* RDE::Transform::parentTransform</definition>
+        <argsstring></argsstring>
+        <name>parentTransform</name>
+        <qualifiedname>RDE::Transform::parentTransform</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Parent <ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="68" column="23" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_transform_1addbd967ceef5ba001b9d62337359b7d8" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> * &gt;</type>
+        <definition>std::vector&lt;Transform*&gt; RDE::Transform::children</definition>
+        <argsstring></argsstring>
+        <name>children</name>
+        <qualifiedname>RDE::Transform::children</qualifiedname>
+        <briefdescription>
+<para>All the children that an entity has. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="74" column="25" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a3ef0e4cdfd27f66d3f47282c3a576596" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 RDE::Transform::recalculateCachedMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>recalculateCachedMatrix</name>
+        <qualifiedname>RDE::Transform::recalculateCachedMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="49" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a7961a60c4195323de0a50eab092fb1d2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::setDirty</definition>
+        <argsstring>(Transform *_transform)</argsstring>
+        <name>setDirty</name>
+        <qualifiedname>RDE::Transform::setDirty</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> *</type>
+          <declname>_transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="50" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a49e1dd770331e3cf262b7930cea6bd4a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RDE::Transform::clearDirty</definition>
+        <argsstring>()</argsstring>
+        <name>clearDirty</name>
+        <qualifiedname>RDE::Transform::clearDirty</qualifiedname>
+        <reimplementedby refid="struct_r_d_e_1_1_u_i_transform_1a2bb385de399a3e6cf7dae8fb52e947c2">clearDirty</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="51" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1ab79a18cf3aba31e7f2bf126c02873a90" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 RDE::Transform::worldPointToLocalPosition</definition>
+        <argsstring>(const Vec2F &amp;_position)</argsstring>
+        <name>worldPointToLocalPosition</name>
+        <qualifiedname>RDE::Transform::worldPointToLocalPosition</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="52" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1ae88165b533b76695374d72e3f92e1186" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 RDE::Transform::worldPointToLocalRotation</definition>
+        <argsstring>(float _rotation)</argsstring>
+        <name>worldPointToLocalRotation</name>
+        <qualifiedname>RDE::Transform::worldPointToLocalRotation</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="53" column="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a5342c02f33e5a8e8de14bdff07fc2293" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RDE::Transform::Transform</definition>
+        <argsstring>(Graph *_graph)</argsstring>
+        <name>Transform</name>
+        <qualifiedname>RDE::Transform::Transform</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_graph" kindref="compound">Graph</ref> *</type>
+          <declname>_graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="56" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a3ef0a1da93a2bf2ba5d5dbeae8b177de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RDE::Transform::getChildrenCount</definition>
+        <argsstring>()</argsstring>
+        <name>getChildrenCount</name>
+        <qualifiedname>RDE::Transform::getChildrenCount</qualifiedname>
+        <briefdescription>
+<para>Returns the total number of children, from all of the generations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="80" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a02bbed6f19403c5a488be67e7bfeb5c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RDE::Transform::getActiveChildrenCount</definition>
+        <argsstring>()</argsstring>
+        <name>getActiveChildrenCount</name>
+        <qualifiedname>RDE::Transform::getActiveChildrenCount</qualifiedname>
+        <briefdescription>
+<para>Returns the total number of children, from all of the generations, that are active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="86" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1ac261b6cd66057c13c985dace38bdc592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RDE::Transform::getEnabledChildrenCount</definition>
+        <argsstring>()</argsstring>
+        <name>getEnabledChildrenCount</name>
+        <qualifiedname>RDE::Transform::getEnabledChildrenCount</qualifiedname>
+        <briefdescription>
+<para>Returns the total number of children, from all of the generations, that are enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="92" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1aa4ff77de8a196d08c3905bb1036c14ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RDE::Transform::getEnabledAndActiveChildrenCount</definition>
+        <argsstring>()</argsstring>
+        <name>getEnabledAndActiveChildrenCount</name>
+        <qualifiedname>RDE::Transform::getEnabledAndActiveChildrenCount</qualifiedname>
+        <briefdescription>
+<para>Returns the total number of children, from all of the generations, that are enabled and active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="98" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a6c03c7c4df362ec3f07ed0641cc89ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::setPosition</definition>
+        <argsstring>(const Vec2F &amp;_position)</argsstring>
+        <name>setPosition</name>
+        <qualifiedname>RDE::Transform::setPosition</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_position</declname>
+        </param>
+        <briefdescription>
+<para>Sets the position of the object in Local Coordintes, so relative to its parent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector with position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="104" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a9430d87d8717ad1869d1fd3410d89eb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::setPosition</definition>
+        <argsstring>(float _x, float _y)</argsstring>
+        <name>setPosition</name>
+        <qualifiedname>RDE::Transform::setPosition</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_y</declname>
+        </param>
+        <briefdescription>
+<para>Sets the position of the object in Local Coordintes, so relative to its parent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position x </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position y </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="111" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1abe45b5e64652c6c5ceb5f09b69c5caf1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::Transform::getPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>getPosition</name>
+        <qualifiedname>RDE::Transform::getPosition</qualifiedname>
+        <briefdescription>
+<para>Returns the position relative to its parent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vec2F </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="117" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1ab11af698df6651b3f5f319614b53fc8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::translate</definition>
+        <argsstring>(const Vec2F &amp;_direction)</argsstring>
+        <name>translate</name>
+        <qualifiedname>RDE::Transform::translate</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_direction</declname>
+        </param>
+        <briefdescription>
+<para>Translates the current position by an amount. It is not the same as setPosition. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction it is moving to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="123" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1ac5e59461b0c0278172c6b65a378e3140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::translate</definition>
+        <argsstring>(float _x, float _y)</argsstring>
+        <name>translate</name>
+        <qualifiedname>RDE::Transform::translate</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_y</declname>
+        </param>
+        <briefdescription>
+<para>Translates the current position by an amount. It is not the same as setPosition. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Direction in x it is moving to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Direction in y it is moving to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="130" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1ab935ca5a3ff095723aff2ec49a8e8dc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::setRotation</definition>
+        <argsstring>(float _rotation)</argsstring>
+        <name>setRotation</name>
+        <qualifiedname>RDE::Transform::setRotation</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_rotation</declname>
+        </param>
+        <briefdescription>
+<para>Sets the rotation of the entity in Local value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Degrees of rotation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="136" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1aa092b7e220c70646d0da45972c6e37da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::Transform::getRotation</definition>
+        <argsstring>() const</argsstring>
+        <name>getRotation</name>
+        <qualifiedname>RDE::Transform::getRotation</qualifiedname>
+        <briefdescription>
+<para>Returns the rotation relative to its parent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="142" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a766364098446328eca5cde35a2c62cd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::rotate</definition>
+        <argsstring>(float _amount)</argsstring>
+        <name>rotate</name>
+        <qualifiedname>RDE::Transform::rotate</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_amount</declname>
+        </param>
+        <briefdescription>
+<para>Rotates the entity by an amount of degrees. It is not the same as setRotation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of degrees to rotate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="148" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1acb98523638364db0a462ad21a5c46816" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::setScale</definition>
+        <argsstring>(const Vec2F &amp;_scale)</argsstring>
+        <name>setScale</name>
+        <qualifiedname>RDE::Transform::setScale</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_scale</declname>
+        </param>
+        <briefdescription>
+<para>Sets the scale of the entity in Local value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scale of the entity. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="154" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a3016bee1deaed1a134d61df5a6d32ec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::setScale</definition>
+        <argsstring>(float _x, float _y)</argsstring>
+        <name>setScale</name>
+        <qualifiedname>RDE::Transform::setScale</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_y</declname>
+        </param>
+        <briefdescription>
+<para>Sets the scale of the entity in Local value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scale in x </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scale in y </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="161" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a204bac1e5a6cacb73714e90d0a53a069" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::Transform::getScale</definition>
+        <argsstring>() const</argsstring>
+        <name>getScale</name>
+        <qualifiedname>RDE::Transform::getScale</qualifiedname>
+        <briefdescription>
+<para>Returns the scale relative to its parent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vec2F </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="167" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a7e4a7d2f57776e0fee6d00183e40e0a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::scale</definition>
+        <argsstring>(const Vec2F &amp;_scale)</argsstring>
+        <name>scale</name>
+        <qualifiedname>RDE::Transform::scale</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_scale</declname>
+        </param>
+        <briefdescription>
+<para>Adds an amount to the current scale. It is not the same as setScale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to increase or decrease the scale. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="173" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a030d5a7a5a3225bd82c5ede7917d980c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::scale</definition>
+        <argsstring>(float _x, float _y)</argsstring>
+        <name>scale</name>
+        <qualifiedname>RDE::Transform::scale</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_y</declname>
+        </param>
+        <briefdescription>
+<para>Adds an amount to the current scale. It is not the same as setScale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to increase/decrease the scale in x </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to increase/decrease the scale in y </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="180" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1abf59d5c1e3d770048da7876b8bd3c8ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::Transform::getModelMatrixPosition</definition>
+        <argsstring>()</argsstring>
+        <name>getModelMatrixPosition</name>
+        <qualifiedname>RDE::Transform::getModelMatrixPosition</qualifiedname>
+        <briefdescription>
+<para>Returns the position of the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> in world coordinates. This is useful when the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> you need the position is a child of other <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> and you need the position relative to the world and not the parent (which <ref refid="class_r_d_e_1_1_transform_1abe45b5e64652c6c5ceb5f09b69c5caf1" kindref="member">getPosition()</ref> gives). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vec2F </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="187" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a96965f0e24577a2dcb5817481ec09a5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref></type>
+        <definition>Vec2F RDE::Transform::getModelMatrixScale</definition>
+        <argsstring>()</argsstring>
+        <name>getModelMatrixScale</name>
+        <qualifiedname>RDE::Transform::getModelMatrixScale</qualifiedname>
+        <briefdescription>
+<para>Returns the scale of the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> in world units. This is useful when the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> you need the scale is a child of other <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> and you need the scale relative to the world and not the parent (which <ref refid="class_r_d_e_1_1_transform_1a204bac1e5a6cacb73714e90d0a53a069" kindref="member">getScale()</ref> gives). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vec2F </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="194" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a94bf07453cc4f1bcde2d284db3cf0c3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::Transform::getModelMatrixRotation</definition>
+        <argsstring>()</argsstring>
+        <name>getModelMatrixRotation</name>
+        <qualifiedname>RDE::Transform::getModelMatrixRotation</qualifiedname>
+        <briefdescription>
+<para>Returns the rotation of the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> in world degrees units. This is useful when the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> you need the rotation is a child of other <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> and you need the rotation relative to the world and not the parent (which <ref refid="class_r_d_e_1_1_transform_1aa092b7e220c70646d0da45972c6e37da" kindref="member">getRotation()</ref> gives). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vec2F </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="201" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a6a43151fd82417707b2a13610cf950e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::setMatrixModelPosition</definition>
+        <argsstring>(const Vec2F &amp;_worldPos)</argsstring>
+        <name>setMatrixModelPosition</name>
+        <qualifiedname>RDE::Transform::setMatrixModelPosition</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_worldPos</declname>
+        </param>
+        <briefdescription>
+<para>Sets the position of the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> in world coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_worldPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position in world coordinates. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="207" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1ad61ffd21680f6160ce59e33affe30672" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::translateMatrixModelPosition</definition>
+        <argsstring>(const Vec2F &amp;_worldPos)</argsstring>
+        <name>translateMatrixModelPosition</name>
+        <qualifiedname>RDE::Transform::translateMatrixModelPosition</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_vec2" kindref="compound">Vec2F</ref> &amp;</type>
+          <declname>_worldPos</declname>
+        </param>
+        <briefdescription>
+<para>Translates the position of the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> in world coordinates units. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_worldPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount to translate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="213" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a76245aa0239286c514d1a532dea5b108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::setMatrixModelRotation</definition>
+        <argsstring>(float _rotation)</argsstring>
+        <name>setMatrixModelRotation</name>
+        <qualifiedname>RDE::Transform::setMatrixModelRotation</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_rotation</declname>
+        </param>
+        <briefdescription>
+<para>Sets the rotation of the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> in world degrees. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation in world degree units. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="219" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a54b9650cf56af7dd9d2078c76582f14f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 RDE::Transform::localToParent</definition>
+        <argsstring>() const</argsstring>
+        <name>localToParent</name>
+        <qualifiedname>RDE::Transform::localToParent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="221" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1abf6f8952751fabf44f89f6dec995b332" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 RDE::Transform::parentToLocal</definition>
+        <argsstring>() const</argsstring>
+        <name>parentToLocal</name>
+        <qualifiedname>RDE::Transform::parentToLocal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="222" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a8286879ca8b855f3b553eb6491d60830" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::tuple&lt; glm::mat4, bool &gt;</type>
+        <definition>virtual std::tuple&lt; glm::mat4, bool &gt; RDE::Transform::localToWorld</definition>
+        <argsstring>()</argsstring>
+        <name>localToWorld</name>
+        <qualifiedname>RDE::Transform::localToWorld</qualifiedname>
+        <reimplementedby refid="struct_r_d_e_1_1_u_i_transform_1aa0d5659132dbc9f30835cfa29ced5aa7">localToWorld</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="223" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a07ff609c5ff3ff264720d90f0ccc9817" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 RDE::Transform::worldToLocal</definition>
+        <argsstring>() const</argsstring>
+        <name>worldToLocal</name>
+        <qualifiedname>RDE::Transform::worldToLocal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="224" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1a15ca9555e81269d81e94ce6f379c246f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 RDE::Transform::getLocalMatrix</definition>
+        <argsstring>() const</argsstring>
+        <name>getLocalMatrix</name>
+        <qualifiedname>RDE::Transform::getLocalMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="226" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_transform_1ad6596ebb2ee3231bdf2a566ea6c4ee39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::Transform::setLocalMatrix</definition>
+        <argsstring>(const glm::mat4 &amp;_matrix)</argsstring>
+        <name>setLocalMatrix</name>
+        <qualifiedname>RDE::Transform::setLocalMatrix</qualifiedname>
+        <param>
+          <type>const glm::mat4 &amp;</type>
+          <declname>_matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Transform.h" line="227" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Component common to every entity that tells the engine where it is, which scale it has and how much it is rotated. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RDE::Transform</label>
+        <link refid="class_r_d_e_1_1_transform"/>
+      </node>
+      <node id="2">
+        <label>RDE::UITransform</label>
+        <link refid="struct_r_d_e_1_1_u_i_transform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>RDE::Node</label>
+        <link refid="struct_r_d_e_1_1_node"/>
+      </node>
+      <node id="1">
+        <label>RDE::Transform</label>
+        <link refid="class_r_d_e_1_1_transform"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>parentTransform</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/graph/components/Transform.h" line="25" column="5" bodyfile="engine/include/core/graph/components/Transform.h" bodystart="25" bodyend="228"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_transform_1ad8bd9afbbd7af19d996da80e9d25890d" prot="private" virt="non-virtual"><scope>RDE::Transform</scope><name>Camera</name></member>
+      <member refid="class_r_d_e_1_1_transform_1addbd967ceef5ba001b9d62337359b7d8" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>children</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a49e1dd770331e3cf262b7930cea6bd4a" prot="protected" virt="virtual"><scope>RDE::Transform</scope><name>clearDirty</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a43f6a2104ee1ab82779b9628fcd0cec6" prot="private" virt="non-virtual"><scope>RDE::Transform</scope><name>dirty</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a5501c7215968e1be0edf9f0b3c7e16c1" prot="private" virt="non-virtual"><scope>RDE::Transform</scope><name>DynamicSpriteRenderer</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a02bbed6f19403c5a488be67e7bfeb5c8" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>getActiveChildrenCount</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a3ef0a1da93a2bf2ba5d5dbeae8b177de" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>getChildrenCount</name></member>
+      <member refid="class_r_d_e_1_1_transform_1aa4ff77de8a196d08c3905bb1036c14ab" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>getEnabledAndActiveChildrenCount</name></member>
+      <member refid="class_r_d_e_1_1_transform_1ac261b6cd66057c13c985dace38bdc592" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>getEnabledChildrenCount</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a15ca9555e81269d81e94ce6f379c246f" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>getLocalMatrix</name></member>
+      <member refid="class_r_d_e_1_1_transform_1abf59d5c1e3d770048da7876b8bd3c8ce" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>getModelMatrixPosition</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a94bf07453cc4f1bcde2d284db3cf0c3d" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>getModelMatrixRotation</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a96965f0e24577a2dcb5817481ec09a5e" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>getModelMatrixScale</name></member>
+      <member refid="class_r_d_e_1_1_transform_1abe45b5e64652c6c5ceb5f09b69c5caf1" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>getPosition</name></member>
+      <member refid="class_r_d_e_1_1_transform_1aa092b7e220c70646d0da45972c6e37da" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>getRotation</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a204bac1e5a6cacb73714e90d0a53a069" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>getScale</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a9fe787106a5c2336e90a43ab03fa39c5" prot="private" virt="non-virtual"><scope>RDE::Transform</scope><name>graph</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a055de5a6e93a66760875ba92b437f925" prot="private" virt="non-virtual"><scope>RDE::Transform</scope><name>innerRotation</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a2cefd41043893c016ed3dbf9789f9640" prot="private" virt="non-virtual"><scope>RDE::Transform</scope><name>innerScale</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a54b9650cf56af7dd9d2078c76582f14f" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>localToParent</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a8286879ca8b855f3b553eb6491d60830" prot="public" virt="virtual"><scope>RDE::Transform</scope><name>localToWorld</name></member>
+      <member refid="class_r_d_e_1_1_transform_1aab66acbce0322792c6d451a14e4b7b71" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>node</name></member>
+      <member refid="class_r_d_e_1_1_transform_1ab97dffffaa15c5be14d5b85ccd95a459" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>parent</name></member>
+      <member refid="class_r_d_e_1_1_transform_1abf6f8952751fabf44f89f6dec995b332" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>parentToLocal</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a8bbfabc9122e4c5fad65c28932663e57" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>parentTransform</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a4a0c4e03d40875dbce0d67bf699e8b27" prot="private" virt="non-virtual"><scope>RDE::Transform</scope><name>PhysicsBody</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a3ef0e4cdfd27f66d3f47282c3a576596" prot="protected" virt="non-virtual"><scope>RDE::Transform</scope><name>recalculateCachedMatrix</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a766364098446328eca5cde35a2c62cd5" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>rotate</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a7e4a7d2f57776e0fee6d00183e40e0a8" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>scale</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a030d5a7a5a3225bd82c5ede7917d980c" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>scale</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a032858ae1fe02d2d1170981c2af2d67c" prot="private" virt="non-virtual"><scope>RDE::Transform</scope><name>Scene</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a7961a60c4195323de0a50eab092fb1d2" prot="protected" virt="non-virtual"><scope>RDE::Transform</scope><name>setDirty</name></member>
+      <member refid="class_r_d_e_1_1_transform_1ad6596ebb2ee3231bdf2a566ea6c4ee39" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>setLocalMatrix</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a6a43151fd82417707b2a13610cf950e2" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>setMatrixModelPosition</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a76245aa0239286c514d1a532dea5b108" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>setMatrixModelRotation</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a6c03c7c4df362ec3f07ed0641cc89ade" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>setPosition</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a9430d87d8717ad1869d1fd3410d89eb8" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>setPosition</name></member>
+      <member refid="class_r_d_e_1_1_transform_1ab935ca5a3ff095723aff2ec49a8e8dc6" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>setRotation</name></member>
+      <member refid="class_r_d_e_1_1_transform_1acb98523638364db0a462ad21a5c46816" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>setScale</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a3016bee1deaed1a134d61df5a6d32ec6" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>setScale</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a9131e80805b446f695a03ca740437d30" prot="private" virt="non-virtual"><scope>RDE::Transform</scope><name>SpriteRenderer</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a9764b9e107d83472b6a0ba6560a66eec" prot="private" virt="non-virtual"><scope>RDE::Transform</scope><name>TextRenderer</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a5342c02f33e5a8e8de14bdff07fc2293" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>Transform</name></member>
+      <member refid="class_r_d_e_1_1_transform_1ab11af698df6651b3f5f319614b53fc8d" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>translate</name></member>
+      <member refid="class_r_d_e_1_1_transform_1ac5e59461b0c0278172c6b65a378e3140" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>translate</name></member>
+      <member refid="class_r_d_e_1_1_transform_1ad61ffd21680f6160ce59e33affe30672" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>translateMatrixModelPosition</name></member>
+      <member refid="class_r_d_e_1_1_transform_1aeee2736151556a498635f05a3ae3b1b4" prot="private" virt="non-virtual"><scope>RDE::Transform</scope><name>UIImage</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a15bac633fa57dff1f82e6e488de8be1a" prot="private" virt="non-virtual"><scope>RDE::Transform</scope><name>UIText</name></member>
+      <member refid="class_r_d_e_1_1_transform_1acbf316fee86d7620c50c5218c4eaf3e4" prot="private" virt="non-virtual"><scope>RDE::Transform</scope><name>worldMatrixCache</name></member>
+      <member refid="class_r_d_e_1_1_transform_1ab79a18cf3aba31e7f2bf126c02873a90" prot="protected" virt="non-virtual"><scope>RDE::Transform</scope><name>worldPointToLocalPosition</name></member>
+      <member refid="class_r_d_e_1_1_transform_1ae88165b533b76695374d72e3f92e1186" prot="protected" virt="non-virtual"><scope>RDE::Transform</scope><name>worldPointToLocalRotation</name></member>
+      <member refid="class_r_d_e_1_1_transform_1a07ff609c5ff3ff264720d90f0ccc9817" prot="public" virt="non-virtual"><scope>RDE::Transform</scope><name>worldToLocal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_probability" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::Probability</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_probability_1af6404e1be10767724e348d0ab0974dce" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::Probability::prob</definition>
+        <argsstring></argsstring>
+        <name>prob</name>
+        <qualifiedname>RDE::Probability::prob</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Random.h" line="13" column="15" bodyfile="engine/include/core/util/Random.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_probability_1a06084201cd665e329e8e93bfb7d6abb9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::Probability::happened</definition>
+        <argsstring></argsstring>
+        <name>happened</name>
+        <qualifiedname>RDE::Probability::happened</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Random.h" line="14" column="14" bodyfile="engine/include/core/util/Random.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/util/Random.h" line="12" column="5" bodyfile="engine/include/core/util/Random.h" bodystart="12" bodyend="15"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_probability_1a06084201cd665e329e8e93bfb7d6abb9" prot="public" virt="non-virtual"><scope>RDE::Probability</scope><name>happened</name></member>
+      <member refid="struct_r_d_e_1_1_probability_1af6404e1be10767724e348d0ab0974dce" prot="public" virt="non-virtual"><scope>RDE::Probability</scope><name>prob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

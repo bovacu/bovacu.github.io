@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_rect" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::Rect</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_rect_1a29364827ae034c4e75af7df2aa067897" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T RDE::Rect&lt; T &gt;::bottomLeftCorner</definition>
+        <argsstring></argsstring>
+        <name>bottomLeftCorner</name>
+        <qualifiedname>RDE::Rect::bottomLeftCorner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Rect.h" line="13" column="11" bodyfile="engine/include/core/util/Rect.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_rect_1aa5d72ea3f133598d583aec298065fade" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T RDE::Rect&lt; T &gt;::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>RDE::Rect::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Rect.h" line="14" column="11" bodyfile="engine/include/core/util/Rect.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/util/Rect.h" line="12" column="5" bodyfile="engine/include/core/util/Rect.h" bodystart="12" bodyend="15"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_rect_1a29364827ae034c4e75af7df2aa067897" prot="public" virt="non-virtual"><scope>RDE::Rect</scope><name>bottomLeftCorner</name></member>
+      <member refid="struct_r_d_e_1_1_rect_1aa5d72ea3f133598d583aec298065fade" prot="public" virt="non-virtual"><scope>RDE::Rect</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

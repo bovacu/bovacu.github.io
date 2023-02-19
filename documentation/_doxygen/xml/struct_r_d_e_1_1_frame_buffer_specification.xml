@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_frame_buffer_specification" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::FrameBufferSpecification</compoundname>
+    <includes refid="_frame_buffer_8h" local="no">FrameBuffer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_frame_buffer_specification_1ad01169d567fbdd339b38a1a18fbc0489" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RDE::FrameBufferSpecification::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>RDE::FrameBufferSpecification::width</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+<para>Width of the <ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/FrameBuffer.h" line="20" column="18" bodyfile="engine/include/core/render/elements/FrameBuffer.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_frame_buffer_specification_1a16bcc99dad1d73f240e36e3c7db3f351" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RDE::FrameBufferSpecification::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>RDE::FrameBufferSpecification::height</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+<para>Height of the <ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/FrameBuffer.h" line="25" column="18" bodyfile="engine/include/core/render/elements/FrameBuffer.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_frame_buffer_specification_1a588a0c1c659f988cc528fb614ba3c256" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RDE::FrameBufferSpecification::samples</definition>
+        <argsstring></argsstring>
+        <name>samples</name>
+        <qualifiedname>RDE::FrameBufferSpecification::samples</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Number of samples. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/FrameBuffer.h" line="30" column="18" bodyfile="engine/include/core/render/elements/FrameBuffer.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_frame_buffer_specification_1a456b350c7af0f5667f0e962ffb4efdca" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::FrameBufferSpecification::renderToWindow</definition>
+        <argsstring></argsstring>
+        <name>renderToWindow</name>
+        <qualifiedname>RDE::FrameBufferSpecification::renderToWindow</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Render to window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/FrameBuffer.h" line="35" column="14" bodyfile="engine/include/core/render/elements/FrameBuffer.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data about the <ref refid="class_r_d_e_1_1_frame_buffer" kindref="compound">FrameBuffer</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/render/elements/FrameBuffer.h" line="16" column="5" bodyfile="engine/include/core/render/elements/FrameBuffer.h" bodystart="16" bodyend="36"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_frame_buffer_specification_1a16bcc99dad1d73f240e36e3c7db3f351" prot="public" virt="non-virtual"><scope>RDE::FrameBufferSpecification</scope><name>height</name></member>
+      <member refid="struct_r_d_e_1_1_frame_buffer_specification_1a456b350c7af0f5667f0e962ffb4efdca" prot="public" virt="non-virtual"><scope>RDE::FrameBufferSpecification</scope><name>renderToWindow</name></member>
+      <member refid="struct_r_d_e_1_1_frame_buffer_specification_1a588a0c1c659f988cc528fb614ba3c256" prot="public" virt="non-virtual"><scope>RDE::FrameBufferSpecification</scope><name>samples</name></member>
+      <member refid="struct_r_d_e_1_1_frame_buffer_specification_1ad01169d567fbdd339b38a1a18fbc0489" prot="public" virt="non-virtual"><scope>RDE::FrameBufferSpecification</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

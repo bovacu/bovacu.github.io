@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_canvas_element" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::CanvasElement</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_canvas_element_1a9097301dd796097162b08e978935716c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* RDE::CanvasElement::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <qualifiedname>RDE::CanvasElement::node</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/Canvas.h" line="31" column="14" bodyfile="engine/include/core/systems/uiSystem/Canvas.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_canvas_element_1a120f1b5e4d32722b2c7c66712e5bc620" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_renderizable_inner_data_u_i" kindref="compound">RenderizableInnerDataUI</ref> *</type>
+        <definition>RenderizableInnerDataUI* RDE::CanvasElement::renderizableInnerData</definition>
+        <argsstring></argsstring>
+        <name>renderizableInnerData</name>
+        <qualifiedname>RDE::CanvasElement::renderizableInnerData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/Canvas.h" line="32" column="33" bodyfile="engine/include/core/systems/uiSystem/Canvas.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_canvas_element_1a13efb8669b95d220114b60a4cd081c80" prot="public" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_u_i_interactable" kindref="compound">UIInteractable</ref> *</type>
+        <definition>UIInteractable* RDE::CanvasElement::interactable</definition>
+        <argsstring></argsstring>
+        <name>interactable</name>
+        <qualifiedname>RDE::CanvasElement::interactable</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/Canvas.h" line="33" column="24" bodyfile="engine/include/core/systems/uiSystem/Canvas.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_canvas_element_1a48bf7d8c00199569e2c1f9b9279d09b8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::CanvasElement::cropping</definition>
+        <argsstring></argsstring>
+        <name>cropping</name>
+        <qualifiedname>RDE::CanvasElement::cropping</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/Canvas.h" line="34" column="13" bodyfile="engine/include/core/systems/uiSystem/Canvas.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_canvas_element_1a782aad3e6ea803310b7b00f41bb0e6b4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_updatable_data" kindref="compound">UpdatableData</ref></type>
+        <definition>UpdatableData RDE::CanvasElement::updatableData</definition>
+        <argsstring></argsstring>
+        <name>updatableData</name>
+        <qualifiedname>RDE::CanvasElement::updatableData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/uiSystem/Canvas.h" line="35" column="23" bodyfile="engine/include/core/systems/uiSystem/Canvas.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="15">
+        <label>RDE::Delegate&lt; void()&gt;</label>
+        <link refid="struct_r_d_e_1_1_delegate"/>
+      </node>
+      <node id="18">
+        <label>RDE::Delegate&lt; void(ControllerButtons)&gt;</label>
+        <link refid="struct_r_d_e_1_1_delegate"/>
+      </node>
+      <node id="17">
+        <label>RDE::Delegate&lt; void(KeyCode)&gt;</label>
+        <link refid="struct_r_d_e_1_1_delegate"/>
+      </node>
+      <node id="14">
+        <label>RDE::Delegate&lt; void(MouseCode)&gt;</label>
+        <link refid="struct_r_d_e_1_1_delegate"/>
+      </node>
+      <node id="16">
+        <label>RDE::Delegate&lt; void(RDE::Vec2)&gt;</label>
+        <link refid="struct_r_d_e_1_1_delegate"/>
+      </node>
+      <node id="19">
+        <label>RDE::Delegate&lt; void(int)&gt;</label>
+        <link refid="struct_r_d_e_1_1_delegate"/>
+      </node>
+      <node id="1">
+        <label>RDE::CanvasElement</label>
+        <link refid="struct_r_d_e_1_1_canvas_element"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>renderizableInnerData</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>interactable</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>updatableData</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>RDE::Color</label>
+        <link refid="struct_r_d_e_1_1_color"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>Black</edgelabel>
+          <edgelabel>Blue</edgelabel>
+          <edgelabel>Brown</edgelabel>
+          <edgelabel>Disabled</edgelabel>
+          <edgelabel>Gray</edgelabel>
+          <edgelabel>Green</edgelabel>
+          <edgelabel>Magenta</edgelabel>
+          <edgelabel>NO_COLOR</edgelabel>
+          <edgelabel>Orange</edgelabel>
+          <edgelabel>Placeholder</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>RDE::NineSlice</label>
+        <link refid="struct_r_d_e_1_1_nine_slice"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>subRects</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::Node</label>
+        <link refid="struct_r_d_e_1_1_node"/>
+      </node>
+      <node id="5">
+        <label>RDE::RenderizableInnerData</label>
+        <link refid="struct_r_d_e_1_1_renderizable_inner_data"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>texture</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RDE::RenderizableInnerDataUI</label>
+        <link refid="struct_r_d_e_1_1_renderizable_inner_data_u_i"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>originOffset</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>RenderizableInnerData</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>RDE::Texture</label>
+        <link refid="class_r_d_e_1_1_texture"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>textureSize</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>spriteSheetSize</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>region</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>nineSlice</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>RDE::UIInteractable</label>
+        <link refid="class_r_d_e_1_1_u_i_interactable"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>onClick</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>onMouseEntered</edgelabel>
+          <edgelabel>onMouseExited</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>onScroll</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>onKeyPressed</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>onGamepadButtonPressed</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>onMobileClick</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>RDE::UpdatableData</label>
+        <link refid="struct_r_d_e_1_1_updatable_data"/>
+      </node>
+      <node id="9">
+        <label>RDE::Vec2&lt; T &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+      <node id="8">
+        <label>RDE::Rect&lt; Vec2F &gt;</label>
+        <link refid="struct_r_d_e_1_1_rect"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>bottomLeftCorner</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>RDE::Rect&lt; Vec2I &gt;</label>
+        <link refid="struct_r_d_e_1_1_rect"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>bottomLeftCorner</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RDE::Vec2&lt; float &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+      <node id="7">
+        <label>RDE::Vec2&lt; int &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/systems/uiSystem/Canvas.h" line="30" column="5" bodyfile="engine/include/core/systems/uiSystem/Canvas.h" bodystart="30" bodyend="36"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_canvas_element_1a48bf7d8c00199569e2c1f9b9279d09b8" prot="public" virt="non-virtual"><scope>RDE::CanvasElement</scope><name>cropping</name></member>
+      <member refid="struct_r_d_e_1_1_canvas_element_1a13efb8669b95d220114b60a4cd081c80" prot="public" virt="non-virtual"><scope>RDE::CanvasElement</scope><name>interactable</name></member>
+      <member refid="struct_r_d_e_1_1_canvas_element_1a9097301dd796097162b08e978935716c" prot="public" virt="non-virtual"><scope>RDE::CanvasElement</scope><name>node</name></member>
+      <member refid="struct_r_d_e_1_1_canvas_element_1a120f1b5e4d32722b2c7c66712e5bc620" prot="public" virt="non-virtual"><scope>RDE::CanvasElement</scope><name>renderizableInnerData</name></member>
+      <member refid="struct_r_d_e_1_1_canvas_element_1a782aad3e6ea803310b7b00f41bb0e6b4" prot="public" virt="non-virtual"><scope>RDE::CanvasElement</scope><name>updatableData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

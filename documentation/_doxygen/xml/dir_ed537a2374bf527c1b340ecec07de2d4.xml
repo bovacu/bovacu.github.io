@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_ed537a2374bf527c1b340ecec07de2d4" kind="dir">
+    <compoundname>engine/include/core/systems/inputSystem</compoundname>
+    <innerdir refid="dir_6a3ee0e86244396a56136f40264a1a3f">engine/include/core/systems/inputSystem/input</innerdir>
+    <innerdir refid="dir_f5857a27a32b926382aba769317a33aa">engine/include/core/systems/inputSystem/keysAndButtons</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/inputSystem/"/>
+  </compounddef>
+</doxygen>

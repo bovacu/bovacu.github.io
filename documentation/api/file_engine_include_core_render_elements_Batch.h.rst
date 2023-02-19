@@ -1,0 +1,77 @@
+
+.. _file_engine_include_core_render_elements_Batch.h:
+
+File Batch.h
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_engine_include_core_render_elements>` (``engine/include/core/render/elements``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``engine/include/core/render/elements/Batch.h``)
+------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_engine_include_core_render_elements_Batch.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``core/graph/components/Transform.h`` (:ref:`file_engine_include_core_graph_components_Transform.h`)
+
+- ``core/render/elements/Shader.h`` (:ref:`file_engine_include_core_render_elements_Shader.h`)
+
+- ``core/render/elements/Vertex.h`` (:ref:`file_engine_include_core_render_elements_Vertex.h`)
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_engine_include_core_graph_components_ui_UISlider.h`
+
+- :ref:`file_engine_include_core_render_elements_IRenderizable.h`
+
+- :ref:`file_engine_include_core_render_elements_SpriteBatch.h`
+
+- :ref:`file_engine_include_core_systems_uiSystem_Canvas.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_RDE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_r_d_e_1_1_batch`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum__batch_8h_1a334d59d9322369f399fcce71af3be469`
+

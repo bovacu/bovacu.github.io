@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_delta" kind="class" language="C++" prot="public">
+    <compoundname>RDE::Delta</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_delta_1a0f1df481a63a2fefc735687b521485b2" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RDE::Delta::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <qualifiedname>RDE::Delta::time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delta.h" line="10" column="19" bodyfile="engine/include/core/util/Delta.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_delta_1acd381c8b43f24e160f41e81a1ac94fa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::Delta::Delta</definition>
+        <argsstring>(float _time=0.0f)</argsstring>
+        <name>Delta</name>
+        <qualifiedname>RDE::Delta::Delta</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>_time</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delta.h" line="13" column="13" bodyfile="engine/include/core/util/Delta.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_delta_1acff8b1e4b81f817ee908135e43a9b73b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::Delta::operator float</definition>
+        <argsstring>() const</argsstring>
+        <name>operator float</name>
+        <qualifiedname>RDE::Delta::operator float</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delta.h" line="15" column="13" bodyfile="engine/include/core/util/Delta.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_delta_1a2ab535f64bb834940c65767bdb068e94" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::Delta::getSeconds</definition>
+        <argsstring>() const</argsstring>
+        <name>getSeconds</name>
+        <qualifiedname>RDE::Delta::getSeconds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delta.h" line="17" column="19" bodyfile="engine/include/core/util/Delta.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_delta_1a3dd60cff55462bc507e61937f8bb61de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float RDE::Delta::getMilliseconds</definition>
+        <argsstring>() const</argsstring>
+        <name>getMilliseconds</name>
+        <qualifiedname>RDE::Delta::getMilliseconds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delta.h" line="18" column="19" bodyfile="engine/include/core/util/Delta.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/util/Delta.h" line="8" column="5" bodyfile="engine/include/core/util/Delta.h" bodystart="8" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_delta_1acd381c8b43f24e160f41e81a1ac94fa4" prot="public" virt="non-virtual"><scope>RDE::Delta</scope><name>Delta</name></member>
+      <member refid="class_r_d_e_1_1_delta_1a3dd60cff55462bc507e61937f8bb61de" prot="public" virt="non-virtual"><scope>RDE::Delta</scope><name>getMilliseconds</name></member>
+      <member refid="class_r_d_e_1_1_delta_1a2ab535f64bb834940c65767bdb068e94" prot="public" virt="non-virtual"><scope>RDE::Delta</scope><name>getSeconds</name></member>
+      <member refid="class_r_d_e_1_1_delta_1acff8b1e4b81f817ee908135e43a9b73b" prot="public" virt="non-virtual"><scope>RDE::Delta</scope><name>operator float</name></member>
+      <member refid="class_r_d_e_1_1_delta_1a0f1df481a63a2fefc735687b521485b2" prot="private" virt="non-virtual"><scope>RDE::Delta</scope><name>time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

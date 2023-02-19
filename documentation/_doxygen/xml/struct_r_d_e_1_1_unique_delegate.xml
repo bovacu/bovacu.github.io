@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_unique_delegate" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::UniqueDelegate</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Signature</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/util/Delegate.h" line="18" column="5" bodyfile="engine/include/core/util/Delegate.h" bodystart="18" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

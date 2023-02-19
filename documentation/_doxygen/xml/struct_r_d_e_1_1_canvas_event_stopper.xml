@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_canvas_event_stopper" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::CanvasEventStopper</compoundname>
+    <basecompoundref refid="struct_component_base" prot="public" virt="non-virtual">ComponentBase</basecompoundref>
+    <includes refid="_components_8h" local="no">Components.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_canvas_event_stopper_1ab72a802785cbbe3cfc3ba6a9b95a3a2c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::CanvasEventStopper::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>RDE::CanvasEventStopper::enabled</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>This element is needed, otherwise an empty struct won&apos;t compile (don&apos;t know exactly why). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Components.h" line="126" column="18" bodyfile="engine/include/core/graph/components/Components.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_r_d_e_1_1_canvas_event_stopper_1aad973078d6b592b055fed54dbb2b93c4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::CanvasEventStopper::CanvasEventStopper</definition>
+        <argsstring>(Node *_node, Manager *_manager, Graph *_graph)</argsstring>
+        <name>CanvasEventStopper</name>
+        <qualifiedname>RDE::CanvasEventStopper::CanvasEventStopper</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>_node</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref> *</type>
+          <declname>_manager</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_graph" kindref="compound">Graph</ref> *</type>
+          <declname>_graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Components.h" line="112" column="18" bodyfile="engine/include/core/graph/components/Components.h" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_canvas_event_stopper_1ace39578e01241e94a696c0e177688672" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void RDE::CanvasEventStopper::setEnabled</definition>
+        <argsstring>(bool _enabled) override</argsstring>
+        <name>setEnabled</name>
+        <qualifiedname>RDE::CanvasEventStopper::setEnabled</qualifiedname>
+        <reimplements refid="struct_component_base_1a5985a55f1b7d0559c6e04bf6931740bd">setEnabled</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>_enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Components.h" line="114" column="14" bodyfile="engine/include/core/graph/components/Components.h" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_canvas_event_stopper_1a86140febe32c35f333d99ec43c856ede" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool RDE::CanvasEventStopper::isEnabled</definition>
+        <argsstring>() override</argsstring>
+        <name>isEnabled</name>
+        <qualifiedname>RDE::CanvasEventStopper::isEnabled</qualifiedname>
+        <reimplements refid="struct_component_base_1a1a4f1ecee1f4e4841528402875858b9f">isEnabled</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/graph/components/Components.h" line="118" column="14" bodyfile="engine/include/core/graph/components/Components.h" bodystart="118" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Component used to block the event that the entity containing this component handled. If an entity handles an event without this component, the event will propagate in deeper elements. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ComponentBase</label>
+        <link refid="struct_component_base"/>
+      </node>
+      <node id="1">
+        <label>RDE::CanvasEventStopper</label>
+        <link refid="struct_r_d_e_1_1_canvas_event_stopper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ComponentBase</label>
+        <link refid="struct_component_base"/>
+      </node>
+      <node id="1">
+        <label>RDE::CanvasEventStopper</label>
+        <link refid="struct_r_d_e_1_1_canvas_event_stopper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/graph/components/Components.h" line="111" column="5" bodyfile="engine/include/core/graph/components/Components.h" bodystart="111" bodyend="127"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_canvas_event_stopper_1aad973078d6b592b055fed54dbb2b93c4" prot="public" virt="non-virtual"><scope>RDE::CanvasEventStopper</scope><name>CanvasEventStopper</name></member>
+      <member refid="struct_r_d_e_1_1_canvas_event_stopper_1ab72a802785cbbe3cfc3ba6a9b95a3a2c" prot="private" virt="non-virtual"><scope>RDE::CanvasEventStopper</scope><name>enabled</name></member>
+      <member refid="struct_r_d_e_1_1_canvas_event_stopper_1a86140febe32c35f333d99ec43c856ede" prot="public" virt="virtual"><scope>RDE::CanvasEventStopper</scope><name>isEnabled</name></member>
+      <member refid="struct_r_d_e_1_1_canvas_event_stopper_1ace39578e01241e94a696c0e177688672" prot="public" virt="virtual"><scope>RDE::CanvasEventStopper</scope><name>setEnabled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

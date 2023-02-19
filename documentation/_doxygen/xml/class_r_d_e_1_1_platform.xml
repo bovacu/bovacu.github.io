@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_platform" kind="class" language="C++" prot="public">
+    <compoundname>RDE::Platform</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_platform_1af91994ec726bf17de16ece9f0a822772" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref> *</type>
+        <definition>Window * RDE::Platform::createWindow</definition>
+        <argsstring>(RDEConfig *_config)</argsstring>
+        <name>createWindow</name>
+        <qualifiedname>RDE::Platform::createWindow</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_r_d_e_config" kindref="compound">RDEConfig</ref> *</type>
+          <declname>_config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/platform/Platform.h" line="21" column="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_platform_1a6a011b432fbe411aaa233807a111101e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PlatformType</type>
+        <definition>PlatformType RDE::Platform::getPlatform</definition>
+        <argsstring>()</argsstring>
+        <name>getPlatform</name>
+        <qualifiedname>RDE::Platform::getPlatform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/platform/Platform.h" line="24" column="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/platform/Platform.h" line="19" column="5" bodyfile="engine/include/core/platform/Platform.h" bodystart="19" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_platform_1af91994ec726bf17de16ece9f0a822772" prot="public" virt="non-virtual"><scope>RDE::Platform</scope><name>createWindow</name></member>
+      <member refid="class_r_d_e_1_1_platform_1a6a011b432fbe411aaa233807a111101e" prot="private" virt="non-virtual"><scope>RDE::Platform</scope><name>getPlatform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

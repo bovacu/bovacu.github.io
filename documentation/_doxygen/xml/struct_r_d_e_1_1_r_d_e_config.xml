@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_r_d_e_config" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::RDEConfig</compoundname>
+    <includes refid="_engine_8h" local="no">Engine.h</includes>
+    <innerclass refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties" prot="public">RDE::RDEConfig::ProjectProperties</innerclass>
+    <innerclass refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties" prot="public">RDE::RDEConfig::WindowProperties</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_r_d_e_config_1a4c486ec4afa5cb57154aed056bc8ebeb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties" kindref="compound">WindowProperties</ref></type>
+        <definition>WindowProperties RDE::RDEConfig::windowData</definition>
+        <argsstring></argsstring>
+        <name>windowData</name>
+        <qualifiedname>RDE::RDEConfig::windowData</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties" kindref="compound">WindowProperties</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="92" column="26" bodyfile="engine/include/core/Engine.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_r_d_e_config_1a4bf9a4cd0e17668ee314b31b424bed16" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties" kindref="compound">ProjectProperties</ref></type>
+        <definition>ProjectProperties RDE::RDEConfig::projectData</definition>
+        <argsstring></argsstring>
+        <name>projectData</name>
+        <qualifiedname>RDE::RDEConfig::projectData</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties" kindref="compound">ProjectProperties</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="97" column="27" bodyfile="engine/include/core/Engine.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_r_d_e_config_1a0a7d8287f19030217b1df21038187f8c" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> * &gt;</type>
+        <definition>std::unordered_map&lt;std::string, Scene*&gt; RDE::RDEConfig::registeredScenes</definition>
+        <argsstring></argsstring>
+        <name>registeredScenes</name>
+        <qualifiedname>RDE::RDEConfig::registeredScenes</qualifiedname>
+        <initializer>= {}</initializer>
+        <briefdescription>
+<para>All the scenes that are registered by the engine. Might or might not be loaded in memory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/Engine.h" line="102" column="28" bodyfile="engine/include/core/Engine.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This struct contains some basic configuration of the window. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>RDE::LocalizationConfig</label>
+        <link refid="struct_r_d_e_1_1_localization_config"/>
+      </node>
+      <node id="1">
+        <label>RDE::RDEConfig</label>
+        <link refid="struct_r_d_e_1_1_r_d_e_config"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>windowData</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>projectData</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RDE::RDEConfig::ProjectProperties</label>
+        <link refid="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>localizationConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::RDEConfig::WindowProperties</label>
+        <link refid="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>resolution</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RDE::Vec2&lt; int &gt;</label>
+        <link refid="struct_r_d_e_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/Engine.h" line="37" column="5" bodyfile="engine/include/core/Engine.h" bodystart="37" bodyend="103"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_r_d_e_config_1a4bf9a4cd0e17668ee314b31b424bed16" prot="public" virt="non-virtual"><scope>RDE::RDEConfig</scope><name>projectData</name></member>
+      <member refid="struct_r_d_e_1_1_r_d_e_config_1a0a7d8287f19030217b1df21038187f8c" prot="public" virt="non-virtual"><scope>RDE::RDEConfig</scope><name>registeredScenes</name></member>
+      <member refid="struct_r_d_e_1_1_r_d_e_config_1a4c486ec4afa5cb57154aed056bc8ebeb" prot="public" virt="non-virtual"><scope>RDE::RDEConfig</scope><name>windowData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

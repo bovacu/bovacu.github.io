@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::ReturnDelegate&lt; R(Args...)&gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename R</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Args</declname>
+        <defname>Args</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a00a20cdd77d77d6b89d6cbe2c73c818a" prot="public" static="no">
+        <type>R(*)(const void *, Args...)</type>
+        <definition>using RDE::ReturnDelegate&lt; R(Args...)&gt;::stub_function =  R(*)(const void*, Args...)</definition>
+        <argsstring></argsstring>
+        <name>stub_function</name>
+        <qualifiedname>RDE::ReturnDelegate&lt; R(Args...)&gt;::stub_function</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delegate.h" line="201" column="9" bodyfile="engine/include/core/util/Delegate.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a38b05e9672fe6fd6a1e325fe7a433b9c" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; DelegateID, <ref refid="struct_r_d_e_1_1_unique_delegate" kindref="compound">UniqueDelegate</ref>&lt; R(Args...)&gt; &gt;</type>
+        <definition>std::unordered_map&lt;DelegateID, UniqueDelegate&lt;R(Args...)&gt; &gt; RDE::ReturnDelegate&lt; R(Args...)&gt;::callables</definition>
+        <argsstring></argsstring>
+        <name>callables</name>
+        <qualifiedname>RDE::ReturnDelegate&lt; R(Args...)&gt;::callables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delegate.h" line="203" column="32" bodyfile="engine/include/core/util/Delegate.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1ac9ff121a71f025d2efc6fe687c90b21a" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RDE::ReturnDelegate&lt; R(Args...)&gt;::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>RDE::ReturnDelegate&lt; R(Args...)&gt;::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delegate.h" line="204" column="22" bodyfile="engine/include/core/util/Delegate.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1ac25c774a0bbf7bf563970505a9d06c72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::ReturnDelegate&lt; R(Args...)&gt;::ReturnDelegate</definition>
+        <argsstring>()</argsstring>
+        <name>ReturnDelegate</name>
+        <qualifiedname>RDE::ReturnDelegate&lt; R(Args...)&gt;::ReturnDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delegate.h" line="208" column="13" bodyfile="engine/include/core/util/Delegate.h" bodystart="208" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a813c9cb6dc0bff7e420ef844640f077c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RDE::ReturnDelegate&lt; R(Args...)&gt;::ReturnDelegate</definition>
+        <argsstring>(const ReturnDelegate &amp;other)=default</argsstring>
+        <name>ReturnDelegate</name>
+        <qualifiedname>RDE::ReturnDelegate&lt; R(Args...)&gt;::ReturnDelegate</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_return_delegate" kindref="compound">ReturnDelegate</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delegate.h" line="211" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1aca5d4c29b00c19f78944a57e98b0c88f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto RDE::ReturnDelegate&lt; R(Args...)&gt;::operator=</definition>
+        <argsstring>(const ReturnDelegate &amp;other) -&gt; ReturnDelegate &amp;=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>RDE::ReturnDelegate&lt; R(Args...)&gt;::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_return_delegate" kindref="compound">ReturnDelegate</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delegate.h" line="212" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a9bdac82c67131c295228d499bb1fc326" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; R &gt;</type>
+        <definition>std::vector&lt; R &gt; RDE::ReturnDelegate&lt; R(Args...)&gt;::operator()</definition>
+        <argsstring>(Args... args)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>RDE::ReturnDelegate&lt; R(Args...)&gt;::operator()</qualifiedname>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delegate.h" line="213" column="25" bodyfile="engine/include/core/util/Delegate.h" bodystart="213" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a386eee738a9ee8d5591cb5e1d19d2aef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>auto</type>
+            <declname>Function</declname>
+            <defname>Function</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval>std::enable_if_t&lt;std::is_invocable_r_v&lt;R, decltype(Function), Args...&gt;&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>DelegateID</type>
+        <definition>DelegateID RDE::ReturnDelegate&lt; R(Args...)&gt;::bind</definition>
+        <argsstring>()</argsstring>
+        <name>bind</name>
+        <qualifiedname>RDE::ReturnDelegate&lt; R(Args...)&gt;::bind</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delegate.h" line="221" column="24" bodyfile="engine/include/core/util/Delegate.h" bodystart="221" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a3c5327c24642c698755cece02f852eb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>auto</type>
+            <declname>MemberFunction</declname>
+            <defname>MemberFunction</defname>
+          </param>
+          <param>
+            <type>typename Class</type>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval>std::enable_if_t&lt;std::is_invocable_r_v&lt;R, decltype(MemberFunction),const Class*, Args...&gt;&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>DelegateID</type>
+        <definition>DelegateID RDE::ReturnDelegate&lt; R(Args...)&gt;::bind</definition>
+        <argsstring>(const Class *_cls)</argsstring>
+        <name>bind</name>
+        <qualifiedname>RDE::ReturnDelegate&lt; R(Args...)&gt;::bind</qualifiedname>
+        <param>
+          <type>const Class *</type>
+          <declname>_cls</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delegate.h" line="233" column="24" bodyfile="engine/include/core/util/Delegate.h" bodystart="233" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a221f4b30a173a1d5a3887ca888147ffa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>auto</type>
+            <declname>MemberFunction</declname>
+            <defname>MemberFunction</defname>
+          </param>
+          <param>
+            <type>typename Class</type>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval>std::enable_if_t&lt;std::is_invocable_r_v&lt;R, decltype(MemberFunction),Class*, Args...&gt;&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>DelegateID</type>
+        <definition>DelegateID RDE::ReturnDelegate&lt; R(Args...)&gt;::bind</definition>
+        <argsstring>(Class *_cls)</argsstring>
+        <name>bind</name>
+        <qualifiedname>RDE::ReturnDelegate&lt; R(Args...)&gt;::bind</qualifiedname>
+        <param>
+          <type>Class *</type>
+          <declname>_cls</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delegate.h" line="246" column="24" bodyfile="engine/include/core/util/Delegate.h" bodystart="246" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a85ced765b341a8a68634295d506892fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ReturnDelegate&lt; R(Args...)&gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>RDE::ReturnDelegate&lt; R(Args...)&gt;::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delegate.h" line="258" column="18" bodyfile="engine/include/core/util/Delegate.h" bodystart="258" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a11d206a2911f37c2d86149a998893d8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::ReturnDelegate&lt; R(Args...)&gt;::unbind</definition>
+        <argsstring>(DelegateID _id)</argsstring>
+        <name>unbind</name>
+        <qualifiedname>RDE::ReturnDelegate&lt; R(Args...)&gt;::unbind</qualifiedname>
+        <param>
+          <type>DelegateID</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delegate.h" line="262" column="18" bodyfile="engine/include/core/util/Delegate.h" bodystart="262" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a377a0dc799229851d401e602cfe901ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RDE::ReturnDelegate&lt; R(Args...)&gt;::isEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>isEmpty</name>
+        <qualifiedname>RDE::ReturnDelegate&lt; R(Args...)&gt;::isEmpty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/util/Delegate.h" line="269" column="18" bodyfile="engine/include/core/util/Delegate.h" bodystart="269" bodyend="271"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/util/Delegate.h" line="200" column="5" bodyfile="engine/include/core/util/Delegate.h" bodystart="200" bodyend="272"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a386eee738a9ee8d5591cb5e1d19d2aef" prot="public" virt="non-virtual"><scope>RDE::ReturnDelegate&lt; R(Args...)&gt;</scope><name>bind</name></member>
+      <member refid="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a3c5327c24642c698755cece02f852eb5" prot="public" virt="non-virtual"><scope>RDE::ReturnDelegate&lt; R(Args...)&gt;</scope><name>bind</name></member>
+      <member refid="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a221f4b30a173a1d5a3887ca888147ffa" prot="public" virt="non-virtual"><scope>RDE::ReturnDelegate&lt; R(Args...)&gt;</scope><name>bind</name></member>
+      <member refid="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a38b05e9672fe6fd6a1e325fe7a433b9c" prot="private" virt="non-virtual"><scope>RDE::ReturnDelegate&lt; R(Args...)&gt;</scope><name>callables</name></member>
+      <member refid="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a85ced765b341a8a68634295d506892fa" prot="public" virt="non-virtual"><scope>RDE::ReturnDelegate&lt; R(Args...)&gt;</scope><name>clear</name></member>
+      <member refid="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1ac9ff121a71f025d2efc6fe687c90b21a" prot="private" virt="non-virtual"><scope>RDE::ReturnDelegate&lt; R(Args...)&gt;</scope><name>id</name></member>
+      <member refid="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a377a0dc799229851d401e602cfe901ac" prot="public" virt="non-virtual"><scope>RDE::ReturnDelegate&lt; R(Args...)&gt;</scope><name>isEmpty</name></member>
+      <member refid="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a9bdac82c67131c295228d499bb1fc326" prot="public" virt="non-virtual"><scope>RDE::ReturnDelegate&lt; R(Args...)&gt;</scope><name>operator()</name></member>
+      <member refid="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1aca5d4c29b00c19f78944a57e98b0c88f" prot="public" virt="non-virtual"><scope>RDE::ReturnDelegate&lt; R(Args...)&gt;</scope><name>operator=</name></member>
+      <member refid="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1ac25c774a0bbf7bf563970505a9d06c72" prot="public" virt="non-virtual"><scope>RDE::ReturnDelegate&lt; R(Args...)&gt;</scope><name>ReturnDelegate</name></member>
+      <member refid="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a813c9cb6dc0bff7e420ef844640f077c" prot="public" virt="non-virtual"><scope>RDE::ReturnDelegate&lt; R(Args...)&gt;</scope><name>ReturnDelegate</name></member>
+      <member refid="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a00a20cdd77d77d6b89d6cbe2c73c818a" prot="public" virt="non-virtual"><scope>RDE::ReturnDelegate&lt; R(Args...)&gt;</scope><name>stub_function</name></member>
+      <member refid="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4_1a11d206a2911f37c2d86149a998893d8d" prot="public" virt="non-virtual"><scope>RDE::ReturnDelegate&lt; R(Args...)&gt;</scope><name>unbind</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

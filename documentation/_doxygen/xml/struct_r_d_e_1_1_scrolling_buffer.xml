@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct_r_d_e_1_1_scrolling_buffer" kind="struct" language="C++" prot="public">
+    <compoundname>RDE::ScrollingBuffer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_d_e_1_1_scrolling_buffer_1a0d413ddd0af5a5038ddce720be76d0b2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::ScrollingBuffer::MaxSize</definition>
+        <argsstring></argsstring>
+        <name>MaxSize</name>
+        <qualifiedname>RDE::ScrollingBuffer::MaxSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="58" column="13" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_scrolling_buffer_1a619bfc9c60a8751c8b5c7b10df3dada3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::ScrollingBuffer::Offset</definition>
+        <argsstring></argsstring>
+        <name>Offset</name>
+        <qualifiedname>RDE::ScrollingBuffer::Offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="59" column="13" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_d_e_1_1_scrolling_buffer_1a1d60471d5355aa4eae3c83bf50a79ab5" prot="public" static="no" mutable="no">
+        <type>ImVector&lt; ImVec2 &gt;</type>
+        <definition>ImVector&lt;ImVec2&gt; RDE::ScrollingBuffer::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <qualifiedname>RDE::ScrollingBuffer::Data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/systems/profiling/Profiler.h" line="60" column="18" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/include/core/systems/profiling/Profiler.h" line="57" column="5" bodyfile="engine/include/core/systems/profiling/Profiler.h" bodystart="57" bodyend="65"/>
+    <listofallmembers>
+      <member refid="struct_r_d_e_1_1_scrolling_buffer_1a1d60471d5355aa4eae3c83bf50a79ab5" prot="public" virt="non-virtual"><scope>RDE::ScrollingBuffer</scope><name>Data</name></member>
+      <member refid="struct_r_d_e_1_1_scrolling_buffer_1a0d413ddd0af5a5038ddce720be76d0b2" prot="public" virt="non-virtual"><scope>RDE::ScrollingBuffer</scope><name>MaxSize</name></member>
+      <member refid="struct_r_d_e_1_1_scrolling_buffer_1a619bfc9c60a8751c8b5c7b10df3dada3" prot="public" virt="non-virtual"><scope>RDE::ScrollingBuffer</scope><name>Offset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

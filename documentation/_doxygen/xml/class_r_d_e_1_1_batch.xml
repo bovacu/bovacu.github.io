@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_batch" kind="class" language="C++" prot="public">
+    <compoundname>RDE::Batch</compoundname>
+    <includes refid="_batch_8h" local="no">Batch.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_r_d_e_1_1_batch_1a87a9ebf63668c65cd8924090e22eea47" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class SpriteBatch</definition>
+        <argsstring></argsstring>
+        <name>SpriteBatch</name>
+        <qualifiedname>RDE::Batch::SpriteBatch</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_sprite_batch" kindref="compound">SpriteBatch</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/Batch.h" line="31" column="22" bodyfile="engine/include/core/render/elements/Batch.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_batch_1a9816083e25bae0b2f472e19382136687" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Canvas</definition>
+        <argsstring></argsstring>
+        <name>Canvas</name>
+        <qualifiedname>RDE::Batch::Canvas</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_canvas" kindref="compound">Canvas</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/Batch.h" line="32" column="22" bodyfile="engine/include/core/render/elements/Batch.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_batch_1a1f2962035c974be5e136877968ec43a5" prot="public" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_sprite_batch" kindref="compound">SpriteBatch</ref> *</type>
+        <definition>SpriteBatch* RDE::Batch::spriteBatch</definition>
+        <argsstring></argsstring>
+        <name>spriteBatch</name>
+        <qualifiedname>RDE::Batch::spriteBatch</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_r_d_e_1_1_sprite_batch" kindref="compound">SpriteBatch</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/Batch.h" line="38" column="25" bodyfile="engine/include/core/render/elements/Batch.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_batch_1afa3f5a76a23adf64b858cb5b379d40fb" prot="public" static="no" mutable="no">
+        <type>BatchPriority</type>
+        <definition>BatchPriority RDE::Batch::priority</definition>
+        <argsstring></argsstring>
+        <name>priority</name>
+        <qualifiedname>RDE::Batch::priority</qualifiedname>
+        <initializer>= BatchPriority::SpritePriority</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>BatchPriority </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/Batch.h" line="43" column="27" bodyfile="engine/include/core/render/elements/Batch.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_batch_1a1bc1e1d785bdd7b4fe9620042dc2ac8f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::Batch::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>RDE::Batch::ID</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/Batch.h" line="45" column="17" bodyfile="engine/include/core/render/elements/Batch.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_batch_1a07cc14fa87c27b0910228acf33541905" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::Batch::layer</definition>
+        <argsstring></argsstring>
+        <name>layer</name>
+        <qualifiedname>RDE::Batch::layer</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>How far or near it should be rendered on the Z-Axis. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/Batch.h" line="50" column="17" bodyfile="engine/include/core/render/elements/Batch.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_batch_1a07bec8edc932c847853337943bd7e63f" prot="public" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_shader" kindref="compound">Shader</ref> *</type>
+        <definition>Shader* RDE::Batch::shader</definition>
+        <argsstring></argsstring>
+        <name>shader</name>
+        <qualifiedname>RDE::Batch::shader</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para><ref refid="class_r_d_e_1_1_shader" kindref="compound">Shader</ref> that is going to be used to render the whole batch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/Batch.h" line="55" column="20" bodyfile="engine/include/core/render/elements/Batch.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_batch_1a55b73a3bff7a49c3a14f7015b9d4dc5f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_r_d_e_1_1_open_g_l_vertex" kindref="compound">OpenGLVertex</ref> &gt;</type>
+        <definition>std::vector&lt;OpenGLVertex&gt; RDE::Batch::vertexBuffer</definition>
+        <argsstring></argsstring>
+        <name>vertexBuffer</name>
+        <qualifiedname>RDE::Batch::vertexBuffer</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Data struct that contains all of the info of the vertices to be sent to the GPU. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/Batch.h" line="60" column="25" bodyfile="engine/include/core/render/elements/Batch.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_batch_1a3c8974d68d0b7599d8711787166b9a16" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::Batch::vertexCount</definition>
+        <argsstring></argsstring>
+        <name>vertexCount</name>
+        <qualifiedname>RDE::Batch::vertexCount</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Amount of vertices to be sent to the GPU. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/Batch.h" line="65" column="17" bodyfile="engine/include/core/render/elements/Batch.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_batch_1a243bca68a2028330be8b261da959aee2" prot="public" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint RDE::Batch::textureID</definition>
+        <argsstring></argsstring>
+        <name>textureID</name>
+        <qualifiedname>RDE::Batch::textureID</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+<para><ref refid="class_r_d_e_1_1_texture" kindref="compound">Texture</ref> to be enabled on the GPU to be drawn by the vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/Batch.h" line="70" column="20" bodyfile="engine/include/core/render/elements/Batch.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_batch_1a8aba68a11f0d806b661805fbb12d1e8d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RDE::Batch::alreadyDrawnThisFrame</definition>
+        <argsstring></argsstring>
+        <name>alreadyDrawnThisFrame</name>
+        <qualifiedname>RDE::Batch::alreadyDrawnThisFrame</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/Batch.h" line="72" column="18" bodyfile="engine/include/core/render/elements/Batch.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class represents a group of geometry that shares common elements and therefor can be sent all together to the GPU so the number of Draw Calls is minimized as much as possible. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>RDE::Batch</label>
+        <link refid="class_r_d_e_1_1_batch"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>spriteBatch</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>shader</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RDE::Shader</label>
+        <link refid="class_r_d_e_1_1_shader"/>
+      </node>
+      <node id="2">
+        <label>RDE::SpriteBatch</label>
+        <link refid="class_r_d_e_1_1_sprite_batch"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>debug</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RDE::SpriteBatch::Debug</label>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/render/elements/Batch.h" line="30" column="5" bodyfile="engine/include/core/render/elements/Batch.h" bodystart="30" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_batch_1a8aba68a11f0d806b661805fbb12d1e8d" prot="public" virt="non-virtual"><scope>RDE::Batch</scope><name>alreadyDrawnThisFrame</name></member>
+      <member refid="class_r_d_e_1_1_batch_1a9816083e25bae0b2f472e19382136687" prot="private" virt="non-virtual"><scope>RDE::Batch</scope><name>Canvas</name></member>
+      <member refid="class_r_d_e_1_1_batch_1a1bc1e1d785bdd7b4fe9620042dc2ac8f" prot="public" virt="non-virtual"><scope>RDE::Batch</scope><name>ID</name></member>
+      <member refid="class_r_d_e_1_1_batch_1a07cc14fa87c27b0910228acf33541905" prot="public" virt="non-virtual"><scope>RDE::Batch</scope><name>layer</name></member>
+      <member refid="class_r_d_e_1_1_batch_1afa3f5a76a23adf64b858cb5b379d40fb" prot="public" virt="non-virtual"><scope>RDE::Batch</scope><name>priority</name></member>
+      <member refid="class_r_d_e_1_1_batch_1a07bec8edc932c847853337943bd7e63f" prot="public" virt="non-virtual"><scope>RDE::Batch</scope><name>shader</name></member>
+      <member refid="class_r_d_e_1_1_batch_1a1f2962035c974be5e136877968ec43a5" prot="public" virt="non-virtual"><scope>RDE::Batch</scope><name>spriteBatch</name></member>
+      <member refid="class_r_d_e_1_1_batch_1a87a9ebf63668c65cd8924090e22eea47" prot="private" virt="non-virtual"><scope>RDE::Batch</scope><name>SpriteBatch</name></member>
+      <member refid="class_r_d_e_1_1_batch_1a243bca68a2028330be8b261da959aee2" prot="public" virt="non-virtual"><scope>RDE::Batch</scope><name>textureID</name></member>
+      <member refid="class_r_d_e_1_1_batch_1a55b73a3bff7a49c3a14f7015b9d4dc5f" prot="public" virt="non-virtual"><scope>RDE::Batch</scope><name>vertexBuffer</name></member>
+      <member refid="class_r_d_e_1_1_batch_1a3c8974d68d0b7599d8711787166b9a16" prot="public" virt="non-virtual"><scope>RDE::Batch</scope><name>vertexCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

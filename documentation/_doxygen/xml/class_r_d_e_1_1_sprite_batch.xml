@@ -1,0 +1,524 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_r_d_e_1_1_sprite_batch" kind="class" language="C++" prot="public">
+    <compoundname>RDE::SpriteBatch</compoundname>
+    <includes refid="_sprite_batch_8h" local="no">SpriteBatch.h</includes>
+    <innerclass refid="class_r_d_e_1_1_sprite_batch_1_1_debug" prot="private">RDE::SpriteBatch::Debug</innerclass>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_r_d_e_1_1_sprite_batch_1a84ae20ea4e8f38630010aa7fca11c8cc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Batch</definition>
+        <argsstring></argsstring>
+        <name>Batch</name>
+        <qualifiedname>RDE::SpriteBatch::Batch</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_batch" kindref="compound">Batch</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="26" column="22" bodyfile="engine/include/core/render/elements/SpriteBatch.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_r_d_e_1_1_sprite_batch_1ac2f8d8a30258c4e46c827c1a7ebb5db9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class RenderManager</definition>
+        <argsstring></argsstring>
+        <name>RenderManager</name>
+        <qualifiedname>RDE::SpriteBatch::RenderManager</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_render_manager" kindref="compound">RenderManager</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="27" column="22" bodyfile="engine/include/core/render/elements/SpriteBatch.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_sprite_batch_1a07ca587f5c371a2519165fc2f402bdf7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::SpriteBatch::totalTriangles</definition>
+        <argsstring></argsstring>
+        <name>totalTriangles</name>
+        <qualifiedname>RDE::SpriteBatch::totalTriangles</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Total number of triangles, only used for debugging purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="138" column="17" bodyfile="engine/include/core/render/elements/SpriteBatch.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_sprite_batch_1a0f02dd78bbf6a3083ad8a3c90cc70afe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::SpriteBatch::drawCalls</definition>
+        <argsstring></argsstring>
+        <name>drawCalls</name>
+        <qualifiedname>RDE::SpriteBatch::drawCalls</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Amount of Draw Calls, only used for debugging purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="143" column="17" bodyfile="engine/include/core/render/elements/SpriteBatch.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_sprite_batch_1a92063c314abe3dab11d8054981fcc6d4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RDE::SpriteBatch::uiDrawCalls</definition>
+        <argsstring></argsstring>
+        <name>uiDrawCalls</name>
+        <qualifiedname>RDE::SpriteBatch::uiDrawCalls</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Amount of Draw Calls for the UI, only used for debugging purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="148" column="17" bodyfile="engine/include/core/render/elements/SpriteBatch.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_sprite_batch_1af3fd30576892e09c956b724d1c8ff2b6" prot="public" static="no" mutable="no">
+        <type>Debug</type>
+        <definition>Debug RDE::SpriteBatch::debug</definition>
+        <argsstring></argsstring>
+        <name>debug</name>
+        <qualifiedname>RDE::SpriteBatch::debug</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>Debug </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="153" column="19" bodyfile="engine/include/core/render/elements/SpriteBatch.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_sprite_batch_1afa0f50f17e6460fa1381f4414632036b" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int RDE::SpriteBatch::maxIndicesPerDrawCall</definition>
+        <argsstring></argsstring>
+        <name>maxIndicesPerDrawCall</name>
+        <qualifiedname>RDE::SpriteBatch::maxIndicesPerDrawCall</qualifiedname>
+        <initializer>= 120000</initializer>
+        <briefdescription>
+<para>Maximum number of indices that can be accumulated in a single Draw Call, if it is exceeded, an automatic Draw Call will be called to free the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="159" column="23" bodyfile="engine/include/core/render/elements/SpriteBatch.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_d_e_1_1_sprite_batch_1a929c216a6c92f0b0abb4a6212c997fcf" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref> *</type>
+        <definition>Engine* RDE::SpriteBatch::engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <qualifiedname>RDE::SpriteBatch::engine</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_r_d_e_1_1_shader_manager" kindref="compound">ShaderManager</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="165" column="20" bodyfile="engine/include/core/render/elements/SpriteBatch.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_sprite_batch_1ad568d807c20fe35acc279b366fa747a1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_d_e_1_1_view_port" kindref="compound">ViewPort</ref> *</type>
+        <definition>ViewPort* RDE::SpriteBatch::viewport</definition>
+        <argsstring></argsstring>
+        <name>viewport</name>
+        <qualifiedname>RDE::SpriteBatch::viewport</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_r_d_e_1_1_view_port" kindref="compound">ViewPort</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="170" column="22" bodyfile="engine/include/core/render/elements/SpriteBatch.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_sprite_batch_1a71d2448910e6c8476e9465087b7cf573" prot="private" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 RDE::SpriteBatch::viewProjectionMatrix</definition>
+        <argsstring></argsstring>
+        <name>viewProjectionMatrix</name>
+        <qualifiedname>RDE::SpriteBatch::viewProjectionMatrix</qualifiedname>
+        <initializer>{1.0f}</initializer>
+        <briefdescription>
+<para>View Projection Matrix, this is the matrix that tells the GPU how to render the geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="175" column="23" bodyfile="engine/include/core/render/elements/SpriteBatch.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_d_e_1_1_sprite_batch_1af383b699946c7860200638996af46b3f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_r_d_e_1_1_batch" kindref="compound">Batch</ref> &gt;</type>
+        <definition>std::vector&lt;Batch&gt; RDE::SpriteBatch::batches</definition>
+        <argsstring></argsstring>
+        <name>batches</name>
+        <qualifiedname>RDE::SpriteBatch::batches</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>All the batches to be drawn. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="180" column="25" bodyfile="engine/include/core/render/elements/SpriteBatch.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_sprite_batch_1a2cdf30bfd8be85ad81d3d154095b7620" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RDE::SpriteBatch::SpriteBatch</definition>
+        <argsstring>()</argsstring>
+        <name>SpriteBatch</name>
+        <qualifiedname>RDE::SpriteBatch::SpriteBatch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="182" column="13" bodyfile="engine/include/core/render/elements/SpriteBatch.h" bodystart="182" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_sprite_batch_1af1d894d4ef931c9c567313ce1197250c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_d_e_1_1_batch" kindref="compound">Batch</ref> *</type>
+        <definition>Batch * RDE::SpriteBatch::getBatch</definition>
+        <argsstring>(const RenderizableInnerData &amp;_innerData)</argsstring>
+        <name>getBatch</name>
+        <qualifiedname>RDE::SpriteBatch::getBatch</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_r_d_e_1_1_renderizable_inner_data" kindref="compound">RenderizableInnerData</ref> &amp;</type>
+          <declname>_innerData</declname>
+        </param>
+        <briefdescription>
+<para>Returns a <ref refid="class_r_d_e_1_1_batch" kindref="compound">Batch</ref> that matches some specific information. If no match, it creates a new one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_renderer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element to be rendered </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How near or far this element is being rendered. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this element must be rendered after or before othe types. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_r_d_e_1_1_batch" kindref="compound">Batch</ref>&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="192" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_sprite_batch_1ab711fa6808fe1dea2cb8a7d0570c1314" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::SpriteBatch::orderBatches</definition>
+        <argsstring>()</argsstring>
+        <name>orderBatches</name>
+        <qualifiedname>RDE::SpriteBatch::orderBatches</qualifiedname>
+        <briefdescription>
+<para>Orders the batches to be sent to the GPU based on some specific data, such as the texture used, the layer, the shader used... </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="198" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_sprite_batch_1a22de376aed89cdfff60dbd089218aa87" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::SpriteBatch::configBasicShader</definition>
+        <argsstring>()</argsstring>
+        <name>configBasicShader</name>
+        <qualifiedname>RDE::SpriteBatch::configBasicShader</qualifiedname>
+        <briefdescription>
+<para>This method initiates the VertexBuffer on the GPU. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="239" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_d_e_1_1_sprite_batch_1ac463231612bb5c5f19e5fdae770673c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RDE::SpriteBatch::~SpriteBatch</definition>
+        <argsstring>()</argsstring>
+        <name>~SpriteBatch</name>
+        <qualifiedname>RDE::SpriteBatch::~SpriteBatch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="201" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_sprite_batch_1ac0ab359858b552e61bfaad7819d28ac6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::SpriteBatch::init</definition>
+        <argsstring>(Engine *_engine)</argsstring>
+        <name>init</name>
+        <qualifiedname>RDE::SpriteBatch::init</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref> *</type>
+          <declname>_engine</declname>
+        </param>
+        <briefdescription>
+<para>Initiates all of the crucial elements of the <ref refid="class_r_d_e_1_1_sprite_batch" kindref="compound">SpriteBatch</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_engine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="207" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_sprite_batch_1a04c9fb6afc603c053569ca440fa56642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::SpriteBatch::beginDraw</definition>
+        <argsstring>(Camera *_camera, Transform *_cameraTransform)</argsstring>
+        <name>beginDraw</name>
+        <qualifiedname>RDE::SpriteBatch::beginDraw</qualifiedname>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_camera" kindref="compound">Camera</ref> *</type>
+          <declname>_camera</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> *</type>
+          <declname>_cameraTransform</declname>
+        </param>
+        <briefdescription>
+<para>This marks the beginning of a new Draw Call. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_camera" kindref="compound">Camera</ref> that will render the Draw Call </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_cameraTransform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cameras position to be combined with the View Projection Matrix. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="214" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_sprite_batch_1af0e3c0de3b10c87fef0dbd232ee7529c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::SpriteBatch::drawSpriteRenderer</definition>
+        <argsstring>(RenderizableInnerData &amp;_innerData, Transform *_transform)</argsstring>
+        <name>drawSpriteRenderer</name>
+        <qualifiedname>RDE::SpriteBatch::drawSpriteRenderer</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_renderizable_inner_data" kindref="compound">RenderizableInnerData</ref> &amp;</type>
+          <declname>_innerData</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> *</type>
+          <declname>_transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is used to drawBatched anything that extends IRenderizable. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_renderizable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An IRenderizable instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> of the IRenderizable. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="221" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_sprite_batch_1a5bd83554044712116a2ff8aa7b7c257e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::SpriteBatch::drawTextRenderer</definition>
+        <argsstring>(RenderizableInnerData &amp;_innerData, Transform *_transform)</argsstring>
+        <name>drawTextRenderer</name>
+        <qualifiedname>RDE::SpriteBatch::drawTextRenderer</qualifiedname>
+        <param>
+          <type><ref refid="struct_r_d_e_1_1_renderizable_inner_data" kindref="compound">RenderizableInnerData</ref> &amp;</type>
+          <declname>_innerData</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> *</type>
+          <declname>_transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="222" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_sprite_batch_1a49089586376a5001dccbb8ffc13b1bf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::SpriteBatch::drawUI</definition>
+        <argsstring>(std::vector&lt; Batch &gt; &amp;_batches)</argsstring>
+        <name>drawUI</name>
+        <qualifiedname>RDE::SpriteBatch::drawUI</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="class_r_d_e_1_1_batch" kindref="compound">Batch</ref> &gt; &amp;</type>
+          <declname>_batches</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is used to drawBatched anything that extends IRenderizable and that is UI. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_batches</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Static batches to render the UI. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="228" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_d_e_1_1_sprite_batch_1a112d99bf2b70958fe3048fccf313f178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RDE::SpriteBatch::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <qualifiedname>RDE::SpriteBatch::flush</qualifiedname>
+        <briefdescription>
+<para>This method sends all of the geometry to the GPU and ends a Draw Call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/include/core/render/elements/SpriteBatch.h" line="233" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the class in charge of sending the data that needs to be rendered to the GPU. It has a special function for each type of different complex geometry. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>RDE::SpriteBatch</label>
+        <link refid="class_r_d_e_1_1_sprite_batch"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>debug</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RDE::SpriteBatch::Debug</label>
+      </node>
+    </collaborationgraph>
+    <location file="engine/include/core/render/elements/SpriteBatch.h" line="25" column="5" bodyfile="engine/include/core/render/elements/SpriteBatch.h" bodystart="25" bodyend="240"/>
+    <listofallmembers>
+      <member refid="class_r_d_e_1_1_sprite_batch_1a84ae20ea4e8f38630010aa7fca11c8cc" prot="private" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>Batch</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1af383b699946c7860200638996af46b3f" prot="private" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>batches</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1a04c9fb6afc603c053569ca440fa56642" prot="public" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>beginDraw</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1a22de376aed89cdfff60dbd089218aa87" prot="private" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>configBasicShader</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1af3fd30576892e09c956b724d1c8ff2b6" prot="public" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>debug</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1a0f02dd78bbf6a3083ad8a3c90cc70afe" prot="public" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>drawCalls</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1af0e3c0de3b10c87fef0dbd232ee7529c" prot="public" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>drawSpriteRenderer</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1a5bd83554044712116a2ff8aa7b7c257e" prot="public" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>drawTextRenderer</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1a49089586376a5001dccbb8ffc13b1bf0" prot="public" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>drawUI</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1a929c216a6c92f0b0abb4a6212c997fcf" prot="private" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>engine</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1a112d99bf2b70958fe3048fccf313f178" prot="public" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>flush</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1af1d894d4ef931c9c567313ce1197250c" prot="private" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>getBatch</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1ac0ab359858b552e61bfaad7819d28ac6" prot="public" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>init</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1afa0f50f17e6460fa1381f4414632036b" prot="public" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>maxIndicesPerDrawCall</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1ab711fa6808fe1dea2cb8a7d0570c1314" prot="private" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>orderBatches</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1ac2f8d8a30258c4e46c827c1a7ebb5db9" prot="private" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>RenderManager</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1a2cdf30bfd8be85ad81d3d154095b7620" prot="private" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>SpriteBatch</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1a07ca587f5c371a2519165fc2f402bdf7" prot="public" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>totalTriangles</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1a92063c314abe3dab11d8054981fcc6d4" prot="public" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>uiDrawCalls</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1ad568d807c20fe35acc279b366fa747a1" prot="private" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>viewport</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1a71d2448910e6c8476e9465087b7cf573" prot="private" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>viewProjectionMatrix</name></member>
+      <member refid="class_r_d_e_1_1_sprite_batch_1ac463231612bb5c5f19e5fdae770673c0" prot="public" virt="non-virtual"><scope>RDE::SpriteBatch</scope><name>~SpriteBatch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
