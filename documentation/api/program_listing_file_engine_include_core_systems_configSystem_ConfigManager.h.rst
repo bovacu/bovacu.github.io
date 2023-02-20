@@ -58,7 +58,7 @@ Program Listing for File ConfigManager.h
    
                void loadTextRendererComponent(Node* _node, Scene* _scene, const nlohmann::json& _textRendererJson);
    
-               void loadBodyComponent(Node* _node, Scene* _scene, const nlohmann::json& _bodyJson);
+               void loadPhysicsBodyComponent(Node* _node, Scene* _scene, const nlohmann::json& _bodyJson);
    
                void unloadAssets(Scene* _scene, const nlohmann::json& _sceneJson);
        };

@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="struct_r_d_e_1_1_localization_info" kind="struct" language="C++" prot="public">
     <compoundname>RDE::LocalizationInfo</compoundname>
+    <includes refid="_localization_manager_8h" local="no">LocalizationManager.h</includes>
       <sectiondef kind="public-type">
       <memberdef kind="enum" id="struct_r_d_e_1_1_localization_info_1a2b031a098006dc2539005892d6c34a8c" prot="public" static="no" strong="no">
         <type></type>
@@ -99,17 +100,18 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Available languages by default of the engine. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="17" column="9" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="17" bodyend="17"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="23" column="9" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="23" bodyend="23"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="struct_r_d_e_1_1_localization_info_1a9ab6bc9080f2fe93a5f13dc2a7cf739c" prot="public" static="no" mutable="no">
-        <type>Language</type>
+        <type><ref refid="struct_r_d_e_1_1_localization_info_1a2b031a098006dc2539005892d6c34a8c" kindref="member">Language</ref></type>
         <definition>Language RDE::LocalizationInfo::language</definition>
         <argsstring></argsstring>
         <name>language</name>
@@ -120,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="18" column="18" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="18" bodyend="-1"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="24" column="18" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -131,19 +133,32 @@
         <name>toString</name>
         <qualifiedname>RDE::LocalizationInfo::toString</qualifiedname>
         <param>
-          <type>Language</type>
+          <type><ref refid="struct_r_d_e_1_1_localization_info_1a2b031a098006dc2539005892d6c34a8c" kindref="member">Language</ref></type>
           <declname>_language</declname>
         </param>
         <briefdescription>
+<para>Transforms the enum into a string. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Language enum </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A const char* of the Language code </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="20" column="27" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="20" bodyend="36"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="31" column="27" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="31" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_info_1afb71a3bbb55265de64084624cfb65230" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>Language</type>
+        <type><ref refid="struct_r_d_e_1_1_localization_info_1a2b031a098006dc2539005892d6c34a8c" kindref="member">Language</ref></type>
         <definition>static Language RDE::LocalizationInfo::toEnum</definition>
         <argsstring>(const char *_language)</argsstring>
         <name>toEnum</name>
@@ -153,15 +168,28 @@
           <declname>_language</declname>
         </param>
         <briefdescription>
+<para>Transforms a valid code as char* to an enum. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A valid language code. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Language </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="38" column="25" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="38" bodyend="40"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="54" column="25" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="54" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_info_1a76e05d366f09fbaa9ebc1b9adc04e98e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>Language</type>
+        <type><ref refid="struct_r_d_e_1_1_localization_info_1a2b031a098006dc2539005892d6c34a8c" kindref="member">Language</ref></type>
         <definition>static Language RDE::LocalizationInfo::toEnum</definition>
         <argsstring>(const std::string &amp;_language)</argsstring>
         <name>toEnum</name>
@@ -171,19 +199,33 @@
           <declname>_language</declname>
         </param>
         <briefdescription>
+<para>Transforms a valid code as char* to an enum. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A valid language code. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Language </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="42" column="25" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="42" bodyend="64"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="63" column="25" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="63" bodyend="85"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Small data struct to save the information of the current language and to transform it as enum &lt;-&gt; string. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="engine/include/core/systems/localization/LocalizationManager.h" line="16" column="5" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="16" bodyend="65"/>
+    <location file="engine/include/core/systems/localization/LocalizationManager.h" line="19" column="5" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="19" bodyend="86"/>
     <listofallmembers>
       <member refid="struct_r_d_e_1_1_localization_info_1a2b031a098006dc2539005892d6c34a8cadf5982701e4491c897d49edf9aae7c45" prot="public" virt="non-virtual"><scope>RDE::LocalizationInfo</scope><name>DE</name></member>
       <member refid="struct_r_d_e_1_1_localization_info_1a2b031a098006dc2539005892d6c34a8ca34c4b244d9469faae019490e70db56e2" prot="public" virt="non-virtual"><scope>RDE::LocalizationInfo</scope><name>EN_CA</name></member>

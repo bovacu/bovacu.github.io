@@ -19,8 +19,8 @@ Program Listing for File KeyboardInput.h
    
    #include "core/util/Util.h"
    #include "core/systems/inputSystem/keysAndButtons/KeyboardKeys.h"
-   #include "Input.h"
-   #include <SDL_events.h>
+   #include "core/systems/inputSystem/input/Input.h"
+   #include "core/platform/PlatformHeaderSDL.h"
    
    namespace RDE {
    

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class Scene &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,21 +275,21 @@
            <div itemprop="articleBody">
              
   <section id="class-scene">
-<span id="exhale-class-class-r-d-e-1-1-scene"></span><h1>Class Scene<a class="headerlink" href="#class-scene" title="Permalink to this heading"></a></h1>
+<span id="exhale-class-class-r-d-e-1-1-scene"></span><h1>Class Scene<a class="headerlink" href="#class-scene" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_graph_Scene.h.html#file-engine-include-core-graph-scene-h"><span class="std std-ref">File Scene.h</span></a></p></li>
 </ul>
 <section id="inheritance-relationships">
-<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this heading"></a></h2>
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline"></a></h2>
 <section id="derived-type">
-<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this heading"></a></h3>
+<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this headline"></a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">RDE::ImGuiScene</span></code> (<a class="reference internal" href="class_r_d_e_1_1_im_gui_scene.html#exhale-class-class-r-d-e-1-1-im-gui-scene"><span class="std std-ref">Class ImGuiScene</span></a>)</p></li>
 </ul>
 </section>
 </section>
 <section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE5SceneE">
 <span id="_CPPv3N3RDE5SceneE"></span><span id="_CPPv2N3RDE5SceneE"></span><span id="RDE::Scene"></span><span class="target" id="class_r_d_e_1_1_scene"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Scene</span></span></span><a class="headerlink" href="#_CPPv4N3RDE5SceneE" title="Permalink to this definition"></a><br /></dt>
@@ -313,7 +312,7 @@
 <span id="_CPPv3N3RDE5Scene7preInitEP7ManagerP6WindowRKN8nlohmann4jsonE"></span><span id="_CPPv2N3RDE5Scene7preInitEP7ManagerP6WindowRKN8nlohmann4jsonE"></span><span id="RDE::Scene::preInit__ManagerP.WindowP.nlohmann::jsonCR"></span><span class="target" id="class_r_d_e_1_1_scene_1a1abad6512acb752b7ae00831bfd4b3f6"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">preInit</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_manager.html#_CPPv4N3RDE7ManagerE" title="RDE::Manager"><span class="n"><span class="pre">Manager</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_manager</span></span>, <a class="reference internal" href="class_r_d_e_1_1_window.html#_CPPv4N3RDE6WindowE" title="RDE::Window"><span class="n"><span class="pre">Window</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_window</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">nlohmann</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">json</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_sceneJson</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene7preInitEP7ManagerP6WindowRKN8nlohmann4jsonE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function is called when loading the scene from the configuration, it is used to make a custom loading of your custom components for the internal ECS system. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_manager</strong> – gives access to all of the managers of the engine to load anything needed. </p></li>
 <li><p><strong>_window</strong> – the window of the application </p></li>
@@ -339,7 +338,7 @@
 </div>
 </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_event</strong> – the event that was just captured. </p>
 </dd>
 </dl>
@@ -350,7 +349,7 @@
 <span id="_CPPv3N3RDE5Scene8onUpdateE5Delta"></span><span id="_CPPv2N3RDE5Scene8onUpdateE5Delta"></span><span id="RDE::Scene::onUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a538c7f27e8686c6265770cce4b2016f4"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene8onUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function is executed every frame of the application and here we should update logic and take inputs to update the logic and components. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_dt</strong> – time that passed between the current frame and the last one. </p>
 </dd>
 </dl>
@@ -361,7 +360,7 @@
 <span id="_CPPv3N3RDE5Scene13onFixedUpdateE5Delta"></span><span id="_CPPv2N3RDE5Scene13onFixedUpdateE5Delta"></span><span id="RDE::Scene::onFixedUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1aae3f084bca9e26bdd4a2849c126bb16f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onFixedUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene13onFixedUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function is called a fixed amount of times per second. By default it is 60 times per second, but it can be modified with Engine/setFixedDelta. This loop is used to handle physics and things that need a consistent frame rate to work properly. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_dt</strong> – fixed value initially set at 1/60/ </p>
 </dd>
 </dl>
@@ -372,7 +371,7 @@
 <span id="_CPPv3N3RDE5Scene12onLateUpdateE5Delta"></span><span id="_CPPv2N3RDE5Scene12onLateUpdateE5Delta"></span><span id="RDE::Scene::onLateUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a46c3ec5f961753bce8c33e0188a243ab"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onLateUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene12onLateUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function is called as the last update method, after update and fixedUpdate, which is an ideal place to remove elements. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_dt</strong> – time that passed between the current frame and the last one. </p>
 </dd>
 </dl>
@@ -383,7 +382,7 @@
 <span id="_CPPv3N3RDE5Scene13onImGuiRenderE5Delta"></span><span id="_CPPv2N3RDE5Scene13onImGuiRenderE5Delta"></span><span id="RDE::Scene::onImGuiRender__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1adcae6a87d1b027af90064c68aa218edd"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onImGuiRender</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene13onImGuiRenderE5Delta" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function is used to render specifically ImGui elements, nothing else. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>the</strong> – time that passed between the current frame and the last one. </p>
 </dd>
 </dl>
@@ -394,7 +393,7 @@
 <span id="_CPPv3N3RDE5Scene13onDebugRenderE5Delta"></span><span id="_CPPv2N3RDE5Scene13onDebugRenderE5Delta"></span><span id="RDE::Scene::onDebugRender__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1aa78dbdad2c06ad8fc6a2f658bf296f41"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onDebugRender</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene13onDebugRenderE5Delta" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function is used to drawBatched debugging lines, squares, circles… </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>the</strong> – time that passed between the current frame and the last one. </p>
 </dd>
 </dl>
@@ -411,7 +410,7 @@
 <span id="_CPPv3N3RDE5Scene10getCamerasEv"></span><span id="_CPPv2N3RDE5Scene10getCamerasEv"></span><span id="RDE::Scene::getCameras"></span><span class="target" id="class_r_d_e_1_1_scene_1a4183a9b7dc2924ed74b22644ce83baae"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="class_r_d_e_1_1_camera.html#_CPPv4N3RDE6CameraE" title="RDE::Camera"><span class="n"><span class="pre">Camera</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getCameras</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene10getCamerasEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns all of the cameras used in the scene. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>std::vector&lt;Camera*&gt;&amp; </p>
 </dd>
 </dl>
@@ -422,10 +421,10 @@
 <span id="_CPPv3N3RDE5Scene9addCameraEP6Window"></span><span id="_CPPv2N3RDE5Scene9addCameraEP6Window"></span><span id="RDE::Scene::addCamera__WindowP"></span><span class="target" id="class_r_d_e_1_1_scene_1a3b7c48b3120e76737e41d38a03d54c9d"></span><a class="reference internal" href="class_r_d_e_1_1_camera.html#_CPPv4N3RDE6CameraE" title="RDE::Camera"><span class="n"><span class="pre">Camera</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">addCamera</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_window.html#_CPPv4N3RDE6WindowE" title="RDE::Window"><span class="n"><span class="pre">Window</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">window</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene9addCameraEP6Window" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Adds a new camera to the scene and returns it to make any modifications needed. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>window</strong> – <a class="reference internal" href="class_r_d_e_1_1_window.html#class_r_d_e_1_1_window"><span class="std std-ref">Window</span></a> </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Camera* </p>
 </dd>
 </dl>
@@ -436,7 +435,7 @@
 <span id="_CPPv3N3RDE5Scene12enableCameraEP4Nodeb"></span><span id="_CPPv2N3RDE5Scene12enableCameraEP4Nodeb"></span><span id="RDE::Scene::enableCamera__NodeP.b"></span><span class="target" id="class_r_d_e_1_1_scene_1aa0f7e1c45ff4c1ffe8d3c1947f15888a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">enableCamera</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_camera</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_enable</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene12enableCameraEP4Nodeb" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Activates or deactivates any given camera. If it is disabled, it won’t render anything. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_cameraID</strong> – <a class="reference internal" href="class_r_d_e_1_1_camera.html#class_r_d_e_1_1_camera"><span class="std std-ref">Camera</span></a> to enable or disable </p></li>
 <li><p><strong>_enable</strong> – If the camera gets enabled or disabled </p></li>
@@ -450,7 +449,7 @@
 <span id="_CPPv3N3RDE5Scene12removeCameraEP4Node"></span><span id="_CPPv2N3RDE5Scene12removeCameraEP4Node"></span><span id="RDE::Scene::removeCamera__NodeP"></span><span class="target" id="class_r_d_e_1_1_scene_1a9bce14fb3192f8cb5a206ff12dd8d4e1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeCamera</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_camera</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene12removeCameraEP4Node" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Destroys a specific camera of the scene. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_cameraID</strong> – <a class="reference internal" href="class_r_d_e_1_1_camera.html#class_r_d_e_1_1_camera"><span class="std std-ref">Camera</span></a> to be destroyed </p>
 </dd>
 </dl>
@@ -461,7 +460,7 @@
 <span id="_CPPv3N3RDE5Scene16switchMainCameraEP4Node"></span><span id="_CPPv2N3RDE5Scene16switchMainCameraEP4Node"></span><span id="RDE::Scene::switchMainCamera__NodeP"></span><span class="target" id="class_r_d_e_1_1_scene_1a1cc41c6cc031495a6e618d4f02a03c94"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">switchMainCamera</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_camera</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene16switchMainCameraEP4Node" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Sets an specific camera as the main one. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_camera</strong> – <a class="reference internal" href="class_r_d_e_1_1_camera.html#class_r_d_e_1_1_camera"><span class="std std-ref">Camera</span></a> to be set as main </p>
 </dd>
 </dl>
@@ -472,7 +471,7 @@
 <span id="_CPPv3NK3RDE5Scene7getNameEv"></span><span id="_CPPv2NK3RDE5Scene7getNameEv"></span><span id="RDE::Scene::getNameC"></span><span class="target" id="class_r_d_e_1_1_scene_1a23c54ca1cc6bf3ab183df90155a5ede2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getName</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE5Scene7getNameEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the name of the scene. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>const std::string&amp; </p>
 </dd>
 </dl>
@@ -483,7 +482,7 @@
 <span id="_CPPv3N3RDE5Scene10getPrefabsEv"></span><span id="_CPPv2N3RDE5Scene10getPrefabsEv"></span><span id="RDE::Scene::getPrefabs"></span><span class="target" id="class_r_d_e_1_1_scene_1a276d0a3ad5704e603ab68971a5310c51"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="typedef__components_8h_1a52def656a21c22f8e6592a9f04842b84.html#_CPPv4N3RDE6NodeIDE" title="RDE::NodeID"><span class="n"><span class="pre">NodeID</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPrefabs</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene10getPrefabsEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns all of the prefabs IDs. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>std::vector&lt;NodeID&gt; </p>
 </dd>
 </dl>
@@ -494,10 +493,10 @@
 <span id="_CPPv3N3RDE5Scene9getPrefabERKNSt6stringE"></span><span id="_CPPv2N3RDE5Scene9getPrefabERKNSt6stringE"></span><span id="RDE::Scene::getPrefab__ssCR"></span><span class="target" id="class_r_d_e_1_1_scene_1ac56a07a6bba79822346ff051294a0129"></span><a class="reference internal" href="typedef__components_8h_1a52def656a21c22f8e6592a9f04842b84.html#_CPPv4N3RDE6NodeIDE" title="RDE::NodeID"><span class="n"><span class="pre">NodeID</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPrefab</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_prefabKey</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene9getPrefabERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns a prefab by its key. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_prefabKey</strong> – Prefab key </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>NodeID </p>
 </dd>
 </dl>
@@ -564,7 +563,7 @@
 </div>
 </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_event</strong> – the event that was just captured. </p>
 </dd>
 </dl>
@@ -585,7 +584,7 @@
 <span id="_CPPv3N3RDE5Scene13onInnerUpdateE5Delta"></span><span id="_CPPv2N3RDE5Scene13onInnerUpdateE5Delta"></span><span id="RDE::Scene::onInnerUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1aeeee37aeedfb3a43a0d2c0f46761b4dc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene13onInnerUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function is executed every frame of the application and here we should update logic and take inputs to update the logic and components. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_dt</strong> – time that passed between the current frame and the last one. </p>
 </dd>
 </dl>
@@ -606,7 +605,7 @@
 <span id="_CPPv3N3RDE5Scene18onInnerFixedUpdateE5Delta"></span><span id="_CPPv2N3RDE5Scene18onInnerFixedUpdateE5Delta"></span><span id="RDE::Scene::onInnerFixedUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1ac9eb043f50a90e6619a179f6f1a1f1bb"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerFixedUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene18onInnerFixedUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function is called a fixed amount of times per second. By default it is 60 times per second, but it can be modified with Engine/setFixedDelta. This loop is used to handle physics and things that need a consistent frame rate to work properly. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_dt</strong> – fixed value initially set at 1/60/ </p>
 </dd>
 </dl>
@@ -627,7 +626,7 @@
 <span id="_CPPv3N3RDE5Scene17onInnerLateUpdateE5Delta"></span><span id="_CPPv2N3RDE5Scene17onInnerLateUpdateE5Delta"></span><span id="RDE::Scene::onInnerLateUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a7cc78eed9a314f027d68eb1d9e94e809"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerLateUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene17onInnerLateUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function is called as the last update method, after update and fixedUpdate, which is an ideal place to remove elements. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_dt</strong> – time that passed between the current frame and the last one. </p>
 </dd>
 </dl>
@@ -658,7 +657,7 @@
 <span id="_CPPv3N3RDE5Scene13onInnerRenderE5Delta"></span><span id="_CPPv2N3RDE5Scene13onInnerRenderE5Delta"></span><span id="RDE::Scene::onInnerRender__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a3090da5c4f6bb02a1e4200b77434628b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerRender</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene13onInnerRenderE5Delta" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function is also called every frame and renders the geometry of the game. It is not virtual because the main rendering pipeline is handled inside the core of the engine. Users don’t need to mess with it. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_dt</strong> – the time that passed between the current frame and the last one. </p>
 </dd>
 </dl>
@@ -689,7 +688,7 @@
 <span id="_CPPv3N3RDE5Scene18onInnerDebugRenderE5Delta"></span><span id="_CPPv2N3RDE5Scene18onInnerDebugRenderE5Delta"></span><span id="RDE::Scene::onInnerDebugRender__Delta"></span><span class="target" id="class_r_d_e_1_1_scene_1a50fa39ffbc9efd9b2df0ef255b7bb689"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInnerDebugRender</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Scene18onInnerDebugRenderE5Delta" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function is used to drawBatched debugging lines, squares, circles… </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>the</strong> – time that passed between the current frame and the last one. </p>
 </dd>
 </dl>

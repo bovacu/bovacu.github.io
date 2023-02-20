@@ -287,7 +287,7 @@
         </childnode>
       </node>
       <node id="22">
-        <label>SDL.h</label>
+        <label>SDL2/SDL.h</label>
       </node>
       <node id="24">
         <label>SDL2/SDL_image.h</label>

@@ -74,12 +74,13 @@
         <name>logs</name>
         <qualifiedname>RDE::Console::logs</qualifiedname>
         <briefdescription>
+<para>Logs that specific commands can return. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/console/Console.h" line="89" column="25" bodyfile="engine/include/core/systems/console/Console.h" bodystart="89" bodyend="-1"/>
+        <location file="engine/include/core/systems/console/Console.h" line="92" column="25" bodyfile="engine/include/core/systems/console/Console.h" bodystart="92" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -197,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/console/Console.h" line="96" column="18"/>
+        <location file="engine/include/core/systems/console/Console.h" line="99" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_console_1a860ae2bce22cd78a37f78fca79a5e2ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -274,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/console/Console.h" line="106" column="18" bodyfile="engine/include/core/systems/console/Console.h" bodystart="106" bodyend="113"/>
+        <location file="engine/include/core/systems/console/Console.h" line="109" column="18" bodyfile="engine/include/core/systems/console/Console.h" bodystart="109" bodyend="116"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_console_1a3e4cdd2ab2ae2a9aaeab1565e61fe200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -303,7 +304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/console/Console.h" line="119" column="18"/>
+        <location file="engine/include/core/systems/console/Console.h" line="122" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_console_1ac6f2dc70921f2698e38d3b4bc5fe7f66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Logs</type>
@@ -336,7 +337,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/console/Console.h" line="127" column="18"/>
+        <location file="engine/include/core/systems/console/Console.h" line="130" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_console_1ae3706c62b6eefe9a0831d02b2b33e983" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -367,7 +368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/console/Console.h" line="134" column="18"/>
+        <location file="engine/include/core/systems/console/Console.h" line="137" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_console_1a3363ab84a2e827089973b2c5ef03fcdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -387,7 +388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/console/Console.h" line="141" column="25"/>
+        <location file="engine/include/core/systems/console/Console.h" line="144" column="25"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_console_1a5f22373c1835ecfd4d36a15081abaf5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -407,7 +408,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/console/Console.h" line="148" column="25"/>
+        <location file="engine/include/core/systems/console/Console.h" line="151" column="25"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -418,7 +419,7 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="engine/include/core/systems/console/Console.h" line="45" column="5" bodyfile="engine/include/core/systems/console/Console.h" bodystart="45" bodyend="149"/>
+    <location file="engine/include/core/systems/console/Console.h" line="45" column="5" bodyfile="engine/include/core/systems/console/Console.h" bodystart="45" bodyend="152"/>
     <listofallmembers>
       <member refid="class_r_d_e_1_1_console_1a860ae2bce22cd78a37f78fca79a5e2ef" prot="public" virt="non-virtual"><scope>RDE::Console</scope><name>addCommand</name></member>
       <member refid="class_r_d_e_1_1_console_1ac6f2dc70921f2698e38d3b4bc5fe7f66" prot="public" virt="non-virtual"><scope>RDE::Console</scope><name>call</name></member>

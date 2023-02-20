@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class FileManager &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,12 +275,12 @@
            <div itemprop="articleBody">
              
   <section id="class-filemanager">
-<span id="exhale-class-class-r-d-e-1-1-file-manager"></span><h1>Class FileManager<a class="headerlink" href="#class-filemanager" title="Permalink to this heading"></a></h1>
+<span id="exhale-class-class-r-d-e-1-1-file-manager"></span><h1>Class FileManager<a class="headerlink" href="#class-filemanager" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_systems_fileSystem_FileManager.h.html#file-engine-include-core-systems-filesystem-filemanager-h"><span class="std std-ref">File FileManager.h</span></a></p></li>
 </ul>
 <section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE11FileManagerE">
 <span id="_CPPv3N3RDE11FileManagerE"></span><span id="_CPPv2N3RDE11FileManagerE"></span><span id="RDE::FileManager"></span><span class="target" id="class_r_d_e_1_1_file_manager"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FileManager</span></span></span><a class="headerlink" href="#_CPPv4N3RDE11FileManagerE" title="Permalink to this definition"></a><br /></dt>
@@ -292,14 +291,14 @@
 <span id="_CPPv3N3RDE11FileManager4openERKNSt6stringERK8FileModeb"></span><span id="_CPPv2N3RDE11FileManager4openERKNSt6stringERK8FileModeb"></span><span id="RDE::FileManager::open__ssCR.FileModeCR.b"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a48c0d38805185621821aeec4e85698b3"></span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">open</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_filePath</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1a97f3c44a3f84f98854392a7eef21619c.html#_CPPv4N3RDE8FileModeE" title="RDE::FileMode"><span class="n"><span class="pre">FileMode</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_fileMode</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_silentNotFound</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager4openERKNSt6stringERK8FileModeb" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Opens a file, it must exist. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_filePath</strong> – Path to the file </p></li>
 <li><p><strong>_fileMode</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> mode </p></li>
 <li><p><strong>_silentNotFound</strong> – Don’t shout if there is an error </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>FileHandler* </p>
 </dd>
 </dl>
@@ -310,7 +309,7 @@
 <span id="_CPPv3N3RDE11FileManager5closeEP11FileHandler"></span><span id="_CPPv2N3RDE11FileManager5closeEP11FileHandler"></span><span id="RDE::FileManager::close__FileHandlerP"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a2e431e82911ba35794087892f0051ce7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">close</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_file</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager5closeEP11FileHandler" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Closes a file. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_file</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p>
 </dd>
 </dl>
@@ -321,10 +320,10 @@
 <span id="_CPPv3N3RDE11FileManager12readFullFileEP11FileHandler"></span><span id="_CPPv2N3RDE11FileManager12readFullFileEP11FileHandler"></span><span id="RDE::FileManager::readFullFile__FileHandlerP"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a740c01a5be33ecd83ba5d0c4cee0139a"></span><a class="reference internal" href="typedef_namespace_r_d_e_1aeacdd8e685b9bec4097c8c70fdea83d3.html#_CPPv4N3RDE7FileStrE" title="RDE::FileStr"><span class="n"><span class="pre">FileStr</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readFullFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager12readFullFileEP11FileHandler" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Reads the full file into a string. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>FileStr </p>
 </dd>
 </dl>
@@ -335,10 +334,10 @@
 <span id="_CPPv3N3RDE11FileManager16readAllLinesFileEP11FileHandler"></span><span id="_CPPv2N3RDE11FileManager16readAllLinesFileEP11FileHandler"></span><span id="RDE::FileManager::readAllLinesFile__FileHandlerP"></span><span class="target" id="class_r_d_e_1_1_file_manager_1ac46daed54d52905f3f46357f75b760f8"></span><a class="reference internal" href="typedef_namespace_r_d_e_1a7a8565cf0bdd344d7cf3fa334dc7c7b9.html#_CPPv4N3RDE9FileLinesE" title="RDE::FileLines"><span class="n"><span class="pre">FileLines</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readAllLinesFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager16readAllLinesFileEP11FileHandler" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Reads the full file into separated lines. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>FileLines </p>
 </dd>
 </dl>
@@ -349,14 +348,14 @@
 <span id="_CPPv3N3RDE11FileManager13readChunkFileEP11FileHandlerii"></span><span id="_CPPv2N3RDE11FileManager13readChunkFileEP11FileHandlerii"></span><span id="RDE::FileManager::readChunkFile__FileHandlerP.i.i"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a7b22964d836f3fd08b5d9fcc6a3a123f"></span><a class="reference internal" href="typedef_namespace_r_d_e_1aeacdd8e685b9bec4097c8c70fdea83d3.html#_CPPv4N3RDE7FileStrE" title="RDE::FileStr"><span class="n"><span class="pre">FileStr</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readChunkFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_initByte</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_endByte</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager13readChunkFileEP11FileHandlerii" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Reads a chunk of a file from init point to end point. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_initByte</strong> – Init point to read. 1 -&gt; 1 char, 2 -&gt; 2 chars … </p></li>
 <li><p><strong>_endByte</strong> – End point to read 1 -&gt; 1 char, 2 -&gt; 2 chars … </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>FileStr </p>
 </dd>
 </dl>
@@ -367,13 +366,13 @@
 <span id="_CPPv3N3RDE11FileManager14readLineInFileEP11FileHandleri"></span><span id="_CPPv2N3RDE11FileManager14readLineInFileEP11FileHandleri"></span><span id="RDE::FileManager::readLineInFile__FileHandlerP.i"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a2ff41d46a536277af0800e971cac4670"></span><a class="reference internal" href="typedef_namespace_r_d_e_1aeacdd8e685b9bec4097c8c70fdea83d3.html#_CPPv4N3RDE7FileStrE" title="RDE::FileStr"><span class="n"><span class="pre">FileStr</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readLineInFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_line</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager14readLineInFileEP11FileHandleri" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Reads a line in the file. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_line</strong> – Line to read </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>FileStr </p>
 </dd>
 </dl>
@@ -384,13 +383,13 @@
 <span id="_CPPv3N3RDE11FileManager15readLinesInFileEP11FileHandlerRNSt6vectorIiEE"></span><span id="_CPPv2N3RDE11FileManager15readLinesInFileEP11FileHandlerRNSt6vectorIiEE"></span><span id="RDE::FileManager::readLinesInFile__FileHandlerP.std::vector:i:R"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a1498ef71c02f20586415fc8dda0154e4"></span><a class="reference internal" href="typedef_namespace_r_d_e_1a7a8565cf0bdd344d7cf3fa334dc7c7b9.html#_CPPv4N3RDE9FileLinesE" title="RDE::FileLines"><span class="n"><span class="pre">FileLines</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readLinesInFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_lines</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager15readLinesInFileEP11FileHandlerRNSt6vectorIiEE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Reads a list of lines in the file. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_lines</strong> – List of lines to read </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>FileLines </p>
 </dd>
 </dl>
@@ -401,7 +400,7 @@
 <span id="_CPPv3N3RDE11FileManager16writeChunkToFileEP11FileHandlerPKc6size_t"></span><span id="_CPPv2N3RDE11FileManager16writeChunkToFileEP11FileHandlerPKc6size_t"></span><span id="RDE::FileManager::writeChunkToFile__FileHandlerP.cCP.s"></span><span class="target" id="class_r_d_e_1_1_file_manager_1acdf9bb324fa958f71f7f7e9588f58f61"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">writeChunkToFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager16writeChunkToFileEP11FileHandlerPKc6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Writes some text to the file and replaces its previous content. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_content</strong> – Text to write </p></li>
@@ -416,7 +415,7 @@
 <span id="_CPPv3N3RDE11FileManager16writeChunkToFileEP11FileHandlerRKNSt6stringE"></span><span id="_CPPv2N3RDE11FileManager16writeChunkToFileEP11FileHandlerRKNSt6stringE"></span><span id="RDE::FileManager::writeChunkToFile__FileHandlerP.ssCR"></span><span class="target" id="class_r_d_e_1_1_file_manager_1afa66f52a4cc78faaa52d0813b0156f76"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">writeChunkToFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_content</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager16writeChunkToFileEP11FileHandlerRKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Writes some text to the file and replaces its previous content. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_size</strong> – Size of the text </p></li>
@@ -430,7 +429,7 @@
 <span id="_CPPv3N3RDE11FileManager17appendChunkToFileEP11FileHandlerPKc6size_ti"></span><span id="_CPPv2N3RDE11FileManager17appendChunkToFileEP11FileHandlerPKc6size_ti"></span><span id="RDE::FileManager::appendChunkToFile__FileHandlerP.cCP.s.i"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a62ca57f5ac38a3db763a56edbe6b341e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkToFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_size</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_where</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager17appendChunkToFileEP11FileHandlerPKc6size_ti" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Writes some text to the file on an specific point. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_content</strong> – Text to write </p></li>
@@ -446,7 +445,7 @@
 <span id="_CPPv3N3RDE11FileManager17appendChunkToFileEP11FileHandlerRKNSt6stringEi"></span><span id="_CPPv2N3RDE11FileManager17appendChunkToFileEP11FileHandlerRKNSt6stringEi"></span><span id="RDE::FileManager::appendChunkToFile__FileHandlerP.ssCR.i"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a2d162feaef7c1998f4484543ad2f3487"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkToFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_where</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager17appendChunkToFileEP11FileHandlerRKNSt6stringEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Writes some text to the file on an specific point. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_content</strong> – Text to write </p></li>
@@ -461,7 +460,7 @@
 <span id="_CPPv3N3RDE11FileManager22appendChunkToFileAtEndEP11FileHandlerPKc6size_t"></span><span id="_CPPv2N3RDE11FileManager22appendChunkToFileAtEndEP11FileHandlerPKc6size_t"></span><span id="RDE::FileManager::appendChunkToFileAtEnd__FileHandlerP.cCP.s"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a5b283878bb61de54c8fbe37c8f68ce75"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkToFileAtEnd</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager22appendChunkToFileAtEndEP11FileHandlerPKc6size_t" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Writes some text at the end of the current file content. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_content</strong> – Text to write </p></li>
@@ -476,7 +475,7 @@
 <span id="_CPPv3N3RDE11FileManager22appendChunkToFileAtEndEP11FileHandlerRKNSt6stringE"></span><span id="_CPPv2N3RDE11FileManager22appendChunkToFileAtEndEP11FileHandlerRKNSt6stringE"></span><span id="RDE::FileManager::appendChunkToFileAtEnd__FileHandlerP.ssCR"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a4da2a9003534a12a5469ff2e7ae3fbd1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkToFileAtEnd</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_content</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager22appendChunkToFileAtEndEP11FileHandlerRKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Writes some text at the end of the current file content. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_content</strong> – Text to write </p></li>
@@ -490,7 +489,7 @@
 <span id="_CPPv3N3RDE11FileManager23appendChunkInLineToFileEP11FileHandlerPKc6size_ti"></span><span id="_CPPv2N3RDE11FileManager23appendChunkInLineToFileEP11FileHandlerPKc6size_ti"></span><span id="RDE::FileManager::appendChunkInLineToFile__FileHandlerP.cCP.s.i"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a2ee5474d6debc3544f97ba219aa450ec"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkInLineToFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_size</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_line</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager23appendChunkInLineToFileEP11FileHandlerPKc6size_ti" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Writes some text in an specific line of the file. The previous content of the line is moved to the next line. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_content</strong> – Text to write </p></li>
@@ -506,7 +505,7 @@
 <span id="_CPPv3N3RDE11FileManager23appendChunkInLineToFileEP11FileHandlerRKNSt6stringEi"></span><span id="_CPPv2N3RDE11FileManager23appendChunkInLineToFileEP11FileHandlerRKNSt6stringEi"></span><span id="RDE::FileManager::appendChunkInLineToFile__FileHandlerP.ssCR.i"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a36bf7e8a64b146895f439c61326727c7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkInLineToFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_line</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager23appendChunkInLineToFileEP11FileHandlerRKNSt6stringEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Writes some text in an specific line of the file. The previous content of the line is moved to the next line. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_content</strong> – Text to write </p></li>
@@ -521,7 +520,7 @@
 <span id="_CPPv3N3RDE11FileManager22appendChunkAtEndOfLineEP11FileHandlerPKc6size_ti"></span><span id="_CPPv2N3RDE11FileManager22appendChunkAtEndOfLineEP11FileHandlerPKc6size_ti"></span><span id="RDE::FileManager::appendChunkAtEndOfLine__FileHandlerP.cCP.s.i"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a4e7bed9ddb625b19ecfb2e6c34c95c69"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkAtEndOfLine</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_size</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_line</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager22appendChunkAtEndOfLineEP11FileHandlerPKc6size_ti" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Writes some text at the end of an specific line. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_content</strong> – Text to write </p></li>
@@ -537,7 +536,7 @@
 <span id="_CPPv3N3RDE11FileManager22appendChunkAtEndOfLineEP11FileHandlerRKNSt6stringEi"></span><span id="_CPPv2N3RDE11FileManager22appendChunkAtEndOfLineEP11FileHandlerRKNSt6stringEi"></span><span id="RDE::FileManager::appendChunkAtEndOfLine__FileHandlerP.ssCR.i"></span><span class="target" id="class_r_d_e_1_1_file_manager_1ad92418c589d47733c36b1ccf24dc643a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">appendChunkAtEndOfLine</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_content</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_line</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager22appendChunkAtEndOfLineEP11FileHandlerRKNSt6stringEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Writes some text at the end of an specific line. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_content</strong> – Text to write </p></li>
@@ -552,7 +551,7 @@
 <span id="_CPPv3N3RDE11FileManager18replaceChunkInFileEP11FileHandlerRKNSt6stringERKNSt6stringE"></span><span id="_CPPv2N3RDE11FileManager18replaceChunkInFileEP11FileHandlerRKNSt6stringERKNSt6stringE"></span><span id="RDE::FileManager::replaceChunkInFile__FileHandlerP.ssCR.ssCR"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a0a7baa4cf1b638d4b9a5c6df5945ebb6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">replaceChunkInFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_old</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_new</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager18replaceChunkInFileEP11FileHandlerRKNSt6stringERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Replaces all of the _old occurrences with the _new text. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_old</strong> – Text to be replaced </p></li>
@@ -567,7 +566,7 @@
 <span id="_CPPv3N3RDE11FileManager9clearFileEP11FileHandler"></span><span id="_CPPv2N3RDE11FileManager9clearFileEP11FileHandler"></span><span id="RDE::FileManager::clearFile__FileHandlerP"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a4b849b64685ab0ae47f7027f08410ede"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clearFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager9clearFileEP11FileHandler" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Empties the file content. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p>
 </dd>
 </dl>
@@ -578,7 +577,7 @@
 <span id="_CPPv3N3RDE11FileManager10removeFileERNSt6stringE"></span><span id="_CPPv2N3RDE11FileManager10removeFileERNSt6stringE"></span><span id="RDE::FileManager::removeFile__ssR"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a750f8de6256c4d96bae3c003fcfa5502"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeFile</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_filePath</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager10removeFileERNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Deletes the file from the file system. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_filePath</strong> – Path to the file to delete </p>
 </dd>
 </dl>
@@ -589,7 +588,7 @@
 <span id="_CPPv3N3RDE11FileManager21removeChunkLineInFileEP11FileHandleri"></span><span id="_CPPv2N3RDE11FileManager21removeChunkLineInFileEP11FileHandleri"></span><span id="RDE::FileManager::removeChunkLineInFile__FileHandlerP.i"></span><span class="target" id="class_r_d_e_1_1_file_manager_1aefa629365f8ea325b93e4aeceade185d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeChunkLineInFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_line</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager21removeChunkLineInFileEP11FileHandleri" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Removes a line from the file. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_line</strong> – Line to remove </p></li>
@@ -603,7 +602,7 @@
 <span id="_CPPv3N3RDE11FileManager22removeChunkLinesInFileEP11FileHandlerRNSt6vectorIiEE"></span><span id="_CPPv2N3RDE11FileManager22removeChunkLinesInFileEP11FileHandlerRNSt6vectorIiEE"></span><span id="RDE::FileManager::removeChunkLinesInFile__FileHandlerP.std::vector:i:R"></span><span class="target" id="class_r_d_e_1_1_file_manager_1ae11b6c38414cf8b61e897ebc85cd0b8a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeChunkLinesInFile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_lines</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager22removeChunkLinesInFileEP11FileHandlerRNSt6vectorIiEE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Removes a list of lines from the file. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_lines</strong> – List of lines to remove </p></li>
@@ -617,7 +616,7 @@
 <span id="_CPPv3N3RDE11FileManager11removeChunkEP11FileHandlerii"></span><span id="_CPPv2N3RDE11FileManager11removeChunkEP11FileHandlerii"></span><span id="RDE::FileManager::removeChunk__FileHandlerP.i.i"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a2b4100f778cdc239a0c0635d49f1285b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeChunk</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_handler</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_initByte</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_endByte</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager11removeChunkEP11FileHandlerii" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Removes an amount of text from the file. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_handler</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> handler </p></li>
 <li><p><strong>_initByte</strong> – Init point to read. 1 -&gt; 1 char, 2 -&gt; 2 chars … </p></li>
@@ -632,10 +631,10 @@
 <span id="_CPPv3N3RDE11FileManager10createFileERKNSt6stringE"></span><span id="_CPPv2N3RDE11FileManager10createFileERKNSt6stringE"></span><span id="RDE::FileManager::createFile__ssCR"></span><span class="target" id="class_r_d_e_1_1_file_manager_1abab6d77347bec7dfb55ca79ff43241cf"></span><a class="reference internal" href="class_r_d_e_1_1_file_handler.html#_CPPv4N3RDE11FileHandlerE" title="RDE::FileHandler"><span class="n"><span class="pre">FileHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">createFile</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_filePath</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager10createFileERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Creates a new file in the file system. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_filePath</strong> – Path to the new file </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>FileHandler* </p>
 </dd>
 </dl>
@@ -646,7 +645,7 @@
 <span id="_CPPv3N3RDE11FileManager16moveOrRenameFileERKNSt6stringERKNSt6stringE"></span><span id="_CPPv2N3RDE11FileManager16moveOrRenameFileERKNSt6stringERKNSt6stringE"></span><span id="RDE::FileManager::moveOrRenameFile__ssCR.ssCR"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a5f9e7d731bdc86fab646d1b1c892e45a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">moveOrRenameFile</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_filePath</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_newName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager16moveOrRenameFileERKNSt6stringERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Renames or moves a file in the file system. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_filePath</strong> – Path to the file </p></li>
 <li><p><strong>_newName</strong> – New name or path for the file </p></li>
@@ -660,10 +659,10 @@
 <span id="_CPPv3N3RDE11FileManager10fileExistsERKNSt6stringE"></span><span id="_CPPv2N3RDE11FileManager10fileExistsERKNSt6stringE"></span><span id="RDE::FileManager::fileExists__ssCR"></span><span class="target" id="class_r_d_e_1_1_file_manager_1a8b903eff07972502ef02caf3014c136a"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fileExists</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_pathToFile</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FileManager10fileExistsERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns if the file exists or not. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_pathToFile</strong> – Path to file </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>

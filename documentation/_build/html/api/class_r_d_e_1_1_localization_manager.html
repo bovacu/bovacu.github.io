@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class LocalizationManager &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,21 +275,21 @@
            <div itemprop="articleBody">
              
   <section id="class-localizationmanager">
-<span id="exhale-class-class-r-d-e-1-1-localization-manager"></span><h1>Class LocalizationManager<a class="headerlink" href="#class-localizationmanager" title="Permalink to this heading"></a></h1>
+<span id="exhale-class-class-r-d-e-1-1-localization-manager"></span><h1>Class LocalizationManager<a class="headerlink" href="#class-localizationmanager" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_systems_localization_LocalizationManager.h.html#file-engine-include-core-systems-localization-localizationmanager-h"><span class="std std-ref">File LocalizationManager.h</span></a></p></li>
 </ul>
 <section id="nested-relationships">
-<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this heading"></a></h2>
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline"></a></h2>
 <section id="nested-types">
-<h3>Nested Types<a class="headerlink" href="#nested-types" title="Permalink to this heading"></a></h3>
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Permalink to this headline"></a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="struct_r_d_e_1_1_localization_manager_1_1_any.html#exhale-struct-struct-r-d-e-1-1-localization-manager-1-1-any"><span class="std std-ref">Struct LocalizationManager::Any</span></a></p></li>
 </ul>
 </section>
 </section>
 <section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE19LocalizationManagerE">
 <span id="_CPPv3N3RDE19LocalizationManagerE"></span><span id="_CPPv2N3RDE19LocalizationManagerE"></span><span id="RDE::LocalizationManager"></span><span class="target" id="class_r_d_e_1_1_localization_manager"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LocalizationManager</span></span></span><a class="headerlink" href="#_CPPv4N3RDE19LocalizationManagerE" title="Permalink to this definition"></a><br /></dt>
@@ -299,22 +298,50 @@
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE19LocalizationManager16loadAllLanguagesEv">
 <span id="_CPPv3N3RDE19LocalizationManager16loadAllLanguagesEv"></span><span id="_CPPv2N3RDE19LocalizationManager16loadAllLanguagesEv"></span><span id="RDE::LocalizationManager::loadAllLanguages"></span><span class="target" id="class_r_d_e_1_1_localization_manager_1a98a50efdc5e0440bebac9c5be9d3e6b1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadAllLanguages</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE19LocalizationManager16loadAllLanguagesEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Loads all languages configured in the localization.json. </p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE19LocalizationManager12loadLanguageEN16LocalizationInfo8LanguageE">
 <span id="_CPPv3N3RDE19LocalizationManager12loadLanguageEN16LocalizationInfo8LanguageE"></span><span id="_CPPv2N3RDE19LocalizationManager12loadLanguageEN16LocalizationInfo8LanguageE"></span><span id="RDE::LocalizationManager::loadLanguage__LocalizationInfo::Language"></span><span class="target" id="class_r_d_e_1_1_localization_manager_1a38090471beb5ea193b837724e705e013"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadLanguage</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_localization_info.html#_CPPv4N3RDE16LocalizationInfoE" title="RDE::LocalizationInfo"><span class="n"><span class="pre">LocalizationInfo</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="struct_r_d_e_1_1_localization_info.html#_CPPv4N3RDE16LocalizationInfo8LanguageE" title="RDE::LocalizationInfo::Language"><span class="n"><span class="pre">Language</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_language</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE19LocalizationManager12loadLanguageEN16LocalizationInfo8LanguageE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Loads a specific language configured in the localization.json. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_language</strong> – The Language to load </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE19LocalizationManager8localizeERKNSt6stringE">
 <span id="_CPPv3N3RDE19LocalizationManager8localizeERKNSt6stringE"></span><span id="_CPPv2N3RDE19LocalizationManager8localizeERKNSt6stringE"></span><span id="RDE::LocalizationManager::localize__ssCR"></span><span class="target" id="class_r_d_e_1_1_localization_manager_1a026fa42cef886f4181ad6336c4e797e8"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">localize</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE19LocalizationManager8localizeERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Returns the localized value of a key in the localization.json in the current loaded Language. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_key</strong> – The word we want to translate defined in the localization.json </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A string with the localization in the specific Language loaded </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4IDpEN3RDE19LocalizationManager8localizeENSt6stringERKNSt6stringEDpR4Args">
 <span id="_CPPv3IDpEN3RDE19LocalizationManager8localizeERKNSt6stringEDpR4Args"></span><span id="_CPPv2IDpEN3RDE19LocalizationManager8localizeERKNSt6stringEDpR4Args"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="sig-name descname"><span class="n"><span class="pre">Args</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="class_r_d_e_1_1_localization_manager_1a4d7e06d83fd3d5fbf69fa54716924056"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">localize</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_key</span></span>, <a class="reference internal" href="#_CPPv4IDpEN3RDE19LocalizationManager8localizeENSt6stringERKNSt6stringEDpR4Args" title="RDE::LocalizationManager::localize::Args"><span class="n"><span class="pre">Args</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">...</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_args</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4IDpEN3RDE19LocalizationManager8localizeENSt6stringERKNSt6stringEDpR4Args" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Returns the localized value of a key in the localization.json in the current loaded Language. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_key</strong> – The word we want to translate defined in the localization.json </p></li>
+<li><p><strong>_args</strong> – A sequence of values that will be substitute in the string value </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A string with the localization in the specific Language loaded </p>
+</dd>
+</dl>
+</dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">

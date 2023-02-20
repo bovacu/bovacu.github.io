@@ -11,7 +11,6 @@ Welcome to RDE's documentation!
    :caption: Contents:
 
    api/library_root
-   internalDocs/internalDocs
 
 
 

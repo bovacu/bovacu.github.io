@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class FontManager &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,21 +275,21 @@
            <div itemprop="articleBody">
              
   <section id="class-fontmanager">
-<span id="exhale-class-class-r-d-e-1-1-font-manager"></span><h1>Class FontManager<a class="headerlink" href="#class-fontmanager" title="Permalink to this heading"></a></h1>
+<span id="exhale-class-class-r-d-e-1-1-font-manager"></span><h1>Class FontManager<a class="headerlink" href="#class-fontmanager" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_systems_uiSystem_FontManager.h.html#file-engine-include-core-systems-uisystem-fontmanager-h"><span class="std std-ref">File FontManager.h</span></a></p></li>
 </ul>
 <section id="nested-relationships">
-<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this heading"></a></h2>
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline"></a></h2>
 <section id="nested-types">
-<h3>Nested Types<a class="headerlink" href="#nested-types" title="Permalink to this heading"></a></h3>
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Permalink to this headline"></a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="struct_r_d_e_1_1_font_manager_1_1_font_handler.html#exhale-struct-struct-r-d-e-1-1-font-manager-1-1-font-handler"><span class="std std-ref">Struct FontManager::FontHandler</span></a></p></li>
 </ul>
 </section>
 </section>
 <section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE11FontManagerE">
 <span id="_CPPv3N3RDE11FontManagerE"></span><span id="_CPPv2N3RDE11FontManagerE"></span><span id="RDE::FontManager"></span><span class="target" id="class_r_d_e_1_1_font_manager"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FontManager</span></span></span><a class="headerlink" href="#_CPPv4N3RDE11FontManagerE" title="Permalink to this definition"></a><br /></dt>
@@ -334,13 +333,13 @@
 <span id="_CPPv3N3RDE11FontManager8loadFontER11FileManagerRKNSt6stringEi"></span><span id="_CPPv2N3RDE11FontManager8loadFontER11FileManagerRKNSt6stringEi"></span><span id="RDE::FontManager::loadFont__FileManagerR.ssCR.i"></span><span class="target" id="class_r_d_e_1_1_font_manager_1a5e820b47a48658553d0750fea50ba0fb"></span><a class="reference internal" href="class_r_d_e_1_1_font.html#_CPPv4N3RDE4FontE" title="RDE::Font"><span class="n"><span class="pre">Font</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">loadFont</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_file_manager.html#_CPPv4N3RDE11FileManagerE" title="RDE::FileManager"><span class="n"><span class="pre">FileManager</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_fileManager</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_pathToFont</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_fontSize</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">24</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FontManager8loadFontER11FileManagerRKNSt6stringEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function loads a font with a default font size of 24. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_pathToFont</strong> – Path to font file </p></li>
 <li><p><strong>_fontSize</strong> – <a class="reference internal" href="class_r_d_e_1_1_font.html#class_r_d_e_1_1_font"><span class="std std-ref">Font</span></a> size </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Font* </p>
 </dd>
 </dl>
@@ -351,10 +350,10 @@
 <span id="_CPPv3N3RDE11FontManager14getDefaultFontERKNSt6stringE"></span><span id="_CPPv2N3RDE11FontManager14getDefaultFontERKNSt6stringE"></span><span id="RDE::FontManager::getDefaultFont__ssCR"></span><span class="target" id="class_r_d_e_1_1_font_manager_1a8e5c8350c79d4006368a57d149046f33"></span><a class="reference internal" href="class_r_d_e_1_1_font.html#_CPPv4N3RDE4FontE" title="RDE::Font"><span class="n"><span class="pre">Font</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getDefaultFont</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_fontName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FontManager14getDefaultFontERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the font with the initialized font size. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_fontName</strong> – <a class="reference internal" href="class_r_d_e_1_1_font.html#class_r_d_e_1_1_font"><span class="std std-ref">Font</span></a> name </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Font* </p>
 </dd>
 </dl>
@@ -365,13 +364,13 @@
 <span id="_CPPv3N3RDE11FontManager15getSpecificFontERKNSt6stringEi"></span><span id="_CPPv2N3RDE11FontManager15getSpecificFontERKNSt6stringEi"></span><span id="RDE::FontManager::getSpecificFont__ssCR.i"></span><span class="target" id="class_r_d_e_1_1_font_manager_1ac5d1840e31debe746e25290bd4dba12d"></span><a class="reference internal" href="class_r_d_e_1_1_font.html#_CPPv4N3RDE4FontE" title="RDE::Font"><span class="n"><span class="pre">Font</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getSpecificFont</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_fontName</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_fontSize</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FontManager15getSpecificFontERKNSt6stringEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>his function tries to return the font with the specific font size. If the font size is near enough to one already loaded, it will return it. Otherwise it will create a new font with the desired size because if using one too far from the loaded fonts sizes, it will be blurry and bad rendered. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_fontName</strong> – <a class="reference internal" href="class_r_d_e_1_1_font.html#class_r_d_e_1_1_font"><span class="std std-ref">Font</span></a> name </p></li>
 <li><p><strong>_fontSize</strong> – font size </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Font* </p>
 </dd>
 </dl>
@@ -382,7 +381,7 @@
 <span id="_CPPv3N3RDE11FontManager14unloadFullFontERKNSt6stringE"></span><span id="_CPPv2N3RDE11FontManager14unloadFullFontERKNSt6stringE"></span><span id="RDE::FontManager::unloadFullFont__ssCR"></span><span class="target" id="class_r_d_e_1_1_font_manager_1a54fe18b8c3e6de8c4d5a1442f050c071"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">unloadFullFont</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_fontName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FontManager14unloadFullFontERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function unloads a font with all the sub-fonts created by size. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_fontName</strong> – <a class="reference internal" href="class_r_d_e_1_1_font.html#class_r_d_e_1_1_font"><span class="std std-ref">Font</span></a> name </p>
 </dd>
 </dl>
@@ -393,7 +392,7 @@
 <span id="_CPPv3N3RDE11FontManager18unloadSpecificFontERKNSt6stringEi"></span><span id="_CPPv2N3RDE11FontManager18unloadSpecificFontERKNSt6stringEi"></span><span id="RDE::FontManager::unloadSpecificFont__ssCR.i"></span><span class="target" id="class_r_d_e_1_1_font_manager_1a23f4945486946c98999d7ebe9040b8b2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">unloadSpecificFont</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_fontName</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_fontSize</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FontManager18unloadSpecificFontERKNSt6stringEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function unloads a specific font size of the full font. If no fonts sizes left when this is called, it will remove the full font from memory. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_fontName</strong> – <a class="reference internal" href="class_r_d_e_1_1_font.html#class_r_d_e_1_1_font"><span class="std std-ref">Font</span></a> name </p></li>
 <li><p><strong>_fontSize</strong> – <a class="reference internal" href="class_r_d_e_1_1_font.html#class_r_d_e_1_1_font"><span class="std std-ref">Font</span></a> size </p></li>
@@ -407,7 +406,7 @@
 <span id="_CPPv3N3RDE11FontManager11getAllFontsEv"></span><span id="_CPPv2N3RDE11FontManager11getAllFontsEv"></span><span id="RDE::FontManager::getAllFonts"></span><span class="target" id="class_r_d_e_1_1_font_manager_1a920b4493e6a7a25a6c17134109c9c2c1"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="class_r_d_e_1_1_font.html#_CPPv4N3RDE4FontE" title="RDE::Font"><span class="n"><span class="pre">Font</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getAllFonts</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE11FontManager11getAllFontsEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns all of the fonts loaded in memory. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>std::vector&lt;Font*&gt; </p>
 </dd>
 </dl>

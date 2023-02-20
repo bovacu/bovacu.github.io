@@ -1551,17 +1551,13 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Codes for the buttons of a controller. </para>
         </briefdescription>
         <detaileddescription>
-<para><hruler/>
- | CODES FOR GAMEPAD BUTTONS, THEY ARE | | THE SAME AS GLFW&apos;S ONES, BUT NOW ARE | | PROPERTY OF THE ENGINE AND DON&apos;T RELAY | </para>
-<sect2 id="namespace_r_d_e_1autotoc_md0">
-<title>|           ON GLFW                                             |</title>
-</sect2>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" line="18" column="5" bodyfile="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" bodystart="18" bodyend="34"/>
+        <location file="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" line="14" column="5" bodyfile="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" bodystart="14" bodyend="30"/>
       </memberdef>
       <memberdef kind="enum" id="namespace_r_d_e_1a85a7bdb473e6e958f919166f3fc0529d" prot="public" static="no" strong="yes">
         <type></type>
@@ -1596,12 +1592,13 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Codes for the Axis/Special buttons of a controller. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" line="36" column="5" bodyfile="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" bodystart="36" bodyend="41"/>
+        <location file="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" line="35" column="5" bodyfile="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" bodystart="35" bodyend="40"/>
       </memberdef>
       <memberdef kind="enum" id="namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde" prot="public" static="no" strong="yes">
         <type>uint16_t</type>
@@ -2472,17 +2469,13 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Codes for the keys of the keyboard. </para>
         </briefdescription>
         <detaileddescription>
-<para><hruler/>
- | CODES FOR KEY BUTTONS, THEY ARE | | THE SAME AS GLFW&apos;S ONES, BUT NOW ARE | | PROPERTY OF THE ENGINE AND DON&apos;T RELAY | </para>
-<sect2 id="namespace_r_d_e_1autotoc_md1">
-<title>|           ON GLFW                                             |</title>
-</sect2>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/inputSystem/keysAndButtons/KeyboardKeys.h" line="18" column="5" bodyfile="engine/include/core/systems/inputSystem/keysAndButtons/KeyboardKeys.h" bodystart="18" bodyend="144"/>
+        <location file="engine/include/core/systems/inputSystem/keysAndButtons/KeyboardKeys.h" line="15" column="5" bodyfile="engine/include/core/systems/inputSystem/keysAndButtons/KeyboardKeys.h" bodystart="15" bodyend="141"/>
       </memberdef>
       <memberdef kind="enum" id="namespace_r_d_e_1a6079d97bd2b05de1813ab71932242c87" prot="public" static="no" strong="yes">
         <type>uint16_t</type>
@@ -2585,17 +2578,13 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Codes for the buttons of te mouse. </para>
         </briefdescription>
         <detaileddescription>
-<para><hruler/>
- | CODES FOR MOUSE BUTTONS, THEY ARE | | THE SAME AS GLFW&apos;S ONES, BUT NOW ARE | | PROPERTY OF THE ENGINE AND DON&apos;T RELAY | </para>
-<sect2 id="namespace_r_d_e_1autotoc_md2">
-<title>|           ON GLFW                                             |</title>
-</sect2>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/inputSystem/keysAndButtons/MouseKeys.h" line="18" column="5" bodyfile="engine/include/core/systems/inputSystem/keysAndButtons/MouseKeys.h" bodystart="18" bodyend="33"/>
+        <location file="engine/include/core/systems/inputSystem/keysAndButtons/MouseKeys.h" line="14" column="5" bodyfile="engine/include/core/systems/inputSystem/keysAndButtons/MouseKeys.h" bodystart="14" bodyend="29"/>
       </memberdef>
       <memberdef kind="enum" id="namespace_r_d_e_1ab5fa6212f202160144f3b4e3dbdcca85" prot="public" static="no" strong="no">
         <type></type>
@@ -2988,31 +2977,28 @@
         <name>GamePad</name>
         <qualifiedname>RDE::GamePad</qualifiedname>
         <briefdescription>
+<para>Codes for the buttons of a controller. </para>
         </briefdescription>
         <detaileddescription>
-<para><hruler/>
- | CODES FOR GAMEPAD BUTTONS, THEY ARE | | THE SAME AS GLFW&apos;S ONES, BUT NOW ARE | | PROPERTY OF THE ENGINE AND DON&apos;T RELAY | </para>
-<sect2 id="namespace_r_d_e_1autotoc_md0">
-<title>|           ON GLFW                                             |</title>
-</sect2>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" line="34" column="13"/>
+        <location file="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" line="30" column="13"/>
       </memberdef>
       <memberdef kind="typedef" id="namespace_r_d_e_1ab8f4bc1c8f567338d16f1eccb6c25582" prot="public" static="no">
-        <type>enum RDE::ControllerAxis</type>
+        <type>enum <ref refid="namespace_r_d_e_1a85a7bdb473e6e958f919166f3fc0529d" kindref="member">RDE::ControllerAxis</ref></type>
         <definition>typedef enum RDE::ControllerAxis RDE::GamePadA</definition>
         <argsstring></argsstring>
         <name>GamePadA</name>
         <qualifiedname>RDE::GamePadA</qualifiedname>
         <briefdescription>
+<para>Codes for the Axis/Special buttons of a controller. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" line="41" column="14"/>
+        <location file="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" line="40" column="14"/>
       </memberdef>
       <memberdef kind="typedef" id="namespace_r_d_e_1adb47cffc22f06bd00b8fab0f1de4b89b" prot="public" static="no">
         <type>enum <ref refid="namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde" kindref="member">RDE::KeyCode</ref></type>
@@ -3021,17 +3007,13 @@
         <name>Key</name>
         <qualifiedname>RDE::Key</qualifiedname>
         <briefdescription>
+<para>Codes for the keys of the keyboard. </para>
         </briefdescription>
         <detaileddescription>
-<para><hruler/>
- | CODES FOR KEY BUTTONS, THEY ARE | | THE SAME AS GLFW&apos;S ONES, BUT NOW ARE | | PROPERTY OF THE ENGINE AND DON&apos;T RELAY | </para>
-<sect2 id="namespace_r_d_e_1autotoc_md1">
-<title>|           ON GLFW                                             |</title>
-</sect2>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/inputSystem/keysAndButtons/KeyboardKeys.h" line="144" column="9"/>
+        <location file="engine/include/core/systems/inputSystem/keysAndButtons/KeyboardKeys.h" line="141" column="9"/>
       </memberdef>
       <memberdef kind="typedef" id="namespace_r_d_e_1a4d5be82315c8aff6aa47b33e46749e7c" prot="public" static="no">
         <type>enum <ref refid="namespace_r_d_e_1a6079d97bd2b05de1813ab71932242c87" kindref="member">RDE::MouseCode</ref></type>
@@ -3040,17 +3022,13 @@
         <name>Mouse</name>
         <qualifiedname>RDE::Mouse</qualifiedname>
         <briefdescription>
+<para>Codes for the buttons of te mouse. </para>
         </briefdescription>
         <detaileddescription>
-<para><hruler/>
- | CODES FOR MOUSE BUTTONS, THEY ARE | | THE SAME AS GLFW&apos;S ONES, BUT NOW ARE | | PROPERTY OF THE ENGINE AND DON&apos;T RELAY | </para>
-<sect2 id="namespace_r_d_e_1autotoc_md2">
-<title>|           ON GLFW                                             |</title>
-</sect2>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/inputSystem/keysAndButtons/MouseKeys.h" line="33" column="11"/>
+        <location file="engine/include/core/systems/inputSystem/keysAndButtons/MouseKeys.h" line="29" column="11"/>
       </memberdef>
       <memberdef kind="typedef" id="namespace_r_d_e_1aacb93c8c48d229e192714b1afd55a7f0" prot="public" static="no">
         <type>ulong</type>
@@ -3192,12 +3170,13 @@
             &quot;DUp&quot;, &quot;DDown&quot;, &quot;DLeft&quot;, &quot;DRight&quot;, &quot;&quot;, &quot;LB&quot;, &quot;&quot;, &quot;RB&quot;
     }</initializer>
         <briefdescription>
+<para>Names of the buttons of a controller. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" line="43" column="23" bodyfile="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" bodystart="43" bodyend="-1"/>
+        <location file="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" line="45" column="23" bodyfile="engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -3527,7 +3506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/inputSystem/keysAndButtons/KeyboardKeys.h" line="146" column="12" bodyfile="engine/include/core/systems/inputSystem/keysAndButtons/KeyboardKeys.h" bodystart="146" bodyend="149"/>
+        <location file="engine/include/core/systems/inputSystem/keysAndButtons/KeyboardKeys.h" line="143" column="12" bodyfile="engine/include/core/systems/inputSystem/keysAndButtons/KeyboardKeys.h" bodystart="143" bodyend="146"/>
       </memberdef>
       <memberdef kind="function" id="namespace_r_d_e_1a155493e0e54a348ce7a6b421a2d686e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -3549,7 +3528,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/inputSystem/keysAndButtons/MouseKeys.h" line="35" column="12" bodyfile="engine/include/core/systems/inputSystem/keysAndButtons/MouseKeys.h" bodystart="35" bodyend="38"/>
+        <location file="engine/include/core/systems/inputSystem/keysAndButtons/MouseKeys.h" line="31" column="12" bodyfile="engine/include/core/systems/inputSystem/keysAndButtons/MouseKeys.h" bodystart="31" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="namespace_r_d_e_1ab0576f8ff643747e51e9ca581bf246f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::ostream &amp;</type>

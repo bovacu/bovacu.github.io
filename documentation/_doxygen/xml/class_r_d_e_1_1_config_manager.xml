@@ -262,12 +262,33 @@
           <declname>_sceneJson</declname>
         </param>
         <briefdescription>
+<para>Creates the Nodes using the json of the defined <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scene being loaded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_sceneJson</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The json of the <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> containing all of the information </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A map containing the key of the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> (tag) and the data as a value. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="67" column="32"/>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="73" column="32"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1ab68f29c225fc40cb00ba8187bcff4771" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -292,12 +313,39 @@
           <declname>_nodes</declname>
         </param>
         <briefdescription>
+<para>Loads all of the components that each <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> has defined on the json file of the <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scene being loaded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_sceneJson</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The json of the <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> containing all of the information </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_nodes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Map containing the key of the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> (tag) and the data as a value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="69" column="18"/>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="81" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1a8f6f12ab62d70858b8c40b6173ae1ab2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -319,14 +367,6 @@
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>_scene</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
 <parametername>_manager</parametername>
 </parameternamelist>
 <parameterdescription>
@@ -342,13 +382,11 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>EntityMap </para>
-</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="78" column="18"/>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="88" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1ab220d0f0ead960dda43f29302cadb2a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -369,12 +407,39 @@
           <declname>_transformJson</declname>
         </param>
         <briefdescription>
+<para>Loads a component of type <ref refid="class_r_d_e_1_1_transform" kindref="compound">Transform</ref> into the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> being loaded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node getting the component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_json</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The json containing the data to fill the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>&apos;s component </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="80" column="18"/>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="96" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1a25be17c74bff75133ac49636da679afc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -399,12 +464,39 @@
           <declname>_cameraJson</declname>
         </param>
         <briefdescription>
+<para>Loads a component of type <ref refid="class_r_d_e_1_1_camera" kindref="compound">Camera</ref> into the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> being loaded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node getting the component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_json</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The json containing the data to fill the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>&apos;s component </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="82" column="18"/>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="104" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1aa560ae268039f3ca915318a41545d378" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -425,12 +517,39 @@
           <declname>_spriteRendererJson</declname>
         </param>
         <briefdescription>
+<para>Loads a component of type <ref refid="class_r_d_e_1_1_sprite_renderer" kindref="compound">SpriteRenderer</ref> into the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> being loaded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node getting the component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_json</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The json containing the data to fill the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>&apos;s component </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="84" column="18"/>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="112" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1a39be27ffe7d6c3728442335c76c3de41" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -451,19 +570,46 @@
           <declname>_textRendererJson</declname>
         </param>
         <briefdescription>
+<para>Loads a component of type <ref refid="class_r_d_e_1_1_text_renderer" kindref="compound">TextRenderer</ref> into the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> being loaded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node getting the component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_json</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The json containing the data to fill the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>&apos;s component </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="86" column="18"/>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="120" column="18"/>
       </memberdef>
-      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1a351c20f6b27ead0260b881ff1858a4f3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1aaf7857971b9b3106581c9dbb30849146" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void RDE::ConfigManager::loadBodyComponent</definition>
+        <definition>void RDE::ConfigManager::loadPhysicsBodyComponent</definition>
         <argsstring>(Node *_node, Scene *_scene, const nlohmann::json &amp;_bodyJson)</argsstring>
-        <name>loadBodyComponent</name>
-        <qualifiedname>RDE::ConfigManager::loadBodyComponent</qualifiedname>
+        <name>loadPhysicsBodyComponent</name>
+        <qualifiedname>RDE::ConfigManager::loadPhysicsBodyComponent</qualifiedname>
         <param>
           <type><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref> *</type>
           <declname>_node</declname>
@@ -477,12 +623,39 @@
           <declname>_bodyJson</declname>
         </param>
         <briefdescription>
+<para>Loads a component of type <ref refid="struct_r_d_e_1_1_physics_body" kindref="compound">PhysicsBody</ref> into the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> being loaded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node getting the component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_json</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The json containing the data to fill the <ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>&apos;s component </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="88" column="18"/>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="128" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_config_manager_1a1745a3be0f1b89e48346a560ed896726" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -499,12 +672,31 @@
           <declname>_sceneJson</declname>
         </param>
         <briefdescription>
+<para>Unloads all the assets of the <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> from memory. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> being unloaded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_json</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The json containing all the <ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref> assets </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="90" column="18"/>
+        <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="135" column="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -512,14 +704,14 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="26" column="5" bodyfile="engine/include/core/systems/configSystem/ConfigManager.h" bodystart="26" bodyend="91"/>
+    <location file="engine/include/core/systems/configSystem/ConfigManager.h" line="26" column="5" bodyfile="engine/include/core/systems/configSystem/ConfigManager.h" bodystart="26" bodyend="136"/>
     <listofallmembers>
       <member refid="class_r_d_e_1_1_config_manager_1ad4c71d64b951606e31d0cb2a8da3a914" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>createNodes</name></member>
       <member refid="class_r_d_e_1_1_config_manager_1abbb0fcc42208813d59113d10533e1d77" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>instantiatePrefab</name></member>
       <member refid="class_r_d_e_1_1_config_manager_1a8f6f12ab62d70858b8c40b6173ae1ab2" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadAssets</name></member>
-      <member refid="class_r_d_e_1_1_config_manager_1a351c20f6b27ead0260b881ff1858a4f3" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadBodyComponent</name></member>
       <member refid="class_r_d_e_1_1_config_manager_1a25be17c74bff75133ac49636da679afc" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadCameraComponent</name></member>
       <member refid="class_r_d_e_1_1_config_manager_1ab68f29c225fc40cb00ba8187bcff4771" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadNodes</name></member>
+      <member refid="class_r_d_e_1_1_config_manager_1aaf7857971b9b3106581c9dbb30849146" prot="private" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadPhysicsBodyComponent</name></member>
       <member refid="class_r_d_e_1_1_config_manager_1a5f7402100c05cb47f21f012eadfa728d" prot="public" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadRDEConfig</name></member>
       <member refid="class_r_d_e_1_1_config_manager_1af52cd498ca8b89910a1e00da4cc61406" prot="public" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadResources</name></member>
       <member refid="class_r_d_e_1_1_config_manager_1a0ff3044295b382d8b81bcfddc4f7374a" prot="public" virt="non-virtual"><scope>RDE::ConfigManager</scope><name>loadScene</name></member>

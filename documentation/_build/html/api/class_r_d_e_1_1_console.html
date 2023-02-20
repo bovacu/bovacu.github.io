@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class Console &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,12 +275,12 @@
            <div itemprop="articleBody">
              
   <section id="class-console">
-<span id="exhale-class-class-r-d-e-1-1-console"></span><h1>Class Console<a class="headerlink" href="#class-console" title="Permalink to this heading"></a></h1>
+<span id="exhale-class-class-r-d-e-1-1-console"></span><h1>Class Console<a class="headerlink" href="#class-console" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_systems_console_Console.h.html#file-engine-include-core-systems-console-console-h"><span class="std std-ref">File Console.h</span></a></p></li>
 </ul>
 <section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE7ConsoleE">
 <span id="_CPPv3N3RDE7ConsoleE"></span><span id="_CPPv2N3RDE7ConsoleE"></span><span id="RDE::Console"></span><span class="target" id="class_r_d_e_1_1_console"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Console</span></span></span><a class="headerlink" href="#_CPPv4N3RDE7ConsoleE" title="Permalink to this definition"></a><br /></dt>
@@ -309,7 +308,7 @@
 <span id="_CPPv3I_Da0EN3RDE7Console10addCommandERKNSt6stringERKNSt6stringEP5ClassRKNSt6stringE"></span><span id="_CPPv2I_Da0EN3RDE7Console10addCommandERKNSt6stringERKNSt6stringEP5ClassRKNSt6stringE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Func</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Class</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="class_r_d_e_1_1_console_1a860ae2bce22cd78a37f78fca79a5e2ef"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addCommand</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_commandName</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_description</span></span>, <a class="reference internal" href="#_CPPv4I_Da0EN3RDE7Console10addCommandEvRKNSt6stringERKNSt6stringEP5ClassRKNSt6stringE" title="RDE::Console::addCommand::Class"><span class="n"><span class="pre">Class</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_class</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_argumentsDescription</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I_Da0EN3RDE7Console10addCommandEvRKNSt6stringERKNSt6stringEP5ClassRKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function allows to create a custom command. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_commandName</strong> – the name you will use to call the command. </p></li>
 <li><p><strong>_description</strong> – the description displayed if command ‘help’ is called. </p></li>
@@ -325,7 +324,7 @@
 <span id="_CPPv3N3RDE7Console13deleteCommandERKNSt6stringE"></span><span id="_CPPv2N3RDE7Console13deleteCommandERKNSt6stringE"></span><span id="RDE::Console::deleteCommand__ssCR"></span><span class="target" id="class_r_d_e_1_1_console_1a3e4cdd2ab2ae2a9aaeab1565e61fe200"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">deleteCommand</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_commandName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE7Console13deleteCommandERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Deletes a before created command. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_commandName</strong> – <a class="reference internal" href="struct_r_d_e_1_1_command.html#struct_r_d_e_1_1_command"><span class="std std-ref">Command</span></a> to remove from the registry </p>
 </dd>
 </dl>
@@ -341,10 +340,10 @@
 </dl>
 </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_command</strong> – Commadn name </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Logs </p>
 </dd>
 </dl>
@@ -360,7 +359,7 @@
 </dl>
 </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_log</strong> – Logs </p>
 </dd>
 </dl>
@@ -376,7 +375,7 @@
 </dl>
 </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>std::string </p>
 </dd>
 </dl>
@@ -392,7 +391,7 @@
 </dl>
 </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>std::string </p>
 </dd>
 </dl>
@@ -404,7 +403,8 @@
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE7Console4logsE">
 <span id="_CPPv3N3RDE7Console4logsE"></span><span id="_CPPv2N3RDE7Console4logsE"></span><span id="RDE::Console::logs__std::vector:ss:"></span><span class="target" id="class_r_d_e_1_1_console_1a156cfb3cbcb5e3ea1d8ca407ff2991d7"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">logs</span></span></span><a class="headerlink" href="#_CPPv4N3RDE7Console4logsE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Logs that specific commands can return. </p>
+</dd></dl>
 
 </div>
 </dd></dl>

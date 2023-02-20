@@ -19,23 +19,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="71" column="22" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="71" bodyend="-1"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="92" column="22" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="92" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="class_r_d_e_1_1_localization_manager_1ae09ce811f1389750d47c493bdb52256a" prot="private" static="no" mutable="no">
-        <type>std::unordered_map&lt; LocalizationInfo::Language, std::unordered_map&lt; std::string, std::string &gt; &gt;</type>
+        <type>std::unordered_map&lt; <ref refid="struct_r_d_e_1_1_localization_info_1a2b031a098006dc2539005892d6c34a8c" kindref="member">LocalizationInfo::Language</ref>, std::unordered_map&lt; std::string, std::string &gt; &gt;</type>
         <definition>std::unordered_map&lt;LocalizationInfo::Language, std::unordered_map&lt;std::string, std::string&gt; &gt; RDE::LocalizationManager::localizationTable</definition>
         <argsstring></argsstring>
         <name>localizationTable</name>
         <qualifiedname>RDE::LocalizationManager::localizationTable</qualifiedname>
         <briefdescription>
+<para>A map that stores [LocalizationKey] -&gt; (keyWord, TranslationWord). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="74" column="32" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="74" bodyend="-1"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="98" column="32" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_r_d_e_1_1_localization_manager_1adf02f915d4a38b2d77a193bf4eebad43" prot="private" static="no" mutable="no">
         <type><ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref> *</type>
@@ -44,12 +45,13 @@
         <name>engine</name>
         <qualifiedname>RDE::LocalizationManager::engine</qualifiedname>
         <briefdescription>
+<para>Reference to the <ref refid="class_r_d_e_1_1_engine" kindref="compound">Engine</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="75" column="20" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="75" bodyend="-1"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="103" column="20" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -65,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="113" column="30" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="113" bodyend="-1"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="144" column="30" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="144" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -80,12 +82,13 @@
           <declname>_engine</declname>
         </param>
         <briefdescription>
+<para>Initiates the Localization module. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="116" column="18"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="150" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_localization_manager_1a4665d34ce52c607eb8e064336df5d50b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -102,12 +105,33 @@
           <declname>_replacement</declname>
         </param>
         <briefdescription>
+<para>Substitutes a &quot;key&quot; replacement char with the corresponding value. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to substitute the _replacement, this will be the final value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_replacement</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value used in the configuration and that will be substituted with _string, this value will be lost </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string with the _replacemente replaced by _string </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="117" column="25"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="158" column="25"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -118,12 +142,13 @@
         <name>loadAllLanguages</name>
         <qualifiedname>RDE::LocalizationManager::loadAllLanguages</qualifiedname>
         <briefdescription>
+<para>Loads all languages configured in the localization.json. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="120" column="18"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="164" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_localization_manager_1a38090471beb5ea193b837724e705e013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -132,16 +157,27 @@
         <name>loadLanguage</name>
         <qualifiedname>RDE::LocalizationManager::loadLanguage</qualifiedname>
         <param>
-          <type>LocalizationInfo::Language</type>
+          <type><ref refid="struct_r_d_e_1_1_localization_info_1a2b031a098006dc2539005892d6c34a8c" kindref="member">LocalizationInfo::Language</ref></type>
           <declname>_language</declname>
         </param>
         <briefdescription>
+<para>Loads a specific language configured in the localization.json. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Language to load </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="121" column="18"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="170" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_localization_manager_1a026fa42cef886f4181ad6336c4e797e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -154,12 +190,25 @@
           <declname>_key</declname>
         </param>
         <briefdescription>
+<para>Returns the localized value of a key in the localization.json in the current loaded Language. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The word we want to translate defined in the localization.json </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string with the localization in the specific Language loaded </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="123" column="25"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="177" column="25"/>
       </memberdef>
       <memberdef kind="function" id="class_r_d_e_1_1_localization_manager_1a4d7e06d83fd3d5fbf69fa54716924056" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -183,12 +232,33 @@
           <declname>_args</declname>
         </param>
         <briefdescription>
+<para>Returns the localized value of a key in the localization.json in the current loaded Language. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The word we want to translate defined in the localization.json </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A sequence of values that will be substitute in the string value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string with the localization in the specific Language loaded </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="126" column="25" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="130" bodyend="179"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="186" column="25" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="190" bodyend="239"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -208,7 +278,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="engine/include/core/systems/localization/LocalizationManager.h" line="69" column="5" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="69" bodyend="127"/>
+    <location file="engine/include/core/systems/localization/LocalizationManager.h" line="90" column="5" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="90" bodyend="187"/>
     <listofallmembers>
       <member refid="class_r_d_e_1_1_localization_manager_1adf02f915d4a38b2d77a193bf4eebad43" prot="private" virt="non-virtual"><scope>RDE::LocalizationManager</scope><name>engine</name></member>
       <member refid="class_r_d_e_1_1_localization_manager_1a9af8e08cdaee179961a6f5505566ea18" prot="private" virt="non-virtual"><scope>RDE::LocalizationManager</scope><name>init</name></member>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Struct LocalizationInfo &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,21 +275,23 @@
            <div itemprop="articleBody">
              
   <section id="struct-localizationinfo">
-<span id="exhale-struct-struct-r-d-e-1-1-localization-info"></span><h1>Struct LocalizationInfo<a class="headerlink" href="#struct-localizationinfo" title="Permalink to this heading"></a></h1>
+<span id="exhale-struct-struct-r-d-e-1-1-localization-info"></span><h1>Struct LocalizationInfo<a class="headerlink" href="#struct-localizationinfo" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_systems_localization_LocalizationManager.h.html#file-engine-include-core-systems-localization-localizationmanager-h"><span class="std std-ref">File LocalizationManager.h</span></a></p></li>
 </ul>
 <section id="struct-documentation">
-<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this heading"></a></h2>
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE16LocalizationInfoE">
 <span id="_CPPv3N3RDE16LocalizationInfoE"></span><span id="_CPPv2N3RDE16LocalizationInfoE"></span><span id="RDE::LocalizationInfo"></span><span class="target" id="struct_r_d_e_1_1_localization_info"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LocalizationInfo</span></span></span><a class="headerlink" href="#_CPPv4N3RDE16LocalizationInfoE" title="Permalink to this definition"></a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
+<dd><p>Small data struct to save the information of the current language and to transform it as enum &lt;-&gt; string. </p>
+<div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
 <dl class="cpp enum">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE16LocalizationInfo8LanguageE">
 <span id="_CPPv3N3RDE16LocalizationInfo8LanguageE"></span><span id="_CPPv2N3RDE16LocalizationInfo8LanguageE"></span><span class="target" id="struct_r_d_e_1_1_localization_info_1a2b031a098006dc2539005892d6c34a8c"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Language</span></span></span><a class="headerlink" href="#_CPPv4N3RDE16LocalizationInfo8LanguageE" title="Permalink to this definition"></a><br /></dt>
-<dd><p><em>Values:</em></p>
+<dd><p>Available languages by default of the engine. </p>
+<p><em>Values:</em></p>
 <dl class="cpp enumerator">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE16LocalizationInfo8Language5EN_USE">
 <span id="_CPPv3N3RDE16LocalizationInfo8Language5EN_USE"></span><span id="_CPPv2N3RDE16LocalizationInfo8Language5EN_USE"></span><span class="target" id="struct_r_d_e_1_1_localization_info_1a2b031a098006dc2539005892d6c34a8cae6dd4ba43ac0586f6a7be31545024356"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EN_US</span></span></span><a class="headerlink" href="#_CPPv4N3RDE16LocalizationInfo8Language5EN_USE" title="Permalink to this definition"></a><br /></dt>
@@ -372,17 +373,44 @@
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE16LocalizationInfo8toStringE8Language">
 <span id="_CPPv3N3RDE16LocalizationInfo8toStringE8Language"></span><span id="_CPPv2N3RDE16LocalizationInfo8toStringE8Language"></span><span id="RDE::LocalizationInfo::toString__Language"></span><span class="target" id="struct_r_d_e_1_1_localization_info_1abe9695b4e3ad02626bbeab7b5e8a0ee9"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">toString</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N3RDE16LocalizationInfo8LanguageE" title="RDE::LocalizationInfo::Language"><span class="n"><span class="pre">Language</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_language</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE16LocalizationInfo8toStringE8Language" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Transforms the enum into a string. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_language</strong> – The Language enum </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A const char* of the Language code </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE16LocalizationInfo6toEnumEPKc">
 <span id="_CPPv3N3RDE16LocalizationInfo6toEnumEPKc"></span><span id="_CPPv2N3RDE16LocalizationInfo6toEnumEPKc"></span><span id="RDE::LocalizationInfo::toEnum__cCP"></span><span class="target" id="struct_r_d_e_1_1_localization_info_1afb71a3bbb55265de64084624cfb65230"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3RDE16LocalizationInfo8LanguageE" title="RDE::LocalizationInfo::Language"><span class="n"><span class="pre">Language</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">toEnum</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_language</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE16LocalizationInfo6toEnumEPKc" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Transforms a valid code as char* to an enum. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_language</strong> – A valid language code. </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Language </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE16LocalizationInfo6toEnumERKNSt6stringE">
 <span id="_CPPv3N3RDE16LocalizationInfo6toEnumERKNSt6stringE"></span><span id="_CPPv2N3RDE16LocalizationInfo6toEnumERKNSt6stringE"></span><span id="RDE::LocalizationInfo::toEnum__ssCR"></span><span class="target" id="struct_r_d_e_1_1_localization_info_1a76e05d366f09fbaa9ebc1b9adc04e98e"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3RDE16LocalizationInfo8LanguageE" title="RDE::LocalizationInfo::Language"><span class="n"><span class="pre">Language</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">toEnum</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_language</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE16LocalizationInfo6toEnumERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Transforms a valid code as char* to an enum. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_language</strong> – A valid language code. </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Language </p>
+</dd>
+</dl>
+</dd></dl>
 
 </div>
 </dd></dl>

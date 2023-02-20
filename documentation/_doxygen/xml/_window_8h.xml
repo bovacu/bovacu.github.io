@@ -70,7 +70,7 @@
         </childnode>
       </node>
       <node id="16">
-        <label>SDL.h</label>
+        <label>SDL2/SDL.h</label>
       </node>
       <node id="10">
         <label>cmath</label>

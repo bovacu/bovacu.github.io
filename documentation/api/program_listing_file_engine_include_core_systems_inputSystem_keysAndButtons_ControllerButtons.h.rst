@@ -20,7 +20,6 @@ Program Listing for File ControllerButtons.h
    
    namespace RDE {
    
-   
        typedef enum class ControllerButtons : uint16_t {
            ButtonA         = SDL_CONTROLLER_BUTTON_A,              // 0
            ButtonB         = SDL_CONTROLLER_BUTTON_B,              // 1

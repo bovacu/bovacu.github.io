@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class EventDispatcher &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,12 +275,12 @@
            <div itemprop="articleBody">
              
   <section id="class-eventdispatcher">
-<span id="exhale-class-class-r-d-e-1-1-event-dispatcher"></span><h1>Class EventDispatcher<a class="headerlink" href="#class-eventdispatcher" title="Permalink to this heading"></a></h1>
+<span id="exhale-class-class-r-d-e-1-1-event-dispatcher"></span><h1>Class EventDispatcher<a class="headerlink" href="#class-eventdispatcher" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_systems_eventSystem_Event.h.html#file-engine-include-core-systems-eventsystem-event-h"><span class="std std-ref">File Event.h</span></a></p></li>
 </ul>
 <section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE15EventDispatcherE">
 <span id="_CPPv3N3RDE15EventDispatcherE"></span><span id="_CPPv2N3RDE15EventDispatcherE"></span><span id="RDE::EventDispatcher"></span><span class="target" id="class_r_d_e_1_1_event_dispatcher"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EventDispatcher</span></span></span><a class="headerlink" href="#_CPPv4N3RDE15EventDispatcherE" title="Permalink to this definition"></a><br /></dt>
@@ -297,10 +296,10 @@
 <span id="_CPPv3I0EN3RDE15EventDispatcher13dispatchEventERK14UniqueDelegateIFbR1TEE"></span><span id="_CPPv2I0EN3RDE15EventDispatcher13dispatchEventERK14UniqueDelegateIFbR1TEE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="class_r_d_e_1_1_event_dispatcher_1ae78629a7234f5da6e51c5ae7bebda4d5"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dispatchEvent</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_unique_delegate.html#_CPPv4I0EN3RDE14UniqueDelegateE" title="RDE::UniqueDelegate"><span class="n"><span class="pre">UniqueDelegate</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">bool</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="#_CPPv4I0EN3RDE15EventDispatcher13dispatchEventEbRK14UniqueDelegateIFbR1TEE" title="RDE::EventDispatcher::dispatchEvent::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_delegate</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN3RDE15EventDispatcher13dispatchEventEbRK14UniqueDelegateIFbR1TEE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This method is used to handle internally the event (apart from the handling in the EventFunction callback). </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_func</strong> – The callback associated to the specific event. </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -311,7 +310,7 @@
 <span id="_CPPv3I0EN3RDE15EventDispatcher13dispatchEventEv"></span><span id="_CPPv2I0EN3RDE15EventDispatcher13dispatchEventEv"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="class_r_d_e_1_1_event_dispatcher_1a390cf0023b05b8733bcea928feacfc92"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dispatchEvent</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN3RDE15EventDispatcher13dispatchEventEbv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This method is used to handle internally the event. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>bool </p>
 </dd>
 </dl>

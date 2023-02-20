@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class CPUTexture &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,21 +275,21 @@
            <div itemprop="articleBody">
              
   <section id="class-cputexture">
-<span id="exhale-class-class-r-d-e-1-1-c-p-u-texture"></span><h1>Class CPUTexture<a class="headerlink" href="#class-cputexture" title="Permalink to this heading"></a></h1>
+<span id="exhale-class-class-r-d-e-1-1-c-p-u-texture"></span><h1>Class CPUTexture<a class="headerlink" href="#class-cputexture" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_render_elements_Texture.h.html#file-engine-include-core-render-elements-texture-h"><span class="std std-ref">File Texture.h</span></a></p></li>
 </ul>
 <section id="inheritance-relationships">
-<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this heading"></a></h2>
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline"></a></h2>
 <section id="base-type">
-<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this heading"></a></h3>
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline"></a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">RDE::Texture</span></code> (<a class="reference internal" href="class_r_d_e_1_1_texture.html#exhale-class-class-r-d-e-1-1-texture"><span class="std std-ref">Class Texture</span></a>)</p></li>
 </ul>
 </section>
 </section>
 <section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE10CPUTextureE">
 <span id="_CPPv3N3RDE10CPUTextureE"></span><span id="_CPPv2N3RDE10CPUTextureE"></span><span id="RDE::CPUTexture"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CPUTexture</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">RDE</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="class_r_d_e_1_1_texture.html#_CPPv4N3RDE7TextureE" title="RDE::Texture"><span class="n"><span class="pre">Texture</span></span></a><a class="headerlink" href="#_CPPv4N3RDE10CPUTextureE" title="Permalink to this definition"></a><br /></dt>
@@ -312,7 +311,7 @@
 <span id="_CPPv3N3RDE10CPUTexture4initEiiPhRK9ImageType"></span><span id="_CPPv2N3RDE10CPUTexture4initEiiPhRK9ImageType"></span><span id="RDE::CPUTexture::init__i.i.unsigned-cP.ImageTypeCR"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1af27681d35f927d3e9ac856124aa6cfc8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_width</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_height</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_pixels</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageTypeE" title="RDE::ImageType"><span class="n"><span class="pre">ImageType</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_imageType</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageTypeE" title="RDE::ImageType"><span class="n"><span class="pre">ImageType</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageType3PNGE" title="RDE::ImageType::PNG"><span class="n"><span class="pre">PNG</span></span></a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE10CPUTexture4initEiiPhRK9ImageType" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Inits a CPU texture given a width, height, data of the texture and type of texture. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_width</strong> – Width of the texture. </p></li>
 <li><p><strong>_height</strong> – Height of the texture. </p></li>
@@ -328,7 +327,7 @@
 <span id="_CPPv3N3RDE10CPUTexture4initEiiRK9ImageType"></span><span id="_CPPv2N3RDE10CPUTexture4initEiiRK9ImageType"></span><span id="RDE::CPUTexture::init__i.i.ImageTypeCR"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1a66818147fc7127fcfab73d773e3df234"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_width</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_height</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageTypeE" title="RDE::ImageType"><span class="n"><span class="pre">ImageType</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_imageType</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageTypeE" title="RDE::ImageType"><span class="n"><span class="pre">ImageType</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageType3PNGE" title="RDE::ImageType::PNG"><span class="n"><span class="pre">PNG</span></span></a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE10CPUTexture4initEiiRK9ImageType" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Inits a CPU texture given a width, height and type of texture but no information. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_width</strong> – Width of the texture. </p></li>
 <li><p><strong>_height</strong> – Height of the texture. </p></li>
@@ -349,7 +348,7 @@
 <span id="_CPPv3N3RDE10CPUTexture6saveAsERKNSt6stringE"></span><span id="_CPPv2N3RDE10CPUTexture6saveAsERKNSt6stringE"></span><span id="RDE::CPUTexture::saveAs__ssCR"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1a97bc88a294cedb42259ee2478275c81b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">saveAs</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_pathToSave</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE10CPUTexture6saveAsERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Saves a copy of the texture to the file system. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_pathToSave</strong> – Path to save the texture. </p>
 </dd>
 </dl>
@@ -360,7 +359,7 @@
 <span id="_CPPv3N3RDE10CPUTexture8setPixelEiiRK5Color"></span><span id="_CPPv2N3RDE10CPUTexture8setPixelEiiRK5Color"></span><span id="RDE::CPUTexture::setPixel__i.i.ColorCR"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1a020387d976f6fe313eddd946ae66354c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPixel</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_x</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_y</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE10CPUTexture8setPixelEiiRK5Color" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Allows to set a specific pixel of the texture. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_x</strong> – X position in the texture starting on the left-bottom corner. </p></li>
 <li><p><strong>_y</strong> – Y position in the texture starting on the left-bottom corner. </p></li>
@@ -375,13 +374,13 @@
 <span id="_CPPv3N3RDE10CPUTexture8getPixelEii"></span><span id="_CPPv2N3RDE10CPUTexture8getPixelEii"></span><span id="RDE::CPUTexture::getPixel__i.i"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1ab989357880b560670ec4b0a8ea5b6668"></span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPixel</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_x</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_y</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE10CPUTexture8getPixelEii" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the color of a specific pixel. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_x</strong> – X position in the texture starting on the left-bottom corner. </p></li>
 <li><p><strong>_y</strong> – Y position in the texture starting on the left-bottom corner. </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p></p>
 </dd>
 </dl>

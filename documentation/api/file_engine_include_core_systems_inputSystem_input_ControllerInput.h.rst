@@ -30,7 +30,7 @@ Includes
 --------
 
 
-- ``Input.h`` (:ref:`file_engine_include_core_systems_inputSystem_input_ControllerInput.h`)
+- ``core/systems/inputSystem/input/Input.h`` (:ref:`file_engine_include_core_systems_inputSystem_input_Input.h`)
 
 - ``core/systems/inputSystem/keysAndButtons/ControllerButtons.h`` (:ref:`file_engine_include_core_systems_inputSystem_keysAndButtons_ControllerButtons.h`)
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class Shader &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,12 +275,12 @@
            <div itemprop="articleBody">
              
   <section id="class-shader">
-<span id="exhale-class-class-r-d-e-1-1-shader"></span><h1>Class Shader<a class="headerlink" href="#class-shader" title="Permalink to this heading"></a></h1>
+<span id="exhale-class-class-r-d-e-1-1-shader"></span><h1>Class Shader<a class="headerlink" href="#class-shader" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_render_elements_Shader.h.html#file-engine-include-core-render-elements-shader-h"><span class="std std-ref">File Shader.h</span></a></p></li>
 </ul>
 <section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE6ShaderE">
 <span id="_CPPv3N3RDE6ShaderE"></span><span id="_CPPv2N3RDE6ShaderE"></span><span id="RDE::Shader"></span><span class="target" id="class_r_d_e_1_1_shader"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Shader</span></span></span><a class="headerlink" href="#_CPPv4N3RDE6ShaderE" title="Permalink to this definition"></a><br /></dt>
@@ -303,13 +302,13 @@
 <span id="_CPPv3N3RDE6Shader13loadFromFilesERKNSt6stringERKNSt6stringEP11FileManager"></span><span id="_CPPv2N3RDE6Shader13loadFromFilesERKNSt6stringERKNSt6stringEP11FileManager"></span><span id="RDE::Shader::loadFromFiles__ssCR.ssCR.FileManagerP"></span><span class="target" id="class_r_d_e_1_1_shader_1ada40e73ca060a0d38e618f536e32a6f1"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadFromFiles</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_vertex</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_fragment</span></span>, <a class="reference internal" href="class_r_d_e_1_1_file_manager.html#_CPPv4N3RDE11FileManagerE" title="RDE::FileManager"><span class="n"><span class="pre">FileManager</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_fileManager</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Shader13loadFromFilesERKNSt6stringERKNSt6stringEP11FileManager" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Loads a <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> from a file. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_vertex</strong> – Vertex <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> </p></li>
 <li><p><strong>_fragment</strong> – Fragment <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>ID of the <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> on the GPU </p>
 </dd>
 </dl>
@@ -320,13 +319,13 @@
 <span id="_CPPv3N3RDE6Shader15loadFromStringsERKNSt6stringERKNSt6stringE"></span><span id="_CPPv2N3RDE6Shader15loadFromStringsERKNSt6stringERKNSt6stringE"></span><span id="RDE::Shader::loadFromStrings__ssCR.ssCR"></span><span class="target" id="class_r_d_e_1_1_shader_1a992a722745eddbf893a6f83c67029828"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadFromStrings</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_vertex</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_fragment</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Shader15loadFromStringsERKNSt6stringERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Loads a <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> from a string. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_vertex</strong> – Vertex <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> </p></li>
 <li><p><strong>_fragment</strong> – Fragment <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>ID of the <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> on the GPU </p>
 </dd>
 </dl>
@@ -343,7 +342,7 @@
 <span id="_CPPv3NK3RDE6Shader11getShaderIDEv"></span><span id="_CPPv2NK3RDE6Shader11getShaderIDEv"></span><span id="RDE::Shader::getShaderIDC"></span><span class="target" id="class_r_d_e_1_1_shader_1a1aff2d31e9ce64100f8ba0ac0afc060d"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getShaderID</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader11getShaderIDEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the ID of the <a class="reference internal" href="#class_r_d_e_1_1_shader"><span class="std std-ref">Shader</span></a> on the GPU. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>uint </p>
 </dd>
 </dl>
@@ -354,7 +353,7 @@
 <span id="_CPPv3NK3RDE6Shader19getDynamicShaderVAOEv"></span><span id="_CPPv2NK3RDE6Shader19getDynamicShaderVAOEv"></span><span id="RDE::Shader::getDynamicShaderVAOC"></span><span class="target" id="class_r_d_e_1_1_shader_1af20661a9f8ff098226b0f5997b8a1c6c"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDynamicShaderVAO</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader19getDynamicShaderVAOEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the ID of the dynamic drawing VAO on the GPU. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>uint </p>
 </dd>
 </dl>
@@ -365,7 +364,7 @@
 <span id="_CPPv3NK3RDE6Shader19getDynamicShaderIBOEv"></span><span id="_CPPv2NK3RDE6Shader19getDynamicShaderIBOEv"></span><span id="RDE::Shader::getDynamicShaderIBOC"></span><span class="target" id="class_r_d_e_1_1_shader_1a9d78918ccc8c0015dc8f618c9ed224c2"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDynamicShaderIBO</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader19getDynamicShaderIBOEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the ID of the dynamic drawing IBO on the GPU. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>uint </p>
 </dd>
 </dl>
@@ -376,7 +375,7 @@
 <span id="_CPPv3NK3RDE6Shader19getDynamicShaderVBOEv"></span><span id="_CPPv2NK3RDE6Shader19getDynamicShaderVBOEv"></span><span id="RDE::Shader::getDynamicShaderVBOC"></span><span class="target" id="class_r_d_e_1_1_shader_1a22fe772aa067a6ae77100408924f1e3e"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDynamicShaderVBO</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader19getDynamicShaderVBOEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the ID of the dynamic drawing VBO on the GPU. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>uint </p>
 </dd>
 </dl>
@@ -387,7 +386,7 @@
 <span id="_CPPv3NK3RDE6Shader18getStaticShaderVAOEv"></span><span id="_CPPv2NK3RDE6Shader18getStaticShaderVAOEv"></span><span id="RDE::Shader::getStaticShaderVAOC"></span><span class="target" id="class_r_d_e_1_1_shader_1a6a725effeb4ef64ea3ab242c1a53f2c0"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getStaticShaderVAO</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader18getStaticShaderVAOEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the ID of the static drawing VAO on the GPU. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>uint </p>
 </dd>
 </dl>
@@ -398,7 +397,7 @@
 <span id="_CPPv3NK3RDE6Shader18getStaticShaderIBOEv"></span><span id="_CPPv2NK3RDE6Shader18getStaticShaderIBOEv"></span><span id="RDE::Shader::getStaticShaderIBOC"></span><span class="target" id="class_r_d_e_1_1_shader_1a5a209b937e761100692b38b94afe810e"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getStaticShaderIBO</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader18getStaticShaderIBOEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the ID of the static drawing IBO on the GPU. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>uint </p>
 </dd>
 </dl>
@@ -409,7 +408,7 @@
 <span id="_CPPv3NK3RDE6Shader18getStaticShaderVBOEv"></span><span id="_CPPv2NK3RDE6Shader18getStaticShaderVBOEv"></span><span id="RDE::Shader::getStaticShaderVBOC"></span><span class="target" id="class_r_d_e_1_1_shader_1a60bd56ad8dbbeeec25d5feb7b7687850"></span><span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getStaticShaderVBO</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader18getStaticShaderVBOEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the ID of the static drawing VBO on the GPU. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>uint </p>
 </dd>
 </dl>
@@ -420,7 +419,7 @@
 <span id="_CPPv3NK3RDE6Shader23getShaderVertexDataSizeEv"></span><span id="_CPPv2NK3RDE6Shader23getShaderVertexDataSizeEv"></span><span id="RDE::Shader::getShaderVertexDataSizeC"></span><span class="target" id="class_r_d_e_1_1_shader_1a536ee9675f4277e1e71c3eb6e16c1ecc"></span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getShaderVertexDataSize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Shader23getShaderVertexDataSizeEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the size of the VertexData structure in bytes. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>long </p>
 </dd>
 </dl>
@@ -431,7 +430,7 @@
 <span id="_CPPv3N3RDE6Shader20setUniformValueFloatEPKc14RDE_UNIFORM_FVP7GLfloat9GLboolean"></span><span id="_CPPv2N3RDE6Shader20setUniformValueFloatEPKc14RDE_UNIFORM_FVP7GLfloat9GLboolean"></span><span id="RDE::Shader::setUniformValueFloat__cCP.RDE_UNIFORM_FV.GLfloatP.GLboolean"></span><span class="target" id="class_r_d_e_1_1_shader_1a6b70d75548334c0a686e5bc97f3e2684"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setUniformValueFloat</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_uniformName</span></span>, <a class="reference internal" href="enum_namespace_r_d_e_1a95da56214350f01c5f94f8e37195cc6d.html#_CPPv4N3RDE14RDE_UNIFORM_FVE" title="RDE::RDE_UNIFORM_FV"><span class="n"><span class="pre">RDE_UNIFORM_FV</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_type</span></span>, <span class="n"><span class="pre">GLfloat</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_data</span></span>, <span class="n"><span class="pre">GLboolean</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_transpose</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">GL_FALSE</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Shader20setUniformValueFloatEPKc14RDE_UNIFORM_FVP7GLfloat9GLboolean" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Sets the value of an existing uniform. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_uniformName</strong> – The name of the uniform in the shader </p></li>
 <li><p><strong>_type</strong> – The type of uniform we are setting, check RDE_UNIFORM_FV enum options </p></li>
@@ -446,7 +445,7 @@
 <span id="_CPPv3N3RDE6Shader18setUniformValueIntEPKc14RDE_UNIFORM_IVP5GLint"></span><span id="_CPPv2N3RDE6Shader18setUniformValueIntEPKc14RDE_UNIFORM_IVP5GLint"></span><span id="RDE::Shader::setUniformValueInt__cCP.RDE_UNIFORM_IV.GLintP"></span><span class="target" id="class_r_d_e_1_1_shader_1acfd68c78402a4ea830cf1d821178b982"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setUniformValueInt</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_uniformName</span></span>, <a class="reference internal" href="enum_namespace_r_d_e_1aa442da21122dddd6a8856e0bfc24c86e.html#_CPPv4N3RDE14RDE_UNIFORM_IVE" title="RDE::RDE_UNIFORM_IV"><span class="n"><span class="pre">RDE_UNIFORM_IV</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_type</span></span>, <span class="n"><span class="pre">GLint</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_data</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Shader18setUniformValueIntEPKc14RDE_UNIFORM_IVP5GLint" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Sets the value of an existing uniform. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_uniformName</strong> – The name of the uniform in the shader </p></li>
 <li><p><strong>_type</strong> – The type of uniform we are setting, check RDE_UNIFORM_IV enum options </p></li>
@@ -461,7 +460,7 @@
 <span id="_CPPv3N3RDE6Shader19setUniformValueUIntEPKc15RDE_UNIFORM_UIVP6GLuint"></span><span id="_CPPv2N3RDE6Shader19setUniformValueUIntEPKc15RDE_UNIFORM_UIVP6GLuint"></span><span id="RDE::Shader::setUniformValueUInt__cCP.RDE_UNIFORM_UIV.GLuintP"></span><span class="target" id="class_r_d_e_1_1_shader_1a562eaae722942a4d315bc7297693bda7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setUniformValueUInt</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_uniformName</span></span>, <a class="reference internal" href="enum_namespace_r_d_e_1a5eba8c0bb1379fa821c063ddade77d8d.html#_CPPv4N3RDE15RDE_UNIFORM_UIVE" title="RDE::RDE_UNIFORM_UIV"><span class="n"><span class="pre">RDE_UNIFORM_UIV</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_type</span></span>, <span class="n"><span class="pre">GLuint</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_data</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Shader19setUniformValueUIntEPKc15RDE_UNIFORM_UIVP6GLuint" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Sets the value of an existing uniform. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_uniformName</strong> – The name of the uniform in the shader </p></li>
 <li><p><strong>_type</strong> – The type of uniform we are setting, check RDE_UNIFORM_UIV enum options </p></li>

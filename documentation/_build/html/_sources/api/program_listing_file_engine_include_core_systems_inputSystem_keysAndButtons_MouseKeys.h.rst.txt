@@ -20,7 +20,6 @@ Program Listing for File MouseKeys.h
    
    namespace RDE {
    
-   
        typedef enum class MouseCode : uint16_t {
            // From SDL2
            Button0 = SDL_BUTTON_LEFT,

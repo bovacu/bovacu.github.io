@@ -84,6 +84,7 @@ Program Listing for File LocalizationManager.h
    
            private:
                std::unordered_map<LocalizationInfo::Language, std::unordered_map<std::string, std::string>> localizationTable;
+   
                Engine* engine;
    
                struct Any {
@@ -126,10 +127,12 @@ Program Listing for File LocalizationManager.h
    
            private:
                void init(Engine* _engine);
+   
                std::string localizeSubstitution(const std::string& _string, const std::string& _replacement);
    
            public:
                void loadAllLanguages();
+   
                void loadLanguage(LocalizationInfo::Language _language);
    
                std::string localize(const std::string& _key);

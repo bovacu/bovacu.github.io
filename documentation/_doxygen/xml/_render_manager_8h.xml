@@ -460,7 +460,7 @@
         </childnode>
       </node>
       <node id="27">
-        <label>SDL.h</label>
+        <label>SDL2/SDL.h</label>
       </node>
       <node id="29">
         <label>SDL2/SDL_image.h</label>

@@ -206,12 +206,23 @@
           <declname>_event</declname>
         </param>
         <briefdescription>
+<para>Gets the char that was typed. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/inputSystem/input/KeyboardInput.h" line="60" column="18"/>
+        <location file="engine/include/core/systems/inputSystem/input/KeyboardInput.h" line="64" column="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -482,7 +493,7 @@
         <link refid="struct_r_d_e_1_1_vec2"/>
       </node>
     </collaborationgraph>
-    <location file="engine/include/core/systems/inputSystem/input/KeyboardInput.h" line="18" column="5" bodyfile="engine/include/core/systems/inputSystem/input/KeyboardInput.h" bodystart="18" bodyend="61"/>
+    <location file="engine/include/core/systems/inputSystem/input/KeyboardInput.h" line="18" column="5" bodyfile="engine/include/core/systems/inputSystem/input/KeyboardInput.h" bodystart="18" bodyend="65"/>
     <listofallmembers>
       <member refid="class_r_d_e_1_1_input_1a536e12c69a33f9e454c26368f751da79" prot="protected" virt="non-virtual"><scope>RDE::KeyboardInput</scope><name>engine</name></member>
       <member refid="class_r_d_e_1_1_input_1ac6c4192a1132075c8cf505dfcf79bf73" prot="protected" virt="non-virtual"><scope>RDE::KeyboardInput</scope><name>events</name></member>

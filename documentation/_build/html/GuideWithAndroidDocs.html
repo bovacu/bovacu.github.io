@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guía para crear tu propia librería de juegos 2D &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/sphinx_highlight.js"></script>
         <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="_static/js/theme.js"></script>
@@ -45,7 +45,6 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="api/library_root.html">Library API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -73,13 +72,13 @@
            <div itemprop="articleBody">
              
   <section class="tex2jax_ignore mathjax_ignore" id="guia-para-crear-tu-propia-libreria-de-juegos-2d">
-<h1>Guía para crear tu propia librería de juegos 2D<a class="headerlink" href="#guia-para-crear-tu-propia-libreria-de-juegos-2d" title="Permalink to this heading"></a></h1>
+<h1>Guía para crear tu propia librería de juegos 2D<a class="headerlink" href="#guia-para-crear-tu-propia-libreria-de-juegos-2d" title="Permalink to this headline"></a></h1>
 <p>Buenas a todos, soy Borja Vazquez, ingeniero de software y desarrollador de videojuegos. Como podréis imaginar por la descripción y por el hecho de estar haciendo esta guía, me encanta programar juegos, pero tambien me encanta trabajar en herramientas para facilitar la creación de videojuegos, en este caso una librería 2D (ya que es mi tipo de juego favorito) que es lo que os vengo a explicar hoy.</p>
 <p>En esta guía aprenderemos como crear desde cero y paso a paso la misma librería que yo he creado en mi tiempo libre y que uso para mis proyectos personales. Si solo te interesa el código fuente os dejo ya por aquí el link, pero creo que seria muy interesante que leyeseis el documento entero.</p>
 <p>Lo primero que quiero aclarar es que esta guía no es una declaración de como hay que hacer las cosas ni quiere decir que todo sea perfecto, lo que pretendo con esta guía es explicar de la manera mas clara y extensa posible como funciona OpenGL, como crear una herramienta que nos facilite muchísimo la vida como programadores y empezar a entender como motores mayores, como Godot o Unity funcionan por dentro.</p>
 <p>Dicho esto, vamos con la instalación de todas las librerías y herramientas que vamos a necesitar.</p>
 <section id="instalacion">
-<h2>Instalación<a class="headerlink" href="#instalacion" title="Permalink to this heading"></a></h2>
+<h2>Instalación<a class="headerlink" href="#instalacion" title="Permalink to this headline"></a></h2>
 <p>Primero de todo decir que yo trabajo en Linux, específicamente en Ubuntu, por lo que la parte mas completa sera en esta plataforma, no estoy seguro del todo de como sera la instalación en Windows o Mac, pero todas las librerías son muy conocidas y no creo que haya mucho problema.</p>
 <p>Necesitaremos las siguientes librerías:</p>
 <ul class="simple">
@@ -98,7 +97,7 @@
 <p>Con esto deberíamos estar mas que listos para poder empezar. Si falta alguna librería seria solo instalarla, porque el compilador os avisara de cual falta.</p>
 </section>
 <section id="ides">
-<h2>IDEs<a class="headerlink" href="#ides" title="Permalink to this heading"></a></h2>
+<h2>IDEs<a class="headerlink" href="#ides" title="Permalink to this headline"></a></h2>
 <p>Aquí, dependiendo del sistema operativo que uséis, y sobretodo dependiendo de vuestro gusto con los editores de código podéis escoger con el que os sintáis mas cómodos, pero yo recomiendo uno que sepa trabajar o integrar fácil CMake, ya que es lo que usaremos para la compilación del proyecto. En mi caso recomiendo:</p>
 <ul class="simple">
 <li><p>CLion</p></li>
@@ -109,87 +108,87 @@
 <p>VSCode también me gusta y con la ultima integración de CMake se ha hecho mucho mas fácil compilar y ejecutar el código, por lo que es una buena opcion, pero para mi gusto le faltan características que CLion si tiene, pero VSCode es una opcion perfecta y mas que de sobra.</p>
 </section>
 <section id="ventana-y-eventos">
-<h2>Ventana y eventos<a class="headerlink" href="#ventana-y-eventos" title="Permalink to this heading"></a></h2>
+<h2>Ventana y eventos<a class="headerlink" href="#ventana-y-eventos" title="Permalink to this headline"></a></h2>
 <section id="que-es-y-como-funciona-sdl2">
-<h3>Que es y como funciona SDL2<a class="headerlink" href="#que-es-y-como-funciona-sdl2" title="Permalink to this heading"></a></h3>
+<h3>Que es y como funciona SDL2<a class="headerlink" href="#que-es-y-como-funciona-sdl2" title="Permalink to this headline"></a></h3>
 </section>
 <section id="alternativas-a-sdl2">
-<h3>Alternativas a SDL2<a class="headerlink" href="#alternativas-a-sdl2" title="Permalink to this heading"></a></h3>
+<h3>Alternativas a SDL2<a class="headerlink" href="#alternativas-a-sdl2" title="Permalink to this headline"></a></h3>
 </section>
 <section id="creando-nuestra-primera-ventana">
-<h3>Creando nuestra primera ventana<a class="headerlink" href="#creando-nuestra-primera-ventana" title="Permalink to this heading"></a></h3>
+<h3>Creando nuestra primera ventana<a class="headerlink" href="#creando-nuestra-primera-ventana" title="Permalink to this headline"></a></h3>
 </section>
 <section id="capturando-nuestros-primeros-eventos">
-<h3>Capturando nuestros primeros eventos<a class="headerlink" href="#capturando-nuestros-primeros-eventos" title="Permalink to this heading"></a></h3>
+<h3>Capturando nuestros primeros eventos<a class="headerlink" href="#capturando-nuestros-primeros-eventos" title="Permalink to this headline"></a></h3>
 </section>
 <section id="creando-un-sistema-de-gestion-de-eventos">
-<h3>Creando un sistema de gestión de eventos<a class="headerlink" href="#creando-un-sistema-de-gestion-de-eventos" title="Permalink to this heading"></a></h3>
+<h3>Creando un sistema de gestión de eventos<a class="headerlink" href="#creando-un-sistema-de-gestion-de-eventos" title="Permalink to this headline"></a></h3>
 </section>
 </section>
 <section id="renderizado">
-<h2>Renderizado<a class="headerlink" href="#renderizado" title="Permalink to this heading"></a></h2>
+<h2>Renderizado<a class="headerlink" href="#renderizado" title="Permalink to this headline"></a></h2>
 <section id="que-es-opengl-y-como-funciona">
-<h3>Que es OpenGL y como funciona<a class="headerlink" href="#que-es-opengl-y-como-funciona" title="Permalink to this heading"></a></h3>
+<h3>Que es OpenGL y como funciona<a class="headerlink" href="#que-es-opengl-y-como-funciona" title="Permalink to this headline"></a></h3>
 </section>
 <section id="buffers">
-<h3>Buffers<a class="headerlink" href="#buffers" title="Permalink to this heading"></a></h3>
+<h3>Buffers<a class="headerlink" href="#buffers" title="Permalink to this headline"></a></h3>
 </section>
 <section id="dibujando-nuestro-primer-triangulo">
-<h3>Dibujando nuestro primer triangulo<a class="headerlink" href="#dibujando-nuestro-primer-triangulo" title="Permalink to this heading"></a></h3>
+<h3>Dibujando nuestro primer triangulo<a class="headerlink" href="#dibujando-nuestro-primer-triangulo" title="Permalink to this headline"></a></h3>
 </section>
 <section id="dibujando-nuestro-primer-rectangulo">
-<h3>Dibujando nuestro primer rectángulo<a class="headerlink" href="#dibujando-nuestro-primer-rectangulo" title="Permalink to this heading"></a></h3>
+<h3>Dibujando nuestro primer rectángulo<a class="headerlink" href="#dibujando-nuestro-primer-rectangulo" title="Permalink to this headline"></a></h3>
 </section>
 <section id="texturas">
-<h3>Texturas<a class="headerlink" href="#texturas" title="Permalink to this heading"></a></h3>
+<h3>Texturas<a class="headerlink" href="#texturas" title="Permalink to this headline"></a></h3>
 </section>
 <section id="model-view-projection-matrix">
-<h3>Model View Projection Matrix<a class="headerlink" href="#model-view-projection-matrix" title="Permalink to this heading"></a></h3>
+<h3>Model View Projection Matrix<a class="headerlink" href="#model-view-projection-matrix" title="Permalink to this headline"></a></h3>
 </section>
 <section id="camaras">
-<h3>Cámaras<a class="headerlink" href="#camaras" title="Permalink to this heading"></a></h3>
+<h3>Cámaras<a class="headerlink" href="#camaras" title="Permalink to this headline"></a></h3>
 </section>
 <section id="shaders">
-<h3>Shaders<a class="headerlink" href="#shaders" title="Permalink to this heading"></a></h3>
+<h3>Shaders<a class="headerlink" href="#shaders" title="Permalink to this headline"></a></h3>
 </section>
 <section id="sprites">
-<h3>Sprites<a class="headerlink" href="#sprites" title="Permalink to this heading"></a></h3>
+<h3>Sprites<a class="headerlink" href="#sprites" title="Permalink to this headline"></a></h3>
 </section>
 <section id="texture-atlas">
-<h3>Texture Atlas<a class="headerlink" href="#texture-atlas" title="Permalink to this heading"></a></h3>
+<h3>Texture Atlas<a class="headerlink" href="#texture-atlas" title="Permalink to this headline"></a></h3>
 </section>
 <section id="batching">
-<h3>Batching<a class="headerlink" href="#batching" title="Permalink to this heading"></a></h3>
+<h3>Batching<a class="headerlink" href="#batching" title="Permalink to this headline"></a></h3>
 </section>
 <section id="sprite-batch">
-<h3>Sprite Batch<a class="headerlink" href="#sprite-batch" title="Permalink to this heading"></a></h3>
+<h3>Sprite Batch<a class="headerlink" href="#sprite-batch" title="Permalink to this headline"></a></h3>
 </section>
 <section id="entendiendo-como-dibujar-texto">
-<h3>Entendiendo como dibujar texto<a class="headerlink" href="#entendiendo-como-dibujar-texto" title="Permalink to this heading"></a></h3>
+<h3>Entendiendo como dibujar texto<a class="headerlink" href="#entendiendo-como-dibujar-texto" title="Permalink to this headline"></a></h3>
 </section>
 <section id="abstrayendo-un-renderer">
-<h3>Abstrayendo un Renderer<a class="headerlink" href="#abstrayendo-un-renderer" title="Permalink to this heading"></a></h3>
+<h3>Abstrayendo un Renderer<a class="headerlink" href="#abstrayendo-un-renderer" title="Permalink to this headline"></a></h3>
 </section>
 </section>
 <section id="sonido">
-<h2>Sonido<a class="headerlink" href="#sonido" title="Permalink to this heading"></a></h2>
+<h2>Sonido<a class="headerlink" href="#sonido" title="Permalink to this headline"></a></h2>
 <section id="como-maneja-sdl2-el-sonido">
-<h3>Como maneja SDL2 el sonido<a class="headerlink" href="#como-maneja-sdl2-el-sonido" title="Permalink to this heading"></a></h3>
+<h3>Como maneja SDL2 el sonido<a class="headerlink" href="#como-maneja-sdl2-el-sonido" title="Permalink to this headline"></a></h3>
 </section>
 <section id="creando-un-manejador-de-sonido">
-<h3>Creando un manejador de sonido<a class="headerlink" href="#creando-un-manejador-de-sonido" title="Permalink to this heading"></a></h3>
+<h3>Creando un manejador de sonido<a class="headerlink" href="#creando-un-manejador-de-sonido" title="Permalink to this headline"></a></h3>
 </section>
 </section>
 <section id="fisicas">
-<h2>Físicas<a class="headerlink" href="#fisicas" title="Permalink to this heading"></a></h2>
+<h2>Físicas<a class="headerlink" href="#fisicas" title="Permalink to this headline"></a></h2>
 </section>
 <section id="sistema-de-particulas">
-<h2>Sistema de partículas<a class="headerlink" href="#sistema-de-particulas" title="Permalink to this heading"></a></h2>
+<h2>Sistema de partículas<a class="headerlink" href="#sistema-de-particulas" title="Permalink to this headline"></a></h2>
 </section>
 <section id="android">
-<h2>Android<a class="headerlink" href="#android" title="Permalink to this heading"></a></h2>
+<h2>Android<a class="headerlink" href="#android" title="Permalink to this headline"></a></h2>
 <section id="configuracion-y-build">
-<h3>Configuración y build<a class="headerlink" href="#configuracion-y-build" title="Permalink to this heading"></a></h3>
+<h3>Configuración y build<a class="headerlink" href="#configuracion-y-build" title="Permalink to this headline"></a></h3>
 <p>Aun no tengo claro si es el metodo correcto o no, pero desde luego me genera las builds de android y funcionan sin problema, asi que voy a describiros aqui como lo he conseguido.</p>
 <p>Lo primero de todo es bajarse android studio.  Os dira que donde quereis instalar el SDK, a mi, por comodidad lo he instalado en la mi carpeta personal, porque lo necesitaremos luego para localizar diferentes cosas.</p>
 <p>Una vez lo tengais instalado, vamos a Tools &gt; SDK Manager y nos aparecera esta ventana en la que debeis marcar para instalar:</p>
@@ -673,7 +672,7 @@ dependencies {
 </div></blockquote>
 </section>
 <section id="integracion-de-firebase-y-admob">
-<h3>Integracion de Firebase y Admob<a class="headerlink" href="#integracion-de-firebase-y-admob" title="Permalink to this heading"></a></h3>
+<h3>Integracion de Firebase y Admob<a class="headerlink" href="#integracion-de-firebase-y-admob" title="Permalink to this headline"></a></h3>
 <p>Lo primero que tenemos que hacer es transformar nuestro proyecto a AndroidX y para eso vamos en Android Studio a Refactor &gt; Migrate to AndroidX. Aceptáis lo que os diga y hará la migración, que le costara un rato por cierto. Ahora vamos a abrir el build.gradle del proyecto, es decir, el que se encuentra en ROOT_ANDROID. Ahí vamos a modificar algunas partes, de manera que quede así:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>// Top-level build file where you can add configuration options common to all sub-projects/modules.
 ext.engine = [

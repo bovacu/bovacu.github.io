@@ -261,7 +261,7 @@
         </childnode>
       </node>
       <node id="34">
-        <label>Input.h</label>
+        <label>core/systems/inputSystem/input/Input.h</label>
         <link refid="_input_8h_source"/>
         <childnode refid="24" relation="include">
         </childnode>
@@ -435,7 +435,7 @@
         </childnode>
       </node>
       <node id="25">
-        <label>SDL.h</label>
+        <label>SDL2/SDL.h</label>
       </node>
       <node id="27">
         <label>SDL2/SDL_image.h</label>
@@ -599,28 +599,28 @@
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>instantiatePrefab(<ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_json);</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;std::string,<sp/>Node_JsonPair&gt;<sp/>createNodes(<ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_sceneJson);</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadNodes(<ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref>*<sp/>_window,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_sceneJson,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>Node_JsonPair&gt;&amp;<sp/>_nodes);</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadAssets(<ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref>*<sp/>_manager,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_json);</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadTransformComponent(<ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>*<sp/>_node,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_transformJson);</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadCameraComponent(<ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>*<sp/>_nodeD,<sp/><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref>*<sp/>_window,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_cameraJson);</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadSpriteRendererComponent(<ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>*<sp/>_node,<sp/><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_spriteRendererJson);</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadTextRendererComponent(<ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>*<sp/>_node,<sp/><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_textRendererJson);</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadBodyComponent(<ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>*<sp/>_node,<sp/><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_bodyJson);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;std::string,<sp/>Node_JsonPair&gt;<sp/>createNodes(<ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_sceneJson);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadNodes(<ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref>*<sp/>_window,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_sceneJson,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>Node_JsonPair&gt;&amp;<sp/>_nodes);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadAssets(<ref refid="class_r_d_e_1_1_manager" kindref="compound">Manager</ref>*<sp/>_manager,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_json);</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>unloadAssets(<ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_sceneJson);</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//RDE_CONFIG_LOADER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadTransformComponent(<ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/><ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>*<sp/>_node,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_transformJson);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadCameraComponent(<ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>*<sp/>_nodeD,<sp/><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/><ref refid="class_r_d_e_1_1_window" kindref="compound">Window</ref>*<sp/>_window,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_cameraJson);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadSpriteRendererComponent(<ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>*<sp/>_node,<sp/><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_spriteRendererJson);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadTextRendererComponent(<ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>*<sp/>_node,<sp/><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_textRendererJson);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadPhysicsBodyComponent(<ref refid="struct_r_d_e_1_1_node" kindref="compound">Node</ref>*<sp/>_node,<sp/><ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_bodyJson);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>unloadAssets(<ref refid="class_r_d_e_1_1_scene" kindref="compound">Scene</ref>*<sp/>_scene,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>_sceneJson);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//RDE_CONFIG_LOADER_H</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="engine/include/core/systems/configSystem/ConfigManager.h"/>
   </compounddef>

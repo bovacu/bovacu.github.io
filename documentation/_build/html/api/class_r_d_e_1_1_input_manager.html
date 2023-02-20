@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class InputManager &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,12 +275,12 @@
            <div itemprop="articleBody">
              
   <section id="class-inputmanager">
-<span id="exhale-class-class-r-d-e-1-1-input-manager"></span><h1>Class InputManager<a class="headerlink" href="#class-inputmanager" title="Permalink to this heading"></a></h1>
+<span id="exhale-class-class-r-d-e-1-1-input-manager"></span><h1>Class InputManager<a class="headerlink" href="#class-inputmanager" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_systems_inputSystem_input_Input.h.html#file-engine-include-core-systems-inputsystem-input-input-h"><span class="std std-ref">File Input.h</span></a></p></li>
 </ul>
 <section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE12InputManagerE">
 <span id="_CPPv3N3RDE12InputManagerE"></span><span id="_CPPv2N3RDE12InputManagerE"></span><span id="RDE::InputManager"></span><span class="target" id="class_r_d_e_1_1_input_manager"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InputManager</span></span></span><a class="headerlink" href="#_CPPv4N3RDE12InputManagerE" title="Permalink to this definition"></a><br /></dt>
@@ -303,7 +302,7 @@
 </dl>
 </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_engine</strong> – <a class="reference internal" href="class_r_d_e_1_1_engine.html#class_r_d_e_1_1_engine"><span class="std std-ref">Engine</span></a> </p></li>
 <li><p><strong>_window</strong> – <a class="reference internal" href="class_r_d_e_1_1_window.html#class_r_d_e_1_1_window"><span class="std std-ref">Window</span></a> </p></li>
@@ -339,10 +338,10 @@
 <span id="_CPPv3N3RDE12InputManager16isKeyJustPressedE7KeyCode"></span><span id="_CPPv2N3RDE12InputManager16isKeyJustPressedE7KeyCode"></span><span id="RDE::InputManager::isKeyJustPressed__KeyCode"></span><span class="target" id="class_r_d_e_1_1_input_manager_1af87de5cc1a9e715f31b6e61f43160dbe"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isKeyJustPressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde.html#_CPPv4N3RDE7KeyCodeE" title="RDE::KeyCode"><span class="n"><span class="pre">KeyCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager16isKeyJustPressedE7KeyCode" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true if the key is pressed and won’t return true until the key is released and pressed again. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_key</strong> – Key pressed </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -353,10 +352,10 @@
 <span id="_CPPv3N3RDE12InputManager17isKeyJustReleasedE7KeyCode"></span><span id="_CPPv2N3RDE12InputManager17isKeyJustReleasedE7KeyCode"></span><span id="RDE::InputManager::isKeyJustReleased__KeyCode"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a18ba2bf0cfe0ed1bb755976ba5ba156f"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isKeyJustReleased</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde.html#_CPPv4N3RDE7KeyCodeE" title="RDE::KeyCode"><span class="n"><span class="pre">KeyCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager17isKeyJustReleasedE7KeyCode" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true if the key is released and won’t return true until the key is pressed and released again. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_key</strong> – Key released </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -367,10 +366,10 @@
 <span id="_CPPv3N3RDE12InputManager12isKeyPressedE7KeyCode"></span><span id="_CPPv2N3RDE12InputManager12isKeyPressedE7KeyCode"></span><span id="RDE::InputManager::isKeyPressed__KeyCode"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a5f36ac467a41d4897ed020e31c99274e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isKeyPressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde.html#_CPPv4N3RDE7KeyCodeE" title="RDE::KeyCode"><span class="n"><span class="pre">KeyCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager12isKeyPressedE7KeyCode" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true while the key is being pressed. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_key</strong> – Key pressed </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -381,10 +380,10 @@
 <span id="_CPPv3N3RDE12InputManager13isKeyReleasedE7KeyCode"></span><span id="_CPPv2N3RDE12InputManager13isKeyReleasedE7KeyCode"></span><span id="RDE::InputManager::isKeyReleased__KeyCode"></span><span class="target" id="class_r_d_e_1_1_input_manager_1afba59b338702ae9884258e92c9d5507b"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isKeyReleased</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1ae1b377580a5f0afd4b6021072ed14bde.html#_CPPv4N3RDE7KeyCodeE" title="RDE::KeyCode"><span class="n"><span class="pre">KeyCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager13isKeyReleasedE7KeyCode" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true while the key is not being pressed. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_key</strong> – Key released </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -395,10 +394,10 @@
 <span id="_CPPv3N3RDE12InputManager18isMouseJustPressedE9MouseCode"></span><span id="_CPPv2N3RDE12InputManager18isMouseJustPressedE9MouseCode"></span><span id="RDE::InputManager::isMouseJustPressed__MouseCode"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a8617526af870d2b427a0b2f817d1c004"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMouseJustPressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1a6079d97bd2b05de1813ab71932242c87.html#_CPPv4N3RDE9MouseCodeE" title="RDE::MouseCode"><span class="n"><span class="pre">MouseCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager18isMouseJustPressedE9MouseCode" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true if the button is pressed and won’t return true until the button is released and pressed again. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_button</strong> – Mouse button pressed </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -409,10 +408,10 @@
 <span id="_CPPv3N3RDE12InputManager19isMouseJustReleasedE9MouseCode"></span><span id="_CPPv2N3RDE12InputManager19isMouseJustReleasedE9MouseCode"></span><span id="RDE::InputManager::isMouseJustReleased__MouseCode"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a34c1930540c60508b7f8d8db2b64cc40"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMouseJustReleased</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1a6079d97bd2b05de1813ab71932242c87.html#_CPPv4N3RDE9MouseCodeE" title="RDE::MouseCode"><span class="n"><span class="pre">MouseCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager19isMouseJustReleasedE9MouseCode" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true if the button is released and won’t return true until the button is pressed and released again. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_button</strong> – Mouse button released </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -423,10 +422,10 @@
 <span id="_CPPv3N3RDE12InputManager14isMousePressedE9MouseCode"></span><span id="_CPPv2N3RDE12InputManager14isMousePressedE9MouseCode"></span><span id="RDE::InputManager::isMousePressed__MouseCode"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a293cad5478ca5cae8bdbef25925ee1f1"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMousePressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1a6079d97bd2b05de1813ab71932242c87.html#_CPPv4N3RDE9MouseCodeE" title="RDE::MouseCode"><span class="n"><span class="pre">MouseCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager14isMousePressedE9MouseCode" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true while the button is being pressed. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_button</strong> – Mouse button pressed </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -437,10 +436,10 @@
 <span id="_CPPv3N3RDE12InputManager15isMouseReleasedE9MouseCode"></span><span id="_CPPv2N3RDE12InputManager15isMouseReleasedE9MouseCode"></span><span id="RDE::InputManager::isMouseReleased__MouseCode"></span><span class="target" id="class_r_d_e_1_1_input_manager_1acb889c95a989d9077cd1ccc7c00e6369"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMouseReleased</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1a6079d97bd2b05de1813ab71932242c87.html#_CPPv4N3RDE9MouseCodeE" title="RDE::MouseCode"><span class="n"><span class="pre">MouseCode</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager15isMouseReleasedE9MouseCode" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true while the button is not being pressed. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_button</strong> – Mouse button released </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -451,10 +450,10 @@
 <span id="_CPPv3N3RDE12InputManager23getMousePosScreenCoordsEb"></span><span id="_CPPv2N3RDE12InputManager23getMousePosScreenCoordsEb"></span><span id="RDE::InputManager::getMousePosScreenCoords__b"></span><span class="target" id="class_r_d_e_1_1_input_manager_1aaa0491636c9c36f91f9d4608daf06b82"></span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMousePosScreenCoords</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_centeredMiddleScreen</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager23getMousePosScreenCoordsEb" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the mouse position in screen coordinates, so x: [0, WindowWidth], y: [0, WindowHeight]. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_centeredMiddleScreen</strong> – Centered on screen center or left-bottom corner </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Vec2F </p>
 </dd>
 </dl>
@@ -465,7 +464,7 @@
 <span id="_CPPv3N3RDE12InputManager19getMousePosWorldPosEv"></span><span id="_CPPv2N3RDE12InputManager19getMousePosWorldPosEv"></span><span id="RDE::InputManager::getMousePosWorldPos"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a967bc8b7dc0c81a73b7ee0025dcf7167"></span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMousePosWorldPos</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager19getMousePosWorldPosEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the mouse position inside the world coordinates system. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>Vec2F </p>
 </dd>
 </dl>
@@ -476,7 +475,7 @@
 <span id="_CPPv3N3RDE12InputManager17getMousePosCanvasEv"></span><span id="_CPPv2N3RDE12InputManager17getMousePosCanvasEv"></span><span id="RDE::InputManager::getMousePosCanvas"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a14115c36583f3b0049cbfb598287d6af"></span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMousePosCanvas</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager17getMousePosCanvasEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns mouse position with <a class="reference internal" href="class_r_d_e_1_1_canvas.html#class_r_d_e_1_1_canvas"><span class="std std-ref">Canvas</span></a> camera zoom. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>Vec2f </p>
 </dd>
 </dl>
@@ -487,13 +486,13 @@
 <span id="_CPPv3N3RDE12InputManager18reassignControllerEii"></span><span id="_CPPv2N3RDE12InputManager18reassignControllerEii"></span><span id="RDE::InputManager::reassignController__i.i"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a50bba8199d23559a5d8a0fccac8072ca"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reassignController</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_as</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager18reassignControllerEii" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function changes the order of the controllers (use to set who is player1, for example). </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_controllerID</strong> – Current ID </p></li>
 <li><p><strong>_as</strong> – New ID </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -504,13 +503,13 @@
 <span id="_CPPv3N3RDE12InputManager26isGamepadButtonJustPressedE17ControllerButtonsi"></span><span id="_CPPv2N3RDE12InputManager26isGamepadButtonJustPressedE17ControllerButtonsi"></span><span id="RDE::InputManager::isGamepadButtonJustPressed__ControllerButtons.i"></span><span class="target" id="class_r_d_e_1_1_input_manager_1afcae7ae2faeb7286463318ace4c36afa"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGamepadButtonJustPressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11.html#_CPPv4N3RDE17ControllerButtonsE" title="RDE::ControllerButtons"><span class="n"><span class="pre">ControllerButtons</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager26isGamepadButtonJustPressedE17ControllerButtonsi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true if the button is pressed and won’t return true until the button is released and pressed again. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_button</strong> – Button pressed </p></li>
 <li><p><strong>_controllerID</strong> – <a class="reference internal" href="struct_r_d_e_1_1_controller.html#struct_r_d_e_1_1_controller"><span class="std std-ref">Controller</span></a> ID </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -521,13 +520,13 @@
 <span id="_CPPv3N3RDE12InputManager27isGamepadButtonJustReleasedE17ControllerButtonsi"></span><span id="_CPPv2N3RDE12InputManager27isGamepadButtonJustReleasedE17ControllerButtonsi"></span><span id="RDE::InputManager::isGamepadButtonJustReleased__ControllerButtons.i"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a7db337c4d9a1844e957f648058aefed6"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGamepadButtonJustReleased</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11.html#_CPPv4N3RDE17ControllerButtonsE" title="RDE::ControllerButtons"><span class="n"><span class="pre">ControllerButtons</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager27isGamepadButtonJustReleasedE17ControllerButtonsi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true if the button is released and won’t return true until the button is pressed and released again. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_button</strong> – Button released </p></li>
 <li><p><strong>_controllerID</strong> – <a class="reference internal" href="struct_r_d_e_1_1_controller.html#struct_r_d_e_1_1_controller"><span class="std std-ref">Controller</span></a> ID </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -538,13 +537,13 @@
 <span id="_CPPv3N3RDE12InputManager22isGamepadButtonPressedE17ControllerButtonsi"></span><span id="_CPPv2N3RDE12InputManager22isGamepadButtonPressedE17ControllerButtonsi"></span><span id="RDE::InputManager::isGamepadButtonPressed__ControllerButtons.i"></span><span class="target" id="class_r_d_e_1_1_input_manager_1aa4c9dbdecd87178a8c1c48937b5dc64e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGamepadButtonPressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11.html#_CPPv4N3RDE17ControllerButtonsE" title="RDE::ControllerButtons"><span class="n"><span class="pre">ControllerButtons</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager22isGamepadButtonPressedE17ControllerButtonsi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true while the button is being pressed. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_button</strong> – Button pressed </p></li>
 <li><p><strong>_controllerID</strong> – <a class="reference internal" href="struct_r_d_e_1_1_controller.html#struct_r_d_e_1_1_controller"><span class="std std-ref">Controller</span></a> ID </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -555,13 +554,13 @@
 <span id="_CPPv3N3RDE12InputManager23isGamepadButtonReleasedE17ControllerButtonsi"></span><span id="_CPPv2N3RDE12InputManager23isGamepadButtonReleasedE17ControllerButtonsi"></span><span id="RDE::InputManager::isGamepadButtonReleased__ControllerButtons.i"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a7a4c758460d107421340e3b92879bece"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGamepadButtonReleased</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1a2b6a7795115bb4316612130df395aa11.html#_CPPv4N3RDE17ControllerButtonsE" title="RDE::ControllerButtons"><span class="n"><span class="pre">ControllerButtons</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_button</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager23isGamepadButtonReleasedE17ControllerButtonsi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true while the button is not being pressed. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_button</strong> – Button released </p></li>
 <li><p><strong>_controllerID</strong> – <a class="reference internal" href="struct_r_d_e_1_1_controller.html#struct_r_d_e_1_1_controller"><span class="std std-ref">Controller</span></a> ID </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -572,13 +571,13 @@
 <span id="_CPPv3N3RDE12InputManager14gamepadVibrateEiRKNSt6stringE"></span><span id="_CPPv2N3RDE12InputManager14gamepadVibrateEiRKNSt6stringE"></span><span id="RDE::InputManager::gamepadVibrate__i.ssCR"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a64eb9f9c65e2952b36765eb20d2e448c"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gamepadVibrate</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_vibrationEffectName</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;default&quot;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager14gamepadVibrateEiRKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Makes the controller vibrate at a specific vibration effect. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_controllerID</strong> – <a class="reference internal" href="struct_r_d_e_1_1_controller.html#struct_r_d_e_1_1_controller"><span class="std std-ref">Controller</span></a> ID </p></li>
 <li><p><strong>_vibrationEffectName</strong> – Vibration effect </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -589,13 +588,13 @@
 <span id="_CPPv3N3RDE12InputManager24isGamepadAxisJustPressedE14ControllerAxisi"></span><span id="_CPPv2N3RDE12InputManager24isGamepadAxisJustPressedE14ControllerAxisi"></span><span id="RDE::InputManager::isGamepadAxisJustPressed__ControllerAxis.i"></span><span class="target" id="class_r_d_e_1_1_input_manager_1afbe17078026be04576ede4e99ed85492"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGamepadAxisJustPressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1a85a7bdb473e6e958f919166f3fc0529d.html#_CPPv4N3RDE14ControllerAxisE" title="RDE::ControllerAxis"><span class="n"><span class="pre">ControllerAxis</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_axis</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager24isGamepadAxisJustPressedE14ControllerAxisi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true if the axis button is pressed and won’t return true until the axis button is released and pressed again. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_axis</strong> – <a class="reference internal" href="struct_r_d_e_1_1_controller.html#struct_r_d_e_1_1_controller"><span class="std std-ref">Controller</span></a> Axis </p></li>
 <li><p><strong>_controllerID</strong> – <a class="reference internal" href="struct_r_d_e_1_1_controller.html#struct_r_d_e_1_1_controller"><span class="std std-ref">Controller</span></a> ID </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -606,13 +605,13 @@
 <span id="_CPPv3N3RDE12InputManager20isGamepadAxisPressedE14ControllerAxisi"></span><span id="_CPPv2N3RDE12InputManager20isGamepadAxisPressedE14ControllerAxisi"></span><span id="RDE::InputManager::isGamepadAxisPressed__ControllerAxis.i"></span><span class="target" id="class_r_d_e_1_1_input_manager_1ae5205477c272d262a3f46cfabd0e6985"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGamepadAxisPressed</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1a85a7bdb473e6e958f919166f3fc0529d.html#_CPPv4N3RDE14ControllerAxisE" title="RDE::ControllerAxis"><span class="n"><span class="pre">ControllerAxis</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_axis</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager20isGamepadAxisPressedE14ControllerAxisi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true while the axis button is being pressed. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_axis</strong> – <a class="reference internal" href="struct_r_d_e_1_1_controller.html#struct_r_d_e_1_1_controller"><span class="std std-ref">Controller</span></a> Axis </p></li>
 <li><p><strong>_controllerID</strong> – <a class="reference internal" href="struct_r_d_e_1_1_controller.html#struct_r_d_e_1_1_controller"><span class="std std-ref">Controller</span></a> ID </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -623,13 +622,13 @@
 <span id="_CPPv3N3RDE12InputManager21isGamepadAxisReleasedE14ControllerAxisi"></span><span id="_CPPv2N3RDE12InputManager21isGamepadAxisReleasedE14ControllerAxisi"></span><span id="RDE::InputManager::isGamepadAxisReleased__ControllerAxis.i"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a0903888e9c9bb7ac94afb71773a2fbbc"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGamepadAxisReleased</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespace_r_d_e_1a85a7bdb473e6e958f919166f3fc0529d.html#_CPPv4N3RDE14ControllerAxisE" title="RDE::ControllerAxis"><span class="n"><span class="pre">ControllerAxis</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_axis</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_controllerID</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager21isGamepadAxisReleasedE14ControllerAxisi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true while the axis button is not being pressed. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_axis</strong> – <a class="reference internal" href="struct_r_d_e_1_1_controller.html#struct_r_d_e_1_1_controller"><span class="std std-ref">Controller</span></a> axis </p></li>
 <li><p><strong>_controllerID</strong> – <a class="reference internal" href="struct_r_d_e_1_1_controller.html#struct_r_d_e_1_1_controller"><span class="std std-ref">Controller</span></a> ID </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -640,10 +639,10 @@
 <span id="_CPPv3N3RDE12InputManager25isMobileScreenJustPressedEi"></span><span id="_CPPv2N3RDE12InputManager25isMobileScreenJustPressedEi"></span><span id="RDE::InputManager::isMobileScreenJustPressed__i"></span><span class="target" id="class_r_d_e_1_1_input_manager_1af79d4da8ba0c14b9fd1e7720f5581cbc"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMobileScreenJustPressed</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_fingerID</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager25isMobileScreenJustPressedEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true if the screen is pressed and won’t return true until the screen is released and pressed again. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_fingerID</strong> – Finger ID </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -654,10 +653,10 @@
 <span id="_CPPv3N3RDE12InputManager26isMobileScreenJustReleasedEi"></span><span id="_CPPv2N3RDE12InputManager26isMobileScreenJustReleasedEi"></span><span id="RDE::InputManager::isMobileScreenJustReleased__i"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a3a13bdd1ba6b67c011b6df020da328d5"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMobileScreenJustReleased</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_fingerID</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager26isMobileScreenJustReleasedEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true if the screen is released and won’t return true until the button is screen and released again. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_fingerID</strong> – Finger ID </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -668,7 +667,7 @@
 <span id="_CPPv3N3RDE12InputManager21isMobileScreenPressedEi"></span><span id="_CPPv2N3RDE12InputManager21isMobileScreenPressedEi"></span><span id="RDE::InputManager::isMobileScreenPressed__i"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a3f0862a0d386ffab7538b6f9be74c824"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMobileScreenPressed</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_fingerID</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager21isMobileScreenPressedEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true while the screen is being pressed. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_fingerID</strong> – Finger ID &#64;returnbool </p>
 </dd>
 </dl>
@@ -679,10 +678,10 @@
 <span id="_CPPv3N3RDE12InputManager21isMobileScreenReleaseEi"></span><span id="_CPPv2N3RDE12InputManager21isMobileScreenReleaseEi"></span><span id="RDE::InputManager::isMobileScreenRelease__i"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a9af54f92b148548e116351cf6bb8b26e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMobileScreenRelease</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_fingerID</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager21isMobileScreenReleaseEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns true while the screen is not being pressed. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_fingerID</strong> – Finger ID </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -693,10 +692,10 @@
 <span id="_CPPv3N3RDE12InputManager16getEventsIgnoredERK9InputType"></span><span id="_CPPv2N3RDE12InputManager16getEventsIgnoredERK9InputType"></span><span id="RDE::InputManager::getEventsIgnored__InputTypeCR"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a9843994fc09ce4c3e06a06638bd0d413"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="enum_namespace_r_d_e_1aba599888c87f5bf9b6052d710bc6923f.html#_CPPv4N3RDE15SystemEventEnumE" title="RDE::SystemEventEnum"><span class="n"><span class="pre">SystemEventEnum</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getEventsIgnored</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1a7366e3aaf50893b069748c2821751d2e.html#_CPPv4N3RDE9InputTypeE" title="RDE::InputType"><span class="n"><span class="pre">InputType</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_inputType</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager16getEventsIgnoredERK9InputType" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the list of ignored events for a platform. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_inputType</strong> – Type of input. </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>std::vector&lt;SystemEventEnum&gt; </p>
 </dd>
 </dl>
@@ -707,7 +706,7 @@
 <span id="_CPPv3N3RDE12InputManager16addEventToIgnoreERK9InputTypeRK15SystemEventEnum"></span><span id="_CPPv2N3RDE12InputManager16addEventToIgnoreERK9InputTypeRK15SystemEventEnum"></span><span id="RDE::InputManager::addEventToIgnore__InputTypeCR.SystemEventEnumCR"></span><span class="target" id="class_r_d_e_1_1_input_manager_1aa248f40a4580eb333f9a9768535b638c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addEventToIgnore</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1a7366e3aaf50893b069748c2821751d2e.html#_CPPv4N3RDE9InputTypeE" title="RDE::InputType"><span class="n"><span class="pre">InputType</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_inputType</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1aba599888c87f5bf9b6052d710bc6923f.html#_CPPv4N3RDE15SystemEventEnumE" title="RDE::SystemEventEnum"><span class="n"><span class="pre">SystemEventEnum</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_event</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager16addEventToIgnoreERK9InputTypeRK15SystemEventEnum" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Adds an event as ignored. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_inputType</strong> – <a class="reference internal" href="class_r_d_e_1_1_input.html#class_r_d_e_1_1_input"><span class="std std-ref">Input</span></a> type </p></li>
 <li><p><strong>_event</strong> – <a class="reference internal" href="class_r_d_e_1_1_event.html#class_r_d_e_1_1_event"><span class="std std-ref">Event</span></a> type </p></li>
@@ -721,7 +720,7 @@
 <span id="_CPPv3N3RDE12InputManager19removeEventToIgnoreERK9InputTypeRK15SystemEventEnum"></span><span id="_CPPv2N3RDE12InputManager19removeEventToIgnoreERK9InputTypeRK15SystemEventEnum"></span><span id="RDE::InputManager::removeEventToIgnore__InputTypeCR.SystemEventEnumCR"></span><span class="target" id="class_r_d_e_1_1_input_manager_1a576f44a427ec39346ebc348350cd78d4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeEventToIgnore</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1a7366e3aaf50893b069748c2821751d2e.html#_CPPv4N3RDE9InputTypeE" title="RDE::InputType"><span class="n"><span class="pre">InputType</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_inputType</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1aba599888c87f5bf9b6052d710bc6923f.html#_CPPv4N3RDE15SystemEventEnumE" title="RDE::SystemEventEnum"><span class="n"><span class="pre">SystemEventEnum</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_event</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12InputManager19removeEventToIgnoreERK9InputTypeRK15SystemEventEnum" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Removes and event as ignored. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_inputType</strong> – <a class="reference internal" href="class_r_d_e_1_1_input.html#class_r_d_e_1_1_input"><span class="std std-ref">Input</span></a> type </p></li>
 <li><p><strong>_event</strong> – <a class="reference internal" href="class_r_d_e_1_1_event.html#class_r_d_e_1_1_event"><span class="std std-ref">Event</span></a> type </p></li>

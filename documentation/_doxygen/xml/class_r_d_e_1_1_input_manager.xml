@@ -774,7 +774,7 @@
         <name>isGamepadAxisJustPressed</name>
         <qualifiedname>RDE::InputManager::isGamepadAxisJustPressed</qualifiedname>
         <param>
-          <type>ControllerAxis</type>
+          <type><ref refid="namespace_r_d_e_1a85a7bdb473e6e958f919166f3fc0529d" kindref="member">ControllerAxis</ref></type>
           <declname>_axis</declname>
         </param>
         <param>
@@ -818,7 +818,7 @@
         <name>isGamepadAxisPressed</name>
         <qualifiedname>RDE::InputManager::isGamepadAxisPressed</qualifiedname>
         <param>
-          <type>ControllerAxis</type>
+          <type><ref refid="namespace_r_d_e_1a85a7bdb473e6e958f919166f3fc0529d" kindref="member">ControllerAxis</ref></type>
           <declname>_axis</declname>
         </param>
         <param>
@@ -862,7 +862,7 @@
         <name>isGamepadAxisReleased</name>
         <qualifiedname>RDE::InputManager::isGamepadAxisReleased</qualifiedname>
         <param>
-          <type>ControllerAxis</type>
+          <type><ref refid="namespace_r_d_e_1a85a7bdb473e6e958f919166f3fc0529d" kindref="member">ControllerAxis</ref></type>
           <declname>_axis</declname>
         </param>
         <param>

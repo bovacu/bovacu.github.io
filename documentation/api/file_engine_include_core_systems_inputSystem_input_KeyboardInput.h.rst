@@ -30,9 +30,9 @@ Includes
 --------
 
 
-- ``Input.h`` (:ref:`file_engine_include_core_systems_inputSystem_input_ControllerInput.h`)
+- ``core/platform/PlatformHeaderSDL.h`` (:ref:`file_engine_include_core_platform_PlatformHeaderSDL.h`)
 
-- ``SDL_events.h``
+- ``core/systems/inputSystem/input/Input.h`` (:ref:`file_engine_include_core_systems_inputSystem_input_Input.h`)
 
 - ``core/systems/inputSystem/keysAndButtons/KeyboardKeys.h`` (:ref:`file_engine_include_core_systems_inputSystem_keysAndButtons_KeyboardKeys.h`)
 

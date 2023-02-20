@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class Graph &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,12 +275,12 @@
            <div itemprop="articleBody">
              
   <section id="class-graph">
-<span id="exhale-class-class-r-d-e-1-1-graph"></span><h1>Class Graph<a class="headerlink" href="#class-graph" title="Permalink to this heading"></a></h1>
+<span id="exhale-class-class-r-d-e-1-1-graph"></span><h1>Class Graph<a class="headerlink" href="#class-graph" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_graph_Graph.h.html#file-engine-include-core-graph-graph-h"><span class="std std-ref">File Graph.h</span></a></p></li>
 </ul>
 <section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE5GraphE">
 <span id="_CPPv3N3RDE5GraphE"></span><span id="_CPPv2N3RDE5GraphE"></span><span id="RDE::Graph"></span><span class="target" id="class_r_d_e_1_1_graph"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Graph</span></span></span><a class="headerlink" href="#_CPPv4N3RDE5GraphE" title="Permalink to this definition"></a><br /></dt>
@@ -302,7 +301,7 @@
 <span id="_CPPv3N3RDE5Graph10createNodeERKNSt6stringEP4Node"></span><span id="_CPPv2N3RDE5Graph10createNodeERKNSt6stringEP4Node"></span><span id="RDE::Graph::createNode__ssCR.NodeP"></span><span class="target" id="class_r_d_e_1_1_graph_1a295b232ac336712a22e9957de67eb074"></span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">createNode</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_tag</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_parent</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph10createNodeERKNSt6stringEP4Node" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function creates and adds a new <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> to the world. It is really recommended to add a tag value, as there is a way to retrieve a <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> by it’s tag name. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_tag</strong> – the name to reference if the ID is not provided. </p></li>
 <li><p><strong>_parent</strong> – the NodeID of the <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> we want to be the parent of the creating <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a>. </p></li>
@@ -316,10 +315,10 @@
 <span id="_CPPv3N3RDE5Graph17instantiatePrefabEP4NodeRK5Vec2FP4Node"></span><span id="_CPPv2N3RDE5Graph17instantiatePrefabEP4NodeRK5Vec2FP4Node"></span><span id="RDE::Graph::instantiatePrefab__NodeP.Vec2FCR.NodeP"></span><span class="target" id="class_r_d_e_1_1_graph_1a91732f6740e242affffdf86bfd093733"></span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">instantiatePrefab</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_prefab</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_position</span></span>, <a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_parent</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph17instantiatePrefabEP4NodeRK5Vec2FP4Node" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Creates an independent copy of a loaded prefab. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_prefab</strong> – Prefab NodeID </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>NodeID </p>
 </dd>
 </dl>
@@ -330,7 +329,7 @@
 <span id="_CPPv3N3RDE5Graph10removeNodeEP4Node"></span><span id="_CPPv2N3RDE5Graph10removeNodeEP4Node"></span><span id="RDE::Graph::removeNode__NodeP"></span><span class="target" id="class_r_d_e_1_1_graph_1a47cc4f110838ba04f1c89e79bad204ea"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeNode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_node</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph10removeNodeEP4Node" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Removes a node and all of it’s children. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_node</strong> – Id of the node to remove </p>
 </dd>
 </dl>
@@ -341,7 +340,7 @@
 <span id="_CPPv3N3RDE5Graph10removeNodeERKNSt6stringE"></span><span id="_CPPv2N3RDE5Graph10removeNodeERKNSt6stringE"></span><span id="RDE::Graph::removeNode__ssCR"></span><span class="target" id="class_r_d_e_1_1_graph_1a2b699efbe8cf0359f60601c38b3dca7d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeNode</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_nodeTagName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph10removeNodeERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Removes a node and all of it’s children. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_nodeTagName</strong> – Name of the node to remove </p>
 </dd>
 </dl>
@@ -352,7 +351,7 @@
 <span id="_CPPv3N3RDE5Graph6orphanEP4Node"></span><span id="_CPPv2N3RDE5Graph6orphanEP4Node"></span><span id="RDE::Graph::orphan__NodeP"></span><span class="target" id="class_r_d_e_1_1_graph_1a593a3ffb242b39d742e850b74985309a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">orphan</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_node</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph6orphanEP4Node" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Makes the <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> to loose it’s parent and to be reassigned to the root <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a>. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_node</strong> – Id of the node to orphan </p>
 </dd>
 </dl>
@@ -363,7 +362,7 @@
 <span id="_CPPv3N3RDE5Graph6orphanERKNSt6stringE"></span><span id="_CPPv2N3RDE5Graph6orphanERKNSt6stringE"></span><span id="RDE::Graph::orphan__ssCR"></span><span class="target" id="class_r_d_e_1_1_graph_1abf92b9bd9ee1139ef1fcc9b1415a9db1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">orphan</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_nodeTagName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph6orphanERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Makes the <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> to loose it’s parent and to be reassigned to the root <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a>. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_nodeTagName</strong> – Name of the node to orphan </p>
 </dd>
 </dl>
@@ -374,10 +373,10 @@
 <span id="_CPPv3N3RDE5Graph7getNodeERKNSt6stringE"></span><span id="_CPPv2N3RDE5Graph7getNodeERKNSt6stringE"></span><span id="RDE::Graph::getNode__ssCR"></span><span class="target" id="class_r_d_e_1_1_graph_1aa367f552cb81053588e04179773c8592"></span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getNode</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_tagName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph7getNodeERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the Node* by it’s tag name. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_tagName</strong> – Name of the node </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Node* </p>
 </dd>
 </dl>
@@ -388,10 +387,10 @@
 <span id="_CPPv3N3RDE5Graph7getNodeERK6NodeID"></span><span id="_CPPv2N3RDE5Graph7getNodeERK6NodeID"></span><span id="RDE::Graph::getNode__NodeIDCR"></span><span class="target" id="class_r_d_e_1_1_graph_1ac58aab90bbcb9058d488a2cdcab0c616"></span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getNode</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef__components_8h_1a52def656a21c22f8e6592a9f04842b84.html#_CPPv4N3RDE6NodeIDE" title="RDE::NodeID"><span class="n"><span class="pre">NodeID</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_nodeID</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph7getNodeERK6NodeID" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the Node* by it’s NodeID. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_nodeID</strong> – Name of the node </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Node* </p>
 </dd>
 </dl>
@@ -402,7 +401,7 @@
 <span id="_CPPv3N3RDE5Graph9setParentEP4NodeP4Node"></span><span id="_CPPv2N3RDE5Graph9setParentEP4NodeP4Node"></span><span id="RDE::Graph::setParent__NodeP.NodeP"></span><span class="target" id="class_r_d_e_1_1_graph_1aed0df137164763b602fdafbf01615de9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setParent</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_node</span></span>, <a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_parent</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph9setParentEP4NodeP4Node" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Changes the parent of the <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> to another one. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_node</strong> – Id of the child </p></li>
 <li><p><strong>_parent</strong> – Id of the parent </p></li>
@@ -416,7 +415,7 @@
 <span id="_CPPv3N3RDE5Graph8toStringEv"></span><span id="_CPPv2N3RDE5Graph8toStringEv"></span><span id="RDE::Graph::toString"></span><span class="target" id="class_r_d_e_1_1_graph_1aa7a328baedb2d8369cde0c870d322339"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">toString</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph8toStringEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function returns the graph tree as a string. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>std::string </p>
 </dd>
 </dl>
@@ -427,7 +426,7 @@
 <span id="_CPPv3N3RDE5Graph7getRootEv"></span><span id="_CPPv2N3RDE5Graph7getRootEv"></span><span id="RDE::Graph::getRoot"></span><span class="target" id="class_r_d_e_1_1_graph_1a7d59f60c2a597a199d667e49bd475f04"></span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getRoot</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph7getRootEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the Id of the root. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>NodeID </p>
 </dd>
 </dl>
@@ -438,7 +437,7 @@
 <span id="_CPPv3N3RDE5Graph13setNodeActiveEP4Nodeb"></span><span id="_CPPv2N3RDE5Graph13setNodeActiveEP4Nodeb"></span><span id="RDE::Graph::setNodeActive__NodeP.b"></span><span class="target" id="class_r_d_e_1_1_graph_1ae774eaaacb7e1a71f18432cf12b9f318"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setNodeActive</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_node</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_active</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph13setNodeActiveEP4Nodeb" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Enables or disables a node. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_node</strong> – <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> to be enabled or disabled. </p></li>
 <li><p><strong>_active</strong> – If is enabled or disabled. </p></li>
@@ -452,10 +451,10 @@
 <span id="_CPPv3N3RDE5Graph12isNodeActiveEP4Node"></span><span id="_CPPv2N3RDE5Graph12isNodeActiveEP4Node"></span><span id="RDE::Graph::isNodeActive__NodeP"></span><span class="target" id="class_r_d_e_1_1_graph_1ae5659a0ac5a26f2b6ff0b60b05510628"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isNodeActive</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_node</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph12isNodeActiveEP4Node" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns if the node is active or not. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_node</strong> – <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> to check if is active. </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool </p>
 </dd>
 </dl>
@@ -466,10 +465,10 @@
 <span id="_CPPv3IDpEN3RDE5Graph5queryEv"></span><span id="_CPPv2IDpEN3RDE5Graph5queryEv"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="sig-name descname"><span class="n"><span class="pre">Archetype</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="class_r_d_e_1_1_graph_1a09c70fd381ba7eddd7b6b8c2da0cb1f5"></span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">query</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4IDpEN3RDE5Graph5queryEDav" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This is used to create the custom ECS work flow, more information on <a class="reference internal" href="class_r_d_e_1_1_e_c_s_manager.html#class_r_d_e_1_1_e_c_s_manager"><span class="std std-ref">ECSManager</span></a>. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Template Parameters</dt>
 <dd class="field-odd"><p><strong>Archetype</strong> – The Components that the query must look for </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>A entt query </p>
 </dd>
 </dl>
@@ -480,7 +479,7 @@
 <span id="_CPPv3N3RDE5Graph16getNodeContainerEv"></span><span id="_CPPv2N3RDE5Graph16getNodeContainerEv"></span><span id="RDE::Graph::getNodeContainer"></span><span class="target" id="class_r_d_e_1_1_graph_1ad84b5d632c35c6178951a03d64886845"></span><a class="reference internal" href="typedef_namespace_r_d_e_1a0cbac4494e3402fa73c3957541eaefe8.html#_CPPv4N3RDE13NodeContainerE" title="RDE::NodeContainer"><span class="n"><span class="pre">NodeContainer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getNodeContainer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph16getNodeContainerEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the registry of EnTT that contains the Nodes. This is almost 100% sure NOT needed by end users. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>NodeContainer </p>
 </dd>
 </dl>

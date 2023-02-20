@@ -523,7 +523,7 @@
         </childnode>
       </node>
       <node id="38">
-        <label>Input.h</label>
+        <label>core/systems/inputSystem/input/Input.h</label>
         <link refid="_input_8h_source"/>
         <childnode refid="16" relation="include">
         </childnode>
@@ -789,7 +789,7 @@
         </childnode>
       </node>
       <node id="17">
-        <label>SDL.h</label>
+        <label>SDL2/SDL.h</label>
       </node>
       <node id="33">
         <label>SDL2/SDL_image.h</label>

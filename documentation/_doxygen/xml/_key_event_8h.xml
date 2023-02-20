@@ -60,7 +60,7 @@
         </childnode>
       </node>
       <node id="15">
-        <label>SDL.h</label>
+        <label>SDL2/SDL.h</label>
       </node>
       <node id="12">
         <label>cstdint</label>

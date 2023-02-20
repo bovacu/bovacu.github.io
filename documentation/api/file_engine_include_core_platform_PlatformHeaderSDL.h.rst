@@ -30,7 +30,7 @@ Includes
 --------
 
 
-- ``SDL.h`` (:ref:`file_engine_include_core_platform_PlatformHeaderSDL.h`)
+- ``SDL2/SDL.h``
 
 - ``core/Core.h`` (:ref:`file_engine_include_core_Core.h`)
 
@@ -45,6 +45,8 @@ Included By
 - :ref:`file_engine_include_core_systems_fileSystem_FileManager.h`
 
 - :ref:`file_engine_include_core_systems_inputSystem_input_Input.h`
+
+- :ref:`file_engine_include_core_systems_inputSystem_input_KeyboardInput.h`
 
 - :ref:`file_engine_include_core_systems_inputSystem_keysAndButtons_ControllerButtons.h`
 

@@ -66,7 +66,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para></para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -95,7 +95,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -124,7 +124,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -153,7 +153,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -182,7 +182,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -211,7 +211,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -240,7 +240,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -298,7 +298,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -327,7 +327,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -356,7 +356,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -385,7 +385,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -414,7 +414,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -443,7 +443,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -472,7 +472,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -501,7 +501,7 @@
 <parametername>_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="class_r_d_e_1_1_event" kindref="compound">Event</ref> </para>
+<para>SDL_event captured by SDL. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>

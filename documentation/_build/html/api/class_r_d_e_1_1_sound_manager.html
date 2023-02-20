@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class SoundManager &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,12 +275,12 @@
            <div itemprop="articleBody">
              
   <section id="class-soundmanager">
-<span id="exhale-class-class-r-d-e-1-1-sound-manager"></span><h1>Class SoundManager<a class="headerlink" href="#class-soundmanager" title="Permalink to this heading"></a></h1>
+<span id="exhale-class-class-r-d-e-1-1-sound-manager"></span><h1>Class SoundManager<a class="headerlink" href="#class-soundmanager" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_systems_soundSystem_SoundManager.h.html#file-engine-include-core-systems-soundsystem-soundmanager-h"><span class="std std-ref">File SoundManager.h</span></a></p></li>
 </ul>
 <section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE12SoundManagerE">
 <span id="_CPPv3N3RDE12SoundManagerE"></span><span id="_CPPv2N3RDE12SoundManagerE"></span><span id="RDE::SoundManager"></span><span class="target" id="class_r_d_e_1_1_sound_manager"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SoundManager</span></span></span><a class="headerlink" href="#_CPPv4N3RDE12SoundManagerE" title="Permalink to this definition"></a><br /></dt>
@@ -330,10 +329,10 @@
 <span id="_CPPv3N3RDE12SoundManager9loadMusicERKNSt6stringE"></span><span id="_CPPv2N3RDE12SoundManager9loadMusicERKNSt6stringE"></span><span id="RDE::SoundManager::loadMusic__ssCR"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1a08da14720a4ec8d095b84c908a548233"></span><a class="reference internal" href="struct_r_d_e_1_1_music.html#_CPPv4N3RDE5MusicE" title="RDE::Music"><span class="n"><span class="pre">Music</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">loadMusic</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_musicPath</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager9loadMusicERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Loads a background music. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_musicPath</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> path </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p><a class="reference internal" href="struct_r_d_e_1_1_music.html#struct_r_d_e_1_1_music"><span class="std std-ref">Music</span></a>&amp; </p>
 </dd>
 </dl>
@@ -344,10 +343,10 @@
 <span id="_CPPv3N3RDE12SoundManager7loadSfxERKNSt6stringE"></span><span id="_CPPv2N3RDE12SoundManager7loadSfxERKNSt6stringE"></span><span id="RDE::SoundManager::loadSfx__ssCR"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1ac782a9ae7b702a4e67151497dc2197d2"></span><a class="reference internal" href="struct_r_d_e_1_1_sfx.html#_CPPv4N3RDE3SfxE" title="RDE::Sfx"><span class="n"><span class="pre">Sfx</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">loadSfx</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_sfxPath</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager7loadSfxERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Loads a sound effect. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_sfxPath</strong> – <a class="reference internal" href="struct_r_d_e_1_1_file.html#struct_r_d_e_1_1_file"><span class="std std-ref">File</span></a> path </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p><a class="reference internal" href="struct_r_d_e_1_1_sfx.html#struct_r_d_e_1_1_sfx"><span class="std std-ref">Sfx</span></a>&amp; </p>
 </dd>
 </dl>
@@ -358,7 +357,7 @@
 <span id="_CPPv3N3RDE12SoundManager11unloadMusicERKNSt6stringE"></span><span id="_CPPv2N3RDE12SoundManager11unloadMusicERKNSt6stringE"></span><span id="RDE::SoundManager::unloadMusic__ssCR"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1ad68da5c9d873fcf187645b98a225ea79"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">unloadMusic</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_musicName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager11unloadMusicERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Unloads a background music. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_musicName</strong> – <a class="reference internal" href="struct_r_d_e_1_1_music.html#struct_r_d_e_1_1_music"><span class="std std-ref">Music</span></a> name </p>
 </dd>
 </dl>
@@ -369,7 +368,7 @@
 <span id="_CPPv3N3RDE12SoundManager9unloadSfxERKNSt6stringE"></span><span id="_CPPv2N3RDE12SoundManager9unloadSfxERKNSt6stringE"></span><span id="RDE::SoundManager::unloadSfx__ssCR"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1a24c5de573cd3e9bd67398221664e064c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">unloadSfx</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_sfxName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager9unloadSfxERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Unloads a sound effect. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_sfxName</strong> – <a class="reference internal" href="struct_r_d_e_1_1_sound.html#struct_r_d_e_1_1_sound"><span class="std std-ref">Sound</span></a> effect name </p>
 </dd>
 </dl>
@@ -380,10 +379,10 @@
 <span id="_CPPv3N3RDE12SoundManager8getMusicERKNSt6stringE"></span><span id="_CPPv2N3RDE12SoundManager8getMusicERKNSt6stringE"></span><span id="RDE::SoundManager::getMusic__ssCR"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1ac26c408aae9b40f343d81ee46fffc466"></span><a class="reference internal" href="struct_r_d_e_1_1_music.html#_CPPv4N3RDE5MusicE" title="RDE::Music"><span class="n"><span class="pre">Music</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getMusic</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_musicName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager8getMusicERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Gets a background music. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_musicName</strong> – <a class="reference internal" href="struct_r_d_e_1_1_music.html#struct_r_d_e_1_1_music"><span class="std std-ref">Music</span></a> name </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p><a class="reference internal" href="struct_r_d_e_1_1_music.html#struct_r_d_e_1_1_music"><span class="std std-ref">Music</span></a>&amp; </p>
 </dd>
 </dl>
@@ -394,10 +393,10 @@
 <span id="_CPPv3N3RDE12SoundManager6getSfxERKNSt6stringE"></span><span id="_CPPv2N3RDE12SoundManager6getSfxERKNSt6stringE"></span><span id="RDE::SoundManager::getSfx__ssCR"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1a9afc3fcc875366b8e06f1f7d14efd4cb"></span><a class="reference internal" href="struct_r_d_e_1_1_sfx.html#_CPPv4N3RDE3SfxE" title="RDE::Sfx"><span class="n"><span class="pre">Sfx</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getSfx</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_sfxName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager6getSfxERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Gets a sound effect. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_sfxName</strong> – <a class="reference internal" href="struct_r_d_e_1_1_sound.html#struct_r_d_e_1_1_sound"><span class="std std-ref">Sound</span></a> effect name </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p><a class="reference internal" href="struct_r_d_e_1_1_sfx.html#struct_r_d_e_1_1_sfx"><span class="std std-ref">Sfx</span></a>&amp; </p>
 </dd>
 </dl>
@@ -408,7 +407,7 @@
 <span id="_CPPv3N3RDE12SoundManager9playMusicERKNSt6stringE"></span><span id="_CPPv2N3RDE12SoundManager9playMusicERKNSt6stringE"></span><span id="RDE::SoundManager::playMusic__ssCR"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1ad7d50c74b9da69b5e9bb41bc2d6f7dec"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">playMusic</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_musicName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager9playMusicERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Plays a background music, only one can be played at a time. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_musicName</strong> – <a class="reference internal" href="struct_r_d_e_1_1_music.html#struct_r_d_e_1_1_music"><span class="std std-ref">Music</span></a> name </p>
 </dd>
 </dl>
@@ -419,7 +418,7 @@
 <span id="_CPPv3N3RDE12SoundManager7playSfxERKNSt6stringE"></span><span id="_CPPv2N3RDE12SoundManager7playSfxERKNSt6stringE"></span><span id="RDE::SoundManager::playSfx__ssCR"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1ac1d0049c49686451c187b55fcac63802"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">playSfx</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_sfxName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager7playSfxERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Plays a sound effect, multiple sounds effects can be played at a time. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_sfxName</strong> – <a class="reference internal" href="struct_r_d_e_1_1_sound.html#struct_r_d_e_1_1_sound"><span class="std std-ref">Sound</span></a> effect name. </p>
 </dd>
 </dl>
@@ -430,7 +429,7 @@
 <span id="_CPPv3N3RDE12SoundManager10pauseMusicERKNSt6stringE"></span><span id="_CPPv2N3RDE12SoundManager10pauseMusicERKNSt6stringE"></span><span id="RDE::SoundManager::pauseMusic__ssCR"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1a9ab5bfa46f56d5975b17806ba830c2ce"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pauseMusic</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_musicName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager10pauseMusicERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Pauses a background music. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_musicName</strong> – <a class="reference internal" href="struct_r_d_e_1_1_music.html#struct_r_d_e_1_1_music"><span class="std std-ref">Music</span></a> name </p>
 </dd>
 </dl>
@@ -441,7 +440,7 @@
 <span id="_CPPv3N3RDE12SoundManager8pauseSfxERKNSt6stringE"></span><span id="_CPPv2N3RDE12SoundManager8pauseSfxERKNSt6stringE"></span><span id="RDE::SoundManager::pauseSfx__ssCR"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1aa9528468c5e03ff9f496ae1674729481"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pauseSfx</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_sfxName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager8pauseSfxERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Pauses a sound effect. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_sfxName</strong> – <a class="reference internal" href="struct_r_d_e_1_1_sound.html#struct_r_d_e_1_1_sound"><span class="std std-ref">Sound</span></a> effect name </p>
 </dd>
 </dl>
@@ -452,7 +451,7 @@
 <span id="_CPPv3N3RDE12SoundManager11resumeMusicERKNSt6stringE"></span><span id="_CPPv2N3RDE12SoundManager11resumeMusicERKNSt6stringE"></span><span id="RDE::SoundManager::resumeMusic__ssCR"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1aa300c4e95575d76cbaaf8d0bb415ea0e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">resumeMusic</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_musicName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager11resumeMusicERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Continues a paused background music. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_musicName</strong> – <a class="reference internal" href="struct_r_d_e_1_1_music.html#struct_r_d_e_1_1_music"><span class="std std-ref">Music</span></a> name </p>
 </dd>
 </dl>
@@ -463,7 +462,7 @@
 <span id="_CPPv3N3RDE12SoundManager9resumeSfxERKNSt6stringE"></span><span id="_CPPv2N3RDE12SoundManager9resumeSfxERKNSt6stringE"></span><span id="RDE::SoundManager::resumeSfx__ssCR"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1a31e765a004877f13a09aa0280ea9aea2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">resumeSfx</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_sfxName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager9resumeSfxERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Continues a paused sound effect. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_sfxName</strong> – <a class="reference internal" href="struct_r_d_e_1_1_sound.html#struct_r_d_e_1_1_sound"><span class="std std-ref">Sound</span></a> effect name </p>
 </dd>
 </dl>
@@ -474,7 +473,7 @@
 <span id="_CPPv3N3RDE12SoundManager9stopMusicERKNSt6stringE"></span><span id="_CPPv2N3RDE12SoundManager9stopMusicERKNSt6stringE"></span><span id="RDE::SoundManager::stopMusic__ssCR"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1a88e238b7f0004568a57cdabc3a4b8bb4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stopMusic</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_musicName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager9stopMusicERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Stops and sets to its beginning a background music. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_musicName</strong> – <a class="reference internal" href="struct_r_d_e_1_1_music.html#struct_r_d_e_1_1_music"><span class="std std-ref">Music</span></a> name </p>
 </dd>
 </dl>
@@ -485,7 +484,7 @@
 <span id="_CPPv3N3RDE12SoundManager7stopSfxERKNSt6stringE"></span><span id="_CPPv2N3RDE12SoundManager7stopSfxERKNSt6stringE"></span><span id="RDE::SoundManager::stopSfx__ssCR"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1acb76269ed0760ba15c4842fa0ffd88ba"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stopSfx</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_sfxName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager7stopSfxERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Stops and sets to its beginning a sound effect. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_sfxName</strong> – <a class="reference internal" href="struct_r_d_e_1_1_sound.html#struct_r_d_e_1_1_sound"><span class="std std-ref">Sound</span></a> effect name </p>
 </dd>
 </dl>
@@ -496,7 +495,7 @@
 <span id="_CPPv3N3RDE12SoundManager14setMusicVolumeEi"></span><span id="_CPPv2N3RDE12SoundManager14setMusicVolumeEi"></span><span id="RDE::SoundManager::setMusicVolume__i"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1a3bac932b9f4e103fe1e972b5474da501"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setMusicVolume</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_volume</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager14setMusicVolumeEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Sets the volume of a background music. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_volume</strong> – Volume value </p>
 </dd>
 </dl>
@@ -507,7 +506,7 @@
 <span id="_CPPv3N3RDE12SoundManager12setSfxVolumeEi"></span><span id="_CPPv2N3RDE12SoundManager12setSfxVolumeEi"></span><span id="RDE::SoundManager::setSfxVolume__i"></span><span class="target" id="class_r_d_e_1_1_sound_manager_1a3f429ea9093c21e8e20a0ecd1d31952d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setSfxVolume</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_volume</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE12SoundManager12setSfxVolumeEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Sets the volume of a sound effect. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_volume</strong> – Volume value </p>
 </dd>
 </dl>

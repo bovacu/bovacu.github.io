@@ -339,7 +339,7 @@
         <name>getAxisValue</name>
         <qualifiedname>RDE::ControllerInput::getAxisValue</qualifiedname>
         <param>
-          <type>const ControllerAxis &amp;</type>
+          <type>const <ref refid="namespace_r_d_e_1a85a7bdb473e6e958f919166f3fc0529d" kindref="member">ControllerAxis</ref> &amp;</type>
           <declname>_axis</declname>
         </param>
         <param>

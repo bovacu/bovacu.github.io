@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class Engine &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,12 +275,12 @@
            <div itemprop="articleBody">
              
   <section id="class-engine">
-<span id="exhale-class-class-r-d-e-1-1-engine"></span><h1>Class Engine<a class="headerlink" href="#class-engine" title="Permalink to this heading"></a></h1>
+<span id="exhale-class-class-r-d-e-1-1-engine"></span><h1>Class Engine<a class="headerlink" href="#class-engine" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_Engine.h.html#file-engine-include-core-engine-h"><span class="std std-ref">File Engine.h</span></a></p></li>
 </ul>
 <section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE6EngineE">
 <span id="_CPPv3N3RDE6EngineE"></span><span id="_CPPv2N3RDE6EngineE"></span><span id="RDE::Engine"></span><span class="target" id="class_r_d_e_1_1_engine"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Engine</span></span></span><a class="headerlink" href="#_CPPv4N3RDE6EngineE" title="Permalink to this definition"></a><br /></dt>
@@ -297,7 +296,7 @@
 <span id="_CPPv3NK3RDE6Engine6getFpsEv"></span><span id="_CPPv2NK3RDE6Engine6getFpsEv"></span><span id="RDE::Engine::getFpsC"></span><span class="target" id="class_r_d_e_1_1_engine_1afe3f132024b3e5da6b4062058e7a6e80"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getFps</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Engine6getFpsEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This method provides the number of FPS in any given moment. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the number of FPS </p>
 </dd>
 </dl>
@@ -308,7 +307,7 @@
 <span id="_CPPv3NK3RDE6Engine12geFixedDeltaEv"></span><span id="_CPPv2NK3RDE6Engine12geFixedDeltaEv"></span><span id="RDE::Engine::geFixedDeltaC"></span><span class="target" id="class_r_d_e_1_1_engine_1a7545d98469bc2847d7387bbd59de64be"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">geFixedDelta</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE6Engine12geFixedDeltaEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the delta used in the FixedUpdate method. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The FPS as milliseconds. </p>
 </dd>
 </dl>
@@ -330,7 +329,7 @@
 </div>
 </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_scene</strong> – Main scene </p>
 </dd>
 </dl>
@@ -352,7 +351,7 @@
 </div>
 </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>The</strong> – <a class="reference internal" href="class_r_d_e_1_1_event.html#class_r_d_e_1_1_event"><span class="std std-ref">Event</span></a> to be handled </p>
 </dd>
 </dl>
@@ -363,7 +362,7 @@
 <span id="_CPPv3N3RDE6Engine8onUpdateE5Delta"></span><span id="_CPPv2N3RDE6Engine8onUpdateE5Delta"></span><span id="RDE::Engine::onUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_engine_1aa673be7b927fd9dafee85dd1e37064a9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Engine8onUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This method handles the non-physics based updates of the game and also is used to capture all the inputs. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_dt</strong> – The amount of time passed from the previous frame to this current one. </p>
 </dd>
 </dl>
@@ -374,7 +373,7 @@
 <span id="_CPPv3N3RDE6Engine13onFixedUpdateE5Delta"></span><span id="_CPPv2N3RDE6Engine13onFixedUpdateE5Delta"></span><span id="RDE::Engine::onFixedUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_engine_1a6af36b9cd4abdcc55b9e80106c9fa406"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onFixedUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_fixedDt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Engine13onFixedUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This method is like onUpdate, but this one handles the physics-based updates. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_fixedDt</strong> – Fixed value to multiply the physics movements, by default 1 / 60. </p>
 </dd>
 </dl>
@@ -385,7 +384,7 @@
 <span id="_CPPv3N3RDE6Engine12onLateUpdateE5Delta"></span><span id="_CPPv2N3RDE6Engine12onLateUpdateE5Delta"></span><span id="RDE::Engine::onLateUpdate__Delta"></span><span class="target" id="class_r_d_e_1_1_engine_1a1dbcefc1e49f66322204c8281a638446"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onLateUpdate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Engine12onLateUpdateE5Delta" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This method is called once onUpdate and onFixedUpdate are finished, but before onRender. This is the perfect place to remove elements from collections used in onUpdate or onFixedUpdate. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_dt</strong> – The amount of time passed from the previous frame to this current one. </p>
 </dd>
 </dl>
@@ -396,7 +395,7 @@
 <span id="_CPPv3N3RDE6Engine8onRenderE5Delta"></span><span id="_CPPv2N3RDE6Engine8onRenderE5Delta"></span><span id="RDE::Engine::onRender__Delta"></span><span class="target" id="class_r_d_e_1_1_engine_1ae11cd40f884e38168360763eb4e5602b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onRender</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_delta.html#_CPPv4N3RDE5DeltaE" title="RDE::Delta"><span class="n"><span class="pre">Delta</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Engine8onRenderE5Delta" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This method is used to render everything in our game, renderization shouldn’t be done other method. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_dt</strong> – The amount of time passed from the previous frame to this current one. </p>
 </dd>
 </dl>
@@ -413,7 +412,7 @@
 <span id="_CPPv3N3RDE6Engine9getWindowEv"></span><span id="_CPPv2N3RDE6Engine9getWindowEv"></span><span id="RDE::Engine::getWindow"></span><span class="target" id="class_r_d_e_1_1_engine_1a30a4d2764f220e9b0333530fb8f6986c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="class_r_d_e_1_1_window.html#_CPPv4N3RDE6WindowE" title="RDE::Window"><span class="n"><span class="pre">Window</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getWindow</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Engine9getWindowEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the <a class="reference internal" href="class_r_d_e_1_1_window.html#class_r_d_e_1_1_window"><span class="std std-ref">Window</span></a> instance. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The main window. </p>
 </dd>
 </dl>
@@ -424,7 +423,7 @@
 <span id="_CPPv3N3RDE6Engine23setRenderingRedirectionER14UniqueDelegateIFvP11FrameBufferEE"></span><span id="_CPPv2N3RDE6Engine23setRenderingRedirectionER14UniqueDelegateIFvP11FrameBufferEE"></span><span class="target" id="class_r_d_e_1_1_engine_1ad8ea51127f19a4b95f24244c48dfff32"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRenderingRedirection</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_unique_delegate.html#_CPPv4I0EN3RDE14UniqueDelegateE" title="RDE::UniqueDelegate"><span class="n"><span class="pre">UniqueDelegate</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">void</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="class_r_d_e_1_1_frame_buffer.html#_CPPv4N3RDE11FrameBufferE" title="RDE::FrameBuffer"><span class="n"><span class="pre">FrameBuffer</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_redirectionFunc</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Engine23setRenderingRedirectionER14UniqueDelegateIFvP11FrameBufferEE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Allows the end-user to render to something different than the default window. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_redirectionFunc</strong> – <a class="reference internal" href="class_r_d_e_1_1_frame_buffer.html#class_r_d_e_1_1_frame_buffer"><span class="std std-ref">FrameBuffer</span></a> </p>
 </dd>
 </dl>
@@ -435,7 +434,7 @@
 <span id="_CPPv3N3RDE6Engine30setRenderingRedirectionToImGuiER14UniqueDelegateIFvP11FrameBufferEE"></span><span id="_CPPv2N3RDE6Engine30setRenderingRedirectionToImGuiER14UniqueDelegateIFvP11FrameBufferEE"></span><span class="target" id="class_r_d_e_1_1_engine_1a036ea486447300e582e3c1bf2d035060"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRenderingRedirectionToImGui</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_unique_delegate.html#_CPPv4I0EN3RDE14UniqueDelegateE" title="RDE::UniqueDelegate"><span class="n"><span class="pre">UniqueDelegate</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">void</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="class_r_d_e_1_1_frame_buffer.html#_CPPv4N3RDE11FrameBufferE" title="RDE::FrameBuffer"><span class="n"><span class="pre">FrameBuffer</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_redirectionFunc</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE6Engine30setRenderingRedirectionToImGuiER14UniqueDelegateIFvP11FrameBufferEE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Allows the end-user to render to ImGui specifically. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>_redirectionFunc</strong> – <a class="reference internal" href="class_r_d_e_1_1_frame_buffer.html#class_r_d_e_1_1_frame_buffer"><span class="std std-ref">FrameBuffer</span></a> </p>
 </dd>
 </dl>

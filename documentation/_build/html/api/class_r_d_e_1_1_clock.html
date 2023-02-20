@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class Clock &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,12 +275,12 @@
            <div itemprop="articleBody">
              
   <section id="class-clock">
-<span id="exhale-class-class-r-d-e-1-1-clock"></span><h1>Class Clock<a class="headerlink" href="#class-clock" title="Permalink to this heading"></a></h1>
+<span id="exhale-class-class-r-d-e-1-1-clock"></span><h1>Class Clock<a class="headerlink" href="#class-clock" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_util_Clock.h.html#file-engine-include-core-util-clock-h"><span class="std std-ref">File Clock.h</span></a></p></li>
 </ul>
 <section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE5ClockE">
 <span id="_CPPv3N3RDE5ClockE"></span><span id="_CPPv2N3RDE5ClockE"></span><span id="RDE::Clock"></span><span class="target" id="class_r_d_e_1_1_clock"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Clock</span></span></span><a class="headerlink" href="#_CPPv4N3RDE5ClockE" title="Permalink to this definition"></a><br /></dt>
@@ -298,7 +297,7 @@
 <span id="_CPPv3NK3RDE5Clock16getElapsedTimeScEv"></span><span id="_CPPv2NK3RDE5Clock16getElapsedTimeScEv"></span><span id="RDE::Clock::getElapsedTimeScC"></span><span class="target" id="class_r_d_e_1_1_clock_1aec3921a9e53de9320947e6b5744e32a8"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getElapsedTimeSc</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE5Clock16getElapsedTimeScEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the elapsed time since the clock started in seconds. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the elapsed time in seconds. </p>
 </dd>
 </dl>
@@ -309,7 +308,7 @@
 <span id="_CPPv3NK3RDE5Clock16getElapsedTimeMsEv"></span><span id="_CPPv2NK3RDE5Clock16getElapsedTimeMsEv"></span><span id="RDE::Clock::getElapsedTimeMsC"></span><span class="target" id="class_r_d_e_1_1_clock_1ab5fcd6423bc9c90303d13adac23ba8b1"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getElapsedTimeMs</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE5Clock16getElapsedTimeMsEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the elapsed time since the clock started in milliseconds. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the elapsed time in milliseconds. </p>
 </dd>
 </dl>
@@ -320,7 +319,7 @@
 <span id="_CPPv3N3RDE5Clock7restartEv"></span><span id="_CPPv2N3RDE5Clock7restartEv"></span><span id="RDE::Clock::restart"></span><span class="target" id="class_r_d_e_1_1_clock_1a633ee8ded9f4c479020f3aca629c8261"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">restart</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Clock7restartEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Restarts the clock and returns the elapsed time since the initialization of the clock. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>elapsed time since initialization in milliseconds. </p>
 </dd>
 </dl>

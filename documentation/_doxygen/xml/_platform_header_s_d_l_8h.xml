@@ -3,10 +3,11 @@
   <compounddef id="_platform_header_s_d_l_8h" kind="file" language="C++">
     <compoundname>PlatformHeaderSDL.h</compoundname>
     <includes refid="_core_8h" local="yes">core/Core.h</includes>
-    <includes local="yes">SDL.h</includes>
+    <includes local="yes">SDL2/SDL.h</includes>
     <includedby refid="_window_8h" local="yes">engine/include/core/render/window/Window.h</includedby>
     <includedby refid="_file_manager_8h" local="yes">engine/include/core/systems/fileSystem/FileManager.h</includedby>
     <includedby refid="_input_8h" local="yes">engine/include/core/systems/inputSystem/input/Input.h</includedby>
+    <includedby refid="_keyboard_input_8h" local="yes">engine/include/core/systems/inputSystem/input/KeyboardInput.h</includedby>
     <includedby refid="_controller_buttons_8h" local="yes">engine/include/core/systems/inputSystem/keysAndButtons/ControllerButtons.h</includedby>
     <includedby refid="_keyboard_keys_8h" local="yes">engine/include/core/systems/inputSystem/keysAndButtons/KeyboardKeys.h</includedby>
     <includedby refid="_mouse_keys_8h" local="yes">engine/include/core/systems/inputSystem/keysAndButtons/MouseKeys.h</includedby>
@@ -27,7 +28,7 @@
         </childnode>
       </node>
       <node id="4">
-        <label>SDL.h</label>
+        <label>SDL2/SDL.h</label>
       </node>
       <node id="3">
         <label>iostream</label>
@@ -176,6 +177,8 @@
         <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="42" relation="include">
         </childnode>
@@ -638,7 +641,7 @@
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>SDL_DISABLE_IMMINTRIN_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SDL.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SDL2/SDL.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//RDE_PLATFORM_HEADER_SDL_H</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>

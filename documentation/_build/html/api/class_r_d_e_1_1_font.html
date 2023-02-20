@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class Font &mdash; RDE  documentation</title>
@@ -12,10 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -247,7 +247,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../internalDocs/internalDocs.html">Documentacion interna</a></li>
 </ul>
 
         </div>
@@ -276,12 +275,12 @@
            <div itemprop="articleBody">
              
   <section id="class-font">
-<span id="exhale-class-class-r-d-e-1-1-font"></span><h1>Class Font<a class="headerlink" href="#class-font" title="Permalink to this heading"></a></h1>
+<span id="exhale-class-class-r-d-e-1-1-font"></span><h1>Class Font<a class="headerlink" href="#class-font" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_engine_include_core_systems_uiSystem_FontManager.h.html#file-engine-include-core-systems-uisystem-fontmanager-h"><span class="std std-ref">File FontManager.h</span></a></p></li>
 </ul>
 <section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading"></a></h2>
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N3RDE4FontE">
 <span id="_CPPv3N3RDE4FontE"></span><span id="_CPPv2N3RDE4FontE"></span><span id="RDE::Font"></span><span class="target" id="class_r_d_e_1_1_font"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Font</span></span></span><a class="headerlink" href="#_CPPv4N3RDE4FontE" title="Permalink to this definition"></a><br /></dt>
@@ -293,7 +292,7 @@
 <span id="_CPPv3N3RDE4Font4initE7FT_Facei"></span><span id="_CPPv2N3RDE4Font4initE7FT_Facei"></span><span id="RDE::Font::init__FT_Face.i"></span><span class="target" id="class_r_d_e_1_1_font_1ab902cb9c26a844a26d5dcf6ebcc2ffc2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">FT_Face</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">face</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_fontSize</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE4Font4initE7FT_Facei" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function should not be called by the end users. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>face</strong> – FreeTypeFont </p></li>
 <li><p><strong>_fontSize</strong> – <a class="reference internal" href="#class_r_d_e_1_1_font"><span class="std std-ref">Font</span></a> size </p></li>
@@ -307,7 +306,7 @@
 <span id="_CPPv3N3RDE4Font10getTextureEv"></span><span id="_CPPv2N3RDE4Font10getTextureEv"></span><span id="RDE::Font::getTexture"></span><span class="target" id="class_r_d_e_1_1_font_1afdffad171d21d95e35f9d831cbbb7a15"></span><a class="reference internal" href="class_r_d_e_1_1_texture.html#_CPPv4N3RDE7TextureE" title="RDE::Texture"><span class="n"><span class="pre">Texture</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getTexture</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE4Font10getTextureEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the texture where the font is loaded. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><a class="reference internal" href="class_r_d_e_1_1_texture.html#class_r_d_e_1_1_texture"><span class="std std-ref">Texture</span></a>&amp; </p>
 </dd>
 </dl>
@@ -318,7 +317,7 @@
 <span id="_CPPv3N3RDE4Font8getCharsEv"></span><span id="_CPPv2N3RDE4Font8getCharsEv"></span><span id="RDE::Font::getChars"></span><span class="target" id="class_r_d_e_1_1_font_1a7a243403a20fa024e1a1262b0e55fc0c"></span><a class="reference internal" href="struct_r_d_e_1_1_char_info.html#_CPPv4N3RDE8CharInfoE" title="RDE::CharInfo"><span class="n"><span class="pre">CharInfo</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getChars</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE4Font8getCharsEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns all of the characters information. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>CharInfo* </p>
 </dd>
 </dl>
@@ -329,7 +328,7 @@
 <span id="_CPPv3N3RDE4Font11getFontNameEv"></span><span id="_CPPv2N3RDE4Font11getFontNameEv"></span><span id="RDE::Font::getFontName"></span><span class="target" id="class_r_d_e_1_1_font_1a0f2456f966cd3972c9a8c614660af490"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getFontName</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE4Font11getFontNameEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the font name. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>std::string&amp; </p>
 </dd>
 </dl>
@@ -340,7 +339,7 @@
 <span id="_CPPv3N3RDE4Font7getPathEv"></span><span id="_CPPv2N3RDE4Font7getPathEv"></span><span id="RDE::Font::getPath"></span><span class="target" id="class_r_d_e_1_1_font_1a2377d8a4c22440bd18541d4b6c2b1fb4"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getPath</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE4Font7getPathEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns where the font is stored. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>std::string&amp; </p>
 </dd>
 </dl>
@@ -351,7 +350,7 @@
 <span id="_CPPv3NK3RDE4Font7getSizeEv"></span><span id="_CPPv2NK3RDE4Font7getSizeEv"></span><span id="RDE::Font::getSizeC"></span><span class="target" id="class_r_d_e_1_1_font_1a340b4353764cf63c3ab65a944f1d2e0f"></span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getSize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE4Font7getSizeEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the size of the texture. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>Vec2F </p>
 </dd>
 </dl>
@@ -362,7 +361,7 @@
 <span id="_CPPv3NK3RDE4Font11getFontSizeEv"></span><span id="_CPPv2NK3RDE4Font11getFontSizeEv"></span><span id="RDE::Font::getFontSizeC"></span><span class="target" id="class_r_d_e_1_1_font_1a6f6e7bec9f4b1aa7c3a0c8fc0a1fb339"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getFontSize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3RDE4Font11getFontSizeEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the size of the font. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>int </p>
 </dd>
 </dl>

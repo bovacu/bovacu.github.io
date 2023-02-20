@@ -297,7 +297,7 @@
     <member refid="class_r_d_e_1_1_config_manager_1a25be17c74bff75133ac49636da679afc" kind="function"><name>loadCameraComponent</name></member>
     <member refid="class_r_d_e_1_1_config_manager_1aa560ae268039f3ca915318a41545d378" kind="function"><name>loadSpriteRendererComponent</name></member>
     <member refid="class_r_d_e_1_1_config_manager_1a39be27ffe7d6c3728442335c76c3de41" kind="function"><name>loadTextRendererComponent</name></member>
-    <member refid="class_r_d_e_1_1_config_manager_1a351c20f6b27ead0260b881ff1858a4f3" kind="function"><name>loadBodyComponent</name></member>
+    <member refid="class_r_d_e_1_1_config_manager_1aaf7857971b9b3106581c9dbb30849146" kind="function"><name>loadPhysicsBodyComponent</name></member>
     <member refid="class_r_d_e_1_1_config_manager_1a1745a3be0f1b89e48346a560ed896726" kind="function"><name>unloadAssets</name></member>
   </compound>
   <compound refid="class_r_d_e_1_1_console" kind="class"><name>RDE::Console</name>

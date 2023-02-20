@@ -170,7 +170,7 @@
         </childnode>
       </node>
       <node id="21">
-        <label>SDL.h</label>
+        <label>SDL2/SDL.h</label>
       </node>
       <node id="23">
         <label>SDL2/SDL_image.h</label>

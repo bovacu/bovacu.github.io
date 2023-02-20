@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="78" column="17" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="78" bodyend="78"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="109" column="17" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="109" bodyend="109"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="81" column="26" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="81" bodyend="-1"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="112" column="26" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_r_d_e_1_1_localization_manager_1_1_any_1a04288ca88a2df595866f7b4aa51c9dbc" prot="private" static="no" mutable="no">
         <type>union RDE::LocalizationManager::Any::@0</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="90" column="27"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="121" column="27"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="83" column="33" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="83" bodyend="-1"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="114" column="33" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_r_d_e_1_1_localization_manager_1_1_any_1ae8cb4359ed1234663d45c9800fe4f843" prot="public" static="no" mutable="no">
         <type>uint</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="84" column="33" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="84" bodyend="-1"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="115" column="33" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="115" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_r_d_e_1_1_localization_manager_1_1_any_1a13edc4d026082ba3c189d4a045ccf329" prot="public" static="no" mutable="no">
         <type>long</type>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="85" column="33" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="85" bodyend="-1"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="116" column="33" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_r_d_e_1_1_localization_manager_1_1_any_1ab65542f0f6bbe7cb7c73b029b8ff9ad1" prot="public" static="no" mutable="no">
         <type>ulong</type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="86" column="33" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="86" bodyend="-1"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="117" column="33" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_r_d_e_1_1_localization_manager_1_1_any_1a118d5f24eeb8d902eaa58e14ce5492ff" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -164,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="87" column="33" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="87" bodyend="-1"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="118" column="33" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="118" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_r_d_e_1_1_localization_manager_1_1_any_1a67a921293062286edc9a83160052164f" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -178,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="88" column="33" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="88" bodyend="-1"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="119" column="33" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="119" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_r_d_e_1_1_localization_manager_1_1_any_1a50d55a1a9e3f96fd4d17c1f4a245f426" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -192,7 +192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="89" column="38" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="89" bodyend="-1"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="120" column="38" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="120" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -212,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="94" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="94" bodyend="94"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="125" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="125" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1ae06b62e0e36fe05400ec86e8b54d4484" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -230,7 +230,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="95" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="95" bodyend="95"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="126" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="126" bodyend="126"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1aa4727e67a411739659ba2314f91f99e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -248,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="96" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="96" bodyend="96"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="127" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="127" bodyend="127"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1ade88fa5a9c626d8be3a3b5d52a8529c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -266,7 +266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="97" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="97" bodyend="97"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="128" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="128" bodyend="128"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1a826a4496eddf9cdc30607e05cd791599" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -284,7 +284,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="98" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="98" bodyend="98"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="129" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="129" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1a3f747dcf12e0160045fafe3839571e82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -302,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="99" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="99" bodyend="99"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="130" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="130" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1abccbfb92ff549c670a24ae02abec37f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -320,7 +320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="100" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="100" bodyend="100"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="131" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="131" bodyend="131"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1ad276bc5475bd07d6890da09e4fd239c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -338,7 +338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="101" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="101" bodyend="101"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="132" column="21" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="132" bodyend="132"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1a7fb530ddecc6ac061792e98fdce2f0a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>Type</type>
@@ -352,7 +352,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="102" column="27" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="102" bodyend="102"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="133" column="27" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="133" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1acb683f3bd4b4aefdf5d725a3ce596b91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -366,7 +366,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="103" column="26" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="103" bodyend="103"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="134" column="26" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="134" bodyend="134"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1acb1a1451cef4201cf2733daf60f3976c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -380,7 +380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="104" column="28" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="104" bodyend="104"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="135" column="28" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="135" bodyend="135"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1a5c84b43bdb4e2a5269b98dda9c93c3b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -394,7 +394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="105" column="29" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="105" bodyend="105"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="136" column="29" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="136" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1ae8388a162743b9baec0d14a817e73eb3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const char *</type>
@@ -408,7 +408,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="106" column="33" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="106" bodyend="106"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="137" column="33" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="137" bodyend="137"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1abce383674b4d304e54b5ba29ed4fd0d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>uint</type>
@@ -422,7 +422,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="107" column="27" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="107" bodyend="107"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="138" column="27" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="138" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1a866072320fe5e50ab3ddb0376981fa2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>long</type>
@@ -436,7 +436,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="108" column="27" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="108" bodyend="108"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="139" column="27" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="139" bodyend="139"/>
       </memberdef>
       <memberdef kind="function" id="struct_r_d_e_1_1_localization_manager_1_1_any_1a84b75c02e8729724f6abbd82a6724329" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>ulong</type>
@@ -450,14 +450,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="109" column="28" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="109" bodyend="109"/>
+        <location file="engine/include/core/systems/localization/LocalizationManager.h" line="140" column="28" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="140" bodyend="140"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Struct that contains all of the basic types (or the most common ones at least), so we can pass them to the translate function and work with the specific values. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="engine/include/core/systems/localization/LocalizationManager.h" line="77" column="13" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="77" bodyend="110"/>
+    <location file="engine/include/core/systems/localization/LocalizationManager.h" line="108" column="13" bodyfile="engine/include/core/systems/localization/LocalizationManager.h" bodystart="108" bodyend="141"/>
     <listofallmembers>
       <member refid="struct_r_d_e_1_1_localization_manager_1_1_any_1a8d87e26f2deb60ae4627df85a03afc10" prot="public" virt="non-virtual"><scope>RDE::LocalizationManager::Any</scope><name>Any</name></member>
       <member refid="struct_r_d_e_1_1_localization_manager_1_1_any_1ae06b62e0e36fe05400ec86e8b54d4484" prot="public" virt="non-virtual"><scope>RDE::LocalizationManager::Any</scope><name>Any</name></member>

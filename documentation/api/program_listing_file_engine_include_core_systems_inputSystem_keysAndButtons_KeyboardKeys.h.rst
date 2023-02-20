@@ -24,11 +24,11 @@ Program Listing for File KeyboardKeys.h
        typedef enum class KeyCode : uint16_t {
            // From SDL2
            Space = SDL_SCANCODE_SPACE,
-           Apostrophe = SDL_SCANCODE_APOSTROPHE,            /* ' */
-           Comma = SDL_SCANCODE_COMMA,                 /* , */
-           Minus = SDL_SCANCODE_MINUS,                 /* - */
-           Period = SDL_SCANCODE_PERIOD,                /* . */
-           Slash = SDL_SCANCODE_SLASH,                 /* / */
+           Apostrophe = SDL_SCANCODE_APOSTROPHE,   /* ' */
+           Comma = SDL_SCANCODE_COMMA,             /* , */
+           Minus = SDL_SCANCODE_MINUS,             /* - */
+           Period = SDL_SCANCODE_PERIOD,           /* . */
+           Slash = SDL_SCANCODE_SLASH,             /* / */
    
            D0 = SDL_SCANCODE_0,                    /* 0 */
            D1 = SDL_SCANCODE_1,                    /* 1 */
@@ -41,8 +41,8 @@ Program Listing for File KeyboardKeys.h
            D8 = SDL_SCANCODE_8,                    /* 8 */
            D9 = SDL_SCANCODE_9,                    /* 9 */
    
-           Semicolon = SDL_SCANCODE_SEMICOLON,             /* ; */
-           Equal = SDL_SCANCODE_EQUALS,                 /* = */
+           Semicolon = SDL_SCANCODE_SEMICOLON,     /* ; */
+           Equal = SDL_SCANCODE_EQUALS,            /* = */
    
            A = SDL_SCANCODE_A,
            B = SDL_SCANCODE_B,
@@ -71,10 +71,10 @@ Program Listing for File KeyboardKeys.h
            Y = SDL_SCANCODE_Y,
            Z = SDL_SCANCODE_Z,
    
-           LeftBracket = SDL_SCANCODE_LEFTBRACKET,               /* [ */
-           Backslash = SDL_SCANCODE_BACKSLASH,                 /* \ */
-           RightBracket = SDL_SCANCODE_RIGHTBRACKET,              /* ] */
-           GraveAccent = SDL_SCANCODE_GRAVE,               /* ` */
+           LeftBracket = SDL_SCANCODE_LEFTBRACKET,   /* [ */
+           Backslash = SDL_SCANCODE_BACKSLASH,       /* \ */
+           RightBracket = SDL_SCANCODE_RIGHTBRACKET, /* ] */
+           GraveAccent = SDL_SCANCODE_GRAVE,         /* ` */
    
            Escape = SDL_SCANCODE_ESCAPE,
            Enter = SDL_SCANCODE_RETURN,
