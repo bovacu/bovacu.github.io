@@ -17,9 +17,9 @@ Functions
 ---------
 
 
-- :ref:`exhale_function__functions_8h_1a671ae17cbc069c7a9e1983ce958258de`
-
 - :ref:`exhale_function__functions_8h_1a98bce40d295aa275927b9936df0ea4fc`
+
+- :ref:`exhale_function__functions_8h_1a671ae17cbc069c7a9e1983ce958258de`
 
 - :ref:`exhale_function__functions_8h_1a54f19d85128e85beaf6c12d4e52cb550`
 
