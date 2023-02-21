@@ -1,445 +1,430 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Class CPUTexture &mdash; RDE  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
-    <script src="../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Class DebugShape" href="class_r_d_e_1_1_debug_shape.html" />
-    <link rel="prev" title="Class ControllerVibrationManager" href="class_r_d_e_1_1_controller_vibration_manager.html" /> 
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RDE: RDE::CPUTexture Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
-
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="../index.html" class="icon icon-home">
-            RDE
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RDE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="struct_component_base.html">Struct ComponentBase</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_active.html">Struct Active</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_animation_node.html">Struct AnimationNode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_animation_transition.html">Struct AnimationTransition</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_atlas.html">Struct Atlas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_canvas_element.html">Struct CanvasElement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_canvas_event_stopper.html">Struct CanvasEventStopper</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_char_info.html">Struct CharInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_color.html">Struct Color</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_command.html">Struct Command</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_common_u_i_config.html">Struct CommonUIConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_controller.html">Struct Controller</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_debug_options.html">Struct DebugOptions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_delegate.html">Template Struct Delegate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct Delegate&lt; R(Args…) &gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_event.html">Struct DisabledForEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_fixed_update.html">Struct DisabledForFixedUpdate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_late_update.html">Struct DisabledForLateUpdate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_render.html">Struct DisabledForRender</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_update.html">Struct DisabledForUpdate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_draw_and_flush_data.html">Struct DrawAndFlushData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_dynamic_sprite_renderer_config.html">Struct DynamicSpriteRendererConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_effect___controllers.html">Struct Effect_Controllers</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_file.html">Template Struct File</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_font_manager_1_1_font_handler.html">Struct FontManager::FontHandler</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_frame_buffer_specification.html">Struct FrameBufferSpecification</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_generation_settings.html">Struct GenerationSettings</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_config.html">Struct LocalizationConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_info.html">Struct LocalizationInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_manager_1_1_any.html">Struct LocalizationManager::Any</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_mat2.html">Struct Mat2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_music.html">Struct Music</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_nine_slice.html">Struct NineSlice</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_node.html">Struct Node</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_node___json_pair.html">Struct Node_JsonPair</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_noise_map.html">Struct NoiseMap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_open_g_l_vertex.html">Struct OpenGLVertex</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_open_g_l_vertex_debug.html">Struct OpenGLVertexDebug</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_data.html">Struct ParticleData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_callbacks_config.html">Struct ParticleSystemCallbacksConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_color_gradient_config.html">Struct ParticleSystemColorGradientConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_config.html">Struct ParticleSystemConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_data_config.html">Struct ParticleSystemDataConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_body.html">Struct PhysicsBody</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_body_config.html">Struct PhysicsBodyConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_collision_callbacks.html">Struct PhysicsCollisionCallbacks</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_shape.html">Struct PhysicsShape</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_probability.html">Struct Probability</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_procedural_map.html">Struct ProceduralMap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config.html">Struct RDEConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties.html">Struct RDEConfig::ProjectProperties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties.html">Struct RDEConfig::WindowProperties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rect.html">Template Struct Rect</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rendering_tree_data.html">Struct RenderingTreeData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_renderizable_inner_data.html">Struct RenderizableInnerData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_renderizable_inner_data_u_i.html">Struct RenderizableInnerDataUI</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_return_delegate.html">Template Struct ReturnDelegate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct ReturnDelegate&lt; R(Args…) &gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rolling_buffer.html">Struct RollingBuffer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_scrolling_buffer.html">Struct ScrollingBuffer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sfx.html">Struct Sfx</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_shape_config.html">Struct ShapeConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_shape_masking_config.html">Struct ShapeMaskingConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sound.html">Struct Sound</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sprite_renderer_config.html">Struct SpriteRendererConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_state.html">Struct State</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_stub.html">Template Struct Stub</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_stub_3_01_r_07_args_8_8_8_08_4.html">Template Struct Stub&lt; R(Args…) &gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_tag.html">Struct Tag</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_text_renderer_1_1_line_info.html">Struct TextRenderer::LineInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_text_renderer_config.html">Struct TextRendererConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_texture_info.html">Struct TextureInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_anchor.html">Struct UIAnchor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_button_config.html">Struct UIButtonConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_checkbox_config.html">Struct UICheckboxConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_image_config.html">Struct UIImageConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_input_config.html">Struct UIInputConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_panel_config.html">Struct UIPanelConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_slider_config.html">Struct UISliderConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_text_1_1_line_info.html">Struct UIText::LineInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_text_config.html">Struct UITextConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_transform.html">Struct UITransform</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_unique_delegate.html">Template Struct UniqueDelegate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_unique_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct UniqueDelegate&lt; R(Args…) &gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_updatable_data.html">Struct UpdatableData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vec2.html">Template Struct Vec2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vertex_config.html">Struct VertexConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vibration_config.html">Struct VibrationConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_animation.html">Class Animation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_animation_system.html">Class AnimationSystem</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_bad_delegate_call.html">Class BadDelegateCall</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_bad_e_c_s_system_swap.html">Class BadECSSystemSwap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_basic_perlin_noise.html">Template Class BasicPerlinNoise</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_batch.html">Class Batch</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_camera.html">Class Camera</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_canvas.html">Class Canvas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_cellular_automata.html">Class CellularAutomata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_clock.html">Class Clock</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_config_manager.html">Class ConfigManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_console.html">Class Console</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_axis_moved_event.html">Class ControllerAxisMovedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_button_down_event.html">Class ControllerButtonDownEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_button_up_event.html">Class ControllerButtonUpEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_input.html">Class ControllerInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_vibration_manager.html">Class ControllerVibrationManager</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Class CPUTexture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_debug_shape.html">Class DebugShape</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_delta.html">Class Delta</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_dynamic_sprite_renderer.html">Class DynamicSpriteRenderer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_e_c_s_manager.html">Class ECSManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_e_c_s_system.html">Class ECSSystem</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_engine.html">Class Engine</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event.html">Class Event</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_bus.html">Template Class EventBus</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_bus_1_1_handler_id.html">Class EventBus::HandlerId</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_dispatcher.html">Class EventDispatcher</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_file_handler.html">Class FileHandler</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_file_manager.html">Class FileManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_font.html">Class Font</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_font_manager.html">Class FontManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_frame_buffer.html">Class FrameBuffer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_graph.html">Class Graph</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_im_gui_scene.html">Class ImGuiScene</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_input.html">Class Input</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_input_manager.html">Class InputManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_keyboard_input.html">Class KeyboardInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_event.html">Class KeyEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_pressed_event.html">Class KeyPressedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_released_event.html">Class KeyReleasedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_typed_event.html">Class KeyTypedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_load_vertex_config_not_invoked.html">Class LoadVertexConfigNotInvoked</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_localization_manager.html">Class LocalizationManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_manager.html">Class Manager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_map_generator.html">Class MapGenerator</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_input.html">Class MobileInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_down_event.html">Class MobileTouchDownEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_moved_event.html">Class MobileTouchMovedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_up_event.html">Class MobileTouchUpEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_event.html">Class MouseButtonEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_pressed_event.html">Class MouseButtonPressedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_released_event.html">Class MouseButtonReleasedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_input.html">Class MouseInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_moved_event.html">Class MouseMovedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_scrolled_event.html">Class MouseScrolledEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_particle_system.html">Class ParticleSystem</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_perlin_noise_manager.html">Class PerlinNoiseManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_physics_manager.html">Class PhysicsManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_platform.html">Class Platform</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_pool.html">Template Class Pool</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_profiler.html">Class Profiler</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_random.html">Class Random</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_render_manager.html">Class RenderManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_scene.html">Class Scene</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_scene_manager.html">Class SceneManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_shader.html">Class Shader</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_shader_manager.html">Class ShaderManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sound_manager.html">Class SoundManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_batch.html">Class SpriteBatch</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_batch_1_1_debug.html">Class SpriteBatch::Debug</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_renderer.html">Class SpriteRenderer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_text_renderer.html">Class TextRenderer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_text_typed_event.html">Class TextTypedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_texture.html">Class Texture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_texture_atlas_manager.html">Class TextureAtlasManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_transform.html">Class Transform</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_transition_params.html">Class TransitionParams</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_button.html">Class UIButton</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_checkbox.html">Class UICheckbox</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_image.html">Class UIImage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_input.html">Class UIInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_interactable.html">Class UIInteractable</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_mask.html">Class UIMask</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_panel.html">Class UIPanel</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_slider.html">Class UISlider</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_text.html">Class UIText</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_view_port.html">Class ViewPort</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window.html">Class Window</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_closed_event.html">Class WindowClosedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_display_changed_event.html">Class WindowDisplayChangedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_frame_event.html">Class WindowFrameEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_input.html">Class WindowInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_minimized_event.html">Class WindowMinimizedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_moved_event.html">Class WindowMovedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_render_event.html">Class WindowRenderEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_resized_event.html">Class WindowResizedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_update_event.html">Class WindowUpdateEvent</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">RDE</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="library_root.html">Library API</a></li>
-      <li class="breadcrumb-item active">Class CPUTexture</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/api/class_r_d_e_1_1_c_p_u_texture.rst.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
-  <section id="class-cputexture">
-<span id="exhale-class-class-r-d-e-1-1-c-p-u-texture"></span><h1>Class CPUTexture<a class="headerlink" href="#class-cputexture" title="Permalink to this headline"></a></h1>
-<ul class="simple">
-<li><p>Defined in <a class="reference internal" href="file_engine_include_core_render_elements_Texture.h.html#file-engine-include-core-render-elements-texture-h"><span class="std std-ref">File Texture.h</span></a></p></li>
-</ul>
-<section id="inheritance-relationships">
-<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline"></a></h2>
-<section id="base-type">
-<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline"></a></h3>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">RDE::Texture</span></code> (<a class="reference internal" href="class_r_d_e_1_1_texture.html#exhale-class-class-r-d-e-1-1-texture"><span class="std std-ref">Class Texture</span></a>)</p></li>
-</ul>
-</section>
-</section>
-<section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
-<dl class="cpp class">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE10CPUTextureE">
-<span id="_CPPv3N3RDE10CPUTextureE"></span><span id="_CPPv2N3RDE10CPUTextureE"></span><span id="RDE::CPUTexture"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CPUTexture</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">RDE</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="class_r_d_e_1_1_texture.html#_CPPv4N3RDE7TextureE" title="RDE::Texture"><span class="n"><span class="pre">Texture</span></span></a><a class="headerlink" href="#_CPPv4N3RDE10CPUTextureE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>This is another type of texture that resides in the CPU also so we can modify its data on runtime more easily. </p>
-<p><dl class="simple">
-<dt><strong>Attention</strong></dt><dd><p>Not recommended to use as hasn’t been updated for many versions. </p>
-</dd>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_r_d_e.html">RDE</a></li><li class="navelem"><a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="class_r_d_e_1_1_c_p_u_texture-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">RDE::CPUTexture Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This is another type of texture that resides in the CPU also so we can modify its data on runtime more easily.  
+ <a href="class_r_d_e_1_1_c_p_u_texture.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_texture_8h_source.html">Texture.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for RDE::CPUTexture:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_r_d_e_1_1_c_p_u_texture.png" usemap="#RDE::CPUTexture_map" alt=""/>
+  <map id="RDE::CPUTexture_map" name="RDE::CPUTexture_map">
+<area href="class_r_d_e_1_1_texture.html" title="This class represents a SpriteSheet or a simple Sprite that will be uploaded to the GPU." alt="RDE::Texture" shape="rect" coords="0,0,110,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af27681d35f927d3e9ac856124aa6cfc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_c_p_u_texture.html#af27681d35f927d3e9ac856124aa6cfc8">init</a> (int _width, int _height, unsigned char *_pixels, const <a class="el" href="namespace_r_d_e.html#a9b56064364720987212b6d168063d797">ImageType</a> &amp;_imageType=ImageType::PNG)</td></tr>
+<tr class="memdesc:af27681d35f927d3e9ac856124aa6cfc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inits a CPU texture given a width, height, data of the texture and type of texture.  <br /></td></tr>
+<tr class="separator:af27681d35f927d3e9ac856124aa6cfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66818147fc7127fcfab73d773e3df234"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_c_p_u_texture.html#a66818147fc7127fcfab73d773e3df234">init</a> (int _width, int _height, const <a class="el" href="namespace_r_d_e.html#a9b56064364720987212b6d168063d797">ImageType</a> &amp;_imageType=ImageType::PNG)</td></tr>
+<tr class="memdesc:a66818147fc7127fcfab73d773e3df234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inits a CPU texture given a width, height and type of texture but no information.  <br /></td></tr>
+<tr class="separator:a66818147fc7127fcfab73d773e3df234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c89574242493edc53b6209edc667d3"><td class="memItemLeft" align="right" valign="top"><a id="ae9c89574242493edc53b6209edc667d3" name="ae9c89574242493edc53b6209edc667d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>uploadToGPU</b> ()</td></tr>
+<tr class="memdesc:ae9c89574242493edc53b6209edc667d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the data to the GPU. <br /></td></tr>
+<tr class="separator:ae9c89574242493edc53b6209edc667d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97bc88a294cedb42259ee2478275c81b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_c_p_u_texture.html#a97bc88a294cedb42259ee2478275c81b">saveAs</a> (const std::string &amp;_pathToSave)</td></tr>
+<tr class="memdesc:a97bc88a294cedb42259ee2478275c81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves a copy of the texture to the file system.  <br /></td></tr>
+<tr class="separator:a97bc88a294cedb42259ee2478275c81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a020387d976f6fe313eddd946ae66354c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_c_p_u_texture.html#a020387d976f6fe313eddd946ae66354c">setPixel</a> (int _x, int _y, const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;_color)</td></tr>
+<tr class="memdesc:a020387d976f6fe313eddd946ae66354c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to set a specific pixel of the texture.  <br /></td></tr>
+<tr class="separator:a020387d976f6fe313eddd946ae66354c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab989357880b560670ec4b0a8ea5b6668"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_d_e_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_c_p_u_texture.html#ab989357880b560670ec4b0a8ea5b6668">getPixel</a> (int _x, int _y)</td></tr>
+<tr class="memdesc:ab989357880b560670ec4b0a8ea5b6668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the color of a specific pixel.  <br /></td></tr>
+<tr class="separator:ab989357880b560670ec4b0a8ea5b6668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ccc8f3ba339cdf6f626fd7b6a85578f"><td class="memItemLeft" align="right" valign="top"><a id="a8ccc8f3ba339cdf6f626fd7b6a85578f" name="a8ccc8f3ba339cdf6f626fd7b6a85578f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeImage</b> (const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2</a>&lt; uint &gt; &amp;_newSize)</td></tr>
+<tr class="separator:a8ccc8f3ba339cdf6f626fd7b6a85578f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_r_d_e_1_1_texture"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_d_e_1_1_texture')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_r_d_e_1_1_texture.html">RDE::Texture</a></td></tr>
+<tr class="memitem:a18aa9181c50df9482c104b86a0629146 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a id="a18aa9181c50df9482c104b86a0629146" name="a18aa9181c50df9482c104b86a0629146"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Texture</b> (char *filePath)</td></tr>
+<tr class="separator:a18aa9181c50df9482c104b86a0629146 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113e17fd25790721d3e5f4c004f7f297 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a id="a113e17fd25790721d3e5f4c004f7f297" name="a113e17fd25790721d3e5f4c004f7f297"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Texture</b> (<a class="el" href="struct_r_d_e_1_1_atlas.html">Atlas</a> *_spriteSheet, const <a class="el" href="struct_r_d_e_1_1_rect.html">FloatRect</a> &amp;_region)</td></tr>
+<tr class="separator:a113e17fd25790721d3e5f4c004f7f297 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e7dbef8bb06876311c74dca6daa719 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_texture.html#a76e7dbef8bb06876311c74dca6daa719">getGLTexture</a> () const</td></tr>
+<tr class="memdesc:a76e7dbef8bb06876311c74dca6daa719 inherit pub_methods_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID of the texture in the GPU. This is probably of no-use for end-users.  <br /></td></tr>
+<tr class="separator:a76e7dbef8bb06876311c74dca6daa719 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a40b7e18e5277ba82cf42b17ab63a2 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_texture.html#a80a40b7e18e5277ba82cf42b17ab63a2">getSize</a> () const</td></tr>
+<tr class="memdesc:a80a40b7e18e5277ba82cf42b17ab63a2 inherit pub_methods_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the region to be rendered, not the size of the SpriteSheet, except if this is the SpriteSheet itself.  <br /></td></tr>
+<tr class="separator:a80a40b7e18e5277ba82cf42b17ab63a2 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0050c78fc2c9eb98d24f3bbe4cf28330 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2I</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_texture.html#a0050c78fc2c9eb98d24f3bbe4cf28330">getSpriteSheetSize</a> () const</td></tr>
+<tr class="memdesc:a0050c78fc2c9eb98d24f3bbe4cf28330 inherit pub_methods_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the SpriteSheet where this sub-texture comes from.  <br /></td></tr>
+<tr class="separator:a0050c78fc2c9eb98d24f3bbe4cf28330 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4141ab41d0aaecbee62f31c8e5a6d5e9 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_texture.html#a4141ab41d0aaecbee62f31c8e5a6d5e9">getKb</a> () const</td></tr>
+<tr class="memdesc:a4141ab41d0aaecbee62f31c8e5a6d5e9 inherit pub_methods_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size in Kb of the SpriteSheet.  <br /></td></tr>
+<tr class="separator:a4141ab41d0aaecbee62f31c8e5a6d5e9 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d65fcee08079a2433987ecdd3869d03 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_texture.html#a5d65fcee08079a2433987ecdd3869d03">loadFromFile</a> (const char *_path)</td></tr>
+<tr class="memdesc:a5d65fcee08079a2433987ecdd3869d03 inherit pub_methods_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to load a SpriteSheet from the <a class="el" href="struct_r_d_e_1_1_file.html" title="This represents the content of a file.">File</a> System, if it fails, returns false.  <br /></td></tr>
+<tr class="separator:a5d65fcee08079a2433987ecdd3869d03 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf6c5215819cc5c32e79326d4bf5945 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_texture.html#afaf6c5215819cc5c32e79326d4bf5945">loadTextTexture</a> (int _width, int _height)</td></tr>
+<tr class="memdesc:afaf6c5215819cc5c32e79326d4bf5945 inherit pub_methods_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to load a font into a texture, and if it fails, returns false.  <br /></td></tr>
+<tr class="separator:afaf6c5215819cc5c32e79326d4bf5945 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4ac14355a79879a37f9dde1c8dc898 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_texture.html#a1f4ac14355a79879a37f9dde1c8dc898">loadTextureFromMemory</a> (int _width, int _height, const unsigned char *_data)</td></tr>
+<tr class="memdesc:a1f4ac14355a79879a37f9dde1c8dc898 inherit pub_methods_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to load a a texture from data generated at runtime.  <br /></td></tr>
+<tr class="separator:a1f4ac14355a79879a37f9dde1c8dc898 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa98df0008a422dc3291d48e876dc44d inherit pub_methods_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_texture.html#afa98df0008a422dc3291d48e876dc44d">loadTextSubTextures</a> (<a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2I</a> _offset, <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2I</a> _size, const void *_data)</td></tr>
+<tr class="memdesc:afa98df0008a422dc3291d48e876dc44d inherit pub_methods_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the sub-textures (of each character) of the <a class="el" href="class_r_d_e_1_1_font.html" title="This struct contains all the information needed to render text with this specific font.">Font</a> texture.  <br /></td></tr>
+<tr class="separator:afa98df0008a422dc3291d48e876dc44d inherit pub_methods_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d98106811619a08d417d5d3e38d08f7 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_d_e_1_1_rect.html">FloatRect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_texture.html#a1d98106811619a08d417d5d3e38d08f7">getRegion</a> ()</td></tr>
+<tr class="memdesc:a1d98106811619a08d417d5d3e38d08f7 inherit pub_methods_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the portion of the SpriteSheet that will be rendered.  <br /></td></tr>
+<tr class="separator:a1d98106811619a08d417d5d3e38d08f7 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad15887c714aa78a97057879314564177 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a id="ad15887c714aa78a97057879314564177" name="ad15887c714aa78a97057879314564177"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRegion</b> (const <a class="el" href="struct_r_d_e_1_1_rect.html">FloatRect</a> &amp;_region)</td></tr>
+<tr class="memdesc:ad15887c714aa78a97057879314564177 inherit pub_methods_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the portion of the SpriteSheet that will be rendered. <br /></td></tr>
+<tr class="separator:ad15887c714aa78a97057879314564177 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf906e7468f864fdcf55b48585b27e95 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_texture.html#acf906e7468f864fdcf55b48585b27e95">getPath</a> ()</td></tr>
+<tr class="memdesc:acf906e7468f864fdcf55b48585b27e95 inherit pub_methods_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to the location of the SpriteSheet.  <br /></td></tr>
+<tr class="separator:acf906e7468f864fdcf55b48585b27e95 inherit pub_methods_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a43fea7a9600e65d2cff12628f5ce2b9e"><td class="memItemLeft" align="right" valign="top"><a id="a43fea7a9600e65d2cff12628f5ce2b9e" name="a43fea7a9600e65d2cff12628f5ce2b9e"></a>
+<a class="el" href="namespace_r_d_e.html#a9b56064364720987212b6d168063d797">ImageType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>imageType</b> = ImageType::PNG</td></tr>
+<tr class="memdesc:a43fea7a9600e65d2cff12628f5ce2b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of texture. <br /></td></tr>
+<tr class="separator:a43fea7a9600e65d2cff12628f5ce2b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_r_d_e_1_1_texture"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_r_d_e_1_1_texture')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_r_d_e_1_1_texture.html">RDE::Texture</a></td></tr>
+<tr class="memitem:a6839f7450183f0e1391a406a74920c34 inherit pub_attribs_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_d_e_1_1_nine_slice.html">NineSlice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_texture.html#a6839f7450183f0e1391a406a74920c34">nineSlice</a></td></tr>
+<tr class="separator:a6839f7450183f0e1391a406a74920c34 inherit pub_attribs_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_r_d_e_1_1_texture"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_r_d_e_1_1_texture')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_r_d_e_1_1_texture.html">RDE::Texture</a></td></tr>
+<tr class="memitem:a00f721b1b75f8cc64fd002bbc945b8f6 inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a id="a00f721b1b75f8cc64fd002bbc945b8f6" name="a00f721b1b75f8cc64fd002bbc945b8f6"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>openGLTextureID</b> {}</td></tr>
+<tr class="memdesc:a00f721b1b75f8cc64fd002bbc945b8f6 inherit pro_attribs_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the reference that OpenGL gives us when we upload the texture data to the GPU. <br /></td></tr>
+<tr class="separator:a00f721b1b75f8cc64fd002bbc945b8f6 inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9896a52d166d551c9c8dbf6b8b31d72f inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a id="a9896a52d166d551c9c8dbf6b8b31d72f" name="a9896a52d166d551c9c8dbf6b8b31d72f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>channels</b> = -1</td></tr>
+<tr class="memdesc:a9896a52d166d551c9c8dbf6b8b31d72f inherit pro_attribs_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">if the texture is RGB or RGBA <br /></td></tr>
+<tr class="separator:a9896a52d166d551c9c8dbf6b8b31d72f inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a5e14b7fce77e5e76a3bbdea5e47d0a inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a id="a5a5e14b7fce77e5e76a3bbdea5e47d0a" name="a5a5e14b7fce77e5e76a3bbdea5e47d0a"></a>
+<a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a>&#160;</td><td class="memItemRight" valign="bottom"><b>textureSize</b></td></tr>
+<tr class="memdesc:a5a5e14b7fce77e5e76a3bbdea5e47d0a inherit pro_attribs_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the Sprite, not the whole SpriteSheet EXCEPT if this texture is itself a the whole SpriteSheet. <br /></td></tr>
+<tr class="separator:a5a5e14b7fce77e5e76a3bbdea5e47d0a inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a826916489ecb554b7ee92d6c6daa6 inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a id="a38a826916489ecb554b7ee92d6c6daa6" name="a38a826916489ecb554b7ee92d6c6daa6"></a>
+<a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2I</a>&#160;</td><td class="memItemRight" valign="bottom"><b>spriteSheetSize</b></td></tr>
+<tr class="memdesc:a38a826916489ecb554b7ee92d6c6daa6 inherit pro_attribs_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the SpriteSheet this texture comes from or its natural size if this is the SpriteSheet itself. <br /></td></tr>
+<tr class="separator:a38a826916489ecb554b7ee92d6c6daa6 inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ccb4b35b009e7d94120b33c42de2f4d inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a id="a4ccb4b35b009e7d94120b33c42de2f4d" name="a4ccb4b35b009e7d94120b33c42de2f4d"></a>
+GLenum&#160;</td><td class="memItemRight" valign="bottom"><b>internalFormat</b> = -1</td></tr>
+<tr class="memdesc:a4ccb4b35b009e7d94120b33c42de2f4d inherit pro_attribs_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal format of the texture. <br /></td></tr>
+<tr class="separator:a4ccb4b35b009e7d94120b33c42de2f4d inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeabe1a9ca5ef21a3ad054110d4e5fc7c inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a id="aeabe1a9ca5ef21a3ad054110d4e5fc7c" name="aeabe1a9ca5ef21a3ad054110d4e5fc7c"></a>
+GLenum&#160;</td><td class="memItemRight" valign="bottom"><b>dataFormat</b> = -1</td></tr>
+<tr class="memdesc:aeabe1a9ca5ef21a3ad054110d4e5fc7c inherit pro_attribs_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format of the data of the texture. <br /></td></tr>
+<tr class="separator:aeabe1a9ca5ef21a3ad054110d4e5fc7c inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af969ed2eb78b1b46a7d6a534668bf0b2 inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a id="af969ed2eb78b1b46a7d6a534668bf0b2" name="af969ed2eb78b1b46a7d6a534668bf0b2"></a>
+<a class="el" href="struct_r_d_e_1_1_rect.html">FloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>region</b> {}</td></tr>
+<tr class="memdesc:af969ed2eb78b1b46a7d6a534668bf0b2 inherit pro_attribs_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Out of the whole SpriteSheet, the portion that the renderer should drawBatched on screen. If this texture is itself the SpriteSheet, then the region is the whole SpriteSheet. <br /></td></tr>
+<tr class="separator:af969ed2eb78b1b46a7d6a534668bf0b2 inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01291263f682c99b61a8a074f7d5ae9c inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a id="a01291263f682c99b61a8a074f7d5ae9c" name="a01291263f682c99b61a8a074f7d5ae9c"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>fileSizeKb</b> = -1</td></tr>
+<tr class="memdesc:a01291263f682c99b61a8a074f7d5ae9c inherit pro_attribs_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size in Kilobytes of the SpriteSheet. <br /></td></tr>
+<tr class="separator:a01291263f682c99b61a8a074f7d5ae9c inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362ffaa387e44010ebe2d4397f529255 inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memItemLeft" align="right" valign="top"><a id="a362ffaa387e44010ebe2d4397f529255" name="a362ffaa387e44010ebe2d4397f529255"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>path</b></td></tr>
+<tr class="memdesc:a362ffaa387e44010ebe2d4397f529255 inherit pro_attribs_class_r_d_e_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where the SpriteSheet is located. <br /></td></tr>
+<tr class="separator:a362ffaa387e44010ebe2d4397f529255 inherit pro_attribs_class_r_d_e_1_1_texture"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is another type of texture that resides in the CPU also so we can modify its data on runtime more easily. </p>
+<dl class="section attention"><dt>Attention</dt><dd>Not recommended to use as hasn't been updated for many versions. </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab989357880b560670ec4b0a8ea5b6668" name="ab989357880b560670ec4b0a8ea5b6668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab989357880b560670ec4b0a8ea5b6668">&#9670;&#160;</a></span>getPixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> RDE::CPUTexture::getPixel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the color of a specific pixel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_x</td><td>X position in the texture starting on the left-bottom corner. </td></tr>
+    <tr><td class="paramname">_y</td><td>Y position in the texture starting on the left-bottom corner. </td></tr>
+  </table>
+  </dd>
 </dl>
-</p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE10CPUTexture10CPUTextureEv">
-<span id="_CPPv3N3RDE10CPUTexture10CPUTextureEv"></span><span id="_CPPv2N3RDE10CPUTexture10CPUTextureEv"></span><span id="RDE::CPUTexture::CPUTexture"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1a2fc3b1b13dbefb5bc381a50ba0187550"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CPUTexture</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE10CPUTexture10CPUTextureEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE10CPUTexture4initEiiPhRK9ImageType">
-<span id="_CPPv3N3RDE10CPUTexture4initEiiPhRK9ImageType"></span><span id="_CPPv2N3RDE10CPUTexture4initEiiPhRK9ImageType"></span><span id="RDE::CPUTexture::init__i.i.unsigned-cP.ImageTypeCR"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1af27681d35f927d3e9ac856124aa6cfc8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_width</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_height</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_pixels</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageTypeE" title="RDE::ImageType"><span class="n"><span class="pre">ImageType</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_imageType</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageTypeE" title="RDE::ImageType"><span class="n"><span class="pre">ImageType</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageType3PNGE" title="RDE::ImageType::PNG"><span class="n"><span class="pre">PNG</span></span></a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE10CPUTexture4initEiiPhRK9ImageType" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Inits a CPU texture given a width, height, data of the texture and type of texture. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_width</strong> – Width of the texture. </p></li>
-<li><p><strong>_height</strong> – Height of the texture. </p></li>
-<li><p><strong>_pixels</strong> – Data of the texture. </p></li>
-<li><p><strong>_imageType</strong> – Type of the texture. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE10CPUTexture4initEiiRK9ImageType">
-<span id="_CPPv3N3RDE10CPUTexture4initEiiRK9ImageType"></span><span id="_CPPv2N3RDE10CPUTexture4initEiiRK9ImageType"></span><span id="RDE::CPUTexture::init__i.i.ImageTypeCR"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1a66818147fc7127fcfab73d773e3df234"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_width</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_height</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageTypeE" title="RDE::ImageType"><span class="n"><span class="pre">ImageType</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_imageType</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageTypeE" title="RDE::ImageType"><span class="n"><span class="pre">ImageType</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageType3PNGE" title="RDE::ImageType::PNG"><span class="n"><span class="pre">PNG</span></span></a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE10CPUTexture4initEiiRK9ImageType" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Inits a CPU texture given a width, height and type of texture but no information. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_width</strong> – Width of the texture. </p></li>
-<li><p><strong>_height</strong> – Height of the texture. </p></li>
-<li><p><strong>_imageType</strong> – Type of the texture. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE10CPUTexture11uploadToGPUEv">
-<span id="_CPPv3N3RDE10CPUTexture11uploadToGPUEv"></span><span id="_CPPv2N3RDE10CPUTexture11uploadToGPUEv"></span><span id="RDE::CPUTexture::uploadToGPU"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1ae9c89574242493edc53b6209edc667d3"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uploadToGPU</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE10CPUTexture11uploadToGPUEv" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Sends the data to the GPU. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE10CPUTexture6saveAsERKNSt6stringE">
-<span id="_CPPv3N3RDE10CPUTexture6saveAsERKNSt6stringE"></span><span id="_CPPv2N3RDE10CPUTexture6saveAsERKNSt6stringE"></span><span id="RDE::CPUTexture::saveAs__ssCR"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1a97bc88a294cedb42259ee2478275c81b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">saveAs</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_pathToSave</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE10CPUTexture6saveAsERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Saves a copy of the texture to the file system. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>_pathToSave</strong> – Path to save the texture. </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE10CPUTexture8setPixelEiiRK5Color">
-<span id="_CPPv3N3RDE10CPUTexture8setPixelEiiRK5Color"></span><span id="_CPPv2N3RDE10CPUTexture8setPixelEiiRK5Color"></span><span id="RDE::CPUTexture::setPixel__i.i.ColorCR"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1a020387d976f6fe313eddd946ae66354c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPixel</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_x</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_y</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE10CPUTexture8setPixelEiiRK5Color" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Allows to set a specific pixel of the texture. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_x</strong> – X position in the texture starting on the left-bottom corner. </p></li>
-<li><p><strong>_y</strong> – Y position in the texture starting on the left-bottom corner. </p></li>
-<li><p><strong>_color</strong> – The color to paint the pixel. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE10CPUTexture8getPixelEii">
-<span id="_CPPv3N3RDE10CPUTexture8getPixelEii"></span><span id="_CPPv2N3RDE10CPUTexture8getPixelEii"></span><span id="RDE::CPUTexture::getPixel__i.i"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1ab989357880b560670ec4b0a8ea5b6668"></span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPixel</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_x</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_y</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE10CPUTexture8getPixelEii" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Returns the color of a specific pixel. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_x</strong> – X position in the texture starting on the left-bottom corner. </p></li>
-<li><p><strong>_y</strong> – Y position in the texture starting on the left-bottom corner. </p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE10CPUTexture11resizeImageERK4Vec2I4uintE">
-<span id="_CPPv3N3RDE10CPUTexture11resizeImageERK4Vec2I4uintE"></span><span id="_CPPv2N3RDE10CPUTexture11resizeImageERK4Vec2I4uintE"></span><span id="RDE::CPUTexture::resizeImage__Vec2:uint:CR"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1a8ccc8f3ba339cdf6f626fd7b6a85578f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">resizeImage</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_vec2.html#_CPPv4I0EN3RDE4Vec2E" title="RDE::Vec2"><span class="n"><span class="pre">Vec2</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="typedef__core_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14.html#_CPPv44uint" title="uint"><span class="n"><span class="pre">uint</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_newSize</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE10CPUTexture11resizeImageERK4Vec2I4uintE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE10CPUTextureD0Ev">
-<span id="_CPPv3N3RDE10CPUTextureD0Ev"></span><span id="_CPPv2N3RDE10CPUTextureD0Ev"></span><span id="RDE::CPUTexture::~CPUTexture"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1aec7fa99d711d190a8448c8bf60a89d3b"></span><span class="sig-name descname"><span class="n"><span class="pre">~CPUTexture</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE10CPUTextureD0Ev" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE10CPUTexture9imageTypeE">
-<span id="_CPPv3N3RDE10CPUTexture9imageTypeE"></span><span id="_CPPv2N3RDE10CPUTexture9imageTypeE"></span><span id="RDE::CPUTexture::imageType__ImageType"></span><span class="target" id="class_r_d_e_1_1_c_p_u_texture_1a43fea7a9600e65d2cff12628f5ce2b9e"></span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageTypeE" title="RDE::ImageType"><span class="n"><span class="pre">ImageType</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">imageType</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageTypeE" title="RDE::ImageType"><span class="n"><span class="pre">ImageType</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_namespace_r_d_e_1a9b56064364720987212b6d168063d797.html#_CPPv4N3RDE9ImageType3PNGE" title="RDE::ImageType::PNG"><span class="n"><span class="pre">PNG</span></span></a><a class="headerlink" href="#_CPPv4N3RDE10CPUTexture9imageTypeE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Type of texture. </p>
-</dd></dl>
+</div>
+<a id="a66818147fc7127fcfab73d773e3df234" name="a66818147fc7127fcfab73d773e3df234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66818147fc7127fcfab73d773e3df234">&#9670;&#160;</a></span>init() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::CPUTexture::init </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespace_r_d_e.html#a9b56064364720987212b6d168063d797">ImageType</a> &amp;&#160;</td>
+          <td class="paramname"><em>_imageType</em> = <code>ImageType::PNG</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inits a CPU texture given a width, height and type of texture but no information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_width</td><td>Width of the texture. </td></tr>
+    <tr><td class="paramname">_height</td><td>Height of the texture. </td></tr>
+    <tr><td class="paramname">_imageType</td><td>Type of the texture. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
-</dd></dl>
+</div>
+<a id="af27681d35f927d3e9ac856124aa6cfc8" name="af27681d35f927d3e9ac856124aa6cfc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af27681d35f927d3e9ac856124aa6cfc8">&#9670;&#160;</a></span>init() <span class="overload">[2/2]</span></h2>
 
-</section>
-</section>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::CPUTexture::init </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>_pixels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespace_r_d_e.html#a9b56064364720987212b6d168063d797">ImageType</a> &amp;&#160;</td>
+          <td class="paramname"><em>_imageType</em> = <code>ImageType::PNG</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
+<p>Inits a CPU texture given a width, height, data of the texture and type of texture. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_width</td><td>Width of the texture. </td></tr>
+    <tr><td class="paramname">_height</td><td>Height of the texture. </td></tr>
+    <tr><td class="paramname">_pixels</td><td>Data of the texture. </td></tr>
+    <tr><td class="paramname">_imageType</td><td>Type of the texture. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="class_r_d_e_1_1_controller_vibration_manager.html" class="btn btn-neutral float-left" title="Class ControllerVibrationManager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="class_r_d_e_1_1_debug_shape.html" class="btn btn-neutral float-right" title="Class DebugShape" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+</div>
+</div>
+<a id="a97bc88a294cedb42259ee2478275c81b" name="a97bc88a294cedb42259ee2478275c81b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97bc88a294cedb42259ee2478275c81b">&#9670;&#160;</a></span>saveAs()</h2>
 
-  <hr/>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::CPUTexture::saveAs </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>_pathToSave</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
-  <div role="contentinfo">
-    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
-  </div>
+<p>Saves a copy of the texture to the file system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_pathToSave</td><td>Path to save the texture. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+</div>
+</div>
+<a id="a020387d976f6fe313eddd946ae66354c" name="a020387d976f6fe313eddd946ae66354c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a020387d976f6fe313eddd946ae66354c">&#9670;&#160;</a></span>setPixel()</h2>
 
-</footer>
-        </div>
-      </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::CPUTexture::setPixel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>_color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
+<p>Allows to set a specific pixel of the texture. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_x</td><td>X position in the texture starting on the left-bottom corner. </td></tr>
+    <tr><td class="paramname">_y</td><td>Y position in the texture starting on the left-bottom corner. </td></tr>
+    <tr><td class="paramname">_color</td><td>The color to paint the pixel. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/Users/macmini/Documents/RDE/engine/include/core/render/elements/<a class="el" href="_texture_8h_source.html">Texture.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

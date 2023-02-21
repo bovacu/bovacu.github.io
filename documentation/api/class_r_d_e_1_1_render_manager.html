@@ -1,586 +1,912 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Class RenderManager &mdash; RDE  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
-    <script src="../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Class Scene" href="class_r_d_e_1_1_scene.html" />
-    <link rel="prev" title="Class Random" href="class_r_d_e_1_1_random.html" /> 
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RDE: RDE::RenderManager Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
-
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="../index.html" class="icon icon-home">
-            RDE
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RDE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="struct_component_base.html">Struct ComponentBase</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_active.html">Struct Active</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_animation_node.html">Struct AnimationNode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_animation_transition.html">Struct AnimationTransition</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_atlas.html">Struct Atlas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_canvas_element.html">Struct CanvasElement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_canvas_event_stopper.html">Struct CanvasEventStopper</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_char_info.html">Struct CharInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_color.html">Struct Color</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_command.html">Struct Command</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_common_u_i_config.html">Struct CommonUIConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_controller.html">Struct Controller</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_debug_options.html">Struct DebugOptions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_delegate.html">Template Struct Delegate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct Delegate&lt; R(Args…) &gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_event.html">Struct DisabledForEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_fixed_update.html">Struct DisabledForFixedUpdate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_late_update.html">Struct DisabledForLateUpdate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_render.html">Struct DisabledForRender</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_update.html">Struct DisabledForUpdate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_draw_and_flush_data.html">Struct DrawAndFlushData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_dynamic_sprite_renderer_config.html">Struct DynamicSpriteRendererConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_effect___controllers.html">Struct Effect_Controllers</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_file.html">Template Struct File</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_font_manager_1_1_font_handler.html">Struct FontManager::FontHandler</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_frame_buffer_specification.html">Struct FrameBufferSpecification</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_generation_settings.html">Struct GenerationSettings</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_config.html">Struct LocalizationConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_info.html">Struct LocalizationInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_manager_1_1_any.html">Struct LocalizationManager::Any</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_mat2.html">Struct Mat2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_music.html">Struct Music</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_nine_slice.html">Struct NineSlice</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_node.html">Struct Node</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_node___json_pair.html">Struct Node_JsonPair</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_noise_map.html">Struct NoiseMap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_open_g_l_vertex.html">Struct OpenGLVertex</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_open_g_l_vertex_debug.html">Struct OpenGLVertexDebug</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_data.html">Struct ParticleData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_callbacks_config.html">Struct ParticleSystemCallbacksConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_color_gradient_config.html">Struct ParticleSystemColorGradientConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_config.html">Struct ParticleSystemConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_data_config.html">Struct ParticleSystemDataConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_body.html">Struct PhysicsBody</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_body_config.html">Struct PhysicsBodyConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_collision_callbacks.html">Struct PhysicsCollisionCallbacks</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_shape.html">Struct PhysicsShape</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_probability.html">Struct Probability</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_procedural_map.html">Struct ProceduralMap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config.html">Struct RDEConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties.html">Struct RDEConfig::ProjectProperties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties.html">Struct RDEConfig::WindowProperties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rect.html">Template Struct Rect</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rendering_tree_data.html">Struct RenderingTreeData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_renderizable_inner_data.html">Struct RenderizableInnerData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_renderizable_inner_data_u_i.html">Struct RenderizableInnerDataUI</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_return_delegate.html">Template Struct ReturnDelegate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct ReturnDelegate&lt; R(Args…) &gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rolling_buffer.html">Struct RollingBuffer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_scrolling_buffer.html">Struct ScrollingBuffer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sfx.html">Struct Sfx</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_shape_config.html">Struct ShapeConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_shape_masking_config.html">Struct ShapeMaskingConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sound.html">Struct Sound</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sprite_renderer_config.html">Struct SpriteRendererConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_state.html">Struct State</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_stub.html">Template Struct Stub</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_stub_3_01_r_07_args_8_8_8_08_4.html">Template Struct Stub&lt; R(Args…) &gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_tag.html">Struct Tag</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_text_renderer_1_1_line_info.html">Struct TextRenderer::LineInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_text_renderer_config.html">Struct TextRendererConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_texture_info.html">Struct TextureInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_anchor.html">Struct UIAnchor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_button_config.html">Struct UIButtonConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_checkbox_config.html">Struct UICheckboxConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_image_config.html">Struct UIImageConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_input_config.html">Struct UIInputConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_panel_config.html">Struct UIPanelConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_slider_config.html">Struct UISliderConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_text_1_1_line_info.html">Struct UIText::LineInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_text_config.html">Struct UITextConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_transform.html">Struct UITransform</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_unique_delegate.html">Template Struct UniqueDelegate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_unique_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct UniqueDelegate&lt; R(Args…) &gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_updatable_data.html">Struct UpdatableData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vec2.html">Template Struct Vec2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vertex_config.html">Struct VertexConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vibration_config.html">Struct VibrationConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_animation.html">Class Animation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_animation_system.html">Class AnimationSystem</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_bad_delegate_call.html">Class BadDelegateCall</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_bad_e_c_s_system_swap.html">Class BadECSSystemSwap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_basic_perlin_noise.html">Template Class BasicPerlinNoise</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_batch.html">Class Batch</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_camera.html">Class Camera</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_canvas.html">Class Canvas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_cellular_automata.html">Class CellularAutomata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_clock.html">Class Clock</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_config_manager.html">Class ConfigManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_console.html">Class Console</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_axis_moved_event.html">Class ControllerAxisMovedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_button_down_event.html">Class ControllerButtonDownEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_button_up_event.html">Class ControllerButtonUpEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_input.html">Class ControllerInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_vibration_manager.html">Class ControllerVibrationManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html">Class CPUTexture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_debug_shape.html">Class DebugShape</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_delta.html">Class Delta</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_dynamic_sprite_renderer.html">Class DynamicSpriteRenderer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_e_c_s_manager.html">Class ECSManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_e_c_s_system.html">Class ECSSystem</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_engine.html">Class Engine</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event.html">Class Event</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_bus.html">Template Class EventBus</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_bus_1_1_handler_id.html">Class EventBus::HandlerId</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_dispatcher.html">Class EventDispatcher</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_file_handler.html">Class FileHandler</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_file_manager.html">Class FileManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_font.html">Class Font</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_font_manager.html">Class FontManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_frame_buffer.html">Class FrameBuffer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_graph.html">Class Graph</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_im_gui_scene.html">Class ImGuiScene</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_input.html">Class Input</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_input_manager.html">Class InputManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_keyboard_input.html">Class KeyboardInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_event.html">Class KeyEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_pressed_event.html">Class KeyPressedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_released_event.html">Class KeyReleasedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_typed_event.html">Class KeyTypedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_load_vertex_config_not_invoked.html">Class LoadVertexConfigNotInvoked</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_localization_manager.html">Class LocalizationManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_manager.html">Class Manager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_map_generator.html">Class MapGenerator</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_input.html">Class MobileInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_down_event.html">Class MobileTouchDownEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_moved_event.html">Class MobileTouchMovedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_up_event.html">Class MobileTouchUpEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_event.html">Class MouseButtonEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_pressed_event.html">Class MouseButtonPressedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_released_event.html">Class MouseButtonReleasedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_input.html">Class MouseInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_moved_event.html">Class MouseMovedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_scrolled_event.html">Class MouseScrolledEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_particle_system.html">Class ParticleSystem</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_perlin_noise_manager.html">Class PerlinNoiseManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_physics_manager.html">Class PhysicsManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_platform.html">Class Platform</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_pool.html">Template Class Pool</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_profiler.html">Class Profiler</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_random.html">Class Random</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Class RenderManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_scene.html">Class Scene</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_scene_manager.html">Class SceneManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_shader.html">Class Shader</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_shader_manager.html">Class ShaderManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sound_manager.html">Class SoundManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_batch.html">Class SpriteBatch</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_batch_1_1_debug.html">Class SpriteBatch::Debug</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_renderer.html">Class SpriteRenderer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_text_renderer.html">Class TextRenderer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_text_typed_event.html">Class TextTypedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_texture.html">Class Texture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_texture_atlas_manager.html">Class TextureAtlasManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_transform.html">Class Transform</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_transition_params.html">Class TransitionParams</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_button.html">Class UIButton</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_checkbox.html">Class UICheckbox</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_image.html">Class UIImage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_input.html">Class UIInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_interactable.html">Class UIInteractable</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_mask.html">Class UIMask</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_panel.html">Class UIPanel</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_slider.html">Class UISlider</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_text.html">Class UIText</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_view_port.html">Class ViewPort</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window.html">Class Window</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_closed_event.html">Class WindowClosedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_display_changed_event.html">Class WindowDisplayChangedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_frame_event.html">Class WindowFrameEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_input.html">Class WindowInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_minimized_event.html">Class WindowMinimizedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_moved_event.html">Class WindowMovedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_render_event.html">Class WindowRenderEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_resized_event.html">Class WindowResizedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_update_event.html">Class WindowUpdateEvent</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">RDE</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="library_root.html">Library API</a></li>
-      <li class="breadcrumb-item active">Class RenderManager</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/api/class_r_d_e_1_1_render_manager.rst.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
-  <section id="class-rendermanager">
-<span id="exhale-class-class-r-d-e-1-1-render-manager"></span><h1>Class RenderManager<a class="headerlink" href="#class-rendermanager" title="Permalink to this headline"></a></h1>
-<ul class="simple">
-<li><p>Defined in <a class="reference internal" href="file_engine_include_core_render_RenderManager.h.html#file-engine-include-core-render-rendermanager-h"><span class="std std-ref">File RenderManager.h</span></a></p></li>
-</ul>
-<section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
-<dl class="cpp class">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManagerE">
-<span id="_CPPv3N3RDE13RenderManagerE"></span><span id="_CPPv2N3RDE13RenderManagerE"></span><span id="RDE::RenderManager"></span><span class="target" id="class_r_d_e_1_1_render_manager"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RenderManager</span></span></span><a class="headerlink" href="#_CPPv4N3RDE13RenderManagerE" title="Permalink to this definition"></a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager13RenderManagerEv">
-<span id="_CPPv3N3RDE13RenderManager13RenderManagerEv"></span><span id="_CPPv2N3RDE13RenderManager13RenderManagerEv"></span><span id="RDE::RenderManager::RenderManager"></span><span class="target" id="class_r_d_e_1_1_render_manager_1a81c3e2e0601e8466e6b37a3625ea828f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RenderManager</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager13RenderManagerEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
 
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager14resetDebugInfoEv">
-<span id="_CPPv3N3RDE13RenderManager14resetDebugInfoEv"></span><span id="_CPPv2N3RDE13RenderManager14resetDebugInfoEv"></span><span id="RDE::RenderManager::resetDebugInfo"></span><span class="target" id="class_r_d_e_1_1_render_manager_1ad184a1422fb32da8965655fe90397151"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">resetDebugInfo</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager14resetDebugInfoEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
 
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager17getTotalTrianglesEv">
-<span id="_CPPv3N3RDE13RenderManager17getTotalTrianglesEv"></span><span id="_CPPv2N3RDE13RenderManager17getTotalTrianglesEv"></span><span id="RDE::RenderManager::getTotalTriangles"></span><span class="target" id="class_r_d_e_1_1_render_manager_1aa32fdb1f0beeed8be3e1dc32f469c1b7"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getTotalTriangles</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager17getTotalTrianglesEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_r_d_e.html">RDE</a></li><li class="navelem"><a class="el" href="class_r_d_e_1_1_render_manager.html">RenderManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="class_r_d_e_1_1_render_manager-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">RDE::RenderManager Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad184a1422fb32da8965655fe90397151"><td class="memItemLeft" align="right" valign="top"><a id="ad184a1422fb32da8965655fe90397151" name="ad184a1422fb32da8965655fe90397151"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resetDebugInfo</b> ()</td></tr>
+<tr class="separator:ad184a1422fb32da8965655fe90397151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32fdb1f0beeed8be3e1dc32f469c1b7"><td class="memItemLeft" align="right" valign="top"><a id="aa32fdb1f0beeed8be3e1dc32f469c1b7" name="aa32fdb1f0beeed8be3e1dc32f469c1b7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getTotalTriangles</b> ()</td></tr>
+<tr class="separator:aa32fdb1f0beeed8be3e1dc32f469c1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c416891b3ad8b13e5a5b4699b287cf7"><td class="memItemLeft" align="right" valign="top"><a id="a7c416891b3ad8b13e5a5b4699b287cf7" name="a7c416891b3ad8b13e5a5b4699b287cf7"></a>
+std::tuple&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getDrawCalls</b> ()</td></tr>
+<tr class="separator:a7c416891b3ad8b13e5a5b4699b287cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d6bf6742076a727706ab7559f9c3ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#a93d6bf6742076a727706ab7559f9c3ea">setClearColor</a> (const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;_color)</td></tr>
+<tr class="memdesc:a93d6bf6742076a727706ab7559f9c3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the color to paint the background.  <br /></td></tr>
+<tr class="separator:a93d6bf6742076a727706ab7559f9c3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8eb1f48e04a2e9e4c86d53fe236fcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_d_e_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#a9f8eb1f48e04a2e9e4c86d53fe236fcc">getClearColor</a> ()</td></tr>
+<tr class="memdesc:a9f8eb1f48e04a2e9e4c86d53fe236fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current clear color.  <br /></td></tr>
+<tr class="separator:a9f8eb1f48e04a2e9e4c86d53fe236fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3503e9d48e3d2741017c5de81b9db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#a8a3503e9d48e3d2741017c5de81b9db8">drawPoint</a> (const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_position, const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;_color=Color::White)</td></tr>
+<tr class="memdesc:a8a3503e9d48e3d2741017c5de81b9db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a point at _position. MUST BE CALLED INSIDE A BLOCK OF beginDebugDraw/endDraw.  <br /></td></tr>
+<tr class="separator:a8a3503e9d48e3d2741017c5de81b9db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03723445771102882acc575d6fa55257"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#a03723445771102882acc575d6fa55257">drawLine</a> (const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_p0, const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_p1, const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;_color=Color::White)</td></tr>
+<tr class="memdesc:a03723445771102882acc575d6fa55257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a line form P0 to P1. MUST BE CALLED INSIDE A BLOCK OF beginDebugDraw/endDraw.  <br /></td></tr>
+<tr class="separator:a03723445771102882acc575d6fa55257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef2ee711757cf558e81b6334fa5fc1e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#aef2ee711757cf558e81b6334fa5fc1e8">drawSquare</a> (const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_position, const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_size, const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;_color=Color::White, float _rotation=0.f)</td></tr>
+<tr class="memdesc:aef2ee711757cf558e81b6334fa5fc1e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a line form P0 to P1. MUST BE CALLED INSIDE A BLOCK OF beginDebugDraw/endDraw.  <br /></td></tr>
+<tr class="separator:aef2ee711757cf558e81b6334fa5fc1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d6ba0097cc1d33c5fabc03606eff8b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#a7d6ba0097cc1d33c5fabc03606eff8b1">drawShape</a> (<a class="el" href="class_r_d_e_1_1_debug_shape.html">DebugShape</a> &amp;_shape)</td></tr>
+<tr class="memdesc:a7d6ba0097cc1d33c5fabc03606eff8b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a shape. MUST BE CALLED INSIDE A BLOCK OF beginDebugDraw/endDraw.  <br /></td></tr>
+<tr class="separator:a7d6ba0097cc1d33c5fabc03606eff8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98513a547e397dfe8f6b7c53fe281c64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#a98513a547e397dfe8f6b7c53fe281c64">drawGrid</a> (const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;_color=Color::White)</td></tr>
+<tr class="memdesc:a98513a547e397dfe8f6b7c53fe281c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a grid on the screen.  <br /></td></tr>
+<tr class="separator:a98513a547e397dfe8f6b7c53fe281c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeccc8377f952b94660cb331554c123"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#a9eeccc8377f952b94660cb331554c123">setLineThickness</a> (float _thickness)</td></tr>
+<tr class="memdesc:a9eeccc8377f952b94660cb331554c123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets line thickness.  <br /></td></tr>
+<tr class="separator:a9eeccc8377f952b94660cb331554c123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55f03b421f6ad0663330564041504f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#ad55f03b421f6ad0663330564041504f3">setPointSize</a> (float _size)</td></tr>
+<tr class="memdesc:ad55f03b421f6ad0663330564041504f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets point size.  <br /></td></tr>
+<tr class="separator:ad55f03b421f6ad0663330564041504f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43fc9c767a29292dd2aff8e94db52288"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#a43fc9c767a29292dd2aff8e94db52288">fillBackgroundCPUTexture</a> (<a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *_cpuTexture, const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;_color)</td></tr>
+<tr class="memdesc:a43fc9c767a29292dd2aff8e94db52288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the whole <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a> with a specific color.  <br /></td></tr>
+<tr class="separator:a43fc9c767a29292dd2aff8e94db52288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27330327fa80ee38755ce77c368f2d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#ab27330327fa80ee38755ce77c368f2d5">drawPointToCPUTexture</a> (<a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *_cpuTexture, <a class="el" href="class_r_d_e_1_1_transform.html">Transform</a> *_cpuTextureTransform, const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_position, const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;_color=Color::Blue, int _size=1)</td></tr>
+<tr class="memdesc:ab27330327fa80ee38755ce77c368f2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a point on the <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a>.  <br /></td></tr>
+<tr class="separator:ab27330327fa80ee38755ce77c368f2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6cef39ea58130daad8104f8d02395e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#a2c6cef39ea58130daad8104f8d02395e">drawLineToCPUTexture</a> (<a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *_cpuTexture, <a class="el" href="class_r_d_e_1_1_transform.html">Transform</a> *_cpuTextureTransform, const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_p0, const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_p1, const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;_color=Color::Blue, int _thickness=1)</td></tr>
+<tr class="memdesc:a2c6cef39ea58130daad8104f8d02395e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a line on the CPUTexure.  <br /></td></tr>
+<tr class="separator:a2c6cef39ea58130daad8104f8d02395e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac770c2ccf9f970dd4aed13b1cf5b105c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#ac770c2ccf9f970dd4aed13b1cf5b105c">drawRectangleToCPUTexture</a> (<a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *_cpuTexture, <a class="el" href="class_r_d_e_1_1_transform.html">Transform</a> *_cpuTextureTransform, const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_position, const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_size, const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;_color=Color::Blue)</td></tr>
+<tr class="memdesc:ac770c2ccf9f970dd4aed13b1cf5b105c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a rectangle on the <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a>.  <br /></td></tr>
+<tr class="separator:ac770c2ccf9f970dd4aed13b1cf5b105c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a423dad8acfb2c7a49aefa7f6715fff96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#a423dad8acfb2c7a49aefa7f6715fff96">drawFilledCircleToCPUTexture</a> (<a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *_cpuTexture, <a class="el" href="class_r_d_e_1_1_transform.html">Transform</a> *_cpuTextureTransform, const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_center, float _radius, const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;_color=Color::Blue)</td></tr>
+<tr class="memdesc:a423dad8acfb2c7a49aefa7f6715fff96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a filled circle on the <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a>.  <br /></td></tr>
+<tr class="separator:a423dad8acfb2c7a49aefa7f6715fff96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2fb5f8a05fc744954508fc0b67340f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#add2fb5f8a05fc744954508fc0b67340f">drawLinedCircleToCPUTexture</a> (<a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *_cpuTexture, <a class="el" href="class_r_d_e_1_1_transform.html">Transform</a> *_cpuTextureTransform, const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_center, float _radius, const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;_color=Color::Blue, int _thickness=1)</td></tr>
+<tr class="memdesc:add2fb5f8a05fc744954508fc0b67340f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the outline of a circle on the <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a>.  <br /></td></tr>
+<tr class="separator:add2fb5f8a05fc744954508fc0b67340f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8badae7b83ae30b2f41ecae9c7497e27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#a8badae7b83ae30b2f41ecae9c7497e27">drawTriangleToCPUTexture</a> (<a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *_cpuTexture, <a class="el" href="class_r_d_e_1_1_transform.html">Transform</a> *_cpuTextureTransform, const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_p0, const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_p1, const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_p2, const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;_color=Color::Blue)</td></tr>
+<tr class="memdesc:a8badae7b83ae30b2f41ecae9c7497e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a triangle on the <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a>.  <br /></td></tr>
+<tr class="separator:a8badae7b83ae30b2f41ecae9c7497e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b99eae6df7a12f5dd8fc92d6c42ce9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_render_manager.html#a17b99eae6df7a12f5dd8fc92d6c42ce9">drawShapeToCPUTexture</a> (<a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *_cpuTexture, <a class="el" href="class_r_d_e_1_1_transform.html">Transform</a> *_cpuTextureTransform, std::vector&lt; <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &gt; _points, const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;_color=Color::Blue)</td></tr>
+<tr class="memdesc:a17b99eae6df7a12f5dd8fc92d6c42ce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a shape on the <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a>.  <br /></td></tr>
+<tr class="separator:a17b99eae6df7a12f5dd8fc92d6c42ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a032858ae1fe02d2d1170981c2af2d67c"><td class="memItemLeft" align="right" valign="top"><a id="a032858ae1fe02d2d1170981c2af2d67c" name="a032858ae1fe02d2d1170981c2af2d67c"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
+<tr class="separator:a032858ae1fe02d2d1170981c2af2d67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memItemLeft" align="right" valign="top"><a id="a3e1914489e4bed4f9f23cdeab34a43dc" name="a3e1914489e4bed4f9f23cdeab34a43dc"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Engine</b></td></tr>
+<tr class="separator:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f241a517f779b649085b1b171a83b1"><td class="memItemLeft" align="right" valign="top"><a id="af4f241a517f779b649085b1b171a83b1" name="af4f241a517f779b649085b1b171a83b1"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>ImGuiScene</b></td></tr>
+<tr class="separator:af4f241a517f779b649085b1b171a83b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e815028687ed9f9e9e25851d8a17b27"><td class="memItemLeft" align="right" valign="top"><a id="a7e815028687ed9f9e9e25851d8a17b27" name="a7e815028687ed9f9e9e25851d8a17b27"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>FrameBuffer</b></td></tr>
+<tr class="separator:a7e815028687ed9f9e9e25851d8a17b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9816083e25bae0b2f472e19382136687"><td class="memItemLeft" align="right" valign="top"><a id="a9816083e25bae0b2f472e19382136687" name="a9816083e25bae0b2f472e19382136687"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Canvas</b></td></tr>
+<tr class="separator:a9816083e25bae0b2f472e19382136687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adddd5c43ff870a047aa66db4edf82a7e"><td class="memItemLeft" align="right" valign="top"><a id="adddd5c43ff870a047aa66db4edf82a7e" name="adddd5c43ff870a047aa66db4edf82a7e"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Manager</b></td></tr>
+<tr class="separator:adddd5c43ff870a047aa66db4edf82a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a423dad8acfb2c7a49aefa7f6715fff96" name="a423dad8acfb2c7a49aefa7f6715fff96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a423dad8acfb2c7a49aefa7f6715fff96">&#9670;&#160;</a></span>drawFilledCircleToCPUTexture()</h2>
 
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager12getDrawCallsEv">
-<span id="_CPPv3N3RDE13RenderManager12getDrawCallsEv"></span><span id="_CPPv2N3RDE13RenderManager12getDrawCallsEv"></span><span id="RDE::RenderManager::getDrawCalls"></span><span class="target" id="class_r_d_e_1_1_render_manager_1a7c416891b3ad8b13e5a5b4699b287cf7"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">tuple</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDrawCalls</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager12getDrawCallsEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::drawFilledCircleToCPUTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_transform.html">Transform</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTextureTransform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>_color</em> = <code>Color::Blue</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager13setClearColorERK5Color">
-<span id="_CPPv3N3RDE13RenderManager13setClearColorERK5Color"></span><span id="_CPPv2N3RDE13RenderManager13setClearColorERK5Color"></span><span id="RDE::RenderManager::setClearColor__ColorCR"></span><span class="target" id="class_r_d_e_1_1_render_manager_1a93d6bf6742076a727706ab7559f9c3ea"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setClearColor</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager13setClearColorERK5Color" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Sets the color to paint the background. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>_color</strong> – <a class="reference internal" href="struct_r_d_e_1_1_color.html#struct_r_d_e_1_1_color"><span class="std std-ref">Color</span></a> to paint the background </p>
-</dd>
+<p>Draws a filled circle on the <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_cpuTexture</td><td>The CPUTexutre to modify. </td></tr>
+    <tr><td class="paramname">_center</td><td>Center of the circle. </td></tr>
+    <tr><td class="paramname">_radius</td><td>Radius of the circle </td></tr>
+    <tr><td class="paramname">_color</td><td><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> to draw the circle. </td></tr>
+  </table>
+  </dd>
 </dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager13getClearColorEv">
-<span id="_CPPv3N3RDE13RenderManager13getClearColorEv"></span><span id="_CPPv2N3RDE13RenderManager13getClearColorEv"></span><span id="RDE::RenderManager::getClearColor"></span><span class="target" id="class_r_d_e_1_1_render_manager_1a9f8eb1f48e04a2e9e4c86d53fe236fcc"></span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getClearColor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager13getClearColorEv" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Returns the current clear color. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><a class="reference internal" href="struct_r_d_e_1_1_color.html#struct_r_d_e_1_1_color"><span class="std std-ref">Color</span></a> </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager9drawPointERK5Vec2FRK5Color">
-<span id="_CPPv3N3RDE13RenderManager9drawPointERK5Vec2FRK5Color"></span><span id="_CPPv2N3RDE13RenderManager9drawPointERK5Vec2FRK5Color"></span><span id="RDE::RenderManager::drawPoint__Vec2FCR.ColorCR"></span><span class="target" id="class_r_d_e_1_1_render_manager_1a8a3503e9d48e3d2741017c5de81b9db8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drawPoint</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_position</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5Color5WhiteE" title="RDE::Color::White"><span class="n"><span class="pre">White</span></span></a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager9drawPointERK5Vec2FRK5Color" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Draws a point at _position. MUST BE CALLED INSIDE A BLOCK OF beginDebugDraw/endDraw. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_position</strong> – Position. </p></li>
-<li><p><strong>_color</strong> – <a class="reference internal" href="struct_r_d_e_1_1_color.html#struct_r_d_e_1_1_color"><span class="std std-ref">Color</span></a> of the line. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager8drawLineERK5Vec2FRK5Vec2FRK5Color">
-<span id="_CPPv3N3RDE13RenderManager8drawLineERK5Vec2FRK5Vec2FRK5Color"></span><span id="_CPPv2N3RDE13RenderManager8drawLineERK5Vec2FRK5Vec2FRK5Color"></span><span id="RDE::RenderManager::drawLine__Vec2FCR.Vec2FCR.ColorCR"></span><span class="target" id="class_r_d_e_1_1_render_manager_1a03723445771102882acc575d6fa55257"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drawLine</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_p0</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_p1</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5Color5WhiteE" title="RDE::Color::White"><span class="n"><span class="pre">White</span></span></a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager8drawLineERK5Vec2FRK5Vec2FRK5Color" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Draws a line form P0 to P1. MUST BE CALLED INSIDE A BLOCK OF beginDebugDraw/endDraw. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_p0</strong> – Starting point of the line. </p></li>
-<li><p><strong>_p1</strong> – Ending point of the line. </p></li>
-<li><p><strong>_color</strong> – <a class="reference internal" href="struct_r_d_e_1_1_color.html#struct_r_d_e_1_1_color"><span class="std std-ref">Color</span></a> of the line. </p></li>
-<li><p><strong>_thickness</strong> – Thickness of the line. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager10drawSquareERK5Vec2FRK5Vec2FRK5Colorf">
-<span id="_CPPv3N3RDE13RenderManager10drawSquareERK5Vec2FRK5Vec2FRK5Colorf"></span><span id="_CPPv2N3RDE13RenderManager10drawSquareERK5Vec2FRK5Vec2FRK5Colorf"></span><span id="RDE::RenderManager::drawSquare__Vec2FCR.Vec2FCR.ColorCR.float"></span><span class="target" id="class_r_d_e_1_1_render_manager_1aef2ee711757cf558e81b6334fa5fc1e8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drawSquare</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_position</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_size</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5Color5WhiteE" title="RDE::Color::White"><span class="n"><span class="pre">White</span></span></a>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_rotation</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.f</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager10drawSquareERK5Vec2FRK5Vec2FRK5Colorf" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Draws a line form P0 to P1. MUST BE CALLED INSIDE A BLOCK OF beginDebugDraw/endDraw. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_position</strong> – Center position of the square. </p></li>
-<li><p><strong>_size</strong> – Size of the square. </p></li>
-<li><p><strong>_color</strong> – <a class="reference internal" href="struct_r_d_e_1_1_color.html#struct_r_d_e_1_1_color"><span class="std std-ref">Color</span></a> of the line. </p></li>
-<li><p><strong>_rotation</strong> – Rotation of the square. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager9drawShapeER10DebugShape">
-<span id="_CPPv3N3RDE13RenderManager9drawShapeER10DebugShape"></span><span id="_CPPv2N3RDE13RenderManager9drawShapeER10DebugShape"></span><span id="RDE::RenderManager::drawShape__DebugShapeR"></span><span class="target" id="class_r_d_e_1_1_render_manager_1a7d6ba0097cc1d33c5fabc03606eff8b1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drawShape</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_debug_shape.html#_CPPv4N3RDE10DebugShapeE" title="RDE::DebugShape"><span class="n"><span class="pre">DebugShape</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_shape</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager9drawShapeER10DebugShape" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Draws a shape. MUST BE CALLED INSIDE A BLOCK OF beginDebugDraw/endDraw. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>_shape</strong> – Complex shape </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager8drawGridERK5Color">
-<span id="_CPPv3N3RDE13RenderManager8drawGridERK5Color"></span><span id="_CPPv2N3RDE13RenderManager8drawGridERK5Color"></span><span id="RDE::RenderManager::drawGrid__ColorCR"></span><span class="target" id="class_r_d_e_1_1_render_manager_1a98513a547e397dfe8f6b7c53fe281c64"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drawGrid</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5Color5WhiteE" title="RDE::Color::White"><span class="n"><span class="pre">White</span></span></a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager8drawGridERK5Color" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Draws a grid on the screen. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>_color</strong> – <a class="reference internal" href="struct_r_d_e_1_1_color.html#struct_r_d_e_1_1_color"><span class="std std-ref">Color</span></a> of the grid </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager16setLineThicknessEf">
-<span id="_CPPv3N3RDE13RenderManager16setLineThicknessEf"></span><span id="_CPPv2N3RDE13RenderManager16setLineThicknessEf"></span><span id="RDE::RenderManager::setLineThickness__float"></span><span class="target" id="class_r_d_e_1_1_render_manager_1a9eeccc8377f952b94660cb331554c123"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setLineThickness</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_thickness</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager16setLineThicknessEf" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Sets line thickness. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>_thickness</strong> – Line thickness </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager12setPointSizeEf">
-<span id="_CPPv3N3RDE13RenderManager12setPointSizeEf"></span><span id="_CPPv2N3RDE13RenderManager12setPointSizeEf"></span><span id="RDE::RenderManager::setPointSize__float"></span><span class="target" id="class_r_d_e_1_1_render_manager_1ad55f03b421f6ad0663330564041504f3"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPointSize</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager12setPointSizeEf" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Sets point size. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>_size</strong> – Point size </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager24fillBackgroundCPUTextureEP10CPUTextureRK5Color">
-<span id="_CPPv3N3RDE13RenderManager24fillBackgroundCPUTextureEP10CPUTextureRK5Color"></span><span id="_CPPv2N3RDE13RenderManager24fillBackgroundCPUTextureEP10CPUTextureRK5Color"></span><span id="RDE::RenderManager::fillBackgroundCPUTexture__CPUTextureP.ColorCR"></span><span class="target" id="class_r_d_e_1_1_render_manager_1a43fc9c767a29292dd2aff8e94db52288"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fillBackgroundCPUTexture</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#_CPPv4N3RDE10CPUTextureE" title="RDE::CPUTexture"><span class="n"><span class="pre">CPUTexture</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTexture</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager24fillBackgroundCPUTextureEP10CPUTextureRK5Color" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Fills the whole <a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#class_r_d_e_1_1_c_p_u_texture"><span class="std std-ref">CPUTexture</span></a> with a specific color. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_cpuTexture</strong> – The CPUTexutre to modify. </p></li>
-<li><p><strong>_color</strong> – <a class="reference internal" href="struct_r_d_e_1_1_color.html#struct_r_d_e_1_1_color"><span class="std std-ref">Color</span></a> to fill the whole <a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#class_r_d_e_1_1_c_p_u_texture"><span class="std std-ref">CPUTexture</span></a>. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager21drawPointToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Colori">
-<span id="_CPPv3N3RDE13RenderManager21drawPointToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Colori"></span><span id="_CPPv2N3RDE13RenderManager21drawPointToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Colori"></span><span id="RDE::RenderManager::drawPointToCPUTexture__CPUTextureP.TransformP.Vec2FCR.ColorCR.i"></span><span class="target" id="class_r_d_e_1_1_render_manager_1ab27330327fa80ee38755ce77c368f2d5"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drawPointToCPUTexture</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#_CPPv4N3RDE10CPUTextureE" title="RDE::CPUTexture"><span class="n"><span class="pre">CPUTexture</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTexture</span></span>, <a class="reference internal" href="class_r_d_e_1_1_transform.html#_CPPv4N3RDE9TransformE" title="RDE::Transform"><span class="n"><span class="pre">Transform</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTextureTransform</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_position</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5Color4BlueE" title="RDE::Color::Blue"><span class="n"><span class="pre">Blue</span></span></a>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_size</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager21drawPointToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Colori" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Draws a point on the <a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#class_r_d_e_1_1_c_p_u_texture"><span class="std std-ref">CPUTexture</span></a>. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_cpuTexture</strong> – The CPUTexutre to modify. </p></li>
-<li><p><strong>_position</strong> – Where to draw the point. </p></li>
-<li><p><strong>_color</strong> – <a class="reference internal" href="struct_r_d_e_1_1_color.html#struct_r_d_e_1_1_color"><span class="std std-ref">Color</span></a> to draw the point. </p></li>
-<li><p><strong>_size</strong> – Size of the point. Minimum is 1, this means that the pixel according to position will be filled and also 1 unit to each side. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager20drawLineToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Vec2FRK5Colori">
-<span id="_CPPv3N3RDE13RenderManager20drawLineToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Vec2FRK5Colori"></span><span id="_CPPv2N3RDE13RenderManager20drawLineToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Vec2FRK5Colori"></span><span id="RDE::RenderManager::drawLineToCPUTexture__CPUTextureP.TransformP.Vec2FCR.Vec2FCR.ColorCR.i"></span><span class="target" id="class_r_d_e_1_1_render_manager_1a2c6cef39ea58130daad8104f8d02395e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drawLineToCPUTexture</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#_CPPv4N3RDE10CPUTextureE" title="RDE::CPUTexture"><span class="n"><span class="pre">CPUTexture</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTexture</span></span>, <a class="reference internal" href="class_r_d_e_1_1_transform.html#_CPPv4N3RDE9TransformE" title="RDE::Transform"><span class="n"><span class="pre">Transform</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTextureTransform</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_p0</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_p1</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5Color4BlueE" title="RDE::Color::Blue"><span class="n"><span class="pre">Blue</span></span></a>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_thickness</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager20drawLineToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Vec2FRK5Colori" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Draws a line on the CPUTexure. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_cpuTexture</strong> – The CPUTexutre to modify. </p></li>
-<li><p><strong>_p0</strong> – Initial position of the line. </p></li>
-<li><p><strong>_p1</strong> – End position of the line. </p></li>
-<li><p><strong>_color</strong> – <a class="reference internal" href="struct_r_d_e_1_1_color.html#struct_r_d_e_1_1_color"><span class="std std-ref">Color</span></a> to draw the line. </p></li>
-<li><p><strong>_thickness</strong> – Thickness of the line. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager25drawRectangleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Vec2FRK5Color">
-<span id="_CPPv3N3RDE13RenderManager25drawRectangleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Vec2FRK5Color"></span><span id="_CPPv2N3RDE13RenderManager25drawRectangleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Vec2FRK5Color"></span><span id="RDE::RenderManager::drawRectangleToCPUTexture__CPUTextureP.TransformP.Vec2FCR.Vec2FCR.ColorCR"></span><span class="target" id="class_r_d_e_1_1_render_manager_1ac770c2ccf9f970dd4aed13b1cf5b105c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drawRectangleToCPUTexture</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#_CPPv4N3RDE10CPUTextureE" title="RDE::CPUTexture"><span class="n"><span class="pre">CPUTexture</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTexture</span></span>, <a class="reference internal" href="class_r_d_e_1_1_transform.html#_CPPv4N3RDE9TransformE" title="RDE::Transform"><span class="n"><span class="pre">Transform</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTextureTransform</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_position</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_size</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5Color4BlueE" title="RDE::Color::Blue"><span class="n"><span class="pre">Blue</span></span></a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager25drawRectangleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Vec2FRK5Color" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Draws a rectangle on the <a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#class_r_d_e_1_1_c_p_u_texture"><span class="std std-ref">CPUTexture</span></a>. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_cpuTexture</strong> – The CPUTexutre to modify. </p></li>
-<li><p><strong>_position</strong> – The centered position of the rectangle. </p></li>
-<li><p><strong>_size</strong> – Size of the rectangle. It will expando half of the size to each side from _position. </p></li>
-<li><p><strong>_color</strong> – <a class="reference internal" href="struct_r_d_e_1_1_color.html#struct_r_d_e_1_1_color"><span class="std std-ref">Color</span></a> to draw the rectangle. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager28drawFilledCircleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FfRK5Color">
-<span id="_CPPv3N3RDE13RenderManager28drawFilledCircleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FfRK5Color"></span><span id="_CPPv2N3RDE13RenderManager28drawFilledCircleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FfRK5Color"></span><span id="RDE::RenderManager::drawFilledCircleToCPUTexture__CPUTextureP.TransformP.Vec2FCR.float.ColorCR"></span><span class="target" id="class_r_d_e_1_1_render_manager_1a423dad8acfb2c7a49aefa7f6715fff96"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drawFilledCircleToCPUTexture</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#_CPPv4N3RDE10CPUTextureE" title="RDE::CPUTexture"><span class="n"><span class="pre">CPUTexture</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTexture</span></span>, <a class="reference internal" href="class_r_d_e_1_1_transform.html#_CPPv4N3RDE9TransformE" title="RDE::Transform"><span class="n"><span class="pre">Transform</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTextureTransform</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_center</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_radius</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5Color4BlueE" title="RDE::Color::Blue"><span class="n"><span class="pre">Blue</span></span></a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager28drawFilledCircleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FfRK5Color" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Draws a filled circle on the <a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#class_r_d_e_1_1_c_p_u_texture"><span class="std std-ref">CPUTexture</span></a>. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_cpuTexture</strong> – The CPUTexutre to modify. </p></li>
-<li><p><strong>_center</strong> – Center of the circle. </p></li>
-<li><p><strong>_radius</strong> – Radius of the circle </p></li>
-<li><p><strong>_color</strong> – <a class="reference internal" href="struct_r_d_e_1_1_color.html#struct_r_d_e_1_1_color"><span class="std std-ref">Color</span></a> to draw the circle. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager27drawLinedCircleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FfRK5Colori">
-<span id="_CPPv3N3RDE13RenderManager27drawLinedCircleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FfRK5Colori"></span><span id="_CPPv2N3RDE13RenderManager27drawLinedCircleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FfRK5Colori"></span><span id="RDE::RenderManager::drawLinedCircleToCPUTexture__CPUTextureP.TransformP.Vec2FCR.float.ColorCR.i"></span><span class="target" id="class_r_d_e_1_1_render_manager_1add2fb5f8a05fc744954508fc0b67340f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drawLinedCircleToCPUTexture</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#_CPPv4N3RDE10CPUTextureE" title="RDE::CPUTexture"><span class="n"><span class="pre">CPUTexture</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTexture</span></span>, <a class="reference internal" href="class_r_d_e_1_1_transform.html#_CPPv4N3RDE9TransformE" title="RDE::Transform"><span class="n"><span class="pre">Transform</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTextureTransform</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_center</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_radius</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5Color4BlueE" title="RDE::Color::Blue"><span class="n"><span class="pre">Blue</span></span></a>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_thickness</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager27drawLinedCircleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FfRK5Colori" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Draws the outline of a circle on the <a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#class_r_d_e_1_1_c_p_u_texture"><span class="std std-ref">CPUTexture</span></a>. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_cpuTexture</strong> – The CPUTexutre to modify. </p></li>
-<li><p><strong>_center</strong> – Center of the outline of the circle. </p></li>
-<li><p><strong>_radius</strong> – Radius of the outline of the circle. </p></li>
-<li><p><strong>_color</strong> – <a class="reference internal" href="struct_r_d_e_1_1_color.html#struct_r_d_e_1_1_color"><span class="std std-ref">Color</span></a> to draw the outline of the circle. </p></li>
-<li><p><strong>_thickness</strong> – Thickness of the outline of the circle. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager24drawTriangleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Vec2FRK5Vec2FRK5Color">
-<span id="_CPPv3N3RDE13RenderManager24drawTriangleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Vec2FRK5Vec2FRK5Color"></span><span id="_CPPv2N3RDE13RenderManager24drawTriangleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Vec2FRK5Vec2FRK5Color"></span><span id="RDE::RenderManager::drawTriangleToCPUTexture__CPUTextureP.TransformP.Vec2FCR.Vec2FCR.Vec2FCR.ColorCR"></span><span class="target" id="class_r_d_e_1_1_render_manager_1a8badae7b83ae30b2f41ecae9c7497e27"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drawTriangleToCPUTexture</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#_CPPv4N3RDE10CPUTextureE" title="RDE::CPUTexture"><span class="n"><span class="pre">CPUTexture</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTexture</span></span>, <a class="reference internal" href="class_r_d_e_1_1_transform.html#_CPPv4N3RDE9TransformE" title="RDE::Transform"><span class="n"><span class="pre">Transform</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTextureTransform</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_p0</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_p1</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_p2</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5Color4BlueE" title="RDE::Color::Blue"><span class="n"><span class="pre">Blue</span></span></a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager24drawTriangleToCPUTextureEP10CPUTextureP9TransformRK5Vec2FRK5Vec2FRK5Vec2FRK5Color" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Draws a triangle on the <a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#class_r_d_e_1_1_c_p_u_texture"><span class="std std-ref">CPUTexture</span></a>. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_cpuTexture</strong> – The CPUTexutre to modify. </p></li>
-<li><p><strong>_p0</strong> – First vertex of the triangle. </p></li>
-<li><p><strong>_p1</strong> – Second vertex of the triangle. </p></li>
-<li><p><strong>_p2</strong> – Third vertex of the triangle. </p></li>
-<li><p><strong>_color</strong> – <a class="reference internal" href="struct_r_d_e_1_1_color.html#struct_r_d_e_1_1_color"><span class="std std-ref">Color</span></a> to draw the triangle. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE13RenderManager21drawShapeToCPUTextureEP10CPUTextureP9TransformNSt6vectorI5Vec2FEERK5Color">
-<span id="_CPPv3N3RDE13RenderManager21drawShapeToCPUTextureEP10CPUTextureP9TransformNSt6vectorI5Vec2FEERK5Color"></span><span id="_CPPv2N3RDE13RenderManager21drawShapeToCPUTextureEP10CPUTextureP9TransformNSt6vectorI5Vec2FEERK5Color"></span><span id="RDE::RenderManager::drawShapeToCPUTexture__CPUTextureP.TransformP.std::vector:Vec2F:.ColorCR"></span><span class="target" id="class_r_d_e_1_1_render_manager_1a17b99eae6df7a12f5dd8fc92d6c42ce9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drawShapeToCPUTexture</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#_CPPv4N3RDE10CPUTextureE" title="RDE::CPUTexture"><span class="n"><span class="pre">CPUTexture</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTexture</span></span>, <a class="reference internal" href="class_r_d_e_1_1_transform.html#_CPPv4N3RDE9TransformE" title="RDE::Transform"><span class="n"><span class="pre">Transform</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_cpuTextureTransform</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_points</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_color</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5ColorE" title="RDE::Color"><span class="n"><span class="pre">Color</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="struct_r_d_e_1_1_color.html#_CPPv4N3RDE5Color4BlueE" title="RDE::Color::Blue"><span class="n"><span class="pre">Blue</span></span></a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE13RenderManager21drawShapeToCPUTextureEP10CPUTextureP9TransformNSt6vectorI5Vec2FEERK5Color" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Draws a shape on the <a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html#class_r_d_e_1_1_c_p_u_texture"><span class="std std-ref">CPUTexture</span></a>. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_cpuTexture</strong> – The CPUTexutre to modify. </p></li>
-<li><p><strong>_points</strong> – List of the vertices of the shape. </p></li>
-<li><p><strong>_color</strong> – <a class="reference internal" href="struct_r_d_e_1_1_color.html#struct_r_d_e_1_1_color"><span class="std std-ref">Color</span></a> to draw the shape. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
 
 </div>
-</dd></dl>
+</div>
+<a id="a98513a547e397dfe8f6b7c53fe281c64" name="a98513a547e397dfe8f6b7c53fe281c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98513a547e397dfe8f6b7c53fe281c64">&#9670;&#160;</a></span>drawGrid()</h2>
 
-</section>
-</section>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::drawGrid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>_color</em> = <code>Color::White</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
+<p>Draws a grid on the screen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_color</td><td><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> of the grid </td></tr>
+  </table>
+  </dd>
+</dl>
 
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="class_r_d_e_1_1_random.html" class="btn btn-neutral float-left" title="Class Random" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="class_r_d_e_1_1_scene.html" class="btn btn-neutral float-right" title="Class Scene" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+</div>
+</div>
+<a id="a03723445771102882acc575d6fa55257" name="a03723445771102882acc575d6fa55257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03723445771102882acc575d6fa55257">&#9670;&#160;</a></span>drawLine()</h2>
 
-  <hr/>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::drawLine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>_color</em> = <code>Color::White</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
-  <div role="contentinfo">
-    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
-  </div>
+<p>Draws a line form P0 to P1. MUST BE CALLED INSIDE A BLOCK OF beginDebugDraw/endDraw. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_p0</td><td>Starting point of the line. </td></tr>
+    <tr><td class="paramname">_p1</td><td>Ending point of the line. </td></tr>
+    <tr><td class="paramname">_color</td><td><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> of the line. </td></tr>
+    <tr><td class="paramname">_thickness</td><td>Thickness of the line. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+</div>
+</div>
+<a id="add2fb5f8a05fc744954508fc0b67340f" name="add2fb5f8a05fc744954508fc0b67340f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add2fb5f8a05fc744954508fc0b67340f">&#9670;&#160;</a></span>drawLinedCircleToCPUTexture()</h2>
 
-</footer>
-        </div>
-      </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::drawLinedCircleToCPUTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_transform.html">Transform</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTextureTransform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>_color</em> = <code>Color::Blue</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_thickness</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
+<p>Draws the outline of a circle on the <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_cpuTexture</td><td>The CPUTexutre to modify. </td></tr>
+    <tr><td class="paramname">_center</td><td>Center of the outline of the circle. </td></tr>
+    <tr><td class="paramname">_radius</td><td>Radius of the outline of the circle. </td></tr>
+    <tr><td class="paramname">_color</td><td><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> to draw the outline of the circle. </td></tr>
+    <tr><td class="paramname">_thickness</td><td>Thickness of the outline of the circle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2c6cef39ea58130daad8104f8d02395e" name="a2c6cef39ea58130daad8104f8d02395e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c6cef39ea58130daad8104f8d02395e">&#9670;&#160;</a></span>drawLineToCPUTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::drawLineToCPUTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_transform.html">Transform</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTextureTransform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>_color</em> = <code>Color::Blue</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_thickness</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a line on the CPUTexure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_cpuTexture</td><td>The CPUTexutre to modify. </td></tr>
+    <tr><td class="paramname">_p0</td><td>Initial position of the line. </td></tr>
+    <tr><td class="paramname">_p1</td><td>End position of the line. </td></tr>
+    <tr><td class="paramname">_color</td><td><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> to draw the line. </td></tr>
+    <tr><td class="paramname">_thickness</td><td>Thickness of the line. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8a3503e9d48e3d2741017c5de81b9db8" name="a8a3503e9d48e3d2741017c5de81b9db8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a3503e9d48e3d2741017c5de81b9db8">&#9670;&#160;</a></span>drawPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::drawPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>_color</em> = <code>Color::White</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a point at _position. MUST BE CALLED INSIDE A BLOCK OF beginDebugDraw/endDraw. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_position</td><td>Position. </td></tr>
+    <tr><td class="paramname">_color</td><td><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> of the line. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab27330327fa80ee38755ce77c368f2d5" name="ab27330327fa80ee38755ce77c368f2d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27330327fa80ee38755ce77c368f2d5">&#9670;&#160;</a></span>drawPointToCPUTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::drawPointToCPUTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_transform.html">Transform</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTextureTransform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>_color</em> = <code>Color::Blue</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_size</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a point on the <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_cpuTexture</td><td>The CPUTexutre to modify. </td></tr>
+    <tr><td class="paramname">_position</td><td>Where to draw the point. </td></tr>
+    <tr><td class="paramname">_color</td><td><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> to draw the point. </td></tr>
+    <tr><td class="paramname">_size</td><td>Size of the point. Minimum is 1, this means that the pixel according to position will be filled and also 1 unit to each side. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac770c2ccf9f970dd4aed13b1cf5b105c" name="ac770c2ccf9f970dd4aed13b1cf5b105c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac770c2ccf9f970dd4aed13b1cf5b105c">&#9670;&#160;</a></span>drawRectangleToCPUTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::drawRectangleToCPUTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_transform.html">Transform</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTextureTransform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>_color</em> = <code>Color::Blue</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a rectangle on the <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_cpuTexture</td><td>The CPUTexutre to modify. </td></tr>
+    <tr><td class="paramname">_position</td><td>The centered position of the rectangle. <br  />
+ </td></tr>
+    <tr><td class="paramname">_size</td><td>Size of the rectangle. It will expando half of the size to each side from _position. </td></tr>
+    <tr><td class="paramname">_color</td><td><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> to draw the rectangle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7d6ba0097cc1d33c5fabc03606eff8b1" name="a7d6ba0097cc1d33c5fabc03606eff8b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d6ba0097cc1d33c5fabc03606eff8b1">&#9670;&#160;</a></span>drawShape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::drawShape </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_debug_shape.html">DebugShape</a> &amp;&#160;</td>
+          <td class="paramname"><em>_shape</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a shape. MUST BE CALLED INSIDE A BLOCK OF beginDebugDraw/endDraw. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_shape</td><td>Complex shape </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a17b99eae6df7a12f5dd8fc92d6c42ce9" name="a17b99eae6df7a12f5dd8fc92d6c42ce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17b99eae6df7a12f5dd8fc92d6c42ce9">&#9670;&#160;</a></span>drawShapeToCPUTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::drawShapeToCPUTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_transform.html">Transform</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTextureTransform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &gt;&#160;</td>
+          <td class="paramname"><em>_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>_color</em> = <code>Color::Blue</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a shape on the <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_cpuTexture</td><td>The CPUTexutre to modify. </td></tr>
+    <tr><td class="paramname">_points</td><td>List of the vertices of the shape. </td></tr>
+    <tr><td class="paramname">_color</td><td><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> to draw the shape. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef2ee711757cf558e81b6334fa5fc1e8" name="aef2ee711757cf558e81b6334fa5fc1e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef2ee711757cf558e81b6334fa5fc1e8">&#9670;&#160;</a></span>drawSquare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::drawSquare </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>_color</em> = <code>Color::White</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_rotation</em> = <code>0.f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a line form P0 to P1. MUST BE CALLED INSIDE A BLOCK OF beginDebugDraw/endDraw. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_position</td><td>Center position of the square. </td></tr>
+    <tr><td class="paramname">_size</td><td>Size of the square. </td></tr>
+    <tr><td class="paramname">_color</td><td><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> of the line. </td></tr>
+    <tr><td class="paramname">_rotation</td><td>Rotation of the square. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8badae7b83ae30b2f41ecae9c7497e27" name="a8badae7b83ae30b2f41ecae9c7497e27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8badae7b83ae30b2f41ecae9c7497e27">&#9670;&#160;</a></span>drawTriangleToCPUTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::drawTriangleToCPUTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_transform.html">Transform</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTextureTransform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>_color</em> = <code>Color::Blue</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a triangle on the <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_cpuTexture</td><td>The CPUTexutre to modify. </td></tr>
+    <tr><td class="paramname">_p0</td><td>First vertex of the triangle. </td></tr>
+    <tr><td class="paramname">_p1</td><td>Second vertex of the triangle. </td></tr>
+    <tr><td class="paramname">_p2</td><td>Third vertex of the triangle. </td></tr>
+    <tr><td class="paramname">_color</td><td><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> to draw the triangle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a43fc9c767a29292dd2aff8e94db52288" name="a43fc9c767a29292dd2aff8e94db52288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43fc9c767a29292dd2aff8e94db52288">&#9670;&#160;</a></span>fillBackgroundCPUTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::fillBackgroundCPUTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_r_d_e_1_1_c_p_u_texture.html">CPUTexture</a> *&#160;</td>
+          <td class="paramname"><em>_cpuTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>_color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fills the whole <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a> with a specific color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_cpuTexture</td><td>The CPUTexutre to modify. </td></tr>
+    <tr><td class="paramname">_color</td><td><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> to fill the whole <a class="el" href="class_r_d_e_1_1_c_p_u_texture.html" title="This is another type of texture that resides in the CPU also so we can modify its data on runtime mor...">CPUTexture</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9f8eb1f48e04a2e9e4c86d53fe236fcc" name="a9f8eb1f48e04a2e9e4c86d53fe236fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8eb1f48e04a2e9e4c86d53fe236fcc">&#9670;&#160;</a></span>getClearColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> RDE::RenderManager::getClearColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current clear color. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> </dd></dl>
+
+</div>
+</div>
+<a id="a93d6bf6742076a727706ab7559f9c3ea" name="a93d6bf6742076a727706ab7559f9c3ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93d6bf6742076a727706ab7559f9c3ea">&#9670;&#160;</a></span>setClearColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::setClearColor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>_color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the color to paint the background. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_color</td><td><a class="el" href="struct_r_d_e_1_1_color.html">Color</a> to paint the background </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9eeccc8377f952b94660cb331554c123" name="a9eeccc8377f952b94660cb331554c123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eeccc8377f952b94660cb331554c123">&#9670;&#160;</a></span>setLineThickness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::setLineThickness </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_thickness</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets line thickness. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_thickness</td><td>Line thickness </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad55f03b421f6ad0663330564041504f3" name="ad55f03b421f6ad0663330564041504f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55f03b421f6ad0663330564041504f3">&#9670;&#160;</a></span>setPointSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::RenderManager::setPointSize </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets point size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_size</td><td>Point size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/Users/macmini/Documents/RDE/engine/include/core/render/<a class="el" href="_render_manager_8h_source.html">RenderManager.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

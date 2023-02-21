@@ -1,534 +1,602 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Class Graph &mdash; RDE  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
-    <script src="../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Class ImGuiScene" href="class_r_d_e_1_1_im_gui_scene.html" />
-    <link rel="prev" title="Class FrameBuffer" href="class_r_d_e_1_1_frame_buffer.html" /> 
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RDE: RDE::Graph Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
-
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="../index.html" class="icon icon-home">
-            RDE
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RDE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="struct_component_base.html">Struct ComponentBase</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_active.html">Struct Active</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_animation_node.html">Struct AnimationNode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_animation_transition.html">Struct AnimationTransition</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_atlas.html">Struct Atlas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_canvas_element.html">Struct CanvasElement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_canvas_event_stopper.html">Struct CanvasEventStopper</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_char_info.html">Struct CharInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_color.html">Struct Color</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_command.html">Struct Command</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_common_u_i_config.html">Struct CommonUIConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_controller.html">Struct Controller</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_debug_options.html">Struct DebugOptions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_delegate.html">Template Struct Delegate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct Delegate&lt; R(Args…) &gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_event.html">Struct DisabledForEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_fixed_update.html">Struct DisabledForFixedUpdate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_late_update.html">Struct DisabledForLateUpdate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_render.html">Struct DisabledForRender</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_disabled_for_update.html">Struct DisabledForUpdate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_draw_and_flush_data.html">Struct DrawAndFlushData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_dynamic_sprite_renderer_config.html">Struct DynamicSpriteRendererConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_effect___controllers.html">Struct Effect_Controllers</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_file.html">Template Struct File</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_font_manager_1_1_font_handler.html">Struct FontManager::FontHandler</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_frame_buffer_specification.html">Struct FrameBufferSpecification</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_generation_settings.html">Struct GenerationSettings</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_config.html">Struct LocalizationConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_info.html">Struct LocalizationInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_localization_manager_1_1_any.html">Struct LocalizationManager::Any</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_mat2.html">Struct Mat2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_music.html">Struct Music</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_nine_slice.html">Struct NineSlice</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_node.html">Struct Node</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_node___json_pair.html">Struct Node_JsonPair</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_noise_map.html">Struct NoiseMap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_open_g_l_vertex.html">Struct OpenGLVertex</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_open_g_l_vertex_debug.html">Struct OpenGLVertexDebug</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_data.html">Struct ParticleData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_callbacks_config.html">Struct ParticleSystemCallbacksConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_color_gradient_config.html">Struct ParticleSystemColorGradientConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_config.html">Struct ParticleSystemConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_particle_system_data_config.html">Struct ParticleSystemDataConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_body.html">Struct PhysicsBody</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_body_config.html">Struct PhysicsBodyConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_collision_callbacks.html">Struct PhysicsCollisionCallbacks</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_physics_shape.html">Struct PhysicsShape</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_probability.html">Struct Probability</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_procedural_map.html">Struct ProceduralMap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config.html">Struct RDEConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config_1_1_project_properties.html">Struct RDEConfig::ProjectProperties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_r_d_e_config_1_1_window_properties.html">Struct RDEConfig::WindowProperties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rect.html">Template Struct Rect</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rendering_tree_data.html">Struct RenderingTreeData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_renderizable_inner_data.html">Struct RenderizableInnerData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_renderizable_inner_data_u_i.html">Struct RenderizableInnerDataUI</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_return_delegate.html">Template Struct ReturnDelegate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_return_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct ReturnDelegate&lt; R(Args…) &gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_rolling_buffer.html">Struct RollingBuffer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_scrolling_buffer.html">Struct ScrollingBuffer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sfx.html">Struct Sfx</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_shape_config.html">Struct ShapeConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_shape_masking_config.html">Struct ShapeMaskingConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sound.html">Struct Sound</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_sprite_renderer_config.html">Struct SpriteRendererConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_state.html">Struct State</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_stub.html">Template Struct Stub</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_stub_3_01_r_07_args_8_8_8_08_4.html">Template Struct Stub&lt; R(Args…) &gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_tag.html">Struct Tag</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_text_renderer_1_1_line_info.html">Struct TextRenderer::LineInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_text_renderer_config.html">Struct TextRendererConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_texture_info.html">Struct TextureInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_anchor.html">Struct UIAnchor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_button_config.html">Struct UIButtonConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_checkbox_config.html">Struct UICheckboxConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_image_config.html">Struct UIImageConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_input_config.html">Struct UIInputConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_panel_config.html">Struct UIPanelConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_slider_config.html">Struct UISliderConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_text_1_1_line_info.html">Struct UIText::LineInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_text_config.html">Struct UITextConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_u_i_transform.html">Struct UITransform</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_unique_delegate.html">Template Struct UniqueDelegate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_unique_delegate_3_01_r_07_args_8_8_8_08_4.html">Template Struct UniqueDelegate&lt; R(Args…) &gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_updatable_data.html">Struct UpdatableData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vec2.html">Template Struct Vec2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vertex_config.html">Struct VertexConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="struct_r_d_e_1_1_vibration_config.html">Struct VibrationConfig</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_animation.html">Class Animation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_animation_system.html">Class AnimationSystem</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_bad_delegate_call.html">Class BadDelegateCall</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_bad_e_c_s_system_swap.html">Class BadECSSystemSwap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_basic_perlin_noise.html">Template Class BasicPerlinNoise</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_batch.html">Class Batch</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_camera.html">Class Camera</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_canvas.html">Class Canvas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_cellular_automata.html">Class CellularAutomata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_clock.html">Class Clock</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_config_manager.html">Class ConfigManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_console.html">Class Console</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_axis_moved_event.html">Class ControllerAxisMovedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_button_down_event.html">Class ControllerButtonDownEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_button_up_event.html">Class ControllerButtonUpEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_input.html">Class ControllerInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_controller_vibration_manager.html">Class ControllerVibrationManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_c_p_u_texture.html">Class CPUTexture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_debug_shape.html">Class DebugShape</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_delta.html">Class Delta</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_dynamic_sprite_renderer.html">Class DynamicSpriteRenderer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_e_c_s_manager.html">Class ECSManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_e_c_s_system.html">Class ECSSystem</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_engine.html">Class Engine</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event.html">Class Event</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_bus.html">Template Class EventBus</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_bus_1_1_handler_id.html">Class EventBus::HandlerId</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_event_dispatcher.html">Class EventDispatcher</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_file_handler.html">Class FileHandler</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_file_manager.html">Class FileManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_font.html">Class Font</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_font_manager.html">Class FontManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_frame_buffer.html">Class FrameBuffer</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Class Graph</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_im_gui_scene.html">Class ImGuiScene</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_input.html">Class Input</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_input_manager.html">Class InputManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_keyboard_input.html">Class KeyboardInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_event.html">Class KeyEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_pressed_event.html">Class KeyPressedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_released_event.html">Class KeyReleasedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_key_typed_event.html">Class KeyTypedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_load_vertex_config_not_invoked.html">Class LoadVertexConfigNotInvoked</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_localization_manager.html">Class LocalizationManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_manager.html">Class Manager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_map_generator.html">Class MapGenerator</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_input.html">Class MobileInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_down_event.html">Class MobileTouchDownEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_moved_event.html">Class MobileTouchMovedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mobile_touch_up_event.html">Class MobileTouchUpEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_event.html">Class MouseButtonEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_pressed_event.html">Class MouseButtonPressedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_button_released_event.html">Class MouseButtonReleasedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_input.html">Class MouseInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_moved_event.html">Class MouseMovedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_mouse_scrolled_event.html">Class MouseScrolledEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_particle_system.html">Class ParticleSystem</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_perlin_noise_manager.html">Class PerlinNoiseManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_physics_manager.html">Class PhysicsManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_platform.html">Class Platform</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_pool.html">Template Class Pool</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_profiler.html">Class Profiler</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_random.html">Class Random</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_render_manager.html">Class RenderManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_scene.html">Class Scene</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_scene_manager.html">Class SceneManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_shader.html">Class Shader</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_shader_manager.html">Class ShaderManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sound_manager.html">Class SoundManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_batch.html">Class SpriteBatch</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_batch_1_1_debug.html">Class SpriteBatch::Debug</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_sprite_renderer.html">Class SpriteRenderer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_text_renderer.html">Class TextRenderer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_text_typed_event.html">Class TextTypedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_texture.html">Class Texture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_texture_atlas_manager.html">Class TextureAtlasManager</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_transform.html">Class Transform</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_transition_params.html">Class TransitionParams</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_button.html">Class UIButton</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_checkbox.html">Class UICheckbox</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_image.html">Class UIImage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_input.html">Class UIInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_interactable.html">Class UIInteractable</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_mask.html">Class UIMask</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_panel.html">Class UIPanel</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_slider.html">Class UISlider</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_u_i_text.html">Class UIText</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_view_port.html">Class ViewPort</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window.html">Class Window</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_closed_event.html">Class WindowClosedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_display_changed_event.html">Class WindowDisplayChangedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_frame_event.html">Class WindowFrameEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_input.html">Class WindowInput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_minimized_event.html">Class WindowMinimizedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_moved_event.html">Class WindowMovedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_render_event.html">Class WindowRenderEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_resized_event.html">Class WindowResizedEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="class_r_d_e_1_1_window_update_event.html">Class WindowUpdateEvent</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
-<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">RDE</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="library_root.html">Library API</a></li>
-      <li class="breadcrumb-item active">Class Graph</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/api/class_r_d_e_1_1_graph.rst.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
-  <section id="class-graph">
-<span id="exhale-class-class-r-d-e-1-1-graph"></span><h1>Class Graph<a class="headerlink" href="#class-graph" title="Permalink to this headline"></a></h1>
-<ul class="simple">
-<li><p>Defined in <a class="reference internal" href="file_engine_include_core_graph_Graph.h.html#file-engine-include-core-graph-graph-h"><span class="std std-ref">File Graph.h</span></a></p></li>
-</ul>
-<section id="class-documentation">
-<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
-<dl class="cpp class">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5GraphE">
-<span id="_CPPv3N3RDE5GraphE"></span><span id="_CPPv2N3RDE5GraphE"></span><span id="RDE::Graph"></span><span class="target" id="class_r_d_e_1_1_graph"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Graph</span></span></span><a class="headerlink" href="#_CPPv4N3RDE5GraphE" title="Permalink to this definition"></a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph5GraphEP5SceneRKNSt6stringEb">
-<span id="_CPPv3N3RDE5Graph5GraphEP5SceneRKNSt6stringEb"></span><span id="_CPPv2N3RDE5Graph5GraphEP5SceneRKNSt6stringEb"></span><span id="RDE::Graph::Graph__SceneP.ssCR.b"></span><span class="target" id="class_r_d_e_1_1_graph_1a876662b4b92fcde196253a923f9359b4"></span><span class="sig-name descname"><span class="n"><span class="pre">Graph</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="class_r_d_e_1_1_scene.html#_CPPv4N3RDE5SceneE" title="RDE::Scene"><span class="n"><span class="pre">Scene</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_scene</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_sceneName</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_isUI</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph5GraphEP5SceneRKNSt6stringEb" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
 
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5GraphD0Ev">
-<span id="_CPPv3N3RDE5GraphD0Ev"></span><span id="_CPPv2N3RDE5GraphD0Ev"></span><span id="RDE::Graph::~Graph"></span><span class="target" id="class_r_d_e_1_1_graph_1a925a5d52f50e667f4a000cc145e45ccd"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Graph</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5GraphD0Ev" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
 
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph10createNodeERKNSt6stringEP4Node">
-<span id="_CPPv3N3RDE5Graph10createNodeERKNSt6stringEP4Node"></span><span id="_CPPv2N3RDE5Graph10createNodeERKNSt6stringEP4Node"></span><span id="RDE::Graph::createNode__ssCR.NodeP"></span><span class="target" id="class_r_d_e_1_1_graph_1a295b232ac336712a22e9957de67eb074"></span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">createNode</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_tag</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span>, <a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_parent</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph10createNodeERKNSt6stringEP4Node" title="Permalink to this definition"></a><br /></dt>
-<dd><p>This function creates and adds a new <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> to the world. It is really recommended to add a tag value, as there is a way to retrieve a <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> by it’s tag name. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_tag</strong> – the name to reference if the ID is not provided. </p></li>
-<li><p><strong>_parent</strong> – the NodeID of the <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> we want to be the parent of the creating <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a>. </p></li>
-</ul>
-</dd>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_r_d_e.html">RDE</a></li><li class="navelem"><a class="el" href="class_r_d_e_1_1_graph.html">Graph</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="class_r_d_e_1_1_graph-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">RDE::Graph Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a876662b4b92fcde196253a923f9359b4"><td class="memItemLeft" align="right" valign="top"><a id="a876662b4b92fcde196253a923f9359b4" name="a876662b4b92fcde196253a923f9359b4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b> (<a class="el" href="class_r_d_e_1_1_scene.html">Scene</a> *_scene, const std::string &amp;_sceneName, bool _isUI=false)</td></tr>
+<tr class="separator:a876662b4b92fcde196253a923f9359b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295b232ac336712a22e9957de67eb074"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#a295b232ac336712a22e9957de67eb074">createNode</a> (const std::string &amp;_tag=&quot;&quot;, <a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *_parent=nullptr)</td></tr>
+<tr class="separator:a295b232ac336712a22e9957de67eb074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91732f6740e242affffdf86bfd093733"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#a91732f6740e242affffdf86bfd093733">instantiatePrefab</a> (<a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *_prefab, const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;_position, <a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *_parent=nullptr)</td></tr>
+<tr class="memdesc:a91732f6740e242affffdf86bfd093733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an independent copy of a loaded prefab.  <br /></td></tr>
+<tr class="separator:a91732f6740e242affffdf86bfd093733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47cc4f110838ba04f1c89e79bad204ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#a47cc4f110838ba04f1c89e79bad204ea">removeNode</a> (<a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *_node)</td></tr>
+<tr class="memdesc:a47cc4f110838ba04f1c89e79bad204ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a node and all of it's children.  <br /></td></tr>
+<tr class="separator:a47cc4f110838ba04f1c89e79bad204ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b699efbe8cf0359f60601c38b3dca7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#a2b699efbe8cf0359f60601c38b3dca7d">removeNode</a> (const std::string &amp;_nodeTagName)</td></tr>
+<tr class="memdesc:a2b699efbe8cf0359f60601c38b3dca7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a node and all of it's children.  <br /></td></tr>
+<tr class="separator:a2b699efbe8cf0359f60601c38b3dca7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593a3ffb242b39d742e850b74985309a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#a593a3ffb242b39d742e850b74985309a">orphan</a> (<a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *_node)</td></tr>
+<tr class="memdesc:a593a3ffb242b39d742e850b74985309a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the <a class="el" href="struct_r_d_e_1_1_node.html">Node</a> to loose it's parent and to be reassigned to the root <a class="el" href="struct_r_d_e_1_1_node.html">Node</a>.  <br /></td></tr>
+<tr class="separator:a593a3ffb242b39d742e850b74985309a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf92b9bd9ee1139ef1fcc9b1415a9db1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#abf92b9bd9ee1139ef1fcc9b1415a9db1">orphan</a> (const std::string &amp;_nodeTagName)</td></tr>
+<tr class="memdesc:abf92b9bd9ee1139ef1fcc9b1415a9db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the <a class="el" href="struct_r_d_e_1_1_node.html">Node</a> to loose it's parent and to be reassigned to the root <a class="el" href="struct_r_d_e_1_1_node.html">Node</a>.  <br /></td></tr>
+<tr class="separator:abf92b9bd9ee1139ef1fcc9b1415a9db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa367f552cb81053588e04179773c8592"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#aa367f552cb81053588e04179773c8592">getNode</a> (const std::string &amp;_tagName)</td></tr>
+<tr class="memdesc:aa367f552cb81053588e04179773c8592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Node* by it's tag name.  <br /></td></tr>
+<tr class="separator:aa367f552cb81053588e04179773c8592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac58aab90bbcb9058d488a2cdcab0c616"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#ac58aab90bbcb9058d488a2cdcab0c616">getNode</a> (const <a class="el" href="namespace_r_d_e.html#a9feedbb7b8355f0ee9c64cfaa2a474d1">NodeID</a> &amp;_nodeID)</td></tr>
+<tr class="memdesc:ac58aab90bbcb9058d488a2cdcab0c616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Node* by it's NodeID.  <br /></td></tr>
+<tr class="separator:ac58aab90bbcb9058d488a2cdcab0c616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0df137164763b602fdafbf01615de9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#aed0df137164763b602fdafbf01615de9">setParent</a> (<a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *_node, <a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *_parent)</td></tr>
+<tr class="memdesc:aed0df137164763b602fdafbf01615de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the parent of the <a class="el" href="struct_r_d_e_1_1_node.html">Node</a> to another one.  <br /></td></tr>
+<tr class="separator:aed0df137164763b602fdafbf01615de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a328baedb2d8369cde0c870d322339"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#aa7a328baedb2d8369cde0c870d322339">toString</a> ()</td></tr>
+<tr class="memdesc:aa7a328baedb2d8369cde0c870d322339"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the graph tree as a string.  <br /></td></tr>
+<tr class="separator:aa7a328baedb2d8369cde0c870d322339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d59f60c2a597a199d667e49bd475f04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#a7d59f60c2a597a199d667e49bd475f04">getRoot</a> ()</td></tr>
+<tr class="memdesc:a7d59f60c2a597a199d667e49bd475f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Id of the root.  <br /></td></tr>
+<tr class="separator:a7d59f60c2a597a199d667e49bd475f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae774eaaacb7e1a71f18432cf12b9f318"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#ae774eaaacb7e1a71f18432cf12b9f318">setNodeActive</a> (<a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *_node, bool _active)</td></tr>
+<tr class="memdesc:ae774eaaacb7e1a71f18432cf12b9f318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables a node.  <br /></td></tr>
+<tr class="separator:ae774eaaacb7e1a71f18432cf12b9f318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5659a0ac5a26f2b6ff0b60b05510628"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#ae5659a0ac5a26f2b6ff0b60b05510628">isNodeActive</a> (<a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *_node)</td></tr>
+<tr class="memdesc:ae5659a0ac5a26f2b6ff0b60b05510628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if the node is active or not.  <br /></td></tr>
+<tr class="separator:ae5659a0ac5a26f2b6ff0b60b05510628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c70fd381ba7eddd7b6b8c2da0cb1f5"><td class="memTemplParams" colspan="2">template&lt;typename... Archetype&gt; </td></tr>
+<tr class="memitem:a09c70fd381ba7eddd7b6b8c2da0cb1f5"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#a09c70fd381ba7eddd7b6b8c2da0cb1f5">query</a> ()</td></tr>
+<tr class="memdesc:a09c70fd381ba7eddd7b6b8c2da0cb1f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is used to create the custom ECS work flow, more information on <a class="el" href="class_r_d_e_1_1_e_c_s_manager.html" title="This class is in charge of updating each of the custom ECS systems created by the end users.">ECSManager</a>.  <br /></td></tr>
+<tr class="separator:a09c70fd381ba7eddd7b6b8c2da0cb1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84b5d632c35c6178951a03d64886845"><td class="memItemLeft" align="right" valign="top">NodeContainer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_e_1_1_graph.html#ad84b5d632c35c6178951a03d64886845">getNodeContainer</a> ()</td></tr>
+<tr class="memdesc:ad84b5d632c35c6178951a03d64886845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the registry of EnTT that contains the Nodes. This is almost 100% sure NOT needed by end users.  <br /></td></tr>
+<tr class="separator:ad84b5d632c35c6178951a03d64886845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a7e2bee71b188f22349b33814e7894b37"><td class="memItemLeft" align="right" valign="top"><a id="a7e2bee71b188f22349b33814e7894b37" name="a7e2bee71b188f22349b33814e7894b37"></a>
+<a class="el" href="struct_r_d_e_1_1_unique_delegate.html">UniqueDelegate</a>&lt; void(NodeContainer &amp;, <a class="el" href="class_r_d_e_1_1_event.html">Event</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onEventDel</b></td></tr>
+<tr class="memdesc:a7e2bee71b188f22349b33814e7894b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback if we want our graph to make any specific task during its internal event polling. <br /></td></tr>
+<tr class="separator:a7e2bee71b188f22349b33814e7894b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:af851b4d9aacd1a871da33592334b8d72"><td class="memItemLeft" align="right" valign="top"><a id="af851b4d9aacd1a871da33592334b8d72" name="af851b4d9aacd1a871da33592334b8d72"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Transform</b></td></tr>
+<tr class="separator:af851b4d9aacd1a871da33592334b8d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dfc9521caba3d2bee092686f7d487ee"><td class="memItemLeft" align="right" valign="top"><a id="a3dfc9521caba3d2bee092686f7d487ee" name="a3dfc9521caba3d2bee092686f7d487ee"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>UITransform</b></td></tr>
+<tr class="separator:a3dfc9521caba3d2bee092686f7d487ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032858ae1fe02d2d1170981c2af2d67c"><td class="memItemLeft" align="right" valign="top"><a id="a032858ae1fe02d2d1170981c2af2d67c" name="a032858ae1fe02d2d1170981c2af2d67c"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
+<tr class="separator:a032858ae1fe02d2d1170981c2af2d67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9816083e25bae0b2f472e19382136687"><td class="memItemLeft" align="right" valign="top"><a id="a9816083e25bae0b2f472e19382136687" name="a9816083e25bae0b2f472e19382136687"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Canvas</b></td></tr>
+<tr class="separator:a9816083e25bae0b2f472e19382136687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db9d28bd448a131448276ee03de1e6d"><td class="memItemLeft" align="right" valign="top"><a id="a6db9d28bd448a131448276ee03de1e6d" name="a6db9d28bd448a131448276ee03de1e6d"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Node</b></td></tr>
+<tr class="separator:a6db9d28bd448a131448276ee03de1e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f241a517f779b649085b1b171a83b1"><td class="memItemLeft" align="right" valign="top"><a id="af4f241a517f779b649085b1b171a83b1" name="af4f241a517f779b649085b1b171a83b1"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>ImGuiScene</b></td></tr>
+<tr class="separator:af4f241a517f779b649085b1b171a83b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed8714396345e5fc5b1a2bf7ccaed500"><td class="memItemLeft" align="right" valign="top"><a id="aed8714396345e5fc5b1a2bf7ccaed500" name="aed8714396345e5fc5b1a2bf7ccaed500"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>ConfigManager</b></td></tr>
+<tr class="separator:aed8714396345e5fc5b1a2bf7ccaed500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d889a8831a97b28ee0ba11f65ee06d"><td class="memItemLeft" align="right" valign="top"><a id="a64d889a8831a97b28ee0ba11f65ee06d" name="a64d889a8831a97b28ee0ba11f65ee06d"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderizableInnerData</b></td></tr>
+<tr class="separator:a64d889a8831a97b28ee0ba11f65ee06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a295b232ac336712a22e9957de67eb074" name="a295b232ac336712a22e9957de67eb074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295b232ac336712a22e9957de67eb074">&#9670;&#160;</a></span>createNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> * RDE::Graph::createNode </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>_tag</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>_parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function creates and adds a new <a class="el" href="struct_r_d_e_1_1_node.html">Node</a> to the world. It is really recommended to add a tag value, as there is a way to retrieve a <a class="el" href="struct_r_d_e_1_1_node.html">Node</a> by it's tag name. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_tag</td><td>the name to reference if the ID is not provided. </td></tr>
+    <tr><td class="paramname">_parent</td><td>the NodeID of the <a class="el" href="struct_r_d_e_1_1_node.html">Node</a> we want to be the parent of the creating <a class="el" href="struct_r_d_e_1_1_node.html">Node</a>. </td></tr>
+  </table>
+  </dd>
 </dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph17instantiatePrefabEP4NodeRK5Vec2FP4Node">
-<span id="_CPPv3N3RDE5Graph17instantiatePrefabEP4NodeRK5Vec2FP4Node"></span><span id="_CPPv2N3RDE5Graph17instantiatePrefabEP4NodeRK5Vec2FP4Node"></span><span id="RDE::Graph::instantiatePrefab__NodeP.Vec2FCR.NodeP"></span><span class="target" id="class_r_d_e_1_1_graph_1a91732f6740e242affffdf86bfd093733"></span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">instantiatePrefab</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_prefab</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespace_r_d_e_1a0f431cda8493c6e44e87092883ee640c.html#_CPPv4N3RDE5Vec2FE" title="RDE::Vec2F"><span class="n"><span class="pre">Vec2F</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_position</span></span>, <a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_parent</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph17instantiatePrefabEP4NodeRK5Vec2FP4Node" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Creates an independent copy of a loaded prefab. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>_prefab</strong> – Prefab NodeID </p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>NodeID </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph10removeNodeEP4Node">
-<span id="_CPPv3N3RDE5Graph10removeNodeEP4Node"></span><span id="_CPPv2N3RDE5Graph10removeNodeEP4Node"></span><span id="RDE::Graph::removeNode__NodeP"></span><span class="target" id="class_r_d_e_1_1_graph_1a47cc4f110838ba04f1c89e79bad204ea"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeNode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_node</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph10removeNodeEP4Node" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Removes a node and all of it’s children. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>_node</strong> – Id of the node to remove </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph10removeNodeERKNSt6stringE">
-<span id="_CPPv3N3RDE5Graph10removeNodeERKNSt6stringE"></span><span id="_CPPv2N3RDE5Graph10removeNodeERKNSt6stringE"></span><span id="RDE::Graph::removeNode__ssCR"></span><span class="target" id="class_r_d_e_1_1_graph_1a2b699efbe8cf0359f60601c38b3dca7d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeNode</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_nodeTagName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph10removeNodeERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Removes a node and all of it’s children. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>_nodeTagName</strong> – Name of the node to remove </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph6orphanEP4Node">
-<span id="_CPPv3N3RDE5Graph6orphanEP4Node"></span><span id="_CPPv2N3RDE5Graph6orphanEP4Node"></span><span id="RDE::Graph::orphan__NodeP"></span><span class="target" id="class_r_d_e_1_1_graph_1a593a3ffb242b39d742e850b74985309a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">orphan</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_node</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph6orphanEP4Node" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Makes the <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> to loose it’s parent and to be reassigned to the root <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a>. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>_node</strong> – Id of the node to orphan </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph6orphanERKNSt6stringE">
-<span id="_CPPv3N3RDE5Graph6orphanERKNSt6stringE"></span><span id="_CPPv2N3RDE5Graph6orphanERKNSt6stringE"></span><span id="RDE::Graph::orphan__ssCR"></span><span class="target" id="class_r_d_e_1_1_graph_1abf92b9bd9ee1139ef1fcc9b1415a9db1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">orphan</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_nodeTagName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph6orphanERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Makes the <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> to loose it’s parent and to be reassigned to the root <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a>. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>_nodeTagName</strong> – Name of the node to orphan </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph7getNodeERKNSt6stringE">
-<span id="_CPPv3N3RDE5Graph7getNodeERKNSt6stringE"></span><span id="_CPPv2N3RDE5Graph7getNodeERKNSt6stringE"></span><span id="RDE::Graph::getNode__ssCR"></span><span class="target" id="class_r_d_e_1_1_graph_1aa367f552cb81053588e04179773c8592"></span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getNode</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_tagName</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph7getNodeERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Returns the Node* by it’s tag name. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>_tagName</strong> – Name of the node </p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Node* </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph7getNodeERK6NodeID">
-<span id="_CPPv3N3RDE5Graph7getNodeERK6NodeID"></span><span id="_CPPv2N3RDE5Graph7getNodeERK6NodeID"></span><span id="RDE::Graph::getNode__NodeIDCR"></span><span class="target" id="class_r_d_e_1_1_graph_1ac58aab90bbcb9058d488a2cdcab0c616"></span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getNode</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef__components_8h_1a52def656a21c22f8e6592a9f04842b84.html#_CPPv4N3RDE6NodeIDE" title="RDE::NodeID"><span class="n"><span class="pre">NodeID</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_nodeID</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph7getNodeERK6NodeID" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Returns the Node* by it’s NodeID. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>_nodeID</strong> – Name of the node </p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Node* </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph9setParentEP4NodeP4Node">
-<span id="_CPPv3N3RDE5Graph9setParentEP4NodeP4Node"></span><span id="_CPPv2N3RDE5Graph9setParentEP4NodeP4Node"></span><span id="RDE::Graph::setParent__NodeP.NodeP"></span><span class="target" id="class_r_d_e_1_1_graph_1aed0df137164763b602fdafbf01615de9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setParent</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_node</span></span>, <a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_parent</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph9setParentEP4NodeP4Node" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Changes the parent of the <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> to another one. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_node</strong> – Id of the child </p></li>
-<li><p><strong>_parent</strong> – Id of the parent </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph8toStringEv">
-<span id="_CPPv3N3RDE5Graph8toStringEv"></span><span id="_CPPv2N3RDE5Graph8toStringEv"></span><span id="RDE::Graph::toString"></span><span class="target" id="class_r_d_e_1_1_graph_1aa7a328baedb2d8369cde0c870d322339"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">toString</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph8toStringEv" title="Permalink to this definition"></a><br /></dt>
-<dd><p>This function returns the graph tree as a string. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>std::string </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph7getRootEv">
-<span id="_CPPv3N3RDE5Graph7getRootEv"></span><span id="_CPPv2N3RDE5Graph7getRootEv"></span><span id="RDE::Graph::getRoot"></span><span class="target" id="class_r_d_e_1_1_graph_1a7d59f60c2a597a199d667e49bd475f04"></span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getRoot</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph7getRootEv" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Returns the Id of the root. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>NodeID </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph13setNodeActiveEP4Nodeb">
-<span id="_CPPv3N3RDE5Graph13setNodeActiveEP4Nodeb"></span><span id="_CPPv2N3RDE5Graph13setNodeActiveEP4Nodeb"></span><span id="RDE::Graph::setNodeActive__NodeP.b"></span><span class="target" id="class_r_d_e_1_1_graph_1ae774eaaacb7e1a71f18432cf12b9f318"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setNodeActive</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_node</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_active</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph13setNodeActiveEP4Nodeb" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Enables or disables a node. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>_node</strong> – <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> to be enabled or disabled. </p></li>
-<li><p><strong>_active</strong> – If is enabled or disabled. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph12isNodeActiveEP4Node">
-<span id="_CPPv3N3RDE5Graph12isNodeActiveEP4Node"></span><span id="_CPPv2N3RDE5Graph12isNodeActiveEP4Node"></span><span id="RDE::Graph::isNodeActive__NodeP"></span><span class="target" id="class_r_d_e_1_1_graph_1ae5659a0ac5a26f2b6ff0b60b05510628"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isNodeActive</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="struct_r_d_e_1_1_node.html#_CPPv4N3RDE4NodeE" title="RDE::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_node</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph12isNodeActiveEP4Node" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Returns if the node is active or not. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>_node</strong> – <a class="reference internal" href="struct_r_d_e_1_1_node.html#struct_r_d_e_1_1_node"><span class="std std-ref">Node</span></a> to check if is active. </p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>bool </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4IDpEN3RDE5Graph5queryEDav">
-<span id="_CPPv3IDpEN3RDE5Graph5queryEv"></span><span id="_CPPv2IDpEN3RDE5Graph5queryEv"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="sig-name descname"><span class="n"><span class="pre">Archetype</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="class_r_d_e_1_1_graph_1a09c70fd381ba7eddd7b6b8c2da0cb1f5"></span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">query</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4IDpEN3RDE5Graph5queryEDav" title="Permalink to this definition"></a><br /></dt>
-<dd><p>This is used to create the custom ECS work flow, more information on <a class="reference internal" href="class_r_d_e_1_1_e_c_s_manager.html#class_r_d_e_1_1_e_c_s_manager"><span class="std std-ref">ECSManager</span></a>. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Template Parameters</dt>
-<dd class="field-odd"><p><strong>Archetype</strong> – The Components that the query must look for </p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>A entt query </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph16getNodeContainerEv">
-<span id="_CPPv3N3RDE5Graph16getNodeContainerEv"></span><span id="_CPPv2N3RDE5Graph16getNodeContainerEv"></span><span id="RDE::Graph::getNodeContainer"></span><span class="target" id="class_r_d_e_1_1_graph_1ad84b5d632c35c6178951a03d64886845"></span><a class="reference internal" href="typedef_namespace_r_d_e_1a0cbac4494e3402fa73c3957541eaefe8.html#_CPPv4N3RDE13NodeContainerE" title="RDE::NodeContainer"><span class="n"><span class="pre">NodeContainer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getNodeContainer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3RDE5Graph16getNodeContainerEv" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Returns the registry of EnTT that contains the Nodes. This is almost 100% sure NOT needed by end users. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>NodeContainer </p>
-</dd>
-</dl>
-</dd></dl>
 
 </div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N3RDE5Graph10onEventDelE">
-<span id="_CPPv3N3RDE5Graph10onEventDelE"></span><span id="_CPPv2N3RDE5Graph10onEventDelE"></span><span class="target" id="class_r_d_e_1_1_graph_1a7e2bee71b188f22349b33814e7894b37"></span><a class="reference internal" href="struct_r_d_e_1_1_unique_delegate.html#_CPPv4I0EN3RDE14UniqueDelegateE" title="RDE::UniqueDelegate"><span class="n"><span class="pre">UniqueDelegate</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">void</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="typedef_namespace_r_d_e_1a0cbac4494e3402fa73c3957541eaefe8.html#_CPPv4N3RDE13NodeContainerE" title="RDE::NodeContainer"><span class="n"><span class="pre">NodeContainer</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="class_r_d_e_1_1_event.html#_CPPv4N3RDE5EventE" title="RDE::Event"><span class="n"><span class="pre">Event</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onEventDel</span></span></span><a class="headerlink" href="#_CPPv4N3RDE5Graph10onEventDelE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>A callback if we want our graph to make any specific task during its internal event polling. </p>
-</dd></dl>
+</div>
+<a id="ac58aab90bbcb9058d488a2cdcab0c616" name="ac58aab90bbcb9058d488a2cdcab0c616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac58aab90bbcb9058d488a2cdcab0c616">&#9670;&#160;</a></span>getNode() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> * RDE::Graph::getNode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_r_d_e.html#a9feedbb7b8355f0ee9c64cfaa2a474d1">NodeID</a> &amp;&#160;</td>
+          <td class="paramname"><em>_nodeID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the Node* by it's NodeID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_nodeID</td><td>Name of the node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Node* </dd></dl>
 
 </div>
-</dd></dl>
+</div>
+<a id="aa367f552cb81053588e04179773c8592" name="aa367f552cb81053588e04179773c8592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa367f552cb81053588e04179773c8592">&#9670;&#160;</a></span>getNode() <span class="overload">[2/2]</span></h2>
 
-</section>
-</section>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> * RDE::Graph::getNode </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>_tagName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
+<p>Returns the Node* by it's tag name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_tagName</td><td>Name of the node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Node* </dd></dl>
 
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="class_r_d_e_1_1_frame_buffer.html" class="btn btn-neutral float-left" title="Class FrameBuffer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="class_r_d_e_1_1_im_gui_scene.html" class="btn btn-neutral float-right" title="Class ImGuiScene" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+</div>
+</div>
+<a id="ad84b5d632c35c6178951a03d64886845" name="ad84b5d632c35c6178951a03d64886845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad84b5d632c35c6178951a03d64886845">&#9670;&#160;</a></span>getNodeContainer()</h2>
 
-  <hr/>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeContainer &amp; RDE::Graph::getNodeContainer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
-  <div role="contentinfo">
-    <p>&#169; Copyright 2022, Borja Vazquez Cuesta.</p>
-  </div>
+<p>Returns the registry of EnTT that contains the Nodes. This is almost 100% sure NOT needed by end users. </p>
+<dl class="section return"><dt>Returns</dt><dd>NodeContainer </dd></dl>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+</div>
+</div>
+<a id="a7d59f60c2a597a199d667e49bd475f04" name="a7d59f60c2a597a199d667e49bd475f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d59f60c2a597a199d667e49bd475f04">&#9670;&#160;</a></span>getRoot()</h2>
 
-</footer>
-        </div>
-      </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> * RDE::Graph::getRoot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
+<p>Returns the Id of the root. </p>
+<dl class="section return"><dt>Returns</dt><dd>NodeID </dd></dl>
+
+</div>
+</div>
+<a id="a91732f6740e242affffdf86bfd093733" name="a91732f6740e242affffdf86bfd093733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91732f6740e242affffdf86bfd093733">&#9670;&#160;</a></span>instantiatePrefab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> * RDE::Graph::instantiatePrefab </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>_prefab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_r_d_e_1_1_vec2.html">Vec2F</a> &amp;&#160;</td>
+          <td class="paramname"><em>_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>_parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates an independent copy of a loaded prefab. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_prefab</td><td>Prefab NodeID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NodeID </dd></dl>
+
+</div>
+</div>
+<a id="ae5659a0ac5a26f2b6ff0b60b05510628" name="ae5659a0ac5a26f2b6ff0b60b05510628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5659a0ac5a26f2b6ff0b60b05510628">&#9670;&#160;</a></span>isNodeActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RDE::Graph::isNodeActive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>_node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns if the node is active or not. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_node</td><td><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> to check if is active. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+
+</div>
+</div>
+<a id="abf92b9bd9ee1139ef1fcc9b1415a9db1" name="abf92b9bd9ee1139ef1fcc9b1415a9db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf92b9bd9ee1139ef1fcc9b1415a9db1">&#9670;&#160;</a></span>orphan() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::Graph::orphan </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>_nodeTagName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Makes the <a class="el" href="struct_r_d_e_1_1_node.html">Node</a> to loose it's parent and to be reassigned to the root <a class="el" href="struct_r_d_e_1_1_node.html">Node</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_nodeTagName</td><td>Name of the node to orphan </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a593a3ffb242b39d742e850b74985309a" name="a593a3ffb242b39d742e850b74985309a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a593a3ffb242b39d742e850b74985309a">&#9670;&#160;</a></span>orphan() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::Graph::orphan </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>_node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Makes the <a class="el" href="struct_r_d_e_1_1_node.html">Node</a> to loose it's parent and to be reassigned to the root <a class="el" href="struct_r_d_e_1_1_node.html">Node</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_node</td><td>Id of the node to orphan </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a09c70fd381ba7eddd7b6b8c2da0cb1f5" name="a09c70fd381ba7eddd7b6b8c2da0cb1f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09c70fd381ba7eddd7b6b8c2da0cb1f5">&#9670;&#160;</a></span>query()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Archetype&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto RDE::Graph::query</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is used to create the custom ECS work flow, more information on <a class="el" href="class_r_d_e_1_1_e_c_s_manager.html" title="This class is in charge of updating each of the custom ECS systems created by the end users.">ECSManager</a>. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Archetype</td><td>The Components that the query must look for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A entt query </dd></dl>
+
+</div>
+</div>
+<a id="a2b699efbe8cf0359f60601c38b3dca7d" name="a2b699efbe8cf0359f60601c38b3dca7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b699efbe8cf0359f60601c38b3dca7d">&#9670;&#160;</a></span>removeNode() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::Graph::removeNode </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>_nodeTagName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a node and all of it's children. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_nodeTagName</td><td>Name of the node to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a47cc4f110838ba04f1c89e79bad204ea" name="a47cc4f110838ba04f1c89e79bad204ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47cc4f110838ba04f1c89e79bad204ea">&#9670;&#160;</a></span>removeNode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::Graph::removeNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>_node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a node and all of it's children. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_node</td><td>Id of the node to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae774eaaacb7e1a71f18432cf12b9f318" name="ae774eaaacb7e1a71f18432cf12b9f318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae774eaaacb7e1a71f18432cf12b9f318">&#9670;&#160;</a></span>setNodeActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::Graph::setNodeActive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>_node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_active</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables or disables a node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_node</td><td><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> to be enabled or disabled. </td></tr>
+    <tr><td class="paramname">_active</td><td>If is enabled or disabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aed0df137164763b602fdafbf01615de9" name="aed0df137164763b602fdafbf01615de9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed0df137164763b602fdafbf01615de9">&#9670;&#160;</a></span>setParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RDE::Graph::setParent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>_node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_r_d_e_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>_parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the parent of the <a class="el" href="struct_r_d_e_1_1_node.html">Node</a> to another one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_node</td><td>Id of the child </td></tr>
+    <tr><td class="paramname">_parent</td><td>Id of the parent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa7a328baedb2d8369cde0c870d322339" name="aa7a328baedb2d8369cde0c870d322339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7a328baedb2d8369cde0c870d322339">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string RDE::Graph::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the graph tree as a string. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/Users/macmini/Documents/RDE/engine/include/core/graph/<a class="el" href="_graph_8h_source.html">Graph.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>
