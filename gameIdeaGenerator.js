@@ -8,7 +8,7 @@ const importObject = {
 (async () => {
   let response = await fetch('game_idea_generator.wasm');
   let bytes = await response.arrayBuffer();
-  let { instance } = await WebAssembly.instantiateStreaming(bytes, importObject);
+  let { instance } = await WebAssembly.instantiate(bytes, importObject);
   globalInstance = instance;
 
   getRandomIdea();
