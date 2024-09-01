@@ -1,0 +1,91 @@
+<h2>C++ new operator</h2>
+<h4>Simple ‘new’</h4>
+<p>It is already known that C++ allows you to allocate memory to 2 types of memory, the stack and the heap.&nbsp;</p>
+<p>The stack allows us to allocate a variable on pre-existent memory<sup>(1)</sup> that the program allocated for us when it starts, and that variable will only live for the time its scope is alive. On the other hand, heap allocations live until we manually destroy them or until the program finishes, when the operating system releases all the memory that the program used. In this post, we will focus on heap allocations and, specifically, the <code>new</code><strong> </strong>operator.</p>
+<p>&nbsp;</p>
+<p>We will be using the following <code>struct</code> the whole post to illustrate the examples:</p>
+<pre><code class="language-cpp">struct MyStruct {
+    size_t a;
+    bool b;
+    char c[256];
+}; </code></pre>
+<p>A very simple structure, but good enough for our purpose.</p>
+<p>Let's say we need to allocate a variable of type <code>MyStruct</code><strong> </strong>and we need to do it on the heap, so we would do it like this:</p>
+<pre><code class="language-cpp">int main(int _argc, char** _argv) {
+    MyStruct* _m = new MyStruct;
+    // Do some super fancy things
+    delete _m;
+
+    return 0;
+}</code></pre>
+<p>Easy, right? We just need to allocate a variable with <code>new</code><strong> </strong>and passing parameters to the constructor if needed, and we are good to go, but, how does this really work on the inside? Let's have a look.</p>
+<p>At the end of the day, <code>new</code><strong> </strong>is not more than just a syntactic sugar word that C++ gives us to make our lives easier, so as any syntactic sugar that any language provides, the compiler then transforms it to an underlying code. In this case, as we know, <code>new</code> is an operator, and this operator needs to know how much memory it needs to allocate, that is the whole point of this operator, allocate an amount of memory, and then it returns a pointer to the beginning of the allocated memory. So, we know the following:</p>
+<ul>
+    <li>It is an operator</li>
+    <li>It needs to know the amount of memory to be allocated</li>
+    <li>It returns a pointer to the beginning of the allocated memory</li>
+</ul>
+<p>With these 3 points, we can figure out that the declaration of this operator can look something similar to this:</p>
+<pre><code class="language-cpp">void* operator new(size_t size);</code></pre>
+<p>Knowing this operator declaration we can now unveil how the syntactic sugar of <code>new</code> works behind the scenes, so this:</p>
+<pre><code class="language-cpp">MyStruct* _m = new MyStruct;</code></pre>
+<p>Gets transformed into this:</p>
+<pre><code class="language-cpp"> MyStruct* _m = (MyStruct*) operator new(sizeof(MyStruct));</code></pre>
+<p>Which seems complex at first, but let's take a look:</p>
+<ul>
+    <li><code>new</code><strong> </strong>was replaced by the full operator name, <code>operator new</code>. As we saw in the operator declaration, it has a parameter, which is the size of the <code>struct</code><sup>(2)</sup>.</li>
+    <li><code>(MyStruct*)</code> was pre-pended to the whole operation. This is because <code>operator new</code> returns <code>void*</code> and we cannot asign <code>void*</code> to a variable of type <code>MyStruct*</code> (tho, it works the other way around <code>void* _v = _m</code>, which makes sense).</li>
+</ul>
+<h4>Placement new</h4>
+<p>‘Placement New’ is an overload of the <code>new</code> operator that C++ standard library provides, and it is used to tell C++ where exactly to construct objects in memory and then call a specific constructor of the object (if needed). It has the following declaration:</p>
+<p><code><span class="hljs-function hljs-type">void</span><span class="hljs-function">* </span><span class="hljs-function hljs-keyword">operator</span><span class="hljs-function"> </span><span class="hljs-function hljs-title">new</span><span class="hljs-function hljs-params">(std::</span><span class="hljs-function hljs-params hljs-type">size_t</span><span class="hljs-function hljs-params"> size, </span><span class="hljs-function hljs-params hljs-type">void</span><span class="hljs-function hljs-params">* ptr)</span>;</code> (<a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Placement_syntax">source</a>)</p>
+<p>&nbsp;</p>
+<p>Let's say we have an array of fixed memory that can hold up to 50 objects of type <code>MyStruct</code>, like this <code>unsigned char arr[sizeof(MyStruct) * 50];</code> and now we want to create objects of it with the operator <code>new</code> BUT, we don't want it to build them out of heap memory! We already have allocated memory on our variable <code>arr</code>, so we can do it like this:&nbsp;</p>
+<pre><code class="language-cpp">int main(int _argc, char** _argv) {
+    unsigned char _arr[sizeof(MyStruct) * 50];
+    MyStruct* _m = new(_arr) MyStruct;
+    return 0;
+}</code></pre>
+<p>This is basically telling C++ that I want to get some memory to build my object, and it has to take that memory from <code>_arr</code> and not from the heap, and once it has been done, call my constructor.</p>
+<p>Another thing we can extract from this example, is the order of execution of the <code>new</code> operator and the constructors. The <code>new</code> operator is ALWAYS executed before the constructor of the object.</p>
+<h4>Custom new</h4>
+<p>First, let's define our class for the Memory Arena, which won't be long, nor implemented neither complete, it will only contain the methods needed for this example:</p>
+<pre><code class="language-cpp">struct MemoryArena {
+    void init(size_t total_amount_of_bytes);
+    void* alloc(size_t _size);
+    void free();
+};</code></pre>
+<p>Now, as our memory chunk to construct objects is a bit more complex than on the ‘Placement New’ example, we cannot simply pass the memory address to the ‘Placement New’, as we don't know how <code>MemoryArena</code> handles it. So what we can create is our very own version of <code>new</code>, which will create objects exactly as we want:</p>
+<pre><code class="language-cpp">void* operator new(size_t _size, MemoryArena&amp; _memory_arena) {
+    void* _ptr = _memory_arena.alloc(_size);
+    assert(_ptr == NULL);
+    return _ptr;
+}</code></pre>
+<p>This really resembles the ‘Placement New’, doesn't it? Well, in this case we are telling the operator that it needs to be passed a parameter of type <code>MemoryArena</code> and we let it handle the ‘allocation’. And how exactly do we use this? Well, here is how:</p>
+<pre><code class="language-cpp">int main(int _argc, char** _argv) {
+    MemoryArena _mem = { };
+    _mem.init(1024 * 1024); // 1MB
+    MyStruct* _m = new(_mem) MyStruct;
+
+    // Do something fancy...
+
+    _mem.free();
+
+    return 0;
+}</code></pre>
+<p>Which the compiler translates to the following 2 lines:</p>
+<pre><code class="language-cpp">void* _memory = operator new(sizeof(MyStruct), _mem); // this is our new custom operand!
+MyStruct* _m = new(_memory) MyStruct;</code></pre>
+<p>This is different than before, we have 2 operations here. First, it detects our custom operator overload and executes it, which effectively gives us a pointer to the beginning of the allocated memory (in this case, a memory address to some part of the memory arena, so it is not really ‘allocated memory’). Then, once it knows where the memory begins, it calls the ‘Placement New’, which again, tells C++ where the memory of the object to construct begins and calls the required constructor.</p>
+<h3>Extra</h3>
+<p>(1) - The stack memory of a program is a fixed amount of memory. We can make use of this amount of memory partially or in its totality, but have in mind that if we use more than what was allocated, it can lead to a ‘stack overflow’. This amount of memory is usually determined by the Operating System, but can be changed by compiler flags (on Clang <code>-stack_size</code>) or by modifying the Operating System settings.</p>
+<p>&nbsp;</p>
+<p>(2) - Calculating this size may vary between compilers and I just made it very simple with the <code>sizeof</code><strong> </strong>operator for the sake of this example. Calculating the correct size of the <code>struct</code> needs add, among others, the following cases:</p>
+<ul>
+    <li>Size of all member variables</li>
+    <li>Any needed padding for memory alignment needs</li>
+</ul>
+<h3>Interesting reads</h3>
+<ul>
+    <li><a target="_blank" rel="noopener noreferrer" href="https://isocpp.org/wiki/faq/dtors">https://isocpp.org/wiki/faq/dtors</a>&nbsp;</li>
+</ul>
